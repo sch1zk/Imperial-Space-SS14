@@ -1,4 +1,4 @@
-﻿using Content.Client.Changelog;
+using Content.Client.Changelog;
 using Content.Client.Credits;
 using Content.Client.Links;
 using Content.Client.UserInterface.Systems.EscapeMenu;
@@ -28,18 +28,18 @@ namespace Content.Client.Info
             var discordButton = new Button {Text = Loc.GetString("server-info-discord-button")};
             discordButton.OnPressed += args => uriOpener.OpenUri(UILinks.Discord);
 
-            var websiteButton = new Button {Text = Loc.GetString("server-info-website-button")};
-            websiteButton.OnPressed += args => uriOpener.OpenUri(UILinks.Website);
+            //var websiteButton = new Button {Text = Loc.GetString("server-info-website-button")};
+            //websiteButton.OnPressed += args => uriOpener.OpenUri(UILinks.Website);
 
-            var wikiButton = new Button {Text = Loc.GetString("server-info-wiki-button")};
-            wikiButton.OnPressed += args => uriOpener.OpenUri(UILinks.Wiki);
+            //var wikiButton = new Button {Text = Loc.GetString("server-info-wiki-button")};
+            //wikiButton.OnPressed += args => uriOpener.OpenUri(UILinks.Wiki);
             var changelogButton = new ChangelogButton();
             changelogButton.OnPressed += args => UserInterfaceManager.GetUIController<ChangelogUIController>().ToggleWindow();
             buttons.AddChild(changelogButton);
             buttons.AddChild(rulesButton);
             buttons.AddChild(discordButton);
-            buttons.AddChild(websiteButton);
-            buttons.AddChild(wikiButton);
+            //buttons.AddChild(websiteButton);
+            //buttons.AddChild(wikiButton);
         }
     }
 }

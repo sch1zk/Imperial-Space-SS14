@@ -77,8 +77,8 @@ namespace Content.Client.Credits
                     HorizontalAlignment = HAlignment.Center
                 });
 
-                patronButton.OnPressed +=
-                    _ => IoCManager.Resolve<IUriOpener>().OpenUri(UILinks.Patreon);
+                //patronButton.OnPressed +=
+                //    _ => IoCManager.Resolve<IUriOpener>().OpenUri(UILinks.Patreon);
             }
 
             var first = true;

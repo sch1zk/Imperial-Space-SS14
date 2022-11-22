@@ -1,4 +1,4 @@
-﻿using Content.Client.Gameplay;
+using Content.Client.Gameplay;
 using Content.Client.Info;
 using Content.Client.Links;
 using Content.Client.UserInterface.Controls;
@@ -91,10 +91,10 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
             _console.ExecuteCommand("quit");
         };
 
-        _escapeWindow.WikiButton.OnPressed += _ =>
-        {
-            _uri.OpenUri(UILinks.Wiki);
-        };
+        //_escapeWindow.WikiButton.OnPressed += _ =>
+        //{
+        //    _uri.OpenUri(UILinks.Wiki);
+        //};
 
         CommandBinds.Builder
             .Bind(EngineKeyFunctions.EscapeMenu,
