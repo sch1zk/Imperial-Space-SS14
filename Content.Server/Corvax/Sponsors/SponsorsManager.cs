@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
@@ -44,12 +44,11 @@ public sealed class ServerSponsorsManager : SponsorsManager
     private async Task OnConnecting(NetConnectingArgs e)
     {
         var info = await LoadSponsorInfo(e.UserId);
-        if (info?.Tier == null)
-        {
-            _cachedSponsors.Remove(e.UserId); // Remove from cache if sponsor expired
-            return;
-        }
-
+        //if (info?.Tier == null)
+        //{
+        //    _cachedSponsors.Remove(e.UserId); // Remove from cache if sponsor expired
+        //    return;
+        //}
         DebugTools.Assert(!_cachedSponsors.ContainsKey(e.UserId), "Cached data was found on client connect");
 
         _cachedSponsors[e.UserId] = info;
@@ -63,7 +62,7 @@ public sealed class ServerSponsorsManager : SponsorsManager
             msg = new()
             {
                 IsSponsor = true,
-                AllowedNeko = info.AllowedNeko,
+                //AllowedNeko = info.AllowedNeko,
             };
         }
         else
@@ -71,7 +70,7 @@ public sealed class ServerSponsorsManager : SponsorsManager
             msg = new()
             {
                 IsSponsor = false,
-                AllowedNeko = false,
+                //AllowedNeko = false,
             };
         }
         _netMgr.ServerSendMessage(msg, e.Channel);
