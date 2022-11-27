@@ -31,15 +31,15 @@ namespace Content.Client.Info
             //var websiteButton = new Button {Text = Loc.GetString("server-info-website-button")};
             //websiteButton.OnPressed += args => uriOpener.OpenUri(UILinks.Website);
 
-            //var wikiButton = new Button {Text = Loc.GetString("server-info-wiki-button")};
-            //wikiButton.OnPressed += args => uriOpener.OpenUri(UILinks.Wiki);
+            var wikiButton = new Button {Text = Loc.GetString("server-info-wiki-button")};
+            wikiButton.OnPressed += args => uriOpener.OpenUri(UILinks.Wiki);
             var changelogButton = new ChangelogButton();
             changelogButton.OnPressed += args => UserInterfaceManager.GetUIController<ChangelogUIController>().ToggleWindow();
             buttons.AddChild(changelogButton);
             buttons.AddChild(rulesButton);
             buttons.AddChild(discordButton);
             //buttons.AddChild(websiteButton);
-            //buttons.AddChild(wikiButton);
+            buttons.AddChild(wikiButton);
         }
     }
 }
