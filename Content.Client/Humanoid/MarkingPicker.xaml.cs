@@ -190,14 +190,14 @@ public sealed partial class MarkingPicker : Control
             var item = CMarkingsUnused.AddItem($"{GetMarkingName(marking)}", marking.Sprites[0].Frame0());
             item.Metadata = marking;
             // Corvax-Sponsors-Start
-            if (marking.SponsorOnly)
-            {
-                item.Disabled = true;
-                if (_sponsorsManager.TryGetInfo(out var sponsor))
-                {
-                    item.Disabled = !sponsor.AllowedMarkings.Contains(marking.ID);
-                }
-            }
+            // if (marking.SponsorOnly)
+            // {
+            //     item.Disabled = true;
+            //     if (_sponsorsManager.TryGetInfo(out var sponsor))
+            //     {
+            //         item.Disabled = !sponsor.AllowedMarkings.Contains(marking.ID);
+            //     }
+            // }
             // Corvax-Sponsors-End
         }
 
