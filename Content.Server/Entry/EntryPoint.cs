@@ -98,8 +98,8 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<IGamePrototypeLoadManager>().Initialize();
                 IoCManager.Resolve<NetworkResourceManager>().Initialize();
                 IoCManager.Resolve<GhostKickManager>().Initialize();
-                IoCManager.Resolve<ServerSponsorsManager>().Initialize(); // Corvax-Sponsors
-                IoCManager.Resolve<JoinQueueManager>().Initialize(); // Corvax-Sponsors
+                IoCManager.Resolve<SponsorsManager>().Initialize(); // Corvax-Sponsors
+                IoCManager.Resolve<JoinQueueManager>().Initialize(); // Corvax-Queue
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();

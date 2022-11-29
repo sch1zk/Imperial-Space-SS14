@@ -29,7 +29,7 @@ namespace Content.Server.Connection
         [Dependency] private readonly IServerNetManager _netMgr = default!;
         [Dependency] private readonly IServerDbManager _db = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
-        [Dependency] private readonly ServerSponsorsManager _sponsorsManager = default!; // Corvax-Sponsors
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Corvax-Sponsors
 
         public void Initialize()
         {
@@ -162,14 +162,12 @@ namespace Content.Server.Connection
         // Corvax-Queue-Start: Make these conditions in one place, for checks in the connection and in the queue
         public async Task<bool> HavePrivilegedJoin(NetUserId userId)
         {
-            var adminData = await _dbManager.GetAdminDataForAsync(userId);
-            var sponsorData = _sponsorsManager.GetSponsorInfo(userId); // Corvax-Sponsors
-            
-            var havePriorityJoin = sponsorData?.HavePriorityJoin == true; // Corvax-Sponsors
+            var isAdmin = await _dbManager.GetAdminDataForAsync(userId) != null;
+            var havePriorityJoin = _sponsorsManager.TryGetInfo(userId, out var sponsor) && sponsor.HavePriorityJoin; // Corvax-Sponsors
             var wasInGame = EntitySystem.TryGet<GameTicker>(out var ticker) &&
                             ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
                             status == PlayerGameStatus.JoinedGame;
-            return adminData != null ||
+            return isAdmin ||
                    havePriorityJoin || // Corvax-Sponsors
                    wasInGame;
         }
