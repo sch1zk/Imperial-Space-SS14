@@ -99,7 +99,7 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         };
         _escapeWindow.DiscordButton.OnPressed += _ =>
         {
-            _uri.OpenUri(UILinks.Discord);
+            _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksDiscord));
         };
 
         // Hide wiki button if we don't have a link for it.
