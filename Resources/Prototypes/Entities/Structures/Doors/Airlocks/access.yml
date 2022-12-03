@@ -176,6 +176,7 @@
     access: [["Command"]]
   - type: Wires
     LayoutId: AirlockCommand
+    alwaysRandomize: true
 
 - type: entity
   parent: AirlockCommand
@@ -234,6 +235,7 @@
     access: [["Security"]]
   - type: Wires
     LayoutId: AirlockSecurity
+    alwaysRandomize: true
 
 - type: entity
   parent: AirlockSecurity
@@ -244,6 +246,7 @@
     access: [["Brig"]]
   - type: Wires
     LayoutId: AirlockSecurity
+    alwaysRandomize: true
 
 - type: entity
   parent: AirlockSecurity
@@ -254,6 +257,7 @@
     access: [["Armory"]]
   - type: Wires
     LayoutId: AirlockArmory
+    alwaysRandomize: true
 
 - type: entity
   parent: AirlockSecurity
