@@ -7,6 +7,7 @@
   stations:
     Cluster:
       mapNameTemplate: '{0} Cluster Station {1}'
+      emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
       nameGenerator:
         !type:NanotrasenNameGenerator
         prefixCreator: '14'
@@ -18,9 +19,7 @@
         Bartender: [ 1, 1 ]
         Botanist: [ 2, 2 ]
         Chef: [ 1, 1 ]
-        Clown: [ 0, 0 ]
         Janitor: [ 1, 1 ]
-        Mime: [ 0, 0 ]
         Captain: [ 1, 1 ]
         IAA: [ 0, 0 ]
         HeadOfPersonnel: [ 1, 1 ]
@@ -37,12 +36,12 @@
         Warden: [ 1, 1 ]
         Librarian: [ 1, 1 ]
         Lawyer: [ 1, 1 ]
-        Musician: [ 0, 0 ]
+        Musician: [ 1, 1 ]
         AtmosphericTechnician: [ 2, 2 ]
         Detective: [ 1, 1 ]
         TechnicalAssistant: [ 2, 2 ]
         MedicalIntern: [ 1, 1 ]
         ServiceWorker: [ 1, 1 ]
         SecurityCadet: [ 2, 2 ]
-        SalvageSpecialist: [ 1, 1 ]
+        SalvageSpecialist: [ 2, 2 ]
         Quartermaster: [ 1, 1 ]
