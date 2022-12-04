@@ -68,7 +68,7 @@ namespace Content.Shared.Doors
     /// </summary>
     public sealed class DoorGetPryTimeModifierEvent : EntityEventArgs
     {
-        public float PryTimeModifier = 3.0f;
+        public float PryTimeModifier = 1.0f;
     }
 
     /// <summary>
