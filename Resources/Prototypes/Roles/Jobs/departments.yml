@@ -15,6 +15,7 @@
   - Clown
   - HeadOfPersonnel
   - Janitor
+  - Lawyer
   - Librarian
   - MedicalIntern
   - Mime
@@ -30,7 +31,6 @@
   id: Command
   roles:
   - Captain
-  - IAA
   - CentralCommandOfficial
   - ChiefEngineer
   - ChiefMedicalOfficer
