@@ -2,7 +2,10 @@
   id: LobbyMusic
   files:
     - /Audio/Lobby/gneiss_bluespace.ogg
+    - /Audio/Lobby/gneiss_codebrain.ogg
     - /Audio/Lobby/gneiss_downtown.ogg
     - /Audio/Lobby/gneiss_exploring.ogg
     - /Audio/Lobby/gneiss_metropolis.ogg
+    - /Audio/Lobby/gneiss_phoron_industry.ogg
+    - /Audio/Lobby/gneiss_phoron_leak.ogg
     - /Audio/Lobby/gneiss_quantums_escape_plan.ogg
