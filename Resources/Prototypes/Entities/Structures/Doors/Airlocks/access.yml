@@ -179,7 +179,7 @@
     alwaysRandomize: true
 
 - type: entity
-  parent: AirlockCommand
+  parent: AirlockCommandLocked
   id: AirlockCaptainLocked
   suffix: Captain, Locked
   components:
@@ -187,7 +187,7 @@
     access: [["Captain"]]
 
 - type: entity
-  parent: AirlockCommand
+  parent: AirlockCommandLocked
   id: AirlockChiefMedicalOfficerLocked
   suffix: ChiefMedicalOfficer, Locked
   components:
@@ -195,7 +195,7 @@
     access: [["ChiefMedicalOfficer"]]
 
 - type: entity
-  parent: AirlockCommand
+  parent: AirlockCommandLocked
   id: AirlockChiefEngineerLocked
   suffix: ChiefEngineer, Locked
   components:
@@ -203,7 +203,7 @@
     access: [["ChiefEngineer"]]
 
 - type: entity
-  parent: AirlockCommand
+  parent: AirlockCommandLocked
   id: AirlockHeadOfSecurityLocked
   suffix: HeadOfSecurity, Locked
   components:
@@ -211,7 +211,7 @@
     access: [["HeadOfSecurity"]]
 
 - type: entity
-  parent: AirlockCommand
+  parent: AirlockCommandLocked
   id: AirlockResearchDirectorLocked
   suffix: ResearchDirector, Locked
   components:
@@ -219,7 +219,7 @@
     access: [["ResearchDirector"]]
 
 - type: entity
-  parent: AirlockCommand
+  parent: AirlockCommandLocked
   id: AirlockHeadOfPersonnelLocked
   suffix: HeadOfPersonnel, Locked
   components:
@@ -238,29 +238,23 @@
     alwaysRandomize: true
 
 - type: entity
-  parent: AirlockSecurity
+  parent: AirlockSecurityLocked
   id: AirlockBrigLocked
   suffix: Brig, Locked
   components:
   - type: AccessReader
     access: [["Brig"]]
-  - type: Wires
-    LayoutId: AirlockSecurity
-    alwaysRandomize: true
 
 - type: entity
-  parent: AirlockSecurity
+  parent: AirlockSecurityLocked
   id: AirlockArmoryLocked
   suffix: Armory, Locked
   components:
   - type: AccessReader
     access: [["Armory"]]
-  - type: Wires
-    LayoutId: AirlockArmory
-    alwaysRandomize: true
 
 - type: entity
-  parent: AirlockSecurity
+  parent: AirlockSecurityLocked
   id: AirlockVaultLocked
   suffix: Vault, Locked
   components:
@@ -268,7 +262,7 @@
     access: [["Security", "Command"]]
 
 - type: entity
-  parent: AirlockCommand
+  parent: AirlockCommandLocked
   id: AirlockEVALocked
   suffix: EVA, Locked
   components:
@@ -403,9 +397,12 @@
   components:
   - type: AccessReader
     access: [["Command"]]
+  - type: Wires
+    LayoutId: AirlockCommand
+    alwaysRandomize: true
 
 - type: entity
-  parent: AirlockCommandGlass
+  parent: AirlockCommandGlassLocked
   id: AirlockCaptainGlassLocked
   suffix: Captain, Locked
   components:
@@ -413,7 +410,7 @@
     access: [["Captain"]]
 
 - type: entity
-  parent: AirlockCommandGlass
+  parent: AirlockCommandGlassLocked
   id: AirlockChiefMedicalOfficerGlassLocked
   suffix: ChiefMedicalOfficer, Locked
   components:
@@ -421,7 +418,7 @@
     access: [["ChiefMedicalOfficer"]]
 
 - type: entity
-  parent: AirlockCommandGlass
+  parent: AirlockCommandGlassLocked
   id: AirlockChiefEngineerGlassLocked
   suffix: ChiefEngineer, Locked
   components:
@@ -429,7 +426,7 @@
     access: [["ChiefEngineer"]]
 
 - type: entity
-  parent: AirlockCommandGlass
+  parent: AirlockCommandGlassLocked
   id: AirlockHeadOfSecurityGlassLocked
   suffix: HeadOfSecurity, Locked
   components:
@@ -437,7 +434,7 @@
     access: [["HeadOfSecurity"]]
 
 - type: entity
-  parent: AirlockCommandGlass
+  parent: AirlockCommandGlassLocked
   id: AirlockResearchDirectorGlassLocked
   suffix: ResearchDirector, Locked
   components:
@@ -445,7 +442,7 @@
     access: [["ResearchDirector"]]
 
 - type: entity
-  parent: AirlockCommandGlass
+  parent: AirlockCommandGlassLocked
   id: AirlockHeadOfPersonnelGlassLocked
   suffix: HeadOfPersonnel, Locked
   components:
@@ -459,9 +456,12 @@
   components:
   - type: AccessReader
     access: [["Security"]]
+  - type: Wires
+    LayoutId: AirlockSecurity
+    alwaysRandomize: true
 
 - type: entity
-  parent: AirlockSecurityGlass
+  parent: AirlockSecurityGlassLocked
   id: AirlockBrigGlassLocked
   suffix: Brig, Locked
   components:
@@ -469,7 +469,7 @@
     access: [["Brig"]]
 
 - type: entity
-  parent: AirlockSecurityGlass
+  parent: AirlockSecurityGlassLocked
   id: AirlockArmoryGlassLocked
   suffix: Armory, Locked
   components:
