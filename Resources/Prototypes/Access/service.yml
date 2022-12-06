@@ -29,6 +29,7 @@
 - type: accessGroup
   id: Service
   tags:
+  - Adjutant
   - HeadOfPersonnel
   - Bar
   - Kitchen
