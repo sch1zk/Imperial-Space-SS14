@@ -1,0 +1,58 @@
+Entries:
+- author: sch1zk
+  changes:
+  - {message: Новый экран лобби, type: Add}
+  - {message: Новые иконки приложения, type: Add}
+  id: 1
+  time: '2022-11-22T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Новый CCVar "server.lobbyname" для серверов, type: Add}
+  - {message: Убрано требование по времени для Кадета СБ, type: Tweak}
+  id: 2
+  time: '2022-11-26T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Новая музыка в лобби исполнителя Gneiss, type: Add}
+  - {message: Новый отдельный пул карт для сервера, type: Add}
+  - {message: Снижены требования по времени для всех ролей, type: Tweak}
+  id: 3
+  time: '2022-11-27T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Обновление карты "Cluster", type: Tweak}
+  id: 4
+  time: '2022-11-28T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Изменены имена для генератора случайных имён, type: Tweak}
+  id: 5
+  time: '2022-11-28T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Возвращен адвокат, type: Tweak}
+  - {message: Убран АВД (на время), type: Remove}
+  id: 6
+  time: '2022-12-01T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Обновление карты "Cluster", type: Tweak}
+  id: 7
+  time: '2022-12-03T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Обновление карты "Moose", type: Tweak}
+  id: 8
+  time: '2022-12-04T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Больше музыки от исполнителя Gneiss в лобби, type: Add}
+  id: 9
+  time: '2022-12-05T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Новый шаттл для ивентов, type: Add}
+  - {message: Обновление карты "Moose", type: Tweak}
+  - {message: Новая роль "Адъютант", type: Add}
+  id: 10
+  time: '2022-12-06T00:00:00.0000000+00:00'
