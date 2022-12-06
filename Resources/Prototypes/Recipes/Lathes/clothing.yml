@@ -269,6 +269,28 @@
     Durathread: 100
 
 - type: latheRecipe
+  id: ClothingUniformJumpsuitAdj
+  icon:
+    sprite: Clothing/Uniforms/Jumpsuit/hop.rsi
+    state: icon
+  result: ClothingUniformJumpsuitAdj
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtAdj
+  icon:
+    sprite: Clothing/Uniforms/Jumpskirt/hop.rsi
+    state: icon
+  result: ClothingUniformJumpskirtAdj
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
   id: ClothingUniformJumpsuitHoS
   icon:
     sprite: Clothing/Uniforms/Jumpsuit/hos.rsi
@@ -738,3 +760,5 @@
   materials:
     Cloth: 300
     Durathread: 300
+
+

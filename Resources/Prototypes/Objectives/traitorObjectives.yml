@@ -97,6 +97,8 @@
     - !type:NotRoleRequirement
       roleId: HeadOfPersonnel
     - !type:NotRoleRequirement
+      roleId: Adjutant
+    - !type:NotRoleRequirement
       roleId: ChiefEngineer
     - !type:NotRoleRequirement
       roleId: ChiefMedicalOfficer

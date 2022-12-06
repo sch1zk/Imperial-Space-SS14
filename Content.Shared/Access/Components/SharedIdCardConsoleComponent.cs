@@ -42,6 +42,7 @@ namespace Content.Shared.Access.Components
         [DataField("accessLevels", customTypeSerializer: typeof(PrototypeIdListSerializer<AccessLevelPrototype>))]
         public List<string> AccessLevels = new()
         {
+            "Adjutant",
             "Armory",
             "Atmospherics",
             "Bar",
