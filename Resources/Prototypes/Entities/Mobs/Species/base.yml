@@ -148,7 +148,7 @@
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       - shape:
           !type:PhysShapeCircle
-          radius: 0.35
+          radius: 0.40
         density: 185
         restitution: 0.0
         mask:
@@ -192,7 +192,7 @@
   - type: MobState
     thresholds:
       0: Alive
-      100: Critical
+      50: Critical
       200: Dead
   - type: Destructible
     thresholds:
