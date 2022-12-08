@@ -1,0 +1,109 @@
+- type: listing
+  id: VendingCigsPackGreen
+  productEntity: CigPackGreen
+  cost:
+    SpaceCash: 50
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingCigsPackRed
+  productEntity: CigPackRed
+  cost:
+    SpaceCash: 50
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingCigsPackBlue
+  productEntity: CigPackBlue
+  cost:
+    SpaceCash: 50
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingCigsPackBlack
+  productEntity: CigPackBlack
+  cost:
+    SpaceCash: 50
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingCigsCigarCase
+  productEntity: CigarCase
+  cost:
+    SpaceCash: 60
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: VendingCigsSmokingPipe
+  productEntity: SmokingPipeFilledTobacco
+  cost:
+    SpaceCash: 25
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: VendingCigsMatchbox
+  productEntity: Matchbox
+  cost:
+    SpaceCash: 140
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
+
+- type: listing
+  id: VendingCigsPackPaperRolling
+  productEntity: PackPaperRollingFilters
+  cost:
+    SpaceCash: 340
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingCigsCheapLighter
+  productEntity: CheapLighter
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 4
+
+- type: listing
+  id: VendingCigsLighter
+  productEntity: Lighter
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCigs
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
