@@ -39,22 +39,18 @@
       - !type:DoActsBehavior
         acts: ["Breakage"]
       - !type:EjectVendorItems
-  
   - type: ActivatableUI
-    key: enum.StoreUiKey.Key
-    #key: enum.VendingMachineUiKey.Key
+    key: enum.VendingMachineUiKey.Key
   - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
-    #- key: enum.VendingMachineUiKey.Key
-    #  type: VendingMachineBoundUserInterface
-    #- key: enum.WiresUiKey.Key
-    #  type: WiresBoundUserInterface
-    - key: enum.StoreUiKey.Key
-      type: StoreBoundUserInterface
-  #- type: Wires
-  #  BoardName: "Vending Machine"
-  #  LayoutId: Vending
+    - key: enum.VendingMachineUiKey.Key
+      type: VendingMachineBoundUserInterface
+    - key: enum.WiresUiKey.Key
+      type: WiresBoundUserInterface
+  - type: Wires
+    BoardName: "Vending Machine"
+    LayoutId: Vending
   - type: Anchorable
   - type: Speech
     speechSounds: Vending
@@ -71,8 +67,8 @@
     powerLoad: 200
     priority: Low
   - type: Actions
-  #- type: SentienceTarget
-  #  flavorKind: station-event-random-sentience-flavor-mechanical
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-mechanical
   - type: StaticPrice
     price: 200
   - type: Appearance
@@ -168,20 +164,15 @@
   name: ShadyCigs Deluxe
   description: If you want to get cancer, might as well do it in style.
   components:
-  #- type: VendingMachine
-  #  pack: CigaretteMachineInventory
-  #  dispenseOnHitChance: 0.25
-  #  dispenseOnHitThreshold: 2
-  #  offState: off
-  #  brokenState: broken
-  #  normalState: normal-unshaded
-  #  ejectState: eject-unshaded
-  #  denyState: deny-unshaded
-  - type: Store
-    categories:
-    - VendingCigs
-    currencyWhitelist:
-    - SpaceCash
+  - type: VendingMachine
+    pack: CigaretteMachineInventory
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
   - type: Advertise
     pack: CigaretteMachineAds
   - type: Speech
