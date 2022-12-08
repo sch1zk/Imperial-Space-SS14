@@ -1,0 +1,65 @@
+- type: listing
+  id: VendingSnackFoodSnackRaisins
+  productEntity: FoodSnackRaisins
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingSnack
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingSnackFoodSnackChocolate
+  productEntity: FoodSnackChocolate
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingSnack
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingSnackFoodSnackPopcorn
+  productEntity: FoodSnackPopcorn
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingSnack
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingSnackFoodSnackSyndi
+  productEntity: FoodSnackSyndi
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingSnack
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingSnackDrinkRamen
+  productEntity: DrinkRamen
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingSnack
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingSnackDrinkHellRamen
+  productEntity: DrinkHellRamen
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingSnack
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2

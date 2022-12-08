@@ -1,0 +1,65 @@
+- type: listing
+  id: VendingChangFoodCondimentPacketSoy
+  productEntity: FoodCondimentPacketSoy
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingChang
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
+
+- type: listing
+  id: VendingChangFoodSnackCookieFortune
+  productEntity: FoodSnackCookieFortune
+  cost:
+    SpaceCash: 2
+  categories:
+  - VendingChang
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
+
+- type: listing
+  id: VendingChangDrinkRamen
+  productEntity: DrinkRamen
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingChang
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingChangDrinkHellRamen
+  productEntity: DrinkHellRamen
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingChang
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingChangFoodSnackChowMein
+  productEntity: FoodSnackChowMein
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingChang
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingChangFoodSnackDanDanNoodles
+  productEntity: FoodSnackDanDanNoodles
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingChang
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3

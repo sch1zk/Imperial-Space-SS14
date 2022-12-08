@@ -1,0 +1,109 @@
+- type: listing
+  id: VendingColaDrinkColaCan
+  productEntity: DrinkColaCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingColaDrinkEnergyDrinkCan
+  productEntity: DrinkEnergyDrinkCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingColaDrinkGrapeCan
+  productEntity: DrinkGrapeCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingColaDrinkRootBeerCan
+  productEntity: DrinkRootBeerCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingColaDrinkIcedTeaCan
+  productEntity: DrinkIcedTeaCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingColaDrinkLemonLimeCan
+  productEntity: DrinkLemonLimeCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingColaDrinkSpaceMountainWindCan
+  productEntity: DrinkSpaceMountainWindCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingColaDrinkSpaceUpCan
+  productEntity: DrinkSpaceUpCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingColaDrinkStarkistCan
+  productEntity: DrinkStarkistCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: VendingColaDrinkFourteenLokoCan
+  productEntity: DrinkFourteenLokoCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCola
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2

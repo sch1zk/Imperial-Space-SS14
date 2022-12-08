@@ -1,0 +1,43 @@
+- type: listing
+  id: VendingDonutFoodDonutChocolate
+  productEntity: FoodDonutChocolate
+  cost:
+    SpaceCash: 6
+  categories:
+  - VendingDonut
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
+
+- type: listing
+  id: VendingDonutFoodDonutApple
+  productEntity: FoodDonutApple
+  cost:
+    SpaceCash: 6
+  categories:
+  - VendingDonut
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingDonutFoodDonutPink
+  productEntity: FoodDonutPink
+  cost:
+    SpaceCash: 6
+  categories:
+  - VendingDonut
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: VendingDonutFoodDonutBungo
+  productEntity: FoodDonutBungo
+  cost:
+    SpaceCash: 6
+  categories:
+  - VendingDonut
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3

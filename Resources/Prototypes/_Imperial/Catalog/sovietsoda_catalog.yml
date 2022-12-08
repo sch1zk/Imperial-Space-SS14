@@ -1,0 +1,10 @@
+- type: listing
+  id: VendingSovietSodaDrinkColaCan
+  productEntity: DrinkColaCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingSovietSoda
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 10

@@ -1,5 +1,5 @@
 - type: listing
-  id: VendingCigsPackGreen
+  id: VendingCigsCigPackGreen
   productEntity: CigPackGreen
   cost:
     SpaceCash: 50
@@ -10,7 +10,7 @@
     stock: 2
 
 - type: listing
-  id: VendingCigsPackRed
+  id: VendingCigsCigPackRed
   productEntity: CigPackRed
   cost:
     SpaceCash: 50
@@ -21,7 +21,7 @@
     stock: 2
 
 - type: listing
-  id: VendingCigsPackBlue
+  id: VendingCigsCigPackBlue
   productEntity: CigPackBlue
   cost:
     SpaceCash: 50
@@ -32,7 +32,7 @@
     stock: 2
 
 - type: listing
-  id: VendingCigsPackBlack
+  id: VendingCigsCigPackBlack
   productEntity: CigPackBlack
   cost:
     SpaceCash: 50
@@ -54,7 +54,7 @@
     stock: 1
 
 - type: listing
-  id: VendingCigsSmokingPipe
+  id: VendingCigsSmokingPipeFilledTobacco
   productEntity: SmokingPipeFilledTobacco
   cost:
     SpaceCash: 25
@@ -76,7 +76,7 @@
     stock: 5
 
 - type: listing
-  id: VendingCigsPackPaperRolling
+  id: VendingCigsPackPaperRollingFilters
   productEntity: PackPaperRollingFilters
   cost:
     SpaceCash: 340

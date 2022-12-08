@@ -125,6 +125,11 @@
   #  brokenState: broken
   #  normalState: normal-unshaded
   #  denyState: deny-unshaded
+  - type: Store
+    categories:
+    - VendingClothing
+    currencyWhitelist:
+    - SpaceCash
   - type: Advertise
     pack: ClothesMateAds
   - type: Speech
@@ -165,6 +170,11 @@
   #  screenState: screen
   #  ejectDelay: 5
   #  soundVend: /Audio/Machines/machine_vend_hot_drink.ogg
+  - type: Store
+    categories:
+    - VendingCoffee
+    currencyWhitelist:
+    - SpaceCash
   - type: Advertise
     pack: HotDrinksMachineAds
   - type: Speech
@@ -203,6 +213,11 @@
   #   ejectState: eject-unshaded
   #   denyState: deny-unshaded
   #   ejectDelay: 1.9
+  - type: Store
+    categories:
+    - VendingCola
+    currencyWhitelist:
+    - SpaceCash
   - type: Advertise
     pack: RobustSoftdrinksAds
   - type: Speech
@@ -235,6 +250,11 @@
   #   offState: off
   #   brokenState: broken
   #   normalState: normal-unshaded
+  - type: Store
+    categories:
+    - VendingDiscount
+    currencyWhitelist:
+    - SpaceCash
   - type: Advertise
     pack: DiscountDansAds
   - type: Speech
@@ -269,6 +289,11 @@
   #   normalState: normal-unshaded
   #   ejectState: eject-unshaded
   #   denyState: deny-unshaded
+  - type: Store
+    categories:
+    - VendingSnack
+    currencyWhitelist:
+    - SpaceCash
   - type: Advertise
     pack: GetmoreChocolateCorpAds
   - type: Speech
@@ -303,6 +328,11 @@
   #   normalState: normal-unshaded
   #   ejectState: eject-unshaded
   #   denyState: deny-unshaded
+  - type: Store
+    categories:
+    - VendingSovietSoda
+    currencyWhitelist:
+    - SpaceCash
   - type: Advertise
     pack: BodaAds
   - type: Speech
@@ -324,45 +354,6 @@
 
 - type: entity
   parent: VendorMachine
-  id: VendorMachineTheater
-  name: AutoDrobe
-  description: A vending machine containing costumes.
-  components:
-  # - type: VendingMachine
-  #   pack: AutoDrobeInventory
-  #   offState: off
-  #   brokenState: broken
-  #   normalState: normal-unshaded
-  #   ejectState: eject-unshaded
-  #   denyState: deny-unshaded
-  #   screenState: screen
-  - type: Advertise
-    pack: AutoDrobeAds
-  - type: Speech
-  - type: Sprite
-    sprite: Structures/Machines/VendingMachines/theater.rsi
-    state: "off"
-    # layers:
-    # - state: "off"
-    #   map: ["enum.VendingMachineVisualLayers.Base"]
-    # - state: "off"
-    #   map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-    #   shader: unshaded
-    # - state: panel
-    #   map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    # - state: "screen"
-    #   map: ["enum.VendingMachineVisualLayers.Screen"]
-    #   shader: unshaded
-  - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#c73434"
-  # - type: Tag
-  #   tags:
-  #     - DroneUsable
-
-- type: entity
-  parent: VendorMachine
   id: VendorMachineYouTool
   name: YouTool
   description: "A vending machine containing standard tools. A label reads: Tools for tools."
@@ -374,6 +365,11 @@
   #   normalState: normal-unshaded
   #   ejectState: eject-unshaded
   #   denyState: deny-unshaded
+  - type: Store
+    categories:
+    - VendingYouTool
+    currencyWhitelist:
+    - SpaceCash
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/youtool.rsi
     state: "off"
@@ -403,6 +399,11 @@
   #   normalState: normal-unshaded
   #   ejectState: eject-unshaded
   #   ejectdelay: 1.8
+  - type: Store
+    categories:
+    - VendingGames
+    currencyWhitelist:
+    - SpaceCash
   - type: Advertise
     pack: GoodCleanFunAds
   - type: Sprite
@@ -434,6 +435,11 @@
   #   offState: off
   #   brokenState: broken
   #   normalState: normal-unshaded
+  - type: Store
+    categories:
+    - VendingChang
+    currencyWhitelist:
+    - SpaceCash
   - type: Advertise
     pack: ChangAds
   - type: Speech
@@ -466,6 +472,11 @@
   #   offState: off
   #   brokenState: broken
   #   normalState: normal-unshaded
+  - type: Store
+    categories:
+    - VendingDonut
+    currencyWhitelist:
+    - SpaceCash
   - type: Advertise
     pack: DonutAds
   - type: Speech

@@ -1,0 +1,21 @@
+- type: listing
+  id: VendingCoffeeDrinkHotCoffee
+  productEntity: DrinkHotCoffee
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCoffee
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 10
+
+- type: listing
+  id: VendingCoffeeDrinkTeacup
+  productEntity: DrinkTeacup
+  cost:
+    SpaceCash: 20
+  categories:
+  - VendingCoffee
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 10
