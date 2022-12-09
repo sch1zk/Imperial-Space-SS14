@@ -1,4 +1,4 @@
-﻿using Content.Client.CharacterInfo;
+using Content.Client.CharacterInfo;
 using Content.Client.Gameplay;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Character.Controls;
@@ -101,7 +101,7 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
             return;
         }
 
-        var (job, objectives, briefing, sprite, entityName) = data;
+        var (job, objectives, briefing, sprite, entityName, bankBalance) = data;
 
         _window.SubText.Text = job;
         _window.Objectives.RemoveAllChildren();
@@ -141,6 +141,11 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
 
         _window.SpriteView.Sprite = sprite;
         _window.NameLabel.Text = entityName;
+
+        if(bankBalance >= 0)
+        {
+            _window.BankBalance.Text = Loc.GetString("character-info-bank-balance", ("bankBalance", bankBalance));
+        }
     }
 
     private void CharacterDetached()

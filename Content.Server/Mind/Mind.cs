@@ -12,6 +12,7 @@ using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
+using Content.Shared.Roles;
 
 namespace Content.Server.Mind
 {
@@ -422,10 +423,9 @@ namespace Content.Server.Mind
         {
             return (session = Session) != null;
         }
-
-        public void CreateBankAccount()
+        public void CreateBankAccount(JobPrototype jobPrototype)
         {
-            BankAccountComponent = new BankAccountComponent();
+            BankAccountComponent = new BankAccountComponent(jobPrototype.MinBankBalance, jobPrototype.MaxBankBalance);
         }
     }
 }

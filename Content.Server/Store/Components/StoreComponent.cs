@@ -64,12 +64,17 @@ public sealed class StoreComponent : Component
     /// </summary>
     public bool Opened = false;
 
+    [ViewVariables(VVAccess.ReadOnly), DataField("canBuyByBankAccount")]
+    public bool CanBuyByBankAccount = false;
+
     #region audio
     /// <summary>
     /// The sound played to the buyer when a purchase is succesfully made.
     /// </summary>
     [DataField("buySuccessSound")]
     public SoundSpecifier BuySuccessSound = new SoundPathSpecifier("/Audio/Effects/kaching.ogg");
+    [DataField("buyDeniedSound")]
+    public SoundSpecifier BuyDeniedSound = new SoundPathSpecifier("/Audio/Machines/custom_deny.ogg");
     #endregion
 }
 

@@ -124,15 +124,39 @@ public sealed partial class StoreSystem : EntitySystem
         //check that we have enough money
         foreach (var currency in listing.Cost)
         {
-            if (!component.Balance.TryGetValue(currency.Key, out var balance) || balance < currency.Value)
+            if (!component.Balance.TryGetValue(currency.Key, out var balance))
             {
                 return;
             }
-        }
-        //subtract the cash
-        foreach (var currency in listing.Cost)
-        {
-            component.Balance[currency.Key] -= currency.Value;
+            bool cantPay = true;
+            if (balance < currency.Value)
+            {
+                if (component.CanBuyByBankAccount)
+                {
+                    var targetHasMind = TryComp(buyer, out MindComponent? targetMindComp);
+                    if (!targetHasMind || targetMindComp == null)
+                        goto CantPay;
+                    if (targetMindComp.Mind == null || targetMindComp.Mind.BankAccountComponent == null)
+                        goto CantPay;
+                    var bankAccount = targetMindComp.Mind.BankAccountComponent;
+                    if (bankAccount.CurrencyType != currency.Key || bankAccount.Balance < currency.Value)
+                        goto CantPay;
+                    bankAccount.Balance -= currency.Value;
+                    cantPay = false;
+                }
+            }
+            else
+            {
+                //subtract the cash
+                component.Balance[currency.Key] -= currency.Value;
+                cantPay = false;
+            }
+            CantPay:
+            if (cantPay)
+            {
+                _audio.PlayEntity(component.BuyDeniedSound, msg.Session, uid); //nope!
+                return;
+            }
         }
 
         //spawn entity

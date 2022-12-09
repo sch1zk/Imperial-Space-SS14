@@ -191,7 +191,7 @@ namespace Content.Server.GameTicking
             DebugTools.AssertNotNull(mobMaybe);
             var mob = mobMaybe!.Value;
 
-            newMind.CreateBankAccount();
+            newMind.CreateBankAccount(jobPrototype);
 
             newMind.TransferTo(mob);
 

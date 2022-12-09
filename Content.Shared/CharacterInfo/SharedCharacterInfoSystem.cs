@@ -1,4 +1,4 @@
-﻿using Content.Shared.Objectives;
+using Content.Shared.Objectives;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.CharacterInfo;
@@ -21,12 +21,14 @@ public sealed class CharacterInfoEvent : EntityEventArgs
     public readonly string JobTitle;
     public readonly Dictionary<string, List<ConditionInfo>> Objectives;
     public readonly string Briefing;
+    public readonly int BankBalance;
 
-    public CharacterInfoEvent(EntityUid entityUid, string jobTitle, Dictionary<string, List<ConditionInfo>> objectives, string briefing)
+    public CharacterInfoEvent(EntityUid entityUid, string jobTitle, Dictionary<string, List<ConditionInfo>> objectives, string briefing, int bankBalance)
     {
         EntityUid = entityUid;
         JobTitle = jobTitle;
         Objectives = objectives;
         Briefing = briefing;
+        BankBalance = bankBalance;
     }
 }

@@ -142,8 +142,8 @@ public sealed partial class StoreMenu : DefaultWindow
             if (!currency.ContainsKey(type.Key))
                 return false;
 
-            if (currency[type.Key] < type.Value)
-                return false;
+            //if (currency[type.Key] < type.Value)
+            //    return false;
         }
         return true;
     }

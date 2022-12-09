@@ -1,4 +1,4 @@
-﻿using Content.Server.Mind.Components;
+using Content.Server.Mind.Components;
 using Content.Server.Roles;
 using Content.Shared.CharacterInfo;
 using Content.Shared.Objectives;
@@ -26,6 +26,7 @@ public sealed class CharacterInfoSystem : EntitySystem
         var conditions = new Dictionary<string, List<ConditionInfo>>();
         var jobTitle = "No Profession";
         var briefing = "!!ERROR: No Briefing!!"; //should never show on the UI unless there's a bug
+        var bankBalance = -1;
         if (EntityManager.TryGetComponent(entity, out MindComponent? mindComponent) && mindComponent.Mind != null)
         {
             var mind = mindComponent.Mind;
@@ -53,8 +54,13 @@ public sealed class CharacterInfoSystem : EntitySystem
 
             // Get briefing
             briefing = mind.Briefing;
+
+            if(mind.BankAccountComponent != null)
+            {
+                bankBalance = mind.BankAccountComponent.Balance.Int();
+            }
         }
 
-        RaiseNetworkEvent(new CharacterInfoEvent(entity, jobTitle, conditions, briefing), args.SenderSession);
+        RaiseNetworkEvent(new CharacterInfoEvent(entity, jobTitle, conditions, briefing, bankBalance), args.SenderSession);
     }
 }

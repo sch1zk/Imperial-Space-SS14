@@ -96,5 +96,11 @@ namespace Content.Shared.Roles
 
         [DataField("extendedAccessGroups", customTypeSerializer: typeof(PrototypeIdListSerializer<AccessGroupPrototype>))]
         public IReadOnlyCollection<string> ExtendedAccessGroups { get; } = Array.Empty<string>();
+
+        [DataField("minBankBalance")]
+        public int MinBankBalance { get; } = 0;
+
+        [DataField("maxBankBalance")]
+        public int MaxBankBalance { get; } = 0;
     }
 }

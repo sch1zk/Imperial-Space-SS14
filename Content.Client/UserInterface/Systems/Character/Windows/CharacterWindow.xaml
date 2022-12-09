@@ -1,4 +1,4 @@
-﻿<windows:CharacterWindow
+<windows:CharacterWindow
     xmlns="https://spacestation14.io"
     xmlns:cc="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:windows="clr-namespace:Content.Client.UserInterface.Systems.Character.Windows"
@@ -12,6 +12,7 @@
                 <BoxContainer Orientation="Vertical" VerticalAlignment="Top">
                     <Label Name="NameLabel" Access="Public"/>
                     <Label Name="SubText" VerticalAlignment="Top" StyleClasses="LabelSubText" Access="Public"/>
+                    <Label Name="BankBalance" Access="Public"/>
                 </BoxContainer>
             </BoxContainer>
             <Label Text="{Loc 'character-info-objectives-label'}" HorizontalAlignment="Center"/>
