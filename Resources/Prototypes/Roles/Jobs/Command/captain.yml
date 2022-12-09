@@ -23,6 +23,8 @@
   canBeAntag: false
   accessGroups:
   - AllAccess
+  minBankBalance: 300
+  maxBankBalance: 500
 
 - type: startingGear
   id: CaptainGear

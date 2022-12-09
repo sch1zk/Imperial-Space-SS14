@@ -12,6 +12,8 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: MikuDay
     prototype: BoxPerformer
+  minBankBalance: 300
+  maxBankBalance: 500
 
 - type: startingGear
   id: MusicianGear

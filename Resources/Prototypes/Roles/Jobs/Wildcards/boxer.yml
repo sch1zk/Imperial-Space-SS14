@@ -17,6 +17,8 @@
           Blunt: 1.5
           Slash: 1.5
           Piercing: 1.5
+  minBankBalance: 300
+  maxBankBalance: 500
 
 - type: startingGear
   id: BoxerGear

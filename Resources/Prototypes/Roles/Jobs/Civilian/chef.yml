@@ -16,6 +16,8 @@
   extendedAccess:
   - Hydroponics
   - Bar
+  minBankBalance: 300
+  maxBankBalance: 500
 
 - type: startingGear
   id: ChefGear

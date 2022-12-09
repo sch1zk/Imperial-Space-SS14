@@ -11,6 +11,8 @@
   - Maintenance
   - Bar
   - Kitchen
+  minBankBalance: 300
+  maxBankBalance: 500
 
 - type: startingGear
   id: ServiceWorkerGear

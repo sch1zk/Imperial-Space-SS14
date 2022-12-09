@@ -8,6 +8,8 @@
   access:
   - Research
   - Maintenance
+  minBankBalance: 300
+  maxBankBalance: 500
 
 - type: startingGear
   id: ScientistGear

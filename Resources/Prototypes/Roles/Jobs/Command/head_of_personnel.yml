@@ -33,6 +33,8 @@
   - Hydroponics
   - External
   # I mean they'll give themselves the rest of the access levels *anyways*.
+  minBankBalance: 800
+  maxBankBalance: 1200
 
 - type: startingGear
   id: HoPGear

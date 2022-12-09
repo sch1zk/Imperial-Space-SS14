@@ -13,6 +13,7 @@
   innerclothingskirt: ClothingUniformJumpskirtColorBlack
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
+  
 
 - type: startingGear
   id: CultistGear

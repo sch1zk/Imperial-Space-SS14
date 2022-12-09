@@ -5,6 +5,8 @@
   startingGear: PassengerGear
   icon: "Passenger"
   supervisors: job-supervisors-everyone
+  minBankBalance: 300
+  maxBankBalance: 500
 
 - type: startingGear
   id: PassengerGear

@@ -17,6 +17,8 @@
   - Service
   - Brig
   - External
+  minBankBalance: 300
+  maxBankBalance: 500
 
 - type: startingGear
   id: WardenGear

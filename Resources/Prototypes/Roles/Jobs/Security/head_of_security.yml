@@ -24,6 +24,8 @@
   - Maintenance
   - Service
   - External
+  minBankBalance: 800
+  maxBankBalance: 1200
 
 - type: startingGear
   id: HoSGear

@@ -16,6 +16,8 @@
   extendedAccess:
   - Kitchen
   - Hydroponics
+  minBankBalance: 300
+  maxBankBalance: 500
 
 - type: startingGear
   id: BartenderGear

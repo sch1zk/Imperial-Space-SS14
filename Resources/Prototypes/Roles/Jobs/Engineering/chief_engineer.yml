@@ -22,6 +22,8 @@
   - External
   - ChiefEngineer
   - Atmospherics
+  minBankBalance: 800
+  maxBankBalance: 1200
 
 - type: startingGear
   id: ChiefEngineerGear
