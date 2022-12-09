@@ -98,6 +98,10 @@
     - VendingCigs
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: CigaretteMachineAds
   - type: Speech
@@ -130,6 +134,10 @@
     - VendingClothing
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: ClothesMateAds
   - type: Speech
@@ -175,6 +183,10 @@
     - VendingCoffee
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend_hot_drink.ogg
   - type: Advertise
     pack: HotDrinksMachineAds
   - type: Speech
@@ -218,6 +230,10 @@
     - VendingCola
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: RobustSoftdrinksAds
   - type: Speech
@@ -255,6 +271,10 @@
     - VendingDiscount
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: DiscountDansAds
   - type: Speech
@@ -294,6 +314,10 @@
     - VendingSnack
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: GetmoreChocolateCorpAds
   - type: Speech
@@ -333,6 +357,10 @@
     - VendingSovietSoda
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: BodaAds
   - type: Speech
@@ -370,6 +398,10 @@
     - VendingYouTool
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/youtool.rsi
     state: "off"
@@ -404,6 +436,10 @@
     - VendingGames
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: GoodCleanFunAds
   - type: Sprite
@@ -440,6 +476,10 @@
     - VendingChang
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: ChangAds
   - type: Speech
@@ -477,6 +517,10 @@
     - VendingDonut
     currencyWhitelist:
     - SpaceCash
+    canBuyByBankAccount: true
+    balance:
+      SpaceCash: 0
+    buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: DonutAds
   - type: Speech
