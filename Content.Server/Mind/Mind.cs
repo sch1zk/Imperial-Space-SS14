@@ -3,6 +3,7 @@ using System.Linq;
 using Content.Server.GameTicking;
 using Content.Server.Ghost.Components;
 using Content.Server.Mind.Components;
+using Content.Server.Economy.Components;
 using Content.Server.Objectives;
 using Content.Server.Players;
 using Content.Server.Roles;
@@ -159,6 +160,9 @@ namespace Content.Server.Mind
                 return targetMobState.IsDead();
             }
         }
+
+        [ViewVariables]
+        public BankAccountComponent? BankAccountComponent { get; set; }
 
         /// <summary>
         ///     Gives this mind a new role.
@@ -417,6 +421,11 @@ namespace Content.Server.Mind
         public bool TryGetSession([NotNullWhen(true)] out IPlayerSession? session)
         {
             return (session = Session) != null;
+        }
+
+        public void CreateBankAccount()
+        {
+            BankAccountComponent = new BankAccountComponent();
         }
     }
 }

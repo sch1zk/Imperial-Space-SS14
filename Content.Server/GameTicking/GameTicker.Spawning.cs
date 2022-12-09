@@ -191,6 +191,8 @@ namespace Content.Server.GameTicking
             DebugTools.AssertNotNull(mobMaybe);
             var mob = mobMaybe!.Value;
 
+            newMind.CreateBankAccount();
+
             newMind.TransferTo(mob);
 
             if (lateJoin)
