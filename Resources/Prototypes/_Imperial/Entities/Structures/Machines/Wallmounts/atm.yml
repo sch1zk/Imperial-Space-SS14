@@ -64,7 +64,7 @@
   - type: UserInterface
     interfaces:
     - key: enum.ATMUiKey.Key
-  #     type: StoreBoundUserInterface
+      type: ATMBoundUserInterface
   - type: PointLight
     enabled: false
     castShadows: false
