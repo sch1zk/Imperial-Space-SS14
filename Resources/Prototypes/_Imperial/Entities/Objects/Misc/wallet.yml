@@ -2,7 +2,7 @@
   name: wallet
   parent: BaseStorageItem
   id: Wallet
-  description: For those who want to keep cash with them.
+  description: For those who prefer to keep cash with them.
   components:
   - type: Item
     size: 10
