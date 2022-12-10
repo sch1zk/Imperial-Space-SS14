@@ -56,8 +56,8 @@
   #  BoardName: "Vending Machine"
   #  LayoutId: Vending
   - type: Anchorable
-  # - type: Speech
-  #   speechSounds: Vending
+  - type: Speech
+    speechSounds: Vending
   # - type: DoAfter
   # - type: Electrified
   #   enabled: false
@@ -93,6 +93,12 @@
   #  normalState: normal-unshaded
   #  ejectState: eject-unshaded
   #  denyState: deny-unshaded
+  - type: VendorMachine
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
   - type: Store
     categories:
     - VendingCigs
@@ -107,13 +113,12 @@
   - type: Speech
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/cigs.rsi
-    state: "off"
-    # layers:
-    # - state: "off"
-    #   map: ["enum.VendingMachineVisualLayers.Base"]
-    # - state: "off"
-    #   map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-    #   shader: unshaded
+    layers:
+    - state: "off"
+      map: ["enum.VendorMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendorMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
     # - state: panel
     #   map: ["enum.WiresVisualLayers.MaintenancePanel"]
 
