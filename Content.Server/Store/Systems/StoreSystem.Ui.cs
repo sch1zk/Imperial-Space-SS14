@@ -11,6 +11,7 @@ using Robust.Server.GameObjects;
 using System.Linq;
 using Content.Server.Stack;
 using Robust.Shared.Player;
+using Robust.Shared.Serialization;
 
 namespace Content.Server.Store.Systems;
 
@@ -155,6 +156,7 @@ public sealed partial class StoreSystem : EntitySystem
             if (cantPay)
             {
                 _audio.PlayEntity(component.BuyDeniedSound, msg.Session, uid); //nope!
+                RaiseLocalEvent(uid, new StoreOnDenyEvent(), true);
                 return;
             }
         }
@@ -188,6 +190,7 @@ public sealed partial class StoreSystem : EntitySystem
 
         listing.PurchaseAmount++; //track how many times something has been purchased
         _audio.PlayEntity(component.BuySuccessSound, msg.Session, uid); //cha-ching!
+        RaiseLocalEvent(uid, new StoreOnEjectEvent(), true);
 
         UpdateUserInterface(buyer, component);
     }

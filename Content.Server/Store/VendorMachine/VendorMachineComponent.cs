@@ -11,5 +11,7 @@ namespace Content.Server.Store.VendorMachine
         public bool Ejecting;
         public bool Denying;
         public bool Broken;
+        public float EjectAccumulator = 0f;
+        public float DenyAccumulator = 0f;
     }
 }

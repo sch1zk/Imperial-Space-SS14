@@ -1,6 +1,7 @@
 using Content.Shared.FixedPoint;
 using Content.Shared.Store;
 using Robust.Shared.Audio;
+using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Dictionary;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Set;
@@ -86,3 +87,5 @@ public sealed class StoreAddedEvent : EntityEventArgs { };
 /// Event that is broadcast when a store is removed from an entity
 /// </summary>
 public sealed class StoreRemovedEvent : EntityEventArgs { };
+public sealed class StoreOnEjectEvent : EntityEventArgs { };
+public sealed class StoreOnDenyEvent : EntityEventArgs { };
