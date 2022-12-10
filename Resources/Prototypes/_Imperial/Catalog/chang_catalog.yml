@@ -2,7 +2,7 @@
   id: VendingChangFoodCondimentPacketSoy
   productEntity: FoodCondimentPacketSoy
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingChang
   conditions:
@@ -13,7 +13,7 @@
   id: VendingChangFoodSnackCookieFortune
   productEntity: FoodSnackCookieFortune
   cost:
-    SpaceCash: 2
+    SpaceCredits: 2
   categories:
   - VendingChang
   conditions:
@@ -24,7 +24,7 @@
   id: VendingChangDrinkRamen
   productEntity: DrinkRamen
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingChang
   conditions:
@@ -35,7 +35,7 @@
   id: VendingChangDrinkHellRamen
   productEntity: DrinkHellRamen
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingChang
   conditions:
@@ -46,7 +46,7 @@
   id: VendingChangFoodSnackChowMein
   productEntity: FoodSnackChowMein
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingChang
   conditions:
@@ -57,7 +57,7 @@
   id: VendingChangFoodSnackDanDanNoodles
   productEntity: FoodSnackDanDanNoodles
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingChang
   conditions:

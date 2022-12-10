@@ -2,7 +2,7 @@
   id: VendingYouToolCableApcStack
   productEntity: CableApcStack
   cost:
-    SpaceCash: 150
+    SpaceCredits: 150
   categories:
   - VendingYouTool
   conditions:
@@ -13,7 +13,7 @@
   id: VendingYouToolCrowbar
   productEntity: Crowbar
   cost:
-    SpaceCash: 40
+    SpaceCredits: 40
   categories:
   - VendingYouTool
   conditions:
@@ -24,7 +24,7 @@
   id: VendingYouToolWelder
   productEntity: Welder
   cost:
-    SpaceCash: 40
+    SpaceCredits: 40
   categories:
   - VendingYouTool
   conditions:
@@ -35,7 +35,7 @@
   id: VendingYouToolWirecutter
   productEntity: Wirecutter
   cost:
-    SpaceCash: 40
+    SpaceCredits: 40
   categories:
   - VendingYouTool
   conditions:
@@ -46,7 +46,7 @@
   id: VendingYouToolWrench
   productEntity: 
   cost:
-    SpaceCash: 40
+    SpaceCredits: 40
   categories:
   - VendingYouTool
   conditions:
@@ -57,7 +57,7 @@
   id: VendingYouToolScrewdriver
   productEntity: Screwdriver
   cost:
-    SpaceCash: 40
+    SpaceCredits: 40
   categories:
   - VendingYouTool
   conditions:
@@ -68,7 +68,7 @@
   id: VendingYouTooltrayScanner
   productEntity: trayScanner
   cost:
-    SpaceCash: 60
+    SpaceCredits: 60
   categories:
   - VendingYouTool
   conditions:
@@ -79,7 +79,7 @@
   id: VendingYouToolGasAnalyzer
   productEntity: GasAnalyzer
   cost:
-    SpaceCash: 80
+    SpaceCredits: 80
   categories:
   - VendingYouTool
   conditions:
@@ -90,7 +90,7 @@
   id: VendingYouToolFlashlightLantern
   productEntity: 
   cost:
-    SpaceCash: 168
+    SpaceCredits: 168
   categories:
   - VendingYouTool
   conditions:
@@ -101,7 +101,7 @@
   id: VendingYouToolClothingHandsGlovesColorYellowBudget
   productEntity: ClothingHandsGlovesColorYellowBudget
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingYouTool
   conditions:
@@ -112,7 +112,7 @@
   id: VendingYouToolClothingBeltUtility
   productEntity: ClothingBeltUtility
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingYouTool
   conditions:
@@ -123,7 +123,7 @@
   id: VendingYouToolAirlockPainter
   productEntity: AirlockPainter
   cost:
-    SpaceCash: 40
+    SpaceCredits: 40
   categories:
   - VendingYouTool
   conditions:

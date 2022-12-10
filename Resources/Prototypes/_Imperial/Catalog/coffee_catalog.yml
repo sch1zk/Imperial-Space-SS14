@@ -2,7 +2,7 @@
   id: VendingCoffeeDrinkHotCoffee
   productEntity: DrinkHotCoffee
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCoffee
   conditions:
@@ -13,7 +13,7 @@
   id: VendingCoffeeDrinkTeacup
   productEntity: DrinkTeacup
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCoffee
   conditions:

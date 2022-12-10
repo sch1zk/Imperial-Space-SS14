@@ -1,6 +1,13 @@
+#- type: currency
+#  id: SpaceCash
+#  displayName: store-currency-display-spacecash
+#  cash: 
+#    1: SpaceCash
+#  canWithdraw: true
+
 - type: currency
-  id: SpaceCash
-  displayName: store-currency-display-spacecash
+  id: SpaceCredits
+  displayName: store-currency-display-spacecredits
   cash: 
-    1: SpaceCash
+    1: SpaceCredit
   canWithdraw: true

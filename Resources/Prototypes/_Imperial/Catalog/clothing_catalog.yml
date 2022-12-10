@@ -3,7 +3,7 @@
   id: VendingClothingClothingBackpack
   productEntity: ClothingBackpack
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -15,7 +15,7 @@
   id: VendingClothingClothingBackpackDuffel
   productEntity: ClothingBackpackDuffel
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -27,7 +27,7 @@
   id: VendingClothingClothingBackpackSatchel
   productEntity: ClothingBackpackSatchel
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -39,7 +39,7 @@
   id: VendingClothingHatBandBlack
   productEntity: HatBandBlack
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -51,7 +51,7 @@
   id: VendingClothingHatBandBlue
   productEntity: HatBandBlue
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -63,7 +63,7 @@
   id: VendingClothingHatBandGreen
   productEntity: HatBandGreen
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -75,7 +75,7 @@
   id: VendingClothingHatBandRed
   productEntity: HatBandRed
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -87,7 +87,7 @@
   id: VendingClothingHatBandSkull
   productEntity: HatBandSkull
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -99,7 +99,7 @@
   id: VendingClothingClothingUniformJumpsuitColorGrey
   productEntity: ClothingUniformJumpsuitColorGrey
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -111,7 +111,7 @@
   id: VendingClothingClothingUniformJumpskirtColorGrey
   productEntity: ClothingUniformJumpskirtColorGrey
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -123,7 +123,7 @@
   id: VendingClothingClothingUniformJumpsuitColorWhite
   productEntity: ClothingUniformJumpsuitColorWhite
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -135,7 +135,7 @@
   id: VendingClothingClothingUniformJumpskirtColorWhite
   productEntity: ClothingUniformJumpskirtColorWhite
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -147,7 +147,7 @@
   id: VendingClothingClothingUniformJumpsuitColorBlue
   productEntity: ClothingUniformJumpsuitColorBlue
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -159,7 +159,7 @@
   id: VendingClothingClothingUniformJumpskirtColorBlue
   productEntity: ClothingUniformJumpskirtColorBlue
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -171,7 +171,7 @@
   id: VendingClothingClothingUniformJumpsuitColorYellow
   productEntity: ClothingUniformJumpsuitColorYellow
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -183,7 +183,7 @@
   id: VendingClothingClothingUniformJumpskirtColorYellow
   productEntity: ClothingUniformJumpskirtColorYellow
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -195,7 +195,7 @@
   id: VendingClothingClothingUniformJumpsuitColorGreen
   productEntity: ClothingUniformJumpsuitColorGreen
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -207,7 +207,7 @@
   id: VendingClothingClothingUniformJumpskirtColorGreen
   productEntity: ClothingUniformJumpskirtColorGreen
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -219,7 +219,7 @@
   id: VendingClothingClothingUniformJumpsuitColorOrange
   productEntity: ClothingUniformJumpsuitColorOrange
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -231,7 +231,7 @@
   id: VendingClothingClothingUniformJumpskirtColorOrange
   productEntity: ClothingUniformJumpskirtColorOrange
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -243,7 +243,7 @@
   id: VendingClothingClothingUniformJumpsuitColorRed
   productEntity: ClothingUniformJumpsuitColorRed
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -255,7 +255,7 @@
   id: VendingClothingClothingUniformJumpskirtColorRed
   productEntity: ClothingUniformJumpskirtColorRed
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -267,7 +267,7 @@
   id: VendingClothingClothingUniformJumpsuitColorPurple
   productEntity: ClothingUniformJumpsuitColorPurple
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -279,7 +279,7 @@
   id: VendingClothingClothingUniformJumpskirtColorPurple
   productEntity: ClothingUniformJumpskirtColorPurple
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -291,7 +291,7 @@
   id: VendingClothingClothingUniformJumpsuitColorPink
   productEntity: ClothingUniformJumpsuitColorPink
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -303,7 +303,7 @@
   id: VendingClothingClothingUniformJumpskirtColorPink
   productEntity: ClothingUniformJumpskirtColorPink
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -315,7 +315,7 @@
   id: VendingClothingClothingUniformJumpsuitColorDarkBlue
   productEntity: ClothingUniformJumpsuitColorDarkBlue
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -327,7 +327,7 @@
   id: VendingClothingClothingUniformJumpskirtColorDarkBlue
   productEntity: ClothingUniformJumpskirtColorDarkBlue
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -339,7 +339,7 @@
   id: VendingClothingClothingUniformJumpsuitColorTeal
   productEntity: ClothingUniformJumpsuitColorTeal
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -351,7 +351,7 @@
   id: VendingClothingClothingUniformJumpskirtColorTeal
   productEntity: ClothingUniformJumpskirtColorTeal
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -363,7 +363,7 @@
   id: VendingClothingClothingShoesColorBlack
   productEntity: ClothingShoesColorBlack
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -375,7 +375,7 @@
   id: VendingClothingClothingShoesColorBrown
   productEntity: ClothingShoesColorBrown
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -387,7 +387,7 @@
   id: VendingClothingClothingShoesColorWhite
   productEntity: ClothingShoesColorWhite
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -399,7 +399,7 @@
   id: VendingClothingClothingShoesColorBlue
   productEntity: ClothingShoesColorBlue
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -411,7 +411,7 @@
   id: VendingClothingClothingShoesColorYellow
   productEntity: ClothingShoesColorYellow
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -423,7 +423,7 @@
   id: VendingClothingClothingShoesColorGreen
   productEntity: ClothingShoesColorGreen
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -435,7 +435,7 @@
   id: VendingClothingClothingShoesColorOrange
   productEntity: ClothingShoesColorOrange
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -447,7 +447,7 @@
   id: VendingClothingClothingShoesColorRed
   productEntity: ClothingShoesColorRed
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -459,7 +459,7 @@
   id: VendingClothingClothingShoesColorPurple
   productEntity: ClothingShoesColorPurple
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -471,7 +471,7 @@
   id: VendingClothingClothingHeadHatGreysoft
   productEntity: ClothingHeadHatGreysoft
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -483,7 +483,7 @@
   id: VendingClothingClothingHeadHatMimesoft
   productEntity: ClothingHeadHatMimesoft
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -495,7 +495,7 @@
   id: VendingClothingClothingHeadHatBluesoft
   productEntity: ClothingHeadHatBluesoft
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -507,7 +507,7 @@
   id: VendingClothingClothingHeadHatYellowsoft
   productEntity: ClothingHeadHatYellowsoft
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -519,7 +519,7 @@
   id: VendingClothingClothingHeadHatGreensoft
   productEntity: ClothingHeadHatGreensoft
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -531,7 +531,7 @@
   id: VendingClothingClothingHeadHatOrangesoft
   productEntity: ClothingHeadHatOrangesoft
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -543,7 +543,7 @@
   id: VendingClothingClothingHeadHatRedsoft
   productEntity: ClothingHeadHatRedsoft
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -555,7 +555,7 @@
   id: VendingClothingClothingHeadHatPurplesoft
   productEntity: ClothingHeadHatPurplesoft
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -567,7 +567,7 @@
   id: VendingClothingClothingHeadHatCorpsoft
   productEntity: ClothingHeadHatCorpsoft
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -579,7 +579,7 @@
   id: VendingClothingClothingHeadHatBowlerHat
   productEntity: ClothingHeadHatBowlerHat
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -591,7 +591,7 @@
   id: VendingClothingClothingHeadHatBunny
   productEntity: ClothingHeadHatBunny
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -603,7 +603,7 @@
   id: VendingClothingClothingHeadHatCake
   productEntity: ClothingHeadHatCake
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -615,7 +615,7 @@
   id: VendingClothingClothingOuterWinterCoat
   productEntity: ClothingOuterWinterCoat
   cost:
-    SpaceCash: 153
+    SpaceCredits: 153
   categories:
   - VendingClothing
   conditions:
@@ -627,7 +627,7 @@
   id: VendingClothingClothingHeadFishCap
   productEntity: ClothingHeadFishCap
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -639,7 +639,7 @@
   id: VendingClothingClothingHeadRastaHat
   productEntity: ClothingHeadRastaHat
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -651,7 +651,7 @@
   id: VendingClothingClothingNeckScarfStripedRed
   productEntity: ClothingNeckScarfStripedRed
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -663,7 +663,7 @@
   id: VendingClothingClothingNeckScarfStripedBlue
   productEntity: ClothingNeckScarfStripedBlue
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:
@@ -675,7 +675,7 @@
   id: VendingClothingClothingNeckScarfStripedGreen
   productEntity: ClothingNeckScarfStripedGreen
   cost:
-    SpaceCash: 15
+    SpaceCredits: 15
   categories:
   - VendingClothing
   conditions:

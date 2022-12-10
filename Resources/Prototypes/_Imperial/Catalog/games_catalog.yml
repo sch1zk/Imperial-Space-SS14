@@ -2,7 +2,7 @@
   id: VendingGamesDiceBag
   productEntity: DiceBag
   cost:
-    SpaceCash: 160
+    SpaceCredits: 160
   categories:
   - VendingGames
   conditions:
@@ -13,7 +13,7 @@
   id: VendingGamesPaper
   productEntity: Paper
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingGames
   conditions:
@@ -24,7 +24,7 @@
   id: VendingGamesd6Dice
   productEntity: d6Dice
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingGames
   conditions:
@@ -35,7 +35,7 @@
   id: VendingGamesChessBoard
   productEntity: ChessBoard
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingGames
   conditions:
@@ -46,7 +46,7 @@
   id: VendingGamesBackgammonBoard
   productEntity: BackgammonBoard
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingGames
   conditions:
@@ -57,7 +57,7 @@
   id: VendingGamesParchisBoard
   productEntity: ParchisBoard
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingGames
   conditions:
@@ -68,7 +68,7 @@
   id: VendingGamesCheckerBoard
   productEntity: CheckerBoard
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingGames
   conditions:

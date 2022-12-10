@@ -97,10 +97,10 @@
     categories:
     - VendingCigs
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: CigaretteMachineAds
@@ -133,10 +133,10 @@
     categories:
     - VendingClothing
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: ClothesMateAds
@@ -182,10 +182,10 @@
     categories:
     - VendingCoffee
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend_hot_drink.ogg
   - type: Advertise
     pack: HotDrinksMachineAds
@@ -229,10 +229,10 @@
     categories:
     - VendingCola
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: RobustSoftdrinksAds
@@ -270,10 +270,10 @@
     categories:
     - VendingDiscount
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: DiscountDansAds
@@ -313,10 +313,10 @@
     categories:
     - VendingSnack
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: GetmoreChocolateCorpAds
@@ -356,10 +356,10 @@
     categories:
     - VendingSovietSoda
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: BodaAds
@@ -397,10 +397,10 @@
     categories:
     - VendingYouTool
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/youtool.rsi
@@ -435,10 +435,10 @@
     categories:
     - VendingGames
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: GoodCleanFunAds
@@ -475,10 +475,10 @@
     categories:
     - VendingChang
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: ChangAds
@@ -516,10 +516,10 @@
     categories:
     - VendingDonut
     currencyWhitelist:
-    - SpaceCash
+    - SpaceCredits
     canBuyByBankAccount: true
     balance:
-      SpaceCash: 0
+      SpaceCredits: 0
     buySuccessSound: /Audio/Machines/machine_vend.ogg
   - type: Advertise
     pack: DonutAds

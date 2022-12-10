@@ -1,0 +1,49 @@
+- type: entity
+  parent: BaseItem
+  id: SpaceCredit
+  name: credits
+  description: Money is everything.
+  components:
+  - type: Material
+    materials:
+      Cred: 1
+  - type: StaticPrice
+    price: 1
+  - type: Stack
+    stackType: Cred
+    count: 1
+  - type: Sprite
+    sprite: _Imperial\Objects\Economy\credits.rsi
+    netsync: false
+    state: credit
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+    - density: 30
+      shape:
+        !type:PhysShapeAabb
+        bounds: "-0.35,-0.2,0.25,0.1" # TODO: do proper collision for this item!
+      mask:
+      - ItemMask
+  - type: Currency
+    price:
+      SpaceCredits: 1
+  - type: Tag
+    tags:
+    - SpaceCredits
+  - type: Item
+    size: 1
+
+- type: material
+  id: Cred
+  name: spacecred
+  stack: Cred
+  icon: { sprite: /Textures/Objects/Economy/cash.rsi, state: cash }
+  price: 1
+
+- type: stack
+  id: Cred
+  name: spacecred
+  icon: { sprite: /Textures/Objects/Economy/cash.rsi, state: cash }
+  spawn: SpaceCredit

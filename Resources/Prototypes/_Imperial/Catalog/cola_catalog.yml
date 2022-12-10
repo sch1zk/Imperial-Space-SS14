@@ -2,7 +2,7 @@
   id: VendingColaDrinkColaCan
   productEntity: DrinkColaCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:
@@ -13,7 +13,7 @@
   id: VendingColaDrinkEnergyDrinkCan
   productEntity: DrinkEnergyDrinkCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:
@@ -24,7 +24,7 @@
   id: VendingColaDrinkGrapeCan
   productEntity: DrinkGrapeCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:
@@ -35,7 +35,7 @@
   id: VendingColaDrinkRootBeerCan
   productEntity: DrinkRootBeerCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:
@@ -46,7 +46,7 @@
   id: VendingColaDrinkIcedTeaCan
   productEntity: DrinkIcedTeaCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:
@@ -57,7 +57,7 @@
   id: VendingColaDrinkLemonLimeCan
   productEntity: DrinkLemonLimeCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:
@@ -68,7 +68,7 @@
   id: VendingColaDrinkSpaceMountainWindCan
   productEntity: DrinkSpaceMountainWindCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:
@@ -79,7 +79,7 @@
   id: VendingColaDrinkSpaceUpCan
   productEntity: DrinkSpaceUpCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:
@@ -90,7 +90,7 @@
   id: VendingColaDrinkStarkistCan
   productEntity: DrinkStarkistCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:
@@ -101,7 +101,7 @@
   id: VendingColaDrinkFourteenLokoCan
   productEntity: DrinkFourteenLokoCan
   cost:
-    SpaceCash: 20
+    SpaceCredits: 20
   categories:
   - VendingCola
   conditions:

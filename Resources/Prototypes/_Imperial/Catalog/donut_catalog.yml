@@ -2,7 +2,7 @@
   id: VendingDonutFoodDonutChocolate
   productEntity: FoodDonutChocolate
   cost:
-    SpaceCash: 6
+    SpaceCredits: 6
   categories:
   - VendingDonut
   conditions:
@@ -13,7 +13,7 @@
   id: VendingDonutFoodDonutApple
   productEntity: FoodDonutApple
   cost:
-    SpaceCash: 6
+    SpaceCredits: 6
   categories:
   - VendingDonut
   conditions:
@@ -24,7 +24,7 @@
   id: VendingDonutFoodDonutPink
   productEntity: FoodDonutPink
   cost:
-    SpaceCash: 6
+    SpaceCredits: 6
   categories:
   - VendingDonut
   conditions:
@@ -35,7 +35,7 @@
   id: VendingDonutFoodDonutBungo
   productEntity: FoodDonutBungo
   cost:
-    SpaceCash: 6
+    SpaceCredits: 6
   categories:
   - VendingDonut
   conditions:
