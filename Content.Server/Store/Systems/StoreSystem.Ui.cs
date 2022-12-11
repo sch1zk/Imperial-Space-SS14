@@ -134,16 +134,16 @@ public sealed partial class StoreSystem : EntitySystem
             {
                 if (component.CanBuyByBankAccount)
                 {
-                    var targetHasMind = TryComp(buyer, out MindComponent? targetMindComp);
-                    if (!targetHasMind || targetMindComp == null)
-                        goto CantPay;
-                    if (targetMindComp.Mind == null || targetMindComp.Mind.BankAccountComponent == null)
-                        goto CantPay;
-                    var bankAccount = targetMindComp.Mind.BankAccountComponent;
-                    if (bankAccount.CurrencyType != currency.Key || bankAccount.Balance < currency.Value)
-                        goto CantPay;
-                    bankAccount.Balance -= currency.Value;
-                    cantPay = false;
+                   // var targetHasMind = TryComp(buyer, out MindComponent? targetMindComp);
+                   // if (!targetHasMind || targetMindComp == null)
+                   //     goto CantPay;
+                   // if (targetMindComp.Mind == null || targetMindComp.Mind.BankAccountComponent == null)
+                   //     goto CantPay;
+                   //var bankAccount = targetMindComp.Mind.BankAccountComponent;
+                   // if (bankAccount.CurrencyType != currency.Key || bankAccount.Balance < currency.Value)
+                   //     goto CantPay;
+                   // bankAccount.Balance -= currency.Value;
+                   // cantPay = false;
                 }
             }
             else

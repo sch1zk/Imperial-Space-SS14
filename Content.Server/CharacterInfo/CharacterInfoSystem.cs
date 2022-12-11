@@ -54,11 +54,6 @@ public sealed class CharacterInfoSystem : EntitySystem
 
             // Get briefing
             briefing = mind.Briefing;
-
-            if(mind.BankAccountComponent != null)
-            {
-                bankBalance = mind.BankAccountComponent.Balance.Int();
-            }
         }
 
         RaiseNetworkEvent(new CharacterInfoEvent(entity, jobTitle, conditions, briefing, bankBalance), args.SenderSession);

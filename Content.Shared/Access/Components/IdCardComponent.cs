@@ -16,6 +16,12 @@ namespace Content.Shared.Access.Components
 
         [DataField("jobTitle")]
         public string? JobTitle;
+
+        [DataField("storedBankAccountNumber")]
+        public string? StoredBankAccountNumber;
+
+        [DataField("storedBankAccountPin")]
+        public string? StoredBankAccountPin;
     }
 
     [Serializable, NetSerializable]

@@ -1,5 +1,4 @@
 using Content.Client.Economy.ATM.UI;
-using Content.Shared.Economy.ATM;
 using Content.Shared.Containers.ItemSlots;
 using Robust.Client.GameObjects;
 using static Content.Shared.Economy.ATM.SharedATMComponent;
@@ -19,7 +18,7 @@ namespace Content.Client.Economy.ATM
             base.Open();
             _menu = new ATMMenu { Title = IoCManager.Resolve<IEntityManager>().GetComponent<MetaDataComponent>(Owner.Owner).EntityName };
 
-            _menu.IdButton.OnPressed += _ => SendMessage(new ItemSlotButtonPressedEvent(SharedATMComponent.IdCardSlotId));
+            _menu.IdCardButton.OnPressed += _ => SendMessage(new ItemSlotButtonPressedEvent(IdCardSlotId));
 
             _menu.OnClose += Close;
             _menu.OpenCentered();

@@ -1,4 +1,4 @@
-﻿using Content.Server.Access.Systems;
+using Content.Server.Access.Systems;
 using Content.Server.DetailExaminable;
 using Content.Server.Hands.Components;
 using Content.Server.Hands.Systems;
@@ -192,6 +192,7 @@ public sealed class StationSpawningSystem : EntitySystem
         var cardId = card.Owner;
         _cardSystem.TryChangeFullName(cardId, characterName, card);
         _cardSystem.TryChangeJobTitle(cardId, jobPrototype.LocalizedName, card);
+        _cardSystem.TryStoreNewBankAccount(cardId, card);
 
         var extendedAccess = false;
         if (station != null)

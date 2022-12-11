@@ -16,13 +16,27 @@ namespace Content.Shared.Economy.ATM
         public sealed class ATMBoundUserInterfaceState : BoundUserInterfaceState
         {
             public readonly bool IsCardPresent;
-            public ATMBoundUserInterfaceState(bool isCardPresent)
+            public readonly string? IdCardFullName;
+            public readonly string? IdCardEntityName;
+            public readonly string? IdCardStoredBankAccountNumber;
+            public readonly bool HaveAccessToBankAccount;
+            public readonly string? BankAccountBalance;
+            public ATMBoundUserInterfaceState(
+                bool isCardPresent,
+                string? idCardFullName,
+                string? idCardEntityName,
+                string? idCardStoredBankAccountNumber,
+                bool haveAccessToBankAccount,
+                string? bankAccountBalance)
             {
                 IsCardPresent = isCardPresent;
+                IdCardFullName = idCardFullName;
+                IdCardEntityName = idCardEntityName;
+                IdCardStoredBankAccountNumber = idCardStoredBankAccountNumber;
+                HaveAccessToBankAccount = haveAccessToBankAccount;
+                BankAccountBalance = bankAccountBalance;
             }
         }
-        [Serializable, NetSerializable]
-        public sealed class InsertIdCardMessage : BoundUserInterfaceMessage { }
     }
 
     [Serializable, NetSerializable]
