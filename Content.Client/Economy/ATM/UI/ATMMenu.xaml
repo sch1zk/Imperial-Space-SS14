@@ -1,6 +1,35 @@
-<DefaultWindow xmlns="https://spacestation14.io">
-    <ItemList Name="VendingContents"
-              SizeFlagsStretchRatio="8"
-              VerticalExpand="True">
-    </ItemList>
+<DefaultWindow xmlns="https://spacestation14.io"
+    MinSize="256 160"
+    SetSize="256 160">
+    <BoxContainer Orientation="Vertical" SeparationOverride="4">
+        <Label
+            Name="WelcomeLabel"
+            Access="Public"
+            Text="Welcome! Please login below." />
+        <BoxContainer Orientation="Horizontal">
+            <Button
+                Name="IdButton"
+                Access="Public"
+                MinWidth="64"
+                Text="No card inserted" />
+        </BoxContainer>
+        <BoxContainer Name="ShowWithdraw" Orientation="Vertical" Visible="False">
+            <Label
+                Name="AccountBalance"
+                Access="Public"
+                Text="Account Balance: 0" />
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+                    <LineEdit Name="WithdrawInput"
+                    HorizontalExpand="True"
+                    Access="Public" />
+                </BoxContainer>
+                <Button
+                    Name="WithdrawButton"
+                    MinWidth="64"
+                    HorizontalAlignment="Right"
+                    Text="{Loc 'atm-ui-default-withdraw-text'}" />
+            </BoxContainer>
+        </BoxContainer>
+    </BoxContainer>
 </DefaultWindow>

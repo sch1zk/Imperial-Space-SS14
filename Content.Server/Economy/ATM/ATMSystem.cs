@@ -2,18 +2,20 @@ using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Shared.Economy.ATM;
 using Robust.Server.GameObjects;
-using static Content.Shared.Store.VendorMachine.SharedVendorMachineComponent;
+using Robust.Shared.Containers;
 
 namespace Content.Server.Economy.ATM
 {
-    public sealed class ATMSystem : EntitySystem
+    public sealed class ATMSystem : SharedATMSystem
     {
         [Dependency] private readonly AppearanceSystem _appearanceSystem = default!;
         public override void Initialize()
         {
             base.Initialize();
             SubscribeLocalEvent<ATMComponent, PowerChangedEvent>(OnPowerChanged);
-
+            SubscribeLocalEvent<ATMComponent, ComponentStartup>((_, comp, _) => comp.UpdateUserInterface());
+            SubscribeLocalEvent<ATMComponent, EntInsertedIntoContainerMessage>((_, comp, _) => comp.UpdateUserInterface());
+            SubscribeLocalEvent<ATMComponent, EntRemovedFromContainerMessage>((_, comp, _) => comp.UpdateUserInterface());
         }
         private void OnPowerChanged(EntityUid uid, ATMComponent component, ref PowerChangedEvent args)
         {

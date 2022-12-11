@@ -4,7 +4,7 @@ using static Robust.Client.GameObjects.SpriteComponent;
 
 namespace Content.Client.Economy.ATM
 {
-    public sealed class ATMSystem : EntitySystem
+    public sealed class ATMSystem : SharedATMSystem
     {
         [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
         public override void Initialize()

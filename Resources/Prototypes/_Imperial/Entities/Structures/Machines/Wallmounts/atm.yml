@@ -13,34 +13,44 @@
     anchored: true
   - type: Clickable
   - type: InteractionOutline
-
-
-
-
   - type: Sprite
     sprite: _Imperial\Structures\Wallmounts\atm.rsi
     netsync: false
     snapCardinals: true
-    state: 
+    state:
     layers:
     - state: "off"
       map: ["enum.ATMVisualLayers.Base"]
     - state: "off"
       map: ["enum.ATMVisualLayers.BaseUnshaded"]
       shader: unshaded
+
+
   - type: ATM
     offState: off
     normalState: normal-unshaded
+    idCardSlot:
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      ejectOnBreak: true
+      swap: false
+      whitelist:
+        components:
+        - IdCard
 
+  - type: ItemSlots
+  #   slots:
+  #     IdCardSlot:
+  #       ejectSound: /Audio/Machines/id_swipe.ogg
+  #       insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  #       ejectOnBreak: true
+  #       whitelist:
+  #         components:
+  #         - IdCard
+  - type: ContainerContainer
+    containers:
+      IdCardSlot: !type:ContainerSlot
   - type: Appearance
-  
-  # - type: ApcPowerReceiver
-  # - type: UserInterface
-  #   interfaces:
-  #   - key: enum.SharedAirAlarmInterfaceKey.Key
-  #     type: AirAlarmBoundUserInterface
-  #   - key: enum.WiresUiKey.Key
-  #     type: WiresBoundUserInterface
   - type: AmbientOnPowered
   - type: AmbientSound
     volume: -9
