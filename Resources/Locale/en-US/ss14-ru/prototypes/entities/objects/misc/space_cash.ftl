@@ -1,5 +1,5 @@
-ent-SpaceCash = spacebucks
-    .desc = You gotta have money.
+ent-SpaceCash = old spacebucks
+    .desc = Obsolete currency of good old days.
     .suffix = { "" }
 ent-SpaceCash10 = { ent-SpaceCash }
     .suffix = 10

@@ -47,3 +47,51 @@
   name: spacecred
   icon: { sprite: /Textures/Objects/Economy/cash.rsi, state: cash }
   spawn: SpaceCredit
+
+- type: entity
+  parent: SpaceCredit
+  id: SpaceCredit10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: SpaceCredit
+  id: SpaceCredit50
+  suffix: 50
+  components:
+  - type: Stack
+    count: 50
+
+- type: entity
+  parent: SpaceCredit
+  id: SpaceCredit100
+  suffix: 100
+  components:
+  - type: Stack
+    count: 100
+
+- type: entity
+  parent: SpaceCredit
+  id: SpaceCredit500
+  suffix: 500
+  components:
+  - type: Stack
+    count: 500
+
+- type: entity
+  parent: SpaceCredit
+  id: SpaceCredit1000
+  suffix: 1000
+  components:
+  - type: Stack
+    count: 1000
+
+- type: entity
+  parent: SpaceCredit
+  id: SpaceCredit5000
+  suffix: 5000
+  components:
+  - type: Stack
+    count: 5000
