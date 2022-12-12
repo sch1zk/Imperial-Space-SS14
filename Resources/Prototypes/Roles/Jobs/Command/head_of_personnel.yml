@@ -5,13 +5,13 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 18000
+      time: 18000 # Corvax-RoleTime
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 18000
+      time: 18000 # Corvax-RoleTime
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 18000
+      time: 18000 # Corvax-RoleTime
     - !type:OverallPlaytimeRequirement
       time: 120000
   weight: 20
