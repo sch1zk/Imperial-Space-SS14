@@ -4,9 +4,17 @@ using Content.Server.Power.EntitySystems;
 using Content.Shared.Access.Components;
 using Content.Shared.Economy;
 using Content.Shared.Economy.ATM;
+using Content.Shared.FixedPoint;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
+using Content.Server.Stack;
 using static Content.Shared.Economy.ATM.SharedATMComponent;
+using Content.Shared.Hands.EntitySystems;
+using System.Linq;
+using Content.Server.Store.Components;
+using Content.Shared.Interaction;
+using Robust.Shared.Player;
+using Content.Shared.Popups;
 
 namespace Content.Server.Economy.Systems
 {
@@ -15,6 +23,9 @@ namespace Content.Server.Economy.Systems
         [Dependency] private readonly IEntityManager _entities = default!;
         [Dependency] private readonly AppearanceSystem _appearanceSystem = default!;
         [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
+        [Dependency] private readonly StackSystem _stack = default!;
+        [Dependency] private readonly SharedHandsSystem _hands = default!;
+        [Dependency] private readonly SharedPopupSystem _popup = default!;
         public override void Initialize()
         {
             base.Initialize();
@@ -22,6 +33,7 @@ namespace Content.Server.Economy.Systems
             SubscribeLocalEvent<ATMComponent, ComponentStartup>((_, comp, _) => UpdateComponentUserInterface(comp));
             SubscribeLocalEvent<ATMComponent, EntInsertedIntoContainerMessage>((_, comp, _) => UpdateComponentUserInterface(comp));
             SubscribeLocalEvent<ATMComponent, EntRemovedFromContainerMessage>((_, comp, _) => UpdateComponentUserInterface(comp));
+            SubscribeLocalEvent<ATMComponent, ATMRequestWithdrawMessage>(OnRequestWithdraw);
         }
         private void OnPowerChanged(EntityUid uid, ATMComponent component, ref PowerChangedEvent args)
         {
@@ -66,7 +78,6 @@ namespace Content.Server.Economy.Systems
                         }
                     }
                 }
-
                 idCardEntityName = _entities.GetComponent<MetaDataComponent>(idCardEntityUid)?.EntityName;
             }
             var newState = new ATMBoundUserInterfaceState(
@@ -79,7 +90,49 @@ namespace Content.Server.Economy.Systems
                 );
             component.UpdateUserInterface(newState);
         }
-
-
+        private void OnRequestWithdraw(EntityUid uid, ATMComponent component, ATMRequestWithdrawMessage msg)
+        {
+            if (msg.Session.AttachedEntity is not { Valid: true } buyer)
+                return;
+            if (msg.Amount <= 0) return;
+            if (!TryGetBankAccounNumberFromStoredIdCard(component, out var bankAccountNumber))
+                return;
+            if (!_bankManagerSystem.TryWithdrawFromBankAccount(bankAccountNumber, msg.Amount))
+                return;
+            var coordinates = Transform(buyer).Coordinates;
+            var ents = _stack.SpawnMultiple("SpaceCredit", msg.Amount, coordinates);
+            _hands.PickupOrDrop(buyer, ents.First());
+            UpdateComponentUserInterface(component);
+        }
+        public bool TryInsert(int amount, ATMComponent component)
+        {
+            if(amount <= 0) return false;
+            if(!TryGetBankAccounNumberFromStoredIdCard(component, out var bankAccountNumber))
+                return false;
+            if (!_bankManagerSystem.TryInsertToBankAccount(bankAccountNumber, amount))
+                return false;
+            UpdateComponentUserInterface(component);
+            return true;
+        }
+        public int GetCurrencyValue(CurrencyComponent component)
+        {
+            TryComp<StackComponent>(component.Owner, out var stack);
+            var amount = stack?.Count ?? 1;
+            if(component.Price.TryGetValue("SpaceCredits", out FixedPoint2 result))
+                return result.Int() * amount;
+            return 0;
+        }
+        private bool TryGetBankAccounNumberFromStoredIdCard(ATMComponent component, out string storedBankAccountNumber)
+        {
+            storedBankAccountNumber = string.Empty;
+            if (component.IdCardSlot.Item is not { Valid: true } idCardEntityUid)
+                return false;
+            if (!_entities.TryGetComponent<IdCardComponent>(idCardEntityUid, out var idCardComponent))
+                return false;
+            if (idCardComponent.StoredBankAccountNumber == null)
+                return false;
+            storedBankAccountNumber = idCardComponent.StoredBankAccountNumber;
+            return true;
+        }
     }
 }

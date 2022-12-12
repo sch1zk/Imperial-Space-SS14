@@ -20,7 +20,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-
+using Content.Shared.Economy;
 
 namespace Content.Server.Station.Systems;
 
@@ -40,6 +40,7 @@ public sealed class StationSpawningSystem : EntitySystem
     [Dependency] private readonly PDASystem _pdaSystem = default!;
     [Dependency] private readonly SharedAccessSystem _accessSystem = default!;
     [Dependency] private readonly IdentitySystem _identity = default!;
+    [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -192,7 +193,8 @@ public sealed class StationSpawningSystem : EntitySystem
         var cardId = card.Owner;
         _cardSystem.TryChangeFullName(cardId, characterName, card);
         _cardSystem.TryChangeJobTitle(cardId, jobPrototype.LocalizedName, card);
-        _cardSystem.TryStoreNewBankAccount(cardId, card);
+        if(_cardSystem.TryStoreNewBankAccount(cardId, card, out var bankAccount) && bankAccount != null)
+            _bankManagerSystem.TryGenerateStartingBalance(bankAccount, jobPrototype);
 
         var extendedAccess = false;
         if (station != null)

@@ -8,8 +8,6 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using System.Linq;
 using Content.Server.UserInterface;
-using Content.Shared.Access.Components;
-using System.Reflection;
 
 namespace Content.Server.Store.Systems;
 
@@ -26,7 +24,6 @@ public sealed partial class StoreSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<CurrencyComponent, AfterInteractEvent>(OnAfterInteract);
         SubscribeLocalEvent<StoreComponent, BeforeActivatableUIOpenEvent>((_,c,a) => UpdateUserInterface(a.User, c));
 
         SubscribeLocalEvent<StoreComponent, ComponentStartup>(OnStartup);
@@ -43,32 +40,6 @@ public sealed partial class StoreSystem : EntitySystem
     private void OnShutdown(EntityUid uid, StoreComponent component, ComponentShutdown args)
     {
         RaiseLocalEvent(uid, new StoreRemovedEvent(), true);
-    }
-
-    private void OnAfterInteract(EntityUid uid, CurrencyComponent component, AfterInteractEvent args)
-    {
-        if (args.Handled || !args.CanReach)
-            return;
-
-        if (args.Target == null || !TryComp<StoreComponent>(args.Target, out var store))
-            return;
-
-        //if you somehow are inserting cash before the store initializes.
-        if (!store.Opened)
-        {
-            RefreshAllListings(store);
-            InitializeFromPreset(store.Preset, store);
-            store.Opened = true;
-        }
-
-        args.Handled = TryAddCurrency(GetCurrencyValue(component), store);
-
-        if (args.Handled)
-        {
-            var msg = Loc.GetString("store-currency-inserted", ("used", args.Used), ("target", args.Target));
-            _popup.PopupEntity(msg, args.Target.Value, Filter.Pvs(args.Target.Value));
-            QueueDel(args.Used);
-        }
     }
 
     /// <summary>

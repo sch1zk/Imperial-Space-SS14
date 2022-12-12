@@ -26,7 +26,8 @@
                 <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
                     <LineEdit Name="WithdrawInput"
                     HorizontalExpand="True"
-                    Access="Public" />
+                    Access="Public"
+                    PlaceHolder="0" />
                 </BoxContainer>
                 <Button
                     Name="WithdrawButton"

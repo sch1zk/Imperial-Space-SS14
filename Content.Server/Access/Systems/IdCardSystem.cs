@@ -167,19 +167,18 @@ namespace Content.Server.Access.Systems
             EntityManager.GetComponent<MetaDataComponent>(id.Owner).EntityName = val;
         }
 
-        public bool TryStoreNewBankAccount(EntityUid uid, IdCardComponent? id = null)
+        public bool TryStoreNewBankAccount(EntityUid uid, IdCardComponent? id, out BankAccountComponent? bankAccount)
         {
+            bankAccount = null;
             if (!Resolve(uid, ref id))
                 return false;
-            var bankAccount = _bankManager.CreateNewBankAccount();
+            bankAccount = _bankManager.CreateNewBankAccount();
             if (bankAccount == null)
                 return false;
             id.StoredBankAccountNumber = bankAccount.AccountNumber;
             id.StoredBankAccountPin = bankAccount.AccountPin;
             Dirty(id);
             return true;
-
-
         }
     }
 }

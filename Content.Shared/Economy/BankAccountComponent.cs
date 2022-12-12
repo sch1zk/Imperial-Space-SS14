@@ -21,11 +21,16 @@ public sealed class BankAccountComponent : Component
         AccountPin = accountPin;
         Balance = 0;
     }
-    public BankAccountComponent(string accountNumber, string accountPin, int minBalance, int maxBalance)
+    public bool TryChangeBalanceBy(int amount)
     {
-        AccountNumber = accountNumber;
-        AccountPin = accountPin;
-        var random = IoCManager.Resolve<IRobustRandom>();
-        Balance = FixedPoint2.New(random.Next(minBalance, maxBalance));
+        var parsedAmount = FixedPoint2.New(amount);
+        if (Balance + parsedAmount < 0)
+            return false;
+        SetBalance(Balance + parsedAmount);
+        return true;
+    }
+    public void SetBalance(FixedPoint2 newValue)
+    {
+        Balance = FixedPoint2.Clamp(newValue, 0, FixedPoint2.MaxValue);
     }
 }
