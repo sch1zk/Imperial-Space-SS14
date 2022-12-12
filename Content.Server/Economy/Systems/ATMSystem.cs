@@ -11,21 +11,21 @@ using Content.Server.Stack;
 using static Content.Shared.Economy.ATM.SharedATMComponent;
 using Content.Shared.Hands.EntitySystems;
 using System.Linq;
-using Content.Server.Store.Components;
-using Content.Shared.Interaction;
-using Robust.Shared.Player;
-using Content.Shared.Popups;
+using Content.Shared.Store;
+using Robust.Shared.Prototypes;
+using YamlDotNet.Core.Tokens;
 
 namespace Content.Server.Economy.Systems
 {
     public sealed class ATMSystem : SharedATMSystem
     {
+        [Dependency] private readonly IPrototypeManager _proto = default!;
         [Dependency] private readonly IEntityManager _entities = default!;
         [Dependency] private readonly AppearanceSystem _appearanceSystem = default!;
         [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
         [Dependency] private readonly StackSystem _stack = default!;
         [Dependency] private readonly SharedHandsSystem _hands = default!;
-        [Dependency] private readonly SharedPopupSystem _popup = default!;
+        
         public override void Initialize()
         {
             base.Initialize();
@@ -66,9 +66,7 @@ namespace Content.Server.Economy.Systems
                 if (_entities.TryGetComponent<IdCardComponent>(idCardEntityUid, out var idCardComponent))
                 {
                     idCardFullName = idCardComponent.FullName;
-                    if (
-                        idCardComponent.StoredBankAccountNumber != null &&
-                        _bankManagerSystem.TryGetBankAccount(idCardComponent.StoredBankAccountNumber, out var bankAccountComponent))
+                    if (_bankManagerSystem.TryGetBankAccount(idCardComponent.StoredBankAccountNumber, idCardComponent.StoredBankAccountPin, out var bankAccountComponent))
                     {
                         idCardStoredBankAccountNumber = idCardComponent.StoredBankAccountNumber;
                         if (bankAccountComponent.AccountPin.Equals(idCardComponent.StoredBankAccountPin))
@@ -95,43 +93,67 @@ namespace Content.Server.Economy.Systems
             if (msg.Session.AttachedEntity is not { Valid: true } buyer)
                 return;
             if (msg.Amount <= 0) return;
-            if (!TryGetBankAccounNumberFromStoredIdCard(component, out var bankAccountNumber))
+
+            if (!TryGetBankAccountDetailsFromStoredIdCard(component, out var bankAccountNumber, out var bankAccountPin))
                 return;
-            if (!_bankManagerSystem.TryWithdrawFromBankAccount(bankAccountNumber, msg.Amount))
+
+            if (component.CurrencyWhitelist.Count == 0)
                 return;
+            var currency = component.CurrencyWhitelist.First();
+            if (!_proto.TryIndex<CurrencyPrototype>(currency, out var proto))
+                return;
+            if (proto.Cash == null || !proto.CanWithdraw)
+                return;
+
+            var parsedAmount = FixedPoint2.New(msg.Amount);
+            if (!_bankManagerSystem.TryWithdrawFromBankAccount(
+                bankAccountNumber, bankAccountPin,
+                new KeyValuePair<string, FixedPoint2>(currency, parsedAmount)))
+                return;
+
+            //FixedPoint2 amountRemaining = msg.Amount;
             var coordinates = Transform(buyer).Coordinates;
-            var ents = _stack.SpawnMultiple("SpaceCredit", msg.Amount, coordinates);
-            _hands.PickupOrDrop(buyer, ents.First());
+            var sortedCashValues = proto.Cash.Keys.OrderByDescending(x => x).ToList();
+            foreach (var value in sortedCashValues)
+            {
+                var cashId = proto.Cash[value];
+                var amountToSpawn = (int) MathF.Floor((float) (parsedAmount / value));
+                var ents = _stack.SpawnMultiple(cashId, amountToSpawn, coordinates);
+                _hands.PickupOrDrop(buyer, ents.First());
+                parsedAmount -= value * amountToSpawn;
+            }
             UpdateComponentUserInterface(component);
         }
-        public bool TryInsert(int amount, ATMComponent component)
+        public bool TryAddCurrency(Dictionary<string, FixedPoint2> currency, ATMComponent atm)
         {
-            if(amount <= 0) return false;
-            if(!TryGetBankAccounNumberFromStoredIdCard(component, out var bankAccountNumber))
+            foreach (var type in currency)
+            {
+                if (!atm.CurrencyWhitelist.Contains(type.Key))
+                    return false;
+            }
+            if (!TryGetBankAccountDetailsFromStoredIdCard(atm, out var bankAccountNumber, out var bankAccountPin))
                 return false;
-            if (!_bankManagerSystem.TryInsertToBankAccount(bankAccountNumber, amount))
-                return false;
-            UpdateComponentUserInterface(component);
+
+            foreach (var type in currency)
+            {
+                if (!_bankManagerSystem.TryInsertToBankAccount(bankAccountNumber, bankAccountPin, type))
+                    return false;
+            }
+            UpdateComponentUserInterface(atm);
             return true;
         }
-        public int GetCurrencyValue(CurrencyComponent component)
-        {
-            TryComp<StackComponent>(component.Owner, out var stack);
-            var amount = stack?.Count ?? 1;
-            if(component.Price.TryGetValue("SpaceCredits", out FixedPoint2 result))
-                return result.Int() * amount;
-            return 0;
-        }
-        private bool TryGetBankAccounNumberFromStoredIdCard(ATMComponent component, out string storedBankAccountNumber)
+        private bool TryGetBankAccountDetailsFromStoredIdCard(ATMComponent component, out string storedBankAccountNumber, out string storedBankAccountPin)
         {
             storedBankAccountNumber = string.Empty;
+            storedBankAccountPin = string.Empty;
             if (component.IdCardSlot.Item is not { Valid: true } idCardEntityUid)
                 return false;
             if (!_entities.TryGetComponent<IdCardComponent>(idCardEntityUid, out var idCardComponent))
                 return false;
-            if (idCardComponent.StoredBankAccountNumber == null)
+            if (idCardComponent.StoredBankAccountNumber == null || idCardComponent.StoredBankAccountPin == null)
                 return false;
             storedBankAccountNumber = idCardComponent.StoredBankAccountNumber;
+            storedBankAccountPin = idCardComponent.StoredBankAccountPin;
             return true;
         }
     }

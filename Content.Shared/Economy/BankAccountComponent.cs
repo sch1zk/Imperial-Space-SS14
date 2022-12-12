@@ -21,12 +21,11 @@ public sealed class BankAccountComponent : Component
         AccountPin = accountPin;
         Balance = 0;
     }
-    public bool TryChangeBalanceBy(int amount)
+    public bool TryChangeBalanceBy(FixedPoint2 amount)
     {
-        var parsedAmount = FixedPoint2.New(amount);
-        if (Balance + parsedAmount < 0)
+        if (Balance + amount < 0)
             return false;
-        SetBalance(Balance + parsedAmount);
+        SetBalance(Balance + amount);
         return true;
     }
     public void SetBalance(FixedPoint2 newValue)

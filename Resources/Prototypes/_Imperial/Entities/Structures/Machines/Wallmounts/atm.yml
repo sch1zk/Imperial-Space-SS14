@@ -1,5 +1,5 @@
 - type: entity
-  id: atm
+  id: ATM
   name: ATM
   description: For all your monetary needs!
   placement:
@@ -29,6 +29,8 @@
   - type: ATM
     offState: off
     normalState: normal-unshaded
+    currencyWhitelist:
+    - SpaceCredits
     idCardSlot:
       ejectSound: /Audio/Machines/id_swipe.ogg
       insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
@@ -37,16 +39,7 @@
       whitelist:
         components:
         - IdCard
-
   - type: ItemSlots
-  #   slots:
-  #     IdCardSlot:
-  #       ejectSound: /Audio/Machines/id_swipe.ogg
-  #       insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-  #       ejectOnBreak: true
-  #       whitelist:
-  #         components:
-  #         - IdCard
   - type: ContainerContainer
     containers:
       IdCardSlot: !type:ContainerSlot
@@ -83,7 +76,6 @@
   - type: ApcPowerReceiver
     powerLoad: 200
     priority: Low
-  # - type: Actions
   - type: ExtensionCableReceiver
   - type: EmitSoundOnUIOpen
     sound:

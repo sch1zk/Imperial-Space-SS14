@@ -1,17 +1,19 @@
+using Content.Server.Access.Systems;
 using Content.Server.Actions;
 using Content.Server.Administration.Logs;
 using Content.Server.Mind.Components;
+using Content.Server.Stack;
 using Content.Server.Store.Components;
+using Content.Shared.Access.Components;
 using Content.Shared.Actions.ActionTypes;
+using Content.Shared.Database;
+using Content.Shared.Economy;
 using Content.Shared.FixedPoint;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.PDA;
 using Content.Shared.Store;
-using Content.Shared.Database;
 using Robust.Server.GameObjects;
 using System.Linq;
-using Content.Server.Stack;
-using Robust.Shared.Player;
-using Robust.Shared.Serialization;
 
 namespace Content.Server.Store.Systems;
 
@@ -23,10 +25,12 @@ public sealed partial class StoreSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly StackSystem _stack = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
+    [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
+    [Dependency] private readonly IdCardSystem _idCardSystem = default!;
 
     private void InitializeUi()
     {
-        SubscribeLocalEvent<StoreComponent, StoreRequestUpdateInterfaceMessage>((_,c,r) => UpdateUserInterface(r.Session.AttachedEntity, c));
+        SubscribeLocalEvent<StoreComponent, StoreRequestUpdateInterfaceMessage>((_, c, r) => UpdateUserInterface(r.Session.AttachedEntity, c));
         SubscribeLocalEvent<StoreComponent, StoreBuyListingMessage>(OnBuyRequest);
         SubscribeLocalEvent<StoreComponent, StoreRequestWithdrawMessage>(OnRequestWithdraw);
     }
@@ -134,16 +138,13 @@ public sealed partial class StoreSystem : EntitySystem
             {
                 if (component.CanBuyByBankAccount)
                 {
-                   // var targetHasMind = TryComp(buyer, out MindComponent? targetMindComp);
-                   // if (!targetHasMind || targetMindComp == null)
-                   //     goto CantPay;
-                   // if (targetMindComp.Mind == null || targetMindComp.Mind.BankAccountComponent == null)
-                   //     goto CantPay;
-                   //var bankAccount = targetMindComp.Mind.BankAccountComponent;
-                   // if (bankAccount.CurrencyType != currency.Key || bankAccount.Balance < currency.Value)
-                   //     goto CantPay;
-                   // bankAccount.Balance -= currency.Value;
-                   // cantPay = false;
+                    if (!_idCardSystem.TryFindIdCard(buyer, out var idCardComponent))
+                        goto CantPay;
+                    if (!_bankManagerSystem.TryWithdrawFromBankAccount(
+                        idCardComponent.StoredBankAccountNumber,
+                        idCardComponent.StoredBankAccountPin, currency))
+                        goto CantPay;
+                    cantPay = false;
                 }
             }
             else
@@ -152,7 +153,7 @@ public sealed partial class StoreSystem : EntitySystem
                 component.Balance[currency.Key] -= currency.Value;
                 cantPay = false;
             }
-            CantPay:
+        CantPay:
             if (cantPay)
             {
                 _audio.PlayEntity(component.BuyDeniedSound, msg.Session, uid); //nope!
@@ -216,7 +217,7 @@ public sealed partial class StoreSystem : EntitySystem
         if (proto.Cash == null || !proto.CanWithdraw)
             return;
 
-        if (msg.Session.AttachedEntity is not { Valid: true} buyer)
+        if (msg.Session.AttachedEntity is not { Valid: true } buyer)
             return;
 
         FixedPoint2 amountRemaining = msg.Amount;

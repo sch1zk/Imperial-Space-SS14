@@ -14,10 +14,17 @@ namespace Content.Shared.Economy
         {
             base.Initialize();
         }
-        public bool TryGetBankAccount(string bankAccountNumber, [MaybeNullWhen(false)] out BankAccountComponent bankAccountComponent)
+        public bool TryGetBankAccount(string? bankAccountNumber, string? bankAccountPin, [MaybeNullWhen(false)] out BankAccountComponent bankAccountComponent)
         {
+            bankAccountComponent = null;
+            if (bankAccountNumber == null || bankAccountPin == null)
+                return false;
             _activeBankAccounts.TryGetValue(bankAccountNumber, out bankAccountComponent);
-            return bankAccountComponent != null ? true : false;
+            if (bankAccountComponent == null)
+                return false;
+            if (bankAccountNumber != bankAccountComponent.AccountNumber || bankAccountPin != bankAccountComponent.AccountPin)
+                return false;
+            return true;
         }
         public BankAccountComponent? CreateNewBankAccount()
         {
@@ -42,17 +49,21 @@ namespace Content.Shared.Economy
             }
             return pin;
         }
-        public bool TryWithdrawFromBankAccount(string bankAccountNumber, int amount)
+        public bool TryWithdrawFromBankAccount(string? bankAccountNumber, string? bankAccountPin, KeyValuePair<string, FixedPoint2> currency)
         {
-            if(!TryGetBankAccount(bankAccountNumber, out var bankAccountComponent))
+            if(!TryGetBankAccount(bankAccountNumber, bankAccountPin, out var bankAccountComponent))
                 return false;
-            return bankAccountComponent.TryChangeBalanceBy(-amount);
+            if (currency.Key != bankAccountComponent.CurrencyType)
+                return false;
+            return bankAccountComponent.TryChangeBalanceBy(-currency.Value);
         }
-        public bool TryInsertToBankAccount(string bankAccountNumber, int amount)
+        public bool TryInsertToBankAccount(string? bankAccountNumber, string? bankAccountPin, KeyValuePair<string, FixedPoint2> currency)
         {
-            if (!TryGetBankAccount(bankAccountNumber, out var bankAccountComponent))
+            if (!TryGetBankAccount(bankAccountNumber, bankAccountPin, out var bankAccountComponent))
                 return false;
-            return bankAccountComponent.TryChangeBalanceBy(amount);
+            if (currency.Key != bankAccountComponent.CurrencyType)
+                return false;
+            return bankAccountComponent.TryChangeBalanceBy(currency.Value);
         }
         public void TryGenerateStartingBalance(BankAccountComponent bankAccountComponent, JobPrototype jobPrototype)
         {

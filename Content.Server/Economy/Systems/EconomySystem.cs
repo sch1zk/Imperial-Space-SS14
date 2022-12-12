@@ -26,7 +26,7 @@ namespace Content.Server.Economy.Systems
                 return;
 
             if (TryComp<ATMComponent>(args.Target, out var atm))
-                args.Handled = _atmSystem.TryInsert(_atmSystem.GetCurrencyValue(component), atm);
+                args.Handled = _atmSystem.TryAddCurrency(_storeSystem.GetCurrencyValue(component), atm);
             else if (TryComp<StoreComponent>(args.Target, out var store))
             {
                 if (!store.Opened)

@@ -3,7 +3,9 @@ using Content.Server.UserInterface;
 using Content.Shared.Access.Components;
 using Content.Shared.Economy;
 using Content.Shared.Economy.ATM;
+using Content.Shared.Store;
 using Robust.Server.GameObjects;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Set;
 
 namespace Content.Server.Economy.Components
 {
@@ -15,6 +17,8 @@ namespace Content.Server.Economy.Components
         
         //[Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
         [ViewVariables] private BoundUserInterface? UserInterface => Owner.GetUIOrNull(ATMUiKey.Key);
+        [ViewVariables(VVAccess.ReadOnly), DataField("currencyWhitelist", customTypeSerializer: typeof(PrototypeIdHashSetSerializer<CurrencyPrototype>))]
+        public HashSet<string> CurrencyWhitelist = new();
         protected override void Initialize()
         {
             base.Initialize();
