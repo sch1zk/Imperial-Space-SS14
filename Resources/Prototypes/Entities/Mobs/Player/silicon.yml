@@ -78,8 +78,8 @@
       - id: WelderExperimental
   - type: NameIdentifier
     group: Drone
-  - type: Inventory
-    templateId: drone
+  # - type: Inventory
+  #   templateId: drone
   - type: Strippable
   - type: UserInterface
     interfaces:
