@@ -1,19 +1,17 @@
 using Content.Server.Economy.Components;
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
+using Content.Server.Stack;
 using Content.Shared.Access.Components;
-using Content.Shared.Economy;
 using Content.Shared.Economy.ATM;
 using Content.Shared.FixedPoint;
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Store;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
-using Content.Server.Stack;
-using static Content.Shared.Economy.ATM.SharedATMComponent;
-using Content.Shared.Hands.EntitySystems;
-using System.Linq;
-using Content.Shared.Store;
 using Robust.Shared.Prototypes;
-using YamlDotNet.Core.Tokens;
+using System.Linq;
+using static Content.Shared.Economy.ATM.SharedATMComponent;
 
 namespace Content.Server.Economy.Systems
 {
@@ -25,7 +23,7 @@ namespace Content.Server.Economy.Systems
         [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
         [Dependency] private readonly StackSystem _stack = default!;
         [Dependency] private readonly SharedHandsSystem _hands = default!;
-        
+
         public override void Initialize()
         {
             base.Initialize();
@@ -66,13 +64,13 @@ namespace Content.Server.Economy.Systems
                 if (_entities.TryGetComponent<IdCardComponent>(idCardEntityUid, out var idCardComponent))
                 {
                     idCardFullName = idCardComponent.FullName;
-                    if (_bankManagerSystem.TryGetBankAccount(idCardComponent.StoredBankAccountNumber, idCardComponent.StoredBankAccountPin, out var bankAccountComponent))
+                    if (_bankManagerSystem.TryGetBankAccount(idCardComponent.StoredBankAccountNumber, idCardComponent.StoredBankAccountPin, out var bankAccount))
                     {
                         idCardStoredBankAccountNumber = idCardComponent.StoredBankAccountNumber;
-                        if (bankAccountComponent.AccountPin.Equals(idCardComponent.StoredBankAccountPin))
+                        if (bankAccount.AccountPin.Equals(idCardComponent.StoredBankAccountPin))
                         {
                             haveAccessToBankAccount = true;
-                            bankAccountBalance = bankAccountComponent.Balance.ToString();
+                            bankAccountBalance = bankAccount.Balance.ToString();
                         }
                     }
                 }

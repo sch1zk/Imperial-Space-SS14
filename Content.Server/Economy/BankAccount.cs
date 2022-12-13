@@ -1,10 +1,7 @@
 using Content.Shared.FixedPoint;
-using Robust.Shared.Random;
 
-namespace Content.Shared.Economy;
-
-[RegisterComponent]
-public sealed class BankAccountComponent : Component
+namespace Content.Server.Economy;
+public sealed class BankAccount
 {
     [ViewVariables(VVAccess.ReadOnly), DataField("accountNumber")]
     public string AccountNumber { get; }
@@ -14,12 +11,13 @@ public sealed class BankAccountComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField("balance")]
     public FixedPoint2 Balance { get; set; }
     [ViewVariables(VVAccess.ReadOnly), DataField("currencyType")]
-    public string CurrencyType { get; } = "SpaceCredits";
-    public BankAccountComponent(string accountNumber, string accountPin)
+    public string CurrencyType { get; }
+    public BankAccount(string accountNumber, string accountPin, string currencyType = "SpaceCredits")
     {
         AccountNumber = accountNumber;
         AccountPin = accountPin;
         Balance = 0;
+        CurrencyType = currencyType;
     }
     public bool TryChangeBalanceBy(FixedPoint2 amount)
     {

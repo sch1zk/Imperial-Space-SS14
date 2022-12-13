@@ -454,6 +454,8 @@ namespace Content.Server.GameTicking
 
             _gameMapManager.ClearSelectedMap();
 
+            _bankManagerSystem.Clear();
+
             // Clear up any game rules.
             ClearGameRules();
 

@@ -5,6 +5,7 @@ using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
 using Content.Server.Corvax.Sponsors;
 using Content.Server.Database;
+using Content.Server.Economy.Systems;
 using Content.Server.Ghost;
 using Content.Server.Humanoid;
 using Content.Server.Maps;
@@ -122,5 +123,6 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly ServerUpdateManager _serverUpdates = default!;
         [Dependency] private readonly PlayTimeTrackingSystem _playTimeTrackings = default!;
         [Dependency] private readonly UserDbDataManager _userDb = default!;
+        [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
     }
 }
