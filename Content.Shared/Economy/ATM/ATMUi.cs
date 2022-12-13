@@ -1,3 +1,4 @@
+using Content.Shared.FixedPoint;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Economy.ATM
@@ -10,8 +11,8 @@ namespace Content.Shared.Economy.ATM
     [Serializable, NetSerializable]
     public sealed class ATMRequestWithdrawMessage : BoundUserInterfaceMessage
     {
-        public int Amount;
-        public ATMRequestWithdrawMessage(int amount)
+        public FixedPoint2 Amount;
+        public ATMRequestWithdrawMessage(FixedPoint2 amount)
         {
             Amount = amount;
         }

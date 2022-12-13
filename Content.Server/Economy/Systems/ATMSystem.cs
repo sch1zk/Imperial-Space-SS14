@@ -58,7 +58,7 @@ namespace Content.Server.Economy.Systems
             string? idCardEntityName = null;
             string? idCardStoredBankAccountNumber = null;
             bool haveAccessToBankAccount = false;
-            string? bankAccountBalance = null;
+            FixedPoint2? bankAccountBalance = null;
             if (component.IdCardSlot.Item is { Valid: true } idCardEntityUid)
             {
                 if (_entities.TryGetComponent<IdCardComponent>(idCardEntityUid, out var idCardComponent))
@@ -70,7 +70,7 @@ namespace Content.Server.Economy.Systems
                         if (bankAccount.AccountPin.Equals(idCardComponent.StoredBankAccountPin))
                         {
                             haveAccessToBankAccount = true;
-                            bankAccountBalance = bankAccount.Balance.ToString();
+                            bankAccountBalance = bankAccount.Balance;
                         }
                     }
                 }
@@ -103,10 +103,10 @@ namespace Content.Server.Economy.Systems
             if (proto.Cash == null || !proto.CanWithdraw)
                 return;
 
-            var parsedAmount = FixedPoint2.New(msg.Amount);
+            var amountRemaining = msg.Amount;
             if (!_bankManagerSystem.TryWithdrawFromBankAccount(
                 bankAccountNumber, bankAccountPin,
-                new KeyValuePair<string, FixedPoint2>(currency, parsedAmount)))
+                new KeyValuePair<string, FixedPoint2>(currency, amountRemaining)))
                 return;
 
             //FixedPoint2 amountRemaining = msg.Amount;
@@ -115,10 +115,10 @@ namespace Content.Server.Economy.Systems
             foreach (var value in sortedCashValues)
             {
                 var cashId = proto.Cash[value];
-                var amountToSpawn = (int) MathF.Floor((float) (parsedAmount / value));
+                var amountToSpawn = (int) MathF.Floor((float) (amountRemaining / value));
                 var ents = _stack.SpawnMultiple(cashId, amountToSpawn, coordinates);
                 _hands.PickupOrDrop(buyer, ents.First());
-                parsedAmount -= value * amountToSpawn;
+                amountRemaining -= value * amountToSpawn;
             }
             UpdateComponentUserInterface(component);
         }

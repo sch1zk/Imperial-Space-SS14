@@ -1,4 +1,5 @@
 using Content.Shared.Containers.ItemSlots;
+using Content.Shared.FixedPoint;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 
@@ -20,14 +21,14 @@ namespace Content.Shared.Economy.ATM
             public readonly string? IdCardEntityName;
             public readonly string? IdCardStoredBankAccountNumber;
             public readonly bool HaveAccessToBankAccount;
-            public readonly string? BankAccountBalance;
+            public readonly FixedPoint2? BankAccountBalance;
             public ATMBoundUserInterfaceState(
                 bool isCardPresent,
                 string? idCardFullName,
                 string? idCardEntityName,
                 string? idCardStoredBankAccountNumber,
                 bool haveAccessToBankAccount,
-                string? bankAccountBalance)
+                FixedPoint2? bankAccountBalance)
             {
                 IsCardPresent = isCardPresent;
                 IdCardFullName = idCardFullName;
