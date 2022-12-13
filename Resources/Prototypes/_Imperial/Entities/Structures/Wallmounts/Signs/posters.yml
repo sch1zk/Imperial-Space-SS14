@@ -1,0 +1,8 @@
+- type: entity
+  parent: PosterBase
+  id: PosterImperialLogo
+  name: "Empire Logo"
+  description: "A poster depicting the First Corporate Empire logo."
+  components:
+  - type: Sprite
+    state: poster_imperial

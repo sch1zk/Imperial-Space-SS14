@@ -148,7 +148,7 @@
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       - shape:
           !type:PhysShapeCircle
-          radius: 0.35
+          radius: 0.40
         density: 185
         restitution: 0.0
         mask:
@@ -177,6 +177,7 @@
     species: Human
   - type: Body
     prototype: Human
+    requiredLegs: 2
   - type: Damageable
     damageContainer: Biological
   - type: RadiationReceiver
@@ -192,7 +193,7 @@
   - type: MobState
     thresholds:
       0: Alive
-      100: Critical
+      50: Critical
       200: Dead
   - type: Destructible
     thresholds:
@@ -204,11 +205,11 @@
           - !type:GibBehavior { }
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.7
-      80: 0.5
+      30: 0.7
+      40: 0.5
   - type: HeatResistance
   - type: DamageVisuals
-    thresholds: [ 20, 40, 100 ]
+    thresholds: [ 10, 20, 50 ]
     targetLayers:
       - "enum.HumanoidVisualLayers.Chest"
       - "enum.HumanoidVisualLayers.Head"
@@ -251,7 +252,7 @@
     attackRate: 1
     damage:
       types:
-        Blunt: 5
+        Blunt: 2
   - type: Pullable
   - type: DoAfter
   - type: CreamPied
@@ -366,6 +367,7 @@
       species: Human
     - type: Body
       prototype: Human
+      requiredLegs: 2
     - type: Damageable
       damageContainer: Biological
     - type: MobState

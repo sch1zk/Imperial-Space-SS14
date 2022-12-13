@@ -268,7 +268,8 @@ namespace Content.Server.Nutrition.EntitySystems
             }
 
             drink.CancelToken = new CancellationTokenSource();
-            var moveBreak = user != target;
+            //var moveBreak = user != target;
+            var moveBreak = true;
 
             var flavors = _flavorProfileSystem.GetLocalizedFlavorsMessage(user, drinkSolution);
 
