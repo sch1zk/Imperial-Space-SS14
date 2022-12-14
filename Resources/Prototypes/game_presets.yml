@@ -43,7 +43,6 @@
   maxPlayers: 5
   rules:
     - Sandbox
-    - WageScheduler
 
 - type: gamePreset
   id: Traitor
