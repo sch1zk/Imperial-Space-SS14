@@ -1,6 +1,6 @@
 using Content.Server.Access.Systems;
 using Content.Server.DetailExaminable;
-using Content.Server.Economy.Systems;
+using Content.Server.Economy;
 using Content.Server.Hands.Components;
 using Content.Server.Hands.Systems;
 using Content.Server.Humanoid;

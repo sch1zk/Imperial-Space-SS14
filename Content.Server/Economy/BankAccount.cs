@@ -3,19 +3,22 @@ using Content.Shared.FixedPoint;
 namespace Content.Server.Economy;
 public sealed class BankAccount
 {
-    [ViewVariables(VVAccess.ReadOnly), DataField("accountNumber")]
+    [ViewVariables(VVAccess.ReadOnly)]
     public string AccountNumber { get; }
-    [ViewVariables(VVAccess.ReadOnly), DataField("accountPin")]
+    [ViewVariables(VVAccess.ReadOnly)]
     public string AccountPin { get; }
+    [ViewVariables(VVAccess.ReadWrite)]
+    public string? AccountName { get; set; }
 
-    [ViewVariables(VVAccess.ReadWrite), DataField("balance")]
+    [ViewVariables(VVAccess.ReadWrite)]
     public FixedPoint2 Balance { get; set; }
-    [ViewVariables(VVAccess.ReadOnly), DataField("currencyType")]
+    [ViewVariables(VVAccess.ReadOnly)]
     public string CurrencyType { get; }
-    public BankAccount(string accountNumber, string accountPin, string currencyType = "SpaceCredits")
+    public BankAccount(string accountNumber, string accountPin, string currencyType = "SpaceCredits", string? accountName = null)
     {
         AccountNumber = accountNumber;
         AccountPin = accountPin;
+        AccountName = accountName;
         Balance = 0;
         CurrencyType = currencyType;
     }

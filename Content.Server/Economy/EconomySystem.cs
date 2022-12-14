@@ -3,9 +3,9 @@ using Content.Shared.Interaction;
 using Content.Shared.Popups;
 using Robust.Shared.Player;
 using Content.Server.Store.Systems;
-using Content.Server.Economy.Components;
+using Content.Server.Economy.ATM;
 
-namespace Content.Server.Economy.Systems
+namespace Content.Server.Economy
 {
     public sealed class EconomySystem : EntitySystem
     {

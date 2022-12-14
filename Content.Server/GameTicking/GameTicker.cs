@@ -4,7 +4,7 @@ using Content.Server.Chat;
 using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
 using Content.Server.Database;
-using Content.Server.Economy.Systems;
+using Content.Server.Economy;
 using Content.Server.Ghost;
 using Content.Server.Maps;
 using Content.Server.Players.PlayTimeTracking;

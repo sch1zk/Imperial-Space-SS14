@@ -4,7 +4,7 @@ using Content.Shared.Roles;
 using Robust.Shared.Random;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Content.Server.Economy.Systems
+namespace Content.Server.Economy
 {
     public sealed class BankManagerSystem : EntitySystem
     {
@@ -14,7 +14,6 @@ namespace Content.Server.Economy.Systems
         public override void Initialize()
         {
             base.Initialize();
-            Logger.InfoS("bankmanager", $"Initializing bankmanager, active bank accounts: {_activeBankAccounts.Count}");
         }
         public bool TryGetBankAccount(string? bankAccountNumber, string? bankAccountPin, [MaybeNullWhen(false)] out BankAccount bankAccount)
         {
@@ -28,6 +27,12 @@ namespace Content.Server.Economy.Systems
                 return false;
             return true;
         }
+        public bool IsBankAccountExists(string? bankAccountNumber)
+        {
+            if (bankAccountNumber == null)
+                return false;
+            return _activeBankAccounts.ContainsKey(bankAccountNumber);
+        }
         public BankAccount? CreateNewBankAccount()
         {
             int bankAccountNumber;
@@ -35,10 +40,9 @@ namespace Content.Server.Economy.Systems
             {
                 bankAccountNumber = _robustRandom.Next(111111, 999999);
             } while (_activeBankAccounts.ContainsKey(bankAccountNumber.ToString()));
-            string bankAccountPin = GenerateBankAccountPin();
-            string bankAccountNumberStr = bankAccountNumber.ToString();
-            BankAccount bankAccount = new BankAccount(bankAccountNumberStr, bankAccountPin);
-            Logger.InfoS("bankmanager", $"Creating new account, active bank accounts: {_activeBankAccounts.Count}");
+            var bankAccountPin = GenerateBankAccountPin();
+            var bankAccountNumberStr = bankAccountNumber.ToString();
+            var bankAccount = new BankAccount(bankAccountNumberStr, bankAccountPin);
             return _activeBankAccounts.TryAdd(bankAccountNumberStr, bankAccount)
                 ? bankAccount
                 : null;
@@ -46,7 +50,7 @@ namespace Content.Server.Economy.Systems
         private string GenerateBankAccountPin()
         {
             var pin = string.Empty;
-            for (int i = 0; i < 4; i++)
+            for (var i = 0; i < 4; i++)
             {
                 pin += _robustRandom.Next(0, 9).ToString();
             }
@@ -67,6 +71,40 @@ namespace Content.Server.Economy.Systems
             if (currency.Key != bankAccount.CurrencyType)
                 return false;
             return bankAccount.TryChangeBalanceBy(currency.Value);
+        }
+        public bool TryTransferFromToBankAccount(string? bankAccountFromNumber, string? bankAccountFromPin, string? bankAccountNumberTo, FixedPoint2 amount)
+        {
+            if (bankAccountFromNumber == null || bankAccountNumberTo == null)
+                return false;
+            if (!TryGetBankAccount(bankAccountFromNumber, bankAccountFromPin, out var bankAccountFrom))
+                return false;
+            if (!_activeBankAccounts.TryGetValue(bankAccountNumberTo, out var bankAccountTo))
+                return false;
+            if (bankAccountFrom.CurrencyType != bankAccountTo.CurrencyType)
+                return false;
+            if (bankAccountFrom.TryChangeBalanceBy(-amount))
+            {
+                return bankAccountTo.TryChangeBalanceBy(amount);
+            }
+            return false;
+        }
+        public bool TryGetBankAccountCurrencyType(string? bankAccountNumber, out string? currencyType)
+        {
+            currencyType = null;
+            if (bankAccountNumber == null)
+                return false;
+            if (!_activeBankAccounts.TryGetValue(bankAccountNumber, out var bankAccount))
+                return false;
+            currencyType = bankAccount.CurrencyType;
+            return true;
+        }
+        public string? GetBankAccountName(string? bankAccountNumber)
+        {
+            if (bankAccountNumber == null)
+                return null;
+            if (!_activeBankAccounts.TryGetValue(bankAccountNumber, out var bankAccount))
+                return null;
+            return bankAccount.AccountName;
         }
         public void TryGenerateStartingBalance(BankAccount bankAccount, JobPrototype jobPrototype)
         {

@@ -2,7 +2,6 @@ using Content.Server.Administration.Logs;
 using Content.Server.Database;
 using Content.Server.Kitchen.Components;
 using Content.Server.Popups;
-using Content.Server.Economy.Systems;
 using Content.Shared.Access;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
@@ -178,6 +177,7 @@ namespace Content.Server.Access.Systems
                 return false;
             id.StoredBankAccountNumber = bankAccount.AccountNumber;
             id.StoredBankAccountPin = bankAccount.AccountPin;
+            bankAccount.AccountName = id.FullName;
             Dirty(id);
             return true;
         }

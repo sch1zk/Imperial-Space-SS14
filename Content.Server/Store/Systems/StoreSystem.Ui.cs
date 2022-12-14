@@ -1,7 +1,7 @@
 using Content.Server.Access.Systems;
 using Content.Server.Actions;
 using Content.Server.Administration.Logs;
-using Content.Server.Economy.Systems;
+using Content.Server.Economy;
 using Content.Server.Mind.Components;
 using Content.Server.Stack;
 using Content.Server.Store.Components;
