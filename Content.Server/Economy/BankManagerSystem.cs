@@ -37,10 +37,12 @@ namespace Content.Server.Economy
         {
             if(bankAccountNumber == null)
             {
+                int p;
                 do
                 {
-                    bankAccountNumber = _robustRandom.Next(111111, 999999);
-                } while (_activeBankAccounts.ContainsKey(bankAccountNumber.ToString()));
+                    p = _robustRandom.Next(111111, 999999);
+                } while (_activeBankAccounts.ContainsKey(p.ToString()));
+                bankAccountNumber = p;
             }
             var bankAccountPin = GenerateBankAccountPin();
             var bankAccountNumberStr = bankAccountNumber.ToString();

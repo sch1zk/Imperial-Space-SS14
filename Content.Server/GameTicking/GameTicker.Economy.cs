@@ -10,6 +10,7 @@ namespace Content.Server.GameTicking
             foreach (var department in _prototypeManager.EnumeratePrototypes<DepartmentPrototype>())
             {
                 var bankAccount = _bankManagerSystem.CreateNewBankAccount(department.AccountNumber);
+                if (bankAccount == null) continue;
                 bankAccount.AccountName = Loc.GetString($"department-{department.ID}");
             }
         }
