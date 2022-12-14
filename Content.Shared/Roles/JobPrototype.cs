@@ -1,4 +1,5 @@
 using Content.Shared.Access;
+using Content.Shared.FixedPoint;
 using Content.Shared.Players.PlayTimeTracking;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
@@ -97,10 +98,15 @@ namespace Content.Shared.Roles
         [DataField("extendedAccessGroups", customTypeSerializer: typeof(PrototypeIdListSerializer<AccessGroupPrototype>))]
         public IReadOnlyCollection<string> ExtendedAccessGroups { get; } = Array.Empty<string>();
 
+        [DataField("department", customTypeSerializer: typeof(PrototypeIdSerializer<DepartmentPrototype>))]
+        public string? Department { get; }
+
         [DataField("minBankBalance")]
         public int MinBankBalance { get; } = 0;
 
         [DataField("maxBankBalance")]
         public int MaxBankBalance { get; } = 0;
+        [DataField("wage")]
+        public FixedPoint2 Wage { get; } = 0;
     }
 }

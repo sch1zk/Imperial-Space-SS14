@@ -24,6 +24,8 @@
   - Atmospherics
   minBankBalance: 800
   maxBankBalance: 1200
+  department: Command
+  wage: 200
 
 - type: startingGear
   id: ChiefEngineerGear

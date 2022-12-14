@@ -19,6 +19,8 @@
   - External
   minBankBalance: 300
   maxBankBalance: 500
+  department: Security
+  wage: 100
 
 - type: startingGear
   id: WardenGear

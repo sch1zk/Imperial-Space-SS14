@@ -1,4 +1,6 @@
+using Content.Server.Administration.Logs;
 using Content.Shared.Economy;
+using Content.Shared.Database;
 using Content.Shared.FixedPoint;
 using Content.Shared.Roles;
 using Robust.Shared.Random;
@@ -9,23 +11,38 @@ namespace Content.Server.Economy
     public sealed class BankManagerSystem : EntitySystem
     {
         [Dependency] private readonly IRobustRandom _robustRandom = default!;
+        [Dependency] private readonly IAdminLogManager _adminLogger = default!;
 
         private static Dictionary<string, BankAccount> _activeBankAccounts = new();
         public override void Initialize()
         {
             base.Initialize();
         }
-        public bool TryGetBankAccount(string? bankAccountNumber, string? bankAccountPin, [MaybeNullWhen(false)] out BankAccount bankAccount)
+        public bool TryGetBankAccount(string? bankAccountNumber, [MaybeNullWhen(false)] out BankAccount bankAccount)
         {
-            bankAccount = null;
-            if (bankAccountNumber == null || bankAccountPin == null)
-                return false;
-            _activeBankAccounts.TryGetValue(bankAccountNumber, out bankAccount);
-            if (bankAccount == null)
-                return false;
-            if (bankAccountNumber != bankAccount.AccountNumber || bankAccountPin != bankAccount.AccountPin)
+            bankAccount = GetBankAccount(bankAccountNumber);
+            if (bankAccount == null || bankAccountNumber != bankAccount.AccountNumber)
                 return false;
             return true;
+        }
+        public bool TryGetBankAccountWithPin(string? bankAccountNumber, string? bankAccountPin, [MaybeNullWhen(false)] out BankAccount bankAccount)
+        {
+            bankAccount = null;
+            if (bankAccountPin == null)
+                return false;
+            bankAccount = GetBankAccount(bankAccountNumber);
+            if (bankAccount == null ||
+                bankAccountNumber != bankAccount.AccountNumber ||
+                bankAccountPin != bankAccount.AccountPin)
+                return false;
+            return true;
+        }
+        private BankAccount? GetBankAccount(string? bankAccountNumber)
+        {
+            if (bankAccountNumber == null)
+                return null;
+            _activeBankAccounts.TryGetValue(bankAccountNumber, out var bankAccount);
+            return bankAccount;
         }
         public bool IsBankAccountExists(string? bankAccountNumber)
         {
@@ -35,17 +52,20 @@ namespace Content.Server.Economy
         }
         public BankAccount? CreateNewBankAccount(int? bankAccountNumber = null)
         {
+            int number;
             if(bankAccountNumber == null)
             {
-                int p;
                 do
                 {
-                    p = _robustRandom.Next(111111, 999999);
-                } while (_activeBankAccounts.ContainsKey(p.ToString()));
-                bankAccountNumber = p;
+                    number = _robustRandom.Next(111111, 999999);
+                } while (_activeBankAccounts.ContainsKey(number.ToString()));
+            }
+            else
+            {
+                number = (int) bankAccountNumber;
             }
             var bankAccountPin = GenerateBankAccountPin();
-            var bankAccountNumberStr = bankAccountNumber.ToString();
+            var bankAccountNumberStr = number.ToString();
             var bankAccount = new BankAccount(bankAccountNumberStr, bankAccountPin);
             return _activeBankAccounts.TryAdd(bankAccountNumberStr, bankAccount)
                 ? bankAccount
@@ -62,7 +82,7 @@ namespace Content.Server.Economy
         }
         public bool TryWithdrawFromBankAccount(string? bankAccountNumber, string? bankAccountPin, KeyValuePair<string, FixedPoint2> currency)
         {
-            if (!TryGetBankAccount(bankAccountNumber, bankAccountPin, out var bankAccount))
+            if (!TryGetBankAccountWithPin(bankAccountNumber, bankAccountPin, out var bankAccount))
                 return false;
             if (currency.Key != bankAccount.CurrencyType)
                 return false;
@@ -70,19 +90,19 @@ namespace Content.Server.Economy
         }
         public bool TryInsertToBankAccount(string? bankAccountNumber, string? bankAccountPin, KeyValuePair<string, FixedPoint2> currency)
         {
-            if (!TryGetBankAccount(bankAccountNumber, bankAccountPin, out var bankAccount))
+            if (!TryGetBankAccountWithPin(bankAccountNumber, bankAccountPin, out var bankAccount))
                 return false;
             if (currency.Key != bankAccount.CurrencyType)
                 return false;
             return bankAccount.TryChangeBalanceBy(currency.Value);
         }
-        public bool TryTransferFromToBankAccount(string? bankAccountFromNumber, string? bankAccountFromPin, string? bankAccountNumberTo, FixedPoint2 amount)
+        public bool TryTransferFromToBankAccount(string? bankAccountFromNumber, string? bankAccountFromPin, string? bankAccountToNumber, FixedPoint2 amount)
         {
-            if (bankAccountFromNumber == null || bankAccountNumberTo == null)
+            if (bankAccountFromNumber == null || bankAccountToNumber == null)
                 return false;
-            if (!TryGetBankAccount(bankAccountFromNumber, bankAccountFromPin, out var bankAccountFrom))
+            if (!TryGetBankAccountWithPin(bankAccountFromNumber, bankAccountFromPin, out var bankAccountFrom))
                 return false;
-            if (!_activeBankAccounts.TryGetValue(bankAccountNumberTo, out var bankAccountTo))
+            if (!_activeBankAccounts.TryGetValue(bankAccountToNumber, out var bankAccountTo))
                 return false;
             if (bankAccountFrom.CurrencyType != bankAccountTo.CurrencyType)
                 return false;

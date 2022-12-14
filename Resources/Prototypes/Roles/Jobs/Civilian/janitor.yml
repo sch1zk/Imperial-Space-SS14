@@ -14,6 +14,8 @@
     prototype: WeaponRevolverInspector
   minBankBalance: 300
   maxBankBalance: 500
+  department: Civilian
+  wage: 100
 
 - type: startingGear
   id: JanitorGear

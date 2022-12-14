@@ -11,7 +11,8 @@ namespace Content.Server.GameTicking
             {
                 var bankAccount = _bankManagerSystem.CreateNewBankAccount(department.AccountNumber);
                 if (bankAccount == null) continue;
-                bankAccount.AccountName = Loc.GetString($"department-{department.ID}");
+                bankAccount.AccountName = department.ID;
+                bankAccount.Balance = 100000;
             }
         }
     }

@@ -20,8 +20,6 @@
           Burn: 3
   - !type:AddImplantSpecial
     implants: [ SadTromboneImplant ]
-  minBankBalance: 300
-  maxBankBalance: 500
 
 - type: startingGear
   id: ClownGear

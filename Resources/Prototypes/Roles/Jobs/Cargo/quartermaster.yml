@@ -25,6 +25,8 @@
   - Command
   minBankBalance: 300
   maxBankBalance: 500
+  department: Cargo
+  wage: 100
 
 - type: startingGear
   id: QuartermasterGear

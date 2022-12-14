@@ -64,7 +64,7 @@ namespace Content.Server.Economy.ATM
                 if (_entities.TryGetComponent<IdCardComponent>(idCardEntityUid, out var idCardComponent))
                 {
                     idCardFullName = idCardComponent.FullName;
-                    if (_bankManagerSystem.TryGetBankAccount(idCardComponent.StoredBankAccountNumber, idCardComponent.StoredBankAccountPin, out var bankAccount))
+                    if (_bankManagerSystem.TryGetBankAccountWithPin(idCardComponent.StoredBankAccountNumber, idCardComponent.StoredBankAccountPin, out var bankAccount))
                     {
                         idCardStoredBankAccountNumber = idCardComponent.StoredBankAccountNumber;
                         if (bankAccount.AccountPin.Equals(idCardComponent.StoredBankAccountPin))

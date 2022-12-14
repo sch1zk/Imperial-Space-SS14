@@ -1440,5 +1440,8 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool>
             QueueEnabled = CVarDef.Create("queue.enabled", false, CVar.SERVERONLY);
+
+        public static readonly CVarDef<bool>
+            EconomyWagesEnabled = CVarDef.Create("economy.wages_enabled", true, CVar.SERVERONLY);
     }
 }

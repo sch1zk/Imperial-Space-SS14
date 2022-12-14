@@ -1,6 +1,7 @@
 using Content.Server.Access.Systems;
 using Content.Server.DetailExaminable;
 using Content.Server.Economy;
+using Content.Server.Economy.Wage;
 using Content.Server.Hands.Components;
 using Content.Server.Hands.Systems;
 using Content.Server.Humanoid;
@@ -41,6 +42,7 @@ public sealed class StationSpawningSystem : EntitySystem
     [Dependency] private readonly SharedAccessSystem _accessSystem = default!;
     [Dependency] private readonly IdentitySystem _identity = default!;
     [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
+    [Dependency] private readonly WageManagerSystem _wageManagerSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -194,7 +196,10 @@ public sealed class StationSpawningSystem : EntitySystem
         _cardSystem.TryChangeFullName(cardId, characterName, card);
         _cardSystem.TryChangeJobTitle(cardId, jobPrototype.LocalizedName, card);
         if (_cardSystem.TryStoreNewBankAccount(cardId, card, out var bankAccount) && bankAccount != null)
+        {
             _bankManagerSystem.TryGenerateStartingBalance(bankAccount, jobPrototype);
+            _wageManagerSystem.TryAddAccountToWagePayoutList(bankAccount, jobPrototype);
+        }
 
         var extendedAccess = false;
         if (station != null)
