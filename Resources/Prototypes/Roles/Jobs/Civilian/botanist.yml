@@ -14,7 +14,7 @@
   - Bar
   minBankBalance: 300
   maxBankBalance: 500
-  department: Cargo
+  department: Civilian
   wage: 100
 
 - type: startingGear
