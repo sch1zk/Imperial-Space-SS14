@@ -47,7 +47,7 @@ namespace Content.Server.Economy.Eftpos
         }
         private void OnChangeLinkedAccountNumber(EntityUid uid, EftposComponent component, EftposChangeLinkedAccountNumberMessage msg)
         {
-            if (component.LockedBy != null)
+            if (component.LockedBy != null || !component.CanChangeAccountNumber)
             {
                 Deny(component);
                 return;

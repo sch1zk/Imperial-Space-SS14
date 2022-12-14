@@ -33,13 +33,15 @@ namespace Content.Server.Economy
                 return false;
             return _activeBankAccounts.ContainsKey(bankAccountNumber);
         }
-        public BankAccount? CreateNewBankAccount()
+        public BankAccount? CreateNewBankAccount(int? bankAccountNumber = null)
         {
-            int bankAccountNumber;
-            do
+            if(bankAccountNumber == null)
             {
-                bankAccountNumber = _robustRandom.Next(111111, 999999);
-            } while (_activeBankAccounts.ContainsKey(bankAccountNumber.ToString()));
+                do
+                {
+                    bankAccountNumber = _robustRandom.Next(111111, 999999);
+                } while (_activeBankAccounts.ContainsKey(bankAccountNumber.ToString()));
+            }
             var bankAccountPin = GenerateBankAccountPin();
             var bankAccountNumberStr = bankAccountNumber.ToString();
             var bankAccount = new BankAccount(bankAccountNumberStr, bankAccountPin);

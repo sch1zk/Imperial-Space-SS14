@@ -6,7 +6,7 @@
             <Label
                 Name="ValueLabel"
                 Access="Public"
-                Text="Value: "/>
+                Text="{Loc 'eftpos-ui-value-label-text'}"/>
             <LineEdit
                 Name="ValueLineEdit"
                 PlaceHolder="0"
@@ -20,10 +20,10 @@
             <Label
                 Name="LinkedAccountLabel"
                 Access="Public"
-                Text="Linked account: "/>
+                Text="{Loc 'eftpos-ui-linked-account-label-text'}"/>
             <LineEdit
                 Name="LinkedAccountLineEdit"
-                PlaceHolder="No linked account"
+                PlaceHolder="{Loc 'eftpos-ui-no-linked-account-text'}"
                 HorizontalExpand="True"
                 Access="Public"/>
             <Button
@@ -34,11 +34,11 @@
             Name="SwipeCardButton"
             Access="Public"
             HorizontalAlignment="Center"
-            Text="Swipe your card to finish this transaction."/>
+            Text="{Loc 'eftpos-ui-swipe-card-button-text'}"/>
         <Button
             Name="LockButton"
             Access="Public"
             HorizontalAlignment="Center"
-            Text="Lock EFTPOS."/>
+            Text="{Loc 'eftpos-ui-lock-button-text'}"/>
     </BoxContainer>
 </DefaultWindow>

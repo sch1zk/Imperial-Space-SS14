@@ -17,7 +17,12 @@ namespace Content.Server.Economy.Eftpos
         [ViewVariables] public FixedPoint2? Value { get; set; } = null;
         [ViewVariables] public string? LinkedAccountNumber { get; set; } = null;
         [ViewVariables(VVAccess.ReadOnly)] public string? LinkedAccountName { get; set; } = null;
+        [ViewVariables, DataField("canChangeAccountNumber")] public bool CanChangeAccountNumber { get; } = true;
         [ViewVariables] public EntityUid? LockedBy { get; set; } = null;
+
+        [DataField("presetAccountNumber")] private string? _PresetAccountNumber = null;
+        [DataField("presetAccountName")] private string? _PresetAccountName = null;
+
         [ViewVariables(VVAccess.ReadOnly)] public string? CurrencyType { get; set; }
         [DataField("soundApply")]
         // Taken from: https://github.com/Baystation12/Baystation12 at commit 662c08272acd7be79531550919f56f846726eabb
@@ -30,6 +35,14 @@ namespace Content.Server.Economy.Eftpos
         {
             base.Initialize();
             Owner.EnsureComponentWarn<ServerUserInterfaceComponent>();
+            InitPresetValues();
+        }
+        private void InitPresetValues()
+        {
+            if (_PresetAccountNumber != null)
+                LinkedAccountNumber = _PresetAccountNumber;
+            if (_PresetAccountName != null)
+                LinkedAccountName = _PresetAccountName;
         }
         public void UpdateUserInterface(EftposBoundUserInterfaceState state)
         {
