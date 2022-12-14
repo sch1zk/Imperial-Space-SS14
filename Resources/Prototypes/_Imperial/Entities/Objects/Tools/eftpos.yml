@@ -31,6 +31,7 @@
       presetAccountNumber: 1315
       presetAccountName: Cargo
       canChangeAccountNumber: false
+      currencyType: SpaceCredits
 
 - type: entity
   parent: Eftpos
@@ -41,6 +42,7 @@
       presetAccountNumber: 1316
       presetAccountName: Civilian
       canChangeAccountNumber: false
+      currencyType: SpaceCredits
 
 - type: entity
   parent: Eftpos
@@ -51,6 +53,7 @@
       presetAccountNumber: 1317
       presetAccountName: Command
       canChangeAccountNumber: false
+      currencyType: SpaceCredits
 
 - type: entity
   parent: Eftpos
@@ -61,6 +64,7 @@
       presetAccountNumber: 1318
       presetAccountName: Engineering
       canChangeAccountNumber: false
+      currencyType: SpaceCredits
 
 - type: entity
   parent: Eftpos
@@ -71,6 +75,7 @@
       presetAccountNumber: 1319
       presetAccountName: Medical
       canChangeAccountNumber: false
+      currencyType: SpaceCredits
 
 - type: entity
   parent: Eftpos
@@ -81,6 +86,7 @@
       presetAccountNumber: 1320
       presetAccountName: Security
       canChangeAccountNumber: false
+      currencyType: SpaceCredits
 
 - type: entity
   parent: Eftpos
@@ -91,3 +97,4 @@
       presetAccountNumber: 1321
       presetAccountName: Science
       canChangeAccountNumber: false
+      currencyType: SpaceCredits

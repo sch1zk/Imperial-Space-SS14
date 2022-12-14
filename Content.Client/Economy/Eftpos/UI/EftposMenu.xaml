@@ -15,6 +15,9 @@
             <Button
                 Name="ValueButton"
                 Access="Public"/>
+            <Label
+                Name="SymbolLabel"
+                Access="Public"/>
         </BoxContainer>
         <BoxContainer Orientation="Horizontal">
             <Label

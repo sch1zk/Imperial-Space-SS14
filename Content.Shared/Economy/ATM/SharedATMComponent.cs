@@ -22,13 +22,15 @@ namespace Content.Shared.Economy.ATM
             public readonly string? IdCardStoredBankAccountNumber;
             public readonly bool HaveAccessToBankAccount;
             public readonly FixedPoint2? BankAccountBalance;
+            public readonly string? CurrencySymbol;
             public ATMBoundUserInterfaceState(
                 bool isCardPresent,
                 string? idCardFullName,
                 string? idCardEntityName,
                 string? idCardStoredBankAccountNumber,
                 bool haveAccessToBankAccount,
-                FixedPoint2? bankAccountBalance)
+                FixedPoint2? bankAccountBalance,
+                string? currencySymbol)
             {
                 IsCardPresent = isCardPresent;
                 IdCardFullName = idCardFullName;
@@ -36,6 +38,7 @@ namespace Content.Shared.Economy.ATM
                 IdCardStoredBankAccountNumber = idCardStoredBankAccountNumber;
                 HaveAccessToBankAccount = haveAccessToBankAccount;
                 BankAccountBalance = bankAccountBalance;
+                CurrencySymbol = currencySymbol;
             }
         }
     }

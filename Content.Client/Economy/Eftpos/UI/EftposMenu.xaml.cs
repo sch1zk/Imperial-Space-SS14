@@ -31,6 +31,7 @@ namespace Content.Client.Economy.Eftpos.UI
             UpdateValue(state.Value);
             UpdateLinkedAccount(state.LinkedAccountNumber, state.LinkedAccountName);
             UpdateLocked(state.IsLocked);
+            SymbolLabel.Text = state.CurrencySymbol ?? "";
         }
 
         private void OnValueLineEditTextEntered(LineEdit.LineEditEventArgs args)
@@ -73,7 +74,7 @@ namespace Content.Client.Economy.Eftpos.UI
         {
             bool isValid = linkedAccountNumber != null;
             LinkedAccountLineEdit.Visible = !isValid;
-            LinkedAccountButton.Visible = isValid;
+            SymbolLabel.Visible = LinkedAccountButton.Visible = isValid;
             if (isValid)
             {
                 string s = string.Empty;
@@ -96,7 +97,6 @@ namespace Content.Client.Economy.Eftpos.UI
             SwipeCardButton.Visible = LockButton.Disabled = isLocked;
             SwipeCardButton.Disabled = LockButton.Visible = !isLocked;
             //ValueButton.Disabled = LinkedAccountButton.Disabled = isLocked;
-
         }
     }
 }

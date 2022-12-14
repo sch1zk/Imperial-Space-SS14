@@ -4,3 +4,4 @@ store-currency-display-spacecredits =
         [few] кредита
        *[other] кредитов
     }
+store-currency-spacecredits-currency-symbol = ¢

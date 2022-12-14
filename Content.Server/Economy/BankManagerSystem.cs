@@ -50,7 +50,7 @@ namespace Content.Server.Economy
                 return false;
             return _activeBankAccounts.ContainsKey(bankAccountNumber);
         }
-        public BankAccount? CreateNewBankAccount(int? bankAccountNumber = null)
+        public BankAccount? CreateNewBankAccount(int? bankAccountNumber = null, bool _isInfinite = false)
         {
             int number;
             if(bankAccountNumber == null)
@@ -66,7 +66,7 @@ namespace Content.Server.Economy
             }
             var bankAccountPin = GenerateBankAccountPin();
             var bankAccountNumberStr = number.ToString();
-            var bankAccount = new BankAccount(bankAccountNumberStr, bankAccountPin);
+            var bankAccount = new BankAccount(bankAccountNumberStr, bankAccountPin, isInfinite: _isInfinite);
             return _activeBankAccounts.TryAdd(bankAccountNumberStr, bankAccount)
                 ? bankAccount
                 : null;

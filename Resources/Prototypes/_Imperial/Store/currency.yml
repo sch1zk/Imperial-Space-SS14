@@ -11,3 +11,4 @@
   cash: 
     1: SpaceCredit
   canWithdraw: true
+  currencySymbol: store-currency-spacecredits-currency-symbol

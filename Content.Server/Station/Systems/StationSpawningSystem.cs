@@ -22,6 +22,8 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Server.CartridgeLoader;
+using Content.Server.CartridgeLoader.Cartridges;
 
 namespace Content.Server.Station.Systems;
 
@@ -199,6 +201,15 @@ public sealed class StationSpawningSystem : EntitySystem
         {
             _bankManagerSystem.TryGenerateStartingBalance(bankAccount, jobPrototype);
             _wageManagerSystem.TryAddAccountToWagePayoutList(bankAccount, jobPrototype);
+            if (EntityManager.TryGetComponent(idUid, out CartridgeLoaderComponent? cartrdigeLoaderComponent))
+            {
+                foreach (var uid in cartrdigeLoaderComponent.InstalledPrograms)
+                {
+                    if (!EntityManager.TryGetComponent(uid, out BankCartridgeComponent? bankCartrdigeComponent))
+                        continue;
+                    bankCartrdigeComponent.LinkedBankAccount = bankAccount;
+                }
+            }
         }
 
         var extendedAccess = false;

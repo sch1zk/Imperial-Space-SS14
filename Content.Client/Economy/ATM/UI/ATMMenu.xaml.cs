@@ -25,8 +25,8 @@ namespace Content.Client.Economy.ATM.UI
                 ? state.IdCardEntityName
                 : Loc.GetString("atm-ui-no-card-label");
             AccountBalance.Text = state.BankAccountBalance != null
-                ? Loc.GetString("atm-ui-account-balance", ("balance", state.BankAccountBalance))
-                : Loc.GetString("atm-ui-account-balance", ("balance", "%ERR!"));
+                ? Loc.GetString("atm-ui-account-balance", ("balance", state.BankAccountBalance), ("currencySymbol", state.CurrencySymbol ?? ""))
+                : Loc.GetString("atm-ui-account-balance", ("balance", "%ERR!"), ("currencySymbol", state.CurrencySymbol ?? ""));
             ErrorLabel.Visible = state.IsCardPresent && !state.HaveAccessToBankAccount;
 
             WithdrawSlider.MinValue = 1;

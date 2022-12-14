@@ -1,0 +1,1 @@
+store-currency-spacecredits-currency-symbol = ¢

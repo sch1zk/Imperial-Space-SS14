@@ -21,8 +21,7 @@
             <Label
                 Name="AccountBalance"
                 Access="Public"
-                HorizontalAlignment="Center"
-                Text="Account Balance: 0" />
+                HorizontalAlignment="Center"/>
             <BoxContainer Name="ShowWithdraw" Orientation="Vertical" Visible="False">
                 <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
                     <SliderIntInput Name="WithdrawSlider" HorizontalExpand="True" />

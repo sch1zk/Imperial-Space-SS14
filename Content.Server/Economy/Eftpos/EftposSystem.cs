@@ -4,11 +4,14 @@ using Content.Server.Access.Systems;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using static Content.Shared.Economy.Eftpos.SharedEftposComponent;
+using Robust.Shared.Prototypes;
+using Content.Shared.Store;
 
 namespace Content.Server.Economy.Eftpos
 {
     public sealed class EftposSystem : EntitySystem
     {
+        [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
         [Dependency] private readonly IdCardSystem _idCardSystem = default!;
         [Dependency] private readonly AudioSystem _audioSystem = default!;
@@ -23,11 +26,15 @@ namespace Content.Server.Economy.Eftpos
         }
         private void UpdateComponentUserInterface(EftposComponent component)
         {
+            string? currSymbol = null;
+            if (component.CurrencyType != null && _prototypeManager.TryIndex(component.CurrencyType, out CurrencyPrototype? p))
+                currSymbol = Loc.GetString(p.CurrencySymbol);
             var newState = new EftposBoundUserInterfaceState(
                 component.Value,
                 component.LinkedAccountNumber,
                 component.LinkedAccountName,
-                component.LockedBy != null);
+                component.LockedBy != null,
+                currSymbol);
             component.UpdateUserInterface(newState);
         }
         private void OnChangeValue(EntityUid uid, EftposComponent component, EftposChangeValueMessage msg)

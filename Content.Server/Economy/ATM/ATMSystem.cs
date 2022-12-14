@@ -19,6 +19,7 @@ namespace Content.Server.Economy.ATM
     {
         [Dependency] private readonly IPrototypeManager _proto = default!;
         [Dependency] private readonly IEntityManager _entities = default!;
+        [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly AppearanceSystem _appearanceSystem = default!;
         [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
         [Dependency] private readonly StackSystem _stack = default!;
@@ -57,8 +58,9 @@ namespace Content.Server.Economy.ATM
             string? idCardFullName = null;
             string? idCardEntityName = null;
             string? idCardStoredBankAccountNumber = null;
-            var haveAccessToBankAccount = false;
+            bool haveAccessToBankAccount = false;
             FixedPoint2? bankAccountBalance = null;
+            string currencySymbol = string.Empty;
             if (component.IdCardSlot.Item is { Valid: true } idCardEntityUid)
             {
                 if (_entities.TryGetComponent<IdCardComponent>(idCardEntityUid, out var idCardComponent))
@@ -71,6 +73,8 @@ namespace Content.Server.Economy.ATM
                         {
                             haveAccessToBankAccount = true;
                             bankAccountBalance = bankAccount.Balance;
+                            if(bankAccount.CurrencyType != null && _prototypeManager.TryIndex(bankAccount.CurrencyType, out CurrencyPrototype? p))
+                                currencySymbol = Loc.GetString(p.CurrencySymbol);
                         }
                     }
                 }
@@ -82,7 +86,8 @@ namespace Content.Server.Economy.ATM
                 idCardEntityName,
                 idCardStoredBankAccountNumber,
                 haveAccessToBankAccount,
-                bankAccountBalance
+                bankAccountBalance,
+                currencySymbol
                 );
             component.UpdateUserInterface(newState);
         }
