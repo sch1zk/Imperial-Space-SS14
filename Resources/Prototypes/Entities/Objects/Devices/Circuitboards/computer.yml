@@ -13,6 +13,7 @@
         - DroneUsable
     - type: StaticPrice
       price: 100
+    - type: CargoSellBlacklist
 
 - type: entity
   parent: BaseComputerCircuitboard
