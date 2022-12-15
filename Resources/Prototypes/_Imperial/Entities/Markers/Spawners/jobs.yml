@@ -9,3 +9,15 @@
     layers:
       - state: green
       - state: hop
+
+- type: entity
+  id: SpawnPointLawyer
+  parent: SpawnPointJobBase
+  name: lawyer
+  components:
+  - type: SpawnPoint
+    job_id: IAA
+  - type: Sprite
+    layers:
+      - state: green
+      - state: lawyer
