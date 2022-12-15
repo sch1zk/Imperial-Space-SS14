@@ -209,7 +209,7 @@
       40: 0.5
   - type: HeatResistance
   - type: DamageVisuals
-    thresholds: [ 10, 20, 50 ]
+    thresholds: [ 20, 40, 100 ]
     targetLayers:
       - "enum.HumanoidVisualLayers.Chest"
       - "enum.HumanoidVisualLayers.Head"
