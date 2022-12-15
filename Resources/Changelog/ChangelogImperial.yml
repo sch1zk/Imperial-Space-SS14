@@ -56,3 +56,16 @@ Entries:
   - {message: Новая роль "Адъютант", type: Add}
   id: 10
   time: '2022-12-06T00:00:00.0000000+00:00'
+- author: sch1zk
+  changes:
+  - {message: Добавлен банкомат, type: Add}
+  - {message: Добавлен кошеле, type: Add}
+  - {message: Добавлена новая валюта, type: Add}
+  - {message: Добавлен EFTPOS, type: Add}
+  - {message: Добавлена система зарплат, type: Add}
+  - {message: Добавлены банковские счета, type: Add}
+  - {message: Добавлен банковский ПДА картридж, type: Add}
+  - {message: ОБР может говорить через канал ЦК, type: Tweak}
+  - {message: Возвращен АВД, type: Tweak}
+  id: 11
+  time: '2022-12-15T00:00:00.0000000+00:00'
