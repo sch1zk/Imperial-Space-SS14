@@ -78,9 +78,3 @@
   config:
     !type:GenericGameRuleConfiguration
     id: RampingStationEventScheduler
-
-- type: gameRule
-  id: WageScheduler
-  config:
-    !type:GenericGameRuleConfiguration
-    id: WageScheduler

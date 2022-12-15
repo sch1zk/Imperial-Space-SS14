@@ -1,0 +1,5 @@
+- type: gameRule
+  id: WageScheduler
+  config:
+    !type:GenericGameRuleConfiguration
+    id: WageScheduler
