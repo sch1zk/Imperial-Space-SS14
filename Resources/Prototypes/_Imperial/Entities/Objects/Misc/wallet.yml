@@ -13,7 +13,7 @@
       - SpaceCredits
   - type: Sprite
     netsync: false
-    sprite: _Imperial\Objects\Economy\wallet.rsi
+    sprite: Objects/Economy/wallet.rsi
     state: wallet
   - type: Tag
     tags:

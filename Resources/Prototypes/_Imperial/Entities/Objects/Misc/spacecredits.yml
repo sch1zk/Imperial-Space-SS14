@@ -13,7 +13,7 @@
     stackType: Cred
     count: 1
   - type: Sprite
-    sprite: _Imperial\Objects\Economy\credits.rsi
+    sprite: Objects/Economy/credits.rsi
     netsync: false
     state: credit
   - type: Physics
@@ -39,13 +39,13 @@
   id: Cred
   name: spacecred
   stack: Cred
-  icon: { sprite: /Textures/Objects/Economy/cash.rsi, state: cash }
+  icon: { sprite: /Textures/Objects/Economy/credits.rsi, state: credit }
   price: 1
 
 - type: stack
   id: Cred
   name: spacecred
-  icon: { sprite: /Textures/Objects/Economy/cash.rsi, state: cash }
+  icon: { sprite: /Textures/Objects/Economy/credits.rsi, state: credit }
   spawn: SpaceCredit
 
 - type: entity

@@ -14,7 +14,7 @@
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
-    sprite: _Imperial\Structures\Wallmounts\atm.rsi
+    sprite: Structures/Wallmounts/atm.rsi
     netsync: false
     snapCardinals: true
     state:
