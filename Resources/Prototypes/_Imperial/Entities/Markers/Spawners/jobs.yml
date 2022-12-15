@@ -11,9 +11,9 @@
       - state: hop
 
 - type: entity
-  id: SpawnPointLawyer
+  id: SpawnPointIAA
   parent: SpawnPointJobBase
-  name: lawyer
+  name: IAA
   components:
   - type: SpawnPoint
     job_id: IAA
