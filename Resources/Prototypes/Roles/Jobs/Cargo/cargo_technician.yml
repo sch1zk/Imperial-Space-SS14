@@ -11,7 +11,7 @@
   - External
   minBankBalance: 300
   maxBankBalance: 500
-  department: Cargo
+  wageDepartment: Cargo
   wage: 100
 
 - type: startingGear

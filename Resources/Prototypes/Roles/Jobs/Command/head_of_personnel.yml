@@ -35,7 +35,7 @@
   # I mean they'll give themselves the rest of the access levels *anyways*.
   minBankBalance: 800
   maxBankBalance: 1200
-  department: Command
+  wageDepartment: Command
   wage: 200
 
 - type: startingGear

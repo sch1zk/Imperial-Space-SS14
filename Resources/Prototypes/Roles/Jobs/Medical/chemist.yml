@@ -15,7 +15,7 @@
   - Maintenance
   minBankBalance: 300
   maxBankBalance: 500
-  department: Medical
+  wageDepartment: Medical
   wage: 100
 
 - type: startingGear

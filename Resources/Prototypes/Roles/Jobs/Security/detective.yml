@@ -17,7 +17,7 @@
   - Service
   minBankBalance: 300
   maxBankBalance: 500
-  department: Security
+  wageDepartment: Security
   wage: 100
 
 - type: startingGear

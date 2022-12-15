@@ -17,7 +17,7 @@
   - External
   minBankBalance: 300
   maxBankBalance: 500
-  department: Engineering
+  wageDepartment: Engineering
   wage: 50
 
 - type: startingGear

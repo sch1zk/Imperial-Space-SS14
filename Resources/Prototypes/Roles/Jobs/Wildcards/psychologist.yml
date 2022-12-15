@@ -12,6 +12,8 @@
   - Chemistry
   minBankBalance: 300
   maxBankBalance: 500
+  wageDepartment: Medical
+  wage: 100
 
 - type: startingGear
   id: PsychologistGear

@@ -98,8 +98,8 @@ namespace Content.Shared.Roles
         [DataField("extendedAccessGroups", customTypeSerializer: typeof(PrototypeIdListSerializer<AccessGroupPrototype>))]
         public IReadOnlyCollection<string> ExtendedAccessGroups { get; } = Array.Empty<string>();
 
-        [DataField("department", customTypeSerializer: typeof(PrototypeIdSerializer<DepartmentPrototype>))]
-        public string? Department { get; }
+        [DataField("wageDepartment", customTypeSerializer: typeof(PrototypeIdSerializer<DepartmentPrototype>))]
+        public string? WageDepartment { get; }
 
         [DataField("minBankBalance")]
         public int MinBankBalance { get; } = 0;

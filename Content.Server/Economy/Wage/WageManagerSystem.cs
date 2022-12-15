@@ -47,7 +47,7 @@ namespace Content.Server.Economy.Wage
         }
         public bool TryAddAccountToWagePayoutList(BankAccount bankAccount, JobPrototype jobPrototype)
         {
-            if (jobPrototype.Department == null || !_prototypeManager.TryIndex(jobPrototype.Department, out DepartmentPrototype? department))
+            if (jobPrototype.WageDepartment == null || !_prototypeManager.TryIndex(jobPrototype.WageDepartment, out DepartmentPrototype? department))
                 return false;
             if (department == null || !_bankManagerSystem.TryGetBankAccount(department.AccountNumber.ToString(), out var departmentBankAccount))
                 return false;

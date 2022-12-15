@@ -12,7 +12,7 @@
   - Maintenance
   minBankBalance: 300
   maxBankBalance: 500
-  department: Security
+  wageDepartment: Security
   wage: 50
 
 - type: startingGear

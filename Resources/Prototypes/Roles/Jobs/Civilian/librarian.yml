@@ -10,7 +10,7 @@
   - Maintenance
   minBankBalance: 300
   maxBankBalance: 500
-  department: Civilian
+  wageDepartment: Civilian
   wage: 100
 
 - type: startingGear
