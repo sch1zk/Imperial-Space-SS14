@@ -410,8 +410,13 @@ namespace Content.Server.GameTicking
 
                 SendStatusToAll();
 
-                _voteManager.CreateStandardVote(null, StandardVoteType.Map);
-                _voteManager.CreateStandardVote(null, StandardVoteType.Preset);
+                // Imperial-start
+                if (_configurationManager.GetCVar(CCVars.VoteAutoStartInLobby))
+                {
+                    _voteManager.CreateStandardVote(null, StandardVoteType.Map);
+                    _voteManager.CreateStandardVote(null, StandardVoteType.Preset);
+                }
+                // Imperial-end
 
                 ReqWindowAttentionAll();
             }

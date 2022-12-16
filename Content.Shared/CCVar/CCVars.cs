@@ -978,6 +978,11 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<int>
             VoteTimerAlone = CVarDef.Create("vote.timeralone", 10, CVar.SERVERONLY);
 
+        // Imperial-start
+        public static readonly CVarDef<bool>
+            VoteAutoStartInLobby = CVarDef.Create("vote.autostartinlobby", true, CVar.SERVERONLY);
+        // Imperial-end
+
 
         /*
          * BAN
@@ -1439,7 +1444,9 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool>
             QueueEnabled = CVarDef.Create("queue.enabled", false, CVar.SERVERONLY);
 
+        // Imperial-start
         public static readonly CVarDef<bool>
             EconomyWagesEnabled = CVarDef.Create("economy.wages_enabled", true, CVar.SERVERONLY);
+        // Imperial-end
     }
 }
