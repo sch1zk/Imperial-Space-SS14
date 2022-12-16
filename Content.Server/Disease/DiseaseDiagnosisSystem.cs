@@ -256,7 +256,7 @@ namespace Content.Server.Disease
             // Add Cures
             if (disease.Cures.Count == 0)
             {
-                report.AddMarkup(Loc.GetString("diagnoser-no-cures"));
+                report.AddMarkup(Loc.GetString("diagnoser-cure-none"));
             }
             else
             {
