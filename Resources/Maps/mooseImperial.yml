@@ -1276,35 +1276,35 @@ entities:
           color: '#334E6DC8'
           id: BrickTileWhiteInnerNe
           coordinates: -15,2
-        2214:
+        2208:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: -15,3
-        2215:
+        2209:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: -15,4
-        2231:
+        2225:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: -12,3
-        2232:
+        2226:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: -12,4
-        2237:
+        2231:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: -15,2
-        2238:
+        2232:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: -15,5
-        2258:
+        2252:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: -16,0
-        2275:
+        2269:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: -4,0
@@ -2129,288 +2129,288 @@ entities:
           color: '#334E6DC8'
           id: BrickTileWhiteLineW
           coordinates: 5,4
-        2183:
+        2181:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineN
           coordinates: 11,4
-        2184:
+        2182:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineN
           coordinates: 12,4
-        2185:
+        2183:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineN
           coordinates: 13,4
-        2193:
+        2190:
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 12,0
-        2194:
+        2191:
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 13,2
-        2195:
+        2192:
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 14,4
-        2196:
+        2193:
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 12,2
-        2197:
+        2194:
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 14,9
-        2198:
+        2195:
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 14,6
-        2199:
+        2196:
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 14,7
-        2200:
+        2197:
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 15,9
-        2206:
+        2200:
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 11,2
-        2207:
+        2201:
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 11,0
-        2209:
+        2203:
           color: '#FFFFFFFF'
           id: 1
           coordinates: 11,0
-        2210:
+        2204:
           color: '#FFFFFFFF'
           id: 2
           coordinates: 11,2
-        2211:
+        2205:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: 5,3
-        2212:
+        2206:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: 5,4
-        2213:
+        2207:
           color: '#334E6DC8'
           id: BrickTileWhiteInnerNw
           coordinates: 5,2
-        2222:
+        2216:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: 14,7
-        2223:
+        2217:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleS
           coordinates: 14,11
-        2224:
+        2218:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleS
           coordinates: 15,11
-        2225:
+        2219:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleN
           coordinates: 14,12
-        2226:
+        2220:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleN
           coordinates: 15,12
-        2227:
+        2221:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleN
           coordinates: 14,16
-        2228:
+        2222:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleN
           coordinates: 15,16
-        2229:
+        2223:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: 2,3
-        2230:
+        2224:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: 2,4
-        2233:
+        2227:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: 14,6
-        2234:
+        2228:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: 14,8
-        2235:
+        2229:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: 5,5
-        2236:
+        2230:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: 5,2
-        2265:
+        2259:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: 15,6
-        2266:
+        2260:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: 15,5
-        2267:
+        2261:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSE
           coordinates: 15,7
-        2268:
+        2262:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: 16,12
-        2269:
+        2263:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: 13,12
-        2270:
+        2264:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSE
           coordinates: 13,11
-        2271:
+        2265:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: 16,11
-        2337:
+        2329:
           color: '#FFFFFFFF'
           id: WoodTrimThinCornerNw
           coordinates: 0,1
-        2338:
+        2330:
           color: '#FFFFFFFF'
           id: WoodTrimThinEndE
           coordinates: 3,1
+        2331:
+          color: '#FFFFFFFF'
+          id: WoodTrimThinLineS
+          coordinates: 1,1
+        2332:
+          color: '#FFFFFFFF'
+          id: WoodTrimThinLineS
+          coordinates: 2,1
+        2338:
+          color: '#FFFFFFFF'
+          id: WoodTrimThinLineN
+          coordinates: 1,1
         2339:
           color: '#FFFFFFFF'
-          id: WoodTrimThinLineS
-          coordinates: 1,1
+          id: WoodTrimThinLineN
+          coordinates: 2,1
         2340:
-          color: '#FFFFFFFF'
-          id: WoodTrimThinLineS
-          coordinates: 2,1
-        2346:
-          color: '#FFFFFFFF'
-          id: WoodTrimThinLineN
-          coordinates: 1,1
-        2347:
-          color: '#FFFFFFFF'
-          id: WoodTrimThinLineN
-          coordinates: 2,1
-        2348:
           color: '#FFFFFFFF'
           id: WoodTrimThinInnerSe
           coordinates: 0,1
-        2351:
+        2343:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineW
-        2353:
+        2345:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineE
-        2443:
+        2435:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 12,3
-        2444:
+        2436:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 13,3
-        2445:
+        2437:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 13,4
-        2449:
+        2441:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 13,3
-        2454:
+        2446:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 9,0
+        2447:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: Dirt
+          coordinates: 8,0
+        2448:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: Dirt
+          coordinates: 8,2
+        2449:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: Dirt
+          coordinates: 8,3
+        2450:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: Dirt
+          coordinates: 8,4
+        2451:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: Dirt
+          coordinates: 9,4
+        2452:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: Dirt
+          coordinates: 9,3
+        2453:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: Dirt
+          coordinates: 9,2
+        2454:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: DirtHeavy
+          coordinates: 8,2
         2455:
           cleanable: True
           color: '#FFFFFFFF'
-          id: Dirt
-          coordinates: 8,0
+          id: DirtHeavy
+          coordinates: 8,3
         2456:
           cleanable: True
           color: '#FFFFFFFF'
-          id: Dirt
-          coordinates: 8,2
+          id: DirtHeavy
+          coordinates: 8,4
         2457:
           cleanable: True
           color: '#FFFFFFFF'
-          id: Dirt
-          coordinates: 8,3
+          id: DirtHeavy
+          coordinates: 9,4
         2458:
           cleanable: True
           color: '#FFFFFFFF'
-          id: Dirt
-          coordinates: 8,4
+          id: DirtHeavy
+          coordinates: 9,3
         2459:
           cleanable: True
           color: '#FFFFFFFF'
-          id: Dirt
-          coordinates: 9,4
+          id: DirtHeavy
+          coordinates: 9,2
         2460:
-          cleanable: True
-          color: '#FFFFFFFF'
-          id: Dirt
-          coordinates: 9,3
-        2461:
-          cleanable: True
-          color: '#FFFFFFFF'
-          id: Dirt
-          coordinates: 9,2
-        2462:
-          cleanable: True
-          color: '#FFFFFFFF'
-          id: DirtHeavy
-          coordinates: 8,2
-        2463:
-          cleanable: True
-          color: '#FFFFFFFF'
-          id: DirtHeavy
-          coordinates: 8,3
-        2464:
-          cleanable: True
-          color: '#FFFFFFFF'
-          id: DirtHeavy
-          coordinates: 8,4
-        2465:
-          cleanable: True
-          color: '#FFFFFFFF'
-          id: DirtHeavy
-          coordinates: 9,4
-        2466:
-          cleanable: True
-          color: '#FFFFFFFF'
-          id: DirtHeavy
-          coordinates: 9,3
-        2467:
-          cleanable: True
-          color: '#FFFFFFFF'
-          id: DirtHeavy
-          coordinates: 9,2
-        2468:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 8,0
-        2469:
+        2461:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
@@ -3526,73 +3526,73 @@ entities:
           color: '#A4610696'
           id: Dirt
           coordinates: -18,-33
-        2220:
+        2214:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleN
           coordinates: -2,-55
-        2247:
+        2241:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: -3,-55
-        2273:
+        2267:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: -16,-33
-        2302:
+        2294:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: -22,-33
-        2303:
+        2295:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: -22,-34
-        2488:
+        2480:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -18,-33
-        2490:
+        2482:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -19,-33
-        2491:
+        2483:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -20,-33
-        2492:
+        2484:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: -16,-33
-        2493:
+        2485:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -17,-33
-        2495:
+        2487:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -16,-34
-        2496:
+        2488:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: -16,-34
-        2557:
+        2549:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -23,-34
-        2558:
+        2550:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -24,-34
-        2559:
+        2551:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -25,-34
-        2560:
+        2552:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -25,-33
@@ -5110,23 +5110,23 @@ entities:
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 5,-34
-        2221:
+        2215:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: 12,-34
-        2250:
+        2244:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: 12,-35
-        2595:
+        2577:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleN
           coordinates: 2,-44
-        2596:
+        2578:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: 3,-44
-        2597:
+        2579:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: 1,-44
@@ -6702,591 +6702,595 @@ entities:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineS
           coordinates: 15,-9
-        2181:
-          color: '#DE3A3A96'
-          id: BrickTileWhiteLineS
-          coordinates: 17,-5
-        2182:
-          color: '#DE3A3A96'
-          id: BrickTileWhiteLineS
-          coordinates: 16,-5
-        2186:
+        2184:
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 14,-7
-        2187:
+        2185:
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 14,-6
+        2186:
+          color: '#FFFFFFFF'
+          id: DirtHeavy
+          coordinates: 16,-4
+        2187:
+          color: '#FFFFFFFF'
+          id: DirtHeavy
+          coordinates: 17,-4
         2188:
           color: '#FFFFFFFF'
           id: DirtHeavy
-          coordinates: 14,-5
+          coordinates: 12,-1
         2189:
           color: '#FFFFFFFF'
           id: DirtHeavy
-          coordinates: 16,-4
-        2190:
-          color: '#FFFFFFFF'
-          id: DirtHeavy
-          coordinates: 17,-4
-        2191:
-          color: '#FFFFFFFF'
-          id: DirtHeavy
-          coordinates: 12,-1
-        2192:
-          color: '#FFFFFFFF'
-          id: DirtHeavy
           coordinates: 13,-1
-        2201:
+        2198:
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 14,-1
-        2202:
-          color: '#FFFFFFFF'
-          id: DirtMedium
-          coordinates: 15,-5
-        2203:
-          color: '#FFFFFFFF'
-          id: DirtMedium
-          coordinates: 17,-5
-        2204:
-          color: '#FFFFFFFF'
-          id: DirtMedium
-          coordinates: 16,-5
-        2205:
+        2199:
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 15,-7
-        2208:
+        2202:
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 11,-1
-        2251:
+        2245:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleS
           coordinates: 9,-13
-        2252:
+        2246:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSE
           coordinates: 8,-13
-        2253:
+        2247:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: 10,-13
-        2263:
+        2257:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleN
           coordinates: 17,-4
-        2264:
+        2258:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: 16,-4
-        2272:
+        2266:
           color: '#FFFFFFFF'
           id: BrickTileDarkBox
           coordinates: 17,-3
-        2277:
+        2271:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineN
           coordinates: 10,-7
-        2278:
+        2272:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineN
           coordinates: 10,-9
-        2279:
+        2273:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineS
           coordinates: 10,-7
-        2280:
+        2274:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineS
           coordinates: 10,-9
-        2281:
+        2275:
           color: '#DE3A3A96'
           id: BrickTileWhiteBox
           coordinates: 9,-9
-        2282:
+        2276:
           color: '#DE3A3A96'
           id: BrickTileWhiteBox
           coordinates: 9,-7
-        2283:
+        2277:
           color: '#DE3A3A96'
           id: BrickTileWhiteBox
           coordinates: 11,-7
-        2284:
+        2278:
           color: '#DE3A3A96'
           id: BrickTileWhiteBox
           coordinates: 11,-9
-        2285:
-          color: '#DE3A3A96'
-          id: BrickTileWhiteLineS
-          coordinates: 15,-5
-        2286:
-          color: '#DE3A3A96'
-          id: BrickTileWhiteLineS
-          coordinates: 14,-5
-        2287:
+        2279:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineS
           coordinates: 16,-9
-        2288:
+        2280:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineN
           coordinates: 16,-7
-        2289:
+        2281:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineN
           coordinates: 15,-7
-        2290:
+        2282:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineS
           coordinates: 12,-9
-        2291:
+        2283:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineS
           coordinates: 13,-9
-        2292:
+        2284:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineS
           coordinates: 11,-5
-        2293:
+        2285:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: 8,-9
-        2294:
+        2286:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: 8,-7
-        2295:
+        2287:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSE
           coordinates: 8,-8
-        2296:
+        2288:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: 8,-10
-        2297:
+        2289:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: 8,-8
-        2336:
+        2328:
           color: '#FFFFFFFF'
           id: WoodTrimThinCornerSw
           coordinates: 0,-2
-        2341:
+        2333:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineS
           coordinates: 1,-2
-        2342:
+        2334:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineS
           coordinates: 2,-2
-        2343:
+        2335:
           color: '#FFFFFFFF'
           id: WoodTrimThinEndE
           coordinates: 3,-2
-        2344:
+        2336:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineN
           coordinates: 2,-2
-        2345:
+        2337:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineN
           coordinates: 1,-2
-        2349:
+        2341:
           color: '#FFFFFFFF'
           id: WoodTrimThinInnerNe
           coordinates: 0,-2
-        2350:
+        2342:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineW
           coordinates: 0,-1
-        2352:
+        2344:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineE
           coordinates: 0,-1
-        2366:
+        2358:
           color: '#474F52FF'
           id: BotLeftGreyscale
           coordinates: 2,-10
-        2367:
+        2359:
           color: '#474F52FF'
           id: BotLeftGreyscale
           coordinates: 3,-10
-        2368:
+        2360:
           color: '#474F52FF'
           id: DeliveryGreyscale
           coordinates: 1,-10
-        2369:
+        2361:
           color: '#474F52FF'
           id: LoadingAreaGreyscale
           coordinates: 1,-11
-        2370:
+        2362:
           angle: 3.141592653589793 rad
           color: '#474F52FF'
           id: LoadingAreaGreyscale
           coordinates: 3,-11
-        2371:
+        2363:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 1,-10
-        2372:
+        2364:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 2,-10
-        2373:
+        2365:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 3,-10
-        2374:
+        2366:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 1,-11
-        2379:
+        2371:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 3,-11
-        2380:
+        2372:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 3,-13
-        2381:
+        2373:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 3,-12
-        2382:
+        2374:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 1,-12
-        2387:
+        2379:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 0,-12
-        2388:
+        2380:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 2,-12
-        2389:
+        2381:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 2,-13
-        2390:
+        2382:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 1,-13
-        2391:
+        2383:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 0,-13
-        2399:
+        2391:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 0,-11
-        2400:
+        2392:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 2,-11
-        2411:
+        2403:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 3,-13
-        2412:
+        2404:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 2,-10
-        2414:
+        2406:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 5,-11
-        2415:
+        2407:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 6,-12
-        2416:
+        2408:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 8,-9
-        2417:
+        2409:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 9,-9
-        2418:
+        2410:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 10,-9
-        2419:
+        2411:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 11,-9
-        2420:
+        2412:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 12,-9
-        2421:
+        2413:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 11,-7
-        2422:
+        2414:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 10,-7
-        2423:
+        2415:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 9,-7
-        2424:
+        2416:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 8,-7
-        2425:
+        2417:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 7,-9
-        2426:
+        2418:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 7,-7
-        2427:
+        2419:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 5,-7
-        2428:
+        2420:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 6,-10
-        2429:
+        2421:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 13,-9
-        2430:
+        2422:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 13,-7
-        2431:
+        2423:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 12,-6
-        2432:
+        2424:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 13,-6
-        2433:
+        2425:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 13,-5
-        2434:
+        2426:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 11,-3
-        2435:
+        2427:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 14,-4
-        2436:
+        2428:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 12,-3
-        2437:
+        2429:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 13,-4
-        2438:
+        2430:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 12,-7
-        2439:
+        2431:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 12,-8
-        2440:
+        2432:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 15,-4
-        2441:
+        2433:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 12,-2
-        2442:
+        2434:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 13,-3
-        2446:
+        2438:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 12,-9
-        2447:
+        2439:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 13,-4
-        2448:
+        2440:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 12,-1
-        2450:
+        2442:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 9,-2
-        2451:
+        2443:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 8,-2
-        2452:
+        2444:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 8,-1
-        2453:
+        2445:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: 9,-1
-        2470:
+        2462:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 9,-1
-        2471:
+        2463:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 8,-1
-        2472:
+        2464:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 8,-2
-        2473:
+        2465:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 9,-2
-        2474:
+        2466:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 9,-4
-        2475:
+        2467:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 10,-4
-        2476:
+        2468:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 11,-4
-        2477:
+        2469:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 12,-4
-        2478:
+        2470:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: 12,-5
-        2479:
+        2471:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 8,-4
-        2480:
+        2472:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: 8,-5
-        2481:
+        2473:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 15,-8
-        2482:
+        2474:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 16,-8
-        2483:
+        2475:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 17,-8
-        2484:
+        2476:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 18,-8
-        2485:
+        2477:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 19,-8
-        2486:
+        2478:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 14,-8
-        2487:
+        2479:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: 13,-8
-        2594:
+        2576:
           cleanable: True
           color: '#571612C3'
           id: splatter
           coordinates: 8.066948,-1.985268
+        2607:
+          color: '#FFFFFFFF'
+          id: WarnLineN
+          coordinates: 14,-5
+        2608:
+          color: '#FFFFFFFF'
+          id: WarnLineN
+          coordinates: 15,-5
+        2609:
+          color: '#FFFFFFFF'
+          id: WarnLineN
+          coordinates: 16,-5
+        2610:
+          color: '#FFFFFFFF'
+          id: WarnLineN
+          coordinates: 17,-5
+        2611:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: DirtHeavy
+          coordinates: 14,-5
+        2612:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: DirtHeavy
+          coordinates: 16,-5
+        2613:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: DirtMedium
+          coordinates: 15,-5
+        2614:
+          cleanable: True
+          color: '#FFFFFFFF'
+          id: DirtMedium
+          coordinates: 17,-5
       -1,-1:
         360:
           color: '#52B4E996'
@@ -9063,671 +9067,671 @@ entities:
           color: '#334E6DC8'
           id: BrickTileWhiteLineS
           coordinates: -19,-2
-        2216:
+        2210:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleN
           coordinates: -21,-1
-        2217:
+        2211:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: -25,-6
-        2239:
+        2233:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: -22,-1
-        2240:
+        2234:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: -20,-1
-        2241:
+        2235:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: -25,-7
-        2257:
+        2251:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: -16,-2
-        2259:
+        2253:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: -16,-1
-        2260:
+        2254:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleE
           coordinates: -25,-2
-        2261:
+        2255:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: -25,-3
-        2262:
+        2256:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSE
           coordinates: -25,-1
-        2274:
+        2268:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: -16,-32
-        2276:
+        2270:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: -4,-1
-        2298:
+        2290:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -19,-24
-        2299:
+        2291:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -18,-24
-        2300:
+        2292:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -20,-24
-        2301:
+        2293:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -20,-24
-        2304:
+        2296:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -22,-30
-        2305:
+        2297:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -21,-30
-        2306:
+        2298:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -20,-30
-        2307:
+        2299:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -19,-30
-        2308:
+        2300:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -18,-30
-        2309:
+        2301:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -18,-18
-        2310:
+        2302:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -20,-18
-        2311:
+        2303:
           color: '#474F52FF'
           id: BotLeftGreyscale
           coordinates: -19,-20
-        2312:
+        2304:
           color: '#474F52FF'
           id: LoadingAreaGreyscale
           coordinates: -19,-19
-        2313:
+        2305:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -19,-18
-        2314:
+        2306:
           color: '#474F52FF'
           id: DeliveryGreyscale
           coordinates: -19,-21
-        2315:
+        2307:
           angle: 3.141592653589793 rad
           color: '#474F52FF'
           id: LoadingAreaGreyscale
           coordinates: -20,-20
-        2316:
+        2308:
           angle: 3.141592653589793 rad
           color: '#474F52FF'
           id: BotGreyscale
           coordinates: -20,-21
-        2317:
+        2309:
           color: '#FFFFFF96'
           id: BrickTileWhiteCornerNe
           coordinates: -5,-25
-        2318:
+        2310:
           color: '#FFFFFF96'
           id: BrickTileWhiteInnerNe
           coordinates: -6,-25
-        2319:
+        2311:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineN
           coordinates: -7,-24
-        2320:
+        2312:
           color: '#FFFFFF96'
           id: BrickTileWhiteCornerNe
           coordinates: -6,-24
-        2321:
+        2313:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineW
           coordinates: -12,-26
-        2322:
+        2314:
           color: '#FFFFFF96'
           id: BrickTileWhiteCornerSw
           coordinates: -12,-27
-        2323:
+        2315:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineS
           coordinates: -11,-27
-        2324:
+        2316:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineS
           coordinates: -10,-27
-        2325:
+        2317:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineS
           coordinates: -9,-27
-        2326:
+        2318:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineS
           coordinates: -8,-27
-        2327:
+        2319:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineS
           coordinates: -7,-27
-        2328:
+        2320:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineS
           coordinates: -6,-27
-        2329:
+        2321:
           color: '#FFFFFF96'
           id: BrickTileWhiteCornerSe
           coordinates: -5,-27
-        2330:
+        2322:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineE
           coordinates: -5,-26
-        2331:
+        2323:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineN
           coordinates: -11,-24
-        2332:
+        2324:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineN
           coordinates: -10,-24
-        2333:
+        2325:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineN
           coordinates: -9,-24
-        2334:
+        2326:
           color: '#FFFFFF96'
           id: BrickTileWhiteLineN
           coordinates: -8,-24
-        2335:
+        2327:
           color: '#FFFFFF96'
           id: BrickTileWhiteCornerNw
           coordinates: -12,-24
-        2354:
+        2346:
           color: '#474F52FF'
           id: DeliveryGreyscale
           coordinates: -1,-10
-        2355:
+        2347:
           color: '#474F52FF'
           id: BotLeftGreyscale
           coordinates: -2,-10
-        2356:
+        2348:
           color: '#474F52FF'
           id: BotLeftGreyscale
           coordinates: -3,-10
-        2357:
+        2349:
           color: '#474F52FF'
           id: BotLeftGreyscale
           coordinates: -4,-10
-        2358:
+        2350:
           color: '#474F52FF'
           id: BotLeftGreyscale
           coordinates: -5,-10
-        2359:
+        2351:
           color: '#474F52FF'
           id: LoadingAreaGreyscale
           coordinates: -1,-11
-        2360:
+        2352:
           angle: 3.141592653589793 rad
           color: '#474F52FF'
           id: LoadingAreaGreyscale
           coordinates: -5,-11
-        2361:
+        2353:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: -1,-10
-        2362:
+        2354:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: -2,-10
-        2363:
+        2355:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: -3,-10
-        2364:
+        2356:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: -4,-10
-        2365:
+        2357:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: -5,-10
-        2375:
+        2367:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: -1,-11
-        2376:
+        2368:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -5,-11
-        2377:
+        2369:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -5,-12
-        2378:
+        2370:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -5,-13
-        2383:
+        2375:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: -2,-12
-        2384:
+        2376:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtHeavy
           coordinates: -4,-12
-        2385:
+        2377:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -3,-12
-        2386:
+        2378:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -1,-12
-        2392:
+        2384:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -1,-13
-        2393:
+        2385:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -2,-13
-        2394:
+        2386:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -3,-13
-        2395:
+        2387:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -4,-13
-        2396:
+        2388:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -4,-11
-        2397:
+        2389:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -3,-11
-        2398:
+        2390:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -2,-11
-        2401:
+        2393:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -6,-12
-        2402:
+        2394:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -7,-13
-        2403:
+        2395:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -7,-12
-        2404:
+        2396:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -8,-13
-        2405:
+        2397:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -11,-12
-        2406:
+        2398:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -10,-11
-        2407:
+        2399:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -8,-12
-        2408:
+        2400:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -6,-13
-        2409:
+        2401:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: -8,-13
-        2410:
+        2402:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: -1,-12
-        2413:
+        2405:
           cleanable: True
           color: '#FFFFFFFF'
           id: Dirt
           coordinates: -4,-10
-        2489:
+        2481:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtMedium
           coordinates: -18,-32
-        2494:
+        2486:
           cleanable: True
           color: '#FFFFFFFF'
           id: DirtLight
           coordinates: -16,-32
-        2497:
+        2489:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -27,-23
-        2498:
+        2490:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -26,-23
-        2499:
+        2491:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -25,-23
-        2500:
+        2492:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -24,-23
-        2501:
+        2493:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -23,-23
-        2502:
+        2494:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -22,-24
-        2503:
+        2495:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -21,-24
-        2504:
+        2496:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -28,-23
-        2505:
+        2497:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -29,-23
-        2506:
+        2498:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -30,-23
-        2507:
+        2499:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -31,-23
-        2508:
+        2500:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -32,-23
-        2522:
+        2514:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -32,-21
-        2523:
+        2515:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -31,-21
-        2524:
+        2516:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -30,-21
-        2525:
+        2517:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -29,-21
-        2526:
+        2518:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -28,-21
-        2527:
+        2519:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -27,-21
-        2528:
+        2520:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -26,-21
-        2529:
+        2521:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -25,-21
-        2530:
+        2522:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -24,-21
-        2531:
+        2523:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -23,-21
-        2532:
+        2524:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -22,-20
-        2533:
+        2525:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -22,-15
-        2534:
+        2526:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -23,-15
-        2535:
+        2527:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -24,-15
-        2536:
+        2528:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -25,-15
-        2537:
+        2529:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -26,-15
-        2538:
+        2530:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -27,-15
-        2539:
+        2531:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -27,-19
-        2540:
+        2532:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -26,-19
-        2541:
+        2533:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -25,-19
-        2542:
+        2534:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -24,-19
-        2543:
+        2535:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -23,-18
-        2544:
+        2536:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -22,-18
-        2545:
+        2537:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -19,-23
-        2546:
+        2538:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -18,-23
-        2547:
+        2539:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -24,-25
-        2548:
+        2540:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -24,-26
-        2549:
+        2541:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -24,-27
-        2550:
+        2542:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -24,-28
-        2551:
+        2543:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -24,-29
-        2552:
+        2544:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -24,-30
-        2553:
+        2545:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -24,-31
-        2554:
+        2546:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -24,-32
-        2555:
+        2547:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -23,-32
-        2556:
+        2548:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -22,-32
-        2561:
+        2553:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -25,-32
-        2562:
+        2554:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -25,-31
-        2563:
+        2555:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -25,-30
-        2564:
+        2556:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -25,-29
-        2565:
+        2557:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -25,-28
-        2566:
+        2558:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -26,-28
-        2567:
+        2559:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -27,-28
-        2568:
+        2560:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -27,-27
-        2569:
+        2561:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -27,-26
-        2570:
+        2562:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale270
           coordinates: -27,-25
-        2571:
+        2563:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -27,-25
-        2572:
+        2564:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -26,-25
-        2573:
+        2565:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
           coordinates: -25,-25
-        2579:
+        2566:
           color: '#52B4E996'
           id: BrickTileWhiteLineW
           coordinates: -31,-19
-        2580:
+        2567:
           color: '#52B4E996'
           id: BrickTileWhiteLineW
           coordinates: -31,-18
-        2581:
+        2568:
           color: '#52B4E996'
           id: BrickTileWhiteLineW
           coordinates: -31,-17
-        2582:
+        2569:
           color: '#52B4E996'
           id: BrickTileWhiteLineW
           coordinates: -31,-16
-        2583:
+        2570:
           color: '#52B4E996'
           id: BrickTileWhiteLineW
           coordinates: -31,-15
-        2589:
+        2571:
           color: '#52B4E996'
           id: BrickTileWhiteLineE
           coordinates: -29,-15
-        2590:
+        2572:
           color: '#52B4E996'
           id: BrickTileWhiteLineE
           coordinates: -29,-16
-        2591:
+        2573:
           color: '#52B4E996'
           id: BrickTileWhiteLineE
           coordinates: -29,-17
-        2592:
+        2574:
           color: '#52B4E996'
           id: BrickTileWhiteLineE
           coordinates: -29,-18
-        2593:
+        2575:
           color: '#52B4E996'
           id: BrickTileWhiteLineE
           coordinates: -29,-19
@@ -10752,187 +10756,187 @@ entities:
           color: '#EFB34196'
           id: BrickTileWhiteLineN
           coordinates: -34,-4
-        2218:
+        2212:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleS
           coordinates: -47,-13
-        2242:
+        2236:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSE
           coordinates: -48,-13
-        2243:
+        2237:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: -46,-13
-        2244:
+        2238:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleN
           coordinates: -39,-21
-        2245:
+        2239:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: -38,-21
-        2246:
+        2240:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNE
           coordinates: -40,-21
-        2509:
+        2501:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -33,-23
-        2510:
+        2502:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -34,-23
-        2511:
+        2503:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -35,-23
-        2512:
+        2504:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -36,-23
-        2513:
+        2505:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -37,-23
-        2514:
+        2506:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -38,-23
-        2515:
+        2507:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -39,-23
-        2516:
+        2508:
           color: '#52B4E996'
           id: BrickTileWhiteLineS
           coordinates: -40,-23
-        2517:
+        2509:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -37,-21
-        2518:
+        2510:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -36,-21
-        2519:
+        2511:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -35,-21
-        2520:
+        2512:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -34,-21
-        2521:
+        2513:
           color: '#52B4E996'
           id: BrickTileWhiteLineN
           coordinates: -33,-21
-        2600:
+        2580:
           color: '#52B4E996'
           id: MiniTileCheckerBOverlay
           coordinates: -34,-19
-        2610:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -35,-18
-        2609:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -34,-17
-        2608:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -34,-16
-        2607:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -34,-15
-        2625:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -33,-19
-        2602:
+        2581:
           color: '#52B4E996'
           id: MiniTileCheckerBOverlay
           coordinates: -33,-18
-        2604:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -33,-17
-        2605:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -33,-16
-        2631:
-          color: '#FFFFFFFF'
-          id: BrickTileDarkCornerNe
-          coordinates: -33,-15
-        2627:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -35,-15
-        2603:
+        2582:
           color: '#52B4E996'
           id: MiniTileCheckerBOverlay
           coordinates: -34,-18
-        2611:
+        2583:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -33,-17
+        2584:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -33,-16
+        2585:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -34,-15
+        2586:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -34,-16
+        2587:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -34,-17
+        2588:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -35,-18
+        2589:
           color: '#52B4E996'
           id: MiniTileCheckerBOverlay
           coordinates: -35,-17
-        2612:
+        2590:
           color: '#52B4E996'
           id: MiniTileCheckerBOverlay
           coordinates: -35,-16
-        2629:
-          color: '#FFFFFFFF'
-          id: BrickTileDarkCornerNw
-          coordinates: -35,-15
-        2626:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -33,-15
-        2615:
+        2591:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineW
           coordinates: -35,-18
-        2616:
+        2592:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineW
           coordinates: -35,-17
-        2617:
+        2593:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineW
           coordinates: -35,-16
-        2628:
-          color: '#FFFFFFFF'
-          id: BrickTileDarkCornerSe
-          coordinates: -33,-19
-        2624:
-          color: '#52B4E996'
-          id: MiniTileCheckerBOverlay
-          coordinates: -35,-19
-        2620:
+        2594:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineE
           coordinates: -33,-18
-        2621:
+        2595:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineE
           coordinates: -33,-17
-        2622:
+        2596:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineE
           coordinates: -33,-16
-        2630:
+        2597:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -35,-19
+        2598:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -33,-19
+        2599:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -33,-15
+        2600:
+          color: '#52B4E996'
+          id: MiniTileCheckerBOverlay
+          coordinates: -35,-15
+        2601:
+          color: '#FFFFFFFF'
+          id: BrickTileDarkCornerSe
+          coordinates: -33,-19
+        2602:
+          color: '#FFFFFFFF'
+          id: BrickTileDarkCornerNw
+          coordinates: -35,-15
+        2603:
           color: '#FFFFFFFF'
           id: BrickTileDarkCornerSw
           coordinates: -35,-19
-        2632:
+        2604:
+          color: '#FFFFFFFF'
+          id: BrickTileDarkCornerNe
+          coordinates: -33,-15
+        2605:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineS
           coordinates: -34,-19
-        2633:
+        2606:
           color: '#FFFFFFFF'
           id: BrickTileDarkLineN
           coordinates: -34,-15
@@ -11468,15 +11472,15 @@ entities:
           color: '#A4610696'
           id: DirtMedium
           coordinates: -50,-44
-        2219:
+        2213:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleS
           coordinates: -50,-46
-        2248:
+        2242:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSE
           coordinates: -51,-46
-        2249:
+        2243:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: -49,-46
@@ -12050,15 +12054,15 @@ entities:
           color: '#A4610696'
           id: Dirt
           coordinates: -67,-12
-        2254:
+        2248:
           color: '#DE3A3A96'
           id: WarnLineGreyscaleW
           coordinates: -65,-13
-        2255:
+        2249:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleSW
           coordinates: -65,-12
-        2256:
+        2250:
           color: '#DE3A3A96'
           id: WarnCornerSmallGreyscaleNW
           coordinates: -65,-14
@@ -13164,8 +13168,8 @@ entities:
       25,1: 0
       25,2: 0
       25,3: 0
-      25,4: 4
-      25,5: 5
+      25,4: 3
+      25,5: 2
       25,6: 0
       25,7: 0
       25,8: 0
@@ -13770,7 +13774,7 @@ entities:
       -32,-2: 0
       -32,-1: 0
       -31,-16: 0
-      -31,-15: 0
+      -31,-15: 4
       -31,-14: 0
       -31,-13: 0
       -31,-12: 0
@@ -13802,7 +13806,7 @@ entities:
       -30,-2: 0
       -30,-1: 0
       -29,-16: 0
-      -29,-15: 6
+      -29,-15: 5
       -29,-14: 0
       -29,-13: 0
       -29,-12: 0
@@ -14038,7 +14042,7 @@ entities:
       -31,-22: 0
       -31,-21: 0
       -31,-20: 0
-      -31,-19: 1
+      -31,-19: 6
       -31,-18: 0
       -31,-17: 0
       -30,-32: 0
@@ -14369,8 +14373,8 @@ entities:
       -10,-26: 0
       -10,-25: 0
       -10,-24: 0
-      -10,-23: 4
-      -10,-22: 9
+      -10,-23: 9
+      -10,-22: 10
       -10,-21: 7
       -10,-20: 0
       -10,-19: 0
@@ -15621,7 +15625,7 @@ entities:
       -16,-35: 0
       -16,-34: 0
       -16,-33: 0
-      -15,-48: 1
+      -15,-48: 11
       -15,-47: 0
       -15,-46: 0
       -15,-45: 0
@@ -16738,7 +16742,7 @@ entities:
       -15,-55: 0
       -15,-54: 0
       -15,-53: 0
-      -15,-52: 1
+      -15,-52: 11
       -15,-51: 0
       -15,-50: 0
       -15,-49: 0
@@ -17695,7 +17699,7 @@ entities:
       -38,-31: 0
       -38,-30: 0
       -38,-29: 0
-      -38,-28: 10
+      -38,-28: 12
       -38,-27: 8
       -38,-26: 8
       -38,-25: 0
@@ -17911,7 +17915,7 @@ entities:
       -41,-6: 1
       -41,-5: 1
       -41,-4: 0
-      -41,-3: 11
+      -41,-3: 13
       -41,-2: 0
       -41,-1: 0
       -40,-16: 0
@@ -17937,8 +17941,8 @@ entities:
       -39,-12: 0
       -39,-11: 0
       -39,-10: 0
-      -39,-9: 12
-      -39,-8: 12
+      -39,-9: 14
+      -39,-8: 14
       -39,-7: 1
       -39,-6: 1
       -39,-5: 0
@@ -17994,7 +17998,7 @@ entities:
       -36,-3: 0
       -36,-2: 0
       -36,-1: 0
-      -35,-16: 1
+      -35,-16: 11
       -35,-15: 0
       -35,-14: 0
       -35,-13: 0
@@ -18092,13 +18096,13 @@ entities:
       -45,6: 0
       -45,7: 0
       -45,8: 0
-      -45,9: 13
+      -45,9: 15
       -45,10: 0
-      -45,11: 14
+      -45,11: 16
       -45,12: 0
-      -45,13: 15
+      -45,13: 17
       -45,14: 0
-      -45,15: 15
+      -45,15: 17
       -44,0: 0
       -44,1: 0
       -44,2: 0
@@ -18108,13 +18112,13 @@ entities:
       -44,6: 0
       -44,7: 0
       -44,8: 0
-      -44,9: 13
+      -44,9: 15
       -44,10: 0
-      -44,11: 14
+      -44,11: 16
       -44,12: 0
-      -44,13: 15
+      -44,13: 17
       -44,14: 0
-      -44,15: 15
+      -44,15: 17
       -43,0: 0
       -43,1: 0
       -43,2: 0
@@ -18124,13 +18128,13 @@ entities:
       -43,6: 0
       -43,7: 0
       -43,8: 0
-      -43,9: 13
+      -43,9: 15
       -43,10: 0
-      -43,11: 14
+      -43,11: 16
       -43,12: 0
-      -43,13: 15
+      -43,13: 17
       -43,14: 0
-      -43,15: 15
+      -43,15: 17
       -42,0: 0
       -42,1: 0
       -42,2: 0
@@ -18245,7 +18249,7 @@ entities:
       -36,15: 0
       -35,0: 0
       -35,1: 1
-      -35,2: 12
+      -35,2: 14
       -35,3: 2
       -35,4: 0
       -35,5: 0
@@ -18305,7 +18309,7 @@ entities:
       -48,-37: 0
       -48,-36: 0
       -48,-35: 0
-      -48,-34: 16
+      -48,-34: 18
       -48,-33: 0
       -47,-48: 0
       -47,-47: 0
@@ -18332,7 +18336,7 @@ entities:
       -46,-42: 0
       -46,-41: 0
       -46,-40: 0
-      -46,-39: 12
+      -46,-39: 14
       -46,-38: 0
       -46,-37: 0
       -46,-36: 0
@@ -18444,7 +18448,7 @@ entities:
       -39,-42: 0
       -39,-41: 0
       -39,-40: 0
-      -39,-39: 5
+      -39,-39: 19
       -39,-38: 0
       -39,-37: 0
       -39,-36: 0
@@ -19461,9 +19465,9 @@ entities:
       -46,28: 0
       -46,29: 0
       -45,16: 0
-      -45,17: 17
+      -45,17: 20
       -45,18: 0
-      -45,19: 15
+      -45,19: 17
       -45,20: 0
       -45,21: 0
       -45,22: 0
@@ -19475,9 +19479,9 @@ entities:
       -45,28: 0
       -45,29: 0
       -44,16: 0
-      -44,17: 17
+      -44,17: 20
       -44,18: 0
-      -44,19: 15
+      -44,19: 17
       -44,20: 0
       -44,21: 0
       -44,22: 0
@@ -19489,9 +19493,9 @@ entities:
       -44,28: 0
       -44,29: 0
       -43,16: 0
-      -43,17: 17
+      -43,17: 20
       -43,18: 0
-      -43,19: 15
+      -43,19: 17
       -43,20: 0
       -43,21: 0
       -43,22: 0
@@ -19606,7 +19610,7 @@ entities:
       -36,23: 0
       -36,24: 0
       -36,25: 0
-      -36,26: 15
+      -36,26: 17
       -36,27: 0
       -36,28: 0
       -36,29: 0
@@ -19622,7 +19626,7 @@ entities:
       -35,23: 0
       -35,24: 0
       -35,25: 0
-      -35,26: 15
+      -35,26: 17
       -35,27: 0
       -35,28: 0
       -35,29: 0
@@ -19638,7 +19642,7 @@ entities:
       -34,23: 0
       -34,24: 0
       -34,25: 0
-      -34,26: 15
+      -34,26: 17
       -34,27: 0
       -34,28: 0
       -34,29: 0
@@ -21145,185 +21149,185 @@ entities:
       -85,-23: 0
       -15,16: 0
       -12,30: 0
-      -40,-64: 15
-      -39,-64: 15
-      -38,-64: 15
-      -37,-64: 15
-      -30,-65: 15
-      -41,-64: 15
-      -15,18: 15
-      -16,16: 15
-      -20,31: 15
-      -19,31: 15
-      -18,31: 15
-      -17,31: 15
-      -22,33: 15
-      -22,34: 15
-      -22,35: 15
-      -22,36: 15
-      -22,37: 15
-      -22,38: 15
-      -21,34: 15
-      -21,36: 15
-      -21,38: 15
-      -20,32: 15
-      -20,34: 15
-      -20,35: 15
-      -20,36: 15
-      -20,38: 15
-      -19,32: 15
-      -19,34: 15
-      -19,35: 15
-      -19,36: 15
-      -19,38: 15
-      -18,32: 15
-      -18,34: 15
-      -18,35: 15
-      -18,36: 15
-      -18,38: 15
-      -17,32: 15
-      -17,34: 15
-      -17,35: 15
-      -17,36: 15
-      -17,38: 15
-      -89,-35: 15
-      -89,-34: 15
-      -89,-33: 15
-      -88,-35: 15
-      -87,-35: 15
-      -87,-34: 15
-      -87,-33: 15
-      -86,-35: 15
-      -86,-33: 15
-      -91,-27: 15
-      -91,-26: 15
-      -91,-25: 15
-      -91,-24: 15
-      -91,-23: 15
-      -90,-27: 15
-      -90,-23: 15
-      -89,-32: 15
-      -89,-31: 15
-      -89,-30: 15
-      -89,-29: 15
-      -89,-28: 15
-      -89,-27: 15
-      -89,-25: 15
-      -89,-23: 15
-      -89,-22: 15
-      -89,-21: 15
-      -89,-20: 15
-      -89,-19: 15
-      -89,-18: 15
-      -89,-17: 15
-      -88,-25: 15
-      -87,-32: 15
-      -87,-31: 15
-      -87,-30: 15
-      -87,-29: 15
-      -87,-28: 15
-      -87,-27: 15
-      -87,-25: 15
-      -87,-23: 15
-      -87,-22: 15
-      -87,-21: 15
-      -87,-20: 15
-      -87,-19: 15
-      -87,-18: 15
-      -87,-17: 15
-      -86,-32: 15
-      -86,-31: 15
-      -86,-30: 15
-      -86,-29: 15
-      -86,-28: 15
-      -86,-21: 15
-      -86,-20: 15
-      -86,-19: 15
-      -86,-18: 15
-      -86,-17: 15
-      -89,-16: 15
-      -89,-15: 15
-      -89,-14: 15
-      -88,-14: 15
-      -87,-16: 15
-      -87,-15: 15
-      -87,-14: 15
-      -86,-16: 15
-      -86,-14: 15
-      -15,30: 15
-      -10,31: 15
-      -9,31: 15
-      -8,31: 15
-      -7,31: 15
-      -5,31: 15
-      -16,32: 15
-      -16,34: 15
-      -16,35: 15
-      -16,36: 15
-      -16,38: 15
-      -16,39: 15
-      -16,40: 15
-      -15,32: 15
-      -15,34: 15
-      -15,35: 15
-      -15,36: 15
-      -15,40: 15
-      -14,32: 15
-      -14,33: 15
-      -14,34: 15
-      -14,35: 15
-      -14,36: 15
-      -14,37: 15
-      -14,38: 15
-      -14,40: 15
-      -13,32: 15
-      -13,34: 15
-      -13,35: 15
-      -13,36: 15
-      -13,40: 15
-      -12,32: 15
-      -12,34: 15
-      -12,35: 15
-      -12,36: 15
-      -12,38: 15
-      -12,39: 15
-      -12,40: 15
-      -11,32: 15
-      -11,34: 15
-      -11,35: 15
-      -11,36: 15
-      -11,38: 15
-      -10,32: 15
-      -10,34: 15
-      -10,35: 15
-      -10,36: 15
-      -10,38: 15
-      -9,32: 15
-      -9,34: 15
-      -9,35: 15
-      -9,36: 15
-      -9,38: 15
-      -8,32: 15
-      -8,34: 15
-      -8,35: 15
-      -8,36: 15
-      -8,38: 15
-      -7,32: 15
-      -7,34: 15
-      -7,35: 15
-      -7,36: 15
-      -7,38: 15
-      -6,32: 15
-      -6,34: 15
-      -6,36: 15
-      -6,38: 15
-      -5,32: 15
-      -5,33: 15
-      -5,34: 15
-      -5,35: 15
-      -5,36: 15
-      -5,37: 15
-      -5,38: 15
+      -40,-64: 17
+      -39,-64: 17
+      -38,-64: 17
+      -37,-64: 17
+      -30,-65: 17
+      -41,-64: 17
+      -15,18: 17
+      -16,16: 17
+      -20,31: 17
+      -19,31: 17
+      -18,31: 17
+      -17,31: 17
+      -22,33: 17
+      -22,34: 17
+      -22,35: 17
+      -22,36: 17
+      -22,37: 17
+      -22,38: 17
+      -21,34: 17
+      -21,36: 17
+      -21,38: 17
+      -20,32: 17
+      -20,34: 17
+      -20,35: 17
+      -20,36: 17
+      -20,38: 17
+      -19,32: 17
+      -19,34: 17
+      -19,35: 17
+      -19,36: 17
+      -19,38: 17
+      -18,32: 17
+      -18,34: 17
+      -18,35: 17
+      -18,36: 17
+      -18,38: 17
+      -17,32: 17
+      -17,34: 17
+      -17,35: 17
+      -17,36: 17
+      -17,38: 17
+      -89,-35: 17
+      -89,-34: 17
+      -89,-33: 17
+      -88,-35: 17
+      -87,-35: 17
+      -87,-34: 17
+      -87,-33: 17
+      -86,-35: 17
+      -86,-33: 17
+      -91,-27: 17
+      -91,-26: 17
+      -91,-25: 17
+      -91,-24: 17
+      -91,-23: 17
+      -90,-27: 17
+      -90,-23: 17
+      -89,-32: 17
+      -89,-31: 17
+      -89,-30: 17
+      -89,-29: 17
+      -89,-28: 17
+      -89,-27: 17
+      -89,-25: 17
+      -89,-23: 17
+      -89,-22: 17
+      -89,-21: 17
+      -89,-20: 17
+      -89,-19: 17
+      -89,-18: 17
+      -89,-17: 17
+      -88,-25: 17
+      -87,-32: 17
+      -87,-31: 17
+      -87,-30: 17
+      -87,-29: 17
+      -87,-28: 17
+      -87,-27: 17
+      -87,-25: 17
+      -87,-23: 17
+      -87,-22: 17
+      -87,-21: 17
+      -87,-20: 17
+      -87,-19: 17
+      -87,-18: 17
+      -87,-17: 17
+      -86,-32: 17
+      -86,-31: 17
+      -86,-30: 17
+      -86,-29: 17
+      -86,-28: 17
+      -86,-21: 17
+      -86,-20: 17
+      -86,-19: 17
+      -86,-18: 17
+      -86,-17: 17
+      -89,-16: 17
+      -89,-15: 17
+      -89,-14: 17
+      -88,-14: 17
+      -87,-16: 17
+      -87,-15: 17
+      -87,-14: 17
+      -86,-16: 17
+      -86,-14: 17
+      -15,30: 17
+      -10,31: 17
+      -9,31: 17
+      -8,31: 17
+      -7,31: 17
+      -5,31: 17
+      -16,32: 17
+      -16,34: 17
+      -16,35: 17
+      -16,36: 17
+      -16,38: 17
+      -16,39: 17
+      -16,40: 17
+      -15,32: 17
+      -15,34: 17
+      -15,35: 17
+      -15,36: 17
+      -15,40: 17
+      -14,32: 17
+      -14,33: 17
+      -14,34: 17
+      -14,35: 17
+      -14,36: 17
+      -14,37: 17
+      -14,38: 17
+      -14,40: 17
+      -13,32: 17
+      -13,34: 17
+      -13,35: 17
+      -13,36: 17
+      -13,40: 17
+      -12,32: 17
+      -12,34: 17
+      -12,35: 17
+      -12,36: 17
+      -12,38: 17
+      -12,39: 17
+      -12,40: 17
+      -11,32: 17
+      -11,34: 17
+      -11,35: 17
+      -11,36: 17
+      -11,38: 17
+      -10,32: 17
+      -10,34: 17
+      -10,35: 17
+      -10,36: 17
+      -10,38: 17
+      -9,32: 17
+      -9,34: 17
+      -9,35: 17
+      -9,36: 17
+      -9,38: 17
+      -8,32: 17
+      -8,34: 17
+      -8,35: 17
+      -8,36: 17
+      -8,38: 17
+      -7,32: 17
+      -7,34: 17
+      -7,35: 17
+      -7,36: 17
+      -7,38: 17
+      -6,32: 17
+      -6,34: 17
+      -6,36: 17
+      -6,38: 17
+      -5,32: 17
+      -5,33: 17
+      -5,34: 17
+      -5,35: 17
+      -5,36: 17
+      -5,37: 17
+      -5,38: 17
     uniqueMixes:
     - volume: 2500
       temperature: 293.15
@@ -21343,53 +21347,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 8.79574
-      - 33.08873
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-    - volume: 2500
-      temperature: 293.15
-      moles:
-      - 16.902393
-      - 63.585197
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-    - volume: 2500
-      temperature: 293.15
-      moles:
-      - 11.039318
-      - 41.52886
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-    - volume: 2500
-      temperature: 293.15
-      moles:
-      - 12.021078
-      - 45.22215
+      - 8.077393
+      - 30.386375
       - 0
       - 0
       - 0
@@ -21418,8 +21377,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 3.5448089
-      - 13.335235
+      - 11.039318
+      - 41.52886
       - 0
       - 0
       - 0
@@ -21433,8 +21392,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 17.389294
-      - 65.41687
+      - 20.619795
+      - 77.56971
       - 0
       - 0
       - 0
@@ -21448,23 +21407,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 21.213781
-      - 79.80423
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-    - volume: 2500
-      temperature: 293.15
-      moles:
-      - 9.853881
-      - 37.06936
+      - 2.9894438
+      - 11.246004
       - 0
       - 0
       - 0
@@ -21493,6 +21437,96 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
+      - 15.969111
+      - 60.07428
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 21.213781
+      - 79.80423
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 12.021078
+      - 45.22215
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 9.049115
+      - 34.041904
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 8.79574
+      - 33.08873
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 7.631391
+      - 28.70856
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
       - 12.367364
       - 46.524845
       - 0
@@ -21508,8 +21542,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 8.549459
-      - 32.162247
+      - 7.8512254
+      - 29.535557
       - 0
       - 0
       - 0
@@ -21568,8 +21602,23 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 15.087361
-      - 56.757217
+      - 13.855177
+      - 52.121857
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 14.254297
+      - 53.62331
       - 0
       - 0
       - 0
@@ -21956,21 +22005,32 @@ entities:
     parent: 6
     type: Transform
 - uid: 63
-  type: ShuttersNormal
+  type: PoweredlightOff
   components:
-  - pos: 0.5,-33.5
+  - pos: -8.5,-23.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13550
+      Off:
+      - port: Off
+        uid: 13550
+      Toggle: []
+    type: SignalReceiver
 - uid: 64
-  type: ShuttersNormal
+  type: SpawnPointChemist
   components:
-  - pos: 0.5,-32.5
+  - pos: -21.5,-19.5
     parent: 6
     type: Transform
 - uid: 65
-  type: ShuttersNormal
+  type: SpawnPointWarden
   components:
-  - pos: 0.5,-31.5
+  - pos: 17.5,-3.5
     parent: 6
     type: Transform
 - uid: 66
@@ -27421,13 +27481,11 @@ entities:
     parent: 6
     type: Transform
 - uid: 916
-  type: Poweredlight
+  type: SpawnPointChemist
   components:
-  - pos: -8.5,-23.5
+  - pos: -24.5,-21.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
 - uid: 917
   type: WallSolid
   components:
@@ -34233,9 +34291,9 @@ entities:
   - color: '#0055CCFF'
     type: AtmosPipeColor
 - uid: 1991
-  type: SpawnPointMedicalIntern
+  type: SpawnPointLawyer
   components:
-  - pos: -32.5,-25.5
+  - pos: 9.5,-12.5
     parent: 6
     type: Transform
 - uid: 1992
@@ -43879,9 +43937,9 @@ entities:
     parent: 6
     type: Transform
 - uid: 3424
-  type: SpawnPointWarden
+  type: SpawnPointBartender
   components:
-  - pos: 17.5,-0.5
+  - pos: -0.5,-19.5
     parent: 6
     type: Transform
 - uid: 3425
@@ -50362,7 +50420,7 @@ entities:
   - pos: -29.5,-52.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -241362.06
+  - SecondsUntilStateChange: -243711.69
     state: Opening
     type: Door
 - uid: 4422
@@ -51248,15 +51306,15 @@ entities:
     parent: 6
     type: Transform
 - uid: 4554
-  type: SpawnPointChemist
+  type: SpawnPointChef
   components:
-  - pos: -26.5,-17.5
+  - pos: -3.5,-24.5
     parent: 6
     type: Transform
 - uid: 4555
-  type: SpawnPointChemist
+  type: WardrobeGreyFilled
   components:
-  - pos: -25.5,-17.5
+  - pos: -30.5,-14.5
     parent: 6
     type: Transform
 - uid: 4556
@@ -51312,11 +51370,23 @@ entities:
     parent: 6
     type: Transform
 - uid: 4564
-  type: SpawnPointChef
+  type: PoweredlightOff
   components:
-  - pos: -8.5,-25.5
+  - rot: -1.5707963267948966 rad
+    pos: -32.5,-16.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13075
+      Off:
+      - port: Off
+        uid: 13075
+      Toggle: []
+    type: SignalReceiver
 - uid: 4565
   type: SpawnPointBotanist
   components:
@@ -51444,17 +51514,43 @@ entities:
     parent: 6
     type: Transform
 - uid: 4586
-  type: SpawnPointJanitor
+  type: PoweredlightOff
   components:
-  - pos: 27.5,4.5
+  - rot: 1.5707963267948966 rad
+    pos: -30.5,-16.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 4587
+      Off:
+      - port: Off
+        uid: 4587
+      Toggle: []
+    type: SignalReceiver
 - uid: 4587
-  type: SpawnPointLawyer
+  type: SignalSwitch
   components:
-  - pos: 9.5,-15.5
+  - rot: 1.5707963267948966 rad
+    pos: -31.5,-18.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 4586
+      Off:
+      - port: Off
+        uid: 4586
+    transmissionRange: 4
+    type: SignalTransmitter
 - uid: 4588
   type: Railing
   components:
@@ -51726,9 +51822,9 @@ entities:
     parent: 6
     type: Transform
 - uid: 4631
-  type: SpawnPointBartender
+  type: SpawnPointJanitor
   components:
-  - pos: -3.5,-16.5
+  - pos: 30.5,5.5
     parent: 6
     type: Transform
 - uid: 4632
@@ -51824,9 +51920,10 @@ entities:
     parent: 6
     type: Transform
 - uid: 4647
-  type: BiomassReclaimer
+  type: AirAlarm
   components:
-  - pos: -30.5,-14.5
+  - rot: 1.5707963267948966 rad
+    pos: -4.5,-22.5
     parent: 6
     type: Transform
 - uid: 4648
@@ -53706,14 +53803,25 @@ entities:
     parent: 6
     type: Transform
 - uid: 4944
-  type: PoweredlightLED
+  type: SignalSwitch
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -32.5,-16.5
+  - rot: 1.5707963267948966 rad
+    pos: -23.5,-4.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 5415
+      Off:
+      - port: Off
+        uid: 5415
+    transmissionRange: 4
+    type: SignalTransmitter
 - uid: 4945
   type: PoweredlightLED
   components:
@@ -56682,23 +56790,57 @@ entities:
     parent: 6
     type: Transform
 - uid: 5414
-  type: ShuttersNormal
+  type: PoweredlightOff
   components:
-  - pos: -10.5,-34.5
+  - pos: -36.5,4.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13038
+      Off:
+      - port: Off
+        uid: 13038
+      Toggle: []
+    type: SignalReceiver
 - uid: 5415
-  type: ShuttersNormal
+  type: PoweredlightOff
   components:
-  - pos: 0.5,-34.5
+  - pos: -22.5,-3.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 4944
+      Off:
+      - port: Off
+        uid: 4944
+      Toggle: []
+    type: SignalReceiver
 - uid: 5416
-  type: ShuttersNormal
+  type: PoweredlightOff
   components:
-  - pos: 0.5,-35.5
+  - rot: -1.5707963267948966 rad
+    pos: -21.5,-16.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13041
+      Off:
+      - port: Off
+        uid: 13041
+      Toggle: []
+    type: SignalReceiver
 - uid: 5417
   type: FloorDrain
   components:
@@ -57979,7 +58121,7 @@ entities:
   - pos: 18.5,-39.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -114283.3
+  - SecondsUntilStateChange: -116632.94
     state: Opening
     type: Door
   - inputs:
@@ -57995,7 +58137,7 @@ entities:
   - pos: 17.5,-39.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -114283.3
+  - SecondsUntilStateChange: -116632.94
     state: Opening
     type: Door
   - inputs:
@@ -62906,9 +63048,9 @@ entities:
     parent: 6
     type: Transform
 - uid: 6336
-  type: RadioHandheld
+  type: FaxMachineBridge
   components:
-  - pos: -2.459987,9.6572895
+  - pos: -2.5,9.5
     parent: 6
     type: Transform
 - uid: 6337
@@ -63373,14 +63515,22 @@ entities:
     parent: 6
     type: Transform
 - uid: 6405
-  type: PoweredlightLED
+  type: PoweredlightOff
   components:
-  - rot: 1.5707963267948966 rad
-    pos: -30.5,-16.5
+  - pos: -37.5,-17.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13137
+      Off:
+      - port: Off
+        uid: 13137
+      Toggle: []
+    type: SignalReceiver
 - uid: 6406
   type: CableApcStack
   components:
@@ -63514,11 +63664,23 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 6426
-  type: WardrobeGreyFilled
+  type: PoweredSmallLightOff
   components:
-  - pos: -30.5,-18.5
+  - rot: 1.5707963267948966 rad
+    pos: -25.5,-37.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 8450
+      Off:
+      - port: Off
+        uid: 8450
+      Toggle: []
+    type: SignalReceiver
 - uid: 6427
   type: BoxSterileMask
   components:
@@ -69430,17 +69592,40 @@ entities:
     parent: 6
     type: Transform
 - uid: 7365
-  type: ShuttersNormal
+  type: PoweredSmallLightOff
   components:
-  - pos: 0.5,-36.5
+  - pos: -27.5,-47.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13494
+      Off:
+      - port: Off
+        uid: 13494
+      Toggle: []
+    type: SignalReceiver
 - uid: 7366
-  type: ShuttersNormal
+  type: PoweredSmallLightOff
   components:
-  - pos: -1.5,-29.5
+  - rot: 1.5707963267948966 rad
+    pos: -51.5,-48.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13433
+      Off:
+      - port: Off
+        uid: 13433
+      Toggle: []
+    type: SignalReceiver
 - uid: 7367
   type: PosterContrabandMissingGloves
   components:
@@ -69471,7 +69656,7 @@ entities:
       Close: []
       Toggle:
       - port: Pressed
-        uid: 13041
+        uid: 13035
     type: SignalReceiver
 - uid: 7371
   type: ShuttersNormalOpen
@@ -69484,14 +69669,26 @@ entities:
       Close: []
       Toggle:
       - port: Pressed
-        uid: 13041
+        uid: 13035
     type: SignalReceiver
 - uid: 7372
-  type: ShuttersNormal
+  type: PoweredSmallLightOff
   components:
-  - pos: 0.5,-37.5
+  - rot: -1.5707963267948966 rad
+    pos: -48.5,-49.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13433
+      Off:
+      - port: Off
+        uid: 13433
+      Toggle: []
+    type: SignalReceiver
 - uid: 7373
   type: CableApcExtension
   components:
@@ -71020,11 +71217,23 @@ entities:
     parent: 6
     type: Transform
 - uid: 7619
-  type: ShuttersNormal
+  type: PoweredSmallLightOff
   components:
-  - pos: 0.5,-38.5
+  - rot: -1.5707963267948966 rad
+    pos: 10.5,-15.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 11161
+      Off:
+      - port: Off
+        uid: 11161
+      Toggle: []
+    type: SignalReceiver
 - uid: 7620
   type: SignalButton
   components:
@@ -71155,11 +71364,23 @@ entities:
     parent: 6
     type: Transform
 - uid: 7638
-  type: WetFloorSign
+  type: PoweredlightOff
   components:
-  - pos: 30.477365,5.5147624
+  - rot: 1.5707963267948966 rad
+    pos: 25.5,4.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13036
+      Off:
+      - port: Off
+        uid: 13036
+      Toggle: []
+    type: SignalReceiver
 - uid: 7639
   type: BoxTrashbag
   components:
@@ -71491,6 +71712,12 @@ entities:
     pos: -12.5,0.5
     parent: 6
     type: Transform
+- uid: 7689
+  type: EftposSecurity
+  components:
+  - pos: 16.644453,1.4911418
+    parent: 6
+    type: Transform
 - uid: 7690
   type: DisposalUnit
   components:
@@ -71510,11 +71737,23 @@ entities:
     parent: 6
     type: Transform
 - uid: 7693
-  type: ShuttersNormal
+  type: PoweredlightOff
   components:
-  - pos: -10.5,-35.5
+  - rot: -1.5707963267948966 rad
+    pos: 19.5,6.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 8514
+      Off:
+      - port: Off
+        uid: 8514
+      Toggle: []
+    type: SignalReceiver
 - uid: 7694
   type: SignalButton
   components:
@@ -72372,6 +72611,18 @@ entities:
   - pos: 12.5,3.5
     parent: 6
     type: Transform
+- uid: 7830
+  type: EftposSecurity
+  components:
+  - pos: 10.850919,8.558726
+    parent: 6
+    type: Transform
+- uid: 7831
+  type: EftposSecurity
+  components:
+  - pos: 16.460802,1.4194585
+    parent: 6
+    type: Transform
 - uid: 7832
   type: ClosetEmergencyFilledRandom
   components:
@@ -72402,6 +72653,19 @@ entities:
   - pos: 23.5,-9.5
     parent: 6
     type: Transform
+- uid: 7837
+  type: ATM
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -13.5,-48.5
+    parent: 6
+    type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - containers:
+      IdCardSlot: !type:ContainerSlot {}
+      ATM-IdCard: !type:ContainerSlot {}
+    type: ContainerContainer
 - uid: 7838
   type: Barricade
   components:
@@ -72887,11 +73151,22 @@ entities:
     parent: 6
     type: Transform
 - uid: 7918
-  type: ExtinguisherCabinetFilled
+  type: PoweredlightOff
   components:
-  - pos: -4.5,-22.5
+  - pos: 11.5,9.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 8468
+      Off:
+      - port: Off
+        uid: 8468
+      Toggle: []
+    type: SignalReceiver
 - uid: 7919
   type: SolarPanel
   components:
@@ -75131,6 +75406,26 @@ entities:
       - port: Pressed
         uid: 4845
     type: SignalReceiver
+- uid: 8277
+  type: SignalSwitch
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 18.5,-1.5
+    parent: 6
+    type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 8516
+      Off:
+      - port: Off
+        uid: 8516
+    transmissionRange: 3
+    type: SignalTransmitter
 - uid: 8278
   type: AsteroidRock
   components:
@@ -75775,16 +76070,9 @@ entities:
     pos: -20.5,-5.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116020.39
+  - SecondsUntilStateChange: -118370.03
     state: Opening
     type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 8384
-    type: SignalReceiver
 - uid: 8382
   type: ShuttersNormal
   components:
@@ -75792,7 +76080,7 @@ entities:
     pos: -20.5,-4.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116020.39
+  - SecondsUntilStateChange: -118370.03
     state: Opening
     type: Door
   - inputs:
@@ -75800,7 +76088,7 @@ entities:
       Close: []
       Toggle:
       - port: Pressed
-        uid: 8384
+        uid: 13037
     type: SignalReceiver
 - uid: 8383
   type: ShuttersNormalOpen
@@ -75813,32 +76101,26 @@ entities:
       Close: []
       Toggle:
       - port: Pressed
-        uid: 8384
+        uid: 13037
     type: SignalReceiver
 - uid: 8384
-  type: SignalButton
+  type: PoweredlightOff
   components:
   - rot: 1.5707963267948966 rad
-    pos: -23.5,-4.5
+    pos: -9.5,-3.5
     parent: 6
     type: Transform
-  - arc: 3.141592653589793 rad
-    type: WallMount
-  - canCollide: False
-    type: Physics
-  - state: True
-    type: SignalSwitch
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 8382
-      - port: Toggle
-        uid: 8381
-      - port: Toggle
-        uid: 8383
-    transmissionRange: 2
-    type: SignalTransmitter
-  - type: ItemCooldown
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 10917
+      Off:
+      - port: Off
+        uid: 10917
+      Toggle: []
+    type: SignalReceiver
 - uid: 8385
   type: WindowReinforcedDirectional
   components:
@@ -76130,13 +76412,23 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 8425
-  type: Poweredlight
+  type: PoweredSmallLightOff
   components:
-  - pos: -36.5,4.5
+  - rot: -1.5707963267948966 rad
+    pos: -7.5,-0.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 8499
+      Off:
+      - port: Off
+        uid: 8499
+      Toggle: []
+    type: SignalReceiver
 - uid: 8426
   type: Poweredlight
   components:
@@ -76190,13 +76482,23 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 8432
-  type: Poweredlight
+  type: PoweredlightOff
   components:
-  - pos: -22.5,-3.5
+  - rot: -1.5707963267948966 rad
+    pos: -1.5,-51.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13549
+      Off:
+      - port: Off
+        uid: 13549
+      Toggle: []
+    type: SignalReceiver
 - uid: 8433
   type: Poweredlight
   components:
@@ -76237,14 +76539,23 @@ entities:
     parent: 6
     type: Transform
 - uid: 8438
-  type: Poweredlight
+  type: PoweredlightOff
   components:
-  - rot: 1.5707963267948966 rad
-    pos: -26.5,-16.5
+  - rot: -1.5707963267948966 rad
+    pos: -14.5,-50.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13548
+      Off:
+      - port: Off
+        uid: 13548
+      Toggle: []
+    type: SignalReceiver
 - uid: 8439
   type: WallReinforced
   components:
@@ -76268,13 +76579,22 @@ entities:
     parent: 6
     type: Transform
 - uid: 8442
-  type: Poweredlight
+  type: PoweredSmallLightOff
   components:
-  - pos: -38.5,-17.5
+  - pos: -6.5,-20.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 8470
+      Off:
+      - port: Off
+        uid: 8470
+      Toggle: []
+    type: SignalReceiver
 - uid: 8443
   type: Poweredlight
   components:
@@ -76335,14 +76655,24 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 8450
-  type: PoweredSmallLight
+  type: SignalSwitch
   components:
-  - rot: 1.5707963267948966 rad
-    pos: -25.5,-37.5
+  - pos: -24.5,-36.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 6426
+      Off:
+      - port: Off
+        uid: 6426
+    transmissionRange: 3
+    type: SignalTransmitter
 - uid: 8451
   type: VendingBarDrobe
   components:
@@ -76488,31 +76818,62 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 8468
-  type: PoweredSmallLight
+  type: SignalSwitch
   components:
-  - pos: -27.5,-47.5
+  - pos: 12.5,10.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 7918
+      Off:
+      - port: Off
+        uid: 7918
+    transmissionRange: 3
+    type: SignalTransmitter
 - uid: 8469
-  type: PoweredSmallLight
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -48.5,-49.5
-    parent: 6
-    type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
-- uid: 8470
-  type: PoweredSmallLight
+  type: PoweredlightOff
   components:
   - rot: 1.5707963267948966 rad
-    pos: -51.5,-48.5
+    pos: -26.5,-16.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13041
+      Off:
+      - port: Off
+        uid: 13041
+      Toggle: []
+    type: SignalReceiver
+- uid: 8470
+  type: SignalSwitch
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -4.5,-21.5
+    parent: 6
+    type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 8442
+      Off:
+      - port: Off
+        uid: 8442
+    transmissionRange: 4
+    type: SignalTransmitter
 - uid: 8471
   type: Poweredlight
   components:
@@ -76745,14 +77106,25 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 8499
-  type: PoweredSmallLight
+  type: SignalSwitch
   components:
-  - rot: -1.5707963267948966 rad
-    pos: 10.5,-15.5
+  - rot: 3.141592653589793 rad
+    pos: -6.5,-0.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 8425
+      Off:
+      - port: Off
+        uid: 8425
+    transmissionRange: 3
+    type: SignalTransmitter
 - uid: 8500
   type: Poweredlight
   components:
@@ -76876,31 +77248,50 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 8514
-  type: Poweredlight
+  type: SignalSwitch
   components:
   - rot: 1.5707963267948966 rad
-    pos: 25.5,4.5
+    pos: 16.5,7.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 7693
+      Off:
+      - port: Off
+        uid: 7693
+    transmissionRange: 5
+    type: SignalTransmitter
 - uid: 8515
-  type: Poweredlight
+  type: SurveillanceCameraCommand
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,-5.5
+    parent: 6
+    type: Transform
+- uid: 8516
+  type: PoweredlightOff
   components:
   - rot: -1.5707963267948966 rad
-    pos: 19.5,6.5
+    pos: 17.5,-0.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 8516
-  type: Poweredlight
-  components:
-  - pos: 11.5,9.5
-    parent: 6
-    type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 8277
+      Off:
+      - port: Off
+        uid: 8277
+      Toggle: []
+    type: SignalReceiver
 - uid: 8517
   type: PoweredSmallLight
   components:
@@ -76928,13 +77319,22 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 8520
-  type: Poweredlight
+  type: PoweredSmallLightOff
   components:
-  - pos: 9.5,-3.5
+  - pos: -3.5,-14.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 10941
+      Off:
+      - port: Off
+        uid: 10941
+      Toggle: []
+    type: SignalReceiver
 - uid: 8521
   type: WindoorCommandLocked
   components:
@@ -76975,23 +77375,40 @@ entities:
     parent: 6
     type: Transform
 - uid: 8527
-  type: Poweredlight
+  type: PoweredSmallLightOff
   components:
-  - rot: 1.5707963267948966 rad
-    pos: -9.5,-3.5
+  - pos: -3.5,-2.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 9818
+      Off:
+      - port: Off
+        uid: 9818
+      Toggle: []
+    type: SignalReceiver
 - uid: 8528
-  type: PoweredSmallLight
+  type: PoweredSmallLightOff
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -7.5,-0.5
+  - rot: 3.141592653589793 rad
+    pos: -33.5,-26.5
     parent: 6
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 13149
+      Off:
+      - port: Off
+        uid: 13149
+      Toggle: []
+    type: SignalReceiver
 - uid: 8529
   type: Poweredlight
   components:
@@ -77047,14 +77464,11 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 8535
-  type: Poweredlight
+  type: SpawnPointMedicalIntern
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -1.5,-51.5
+  - pos: -32.5,-22.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
 - uid: 8536
   type: Poweredlight
   components:
@@ -77083,14 +77497,12 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 8539
-  type: Poweredlight
+  type: SurveillanceCameraCommand
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -14.5,-50.5
+  - rot: 3.141592653589793 rad
+    pos: -1.5,-5.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
 - uid: 8540
   type: Poweredlight
   components:
@@ -84885,13 +85297,25 @@ entities:
     parent: 6
     type: Transform
 - uid: 9818
-  type: PoweredSmallLight
+  type: SignalSwitch
   components:
-  - pos: -6.5,-20.5
+  - rot: -1.5707963267948966 rad
+    pos: -1.5,-3.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 8527
+      Off:
+      - port: Off
+        uid: 8527
+    transmissionRange: 4
+    type: SignalTransmitter
 - uid: 9819
   type: CableApcExtension
   components:
@@ -91947,6 +92371,26 @@ entities:
     pos: 20.5,-22.5
     parent: 6
     type: Transform
+- uid: 10917
+  type: SignalSwitch
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -7.5,-4.5
+    parent: 6
+    type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 8384
+      Off:
+      - port: Off
+        uid: 8384
+    transmissionRange: 4
+    type: SignalTransmitter
 - uid: 10918
   type: ChairFolding
   components:
@@ -92088,6 +92532,26 @@ entities:
   - pos: -23.5,-58.5
     parent: 6
     type: Transform
+- uid: 10941
+  type: SignalSwitch
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -4.5,-14.5
+    parent: 6
+    type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 8520
+      Off:
+      - port: Off
+        uid: 8520
+    transmissionRange: 3
+    type: SignalTransmitter
 - uid: 10942
   type: ClosetFireFilled
   components:
@@ -93481,29 +93945,67 @@ entities:
         uid: 11154
     type: SignalReceiver
 - uid: 11160
-  type: ShuttersNormal
+  type: ExtinguisherCabinetFilled
   components:
-  - pos: -2.5,-29.5
+  - pos: -4.5,-23.5
     parent: 6
     type: Transform
 - uid: 11161
-  type: ShuttersNormal
+  type: SignalSwitch
   components:
-  - pos: -3.5,-29.5
+  - rot: 3.141592653589793 rad
+    pos: 10.5,-17.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 7619
+      Off:
+      - port: Off
+        uid: 7619
+    transmissionRange: 4
+    type: SignalTransmitter
 - uid: 11162
-  type: ShuttersNormal
+  type: SignalSwitch
   components:
-  - pos: -6.5,-29.5
+  - pos: 9.5,-2.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 11163
+      Off:
+      - port: Off
+        uid: 11163
+    transmissionRange: 3
+    type: SignalTransmitter
 - uid: 11163
-  type: ShuttersNormal
+  type: PoweredlightOff
   components:
-  - pos: -7.5,-29.5
+  - pos: 8.5,-3.5
     parent: 6
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+  - inputs:
+      On:
+      - port: On
+        uid: 11162
+      Off:
+      - port: Off
+        uid: 11162
+      Toggle: []
+    type: SignalReceiver
 - uid: 11164
   type: ClosetEmergencyFilledRandom
   components:
@@ -108720,7 +109222,7 @@ entities:
   - pos: -8.5,11.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116537.305
+  - SecondsUntilStateChange: -118886.945
     state: Opening
     type: Door
   - inputs:
@@ -108736,7 +109238,7 @@ entities:
   - pos: -6.5,11.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116537.305
+  - SecondsUntilStateChange: -118886.945
     state: Opening
     type: Door
   - inputs:
@@ -108752,7 +109254,7 @@ entities:
   - pos: -7.5,11.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116537.305
+  - SecondsUntilStateChange: -118886.945
     state: Opening
     type: Door
   - inputs:
@@ -108768,7 +109270,7 @@ entities:
   - pos: -5.5,11.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116537.305
+  - SecondsUntilStateChange: -118886.945
     state: Opening
     type: Door
   - inputs:
@@ -108784,7 +109286,7 @@ entities:
   - pos: -3.5,11.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116537.305
+  - SecondsUntilStateChange: -118886.945
     state: Opening
     type: Door
   - inputs:
@@ -108800,7 +109302,7 @@ entities:
   - pos: -2.5,11.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116537.305
+  - SecondsUntilStateChange: -118886.945
     state: Opening
     type: Door
   - inputs:
@@ -108816,7 +109318,7 @@ entities:
   - pos: -1.5,11.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116537.305
+  - SecondsUntilStateChange: -118886.945
     state: Opening
     type: Door
   - inputs:
@@ -108832,7 +109334,7 @@ entities:
   - pos: -0.5,11.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116537.305
+  - SecondsUntilStateChange: -118886.945
     state: Opening
     type: Door
   - inputs:
@@ -108843,29 +109345,87 @@ entities:
         uid: 13040
     type: SignalReceiver
 - uid: 13035
-  type: ShuttersNormal
+  type: SignalButton
   components:
-  - pos: -8.5,-29.5
+  - pos: 11.5,10.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      Pressed:
+      - port: Toggle
+        uid: 13042
+      - port: Toggle
+        uid: 13043
+      - port: Toggle
+        uid: 13044
+      - port: Toggle
+        uid: 7371
+      - port: Toggle
+        uid: 7370
+    transmissionRange: 7
+    type: SignalTransmitter
 - uid: 13036
-  type: ShuttersNormal
+  type: SignalSwitch
   components:
-  - pos: -10.5,-33.5
+  - pos: 28.5,6.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 7638
+      Off:
+      - port: Off
+        uid: 7638
+    transmissionRange: 5
+    type: SignalTransmitter
 - uid: 13037
-  type: ShuttersNormal
+  type: SignalButton
   components:
-  - pos: -10.5,-32.5
+  - rot: 1.5707963267948966 rad
+    pos: -23.5,-3.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      Pressed:
+      - port: Toggle
+        uid: 8383
+      - port: Toggle
+        uid: 8382
+    transmissionRange: 5
+    type: SignalTransmitter
 - uid: 13038
-  type: ShuttersNormal
+  type: SignalSwitch
   components:
-  - pos: -10.5,-31.5
+  - rot: -1.5707963267948966 rad
+    pos: -33.5,-1.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 5414
+      Off:
+      - port: Off
+        uid: 5414
+    transmissionRange: 8
+    type: SignalTransmitter
 - uid: 13039
   type: RubberStampDenied
   components:
@@ -108915,39 +109475,36 @@ entities:
     type: SignalTransmitter
   - type: ItemCooldown
 - uid: 13041
-  type: SignalButton
+  type: SignalSwitch
   components:
-  - pos: 12.5,10.5
+  - rot: 3.141592653589793 rad
+    pos: -22.5,-18.5
     parent: 6
     type: Transform
   - arc: 3.141592653589793 rad
     type: WallMount
   - canCollide: False
     type: Physics
-  - state: True
-    type: SignalSwitch
   - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 13044
-      - port: Toggle
-        uid: 13043
-      - port: Toggle
-        uid: 13042
-      - port: Toggle
-        uid: 7371
-      - port: Toggle
-        uid: 7370
+      On:
+      - port: On
+        uid: 5416
+      - port: On
+        uid: 8469
+      Off:
+      - port: Off
+        uid: 5416
+      - port: Off
+        uid: 8469
     transmissionRange: 6
     type: SignalTransmitter
-  - type: ItemCooldown
 - uid: 13042
   type: ShuttersNormal
   components:
   - pos: 13.5,9.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116351.49
+  - SecondsUntilStateChange: -118701.13
     state: Opening
     type: Door
   - inputs:
@@ -108955,7 +109512,7 @@ entities:
       Close: []
       Toggle:
       - port: Pressed
-        uid: 13041
+        uid: 13035
     type: SignalReceiver
 - uid: 13043
   type: ShuttersNormal
@@ -108963,7 +109520,7 @@ entities:
   - pos: 13.5,8.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116351.49
+  - SecondsUntilStateChange: -118701.13
     state: Opening
     type: Door
   - inputs:
@@ -108971,7 +109528,7 @@ entities:
       Close: []
       Toggle:
       - port: Pressed
-        uid: 13041
+        uid: 13035
     type: SignalReceiver
 - uid: 13044
   type: ShuttersNormal
@@ -108979,7 +109536,7 @@ entities:
   - pos: 13.5,7.5
     parent: 6
     type: Transform
-  - SecondsUntilStateChange: -116351.49
+  - SecondsUntilStateChange: -118701.13
     state: Opening
     type: Door
   - inputs:
@@ -108987,7 +109544,7 @@ entities:
       Close: []
       Toggle:
       - port: Pressed
-        uid: 13041
+        uid: 13035
     type: SignalReceiver
 - uid: 13045
   type: SignalButton
@@ -109019,14 +109576,11 @@ entities:
     transmissionRange: 6
     type: SignalTransmitter
 - uid: 13046
-  type: Poweredlight
+  type: BiomassReclaimer
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -21.5,-16.5
+  - pos: -30.5,-15.5
     parent: 6
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
 - uid: 13047
   type: SignalButton
   components:
@@ -109491,26 +110045,25 @@ entities:
   - color: '#990000FF'
     type: AtmosPipeColor
 - uid: 13075
-  type: AirAlarm
+  type: SignalSwitch
   components:
   - rot: 1.5707963267948966 rad
-    pos: -4.5,-21.5
+    pos: -35.5,-18.5
     parent: 6
     type: Transform
-  - devices:
-    - 6602
-    - 6603
-    - 6604
-    - 6605
-    - 5156
-    - invalid
-    - 12357
-    - 12358
-    - 12346
-    - 12345
-    - 11853
-    - 830
-    type: DeviceList
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 4564
+      Off:
+      - port: Off
+        uid: 4564
+    transmissionRange: 5
+    type: SignalTransmitter
 - uid: 13076
   type: FireAlarm
   components:
@@ -110443,11 +110996,24 @@ entities:
     parent: 6
     type: Transform
 - uid: 13137
-  type: PosterContrabandBeachStarYamamoto
+  type: SignalSwitch
   components:
-  - pos: -6.5,-0.5
+  - pos: -38.5,-16.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 6405
+      Off:
+      - port: Off
+        uid: 6405
+    transmissionRange: 3
+    type: SignalTransmitter
 - uid: 13138
   type: PosterContrabandBorgFancyv2
   components:
@@ -110518,11 +111084,25 @@ entities:
     parent: 6
     type: Transform
 - uid: 13149
-  type: PosterContrabandFunPolice
+  type: SignalSwitch
   components:
-  - pos: 16.5,7.5
+  - rot: -1.5707963267948966 rad
+    pos: -31.5,-24.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 8528
+      Off:
+      - port: Off
+        uid: 8528
+    transmissionRange: 4
+    type: SignalTransmitter
 - uid: 13150
   type: PosterContrabandGreyTide
   components:
@@ -112294,11 +112874,28 @@ entities:
     parent: 6
     type: Transform
 - uid: 13433
-  type: ShuttersNormal
+  type: SignalSwitch
   components:
-  - pos: -10.5,-36.5
+  - pos: -51.5,-46.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 7366
+      - port: On
+        uid: 7372
+      Off:
+      - port: Off
+        uid: 7366
+      - port: Off
+        uid: 7372
+    transmissionRange: 6
+    type: SignalTransmitter
 - uid: 13434
   type: RandomPosterContraband
   components:
@@ -112683,17 +113280,25 @@ entities:
     id: Conf. Room
     type: SurveillanceCamera
 - uid: 13494
-  type: SurveillanceCameraCommand
+  type: SignalSwitch
   components:
-  - rot: 3.141592653589793 rad
-    pos: -2.5,-5.5
+  - rot: 1.5707963267948966 rad
+    pos: -30.5,-48.5
     parent: 6
     type: Transform
-  - setupAvailableNetworks:
-    - SurveillanceCameraCommand
-    nameSet: True
-    id: HoP
-    type: SurveillanceCamera
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 7365
+      Off:
+      - port: Off
+        uid: 7365
+    transmissionRange: 5
+    type: SignalTransmitter
 - uid: 13495
   type: SurveillanceCameraGeneral
   components:
@@ -113203,27 +113808,69 @@ entities:
     parent: 6
     type: Transform
 - uid: 13548
-  type: ShuttersNormal
+  type: SignalSwitch
   components:
-  - pos: -10.5,-37.5
+  - rot: 3.141592653589793 rad
+    pos: -14.5,-54.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 8438
+      Off:
+      - port: Off
+        uid: 8438
+    transmissionRange: 6
+    type: SignalTransmitter
 - uid: 13549
-  type: ShuttersNormal
+  type: SignalSwitch
   components:
-  - pos: -10.5,-38.5
+  - rot: -1.5707963267948966 rad
+    pos: -0.5,-52.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 8432
+      Off:
+      - port: Off
+        uid: 8432
+    transmissionRange: 3
+    type: SignalTransmitter
 - uid: 13550
-  type: ShuttersNormal
+  type: SignalSwitch
   components:
-  - pos: -8.5,-40.5
+  - rot: 3.141592653589793 rad
+    pos: -5.5,-27.5
     parent: 6
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - canCollide: False
+    type: Physics
+  - outputs:
+      On:
+      - port: On
+        uid: 63
+      Off:
+      - port: Off
+        uid: 63
+    transmissionRange: 6
+    type: SignalTransmitter
 - uid: 13551
-  type: ShuttersNormal
+  type: WetFloorSign
   components:
-  - pos: -7.5,-40.5
+  - pos: 29.590693,3.6632788
     parent: 6
     type: Transform
 - uid: 13552
@@ -113287,27 +113934,15 @@ entities:
     parent: 10465
     type: Transform
 - uid: 13562
-  type: ShuttersNormal
+  type: SpawnPointChef
   components:
-  - pos: -6.5,-40.5
+  - pos: -13.5,-25.5
     parent: 6
     type: Transform
 - uid: 13563
-  type: ShuttersNormal
+  type: RadioHandheld
   components:
-  - pos: -3.5,-40.5
-    parent: 6
-    type: Transform
-- uid: 13564
-  type: ShuttersNormal
-  components:
-  - pos: -2.5,-40.5
-    parent: 6
-    type: Transform
-- uid: 13565
-  type: ShuttersNormal
-  components:
-  - pos: -1.5,-40.5
+  - pos: -2.483695,10.543733
     parent: 6
     type: Transform
 - uid: 13566
@@ -115234,15 +115869,6 @@ entities:
   - pos: -84.5,-15.5
     parent: 6
     type: Transform
-- uid: 13832
-  type: Poweredlight
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: 17.5,-0.5
-    parent: 6
-    type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
 - uid: 13833
   type: PoweredlightLED
   components:
@@ -115274,14 +115900,6 @@ entities:
   components:
   - rot: 1.5707963267948966 rad
     pos: 15.5,23.5
-    parent: 6
-    type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
-- uid: 13837
-  type: PoweredSmallLight
-  components:
-  - pos: -3.5,-14.5
     parent: 6
     type: Transform
   - powerLoad: 0
@@ -116698,28 +117316,10 @@ entities:
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 14049
-  type: PoweredSmallLight
-  components:
-  - pos: -3.5,-2.5
-    parent: 6
-    type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
-  - type: Timer
 - uid: 14050
   type: Poweredlight
   components:
   - pos: -1.5,-5.5
-    parent: 6
-    type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
-- uid: 14051
-  type: PoweredSmallLight
-  components:
-  - rot: 3.141592653589793 rad
-    pos: -33.5,-26.5
     parent: 6
     type: Transform
   - powerLoad: 0
@@ -116845,12 +117445,6 @@ entities:
   type: FoodContainerEgg
   components:
   - pos: -8.8058405,-23.242296
-    parent: 6
-    type: Transform
-- uid: 14072
-  type: SpawnPointChef
-  components:
-  - pos: -8.5,-24.5
     parent: 6
     type: Transform
 - uid: 14073

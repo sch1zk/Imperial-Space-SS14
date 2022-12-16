@@ -97,7 +97,7 @@ entities:
 - uid: 0
   components:
   - type: MetaData
-  - parent: invalid
+  - parent: 6608
     type: Transform
   - chunks:
       -1,-1:
@@ -8943,8 +8943,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 18.405577
-      - 69.24003
+      - 17.89022
+      - 67.30131
       - 0
       - 0
       - 0
@@ -51230,4 +51230,21 @@ entities:
   - pos: 32.59561,0.054794908
     parent: 0
     type: Transform
+- uid: 6608
+  components:
+  - type: MetaData
+  - type: Transform
+  - index: 3
+    type: Map
+  - type: PhysicsMap
+  - type: Broadphase
+  - type: OccluderTree
+- uid: 6609
+  type: FaxMachineCentcom
+  components:
+  - pos: -1.5,0.5
+    parent: 0
+    type: Transform
+  missingComponents:
+  - ActivatableUIRequiresPower
 ...
