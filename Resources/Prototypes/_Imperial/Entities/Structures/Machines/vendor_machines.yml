@@ -42,6 +42,7 @@
   
   - type: ActivatableUI
     key: enum.StoreUiKey.Key
+    singleUser: true
   - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
