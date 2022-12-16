@@ -6,6 +6,10 @@ using Robust.Shared.Audio;
 using static Content.Shared.Economy.Eftpos.SharedEftposComponent;
 using Robust.Shared.Prototypes;
 using Content.Shared.Store;
+using JetBrains.Annotations;
+using Content.Shared.Access.Components;
+using Content.Shared.Interaction;
+using Content.Server.Access.Components;
 
 namespace Content.Server.Economy.Eftpos
 {
@@ -18,6 +22,7 @@ namespace Content.Server.Economy.Eftpos
         public override void Initialize()
         {
             base.Initialize();
+            SubscribeLocalEvent<IdCardComponent, AfterInteractEvent>(OnAfterInteract);
             SubscribeLocalEvent<EftposComponent, ComponentStartup>((_, comp, _) => UpdateComponentUserInterface(comp));
             SubscribeLocalEvent<EftposComponent, EftposChangeValueMessage>(OnChangeValue);
             SubscribeLocalEvent<EftposComponent, EftposChangeLinkedAccountNumberMessage>(OnChangeLinkedAccountNumber);
@@ -91,6 +96,16 @@ namespace Content.Server.Economy.Eftpos
                 Deny(component);
                 return;
             }
+            TryCompleteTransaction(component, idCardComponent);
+        }
+        private void OnAfterInteract(EntityUid uid, IdCardComponent component, AfterInteractEvent args)
+        {
+            if (!TryComp<EftposComponent>(args.Target, out var eftpos))
+                return;
+            TryCompleteTransaction(eftpos, component);
+        }
+        private void TryCompleteTransaction(EftposComponent component, IdCardComponent idCardComponent)
+        {
             if (idCardComponent.Owner == component.LockedBy)
             {
                 component.LockedBy = null;

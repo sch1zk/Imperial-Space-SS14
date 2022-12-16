@@ -5,3 +5,6 @@ atm-ui-default-error-text = Упс, кажется произошла ошибк
 atm-ui-account-number = Аккаунт: { $number }
 atm-ui-account-balance = Баланс: { $balance }{ $currencySymbol }
 atm-ui-default-withdraw-text = Вывести
+atm-ui-enter-pin-title = Авторизация
+atm-ui-enter-pin-text = Введите PIN:
+atm-ui-enter-pin-submit = Подтвердить

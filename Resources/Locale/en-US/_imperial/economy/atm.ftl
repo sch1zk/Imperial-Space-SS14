@@ -5,3 +5,6 @@ atm-ui-default-error-text = Oops, something went wrong!
 atm-ui-account-number = Account №{ $numer }
 atm-ui-account-balance = Balance: { $balance }¢
 atm-ui-default-withdraw-text = Withdraw
+atm-ui-enter-pin-title = Authorization
+atm-ui-enter-pin-text = Enter PIN:
+atm-ui-enter-pin-submit = Submit

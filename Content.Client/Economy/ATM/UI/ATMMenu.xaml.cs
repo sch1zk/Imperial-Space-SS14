@@ -10,11 +10,12 @@ namespace Content.Client.Economy.ATM.UI
     [GenerateTypedNameReferences]
     public sealed partial class ATMMenu : DefaultWindow
     {
-        public event Action<BaseButton.ButtonEventArgs, FixedPoint2>? OnWithdrawAttempt;
+        private ATMEnterPinWindow? _enterPinWindow;
+        public event Action<LineEdit.LineEditEventArgs, FixedPoint2>? OnWithdrawAttempt;
         public ATMMenu()
         {
             RobustXamlLoader.Load(this);
-            WithdrawButton.OnButtonDown += OnWithdrawButtonDown;
+            WithdrawButton.OnButtonDown += _ => OnWithdrawButtonDown();
         }
         public void UpdateState(ATMBoundUserInterfaceState state)
         {
@@ -35,9 +36,19 @@ namespace Content.Client.Economy.ATM.UI
             ShowInteractions.Visible = state.IsCardPresent && state.HaveAccessToBankAccount;
             WithdrawButton.Disabled = !ShowWithdraw.Visible;
         }
-        private void OnWithdrawButtonDown(BaseButton.ButtonEventArgs args)
+        private void OnWithdrawButtonDown()
         {
-            OnWithdrawAttempt?.Invoke(args, GetValueFromWithdrawInput());
+            if (_enterPinWindow != null && _enterPinWindow.IsOpen)
+            {
+                _enterPinWindow.MoveToFront();
+                return;
+            }
+
+            _enterPinWindow = new ATMEnterPinWindow();
+            _enterPinWindow.OpenCentered();
+
+            _enterPinWindow.PinLineEdit.OnTextEntered += args => OnWithdrawAttempt?.Invoke(args, GetValueFromWithdrawInput());
+            _enterPinWindow.PinLineEdit.OnTextEntered += _ => _enterPinWindow.Close();
         }
         private FixedPoint2 GetValueFromWithdrawInput()
         {

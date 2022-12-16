@@ -24,6 +24,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Content.Server.CartridgeLoader;
 using Content.Server.CartridgeLoader.Cartridges;
+using Content.Server.Mind.Components;
+using Content.Server.Mind;
 
 namespace Content.Server.Station.Systems;
 
@@ -43,9 +45,6 @@ public sealed class StationSpawningSystem : EntitySystem
     [Dependency] private readonly PDASystem _pdaSystem = default!;
     [Dependency] private readonly SharedAccessSystem _accessSystem = default!;
     [Dependency] private readonly IdentitySystem _identity = default!;
-    [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
-    [Dependency] private readonly WageManagerSystem _wageManagerSystem = default!;
-    [Dependency] private readonly BankCartridgeSystem _bankCartridgeSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -198,21 +197,6 @@ public sealed class StationSpawningSystem : EntitySystem
         var cardId = card.Owner;
         _cardSystem.TryChangeFullName(cardId, characterName, card);
         _cardSystem.TryChangeJobTitle(cardId, jobPrototype.LocalizedName, card);
-        if (_cardSystem.TryStoreNewBankAccount(cardId, card, out var bankAccount) && bankAccount != null)
-        {
-            _bankManagerSystem.TryGenerateStartingBalance(bankAccount, jobPrototype);
-            _wageManagerSystem.TryAddAccountToWagePayoutList(bankAccount, jobPrototype);
-            if (EntityManager.TryGetComponent(idUid, out CartridgeLoaderComponent? cartrdigeLoaderComponent))
-            {
-                foreach (var uid in cartrdigeLoaderComponent.InstalledPrograms)
-                {
-                    if (!EntityManager.TryGetComponent(uid, out BankCartridgeComponent? bankCartrdigeComponent))
-                        continue;
-
-                    _bankCartridgeSystem.LinkBankAccountToCartridge(bankCartrdigeComponent, bankAccount);
-                }
-            }
-        }
 
         var extendedAccess = false;
         if (station != null)

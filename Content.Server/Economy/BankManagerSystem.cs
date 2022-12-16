@@ -97,9 +97,9 @@ namespace Content.Server.Economy
                     $"Account {bankAccount.AccountNumber} ({bankAccount.AccountName ?? "??"})  balance was changed by {-currency.Value}, from {oldBalance} to {bankAccount.Balance}");
             return result;
         }
-        public bool TryInsertToBankAccount(string? bankAccountNumber, string? bankAccountPin, KeyValuePair<string, FixedPoint2> currency)
+        public bool TryInsertToBankAccount(string? bankAccountNumber, KeyValuePair<string, FixedPoint2> currency)
         {
-            if (!TryGetBankAccountWithPin(bankAccountNumber, bankAccountPin, out var bankAccount))
+            if (!TryGetBankAccount(bankAccountNumber, out var bankAccount))
                 return false;
             if (currency.Key != bankAccount.CurrencyType)
                 return false;

@@ -100,7 +100,7 @@ namespace Content.Server.Economy.ATM
                 Deny(component);
                 return;
             }
-            if (!TryGetBankAccountDetailsFromStoredIdCard(component, out var bankAccountNumber, out var bankAccountPin))
+            if (!TryGetBankAccountNumberFromStoredIdCard(component, out var bankAccountNumber))
             {
                 Deny(component);
                 return;
@@ -124,7 +124,7 @@ namespace Content.Server.Economy.ATM
 
             var amountRemaining = msg.Amount;
             if (!_bankManagerSystem.TryWithdrawFromBankAccount(
-                bankAccountNumber, bankAccountPin,
+                bankAccountNumber, msg.AccountPin,
                 new KeyValuePair<string, FixedPoint2>(currency, amountRemaining)))
             {
                 Deny(component);
@@ -153,30 +153,28 @@ namespace Content.Server.Economy.ATM
                 if (!component.CurrencyWhitelist.Contains(type.Key))
                     return false;
             }
-            if (!TryGetBankAccountDetailsFromStoredIdCard(component, out var bankAccountNumber, out var bankAccountPin))
+            if (!TryGetBankAccountNumberFromStoredIdCard(component, out var bankAccountNumber))
                 return false;
 
             foreach (var type in currency)
             {
-                if (!_bankManagerSystem.TryInsertToBankAccount(bankAccountNumber, bankAccountPin, type))
+                if (!_bankManagerSystem.TryInsertToBankAccount(bankAccountNumber, type))
                     return false;
             }
             _audioSystem.PlayPvs(component.SoundInsertCurrency, component.Owner, AudioParams.Default.WithVolume(-2f));
             UpdateComponentUserInterface(component);
             return true;
         }
-        private bool TryGetBankAccountDetailsFromStoredIdCard(ATMComponent component, out string storedBankAccountNumber, out string storedBankAccountPin)
+        private bool TryGetBankAccountNumberFromStoredIdCard(ATMComponent component, out string storedBankAccountNumber)
         {
             storedBankAccountNumber = string.Empty;
-            storedBankAccountPin = string.Empty;
             if (component.IdCardSlot.Item is not { Valid: true } idCardEntityUid)
                 return false;
             if (!_entities.TryGetComponent<IdCardComponent>(idCardEntityUid, out var idCardComponent))
                 return false;
-            if (idCardComponent.StoredBankAccountNumber == null || idCardComponent.StoredBankAccountPin == null)
+            if (idCardComponent.StoredBankAccountNumber == null)
                 return false;
             storedBankAccountNumber = idCardComponent.StoredBankAccountNumber;
-            storedBankAccountPin = idCardComponent.StoredBankAccountPin;
             return true;
         }
         private void Deny(ATMComponent component)

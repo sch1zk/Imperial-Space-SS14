@@ -24,6 +24,9 @@
     <ProjectReference Include="..\Content.Shared\Content.Shared.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Store\Ui\StoreConfirmWindow.xaml.cs">
+      <DependentUpon>StoreConfirmWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Update="UserInterface\Systems\MenuBar\Widgets\GameTopMenuBar.xaml.cs">
       <DependentUpon>GameTopMenuBar.xaml</DependentUpon>
     </Compile>

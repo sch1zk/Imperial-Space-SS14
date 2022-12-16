@@ -4,6 +4,7 @@ using Content.Shared.Popups;
 using Robust.Shared.Player;
 using Content.Server.Store.Systems;
 using Content.Server.Economy.ATM;
+using Content.Server.Economy.Eftpos;
 
 namespace Content.Server.Economy
 {

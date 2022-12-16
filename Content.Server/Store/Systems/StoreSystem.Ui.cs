@@ -91,7 +91,7 @@ public sealed partial class StoreSystem : EntitySystem
         // TODO: if multiple users are supposed to be able to interact with a single BUI & see different
         // stores/listings, this needs to use session specific BUI states.
 
-        var state = new StoreUpdateState(component.LastAvailableListings, allCurrency);
+        var state = new StoreUpdateState(component.LastAvailableListings, allCurrency, component.CanBuyByBankAccount);
         _ui.SetUiState(ui, state);
     }
 

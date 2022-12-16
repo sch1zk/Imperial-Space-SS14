@@ -3,6 +3,8 @@ using Content.Shared.Economy.ATM;
 using Content.Shared.Containers.ItemSlots;
 using Robust.Client.GameObjects;
 using static Content.Shared.Economy.ATM.SharedATMComponent;
+using Robust.Client.UserInterface.Controls;
+using Content.Shared.FixedPoint;
 
 namespace Content.Client.Economy.ATM
 {
@@ -20,11 +22,17 @@ namespace Content.Client.Economy.ATM
             _menu = new ATMMenu { Title = IoCManager.Resolve<IEntityManager>().GetComponent<MetaDataComponent>(Owner.Owner).EntityName };
 
             _menu.IdCardButton.OnPressed += _ => SendMessage(new ItemSlotButtonPressedEvent(IdCardSlotId));
-            _menu.OnWithdrawAttempt += (_, amount) => SendMessage(new ATMRequestWithdrawMessage(amount));
+            _menu.OnWithdrawAttempt += OnWithdrawAttempt;
 
             _menu.OnClose += Close;
             _menu.OpenCentered();
         }
+        private void OnWithdrawAttempt(LineEdit.LineEditEventArgs args, FixedPoint2 amount)
+        {
+            SendMessage(new ATMRequestWithdrawMessage(amount, args.Text));
+        }
+
+
         protected override void UpdateState(BoundUserInterfaceState state)
         {
             base.UpdateState(state);

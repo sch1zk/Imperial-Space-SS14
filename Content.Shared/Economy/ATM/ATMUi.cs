@@ -12,9 +12,11 @@ namespace Content.Shared.Economy.ATM
     public sealed class ATMRequestWithdrawMessage : BoundUserInterfaceMessage
     {
         public FixedPoint2 Amount;
-        public ATMRequestWithdrawMessage(FixedPoint2 amount)
+        public string AccountPin;
+        public ATMRequestWithdrawMessage(FixedPoint2 amount, string accountPin)
         {
             Amount = amount;
+            AccountPin = accountPin;
         }
     }
 }

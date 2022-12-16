@@ -20,6 +20,7 @@ public sealed partial class StoreMenu : DefaultWindow
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     private StoreWithdrawWindow? _withdrawWindow;
+    private StoreConfirmWindow? _confirmWindow;
 
     public event Action<BaseButton.ButtonEventArgs, ListingData>? OnListingButtonPressed;
     public event Action<BaseButton.ButtonEventArgs, string>? OnCategoryButtonPressed;
@@ -70,7 +71,7 @@ public sealed partial class StoreMenu : DefaultWindow
         WithdrawButton.Disabled = disabled;
     }
 
-    public void UpdateListing(List<ListingData> listings)
+    public void UpdateListing(List<ListingData> listings, bool canBuyByBankAccount)
     {
         var sorted = listings.OrderBy(l => l.Priority).ThenBy(l => l.Cost.Values.Sum());
 
@@ -79,7 +80,7 @@ public sealed partial class StoreMenu : DefaultWindow
         ClearListings();
         foreach (var item in sorted)
         {
-            AddListingGui(item);
+            AddListingGui(item, canBuyByBankAccount);
         }
     }
 
@@ -100,7 +101,7 @@ public sealed partial class StoreMenu : DefaultWindow
         _withdrawWindow.OnWithdrawAttempt += OnWithdrawAttempt;
     }
 
-    private void AddListingGui(ListingData listing)
+    private void AddListingGui(ListingData listing, bool canBuyByBankAccount)
     {
         if (!listing.Categories.Contains(CurrentCategory))
             return;
@@ -135,10 +136,31 @@ public sealed partial class StoreMenu : DefaultWindow
         }
 
         var newListing = new StoreListingControl(listingName, listingDesc, GetListingPriceString(listing), canBuy, texture);
-        newListing.StoreItemBuyButton.OnButtonDown += args
-            => OnListingButtonPressed?.Invoke(args, listing);
+        if (canBuyByBankAccount)
+        {
+            newListing.StoreItemBuyButton.OnButtonDown += args => OpenConfirmWindow(args, listing);
+        }
+        else
+        {
+            newListing.StoreItemBuyButton.OnButtonDown += args => OnListingButtonPressed?.Invoke(args, listing);
+        }
+
 
         StoreListingsContainer.AddChild(newListing);
+    }
+
+    private void OpenConfirmWindow(BaseButton.ButtonEventArgs args, ListingData listing)
+    {
+        if (_confirmWindow != null && _confirmWindow.IsOpen)
+        {
+            _confirmWindow.MoveToFront();
+            return;
+        }
+
+        _confirmWindow = new StoreConfirmWindow();
+        _confirmWindow.OpenCentered();
+
+        _confirmWindow.ConfirmButton.OnButtonDown += _args => OnListingButtonPressed?.Invoke(_args, listing);
     }
 
     public bool CanBuyListing(Dictionary<string, FixedPoint2> currency, Dictionary<string, FixedPoint2> price)
@@ -222,6 +244,7 @@ public sealed partial class StoreMenu : DefaultWindow
     {
         base.Close();
         _withdrawWindow?.Close();
+        _confirmWindow?.Close();
     }
 
     private sealed class StoreCategoryButton : Button

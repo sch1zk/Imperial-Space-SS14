@@ -32,6 +32,8 @@ namespace Content.Server.Mind
 
         private readonly List<Objective> _objectives = new();
 
+        private readonly List<Memory> _memories = new();
+
         public string Briefing = String.Empty;
 
         /// <summary>
@@ -102,6 +104,9 @@ namespace Content.Server.Mind
         /// </summary>
         [ViewVariables]
         public IEnumerable<Objective> AllObjectives => _objectives;
+
+        [ViewVariables]
+        public IEnumerable<Memory> AllMemories => _memories;
 
         /// <summary>
         ///     The session of the player owning this mind.
@@ -419,6 +424,16 @@ namespace Content.Server.Mind
         public bool TryGetSession([NotNullWhen(true)] out IPlayerSession? session)
         {
             return (session = Session) != null;
+        }
+
+        public Memory AddMemory(Memory memory)
+        {
+            if (_memories.Contains(memory))
+            {
+                throw new ArgumentException($"We already have this memory: {memory}");
+            }
+            _memories.Add(memory);
+            return memory;
         }
     }
 }
