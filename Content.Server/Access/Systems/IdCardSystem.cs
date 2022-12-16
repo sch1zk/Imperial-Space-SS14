@@ -167,7 +167,7 @@ namespace Content.Server.Access.Systems
             EntityManager.GetComponent<MetaDataComponent>(id.Owner).EntityName = val;
         }
 
-        public bool TryStoreNewBankAccount(EntityUid uid, IdCardComponent? id, out BankAccount? bankAccount)
+        public bool TryStoreNewBankAccount(EntityUid uid, IdCardComponent? id, out BankAccountComponent? bankAccount)
         {
             bankAccount = null;
             if (!Resolve(uid, ref id))

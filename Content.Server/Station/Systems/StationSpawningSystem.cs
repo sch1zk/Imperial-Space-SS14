@@ -45,6 +45,7 @@ public sealed class StationSpawningSystem : EntitySystem
     [Dependency] private readonly IdentitySystem _identity = default!;
     [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
     [Dependency] private readonly WageManagerSystem _wageManagerSystem = default!;
+    [Dependency] private readonly BankCartridgeSystem _bankCartridgeSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -207,7 +208,8 @@ public sealed class StationSpawningSystem : EntitySystem
                 {
                     if (!EntityManager.TryGetComponent(uid, out BankCartridgeComponent? bankCartrdigeComponent))
                         continue;
-                    bankCartrdigeComponent.LinkedBankAccount = bankAccount;
+
+                    _bankCartridgeSystem.LinkBankAccountToCartridge(bankCartrdigeComponent, bankAccount);
                 }
             }
         }

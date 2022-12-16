@@ -45,7 +45,7 @@ namespace Content.Server.Economy.Wage
                     payout.PayoutAmount);
             }
         }
-        public bool TryAddAccountToWagePayoutList(BankAccount bankAccount, JobPrototype jobPrototype)
+        public bool TryAddAccountToWagePayoutList(BankAccountComponent bankAccount, JobPrototype jobPrototype)
         {
             if (jobPrototype.WageDepartment == null || !_prototypeManager.TryIndex(jobPrototype.WageDepartment, out DepartmentPrototype? department))
                 return false;

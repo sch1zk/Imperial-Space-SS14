@@ -45,11 +45,17 @@ public sealed partial class StoreMenu : DefaultWindow
         var currency = balance.ToDictionary(type =>
             (type.Key, type.Value), type => _prototypeManager.Index<CurrencyPrototype>(type.Key));
 
-        var balanceStr = string.Empty;
+        var balanceStr = Loc.GetString("store-ui-balance") + " ";
         foreach (var ((type, amount),proto) in currency)
         {
-            balanceStr += Loc.GetString("store-ui-balance-display", ("amount", amount),
-                ("currency", Loc.GetString(proto.DisplayName, ("amount", 1))));
+            balanceStr += Loc.GetString(
+                "store-ui-balance-display",
+                ("amount", amount),
+                ("currency", Loc.GetString(
+                        proto.CurrencySymbol != string.Empty
+                        ? proto.CurrencySymbol
+                        : " " + proto.DisplayName,
+                    ("amount", 1))));
         }
 
         BalanceInfo.SetMarkup(balanceStr.TrimEnd());
@@ -160,7 +166,11 @@ public sealed partial class StoreMenu : DefaultWindow
             {
                 var currency = _prototypeManager.Index<CurrencyPrototype>(type);
                 text += Loc.GetString("store-ui-price-display", ("amount", amount),
-                    ("currency", Loc.GetString(currency.DisplayName, ("amount", amount))));
+                    ("currency", Loc.GetString(
+                            currency.CurrencySymbol != string.Empty
+                            ? currency.CurrencySymbol
+                            : " " + currency.DisplayName,
+                        ("amount", amount))));
             }
         }
 

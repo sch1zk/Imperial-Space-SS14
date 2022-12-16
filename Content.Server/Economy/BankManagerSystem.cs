@@ -13,19 +13,20 @@ namespace Content.Server.Economy
         [Dependency] private readonly IRobustRandom _robustRandom = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
 
-        private static Dictionary<string, BankAccount> _activeBankAccounts = new();
+        [ViewVariables]
+        public Dictionary<string, BankAccountComponent> ActiveBankAccounts = new();
         public override void Initialize()
         {
             base.Initialize();
         }
-        public bool TryGetBankAccount(string? bankAccountNumber, [MaybeNullWhen(false)] out BankAccount bankAccount)
+        public bool TryGetBankAccount(string? bankAccountNumber, [MaybeNullWhen(false)] out BankAccountComponent bankAccount)
         {
             bankAccount = GetBankAccount(bankAccountNumber);
             if (bankAccount == null || bankAccountNumber != bankAccount.AccountNumber)
                 return false;
             return true;
         }
-        public bool TryGetBankAccountWithPin(string? bankAccountNumber, string? bankAccountPin, [MaybeNullWhen(false)] out BankAccount bankAccount)
+        public bool TryGetBankAccountWithPin(string? bankAccountNumber, string? bankAccountPin, [MaybeNullWhen(false)] out BankAccountComponent bankAccount)
         {
             bankAccount = null;
             if (bankAccountPin == null)
@@ -37,20 +38,20 @@ namespace Content.Server.Economy
                 return false;
             return true;
         }
-        private BankAccount? GetBankAccount(string? bankAccountNumber)
+        private BankAccountComponent? GetBankAccount(string? bankAccountNumber)
         {
             if (bankAccountNumber == null)
                 return null;
-            _activeBankAccounts.TryGetValue(bankAccountNumber, out var bankAccount);
+            ActiveBankAccounts.TryGetValue(bankAccountNumber, out var bankAccount);
             return bankAccount;
         }
         public bool IsBankAccountExists(string? bankAccountNumber)
         {
             if (bankAccountNumber == null)
                 return false;
-            return _activeBankAccounts.ContainsKey(bankAccountNumber);
+            return ActiveBankAccounts.ContainsKey(bankAccountNumber);
         }
-        public BankAccount? CreateNewBankAccount(int? bankAccountNumber = null, bool _isInfinite = false)
+        public BankAccountComponent? CreateNewBankAccount(int? bankAccountNumber = null, bool _isInfinite = false)
         {
             int number;
             if(bankAccountNumber == null)
@@ -58,7 +59,7 @@ namespace Content.Server.Economy
                 do
                 {
                     number = _robustRandom.Next(111111, 999999);
-                } while (_activeBankAccounts.ContainsKey(number.ToString()));
+                } while (ActiveBankAccounts.ContainsKey(number.ToString()));
             }
             else
             {
@@ -66,8 +67,8 @@ namespace Content.Server.Economy
             }
             var bankAccountPin = GenerateBankAccountPin();
             var bankAccountNumberStr = number.ToString();
-            var bankAccount = new BankAccount(bankAccountNumberStr, bankAccountPin, isInfinite: _isInfinite);
-            return _activeBankAccounts.TryAdd(bankAccountNumberStr, bankAccount)
+            var bankAccount = new BankAccountComponent(bankAccountNumberStr, bankAccountPin, isInfinite: _isInfinite);
+            return ActiveBankAccounts.TryAdd(bankAccountNumberStr, bankAccount)
                 ? bankAccount
                 : null;
         }
@@ -86,7 +87,15 @@ namespace Content.Server.Economy
                 return false;
             if (currency.Key != bankAccount.CurrencyType)
                 return false;
-            return bankAccount.TryChangeBalanceBy(-currency.Value);
+
+            var oldBalance = bankAccount.Balance;
+            var result = bankAccount.TryChangeBalanceBy(-currency.Value);
+            if (result)
+                _adminLogger.Add(
+                    LogType.Transactions,
+                    LogImpact.Low,
+                    $"Account {bankAccount.AccountNumber} ({bankAccount.AccountName ?? "??"})  balance was changed by {-currency.Value}, from {oldBalance} to {bankAccount.Balance}");
+            return result;
         }
         public bool TryInsertToBankAccount(string? bankAccountNumber, string? bankAccountPin, KeyValuePair<string, FixedPoint2> currency)
         {
@@ -94,7 +103,15 @@ namespace Content.Server.Economy
                 return false;
             if (currency.Key != bankAccount.CurrencyType)
                 return false;
-            return bankAccount.TryChangeBalanceBy(currency.Value);
+
+            var oldBalance = bankAccount.Balance;
+            var result = bankAccount.TryChangeBalanceBy(currency.Value);
+            if (result)
+                _adminLogger.Add(
+                    LogType.Transactions,
+                    LogImpact.Low,
+                    $"Account {bankAccount.AccountNumber} ({bankAccount.AccountName ?? "??"})  balance was changed by {-currency.Value}, from {oldBalance} to {bankAccount.Balance}");
+            return result;
         }
         public bool TryTransferFromToBankAccount(string? bankAccountFromNumber, string? bankAccountFromPin, string? bankAccountToNumber, FixedPoint2 amount)
         {
@@ -102,13 +119,19 @@ namespace Content.Server.Economy
                 return false;
             if (!TryGetBankAccountWithPin(bankAccountFromNumber, bankAccountFromPin, out var bankAccountFrom))
                 return false;
-            if (!_activeBankAccounts.TryGetValue(bankAccountToNumber, out var bankAccountTo))
+            if (!ActiveBankAccounts.TryGetValue(bankAccountToNumber, out var bankAccountTo))
                 return false;
             if (bankAccountFrom.CurrencyType != bankAccountTo.CurrencyType)
                 return false;
             if (bankAccountFrom.TryChangeBalanceBy(-amount))
             {
-                return bankAccountTo.TryChangeBalanceBy(amount);
+                var result = bankAccountTo.TryChangeBalanceBy(amount);
+                if (result)
+                    _adminLogger.Add(
+                        LogType.Transactions,
+                        LogImpact.Low,
+                        $"Account {bankAccountFrom.AccountNumber} ({bankAccountFrom.AccountName ?? "??"})  transfered {amount} to account {bankAccountTo.AccountNumber} ({bankAccountTo.AccountName ?? "??"})");
+                return result;
             }
             return false;
         }
@@ -117,7 +140,7 @@ namespace Content.Server.Economy
             currencyType = null;
             if (bankAccountNumber == null)
                 return false;
-            if (!_activeBankAccounts.TryGetValue(bankAccountNumber, out var bankAccount))
+            if (!ActiveBankAccounts.TryGetValue(bankAccountNumber, out var bankAccount))
                 return false;
             currencyType = bankAccount.CurrencyType;
             return true;
@@ -126,11 +149,11 @@ namespace Content.Server.Economy
         {
             if (bankAccountNumber == null)
                 return null;
-            if (!_activeBankAccounts.TryGetValue(bankAccountNumber, out var bankAccount))
+            if (!ActiveBankAccounts.TryGetValue(bankAccountNumber, out var bankAccount))
                 return null;
             return bankAccount.AccountName;
         }
-        public void TryGenerateStartingBalance(BankAccount bankAccount, JobPrototype jobPrototype)
+        public void TryGenerateStartingBalance(BankAccountComponent bankAccount, JobPrototype jobPrototype)
         {
             if (jobPrototype.MaxBankBalance > 0)
             {
@@ -140,7 +163,7 @@ namespace Content.Server.Economy
         }
         public void Clear()
         {
-            _activeBankAccounts.Clear();
+            ActiveBankAccounts.Clear();
         }
     }
 }
