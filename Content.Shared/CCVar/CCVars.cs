@@ -958,7 +958,7 @@ namespace Content.Shared.CCVar
         ///     Sets the duration of the map vote timer.
         /// </summary>
         public static readonly CVarDef<int>
-            VoteTimerMap = CVarDef.Create("vote.timermap", 90, CVar.SERVERONLY);
+            VoteTimerMap = CVarDef.Create("vote.timermap", 60, CVar.SERVERONLY);
 
         /// <summary>
         ///     Sets the duration of the restart vote timer.
@@ -970,7 +970,7 @@ namespace Content.Shared.CCVar
         ///     Sets the duration of the gamemode/preset vote timer.
         /// </summary>
         public static readonly CVarDef<int>
-            VoteTimerPreset = CVarDef.Create("vote.timerpreset", 30, CVar.SERVERONLY);
+            VoteTimerPreset = CVarDef.Create("vote.timerpreset", 60, CVar.SERVERONLY);
 
         /// <summary>
         ///     Sets the duration of the map vote timer when ALONE.

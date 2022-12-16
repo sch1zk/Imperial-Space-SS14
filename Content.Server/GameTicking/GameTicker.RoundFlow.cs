@@ -20,12 +20,15 @@ using Robust.Shared.Utility;
 using System.Linq;
 using System.Threading.Tasks;
 using Robust.Shared.Asynchronous;
+using Content.Server.Voting.Managers;
+using Content.Shared.Voting;
 
 namespace Content.Server.GameTicking
 {
     public sealed partial class GameTicker
     {
         [Dependency] private readonly ITaskManager _taskManager = default!;
+        [Dependency] private readonly IVoteManager _voteManager = default!;
 
         private static readonly Counter RoundNumberMetric = Metrics.CreateCounter(
             "ss14_round_number",
@@ -406,6 +409,9 @@ namespace Content.Server.GameTicking
                     _roundStartTime = _gameTiming.CurTime + LobbyDuration;
 
                 SendStatusToAll();
+
+                _voteManager.CreateStandardVote(null, StandardVoteType.Map);
+                _voteManager.CreateStandardVote(null, StandardVoteType.Preset);
 
                 ReqWindowAttentionAll();
             }
