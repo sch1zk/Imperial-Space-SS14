@@ -681,3 +681,15 @@
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 3
+
+# ClothingBackpackDuffel: 5 - 15
+- type: listing
+  id: VendingClothingWallet
+  productEntity: Wallet
+  cost:
+    SpaceCredits: 10
+  categories:
+  - VendingClothing
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
