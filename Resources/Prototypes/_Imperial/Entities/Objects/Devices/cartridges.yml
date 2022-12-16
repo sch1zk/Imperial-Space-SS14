@@ -16,6 +16,6 @@
   - type: Cartridge
     programName: bank-program-name
     icon:
-      sprite: _Imperial/Structures/Wallmounts/atm.rsi
+      sprite: Structures/Wallmounts/atm.rsi
       state: off
   - type: BankCartridge
