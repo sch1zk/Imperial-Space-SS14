@@ -14,7 +14,13 @@
   - type: Physics
   - type: Sprite
     sprite: Structures/Wallmounts/switch.rsi
-    state: on
+    #state: on
+    layers:
+    - state: "dead"
+      map: ["enum.SignalSwitchVisualLayers.Base"]
+    - state: "off_unshaded"
+      map: ["enum.SignalSwitchVisualLayers.BaseUnshaded"]
+      shader: unshaded
   - type: SignalSwitch
   - type: UseDelay
     delay: 0.5 # prevent light-toggling auto-clickers.
@@ -27,6 +33,7 @@
     outputs:
       On: []
       Off: []
+  - type: Appearance
 
 - type: entity
   id: SignalButton
