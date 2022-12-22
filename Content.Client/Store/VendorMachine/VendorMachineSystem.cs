@@ -21,10 +21,8 @@ public sealed class VendorMachineSystem : EntitySystem
     {
         if (!TryComp<SpriteComponent>(uid, out var sprite))
             return;
-
         if (!TryComp<AppearanceComponent>(uid, out var appearance) ||
-            !_appearanceSystem.TryGetData(uid, VendorMachineVisuals.VisualState, out var visualStateObject, appearance) ||
-            visualStateObject is not VendorMachineVisualState visualState)
+            !_appearanceSystem.TryGetData<VendorMachineVisualState>(uid, VendorMachineVisuals.VisualState, out var visualState, appearance))
         {
             visualState = VendorMachineVisualState.Normal;
         }
