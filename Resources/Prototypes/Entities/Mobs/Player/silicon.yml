@@ -85,12 +85,12 @@
     interfaces:
     - key: enum.StrippingUiKey.Key
       type: StrippableBoundUserInterface
-  - type: GhostTakeoverAvailable
-    makeSentient: true
-    allowMovement: true
-    name: ghost-role-information-drone-name
-    description: ghost-role-information-drone-description
-    rules: ghost-role-information-drone-rules
+  #- type: GhostTakeoverAvailable
+  #  makeSentient: true
+  #  allowMovement: true
+  #  name: ghost-role-information-drone-name
+  #  description: ghost-role-information-drone-description
+  #  rules: ghost-role-information-drone-rules
   - type: MovementSpeedModifier
     baseWalkSpeed : 5
     baseSprintSpeed : 5

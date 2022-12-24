@@ -191,7 +191,7 @@
       - Implanter
       - PillCanister
       - ChemistryEmptyBottle01
-      - Drone
+      #- Drone
       - Flash
       - MicroManipulatorStockPart
       - ScanningModuleStockPart

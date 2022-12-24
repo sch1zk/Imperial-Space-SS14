@@ -501,7 +501,7 @@
   - ProximitySensor
   - LeftArmBorg
   - RightArmBorg
-  - Drone
+  #- Drone
   - ExosuitFabricatorMachineCircuitboard
 
 - type: technology
