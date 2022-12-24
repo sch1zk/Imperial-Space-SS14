@@ -12,7 +12,7 @@
     - type: RandomMetadata
       nameSegments:
       - NamesFirstMilitaryLeader
-      - names_last
+      - names_last_male
     - type: RandomHumanoidSpawner
       settings: ERTLeader
 
