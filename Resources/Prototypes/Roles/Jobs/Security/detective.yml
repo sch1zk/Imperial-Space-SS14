@@ -27,8 +27,8 @@
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesGlassesSunglasses
-    head: ClothingHeadHatFedoraBrown
-    outerClothing: ClothingOuterVestDetective
+    #head: ClothingHeadHatFedoraBrown
+    #outerClothing: ClothingOuterVestDetective
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
     pocket1: ForensicPad

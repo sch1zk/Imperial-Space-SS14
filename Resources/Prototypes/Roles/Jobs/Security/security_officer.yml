@@ -28,11 +28,11 @@
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadHelmetHelmet # Corvax-Resprite
-    outerClothing: ClothingOuterVestKevlar
+    #head: ClothingHeadHelmetHelmet # Corvax-Resprite
+    #outerClothing: ClothingOuterVestKevlar
     id: SecurityPDA
     ears: ClothingHeadsetSecurity
-    belt: ClothingBeltSecurityFilled
+    #belt: ClothingBeltSecurityFilled
   innerclothingskirt: ClothingUniformJumpskirtSec
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

@@ -30,10 +30,10 @@
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
-    outerClothing: ClothingOuterCoatWarden
+    #outerClothing: ClothingOuterCoatWarden
     id: WardenPDA
     ears: ClothingHeadsetSecurity
-    belt: ClothingBeltSecurityFilled
+    #belt: ClothingBeltSecurityFilled
   innerclothingskirt: ClothingUniformJumpskirtWarden
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled
