@@ -875,7 +875,7 @@ entities:
   components:
   - type: MetaData
   - type: Transform
-  - index: 3
+  - index: 4
     type: Map
   - type: PhysicsMap
   - type: Broadphase
@@ -1031,7 +1031,6 @@ entities:
     type: Fixtures
   - gravityShakeSound: !type:SoundPathSpecifier
       path: /Audio/Effects/alert.ogg
-    enabled: True
     type: Gravity
   - chunkCollection:
       0,-1:
@@ -2295,166 +2294,166 @@ entities:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineN
           coordinates: 14,-16
-        1073:
-          color: '#FFFFFFFF'
-          id: BrickTileWhiteInnerSw
-          coordinates: 17,-14
-        1026:
+        1025:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineN
           coordinates: 17,-16
-        1027:
+        1026:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineN
           coordinates: 16,-16
-        1028:
+        1027:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineN
           coordinates: 15,-16
-        1029:
+        1028:
           color: '#FFFFFFFF'
           id: BrickTileSteelCornerNw
           coordinates: 12,-16
-        1030:
+        1029:
           color: '#FFFFFFFF'
           id: BrickTileSteelCornerNe
           coordinates: 19,-16
-        1031:
+        1030:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineE
           coordinates: 19,-17
-        1032:
+        1031:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineW
           coordinates: 12,-17
-        1033:
+        1032:
           color: '#FFFFFFFF'
           id: BrickTileWhiteCornerSw
           coordinates: 12,-14
-        1034:
+        1033:
           color: '#FFFFFFFF'
           id: BrickTileWhiteCornerSe
           coordinates: 13,-14
-        1035:
+        1034:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineE
           coordinates: 13,-13
-        1036:
+        1035:
           color: '#FFFFFFFF'
           id: BrickTileSteelCornerSe
           coordinates: 19,-20
-        1037:
+        1036:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineS
           coordinates: 13,-20
-        1038:
+        1037:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineS
           coordinates: 14,-20
-        1039:
+        1038:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineS
           coordinates: 15,-20
-        1040:
+        1039:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineS
           coordinates: 16,-20
-        1041:
+        1040:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineS
           coordinates: 17,-20
-        1042:
+        1041:
           color: '#FFFFFFFF'
           id: BrickTileSteelLineS
           coordinates: 18,-20
-        1043:
+        1042:
           color: '#FFFFFFFF'
           id: BrickTileSteelCornerSw
           coordinates: 12,-20
-        1044:
+        1043:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineW
           coordinates: 12,-11
-        1045:
+        1044:
           color: '#FFFFFFFF'
           id: MiniTileWhiteInnerSw
           coordinates: 12,-12
-        1046:
+        1045:
           color: '#FFFFFFFF'
           id: MiniTileWhiteInnerNw
           coordinates: 12,-12
-        1047:
+        1046:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineW
           coordinates: 12,-13
-        1048:
+        1047:
           color: '#FFFFFFFF'
           id: MiniTileWhiteInnerSe
           coordinates: 13,-12
-        1049:
+        1048:
           color: '#FFFFFFFF'
           id: MiniTileWhiteInnerNe
           coordinates: 13,-12
-        1050:
+        1049:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineS
           coordinates: 14,-12
-        1051:
+        1050:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineS
+          coordinates: 11,-12
+        1051:
+          color: '#FFFFFFFF'
+          id: BrickTileWhiteLineN
           coordinates: 11,-12
         1052:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineN
-          coordinates: 11,-12
-        1053:
-          color: '#FFFFFFFF'
-          id: BrickTileWhiteLineN
           coordinates: 14,-12
-        1054:
+        1053:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineE
           coordinates: 19,-12
-        1055:
+        1054:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineE
           coordinates: 19,-13
-        1056:
+        1055:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineW
           coordinates: 15,-13
-        1057:
+        1056:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineW
           coordinates: 15,-12
-        1058:
+        1057:
           color: '#FFFFFFFF'
           id: BrickTileWhiteCornerSw
           coordinates: 15,-14
-        1059:
+        1058:
           color: '#FFFFFFFF'
           id: BrickTileWhiteCornerSe
           coordinates: 19,-14
-        1060:
+        1059:
           color: '#FFFFFFFF'
           id: BrickTileWhiteLineS
           coordinates: 16,-14
-        1071:
-          color: '#FFFFFFFF'
-          id: BrickTileWhiteCornerSe
-          coordinates: 18,-15
-        1074:
-          color: '#FFFFFFFF'
-          id: BrickTileSteelLineN
-          coordinates: 18,-16
-        1072:
-          color: '#FFFFFFFF'
-          id: BrickTileWhiteInnerSe
-          coordinates: 18,-14
-        1069:
+        1065:
           color: '#FFFFFFFF'
           id: BrickTileWhiteCornerSw
           coordinates: 17,-15
+        1066:
+          color: '#FFFFFFFF'
+          id: BrickTileWhiteCornerSe
+          coordinates: 18,-15
+        1067:
+          color: '#FFFFFFFF'
+          id: BrickTileWhiteInnerSe
+          coordinates: 18,-14
+        1068:
+          color: '#FFFFFFFF'
+          id: BrickTileWhiteInnerSw
+          coordinates: 17,-14
+        1069:
+          color: '#FFFFFFFF'
+          id: BrickTileSteelLineN
+          coordinates: 18,-16
       1,-1:
         36:
           color: '#334E6DC8'
@@ -3196,23 +3195,23 @@ entities:
           color: '#FFFFFFFF'
           id: WoodTrimThinEndS
           coordinates: 34,-3
-        1064:
+        1060:
           color: '#DE3A3A96'
           id: ThreeQuarterTileOverlayGreyscale270
           coordinates: 42,-28
-        1065:
+        1061:
           color: '#DE3A3A96'
           id: ThreeQuarterTileOverlayGreyscale180
           coordinates: 44,-28
-        1066:
+        1062:
           color: '#DE3A3A96'
           id: HalfTileOverlayGreyscale270
           coordinates: 42,-27
-        1067:
+        1063:
           color: '#DE3A3A96'
           id: HalfTileOverlayGreyscale90
           coordinates: 44,-27
-        1068:
+        1064:
           color: '#DE3A3A96'
           id: HalfTileOverlayGreyscale180
           coordinates: 43,-28
@@ -10667,8 +10666,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 13.855177
-      - 52.121857
+      - 13.467232
+      - 50.662445
       - 0
       - 0
       - 0
@@ -10712,8 +10711,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 19.481253
-      - 73.28662
+      - 18.405577
+      - 69.24003
       - 0
       - 0
       - 0
@@ -10817,8 +10816,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 17.89022
-      - 67.30131
+      - 17.389294
+      - 65.41687
       - 0
       - 0
       - 0
@@ -10832,8 +10831,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 20.619795
-      - 77.56971
+      - 20.04244
+      - 75.39776
       - 0
       - 0
       - 0
@@ -10877,8 +10876,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 13.467232
-      - 50.662445
+      - 13.090149
+      - 49.243896
       - 0
       - 0
       - 0
@@ -10907,8 +10906,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 20.04244
-      - 75.39776
+      - 19.481253
+      - 73.28662
       - 0
       - 0
       - 0
@@ -10922,8 +10921,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 17.389294
-      - 65.41687
+      - 16.902393
+      - 63.585197
       - 0
       - 0
       - 0
@@ -10952,10 +10951,15 @@ entities:
     type: GridAtmosphere
   - type: OccluderTree
   - type: Shuttle
-  - type: GridPathfinding
+  - nextUpdate: 327.5335599
+    type: GridPathfinding
   - type: RadiationGridResistance
   - id: Cluster
     type: BecomesStation
+  - nextShake: 0
+    shakeTimes: 10
+    type: GravityShake
+  - type: GasTileOverlay
 - uid: 128
   type: WallReinforced
   components:
@@ -14477,7 +14481,7 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 667
-  type: VendingMachineCigs
+  type: VendorMachineCigs
   components:
   - flags: SessionSpecific
     type: MetaData
@@ -14794,7 +14798,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 713
-  type: VendingMachineChang
+  type: VendorMachineChang
   components:
   - flags: SessionSpecific
     type: MetaData
@@ -14802,7 +14806,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 714
-  type: VendingMachineDiscount
+  type: VendorMachineDiscount
   components:
   - flags: SessionSpecific
     type: MetaData
@@ -15859,7 +15863,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 884
-  type: VendingMachineCoffee
+  type: VendorMachineCoffee
   components:
   - flags: SessionSpecific
     type: MetaData
@@ -17499,7 +17503,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 1152
-  type: VendingMachineCoffee
+  type: VendorMachineCoffee
   components:
   - flags: SessionSpecific
     type: MetaData
@@ -17549,17 +17553,19 @@ entities:
     parent: 127
     type: Transform
 - uid: 1160
-  type: SignNanotrasen1
-  components:
-  - pos: 37.5,1.5
-    parent: 127
-    type: Transform
-- uid: 1161
-  type: VendingMachineSnack
+  type: VendorMachineSnack
   components:
   - flags: SessionSpecific
     type: MetaData
   - pos: 30.5,-0.5
+    parent: 127
+    type: Transform
+- uid: 1161
+  type: VendorMachineGames
+  components:
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: 12.5,4.5
     parent: 127
     type: Transform
 - uid: 1162
@@ -28929,11 +28935,11 @@ entities:
     parent: 127
     type: Transform
 - uid: 2844
-  type: VendingMachineGames
+  type: VendorMachineYouTool
   components:
   - flags: SessionSpecific
     type: MetaData
-  - pos: 12.5,4.5
+  - pos: 3.5,-19.5
     parent: 127
     type: Transform
 - uid: 2845
@@ -29496,19 +29502,19 @@ entities:
     parent: 127
     type: Transform
 - uid: 2936
-  type: VendingMachineYouTool
-  components:
-  - flags: SessionSpecific
-    type: MetaData
-  - pos: 3.5,-19.5
-    parent: 127
-    type: Transform
-- uid: 2937
-  type: VendingMachineCoffee
+  type: VendorMachineCoffee
   components:
   - flags: SessionSpecific
     type: MetaData
   - pos: 3.5,-20.5
+    parent: 127
+    type: Transform
+- uid: 2937
+  type: VendorMachineClothing
+  components:
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: 6.5,-19.5
     parent: 127
     type: Transform
 - uid: 2938
@@ -29526,11 +29532,11 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 2940
-  type: VendingMachineClothing
+  type: VendorMachineSnack
   components:
   - flags: SessionSpecific
     type: MetaData
-  - pos: 6.5,-19.5
+  - pos: 8.5,-19.5
     parent: 127
     type: Transform
 - uid: 2941
@@ -34200,11 +34206,11 @@ entities:
     parent: 127
     type: Transform
 - uid: 3674
-  type: VendingMachineSnack
+  type: VendorMachineDiscount
   components:
   - flags: SessionSpecific
     type: MetaData
-  - pos: 8.5,-19.5
+  - pos: 8.5,-20.5
     parent: 127
     type: Transform
 - uid: 3675
@@ -34232,11 +34238,11 @@ entities:
     parent: 127
     type: Transform
 - uid: 3679
-  type: VendingMachineDiscount
+  type: VendorMachineDiscount
   components:
   - flags: SessionSpecific
     type: MetaData
-  - pos: 8.5,-20.5
+  - pos: 61.5,-38.5
     parent: 127
     type: Transform
 - uid: 3680
@@ -34483,27 +34489,27 @@ entities:
     parent: 127
     type: Transform
 - uid: 3720
-  type: VendingMachineDiscount
-  components:
-  - flags: SessionSpecific
-    type: MetaData
-  - pos: 61.5,-38.5
-    parent: 127
-    type: Transform
-- uid: 3721
-  type: VendingMachineSnack
+  type: VendorMachineSnack
   components:
   - flags: SessionSpecific
     type: MetaData
   - pos: 59.5,-32.5
     parent: 127
     type: Transform
-- uid: 3722
-  type: VendingMachineDonut
+- uid: 3721
+  type: VendorMachineDonut
   components:
   - flags: SessionSpecific
     type: MetaData
   - pos: 59.5,-33.5
+    parent: 127
+    type: Transform
+- uid: 3722
+  type: VendorMachineSovietSoda
+  components:
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: 60.5,-38.5
     parent: 127
     type: Transform
 - uid: 3723
@@ -34513,11 +34519,11 @@ entities:
     parent: 127
     type: Transform
 - uid: 3724
-  type: VendingMachineSovietSoda
+  type: VendorMachineGames
   components:
   - flags: SessionSpecific
     type: MetaData
-  - pos: 60.5,-38.5
+  - pos: 20.5,-28.5
     parent: 127
     type: Transform
 - uid: 3725
@@ -35152,11 +35158,11 @@ entities:
     parent: 127
     type: Transform
 - uid: 3823
-  type: VendingMachineGames
+  type: VendorMachineSnack
   components:
   - flags: SessionSpecific
     type: MetaData
-  - pos: 20.5,-28.5
+  - pos: 5.5,-33.5
     parent: 127
     type: Transform
 - uid: 3824
@@ -37399,11 +37405,11 @@ entities:
     parent: 127
     type: Transform
 - uid: 4163
-  type: VendingMachineSnack
+  type: VendorMachineCola
   components:
   - flags: SessionSpecific
     type: MetaData
-  - pos: 5.5,-33.5
+  - pos: 5.5,-35.5
     parent: 127
     type: Transform
 - uid: 4164
@@ -49271,35 +49277,35 @@ entities:
     parent: 127
     type: Transform
 - uid: 5814
-  type: VendingMachineCola
-  components:
-  - flags: SessionSpecific
-    type: MetaData
-  - pos: 5.5,-35.5
-    parent: 127
-    type: Transform
-- uid: 5815
-  type: VendingMachineDonut
+  type: VendorMachineDonut
   components:
   - flags: SessionSpecific
     type: MetaData
   - pos: 13.5,-21.5
     parent: 127
     type: Transform
-- uid: 5816
-  type: VendingMachineCola
+- uid: 5815
+  type: VendorMachineCola
   components:
   - flags: SessionSpecific
     type: MetaData
   - pos: 14.5,-21.5
     parent: 127
     type: Transform
-- uid: 5817
-  type: VendingMachineVendomat
+- uid: 5816
+  type: VendorMachineCigs
   components:
   - flags: SessionSpecific
     type: MetaData
   - pos: 15.5,-21.5
+    parent: 127
+    type: Transform
+- uid: 5817
+  type: VendorMachineCigs
+  components:
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: 41.5,-4.5
     parent: 127
     type: Transform
 - uid: 5818
@@ -51361,29 +51367,47 @@ entities:
     parent: 127
     type: Transform
 - uid: 6118
-  type: SignNanotrasen2
+  type: VendorMachineChang
   components:
-  - pos: 38.5,1.5
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: 8.5,-21.5
     parent: 127
     type: Transform
 - uid: 6119
-  type: SignNanotrasen3
+  type: VendorMachineDonut
   components:
-  - pos: 39.5,1.5
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: 41.5,-2.5
     parent: 127
     type: Transform
 - uid: 6120
-  type: SignNanotrasen4
+  type: ATM
   components:
-  - pos: 40.5,1.5
+  - rot: 1.5707963267948966 rad
+    pos: 20.5,-6.5
     parent: 127
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - containers:
+      IdCardSlot: !type:ContainerSlot {}
+      ATM-IdCard: !type:ContainerSlot {}
+    type: ContainerContainer
 - uid: 6121
-  type: SignNanotrasen5
+  type: ATM
   components:
-  - pos: 41.5,1.5
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-6.5
     parent: 127
     type: Transform
+  - arc: 3.141592653589793 rad
+    type: WallMount
+  - containers:
+      IdCardSlot: !type:ContainerSlot {}
+      ATM-IdCard: !type:ContainerSlot {}
+    type: ContainerContainer
 - uid: 6122
   type: DisposalBend
   components:
@@ -52149,14 +52173,6 @@ entities:
   - pos: 30.5,-33.5
     parent: 127
     type: Transform
-- uid: 6234
-  type: VendingMachineCigs
-  components:
-  - flags: SessionSpecific
-    type: MetaData
-  - pos: 41.5,-4.5
-    parent: 127
-    type: Transform
 - uid: 6235
   type: MaintenanceFluffSpawner
   components:
@@ -52550,14 +52566,6 @@ entities:
   type: CableApcExtension
   components:
   - pos: 27.5,-21.5
-    parent: 127
-    type: Transform
-- uid: 6288
-  type: VendingMachineChang
-  components:
-  - flags: SessionSpecific
-    type: MetaData
-  - pos: 8.5,-21.5
     parent: 127
     type: Transform
 - uid: 6289
@@ -53534,14 +53542,6 @@ entities:
   type: WaterCooler
   components:
   - pos: 37.5,-2.5
-    parent: 127
-    type: Transform
-- uid: 6442
-  type: VendingMachineDonut
-  components:
-  - flags: SessionSpecific
-    type: MetaData
-  - pos: 41.5,-2.5
     parent: 127
     type: Transform
 - uid: 6443
@@ -63877,9 +63877,11 @@ entities:
 - uid: 7879
   type: ToyIan
   components:
-  - pos: 26.866974,-4.766476
+  - pos: 27.615963,-4.2848825
     parent: 127
     type: Transform
+  - nextAttack: 275.0332705
+    type: MeleeWeapon
 - uid: 7880
   type: GasPipeStraight
   components:
