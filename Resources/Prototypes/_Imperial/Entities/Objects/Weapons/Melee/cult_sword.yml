@@ -1,8 +1,8 @@
 - type: entity
-  name: ћеч культа
+  name: Cult sword
   parent: BaseItem
   id: CultSword
-  description: ћеч, позвол€ющий восславл€ть Ќар-—и, использу€ его по назначению.
+  description: Cult sword for serving Nar-Sie
   components:
   - type: Sharp
   - type: Sprite
