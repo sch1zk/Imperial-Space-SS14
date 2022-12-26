@@ -1,0 +1,25 @@
+- type: entity
+  name: ћеч культа
+  parent: BaseItem
+  id: CultSword
+  description: ћеч, позвол€ющий восславл€ть Ќар-—и, использу€ его по назначению.
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/cult_sword.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 0.75
+    damage:
+      types:
+        Slash: 15
+        Burn: 5
+  - type: Item
+    size: 20
+  - type: Clothing
+    sprite: Objects/Weapons/Melee/cult_sword.rsi
+    slots:
+    - back
+  - type: DisarmMalus
+
+
