@@ -80,4 +80,5 @@ public enum LogType
     Stripping = 75,
     Stamina = 76,
     Transactions = 77,
+    EntitySpawn = 78,
 }
