@@ -22,7 +22,7 @@
   id: StationGoalZoo
   text: station-goal-zoo
 
- type: stationGoal
+- type: stationGoal
   id: StationGoalDock
   text: station-goal-space-dock
 
