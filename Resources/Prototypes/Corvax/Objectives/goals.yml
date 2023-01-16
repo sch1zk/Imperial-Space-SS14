@@ -21,3 +21,15 @@
 - type: stationGoal
   id: StationGoalZoo
   text: station-goal-zoo
+
+ type: stationGoal
+  id: StationGoalDock
+  text: station-goal-space-dock
+
+- type: stationGoal
+  id: StationGoalSecurity
+  text: station-goal-reinforced-security
+
+- type: stationGoal
+  id: StationGoalPlatform
+  text: station-goal-observation-platform
