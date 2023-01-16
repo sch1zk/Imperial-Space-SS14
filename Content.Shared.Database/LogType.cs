@@ -82,4 +82,5 @@ public enum LogType
     Transactions = 77,
     EntitySpawn = 78,
     Container = 79,
+    AdminMessage = 80,
 }

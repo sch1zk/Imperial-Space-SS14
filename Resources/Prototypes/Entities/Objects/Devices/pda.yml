@@ -142,6 +142,8 @@
     state: pda-internmed
   - type: HealthAnalyzer
     scanDelay: 1.4
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
   parent: BasePDA
@@ -494,6 +496,8 @@
     state: pda-cmo
   - type: HealthAnalyzer
     scanDelay: 1
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
   parent: BasePDA
@@ -514,6 +518,8 @@
     state: pda-medical
   - type: HealthAnalyzer
     scanDelay: 1.2
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
   parent: BasePDA
