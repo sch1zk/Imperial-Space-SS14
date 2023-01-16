@@ -5,7 +5,6 @@ using Content.Server.GameTicking;
 using Content.Server.Ghost.Components;
 using Content.Server.Mind.Components;
 using Content.Shared.Economy;
-using Content.Server.MobState;
 using Content.Server.Objectives;
 using Content.Server.Players;
 using Content.Server.Roles;
