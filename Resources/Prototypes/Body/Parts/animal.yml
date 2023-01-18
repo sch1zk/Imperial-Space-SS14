@@ -20,7 +20,7 @@
 
 # For primates mainly
 - type: entity
-  id: HandAnimal
+  id: HandsAnimal
   name: "animal hands"
   parent: PartAnimal
   noSpawn: true
