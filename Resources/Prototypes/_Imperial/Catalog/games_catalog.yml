@@ -74,3 +74,14 @@
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
+
+- type: listing
+  id: VendingGamesFakeCyberPen
+  productEntity: FakeCyberPen
+  cost:
+    SpaceCredits: 50
+  categories:
+  - VendingGames
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
