@@ -715,7 +715,7 @@
     speechSounds: Monkey
   - type: Body
     prototype: Primate
-    requiredLegs: 1 # TODO: More than 1 leg
+    requiredLegs: 1
   - type: DamageStateVisuals
     states:
       Alive:
@@ -735,6 +735,7 @@
       amount: 3
   - type: MonkeyAccent
   - type: Puller
+    needsHands: true
   - type: CanHostGuardian
 
 - type: entity
