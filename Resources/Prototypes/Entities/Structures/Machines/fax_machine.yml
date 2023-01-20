@@ -37,6 +37,7 @@
   - type: ApcPowerReceiver
     powerLoad: 250
   - type: FaxMachine
+    receiveStationGoal: true
     paperSlot:
       insertSound: /Audio/Machines/scanning.ogg
       ejectSound: /Audio/Machines/tray_eject.ogg
@@ -78,6 +79,7 @@
   - type: FaxMachine
     name: "Central Command"
     notifyAdmins: true
+    receiveStationGoal: false
 
 - type: entity
   parent: FaxMachineBase
@@ -116,4 +118,3 @@
     - type: FaxMachine
       name: "Bridge"
       notifyAdmins: true
-
