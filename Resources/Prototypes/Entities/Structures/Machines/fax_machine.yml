@@ -37,6 +37,7 @@
   - type: ApcPowerReceiver
     powerLoad: 250
   - type: FaxMachine
+    receiveStationGoal: true
     paperSlot:
       insertSound: /Audio/Machines/scanning.ogg
       ejectSound: /Audio/Machines/tray_eject.ogg
@@ -77,6 +78,7 @@
         color: "#bfe3ff"
   - type: FaxMachine
     name: "Central Command"
+    receiveStationGoal: false
     notifyAdmins: true
 
 - type: entity
