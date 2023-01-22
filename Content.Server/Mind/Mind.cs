@@ -336,7 +336,7 @@ namespace Content.Server.Mind
                 {
                     component = _entityManager.AddComponent<MindComponent>(entity.Value);
                 }
-                else if (component!.HasMind)
+                else if (component.HasMind)
                 {
                     _gameTickerSystem.OnGhostAttempt(component.Mind!, false);
                 }

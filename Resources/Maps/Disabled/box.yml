@@ -5973,7 +5973,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 898
-  type: d100Dice
+  type: PercentileDie
   components:
   - pos: 57.5,20.5
     parent: 8364
@@ -97138,7 +97138,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 10853
-  type: d100Dice
+  type: PercentileDie
   components:
   - pos: 56.5,3.5000002
     parent: 8364
@@ -97304,7 +97304,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 10873
-  type: d100Dice
+  type: PercentileDie
   components:
   - pos: 55.5,0.5
     parent: 8364

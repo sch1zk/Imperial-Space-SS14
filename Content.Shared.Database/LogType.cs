@@ -79,9 +79,9 @@ public enum LogType
     LatticeCut = 74,
     Stripping = 75,
     Stamina = 76,
-
     Transactions = 77,
     EntitySpawn = 78,
     AdminMessage = 79,
     Anomaly = 80
+    WireHacking = 81,
 }
