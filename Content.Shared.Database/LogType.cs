@@ -82,6 +82,6 @@ public enum LogType
     Transactions = 77,
     EntitySpawn = 78,
     AdminMessage = 79,
-    Anomaly = 80
+    Anomaly = 80,
     WireHacking = 81,
 }
