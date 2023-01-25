@@ -105,6 +105,7 @@
     - type: FaxMachine
       name: "Captain's Office"
       receiveNukeCodes: true
+      receiveStationGoal: true
       notifyAdmins: true
 
 - type: entity
