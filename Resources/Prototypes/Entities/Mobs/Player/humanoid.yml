@@ -340,24 +340,3 @@
   id: NukeOp
   components:
     - type: NukeOperative
-
-## DeathSquad
-
-- type: entity
-  id: RandomHumanoidSpawnerDeathSquad
-  name: DeathSquad
-  components:
-    - type: Icon
-      sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
-      state: icon
-    - type: RandomHumanoidSpawner
-      settings: DeathSquadSettings
-
-- type: randomHumanoidSettings
-  id: DeathSquadSettings
-  components:
-    - type: GhostTakeoverAvailable
-      name: DeathSquad
-      description: Kill everything that moves.
-    - type: Loadout
-      prototypes: [ deathsquadGear ]

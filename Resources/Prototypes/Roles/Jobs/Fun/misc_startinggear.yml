@@ -68,21 +68,22 @@
 
 #Deathsquad Outfit
 - type: startingGear
-  id: deathsquadGear
+  id: DeadsquadGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBlack
-    back: ClothingBackpackDeathSquadFilled
+    back: ClothingBackpackDuffelSyndicateAmmo
     mask: ClothingMaskBreath
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitDeathsquad
     shoes: ClothingShoesChameleonNoSlips
-    id: DeathSquadPDA
-    belt: ClothingBeltChiefEngineerFilled
+    id: CentcomPDA
+    pocket1: EmergencyOxygenTankFilled
+    belt: ClothingBeltUtilityFilled
   innerclothingskirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackDeathSquadFilled
-  duffelbag: ClothingBackpackDeathSquadFilled
+  satchel: ClothingBackpackDuffelSyndicateAmmo
+  duffelbag: ClothingBackpackDuffelSyndicateAmmo
 
 
 # Syndicate Operative Outfit - Poverty
