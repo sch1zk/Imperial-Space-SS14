@@ -274,6 +274,9 @@
   id: Handcuffs
 
 - type: Tag
+  id: Handle
+
+- type: Tag
   id: Head
 
 - type: Tag

@@ -1,0 +1,23 @@
+- type: constructionGraph
+  id: Pickaxe
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: Pickaxe
+      steps:
+      - tag: Crowbar
+        icon:
+          sprite: Objects\Tools\crowbar.rsi
+          state: icon
+        name: Лом
+      - tag: Handle
+        icon:
+          sprite: Objects/Weapons/Melee/pickaxe.rsi
+          state: handle
+        name: Рукоятка инструмента
+      - material: Steel
+        amount: 2
+        doAfter: 30
+  - node: Pickaxe
+    entity: Pickaxe
