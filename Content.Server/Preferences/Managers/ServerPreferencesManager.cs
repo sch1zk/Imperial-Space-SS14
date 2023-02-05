@@ -228,7 +228,7 @@ namespace Content.Server.Preferences.Managers
         private int GetMaxUserCharacterSlots(NetUserId userId)
         {
             var maxSlots = _cfg.GetCVar(CCVars.GameMaxCharacterSlots);
-            var extraSlots = _sponsors.TryGetInfo(userId, out var sponsor) ? sponsor.ExtraSlots : 0;
+            var extraSlots = (_sponsors.TryGetInfo(userId, out var sponsor) && sponsor.HavePriorityJoin == true) ? sponsor.ExtraSlots : 0;
             return maxSlots + extraSlots;
         }
         // Corvax-Sponsors-End
@@ -297,7 +297,7 @@ namespace Content.Server.Preferences.Managers
                     case HumanoidCharacterProfile hp:
                     {
                         var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
-                        var selectedSpecies = HumanoidSystem.DefaultSpecies;
+                        var selectedSpecies = HumanoidAppearanceSystem.DefaultSpecies;
 
                         if (prototypeManager.TryIndex<SpeciesPrototype>(hp.Species, out var species) && species.RoundStart)
                         {

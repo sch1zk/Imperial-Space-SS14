@@ -15,13 +15,13 @@ public sealed class SponsorInfo
     public int? Tier { get; set; }
 
     [JsonPropertyName("oocColor")]
-    public string? OOCColor { get; set; }
+    public string? OOCColor { get; set; } = "#ffd700";
 
     [JsonPropertyName("priorityJoin")]
     public bool HavePriorityJoin { get; set; } = false;
 
     [JsonPropertyName("extraSlots")]
-    public int ExtraSlots { get; set; }
+    public int ExtraSlots { get; set; } = 5;
 
     [JsonPropertyName("allowedMarkings")] // TODO: Rename API field in separate PR as breaking change!
     public string[] AllowedMarkings { get; set; } = Array.Empty<string>();
