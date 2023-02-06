@@ -57,6 +57,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperRange = 2; // how far whisper goes in world units
     public const string DefaultAnnouncementSound = "/Audio/Announcements/announce.ogg";
+    public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; //probably should move it to imperial folder instead --Lilith
 
     private bool _loocEnabled = true;
     private bool _deadLoocEnabled = false;
@@ -226,7 +227,11 @@ public sealed partial class ChatSystem : SharedChatSystem
     {
         var wrappedMessage = Loc.GetString("chat-manager-sender-announcement-wrap-message", ("sender", sender), ("message", FormattedMessage.EscapeText(message)));
         _chatManager.ChatMessageToAll(ChatChannel.Radio, message, wrappedMessage, default, false, true, colorOverride);
-        if (playSound)
+        if (playSound && sender == "Центральное командование") //I really don't like russian here, but that's the simplest way I could've found --Lilith
+        {
+            SoundSystem.Play(announcementSound?.GetSound() ?? CentComAnnouncementSound, Filter.Broadcast(), announcementSound?.Params ?? AudioParams.Default.WithVolume(-2f));
+        }
+        else if (playSound)
         {
             SoundSystem.Play(announcementSound?.GetSound() ?? DefaultAnnouncementSound, Filter.Broadcast(), announcementSound?.Params ?? AudioParams.Default.WithVolume(-2f));
         }
