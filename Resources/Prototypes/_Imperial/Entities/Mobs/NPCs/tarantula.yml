@@ -64,6 +64,8 @@
         reagents:
         - ReagentId: FluorosulfuricAcid
           Quantity: 5
+  - type: Spider
+  - type: IgnoreSpiderWeb
 
 - type: entity
   name: tarantula
@@ -82,3 +84,5 @@
       makeSentient: true
       name: ghost-role-information-giant-spider-name
       description: ghost-role-information-giant-spider-description
+    - type: Spider
+    - type: IgnoreSpiderWeb
