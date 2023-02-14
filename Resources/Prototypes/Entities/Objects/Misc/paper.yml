@@ -234,6 +234,15 @@
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: pen_cap
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 8
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+
 
 - type: entity
   name: hop's fountain pen
@@ -244,6 +253,14 @@
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: pen_hop
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 8
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
 
 - type: entity
   id: BoxFolderBase
