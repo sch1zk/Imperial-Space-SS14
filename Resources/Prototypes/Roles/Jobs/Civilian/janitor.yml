@@ -37,7 +37,8 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtJanimaid
     back: ClothingBackpackFilled
-    id: JanitorPDA
+    shoes: ClothingUnderSocksCoder
+    id: MaidPDA
     head: ClothingHeadHatCatEars
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled

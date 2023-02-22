@@ -74,6 +74,9 @@
   id: JobLibrarian
 
 - type: playTimeTracker
+  id: JobMaid
+
+- type: playTimeTracker
   id: JobMedicalDoctor
 
 - type: playTimeTracker

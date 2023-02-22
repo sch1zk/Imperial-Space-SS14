@@ -1,0 +1,19 @@
+- type: job
+  id: Maid
+  name: job-name-maid
+  description: job-description-janitor
+  playTimeTracker: JobMaid
+  startingGear: JanitorMaidGear
+  icon: "Janitor"
+  supervisors: job-supervisors-hop
+  access:
+  - Janitor
+  - Maintenance
+  special:
+  - !type:GiveItemOnHolidaySpecial
+    holiday: GarbageDay
+    prototype: WeaponRevolverInspector
+  minBankBalance: 300
+  maxBankBalance: 500
+  wageDepartment: Civilian
+  wage: 100

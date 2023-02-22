@@ -12,3 +12,20 @@
       state: pda-hop
   - type: Icon
     state: pda-hop
+
+- type: entity
+  parent: BasePDA
+  id: MaidPDA
+  name: maid PDA
+  description: Smells like bleach.
+  components:
+  - type: PDA
+    id: MaidIDCard
+  - type: Appearance
+    visuals:
+      - type: PDAVisualizer
+        state: pda-janitor
+  - type: PDABorderColor
+    borderColor: "#5D2D56"
+  - type: Icon
+    state: pda-janitor

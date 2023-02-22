@@ -11,3 +11,15 @@
     heldPrefix: silver
   - type: PresetIdCard
     job: Adjutant
+
+- type: entity
+  parent: IDCardStandard
+  id: MaidIDCard
+  name: maid ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idjanitor
+  - type: PresetIdCard
+    job: Maid
