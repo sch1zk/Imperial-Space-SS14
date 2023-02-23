@@ -40,3 +40,6 @@ ent-RandomHumanoidSpawnerSyndicateAgent = Агент Синдиката
 ent-RandomHumanoidSpawnerNukeOp = Ядерный оперативник
     .desc = { "" }
     .suffix = { "" }
+ent-RandomHumanoidSpawnerDeathSquad = Эскадрон смерти
+    .desc = { "" }
+    .suffix = { "" }
