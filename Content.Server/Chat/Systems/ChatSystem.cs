@@ -232,7 +232,11 @@ public sealed partial class ChatSystem : SharedChatSystem
     {
         var wrappedMessage = Loc.GetString("chat-manager-sender-announcement-wrap-message", ("sender", sender), ("message", FormattedMessage.EscapeText(message)));
         _chatManager.ChatMessageToAll(ChatChannel.Radio, message, wrappedMessage, default, false, true, colorOverride);
-        if (playSound)
+        if (playSound && sender == "Центральное командование") //I really don't like russian here, but that's the simplest way I could've found --Lilith
+        {
+            SoundSystem.Play(announcementSound?.GetSound() ?? CentComAnnouncementSound, Filter.Broadcast(), announcementSound?.Params ?? AudioParams.Default.WithVolume(-2f));
+        }
+        else if (playSound)
         {
             if (sender == Loc.GetString("admin-announce-announcer-default")) announcementSound = new SoundPathSpecifier(CentComAnnouncementSound); // Corvax-Announcements: Support custom alert sound from admin panel
             SoundSystem.Play(announcementSound?.GetSound() ?? DefaultAnnouncementSound, Filter.Broadcast(), announcementSound?.Params ?? AudioParams.Default.WithVolume(-2f));

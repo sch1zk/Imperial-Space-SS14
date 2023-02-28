@@ -1,13 +1,18 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
+  # - Aspid
   # - Bagel
+  # - Barratry
   # - Box
   # - Cluster
+  # - Fland  
   # - Kettle
   # - Marathon
-  # - Omega
+  # - Meta
   # - Moose
+  # - Omega
+  # - Origin
   - MooseImperial
   - ClusterImperial
 
@@ -25,3 +30,4 @@
   # - Omega
   # - Origin
   
+  # - ClusterImperial

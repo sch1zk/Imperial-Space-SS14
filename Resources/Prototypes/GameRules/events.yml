@@ -201,21 +201,21 @@
     - Service
     lightBreakChance: 0.05
 
-- type: gameRule
-  id: VentClog
-  config:
-    !type:StationEventRuleConfiguration
-    id: VentClog
-    startAnnouncement: station-event-vent-clog-start-announcement
-    startAudio:
-      path: /Audio/Announcements/ventclog.ogg # Corvax-Announcements
-      params:
-        volume: -4
-    earliestStart: 15
-    minimumPlayers: 15
-    weight: 5
-    startAfter: 50
-    endAfter: 60
+# - type: gameRule
+#   id: VentClog
+#   config:
+#     !type:StationEventRuleConfiguration
+#     id: VentClog
+#     startAnnouncement: station-event-vent-clog-start-announcement
+#     startAudio:
+#       path: /Audio/Announcements/ventclog.ogg # Corvax-Announcements
+#       params:
+#         volume: -4
+#     earliestStart: 15
+#     minimumPlayers: 15
+#     weight: 5
+#     startAfter: 50
+#     endAfter: 60
 
 - type: gameRule
   id: VentCritters
