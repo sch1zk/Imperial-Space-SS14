@@ -190667,3 +190667,6155 @@ entities:
   - pos: 31.5,30.5
     parent: 60
     type: Transform
+- uid: 23684
+  type: Grille
+  components:
+  - pos: 32.5,30.5
+    parent: 60
+    type: Transform
+- uid: 23685
+  type: Grille
+  components:
+  - pos: 33.5,30.5
+    parent: 60
+    type: Transform
+- uid: 23686
+  type: Grille
+  components:
+  - pos: 34.5,30.5
+    parent: 60
+    type: Transform
+- uid: 23687
+  type: Grille
+  components:
+  - pos: 35.5,30.5
+    parent: 60
+    type: Transform
+- uid: 23688
+  type: CarpetPurple
+  components:
+  - pos: 20.5,-30.5
+    parent: 60
+    type: Transform
+- uid: 23689
+  type: Grille
+  components:
+  - pos: 36.5,30.5
+    parent: 60
+    type: Transform
+- uid: 23690
+  type: Grille
+  components:
+  - pos: 37.5,30.5
+    parent: 60
+    type: Transform
+- uid: 23691
+  type: Grille
+  components:
+  - pos: 38.5,30.5
+    parent: 60
+    type: Transform
+- uid: 23692
+  type: Grille
+  components:
+  - pos: 39.5,30.5
+    parent: 60
+    type: Transform
+- uid: 23693
+  type: SmokingPipeFilledTobacco
+  components:
+  - pos: -8.5452585,-5.5884953
+    parent: 60
+    type: Transform
+- uid: 23694
+  type: Grille
+  components:
+  - pos: 40.5,30.5
+    parent: 60
+    type: Transform
+- uid: 23695
+  type: BooksBag
+  components:
+  - pos: -8.518149,24.954159
+    parent: 60
+    type: Transform
+- uid: 23696
+  type: BookEscalation
+  components:
+  - pos: -7.5117726,20.590528
+    parent: 60
+    type: Transform
+- uid: 23697
+  type: BookEscalationSecurity
+  components:
+  - pos: -12.548856,19.605753
+    parent: 60
+    type: Transform
+- uid: 23698
+  type: CableMV
+  components:
+  - pos: 45.5,-32.5
+    parent: 60
+    type: Transform
+- uid: 23699
+  type: CarpetBlack
+  components:
+  - pos: 18.5,-34.5
+    parent: 60
+    type: Transform
+- uid: 23700
+  type: BookAtmosAirAlarms
+  components:
+  - pos: -11.637694,22.589413
+    parent: 60
+    type: Transform
+- uid: 23701
+  type: BookAtmosVentsMore
+  components:
+  - pos: -11.418944,22.495663
+    parent: 60
+    type: Transform
+- uid: 23702
+  type: BookAtmosDistro
+  components:
+  - pos: -6.590819,15.667539
+    parent: 60
+    type: Transform
+- uid: 23703
+  type: BookAtmosWaste
+  components:
+  - pos: -6.434569,15.495664
+    parent: 60
+    type: Transform
+- uid: 23704
+  type: ChemistryHotplate
+  components:
+  - pos: 40.5,-28.5
+    parent: 60
+    type: Transform
+- uid: 23705
+  type: CarpetBlack
+  components:
+  - pos: 18.5,-33.5
+    parent: 60
+    type: Transform
+- uid: 23706
+  type: CarpetBlack
+  components:
+  - pos: 18.5,-32.5
+    parent: 60
+    type: Transform
+- uid: 23707
+  type: CarpetBlack
+  components:
+  - pos: 19.5,-32.5
+    parent: 60
+    type: Transform
+- uid: 23708
+  type: CarpetBlack
+  components:
+  - pos: 19.5,-33.5
+    parent: 60
+    type: Transform
+- uid: 23709
+  type: CarpetBlack
+  components:
+  - pos: 19.5,-34.5
+    parent: 60
+    type: Transform
+- uid: 23710
+  type: RandomVending
+  components:
+  - pos: 21.5,-40.5
+    parent: 60
+    type: Transform
+- uid: 23711
+  type: CrateFilledSpawner
+  components:
+  - pos: 52.5,8.5
+    parent: 60
+    type: Transform
+- uid: 23712
+  type: CrateFilledSpawner
+  components:
+  - pos: 52.5,10.5
+    parent: 60
+    type: Transform
+- uid: 23713
+  type: CrateFilledSpawner
+  components:
+  - pos: 54.5,10.5
+    parent: 60
+    type: Transform
+- uid: 23714
+  type: CrateFilledSpawner
+  components:
+  - pos: 54.5,12.5
+    parent: 60
+    type: Transform
+- uid: 23715
+  type: FirelockGlass
+  components:
+  - pos: 0.5,12.5
+    parent: 60
+    type: Transform
+- uid: 23716
+  type: WallmountTelevision
+  components:
+  - pos: -40.5,26.5
+    parent: 60
+    type: Transform
+- uid: 23717
+  type: FirelockGlass
+  components:
+  - pos: 31.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 23718
+  type: SmokingPipeFilledTobacco
+  components:
+  - pos: -24.372612,-29.105206
+    parent: 60
+    type: Transform
+- uid: 23719
+  type: filingCabinetDrawerRandom
+  components:
+  - pos: 48.5,12.5
+    parent: 60
+    type: Transform
+- uid: 23720
+  type: ExosuitFabricator
+  components:
+  - pos: -30.5,13.5
+    parent: 60
+    type: Transform
+- uid: 23721
+  type: SignDirectionalSolar
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -26.5,47.5
+    parent: 60
+    type: Transform
+- uid: 23722
+  type: CableMV
+  components:
+  - pos: -7.5,4.5
+    parent: 60
+    type: Transform
+- uid: 23723
+  type: CableMV
+  components:
+  - pos: -7.5,6.5
+    parent: 60
+    type: Transform
+- uid: 23724
+  type: CableMV
+  components:
+  - pos: -7.5,5.5
+    parent: 60
+    type: Transform
+- uid: 23725
+  type: APCBasic
+  components:
+  - pos: -7.5,6.5
+    parent: 60
+    type: Transform
+- uid: 23726
+  type: CableApcExtension
+  components:
+  - pos: -7.5,2.5
+    parent: 60
+    type: Transform
+- uid: 23727
+  type: CableMV
+  components:
+  - pos: 44.5,-32.5
+    parent: 60
+    type: Transform
+- uid: 23728
+  type: CableApcExtension
+  components:
+  - pos: -7.5,3.5
+    parent: 60
+    type: Transform
+- uid: 23729
+  type: BlastDoorOpen
+  components:
+  - pos: 26.5,0.5
+    parent: 60
+    type: Transform
+  - inputs:
+      Open: []
+      Close: []
+      Toggle:
+      - port: Pressed
+        uid: 18678
+    type: SignalReceiver
+- uid: 23730
+  type: BlastDoorOpen
+  components:
+  - pos: 26.5,1.5
+    parent: 60
+    type: Transform
+  - inputs:
+      Open: []
+      Close: []
+      Toggle:
+      - port: Pressed
+        uid: 18678
+    type: SignalReceiver
+- uid: 23731
+  type: BlastDoorOpen
+  components:
+  - pos: 26.5,2.5
+    parent: 60
+    type: Transform
+  - inputs:
+      Open: []
+      Close: []
+      Toggle:
+      - port: Pressed
+        uid: 18678
+    type: SignalReceiver
+- uid: 23732
+  type: CableMV
+  components:
+  - pos: 44.5,-31.5
+    parent: 60
+    type: Transform
+- uid: 23733
+  type: CableMV
+  components:
+  - pos: 43.5,-31.5
+    parent: 60
+    type: Transform
+- uid: 23734
+  type: CableMV
+  components:
+  - pos: 42.5,-31.5
+    parent: 60
+    type: Transform
+- uid: 23735
+  type: CableMV
+  components:
+  - pos: 41.5,-31.5
+    parent: 60
+    type: Transform
+- uid: 23736
+  type: CableMV
+  components:
+  - pos: 40.5,-31.5
+    parent: 60
+    type: Transform
+- uid: 23737
+  type: CableMV
+  components:
+  - pos: 40.5,-32.5
+    parent: 60
+    type: Transform
+- uid: 23738
+  type: CableMV
+  components:
+  - pos: 40.5,-33.5
+    parent: 60
+    type: Transform
+- uid: 23739
+  type: CableMV
+  components:
+  - pos: 40.5,-34.5
+    parent: 60
+    type: Transform
+- uid: 23740
+  type: CableMV
+  components:
+  - pos: 44.5,-30.5
+    parent: 60
+    type: Transform
+- uid: 23741
+  type: CableMV
+  components:
+  - pos: 44.5,-29.5
+    parent: 60
+    type: Transform
+- uid: 23742
+  type: CableMV
+  components:
+  - pos: 44.5,-28.5
+    parent: 60
+    type: Transform
+- uid: 23743
+  type: CableMV
+  components:
+  - pos: 44.5,-27.5
+    parent: 60
+    type: Transform
+- uid: 23744
+  type: CableMV
+  components:
+  - pos: 44.5,-26.5
+    parent: 60
+    type: Transform
+- uid: 23745
+  type: CableMV
+  components:
+  - pos: 44.5,-25.5
+    parent: 60
+    type: Transform
+- uid: 23746
+  type: CableMV
+  components:
+  - pos: 44.5,-24.5
+    parent: 60
+    type: Transform
+- uid: 23747
+  type: CableMV
+  components:
+  - pos: 44.5,-23.5
+    parent: 60
+    type: Transform
+- uid: 23748
+  type: CableMV
+  components:
+  - pos: 44.5,-22.5
+    parent: 60
+    type: Transform
+- uid: 23749
+  type: CableMV
+  components:
+  - pos: 44.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 23750
+  type: CableMV
+  components:
+  - pos: 45.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 23751
+  type: CableMV
+  components:
+  - pos: 46.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 23752
+  type: CableMV
+  components:
+  - pos: 47.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 23753
+  type: CableMV
+  components:
+  - pos: 48.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 23754
+  type: CableMV
+  components:
+  - pos: 49.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 23755
+  type: CableMV
+  components:
+  - pos: 50.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 23756
+  type: CableMV
+  components:
+  - pos: 50.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 23757
+  type: CableMV
+  components:
+  - pos: 50.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 23758
+  type: CableApcExtension
+  components:
+  - pos: 50.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 23759
+  type: CableApcExtension
+  components:
+  - pos: 50.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 23760
+  type: ReinforcedWindow
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 52.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 23761
+  type: SignElectricalMed
+  components:
+  - pos: 11.5,56.5
+    parent: 60
+    type: Transform
+- uid: 23762
+  type: SignElectricalMed
+  components:
+  - pos: 11.5,44.5
+    parent: 60
+    type: Transform
+- uid: 23763
+  type: ComputerResearchAndDevelopment
+  components:
+  - pos: -31.5,15.5
+    parent: 60
+    type: Transform
+- uid: 23764
+  type: FirelockGlass
+  components:
+  - pos: -16.5,22.5
+    parent: 60
+    type: Transform
+- uid: 23765
+  type: FirelockGlass
+  components:
+  - pos: -15.5,22.5
+    parent: 60
+    type: Transform
+- uid: 23766
+  type: FirelockGlass
+  components:
+  - pos: -14.5,22.5
+    parent: 60
+    type: Transform
+- uid: 23767
+  type: FireAlarm
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -17.5,14.5
+    parent: 60
+    type: Transform
+- uid: 23768
+  type: AirAlarm
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -17.5,15.5
+    parent: 60
+    type: Transform
+  - devices:
+    - 23764
+    - 23765
+    - 23766
+    - 21643
+    - 17627
+    - 17632
+    type: DeviceList
+- uid: 23769
+  type: SpawnMobAlexander
+  components:
+  - pos: 24.5,-32.5
+    parent: 60
+    type: Transform
+- uid: 23770
+  type: APCBasic
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -1.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 23771
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 23772
+  type: CableApcExtension
+  components:
+  - pos: -0.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 23574
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 23775
+  type: CableMV
+  components:
+  - pos: -0.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 23776
+  type: CableMV
+  components:
+  - pos: 0.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 23777
+  type: CableMV
+  components:
+  - pos: 0.5,-10.5
+    parent: 60
+    type: Transform
+- uid: 23778
+  type: CableMV
+  components:
+  - pos: 0.5,-9.5
+    parent: 60
+    type: Transform
+- uid: 23779
+  type: CableMV
+  components:
+  - pos: 0.5,-8.5
+    parent: 60
+    type: Transform
+- uid: 23780
+  type: CableMV
+  components:
+  - pos: 0.5,-7.5
+    parent: 60
+    type: Transform
+- uid: 23781
+  type: CableMV
+  components:
+  - pos: 0.5,-6.5
+    parent: 60
+    type: Transform
+- uid: 23782
+  type: CableMV
+  components:
+  - pos: 0.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 23783
+  type: CableMV
+  components:
+  - pos: 0.5,-4.5
+    parent: 60
+    type: Transform
+- uid: 23784
+  type: CableMV
+  components:
+  - pos: 0.5,-3.5
+    parent: 60
+    type: Transform
+- uid: 23785
+  type: CableMV
+  components:
+  - pos: 0.5,-2.5
+    parent: 60
+    type: Transform
+- uid: 23786
+  type: CableMV
+  components:
+  - pos: 0.5,-1.5
+    parent: 60
+    type: Transform
+- uid: 23787
+  type: WallSolid
+  components:
+  - pos: 28.5,-35.5
+    parent: 60
+    type: Transform
+- uid: 23788
+  type: APCBasic
+  components:
+  - pos: 27.5,-34.5
+    parent: 60
+    type: Transform
+- uid: 23789
+  type: CableMV
+  components:
+  - pos: 26.5,-38.5
+    parent: 60
+    type: Transform
+- uid: 23790
+  type: CableMV
+  components:
+  - pos: 26.5,-37.5
+    parent: 60
+    type: Transform
+- uid: 23791
+  type: CableMV
+  components:
+  - pos: 26.5,-36.5
+    parent: 60
+    type: Transform
+- uid: 23792
+  type: CableMV
+  components:
+  - pos: 26.5,-35.5
+    parent: 60
+    type: Transform
+- uid: 23793
+  type: CableMV
+  components:
+  - pos: 27.5,-35.5
+    parent: 60
+    type: Transform
+- uid: 23794
+  type: CableMV
+  components:
+  - pos: 27.5,-34.5
+    parent: 60
+    type: Transform
+- uid: 23795
+  type: CableApcExtension
+  components:
+  - pos: 27.5,-36.5
+    parent: 60
+    type: Transform
+- uid: 23796
+  type: CableApcExtension
+  components:
+  - pos: 27.5,-35.5
+    parent: 60
+    type: Transform
+- uid: 23797
+  type: CableApcExtension
+  components:
+  - pos: 27.5,-34.5
+    parent: 60
+    type: Transform
+- uid: 23798
+  type: CableApcExtension
+  components:
+  - pos: 26.5,-32.5
+    parent: 60
+    type: Transform
+- uid: 23799
+  type: DisposalBend
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -74.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23800
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -75.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23801
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -76.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23802
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -77.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23803
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -78.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23804
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -79.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23805
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -80.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23806
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -81.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23807
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -82.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23808
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -83.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23809
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -84.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23810
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -85.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23811
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -86.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23812
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -87.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23813
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -88.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23814
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -89.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23815
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -90.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23816
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -91.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23817
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -92.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23818
+  type: DisposalPipe
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -93.5,17.5
+    parent: 60
+    type: Transform
+- uid: 23819
+  type: FirelockGlass
+  components:
+  - pos: 31.5,-16.5
+    parent: 60
+    type: Transform
+- uid: 23820
+  type: ShuttleWindow
+  components:
+  - pos: 11.5,-76.5
+    parent: 60
+    type: Transform
+- uid: 23821
+  type: ShuttleWindow
+  components:
+  - pos: 12.5,-76.5
+    parent: 60
+    type: Transform
+- uid: 23822
+  type: ShuttleWindow
+  components:
+  - pos: 12.5,-75.5
+    parent: 60
+    type: Transform
+- uid: 23823
+  type: ShuttleWindow
+  components:
+  - pos: 13.5,-75.5
+    parent: 60
+    type: Transform
+- uid: 23824
+  type: CableApcExtension
+  components:
+  - pos: -48.5,12.5
+    parent: 60
+    type: Transform
+- uid: 23825
+  type: ShuttleWindow
+  components:
+  - pos: 13.5,-74.5
+    parent: 60
+    type: Transform
+- uid: 23826
+  type: CableApcExtension
+  components:
+  - pos: -48.5,14.5
+    parent: 60
+    type: Transform
+- uid: 23827
+  type: ShuttleWindow
+  components:
+  - pos: 10.5,-75.5
+    parent: 60
+    type: Transform
+- uid: 23828
+  type: CableApcExtension
+  components:
+  - pos: -47.5,13.5
+    parent: 60
+    type: Transform
+- uid: 23829
+  type: CableApcExtension
+  components:
+  - pos: 18.5,20.5
+    parent: 60
+    type: Transform
+- uid: 23830
+  type: IntercomSecurity
+  components:
+  - pos: -17.5,-17.5
+    parent: 60
+    type: Transform
+- uid: 23831
+  type: Intercom
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -37.5,22.5
+    parent: 60
+    type: Transform
+- uid: 23832
+  type: Intercom
+  components:
+  - pos: 19.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 23833
+  type: IntercomSupply
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 35.5,6.5
+    parent: 60
+    type: Transform
+- uid: 23834
+  type: IntercomSupply
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 48.5,11.5
+    parent: 60
+    type: Transform
+- uid: 23835
+  type: IntercomCommand
+  components:
+  - pos: 34.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 23836
+  type: IntercomCommand
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -23.5,-0.5
+    parent: 60
+    type: Transform
+- uid: 23837
+  type: IntercomCommand
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -41.5,7.5
+    parent: 60
+    type: Transform
+- uid: 23838
+  type: IntercomCommand
+  components:
+  - pos: 9.5,22.5
+    parent: 60
+    type: Transform
+- uid: 23839
+  type: IntercomCommand
+  components:
+  - pos: -110.5,27.5
+    parent: 60
+    type: Transform
+- uid: 23840
+  type: Intercom
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -43.5,-22.5
+    parent: 60
+    type: Transform
+- uid: 23841
+  type: ShuttleWindow
+  components:
+  - pos: 9.5,-75.5
+    parent: 60
+    type: Transform
+- uid: 23842
+  type: Intercom
+  components:
+  - pos: -9.5,-52.5
+    parent: 60
+    type: Transform
+- uid: 23639
+  type: WallSolid
+  components:
+  - pos: -10.5,-25.5
+    parent: 60
+    type: Transform
+- uid: 23845
+  type: ShuttleWindow
+  components:
+  - pos: 9.5,-74.5
+    parent: 60
+    type: Transform
+- uid: 23846
+  type: ShuttleWindow
+  components:
+  - pos: 7.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 23847
+  type: IntercomEngineering
+  components:
+  - pos: -19.5,26.5
+    parent: 60
+    type: Transform
+- uid: 23848
+  type: ShuttleWindow
+  components:
+  - pos: 7.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 23849
+  type: ShuttleWindow
+  components:
+  - pos: 7.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 23850
+  type: ShuttleWindow
+  components:
+  - pos: 7.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 23851
+  type: ShuttleWindow
+  components:
+  - pos: 15.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 23852
+  type: ShuttleWindow
+  components:
+  - pos: 15.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 23853
+  type: ShuttleWindow
+  components:
+  - pos: 15.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 23649
+  type: Cautery
+  components:
+  - pos: -40.385193,11.801221
+    parent: 60
+    type: Transform
+- uid: 23650
+  type: ChairOfficeDark
+  components:
+  - pos: -49.5,-17.5
+    parent: 60
+    type: Transform
+- uid: 23856
+  type: ShuttleWindow
+  components:
+  - pos: 12.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23857
+  type: ShuttleWindow
+  components:
+  - pos: 9.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23858
+  type: ShuttleWindow
+  components:
+  - pos: 10.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23859
+  type: ShuttleWindow
+  components:
+  - pos: 12.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23860
+  type: ShuttleWindow
+  components:
+  - pos: 13.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23861
+  type: WallShuttle
+  components:
+  - pos: 9.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23862
+  type: WallShuttle
+  components:
+  - pos: 9.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23863
+  type: WallShuttle
+  components:
+  - pos: 8.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23864
+  type: WallShuttle
+  components:
+  - pos: 7.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23865
+  type: WallShuttle
+  components:
+  - pos: 13.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23866
+  type: WallShuttle
+  components:
+  - pos: 13.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23867
+  type: WallShuttle
+  components:
+  - pos: 14.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23868
+  type: WallShuttle
+  components:
+  - pos: 15.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23869
+  type: WallShuttle
+  components:
+  - pos: 15.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 23870
+  type: WallShuttle
+  components:
+  - pos: 7.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 23871
+  type: WallShuttle
+  components:
+  - pos: 7.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 23872
+  type: WallShuttle
+  components:
+  - pos: 15.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 23873
+  type: WallShuttle
+  components:
+  - pos: 15.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 23874
+  type: WallShuttle
+  components:
+  - pos: 7.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 23875
+  type: WallShuttle
+  components:
+  - pos: 7.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 23876
+  type: WallShuttle
+  components:
+  - pos: 7.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23877
+  type: WallShuttle
+  components:
+  - pos: 8.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23878
+  type: WallShuttle
+  components:
+  - pos: 11.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23879
+  type: WallShuttle
+  components:
+  - pos: 15.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 23880
+  type: WallShuttle
+  components:
+  - pos: 15.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23881
+  type: WallShuttle
+  components:
+  - pos: 14.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23882
+  type: WallShuttle
+  components:
+  - pos: 11.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23883
+  type: WallShuttle
+  components:
+  - pos: 11.5,-59.5
+    parent: 60
+    type: Transform
+- uid: 23884
+  type: WallShuttle
+  components:
+  - pos: 8.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23885
+  type: WallShuttle
+  components:
+  - pos: 7.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23886
+  type: WallShuttle
+  components:
+  - pos: 15.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23887
+  type: WallShuttle
+  components:
+  - pos: 14.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23888
+  type: GeneratorBasic
+  components:
+  - pos: 10.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23889
+  type: GeneratorBasic
+  components:
+  - pos: 12.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23890
+  type: CableHV
+  components:
+  - pos: 10.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23891
+  type: CableHV
+  components:
+  - pos: 10.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23892
+  type: CableHV
+  components:
+  - pos: 12.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23893
+  type: CableHV
+  components:
+  - pos: 12.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23894
+  type: CableHV
+  components:
+  - pos: 12.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 23895
+  type: CableHV
+  components:
+  - pos: 11.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 23896
+  type: CableHV
+  components:
+  - pos: 10.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 23897
+  type: CableHV
+  components:
+  - pos: 13.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 23898
+  type: CableHV
+  components:
+  - pos: 13.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23899
+  type: CableHV
+  components:
+  - pos: 13.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 23900
+  type: CableHV
+  components:
+  - pos: 13.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 23901
+  type: CableHV
+  components:
+  - pos: 13.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 23902
+  type: CableHV
+  components:
+  - pos: 13.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 23903
+  type: CableHV
+  components:
+  - pos: 13.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 23904
+  type: CableHV
+  components:
+  - pos: 13.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 23905
+  type: CableHV
+  components:
+  - pos: 13.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23906
+  type: CableHV
+  components:
+  - pos: 11.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23907
+  type: CableHV
+  components:
+  - pos: 12.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23908
+  type: CableHV
+  components:
+  - pos: 11.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 23909
+  type: CableHV
+  components:
+  - pos: 11.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23910
+  type: CableHV
+  components:
+  - pos: 11.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23911
+  type: CableHV
+  components:
+  - pos: 10.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23912
+  type: CableHV
+  components:
+  - pos: 9.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23913
+  type: CableHV
+  components:
+  - pos: 9.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23914
+  type: CableTerminal
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23915
+  type: SMESBasic
+  components:
+  - pos: 10.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23916
+  type: SubstationWallBasic
+  components:
+  - pos: 9.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23917
+  type: GeneratorWallmountAPU
+  components:
+  - pos: 9.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23918
+  type: WallShuttle
+  components:
+  - pos: 11.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 23919
+  type: WallShuttle
+  components:
+  - pos: 11.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 23920
+  type: APCHyperCapacity
+  components:
+  - pos: 11.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 23921
+  type: CableMV
+  components:
+  - pos: 9.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23922
+  type: CableMV
+  components:
+  - pos: 9.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 23715
+  type: FirelockGlass
+  components:
+  - pos: 0.5,12.5
+    parent: 60
+    type: Transform
+- uid: 23924
+  type: CableMV
+  components:
+  - pos: 10.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23925
+  type: CableMV
+  components:
+  - pos: 11.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23926
+  type: CableMV
+  components:
+  - pos: 11.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 23719
+  type: filingCabinetDrawerRandom
+  components:
+  - pos: 48.5,12.5
+    parent: 60
+    type: Transform
+- uid: 23928
+  type: CableApcExtension
+  components:
+  - pos: 11.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23929
+  type: CableApcExtension
+  components:
+  - pos: 10.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23930
+  type: CableApcExtension
+  components:
+  - pos: 9.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23931
+  type: CableApcExtension
+  components:
+  - pos: 9.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 23932
+  type: CableApcExtension
+  components:
+  - pos: 9.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 23933
+  type: CableApcExtension
+  components:
+  - pos: 9.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 23934
+  type: CableApcExtension
+  components:
+  - pos: 9.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 23935
+  type: CableApcExtension
+  components:
+  - pos: 9.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 23936
+  type: CableApcExtension
+  components:
+  - pos: 9.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 23937
+  type: CableApcExtension
+  components:
+  - pos: 9.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23938
+  type: CableApcExtension
+  components:
+  - pos: 10.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23939
+  type: CableApcExtension
+  components:
+  - pos: 11.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23940
+  type: CableApcExtension
+  components:
+  - pos: 12.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23941
+  type: CableApcExtension
+  components:
+  - pos: 13.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23942
+  type: CableApcExtension
+  components:
+  - pos: 13.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 23943
+  type: CableApcExtension
+  components:
+  - pos: 13.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 23944
+  type: CableApcExtension
+  components:
+  - pos: 13.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 23945
+  type: CableApcExtension
+  components:
+  - pos: 13.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 23946
+  type: CableApcExtension
+  components:
+  - pos: 13.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 23947
+  type: CableApcExtension
+  components:
+  - pos: 13.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 23948
+  type: CableApcExtension
+  components:
+  - pos: 13.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23949
+  type: CableApcExtension
+  components:
+  - pos: 12.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23950
+  type: GasPipeTJunction
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 23951
+  type: GasPipeBend
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 23952
+  type: GasPipeBend
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 9.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23953
+  type: GasPipeStraight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 10.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 23954
+  type: GasPipeStraight
+  components:
+  - pos: 9.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23955
+  type: GasPipeStraight
+  components:
+  - pos: 9.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 23956
+  type: GasPipeStraight
+  components:
+  - pos: 9.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 23957
+  type: GasPipeStraight
+  components:
+  - pos: 9.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 23958
+  type: GasPipeStraight
+  components:
+  - pos: 9.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 23959
+  type: GasPipeStraight
+  components:
+  - pos: 9.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 23960
+  type: GasPipeStraight
+  components:
+  - pos: 9.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 23961
+  type: GasPipeStraight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 10.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23962
+  type: GasPressurePump
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 11.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 23963
+  type: GasPort
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 12.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23964
+  type: GasPipeBend
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 11.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23965
+  type: GasVentPump
+  components:
+  - pos: 11.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23966
+  type: GasVentPump
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23967
+  type: SpawnPointLatejoin
+  components:
+  - pos: 9.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 23968
+  type: SpawnPointLatejoin
+  components:
+  - pos: 9.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 23969
+  type: AtmosDeviceFanTiny
+  components:
+  - pos: 15.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 23970
+  type: AtmosDeviceFanTiny
+  components:
+  - pos: 15.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 23971
+  type: Thruster
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 8.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23972
+  type: Thruster
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 14.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 23973
+  type: Thruster
+  components:
+  - pos: 12.5,-59.5
+    parent: 60
+    type: Transform
+- uid: 23974
+  type: Thruster
+  components:
+  - pos: 13.5,-59.5
+    parent: 60
+    type: Transform
+- uid: 23975
+  type: Thruster
+  components:
+  - pos: 10.5,-59.5
+    parent: 60
+    type: Transform
+- uid: 23976
+  type: Thruster
+  components:
+  - pos: 9.5,-59.5
+    parent: 60
+    type: Transform
+- uid: 23977
+  type: Thruster
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 14.5,-59.5
+    parent: 60
+    type: Transform
+- uid: 23978
+  type: Thruster
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,-59.5
+    parent: 60
+    type: Transform
+- uid: 23979
+  type: Gyroscope
+  components:
+  - pos: 9.5,-60.5
+    parent: 60
+    type: Transform
+- uid: 23980
+  type: Grille
+  components:
+  - pos: 10.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23981
+  type: Grille
+  components:
+  - pos: 9.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23982
+  type: Grille
+  components:
+  - pos: 13.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23983
+  type: Grille
+  components:
+  - pos: 12.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 23984
+  type: Grille
+  components:
+  - pos: 15.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 23985
+  type: Grille
+  components:
+  - pos: 15.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 23986
+  type: Grille
+  components:
+  - pos: 15.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 23987
+  type: Grille
+  components:
+  - pos: 15.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 23988
+  type: Grille
+  components:
+  - pos: 7.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 23989
+  type: Grille
+  components:
+  - pos: 7.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 23990
+  type: Grille
+  components:
+  - pos: 7.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 23991
+  type: Grille
+  components:
+  - pos: 7.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 23992
+  type: Grille
+  components:
+  - pos: 9.5,-74.5
+    parent: 60
+    type: Transform
+- uid: 23993
+  type: Grille
+  components:
+  - pos: 9.5,-75.5
+    parent: 60
+    type: Transform
+- uid: 23994
+  type: Grille
+  components:
+  - pos: 10.5,-75.5
+    parent: 60
+    type: Transform
+- uid: 23995
+  type: Grille
+  components:
+  - pos: 10.5,-76.5
+    parent: 60
+    type: Transform
+- uid: 23996
+  type: Grille
+  components:
+  - pos: 11.5,-76.5
+    parent: 60
+    type: Transform
+- uid: 23997
+  type: Grille
+  components:
+  - pos: 12.5,-76.5
+    parent: 60
+    type: Transform
+- uid: 23998
+  type: Grille
+  components:
+  - pos: 12.5,-75.5
+    parent: 60
+    type: Transform
+- uid: 23999
+  type: Grille
+  components:
+  - pos: 13.5,-75.5
+    parent: 60
+    type: Transform
+- uid: 24000
+  type: Grille
+  components:
+  - pos: 13.5,-74.5
+    parent: 60
+    type: Transform
+- uid: 24001
+  type: AirlockExternalGlassShuttleLocked
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 15.5,-70.5
+    parent: 60
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      hard: False
+      id: docking
+    type: Fixtures
+- uid: 24002
+  type: AirlockGlassShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 7.5,-63.5
+    parent: 60
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      hard: False
+      id: docking
+    type: Fixtures
+- uid: 24003
+  type: AirlockGlassShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 7.5,-70.5
+    parent: 60
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      hard: False
+      id: docking
+    type: Fixtures
+- uid: 24004
+  type: AirlockExternalGlassShuttleLocked
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 15.5,-63.5
+    parent: 60
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      hard: False
+      id: docking
+    type: Fixtures
+- uid: 24005
+  type: AirCanister
+  components:
+  - pos: 12.5,-73.5
+    parent: 60
+    type: Transform
+- uid: 24006
+  type: ChairPilotSeat
+  components:
+  - pos: 11.5,-74.5
+    parent: 60
+    type: Transform
+- uid: 24007
+  type: Grille
+  components:
+  - pos: 12.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 24008
+  type: Grille
+  components:
+  - pos: 10.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 24009
+  type: TableReinforced
+  components:
+  - pos: 10.5,-74.5
+    parent: 60
+    type: Transform
+- uid: 24010
+  type: TableReinforced
+  components:
+  - pos: 12.5,-74.5
+    parent: 60
+    type: Transform
+- uid: 24011
+  type: ComputerFrame
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 11.5,-75.5
+    parent: 60
+    type: Transform
+- uid: 24012
+  type: TableReinforced
+  components:
+  - pos: 8.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 24013
+  type: TableReinforced
+  components:
+  - pos: 10.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 24014
+  type: TableReinforced
+  components:
+  - pos: 11.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 24015
+  type: TableReinforced
+  components:
+  - pos: 12.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 24016
+  type: TableReinforced
+  components:
+  - pos: 10.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 24017
+  type: TableReinforced
+  components:
+  - pos: 12.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 24018
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 14.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 24019
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 14.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 24020
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 14.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 24021
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 14.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 24022
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 24023
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 24024
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 24025
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 24026
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 24027
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 24028
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 24029
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 24030
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 10.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 24031
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 10.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 24032
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 10.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 24033
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 10.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 24034
+  type: Rack
+  components:
+  - pos: 8.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 24035
+  type: Rack
+  components:
+  - pos: 14.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 24036
+  type: WardrobeMixed
+  components:
+  - pos: 9.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 24037
+  type: ClosetEmergencyFilledRandom
+  components:
+  - pos: 13.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 24038
+  type: ClosetWallEmergencyFilledRandom
+  components:
+  - pos: 14.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 24039
+  type: ClosetWallFireFilledRandom
+  components:
+  - pos: 8.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 24040
+  type: ExtinguisherCabinetFilled
+  components:
+  - pos: 11.5,-61.5
+    parent: 60
+    type: Transform
+- uid: 24041
+  type: ChairOfficeDark
+  components:
+  - pos: -44.5,-9.5
+    parent: 60
+    type: Transform
+- uid: 24042
+  type: Table
+  components:
+  - pos: -41.5,-6.5
+    parent: 60
+    type: Transform
+- uid: 24043
+  type: PottedPlantRandom
+  components:
+  - pos: 8.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 24044
+  type: PottedPlantRandom
+  components:
+  - pos: 8.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 24045
+  type: PottedPlantRandom
+  components:
+  - pos: 14.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 24046
+  type: PottedPlantRandom
+  components:
+  - pos: 14.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 24047
+  type: WindowReinforcedDirectional
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 24048
+  type: WindowReinforcedDirectional
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 24049
+  type: WindowReinforcedDirectional
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 24050
+  type: WindowReinforcedDirectional
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 24051
+  type: WindowReinforcedDirectional
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 11.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 24052
+  type: WindowReinforcedDirectional
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 11.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 24053
+  type: WindowReinforcedDirectional
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 11.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 24054
+  type: WindowReinforcedDirectional
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 11.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 24055
+  type: AirlockCommandGlassLocked
+  components:
+  - pos: 11.5,-72.5
+    parent: 60
+    type: Transform
+- uid: 24056
+  type: TableReinforced
+  components:
+  - pos: 14.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 24059
+  type: PowerCellRecharger
+  components:
+  - pos: 12.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 24060
+  type: ToolboxEmergencyFilled
+  components:
+  - pos: 10.580587,-62.46449
+    parent: 60
+    type: Transform
+- uid: 24061
+  type: MedkitFilled
+  components:
+  - pos: 11.533712,-62.43324
+    parent: 60
+    type: Transform
+- uid: 24062
+  type: CrowbarRed
+  components:
+  - pos: 12.4967985,-62.46449
+    parent: 60
+    type: Transform
+- uid: 24063
+  type: YellowOxygenTankFilled
+  components:
+  - pos: 8.5436735,-62.480114
+    parent: 60
+    type: Transform
+- uid: 24064
+  type: ClothingMaskBreath
+  components:
+  - pos: 8.437429,-62.448864
+    parent: 60
+    type: Transform
+- uid: 24065
+  type: MaintenanceFluffSpawner
+  components:
+  - pos: 14.5,-62.5
+    parent: 60
+    type: Transform
+- uid: 24066
+  type: MaintenanceFluffSpawner
+  components:
+  - pos: 12.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 24067
+  type: ToySpawner
+  components:
+  - pos: 10.5,-69.5
+    parent: 60
+    type: Transform
+- uid: 24068
+  type: Poweredlight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 10.5,-73.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24069
+  type: Poweredlight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 14.5,-71.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24070
+  type: Poweredlight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,-69.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24071
+  type: Poweredlight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,-62.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24072
+  type: Poweredlight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 14.5,-64.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24073
+  type: Intercom
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 11.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 24074
+  type: SpawnPointLatejoin
+  components:
+  - pos: 13.5,-68.5
+    parent: 60
+    type: Transform
+- uid: 24075
+  type: SpawnPointLatejoin
+  components:
+  - pos: 13.5,-67.5
+    parent: 60
+    type: Transform
+- uid: 24076
+  type: SpawnPointLatejoin
+  components:
+  - pos: 13.5,-66.5
+    parent: 60
+    type: Transform
+- uid: 24077
+  type: SpawnPointLatejoin
+  components:
+  - pos: 13.5,-65.5
+    parent: 60
+    type: Transform
+- uid: 24078
+  type: OperatingTable
+  components:
+  - pos: 37.5,-10.5
+    parent: 60
+    type: Transform
+- uid: 24079
+  type: ExtinguisherCabinetFilled
+  components:
+  - pos: -40.5,22.5
+    parent: 60
+    type: Transform
+- uid: 24084
+  type: ReinforcedWindow
+  components:
+  - pos: -20.5,-4.5
+    parent: 60
+    type: Transform
+- uid: 24085
+  type: KitchenReagentGrinder
+  components:
+  - pos: -45.5,-3.5
+    parent: 60
+    type: Transform
+- uid: 24086
+  type: ClothingNeckLesbianPin
+  components:
+  - pos: -10.308835,13.564301
+    parent: 60
+    type: Transform
+- uid: 24088
+  type: ClothingNeckIntersexPin
+  components:
+  - pos: -12.770909,19.336336
+    parent: 60
+    type: Transform
+- uid: 24089
+  type: ClothingNeckAromanticPin
+  components:
+  - pos: 83.621025,-13.51627
+    parent: 60
+    type: Transform
+- uid: 24090
+  type: ClothingNeckBisexualPin
+  components:
+  - pos: -20.494595,5.7531924
+    parent: 60
+    type: Transform
+- uid: 24091
+  type: GasAnalyzer
+  components:
+  - pos: 47.410866,-14.33883
+    parent: 60
+    type: Transform
+- uid: 24092
+  type: MachineFrame
+  components:
+  - pos: 4.5,-44.5
+    parent: 60
+    type: Transform
+- uid: 24093
+  type: PortableScrubber
+  components:
+  - pos: 4.5,-46.5
+    parent: 60
+    type: Transform
+- uid: 24094
+  type: HandheldCrewMonitor
+  components:
+  - pos: 46.58981,-17.349377
+    parent: 60
+    type: Transform
+- uid: 24095
+  type: ClosetEmergencyFilledRandom
+  components:
+  - pos: 12.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 24096
+  type: ClosetEmergencyFilledRandom
+  components:
+  - pos: 10.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 24097
+  type: GeigerCounter
+  components:
+  - pos: 5.634184,34.46494
+    parent: 60
+    type: Transform
+- uid: 24098
+  type: ClothingOuterCardborg
+  components:
+  - pos: 25.5,1.5
+    parent: 60
+    type: Transform
+- uid: 24099
+  type: VendingMachineClothing
+  components:
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: 13.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 24100
+  type: SpaceVillainArcadeFilled
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 9.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 24101
+  type: Table
+  components:
+  - pos: -28.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24102
+  type: PottedPlant28
+  components:
+  - pos: -30.486118,-20.71535
+    parent: 60
+    type: Transform
+- uid: 24103
+  type: Table
+  components:
+  - pos: 5.5,34.5
+    parent: 60
+    type: Transform
+- uid: 24104
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 23.5,-30.5
+    parent: 60
+    type: Transform
+- uid: 24105
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 23.5,-29.5
+    parent: 60
+    type: Transform
+- uid: 24106
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 23.5,-28.5
+    parent: 60
+    type: Transform
+- uid: 24107
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 23.5,-27.5
+    parent: 60
+    type: Transform
+- uid: 24108
+  type: TwoWayLever
+  components:
+  - pos: -12.5,-42.5
+    parent: 60
+    type: Transform
+  - outputs:
+      Left:
+      - port: Forward
+        uid: 4073
+      Right:
+      - port: Reverse
+        uid: 4073
+      Middle:
+      - port: Off
+        uid: 4073
+    type: SignalTransmitter
+- uid: 24109
+  type: SpeedLoaderMagnum
+  components:
+  - pos: -28.41734,-0.67305577
+    parent: 60
+    type: Transform
+- uid: 24110
+  type: WeaponRifleAk
+  components:
+  - pos: -24.45179,2.5628066
+    parent: 60
+    type: Transform
+- uid: 24111
+  type: SpeedLoaderMagnum
+  components:
+  - pos: -28.79234,-0.65743077
+    parent: 60
+    type: Transform
+- uid: 24112
+  type: WindowReinforcedDirectional
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -25.5,2.5
+    parent: 60
+    type: Transform
+- uid: 24113
+  type: ClothingOuterArmorReflective
+  components:
+  - pos: -24.597569,1.293155
+    parent: 60
+    type: Transform
+- uid: 24114
+  type: ClothingOuterArmorReflective
+  components:
+  - pos: -24.597569,1.293155
+    parent: 60
+    type: Transform
+- uid: 24115
+  type: WindoorArmoryLocked
+  components:
+  - pos: -24.5,2.5
+    parent: 60
+    type: Transform
+- uid: 24116
+  type: filingCabinetDrawerRandom
+  components:
+  - pos: 3.5,-0.5
+    parent: 60
+    type: Transform
+- uid: 24117
+  type: BikeHorn
+  components:
+  - pos: 22.082472,-11.511041
+    parent: 60
+    type: Transform
+- uid: 24118
+  type: FoodFrozenSnowconeMime
+  components:
+  - pos: 27.702457,-11.233776
+    parent: 60
+    type: Transform
+- uid: 24119
+  type: TableWood
+  components:
+  - pos: 26.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24120
+  type: TableWood
+  components:
+  - pos: 27.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24121
+  type: PosterContrabandSpaceUp
+  components:
+  - pos: 21.5,-10.5
+    parent: 60
+    type: Transform
+- uid: 24122
+  type: VehicleJanicartDestroyed
+  components:
+  - pos: -19.5,-44.5
+    parent: 60
+    type: Transform
+- uid: 24123
+  type: SpawnPointResearchAssistant
+  components:
+  - pos: -54.5,8.5
+    parent: 60
+    type: Transform
+- uid: 24124
+  type: SpawnPointResearchAssistant
+  components:
+  - pos: -54.5,10.5
+    parent: 60
+    type: Transform
+- uid: 24125
+  type: CableMV
+  components:
+  - pos: 45.5,1.5
+    parent: 60
+    type: Transform
+- uid: 24126
+  type: CableMV
+  components:
+  - pos: 45.5,2.5
+    parent: 60
+    type: Transform
+- uid: 24127
+  type: GasPipeTJunction
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,-18.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24128
+  type: GasPipeStraight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,-17.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24129
+  type: GasVentPump
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -5.5,-18.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24130
+  type: GasPipeStraight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -7.5,-15.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24131
+  type: GasPipeStraight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -8.5,-15.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24132
+  type: GasPipeStraight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -7.5,-18.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24133
+  type: WallReinforced
+  components:
+  - pos: -5.5,-16.5
+    parent: 60
+    type: Transform
+- uid: 24134
+  type: APCHyperCapacity
+  components:
+  - pos: -5.5,-16.5
+    parent: 60
+    type: Transform
+- uid: 24135
+  type: GasPipeStraight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,-16.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24136
+  type: GasVentPump
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -9.5,-15.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24137
+  type: PoweredSmallLight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -10.5,-18.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24138
+  type: PoweredSmallLight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,-18.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24139
+  type: PoweredSmallLight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -5.5,-15.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24140
+  type: PoweredSmallLight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -10.5,-15.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24141
+  type: ClothingOuterHardsuitEVAPrisoner
+  components:
+  - pos: -5.4120154,-17.402714
+    parent: 60
+    type: Transform
+- uid: 24142
+  type: MedkitOxygenFilled
+  components:
+  - pos: -5.4432654,-18.418339
+    parent: 60
+    type: Transform
+- uid: 24143
+  type: PottedPlant28
+  components:
+  - pos: -5.5057654,-15.736094
+    parent: 60
+    type: Transform
+  - containers:
+      stash: !type:ContainerSlot
+        ent: 24144
+    type: ContainerContainer
+- uid: 24144
+  type: ScalpelShiv
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 24143
+    type: Transform
+  - nextAttack: 3922.3710184
+    type: MeleeWeapon
+  - canCollide: False
+    type: Physics
+- uid: 24145
+  type: Catwalk
+  components:
+  - pos: -13.5,-31.5
+    parent: 60
+    type: Transform
+- uid: 24146
+  type: Catwalk
+  components:
+  - pos: -4.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 24147
+  type: FlashlightLantern
+  components:
+  - pos: 8.429562,-71.29388
+    parent: 60
+    type: Transform
+  - toggleAction:
+      icon:
+        sprite: Objects/Tools/flashlight.rsi
+        state: flashlight
+      iconOn: Objects/Tools/flashlight.rsi/flashlight-on.png
+      name: action-name-toggle-light
+      description: action-description-toggle-light
+      keywords: []
+      event: !type:ToggleActionEvent {}
+    type: HandheldLight
+- uid: 24148
+  type: FireAlarm
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -24.5,-6.5
+    parent: 60
+    type: Transform
+  - devices:
+    - 5562
+    - 5565
+    - 5563
+    - 8466
+    - 21733
+    type: DeviceList
+- uid: 24149
+  type: WindoorSecurityLocked
+  components:
+  - pos: -18.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24150
+  type: Stool
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -29.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24151
+  type: Stool
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -27.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24152
+  type: SignRedOne
+  components:
+  - pos: -19.5,-8.5
+    parent: 60
+    type: Transform
+- uid: 24153
+  type: SignRedTwo
+  components:
+  - pos: -19.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 24154
+  type: SignRedThree
+  components:
+  - pos: -33.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24155
+  type: SignRedFour
+  components:
+  - pos: -33.5,-8.5
+    parent: 60
+    type: Transform
+- uid: 24156
+  type: SignRedFive
+  components:
+  - pos: -33.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 24157
+  type: LockerEvidence
+  components:
+  - pos: -23.5,-12.5
+    parent: 60
+    type: Transform
+- uid: 24158
+  type: FloorDrain
+  components:
+  - pos: -41.5,-1.5
+    parent: 60
+    type: Transform
+  - fixtures: []
+    type: Fixtures
+- uid: 24159
+  type: SinkWide
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -41.5,-1.5
+    parent: 60
+    type: Transform
+- uid: 24160
+  type: ClothingMaskSterile
+  components:
+  - pos: -41.75516,14.452198
+    parent: 60
+    type: Transform
+- uid: 24161
+  type: Rack
+  components:
+  - pos: -30.5,11.5
+    parent: 60
+    type: Transform
+- uid: 24162
+  type: Rack
+  components:
+  - pos: -34.5,11.5
+    parent: 60
+    type: Transform
+- uid: 24163
+  type: DisposalBend
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -40.5,13.5
+    parent: 60
+    type: Transform
+- uid: 24164
+  type: DisposalTrunk
+  components:
+  - pos: -40.5,14.5
+    parent: 60
+    type: Transform
+- uid: 24165
+  type: DisposalUnit
+  components:
+  - pos: -40.5,14.5
+    parent: 60
+    type: Transform
+- uid: 24166
+  type: Table
+  components:
+  - pos: -36.5,11.5
+    parent: 60
+    type: Transform
+- uid: 24167
+  type: Table
+  components:
+  - pos: -36.5,12.5
+    parent: 60
+    type: Transform
+- uid: 24168
+  type: PosterLegitSafetyInternals
+  components:
+  - pos: -42.5,-2.5
+    parent: 60
+    type: Transform
+- uid: 24169
+  type: PosterLegitSafetyEyeProtection
+  components:
+  - pos: -41.5,-2.5
+    parent: 60
+    type: Transform
+- uid: 24170
+  type: SpawnMobBandito
+  components:
+  - pos: -43.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24171
+  type: Carpet
+  components:
+  - pos: -26.5,-28.5
+    parent: 60
+    type: Transform
+- uid: 24172
+  type: Carpet
+  components:
+  - pos: -25.5,-29.5
+    parent: 60
+    type: Transform
+- uid: 24173
+  type: Carpet
+  components:
+  - pos: -25.5,-28.5
+    parent: 60
+    type: Transform
+- uid: 24174
+  type: Morgue
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -19.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24175
+  type: SpawnVehicleSecway
+  components:
+  - pos: -33.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24176
+  type: VehicleKeySecway
+  components:
+  - pos: -33.527782,-15.554149
+    parent: 60
+    type: Transform
+- uid: 24177
+  type: WindowReinforcedDirectional
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -4.5,-17.5
+    parent: 60
+    type: Transform
+- uid: 24178
+  type: WindowReinforcedDirectional
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -5.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 24179
+  type: WindowReinforcedDirectional
+  components:
+  - pos: -5.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 24180
+  type: WindowReinforcedDirectional
+  components:
+  - pos: -4.5,-17.5
+    parent: 60
+    type: Transform
+- uid: 24181
+  type: WindowReinforcedDirectional
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -4.5,-17.5
+    parent: 60
+    type: Transform
+- uid: 24182
+  type: WindowReinforcedDirectional
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -5.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 24183
+  type: Poweredlight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -18.5,-5.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24184
+  type: PosterLegitSpaceCops
+  components:
+  - pos: -33.5,-1.5
+    parent: 60
+    type: Transform
+- uid: 24185
+  type: Grille
+  components:
+  - pos: -51.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 24186
+  type: GeneratorBasic
+  components:
+  - pos: -7.5,29.5
+    parent: 60
+    type: Transform
+- uid: 24187
+  type: HatBandGold
+  components:
+  - pos: -56.55667,-23.491457
+    parent: 60
+    type: Transform
+- uid: 24188
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,36.5
+    parent: 60
+    type: Transform
+- uid: 24189
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,39.5
+    parent: 60
+    type: Transform
+- uid: 24190
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,40.5
+    parent: 60
+    type: Transform
+- uid: 24191
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,41.5
+    parent: 60
+    type: Transform
+- uid: 24192
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,47.5
+    parent: 60
+    type: Transform
+- uid: 24193
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,48.5
+    parent: 60
+    type: Transform
+- uid: 24194
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,49.5
+    parent: 60
+    type: Transform
+- uid: 24195
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,56.5
+    parent: 60
+    type: Transform
+- uid: 24196
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,57.5
+    parent: 60
+    type: Transform
+- uid: 24197
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 11.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24198
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 10.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24199
+  type: RailingCorner
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24200
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 3.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24201
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24202
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24203
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 0.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24204
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -0.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24205
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -1.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24206
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -2.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24207
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -3.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24208
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -4.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24209
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -5.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24210
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24211
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -10.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24212
+  type: Railing
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -11.5,57.5
+    parent: 60
+    type: Transform
+- uid: 24213
+  type: RailingCorner
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -11.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24214
+  type: SignAtmosMinsky
+  components:
+  - pos: -27.5,38.5
+    parent: 60
+    type: Transform
+- uid: 24215
+  type: SignAtmosMinsky
+  components:
+  - pos: -23.5,29.5
+    parent: 60
+    type: Transform
+- uid: 24216
+  type: MaterialWoodPlank
+  components:
+  - pos: 51.428207,-36.33008
+    parent: 60
+    type: Transform
+- uid: 24217
+  type: ClothingHeadsetMining
+  components:
+  - pos: 56.480446,-3.47641
+    parent: 60
+    type: Transform
+- uid: 24218
+  type: ClothingHeadHatUshanka
+  components:
+  - pos: -39.62937,16.44374
+    parent: 60
+    type: Transform
+- uid: 24219
+  type: WardrobeCargoFilled
+  components:
+  - pos: 49.5,14.5
+    parent: 60
+    type: Transform
+- uid: 24220
+  type: ClothingMaskBreathMedical
+  components:
+  - pos: 52.5063,-29.369915
+    parent: 60
+    type: Transform
+- uid: 24221
+  type: TableWood
+  components:
+  - pos: -26.5,19.5
+    parent: 60
+    type: Transform
+- uid: 24222
+  type: TableWood
+  components:
+  - pos: -24.5,19.5
+    parent: 60
+    type: Transform
+- uid: 24223
+  type: lantern
+  components:
+  - pos: -24.507496,19.805492
+    parent: 60
+    type: Transform
+- uid: 24224
+  type: DrinkWineBottleFull
+  components:
+  - pos: -22.518103,19.867992
+    parent: 60
+    type: Transform
+- uid: 24225
+  type: DrinkShotGlass
+  components:
+  - pos: -22.455603,19.399242
+    parent: 60
+    type: Transform
+- uid: 24226
+  type: CarpetChapel
+  components:
+  - pos: -20.5,15.5
+    parent: 60
+    type: Transform
+- uid: 24227
+  type: CarpetChapel
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -20.5,16.5
+    parent: 60
+    type: Transform
+- uid: 24228
+  type: CarpetChapel
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -19.5,16.5
+    parent: 60
+    type: Transform
+- uid: 24229
+  type: CarpetChapel
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -19.5,15.5
+    parent: 60
+    type: Transform
+- uid: 24230
+  type: PosterContrabandBorgFancy
+  components:
+  - pos: 21.5,-0.5
+    parent: 60
+    type: Transform
+- uid: 24231
+  type: PosterContrabandBorgFancyv2
+  components:
+  - pos: 25.5,-0.5
+    parent: 60
+    type: Transform
+- uid: 24232
+  type: CrayonBox
+  components:
+  - pos: -39.042866,19.84919
+    parent: 60
+    type: Transform
+- uid: 24233
+  type: Grille
+  components:
+  - pos: -40.5,20.5
+    parent: 60
+    type: Transform
+- uid: 24234
+  type: Poweredlight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -43.5,19.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24235
+  type: PoweredSmallLight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -38.5,20.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24236
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 37.5,7.5
+    parent: 60
+    type: Transform
+- uid: 24237
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 37.5,6.5
+    parent: 60
+    type: Transform
+- uid: 24238
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 37.5,5.5
+    parent: 60
+    type: Transform
+- uid: 24239
+  type: DisposalTrunk
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 36.5,4.5
+    parent: 60
+    type: Transform
+- uid: 24240
+  type: DisposalBend
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 37.5,4.5
+    parent: 60
+    type: Transform
+- uid: 24241
+  type: DisposalUnit
+  components:
+  - pos: 36.5,4.5
+    parent: 60
+    type: Transform
+- uid: 24242
+  type: SignMorgue
+  components:
+  - pos: 35.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24243
+  type: FoodCakeSuppermatterSlice
+  components:
+  - pos: -16.5,42.5
+    parent: 60
+    type: Transform
+- uid: 24244
+  type: Table
+  components:
+  - pos: -40.5,-15.5
+    parent: 60
+    type: Transform
+- uid: 24245
+  type: DrinkWaterBottleFull
+  components:
+  - pos: -40.606373,-15.22675
+    parent: 60
+    type: Transform
+- uid: 24246
+  type: DrinkGlass
+  components:
+  - pos: -40.371998,-15.398625
+    parent: 60
+    type: Transform
+- uid: 24247
+  type: SurveillanceWirelessCameraMovableEntertainment
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 37.5,16.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraEntertainment
+    nameSet: True
+    id: The Entertainment Channel
+    type: SurveillanceCamera
+- uid: 24248
+  type: ClothingUniformJumpsuitReporter
+  components:
+  - pos: 34.677628,17.396896
+    parent: 60
+    type: Transform
+- uid: 24249
+  type: ClothingUniformJumpsuitJournalist
+  components:
+  - pos: 34.677628,17.381271
+    parent: 60
+    type: Transform
+- uid: 24250
+  type: SignElectricalMed
+  components:
+  - pos: 32.5,-51.5
+    parent: 60
+    type: Transform
+- uid: 24251
+  type: Catwalk
+  components:
+  - pos: 5.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 24252
+  type: Catwalk
+  components:
+  - pos: 5.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 24253
+  type: Catwalk
+  components:
+  - pos: -4.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 24254
+  type: Catwalk
+  components:
+  - pos: 0.5,-79.5
+    parent: 60
+    type: Transform
+- uid: 24255
+  type: Catwalk
+  components:
+  - pos: -21.5,-54.5
+    parent: 60
+    type: Transform
+- uid: 24041
+  type: ChairOfficeDark
+  components:
+  - pos: -44.5,-9.5
+    parent: 60
+    type: Transform
+- uid: 24042
+  type: Table
+  components:
+  - pos: -41.5,-6.5
+    parent: 60
+    type: Transform
+- uid: 24259
+  type: ClothingHeadHatCone
+  components:
+  - pos: 14.667968,39.068947
+    parent: 60
+    type: Transform
+- uid: 24260
+  type: ClothingHeadHatCone
+  components:
+  - pos: -43.570118,25.670937
+    parent: 60
+    type: Transform
+- uid: 24261
+  type: SurveillanceCameraCommand
+  components:
+  - pos: -94.5,16.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: AI Sat Entrance
+    type: SurveillanceCamera
+- uid: 24262
+  type: SurveillanceCameraCommand
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -70.5,18.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: AI Sat Tunnel
+    type: SurveillanceCamera
+- uid: 24263
+  type: SurveillanceCameraScience
+  components:
+  - pos: -42.5,-1.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Sci Entrance Room
+    type: SurveillanceCamera
+- uid: 24264
+  type: SurveillanceCameraScience
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -46.5,0.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Sci RND Hall
+    type: SurveillanceCamera
+- uid: 24265
+  type: SurveillanceCameraScience
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -38.5,1.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Sci Hall
+    type: SurveillanceCamera
+- uid: 24266
+  type: SurveillanceCameraScience
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -30.5,9.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Robotics Hall
+    type: SurveillanceCamera
+- uid: 24267
+  type: SurveillanceCameraScience
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -30.5,12.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Robotics Bay
+    type: SurveillanceCamera
+- uid: 24268
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -32.5,19.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Dorm Room 1
+    type: SurveillanceCamera
+- uid: 24269
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -36.5,19.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Dorm Room 2
+    type: SurveillanceCamera
+- uid: 24270
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -46.5,25.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Dorm Room 3
+    type: SurveillanceCamera
+- uid: 24271
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -46.5,21.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Dorm Room 4
+    type: SurveillanceCamera
+- uid: 24272
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -43.5,22.5
+    parent: 60
+    type: Transform
+- uid: 24059
+  type: PowerCellRecharger
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -10.5,-6.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: Captain's Room Exterior
+    type: SurveillanceCamera
+- uid: 24276
+  type: SurveillanceCameraCommand
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-4.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: Bridge Exterior Access
+    type: SurveillanceCamera
+- uid: 24277
+  type: SurveillanceCameraCommand
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 24.5,5.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: AI Upload Entrance
+    type: SurveillanceCamera
+- uid: 24278
+  type: SurveillanceCameraSupply
+  components:
+  - pos: 49.5,16.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSupply
+    nameSet: True
+    id: Cargo Break Room
+    type: SurveillanceCamera
+- uid: 24279
+  type: SurveillanceCameraSupply
+  components:
+  - pos: 38.5,-1.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSupply
+    nameSet: True
+    id: Salv Locker Room
+    type: SurveillanceCamera
+- uid: 24280
+  type: SurveillanceCameraMedical
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 41.5,-22.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraMedical
+    nameSet: True
+    id: Medical Lobby
+    type: SurveillanceCamera
+- uid: 24281
+  type: SurveillanceCameraMedical
+  components:
+  - pos: 41.5,-14.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraMedical
+    nameSet: True
+    id: Surgery
+    type: SurveillanceCamera
+- uid: 24282
+  type: SurveillanceCameraMedical
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 34.5,-12.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraMedical
+    nameSet: True
+    id: CMO's Office
+    type: SurveillanceCamera
+- uid: 24283
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 24.5,-15.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Theatre
+    type: SurveillanceCamera
+- uid: 24284
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 24.5,-11.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Theatre Backroom
+    type: SurveillanceCamera
+- uid: 24285
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 22.5,-4.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Bungle Zone
+    type: SurveillanceCamera
+- uid: 24286
+  type: SurveillanceCameraCommand
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -2.5,-10.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: Captain's Bathroom
+    type: SurveillanceCamera
+- uid: 24287
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -32.5,-18.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Security Locker Room
+    type: SurveillanceCamera
+- uid: 24288
+  type: SurveillanceCameraSecurity
+  components:
+  - pos: -24.5,-16.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Security South
+    type: SurveillanceCamera
+- uid: 24289
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -31.5,5.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Security Maintenance Room
+    type: SurveillanceCamera
+- uid: 24290
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -36.5,-20.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Court Main Hall
+    type: SurveillanceCamera
+- uid: 24291
+  type: PoweredSmallLight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -53.5,-19.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24292
+  type: SurveillanceCameraEngineering
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,11.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraEngineering
+    nameSet: True
+    id: Engi Main Hall
+    type: SurveillanceCamera
+- uid: 24293
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 9.5,12.5
+    parent: 60
+    type: Transform
+- uid: 24078
+  type: OperatingTable
+  components:
+  - pos: 37.5,-10.5
+    parent: 60
+    type: Transform
+- uid: 24079
+  type: ExtinguisherCabinetFilled
+  components:
+  - pos: -40.5,22.5
+    parent: 60
+    type: Transform
+- uid: 24084
+  type: ReinforcedWindow
+  components:
+  - pos: -20.5,-4.5
+    parent: 60
+    type: Transform
+- uid: 24085
+  type: KitchenReagentGrinder
+  components:
+  - pos: -45.5,-3.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Arrivals East Hall
+    type: SurveillanceCamera
+- uid: 24302
+  type: SurveillanceCameraGeneral
+  components:
+  - pos: -10.308835,13.564301
+    parent: 60
+    type: Transform
+- uid: 24088
+  type: ClothingNeckIntersexPin
+  components:
+  - pos: -12.770909,19.336336
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall HoP
+    type: SurveillanceCamera
+- uid: 24305
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 16.5,-29.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Bar
+    type: SurveillanceCamera
+- uid: 24306
+  type: SurveillanceCameraService
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 9.5,-35.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraService
+    nameSet: True
+    id: Bartender Room
+    type: SurveillanceCamera
+- uid: 24307
+  type: Sink
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 41.5,-30.5
+    parent: 60
+    type: Transform
+- uid: 24308
+  type: RandomArtifactSpawner20
+  components:
+  - pos: 51.5,8.5
+    parent: 60
+    type: Transform
+- uid: 24309
+  type: RandomArtifactSpawner20
+  components:
+  - pos: 51.5,10.5
+    parent: 60
+    type: Transform
+- uid: 24310
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 14.5,-22.5
+    parent: 60
+    type: Transform
+- uid: 24095
+  type: ClosetEmergencyFilledRandom
+  components:
+  - pos: 12.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 24096
+  type: ClosetEmergencyFilledRandom
+  components:
+  - pos: 10.5,-64.5
+    parent: 60
+    type: Transform
+- uid: 24097
+  type: GeigerCounter
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -56.5,-12.5
+    parent: 60
+    type: Transform
+- uid: 24314
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -25.5,-7.5
+    parent: 60
+    type: Transform
+- uid: 24099
+  type: VendingMachineClothing
+  components:
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: 13.5,-71.5
+    parent: 60
+    type: Transform
+- uid: 24100
+  type: SpaceVillainArcadeFilled
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 9.5,-71.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell 2
+    type: SurveillanceCamera
+- uid: 24317
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -33.5,-6.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell 3
+    type: SurveillanceCamera
+- uid: 24318
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -33.5,-9.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell 4
+    type: SurveillanceCamera
+- uid: 24319
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -33.5,-12.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell 5
+    type: SurveillanceCamera
+- uid: 24320
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -18.5,-5.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell Med
+    type: SurveillanceCamera
+- uid: 24321
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -14.5,4.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall Grav Gen
+    type: SurveillanceCamera
+- uid: 24322
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -25.5,-22.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall Detective Office
+    type: SurveillanceCamera
+- uid: 24323
+  type: WallmountTelescreen
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -110.5,25.5
+    parent: 60
+    type: Transform
+- uid: 24324
+  type: IntercomAll
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -112.5,25.5
+    parent: 60
+    type: Transform
+- uid: 24325
+  type: SurveillanceCameraService
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -5.5,-26.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraService
+    nameSet: True
+    id: Janitor's Office
+    type: SurveillanceCamera
+- uid: 24326
+  type: Grille
+  components:
+  - pos: -53.5,-24.5
+    parent: 60
+    type: Transform
+- uid: 24327
+  type: PoweredSmallLight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -56.5,-23.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24328
+  type: ClosetMaintenanceFilledRandom
+  components:
+  - pos: -53.5,-22.5
+    parent: 60
+    type: Transform
+- uid: 24329
+  type: ClosetRadiationSuitFilled
+  components:
+  - pos: -53.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 24330
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -52.5,-24.5
+    parent: 60
+    type: Transform
+- uid: 24331
+  type: Chair
+  components:
+  - pos: 17.5,-44.5
+    parent: 60
+    type: Transform
+- uid: 24116
+  type: filingCabinetDrawerRandom
+  components:
+  - pos: 3.5,-0.5
+    parent: 60
+    type: Transform
+- uid: 24117
+  type: BikeHorn
+  components:
+  - pos: 22.082472,-11.511041
+    parent: 60
+    type: Transform
+- uid: 24118
+  type: FoodFrozenSnowconeMime
+  components:
+  - pos: 27.702457,-11.233776
+    parent: 60
+    type: Transform
+- uid: 24119
+  type: TableWood
+  components:
+  - pos: 26.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24120
+  type: TableWood
+  components:
+  - pos: 27.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24121
+  type: PosterContrabandSpaceUp
+  components:
+  - pos: 21.5,-10.5
+    parent: 60
+    type: Transform
+- uid: 24122
+  type: VehicleJanicartDestroyed
+  components:
+  - pos: -19.5,-44.5
+    parent: 60
+    type: Transform
+- uid: 24123
+  type: SpawnPointResearchAssistant
+  components:
+  - pos: -54.5,8.5
+    parent: 60
+    type: Transform
+- uid: 24124
+  type: SpawnPointResearchAssistant
+  components:
+  - pos: -54.5,10.5
+    parent: 60
+    type: Transform
+- uid: 24125
+  type: CableMV
+  components:
+  - pos: 45.5,1.5
+    parent: 60
+    type: Transform
+- uid: 24126
+  type: CableMV
+  components:
+  - pos: 45.5,2.5
+    parent: 60
+    type: Transform
+- uid: 24127
+  type: GasPipeTJunction
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,-18.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24128
+  type: GasPipeStraight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,-17.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24129
+  type: GasVentPump
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -5.5,-18.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24130
+  type: GasPipeStraight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -7.5,-15.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24131
+  type: GasPipeStraight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -8.5,-15.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24132
+  type: GasPipeStraight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -7.5,-18.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24133
+  type: WallReinforced
+  components:
+  - pos: -5.5,-16.5
+    parent: 60
+    type: Transform
+- uid: 24134
+  type: APCHyperCapacity
+  components:
+  - pos: -5.5,-16.5
+    parent: 60
+    type: Transform
+- uid: 24135
+  type: GasPipeStraight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,-16.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24136
+  type: GasVentPump
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -9.5,-15.5
+    parent: 60
+    type: Transform
+  - color: '#0335FCFF'
+    type: AtmosPipeColor
+- uid: 24137
+  type: PoweredSmallLight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -10.5,-18.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24138
+  type: PoweredSmallLight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,-18.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24139
+  type: PoweredSmallLight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -5.5,-15.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24140
+  type: PoweredSmallLight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -10.5,-15.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24141
+  type: ClothingOuterHardsuitEVAPrisoner
+  components:
+  - pos: -5.4120154,-17.402714
+    parent: 60
+    type: Transform
+- uid: 24142
+  type: MedkitOxygenFilled
+  components:
+  - pos: -5.4432654,-18.418339
+    parent: 60
+    type: Transform
+- uid: 24143
+  type: PottedPlant28
+  components:
+  - pos: -5.5057654,-15.736094
+    parent: 60
+    type: Transform
+  - containers:
+      stash: !type:ContainerSlot
+        ent: 24144
+    type: ContainerContainer
+- uid: 24144
+  type: ScalpelShiv
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 24143
+    type: Transform
+  - nextAttack: 3922.3710184
+    type: MeleeWeapon
+  - canCollide: False
+    type: Physics
+- uid: 24145
+  type: Catwalk
+  components:
+  - pos: -13.5,-31.5
+    parent: 60
+    type: Transform
+- uid: 24146
+  type: Catwalk
+  components:
+  - pos: -4.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 24147
+  type: FlashlightLantern
+  components:
+  - pos: 8.429562,-71.29388
+    parent: 60
+    type: Transform
+  - toggleAction:
+      icon:
+        sprite: Objects/Tools/flashlight.rsi
+        state: flashlight
+      iconOn: Objects/Tools/flashlight.rsi/flashlight-on.png
+      name: action-name-toggle-light
+      description: action-description-toggle-light
+      keywords: []
+      event: !type:ToggleActionEvent {}
+    type: HandheldLight
+- uid: 24148
+  type: FireAlarm
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -24.5,-6.5
+    parent: 60
+    type: Transform
+  - devices:
+    - 5562
+    - 5565
+    - 5563
+    - 8466
+    - 21733
+    type: DeviceList
+- uid: 24149
+  type: WindoorSecurityLocked
+  components:
+  - pos: -18.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24150
+  type: Stool
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -29.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24151
+  type: Stool
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -27.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24152
+  type: SignRedOne
+  components:
+  - pos: -19.5,-8.5
+    parent: 60
+    type: Transform
+- uid: 24153
+  type: SignRedTwo
+  components:
+  - pos: -19.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 24154
+  type: SignRedThree
+  components:
+  - pos: -33.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24155
+  type: SignRedFour
+  components:
+  - pos: -33.5,-8.5
+    parent: 60
+    type: Transform
+- uid: 24156
+  type: SignRedFive
+  components:
+  - pos: -33.5,-11.5
+    parent: 60
+    type: Transform
+- uid: 24157
+  type: LockerEvidence
+  components:
+  - pos: -23.5,-12.5
+    parent: 60
+    type: Transform
+- uid: 24158
+  type: FloorDrain
+  components:
+  - pos: -41.5,-1.5
+    parent: 60
+    type: Transform
+  - fixtures: []
+    type: Fixtures
+- uid: 24159
+  type: SinkWide
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -41.5,-1.5
+    parent: 60
+    type: Transform
+- uid: 24160
+  type: ClothingMaskSterile
+  components:
+  - pos: -41.75516,14.452198
+    parent: 60
+    type: Transform
+- uid: 24161
+  type: Rack
+  components:
+  - pos: -30.5,11.5
+    parent: 60
+    type: Transform
+- uid: 24162
+  type: Rack
+  components:
+  - pos: -34.5,11.5
+    parent: 60
+    type: Transform
+- uid: 24163
+  type: DisposalBend
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -40.5,13.5
+    parent: 60
+    type: Transform
+- uid: 24164
+  type: DisposalTrunk
+  components:
+  - pos: -40.5,14.5
+    parent: 60
+    type: Transform
+- uid: 24165
+  type: DisposalUnit
+  components:
+  - pos: -40.5,14.5
+    parent: 60
+    type: Transform
+- uid: 24166
+  type: Table
+  components:
+  - pos: -36.5,11.5
+    parent: 60
+    type: Transform
+- uid: 24167
+  type: Table
+  components:
+  - pos: -36.5,12.5
+    parent: 60
+    type: Transform
+- uid: 24168
+  type: PosterLegitSafetyInternals
+  components:
+  - pos: -42.5,-2.5
+    parent: 60
+    type: Transform
+- uid: 24169
+  type: PosterLegitSafetyEyeProtection
+  components:
+  - pos: -41.5,-2.5
+    parent: 60
+    type: Transform
+- uid: 24170
+  type: SpawnMobBandito
+  components:
+  - pos: -43.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24171
+  type: Carpet
+  components:
+  - pos: -26.5,-28.5
+    parent: 60
+    type: Transform
+- uid: 24172
+  type: Carpet
+  components:
+  - pos: -25.5,-29.5
+    parent: 60
+    type: Transform
+- uid: 24173
+  type: Carpet
+  components:
+  - pos: -25.5,-28.5
+    parent: 60
+    type: Transform
+- uid: 24174
+  type: Morgue
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -19.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24175
+  type: SpawnVehicleSecway
+  components:
+  - pos: -33.5,-20.5
+    parent: 60
+    type: Transform
+- uid: 24176
+  type: VehicleKeySecway
+  components:
+  - pos: -33.527782,-15.554149
+    parent: 60
+    type: Transform
+- uid: 24177
+  type: WindowReinforcedDirectional
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -4.5,-17.5
+    parent: 60
+    type: Transform
+- uid: 24178
+  type: WindowReinforcedDirectional
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -5.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 24179
+  type: WindowReinforcedDirectional
+  components:
+  - pos: -5.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 24180
+  type: WindowReinforcedDirectional
+  components:
+  - pos: -4.5,-17.5
+    parent: 60
+    type: Transform
+- uid: 24181
+  type: WindowReinforcedDirectional
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -4.5,-17.5
+    parent: 60
+    type: Transform
+- uid: 24182
+  type: WindowReinforcedDirectional
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -5.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 24183
+  type: Poweredlight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -18.5,-5.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24184
+  type: PosterLegitSpaceCops
+  components:
+  - pos: -33.5,-1.5
+    parent: 60
+    type: Transform
+- uid: 24185
+  type: Grille
+  components:
+  - pos: -51.5,-19.5
+    parent: 60
+    type: Transform
+- uid: 24186
+  type: GeneratorBasic
+  components:
+  - pos: -7.5,29.5
+    parent: 60
+    type: Transform
+- uid: 24187
+  type: HatBandGold
+  components:
+  - pos: -56.55667,-23.491457
+    parent: 60
+    type: Transform
+- uid: 24188
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,36.5
+    parent: 60
+    type: Transform
+- uid: 24189
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,39.5
+    parent: 60
+    type: Transform
+- uid: 24190
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,40.5
+    parent: 60
+    type: Transform
+- uid: 24191
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,41.5
+    parent: 60
+    type: Transform
+- uid: 24192
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,47.5
+    parent: 60
+    type: Transform
+- uid: 24193
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,48.5
+    parent: 60
+    type: Transform
+- uid: 24194
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,49.5
+    parent: 60
+    type: Transform
+- uid: 24195
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,56.5
+    parent: 60
+    type: Transform
+- uid: 24196
+  type: Railing
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,57.5
+    parent: 60
+    type: Transform
+- uid: 24197
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 11.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24198
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 10.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24199
+  type: RailingCorner
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 12.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24200
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 3.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24201
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24202
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24203
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 0.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24204
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -0.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24205
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -1.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24206
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -2.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24207
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -3.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24208
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -4.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24209
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -5.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24210
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -6.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24211
+  type: Railing
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -10.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24212
+  type: Railing
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -11.5,57.5
+    parent: 60
+    type: Transform
+- uid: 24213
+  type: RailingCorner
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -11.5,58.5
+    parent: 60
+    type: Transform
+- uid: 24214
+  type: SignAtmosMinsky
+  components:
+  - pos: -27.5,38.5
+    parent: 60
+    type: Transform
+- uid: 24215
+  type: SignAtmosMinsky
+  components:
+  - pos: -23.5,29.5
+    parent: 60
+    type: Transform
+- uid: 24216
+  type: MaterialWoodPlank
+  components:
+  - pos: 51.428207,-36.33008
+    parent: 60
+    type: Transform
+- uid: 24217
+  type: ClothingHeadsetMining
+  components:
+  - pos: 56.480446,-3.47641
+    parent: 60
+    type: Transform
+- uid: 24218
+  type: ClothingHeadHatUshanka
+  components:
+  - pos: -39.62937,16.44374
+    parent: 60
+    type: Transform
+- uid: 24219
+  type: WardrobeCargoFilled
+  components:
+  - pos: 49.5,14.5
+    parent: 60
+    type: Transform
+- uid: 24220
+  type: ClothingMaskBreathMedical
+  components:
+  - pos: 52.5063,-29.369915
+    parent: 60
+    type: Transform
+- uid: 24221
+  type: TableWood
+  components:
+  - pos: -26.5,19.5
+    parent: 60
+    type: Transform
+- uid: 24222
+  type: TableWood
+  components:
+  - pos: -24.5,19.5
+    parent: 60
+    type: Transform
+- uid: 24223
+  type: lantern
+  components:
+  - pos: -24.507496,19.805492
+    parent: 60
+    type: Transform
+- uid: 24224
+  type: DrinkWineBottleFull
+  components:
+  - pos: -22.518103,19.867992
+    parent: 60
+    type: Transform
+- uid: 24225
+  type: DrinkShotGlass
+  components:
+  - pos: -22.455603,19.399242
+    parent: 60
+    type: Transform
+- uid: 24226
+  type: CarpetChapel
+  components:
+  - pos: -20.5,15.5
+    parent: 60
+    type: Transform
+- uid: 24227
+  type: CarpetChapel
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -20.5,16.5
+    parent: 60
+    type: Transform
+- uid: 24228
+  type: CarpetChapel
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -19.5,16.5
+    parent: 60
+    type: Transform
+- uid: 24229
+  type: CarpetChapel
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -19.5,15.5
+    parent: 60
+    type: Transform
+- uid: 24230
+  type: PosterContrabandBorgFancy
+  components:
+  - pos: 21.5,-0.5
+    parent: 60
+    type: Transform
+- uid: 24231
+  type: PosterContrabandBorgFancyv2
+  components:
+  - pos: 25.5,-0.5
+    parent: 60
+    type: Transform
+- uid: 24232
+  type: CrayonBox
+  components:
+  - pos: -39.042866,19.84919
+    parent: 60
+    type: Transform
+- uid: 24233
+  type: Grille
+  components:
+  - pos: -40.5,20.5
+    parent: 60
+    type: Transform
+- uid: 24234
+  type: Poweredlight
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -43.5,19.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24235
+  type: PoweredSmallLight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -38.5,20.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24236
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 37.5,7.5
+    parent: 60
+    type: Transform
+- uid: 24237
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 37.5,6.5
+    parent: 60
+    type: Transform
+- uid: 24238
+  type: DisposalPipe
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 37.5,5.5
+    parent: 60
+    type: Transform
+- uid: 24239
+  type: DisposalTrunk
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 36.5,4.5
+    parent: 60
+    type: Transform
+- uid: 24240
+  type: DisposalBend
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 37.5,4.5
+    parent: 60
+    type: Transform
+- uid: 24241
+  type: DisposalUnit
+  components:
+  - pos: 36.5,4.5
+    parent: 60
+    type: Transform
+- uid: 24242
+  type: SignMorgue
+  components:
+  - pos: 35.5,-5.5
+    parent: 60
+    type: Transform
+- uid: 24243
+  type: FoodCakeSuppermatterSlice
+  components:
+  - pos: -16.5,42.5
+    parent: 60
+    type: Transform
+- uid: 24244
+  type: Table
+  components:
+  - pos: -40.5,-15.5
+    parent: 60
+    type: Transform
+- uid: 24245
+  type: DrinkWaterBottleFull
+  components:
+  - pos: -40.606373,-15.22675
+    parent: 60
+    type: Transform
+- uid: 24246
+  type: DrinkGlass
+  components:
+  - pos: -40.371998,-15.398625
+    parent: 60
+    type: Transform
+- uid: 24247
+  type: SurveillanceWirelessCameraMovableEntertainment
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 37.5,16.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraEntertainment
+    nameSet: True
+    id: The Entertainment Channel
+    type: SurveillanceCamera
+- uid: 24248
+  type: ClothingUniformJumpsuitReporter
+  components:
+  - pos: 34.677628,17.396896
+    parent: 60
+    type: Transform
+- uid: 24249
+  type: ClothingUniformJumpsuitJournalist
+  components:
+  - pos: 34.677628,17.381271
+    parent: 60
+    type: Transform
+- uid: 24250
+  type: SignElectricalMed
+  components:
+  - pos: 32.5,-51.5
+    parent: 60
+    type: Transform
+- uid: 24251
+  type: Catwalk
+  components:
+  - pos: 5.5,-70.5
+    parent: 60
+    type: Transform
+- uid: 24252
+  type: Catwalk
+  components:
+  - pos: 5.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 24253
+  type: Catwalk
+  components:
+  - pos: -4.5,-63.5
+    parent: 60
+    type: Transform
+- uid: 24254
+  type: Catwalk
+  components:
+  - pos: 0.5,-79.5
+    parent: 60
+    type: Transform
+- uid: 24255
+  type: Catwalk
+  components:
+  - pos: -21.5,-54.5
+    parent: 60
+    type: Transform
+- uid: 24256
+  type: Catwalk
+  components:
+  - pos: -22.5,-54.5
+    parent: 60
+    type: Transform
+- uid: 24258
+  type: ClothingHeadHatCone
+  components:
+  - pos: 12.042968,35.99082
+    parent: 60
+    type: Transform
+- uid: 24259
+  type: ClothingHeadHatCone
+  components:
+  - pos: 14.667968,39.068947
+    parent: 60
+    type: Transform
+- uid: 24260
+  type: ClothingHeadHatCone
+  components:
+  - pos: -43.570118,25.670937
+    parent: 60
+    type: Transform
+- uid: 24261
+  type: SurveillanceCameraCommand
+  components:
+  - pos: -94.5,16.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: AI Sat Entrance
+    type: SurveillanceCamera
+- uid: 24262
+  type: SurveillanceCameraCommand
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -70.5,18.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: AI Sat Tunnel
+    type: SurveillanceCamera
+- uid: 24263
+  type: SurveillanceCameraScience
+  components:
+  - pos: -42.5,-1.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Sci Entrance Room
+    type: SurveillanceCamera
+- uid: 24264
+  type: SurveillanceCameraScience
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -46.5,0.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Sci RND Hall
+    type: SurveillanceCamera
+- uid: 24265
+  type: SurveillanceCameraScience
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -38.5,1.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Sci Hall
+    type: SurveillanceCamera
+- uid: 24266
+  type: SurveillanceCameraScience
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -30.5,9.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Robotics Hall
+    type: SurveillanceCamera
+- uid: 24267
+  type: SurveillanceCameraScience
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -30.5,12.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraScience
+    nameSet: True
+    id: Robotics Bay
+    type: SurveillanceCamera
+- uid: 24268
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -32.5,19.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Dorm Room 1
+    type: SurveillanceCamera
+- uid: 24269
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -36.5,19.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Dorm Room 2
+    type: SurveillanceCamera
+- uid: 24270
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -46.5,25.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Dorm Room 3
+    type: SurveillanceCamera
+- uid: 24271
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -46.5,21.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Dorm Room 4
+    type: SurveillanceCamera
+- uid: 24272
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -43.5,22.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Dorm Hall West
+    type: SurveillanceCamera
+- uid: 24273
+  type: SurveillanceCameraEngineering
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -18.5,25.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraEngineering
+    nameSet: True
+    id: Atmos Main Hall
+    type: SurveillanceCamera
+- uid: 24274
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -16.5,17.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Library Main Hall
+    type: SurveillanceCamera
+- uid: 24275
+  type: SurveillanceCameraCommand
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -10.5,-6.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: Captain's Room Exterior
+    type: SurveillanceCamera
+- uid: 24276
+  type: SurveillanceCameraCommand
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 11.5,-4.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: Bridge Exterior Access
+    type: SurveillanceCamera
+- uid: 24277
+  type: SurveillanceCameraCommand
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 24.5,5.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: AI Upload Entrance
+    type: SurveillanceCamera
+- uid: 24278
+  type: SurveillanceCameraSupply
+  components:
+  - pos: 49.5,16.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSupply
+    nameSet: True
+    id: Cargo Break Room
+    type: SurveillanceCamera
+- uid: 24279
+  type: SurveillanceCameraSupply
+  components:
+  - pos: 38.5,-1.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSupply
+    nameSet: True
+    id: Salv Locker Room
+    type: SurveillanceCamera
+- uid: 24280
+  type: SurveillanceCameraMedical
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 41.5,-22.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraMedical
+    nameSet: True
+    id: Medical Lobby
+    type: SurveillanceCamera
+- uid: 24281
+  type: SurveillanceCameraMedical
+  components:
+  - pos: 41.5,-14.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraMedical
+    nameSet: True
+    id: Surgery
+    type: SurveillanceCamera
+- uid: 24282
+  type: SurveillanceCameraMedical
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 34.5,-12.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraMedical
+    nameSet: True
+    id: CMO's Office
+    type: SurveillanceCamera
+- uid: 24283
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 24.5,-15.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Theatre
+    type: SurveillanceCamera
+- uid: 24284
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 24.5,-11.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Theatre Backroom
+    type: SurveillanceCamera
+- uid: 24285
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 22.5,-4.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Bungle Zone
+    type: SurveillanceCamera
+- uid: 24286
+  type: SurveillanceCameraCommand
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -2.5,-10.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraCommand
+    nameSet: True
+    id: Captain's Bathroom
+    type: SurveillanceCamera
+- uid: 24287
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -32.5,-18.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Security Locker Room
+    type: SurveillanceCamera
+- uid: 24288
+  type: SurveillanceCameraSecurity
+  components:
+  - pos: -24.5,-16.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Security South
+    type: SurveillanceCamera
+- uid: 24289
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -31.5,5.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Security Maintenance Room
+    type: SurveillanceCamera
+- uid: 24290
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -36.5,-20.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Court Main Hall
+    type: SurveillanceCamera
+- uid: 24291
+  type: PoweredSmallLight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -53.5,-19.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24292
+  type: SurveillanceCameraEngineering
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,11.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraEngineering
+    nameSet: True
+    id: Engi Main Hall
+    type: SurveillanceCamera
+- uid: 24293
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 9.5,12.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Tool Room
+    type: SurveillanceCamera
+- uid: 24294
+  type: SurveillanceCameraSecurity
+  components:
+  - pos: -7.5,-18.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Perma Brig Locker Room
+    type: SurveillanceCamera
+- uid: 24295
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -1.5,-60.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Arrivals 1
+    type: SurveillanceCamera
+- uid: 24296
+  type: SurveillanceCameraGeneral
+  components:
+  - pos: 2.5,-73.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Arrivals 2
+    type: SurveillanceCamera
+- uid: 24297
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,-75.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: South Arrivals Dock
+    type: SurveillanceCamera
+- uid: 24298
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 8.5,-69.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: East Arrivals Shuttle
+    type: SurveillanceCamera
+- uid: 24300
+  type: SurveillanceCameraGeneral
+  components:
+  - pos: -14.5,-55.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Arrivals West Hall
+    type: SurveillanceCamera
+- uid: 24301
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 7.5,-53.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Arrivals East Hall
+    type: SurveillanceCamera
+- uid: 24302
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 2.5,-48.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Arrivals Checkpoint
+    type: SurveillanceCamera
+- uid: 24303
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -0.5,-35.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall South
+    type: SurveillanceCamera
+- uid: 24304
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 9.5,-21.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall HoP
+    type: SurveillanceCamera
+- uid: 24305
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 16.5,-29.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Bar
+    type: SurveillanceCamera
+- uid: 24306
+  type: SurveillanceCameraService
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 9.5,-35.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraService
+    nameSet: True
+    id: Bartender Room
+    type: SurveillanceCamera
+- uid: 24307
+  type: Sink
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 41.5,-30.5
+    parent: 60
+    type: Transform
+- uid: 24308
+  type: RandomArtifactSpawner20
+  components:
+  - pos: 51.5,8.5
+    parent: 60
+    type: Transform
+- uid: 24309
+  type: RandomArtifactSpawner20
+  components:
+  - pos: 51.5,10.5
+    parent: 60
+    type: Transform
+- uid: 24310
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 14.5,-22.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall Bar
+    type: SurveillanceCamera
+- uid: 24311
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 17.5,-3.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall East
+    type: SurveillanceCamera
+- uid: 24312
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 17.5,16.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall Toolroom
+    type: SurveillanceCamera
+- uid: 24313
+  type: GrilleBroken
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -56.5,-12.5
+    parent: 60
+    type: Transform
+- uid: 24314
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -25.5,-7.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Warden's Office
+    type: SurveillanceCamera
+- uid: 24315
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -18.5,-9.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell 1
+    type: SurveillanceCamera
+- uid: 24316
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -18.5,-12.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell 2
+    type: SurveillanceCamera
+- uid: 24317
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -33.5,-6.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell 3
+    type: SurveillanceCamera
+- uid: 24318
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -33.5,-9.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell 4
+    type: SurveillanceCamera
+- uid: 24319
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -33.5,-12.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell 5
+    type: SurveillanceCamera
+- uid: 24320
+  type: SurveillanceCameraSecurity
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -18.5,-5.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Cell Med
+    type: SurveillanceCamera
+- uid: 24321
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -14.5,4.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall Grav Gen
+    type: SurveillanceCamera
+- uid: 24322
+  type: SurveillanceCameraGeneral
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -25.5,-22.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraGeneral
+    nameSet: True
+    id: Main Hall Detective Office
+    type: SurveillanceCamera
+- uid: 24323
+  type: WallmountTelescreen
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -110.5,25.5
+    parent: 60
+    type: Transform
+- uid: 24324
+  type: IntercomAll
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -112.5,25.5
+    parent: 60
+    type: Transform
+- uid: 24325
+  type: SurveillanceCameraService
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -5.5,-26.5
+    parent: 60
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraService
+    nameSet: True
+    id: Janitor's Office
+    type: SurveillanceCamera
+- uid: 24326
+  type: Grille
+  components:
+  - pos: -53.5,-24.5
+    parent: 60
+    type: Transform
+- uid: 24327
+  type: PoweredSmallLight
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -56.5,-23.5
+    parent: 60
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 24328
+  type: ClosetMaintenanceFilledRandom
+  components:
+  - pos: -53.5,-22.5
+    parent: 60
+    type: Transform
+- uid: 24329
+  type: ClosetRadiationSuitFilled
+  components:
+  - pos: -53.5,-21.5
+    parent: 60
+    type: Transform
+- uid: 24330
+  type: Chair
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -52.5,-24.5
+    parent: 60
+    type: Transform
+- uid: 24331
+  type: Chair
+  components:
+  - pos: 17.5,-44.5
+    parent: 60
+    type: Transform
+...
