@@ -82,7 +82,8 @@ public sealed class StoreComponent : Component
 /// <summary>
 /// Event that is broadcast when a store is added to an entity
 /// </summary>
-public sealed class StoreAddedEvent : EntityEventArgs { };
+[ByRefEvent]
+public readonly record struct StoreAddedEvent;
 /// <summary>
 /// Event that is broadcast when a store is removed from an entity
 /// </summary>

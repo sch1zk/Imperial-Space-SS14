@@ -31,6 +31,7 @@
   - SecurityCadet
   - ServiceWorker
   - TechnicalAssistant
+  - ResearchAssistant
   accountNumber: 1316
 
 - type: department
@@ -92,4 +93,5 @@
   roles:
   - ResearchDirector
   - Scientist
+  - ResearchAssistant
   accountNumber: 1321
