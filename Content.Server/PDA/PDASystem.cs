@@ -81,7 +81,7 @@ namespace Content.Server.PDA
             UpdatePDAUserInterface(pda);
         }
 
-        private void OnUplinkRemoved(EntityUid uid, PDAComponent pda, ref StoreRemovedEvent args)
+        private void OnUplinkRemoved(EntityUid uid, PDAComponent pda, StoreRemovedEvent args)
         {
             UpdatePDAUserInterface(pda);
         }

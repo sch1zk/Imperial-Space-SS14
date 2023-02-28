@@ -3,7 +3,6 @@ using Content.Server.Actions;
 using Content.Server.Administration.Logs;
 using Content.Server.Economy;
 using Content.Server.Mind.Components;
-using Content.Server.Stack;
 using Content.Server.Store.Components;
 using Content.Shared.Actions.ActionTypes;
 using Content.Shared.Database;
@@ -12,6 +11,7 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Store;
 using Robust.Server.GameObjects;
 using System.Linq;
+using Content.Server.Stack;
 using Content.Server.UserInterface;
 
 namespace Content.Server.Store.Systems;
@@ -29,7 +29,8 @@ public sealed partial class StoreSystem
 
     private void InitializeUi()
     {
-        SubscribeLocalEvent<StoreComponent, StoreRequestUpdateInterfaceMessage>((_, c, r) => UpdateUserInterface(r.Session.AttachedEntity, c));
+        // SubscribeLocalEvent<StoreComponent, StoreRequestUpdateInterfaceMessage>((_, c, r) => UpdateUserInterface(r.Session.AttachedEntity, c));
+        SubscribeLocalEvent<StoreComponent, StoreRequestUpdateInterfaceMessage>(OnRequestUpdate);
         SubscribeLocalEvent<StoreComponent, StoreBuyListingMessage>(OnBuyRequest);
         SubscribeLocalEvent<StoreComponent, StoreRequestWithdrawMessage>(OnRequestWithdraw);
     }

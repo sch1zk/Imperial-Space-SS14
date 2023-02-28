@@ -90,3 +90,6 @@ public readonly record struct StoreAddedEvent;
 public sealed class StoreRemovedEvent : EntityEventArgs { };
 public sealed class StoreOnEjectEvent : EntityEventArgs { };
 public sealed class StoreOnDenyEvent : EntityEventArgs { };
+
+// [ByRefEvent]
+// public readonly record struct StoreRemovedEvent;

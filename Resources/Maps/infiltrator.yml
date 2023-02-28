@@ -1523,7 +1523,7 @@ entities:
     type: IFF
   - type: OccluderTree
   - type: Shuttle
-  - nextUpdate: 2319.9379624
+  - nextUpdate: 81.4302051
     type: GridPathfinding
   - type: RadiationGridResistance
   - nextShake: 0
@@ -1619,7 +1619,7 @@ entities:
 - uid: 88
   type: Lamp
   components:
-  - pos: -1.483297,-2.2444057
+  - pos: -1.5562502,-2.0674171
     parent: 73
     type: Transform
   - toggleAction:
