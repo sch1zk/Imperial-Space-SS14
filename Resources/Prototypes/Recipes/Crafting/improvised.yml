@@ -1,24 +1,104 @@
 ﻿- type: construction
-  name: baseball bat
+  name: Бейсбольная бита
   id: bat
   graph: WoodenBat
   startNode: start
   targetNode: bat
   category: construction-category-weapons
-  description: A robust baseball bat.
+  description: Я бью жен...
   icon:
     sprite: Objects/Weapons/Melee/baseball_bat.rsi
     state: icon
   objectType: Item
+  
+- type: construction
+  name: Лом
+  id: Crowbar
+  graph: Crowbar
+  startNode: start
+  targetNode: Crowbar
+  category: construction-category-weapons
+  description: Лом, для открывания дверей и битья лиц
+  icon:
+    sprite: Objects\Tools\crowbar.rsi
+    state: icon
+  objectType: Item
 
 - type: construction
-  name: makeshift handcuffs
+  name: Ведро
+  id: Bucket
+  graph: Bucket
+  startNode: start
+  targetNode: Bucket
+  category: construction-category-weapons
+  description: Ведро, что бы набирать воду
+  icon:
+    sprite: Objects\Tools\bucket.rsi
+    state: icon
+  objectType: Item
+
+
+
+- type: construction
+  name: Рукоятка инструмента
+  id: Handle
+  graph: Handle
+  startNode: start
+  targetNode: Handle
+  category: construction-category-weapons
+  description: Рукоятка, являющаяся неотъемлемой частью для создания инструмента.
+  icon:
+    sprite: Objects/Weapons/Melee/pickaxe.rsi
+    state: Handle
+  objectType: Item
+
+- type: construction
+  name: Кирка
+  id: Pickaxe
+  graph: Pickaxe
+  startNode: start
+  targetNode: Pickaxe
+  category: construction-category-weapons
+  description: Необходима для раскопки породы
+  icon:
+    sprite: Objects/Weapons/Melee/pickaxe.rsi
+    state: pickaxe
+  objectType: Item
+
+- type: construction
+  name: Кусачки
+  id: wirecutter
+  graph: wirecutter
+  startNode: start
+  targetNode: wirecut
+  category: construction-category-weapons
+  description: Нужны что бы перерезать провода
+  icon:
+    sprite: Objects\Tools\wirecutters.rsi
+    state: cutters-map
+  objectType: Item
+
+- type: construction
+  name: Заточка
+  id: ScalpelShiv
+  graph: ScalpelShiv
+  startNode: start
+  targetNode: Shiv
+  category: construction-category-weapons
+  description: Бить лица
+  icon:
+    sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
+    state: shiv
+  objectType: Item  
+
+- type: construction
+  name: Самодельные наручники
   id: makeshifthandcuffs
   graph: makeshifthandcuffs
   startNode: start
   targetNode: cuffscable
-  category: construction-category-tools
-  description: "Homemade handcuffs crafted from spare cables."
+  category: construction-category-weapons
+  description: Самодельные наручники для связывания людей
   icon: { sprite: Objects/Misc/cablecuffs.rsi, state: cuff }
   objectType: Item
 
@@ -36,14 +116,14 @@
     state: icon
 
 - type: construction
-  name: improvised pneumatic cannon
+  name: Пневмопушка
   id: pneumaticcannon
   graph: PneumaticCannon
   startNode: start
   targetNode: cannon
   category: construction-category-weapons
   objectType: Item
-  description: This son of a gun can fire anything that fits in it using just a little gas.
+  description: Стреляет используя энергию кислородного балона
   icon:
     sprite: Objects/Weapons/Guns/Cannons/pneumatic_cannon.rsi
     state: icon
@@ -62,14 +142,14 @@
     state: gauze
 
 - type: construction
-  name: blindfold
+  name: Повязка на глаза
   id: blindfold
   graph: Blindfold
   startNode: start
   targetNode: blindfold
   category: construction-category-tools
   objectType: Item
-  description: Better hope everyone turns a blind eye to you crafting this sussy item...
+  description: Надейся что никто на тебя ее не оденет в техах
   icon:
     sprite: Clothing/Eyes/Misc/blindfold.rsi
     state: icon

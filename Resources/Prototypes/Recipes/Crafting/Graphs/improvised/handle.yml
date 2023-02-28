@@ -1,0 +1,13 @@
+﻿- type: constructionGraph
+  id: Handle
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: Handle
+          steps:
+            - material: WoodPlank
+              amount: 10
+              doAfter: 4
+    - node: Handle
+      entity: Handle

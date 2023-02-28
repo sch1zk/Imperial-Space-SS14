@@ -37,6 +37,9 @@
   - type: LatticeCutting
   - type: StaticPrice
     price: 40
+  - type: Construction
+    graph: wirecutter
+    node: wirecut
 
 - type: entity
   name: screwdriver
@@ -141,6 +144,9 @@
   - type: TilePrying
   - type: StaticPrice
     price: 40
+  - type: Construction
+    graph: Crowbar
+    node: Crowbar
 
 - type: entity
   name: emergency crowbar
