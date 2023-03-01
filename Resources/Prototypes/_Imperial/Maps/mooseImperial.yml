@@ -2,7 +2,7 @@
   id: MooseImperial
   mapName: 'Moose'
   mapPath: /Maps/mooseImperial.yml
-  minPlayers: 35
+  minPlayers: 0
   maxPlayers: 70
   fallback: true
   stations:

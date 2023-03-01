@@ -1,0 +1,9 @@
+- type: worldTargetAction
+  id: GoliathTentacle
+  name: goliath-tentacle-action-name
+  description: goliath-tentacle-action-description
+  icon: Interface/Actions/goliath_tenacle.png
+  event: !type:GoliathTentacleActionEvent
+  range: 6
+  useDelay: 16
+

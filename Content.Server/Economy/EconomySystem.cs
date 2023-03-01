@@ -16,7 +16,7 @@ namespace Content.Server.Economy
         public override void Initialize()
         {
             base.Initialize();
-            SubscribeLocalEvent<CurrencyComponent, AfterInteractEvent>(OnAfterInteract);
+            // SubscribeLocalEvent<CurrencyComponent, AfterInteractEvent>(OnAfterInteract);
         }
         private void OnAfterInteract(EntityUid uid, CurrencyComponent component, AfterInteractEvent args)
         {
@@ -27,16 +27,16 @@ namespace Content.Server.Economy
                 return;
 
             if (TryComp<ATMComponent>(args.Target, out var atm))
-                args.Handled = _atmSystem.TryAddCurrency(_storeSystem.GetCurrencyValue(component), atm);
+                args.Handled = _atmSystem.TryAddCurrency(_storeSystem.GetCurrencyValue(uid, component), atm);
             else if (TryComp<StoreComponent>(args.Target, out var store))
             {
                 if (!store.Opened)
                 {
                     _storeSystem.RefreshAllListings(store);
-                    _storeSystem.InitializeFromPreset(store.Preset, store);
+                    _storeSystem.InitializeFromPreset(store.Preset, store.AccountOwner, store);
                     store.Opened = true;
                 }
-                args.Handled = _storeSystem.TryAddCurrency(_storeSystem.GetCurrencyValue(component), store);
+                args.Handled = _storeSystem.TryAddCurrency(_storeSystem.GetCurrencyValue(uid, component), uid, store);
             }
             else
                 return;
