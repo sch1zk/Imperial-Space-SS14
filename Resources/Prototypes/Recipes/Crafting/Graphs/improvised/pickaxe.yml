@@ -8,7 +8,7 @@
       steps:
       - tag: Crowbar
         icon:
-          sprite: Objects\Tools\crowbar.rsi
+          sprite: Objects/Tools/crowbar.rsi
           state: icon
         name: Лом
       - tag: Handle

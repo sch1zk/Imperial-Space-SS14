@@ -38,7 +38,7 @@
 - type: material
   id: Cred
   name: spacecred
-  stack: Cred
+  stackEntity: SpaceCredit
   icon: { sprite: /Textures/Objects/Economy/credits.rsi, state: credit }
   price: 1
 

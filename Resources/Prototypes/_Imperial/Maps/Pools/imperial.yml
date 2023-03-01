@@ -2,3 +2,5 @@
   id: ImperialMapPool
   maps:
   - MooseImperial
+  - MarathonImperial
+  - ClusterImperial
