@@ -12167,12 +12167,6 @@ entities:
     pos: 1.5,21.5
     parent: 127
     type: Transform
-- uid: 314
-  type: VehicleKeyPussyWagon
-  components:
-  - pos: 7.4941626,-12.513269
-    parent: 127
-    type: Transform
 - uid: 315
   type: WallSolid
   components:
@@ -29402,12 +29396,6 @@ entities:
   - flags: SessionSpecific
     type: MetaData
   - pos: 6.5,-12.5
-    parent: 127
-    type: Transform
-- uid: 2920
-  type: SpawnVehiclePussywagon
-  components:
-  - pos: 7.5,-12.5
     parent: 127
     type: Transform
 - uid: 2921

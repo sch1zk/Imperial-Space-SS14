@@ -1,4 +1,7 @@
 - type: gameMapPool
   id: ImperialMapPool
   maps:
-  - MooseImperial
+    - MooseImperial
+    - ClusterImperial
+    - CorvaxDelta
+    - CorvaxIshimura

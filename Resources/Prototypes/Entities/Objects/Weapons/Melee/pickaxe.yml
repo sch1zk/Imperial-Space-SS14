@@ -23,6 +23,9 @@
   - type: Item
     size: 24
     sprite: Objects/Weapons/Melee/pickaxe.rsi
+  - type: Construction
+    graph: Pickaxe
+    node: Pickaxe
 
 - type: entity
   name: mining drill

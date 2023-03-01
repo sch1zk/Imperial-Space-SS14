@@ -1,0 +1,19 @@
+- type: entity
+  name: Рукоятка инструмента
+  parent: BaseItem
+  id: Handle
+  description: "Рукоятка, являющаяся неотъемлемой частью для создания инструмента."
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/pickaxe.rsi
+    state: handle   
+  
+    netsync: false
+  - type: Item
+    size: 6
+  - type: Construction
+    graph: Handle
+    node: Handle
+  - type: Tag
+    tags:
+    - Handle

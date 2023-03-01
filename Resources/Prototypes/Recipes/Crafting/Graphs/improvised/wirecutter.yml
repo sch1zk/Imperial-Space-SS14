@@ -1,0 +1,13 @@
+﻿- type: constructionGraph
+  id: wirecutter
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: wirecut
+          steps:
+            - material: Steel
+              amount: 8
+              doAfter: 20
+    - node: wirecut
+      entity: Wirecutter
