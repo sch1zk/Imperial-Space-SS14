@@ -1,33 +1,7 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  # - Aspid
-  # - Bagel
-  # - Barratry
-  # - Box
-  # - Cluster
-  # - Fland  
-  # - Kettle
-  # - Marathon
-  # - Meta
-  # - Moose
-  # - Omega
-  # - Origin
-  - MooseImperial
-  - ClusterImperial
-
-  # - Карты с ласт апдейта корвакса, не переделанные
-  # - Aspid
-  # - Bagel
-  # - Barratry
-  # - Box
-  # - Cluster
-  # - Fland  
-  # - Kettle
-  # - Marathon
-  # - Meta
-  # - Moose
-  # - Omega
-  # - Origin
-  
-  # - ClusterImperial
+    - MooseImperial
+    - ClusterImperial
+    - CorvaxDelta
+    - CorvaxIshimura

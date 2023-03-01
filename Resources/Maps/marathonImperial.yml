@@ -156370,13 +156370,6 @@ entities:
     pos: -74.382675,-63.392025
     parent: 30
     type: Transform
-- uid: 19473
-  type: d100Dice
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: -57.4998,-65.351234
-    parent: 30
-    type: Transform
 - uid: 19474
   type: Bookshelf
   components:
@@ -162635,12 +162628,6 @@ entities:
   - pos: -30.570229,13.5742035
     parent: 30
     type: Transform
-- uid: 20440
-  type: VehicleKeyPussyWagon
-  components:
-  - pos: -30.815971,6.7175894
-    parent: 30
-    type: Transform
 - uid: 20441
   type: ClothingHeadsetMedicalScience
   components:
@@ -162834,12 +162821,6 @@ entities:
   type: VehicleKeySecway
   components:
   - pos: -33.441254,58.69023
-    parent: 30
-    type: Transform
-- uid: 20464
-  type: SpawnVehiclePussywagon
-  components:
-  - pos: -32.5,9.5
     parent: 30
     type: Transform
 - uid: 20465
