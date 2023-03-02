@@ -1,0 +1,38 @@
+﻿- type: entity
+  id: Tentacle
+  name: tentacle
+  description: ERP!!??
+  components:
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeCircle
+        radius: 0.45
+      density: 1000
+      mask:
+      - MobMask
+      layer:
+      - MobLayer
+  - type: InteractionOutline
+  - type: TimedDespawn
+    lifetime: 1.1
+  - type: Clickable
+  - type: Sprite
+    sprite: /Textures/Effects/tentacle.rsi
+    state: hit
+
+  ## - type: Tentacle
+  - type: PointLight
+    enabled: true
+    radius: 2
+    energy: 6
+    color: OrangeRed
+
+  - type: IgniteOnCollide
+    fireStacks: 7
+  - type: StepTrigger
+    requiredTriggeredSpeed: -1
+    intersectRatio: 0.1
+  - type: Lava
+  - type: Physics
+    bodyType: Static

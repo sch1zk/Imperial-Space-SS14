@@ -1,5 +1,7 @@
-﻿# - type: gameMapPool
-#   id: CorvaxMapPool
-#   maps:
-#     - CorvaxDelta
-#     - CorvaxBox
+﻿- type: gameMapPool
+  id: CorvaxMapPool
+  maps:
+    - MooseImperial
+    - ClusterImperial
+    - CorvaxDelta
+    - CorvaxIshimura

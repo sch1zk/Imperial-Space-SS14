@@ -1,0 +1,19 @@
+﻿- type: constructionGraph
+  id: ScalpelShiv
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: Shiv
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 16
+            - tag: GlassShard
+              name: Glass Shard
+              icon:
+                sprite: Objects/Materials/Shards/shard.rsi
+                state: shard1
+              doAfter: 4
+    - node: Shiv
+      entity: ScalpelShiv
