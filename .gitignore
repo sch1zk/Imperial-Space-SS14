@@ -6,9 +6,14 @@
 *.user
 *.userosscache
 *.sln.docstates
+.bin
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+
+# Secret
+Resources/Prototypes/CorvaxSecrets
+Resources/Prototypes/CorvaxSecretsServer
 
 # Build results
 [Dd]ebug/
@@ -300,4 +305,3 @@ Resources/MapImages
 ## Docfx stuff
 /Content.Docfx/api/
 /Content.Docfx/*site
-
