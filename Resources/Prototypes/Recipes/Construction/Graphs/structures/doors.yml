@@ -13,6 +13,13 @@
             - material: Steel
               amount: 20
               doAfter: 15
+        - to: HiddenDoor
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - material: Steel
+              amount: 20
+              doAfter: 15
         - to: woodDoor
           completed:
             - !type:SnapToGrid { }
@@ -50,6 +57,17 @@
               doAfter: 15
     - node: metalDoor
       entity: MetalDoor
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 20
+          steps:
+            - tool: Anchoring
+              doAfter: 15
+    - node: HiddenDoor
+      entity: HiddenDoor
       edges:
         - to: start
           completed:
