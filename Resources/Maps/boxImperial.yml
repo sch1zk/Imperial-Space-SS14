@@ -3919,7 +3919,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 21828
     type: Docking
-  - SecondsUntilStateChange: -42923.01
+  - SecondsUntilStateChange: -43185.785
     changeAirtight: False
     state: Opening
     type: Door
@@ -18498,7 +18498,7 @@ entities:
   - pos: 20.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -7977.602
+  - SecondsUntilStateChange: -8240.374
     state: Closing
     type: Door
   - inputs:
@@ -18887,7 +18887,7 @@ entities:
   - pos: 19.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -7977.602
+  - SecondsUntilStateChange: -8240.374
     state: Closing
     type: Door
   - inputs:
@@ -82366,8 +82366,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 15.087361
-      - 56.757217
+      - 14.664915
+      - 55.168015
       - 0
       - 0
       - 0
@@ -82381,8 +82381,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 18.405577
-      - 69.24003
+      - 17.89022
+      - 67.30131
       - 0
       - 0
       - 0
@@ -82426,8 +82426,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 14.664915
-      - 55.168015
+      - 14.254297
+      - 53.62331
       - 0
       - 0
       - 0
@@ -82441,8 +82441,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 17.389294
-      - 65.41687
+      - 16.902393
+      - 63.585197
       - 0
       - 0
       - 0
@@ -82456,8 +82456,8 @@ entities:
     - volume: 2500
       temperature: 235
       moles:
-      - 15.087361
-      - 56.757217
+      - 14.664915
+      - 55.168015
       - 0
       - 0
       - 0
@@ -82486,8 +82486,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 15.064036
-      - 56.669468
+      - 14.642243
+      - 55.08272
       - 0
       - 0
       - 0
@@ -82501,8 +82501,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 10.42977
-      - 39.2358
+      - 9.853881
+      - 37.06936
       - 0
       - 0
       - 0
@@ -82516,8 +82516,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 17.89022
-      - 67.30131
+      - 17.389294
+      - 65.41687
       - 0
       - 0
       - 0
@@ -120408,7 +120408,7 @@ entities:
   - pos: 21.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -7977.602
+  - SecondsUntilStateChange: -8240.374
     state: Closing
     type: Door
   - inputs:
@@ -152051,7 +152051,7 @@ entities:
   - pos: 23.5,-17.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -7977.602
+  - SecondsUntilStateChange: -8240.374
     state: Closing
     type: Door
   - inputs:
@@ -152067,7 +152067,7 @@ entities:
   - pos: 23.5,-18.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -7977.602
+  - SecondsUntilStateChange: -8240.374
     state: Closing
     type: Door
   - inputs:
@@ -152083,7 +152083,7 @@ entities:
   - pos: 23.5,-19.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -7977.602
+  - SecondsUntilStateChange: -8240.374
     state: Closing
     type: Door
   - inputs:
@@ -170339,7 +170339,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 562
     type: Docking
-  - SecondsUntilStateChange: -42923.01
+  - SecondsUntilStateChange: -43185.785
     changeAirtight: False
     state: Opening
     type: Door
@@ -205090,6 +205090,60 @@ entities:
   - pos: 20.5,1.5
     parent: 8364
     type: Transform
+- uid: 26022
+  type: EftposCommand
+  components:
+  - pos: -9.2678585,-25.901335
+    parent: 8364
+    type: Transform
+- uid: 26023
+  type: EftposCargo
+  components:
+  - pos: -20.81083,-15.325327
+    parent: 8364
+    type: Transform
+- uid: 26024
+  type: EftposCargo
+  components:
+  - pos: -25.831846,-21.20032
+    parent: 8364
+    type: Transform
+- uid: 26025
+  type: EftposCargo
+  components:
+  - pos: -25.58676,-21.234495
+    parent: 8364
+    type: Transform
+- uid: 26026
+  type: EftposMedical
+  components:
+  - pos: 18.778406,-21.29606
+    parent: 8364
+    type: Transform
+- uid: 26027
+  type: EftposMedical
+  components:
+  - pos: 31.901497,-19.397673
+    parent: 8364
+    type: Transform
+- uid: 26028
+  type: EftposMedical
+  components:
+  - pos: 45.207848,-45.750328
+    parent: 8364
+    type: Transform
+- uid: 26029
+  type: EftposCivilian
+  components:
+  - pos: 29.261696,1.0607418
+    parent: 8364
+    type: Transform
+- uid: 26030
+  type: EftposCivilian
+  components:
+  - pos: 29.68357,1.1701168
+    parent: 8364
+    type: Transform
 - uid: 26031
   type: FirelockGlass
   components:
@@ -205264,6 +205318,18 @@ entities:
   type: TableGlass
   components:
   - pos: 45.5,-45.5
+    parent: 8364
+    type: Transform
+- uid: 26059
+  type: EftposCivilian
+  components:
+  - pos: 39.207596,-4.276196
+    parent: 8364
+    type: Transform
+- uid: 26060
+  type: EftposCivilian
+  components:
+  - pos: 45.26724,-5.244946
     parent: 8364
     type: Transform
 - uid: 26061
@@ -208306,6 +208372,12 @@ entities:
   - pos: 0.4866991,51.66165
     parent: 8364
     type: Transform
+- uid: 26548
+  type: EftposCivilian
+  components:
+  - pos: 61.825184,-2.484335
+    parent: 8364
+    type: Transform
 - uid: 26549
   type: Chair
   components:
@@ -209565,6 +209637,12 @@ entities:
   - pos: -75.5,4.5
     parent: 8364
     type: Transform
+- uid: 26736
+  type: EftposScience
+  components:
+  - pos: 74.177155,-20.296741
+    parent: 8364
+    type: Transform
 - uid: 26737
   type: ClosetEmergencyFilledRandom
   components:
@@ -210358,6 +210436,24 @@ entities:
     pos: -7.5,-25.5
     parent: 8364
     type: Transform
+- uid: 26850
+  type: EftposScience
+  components:
+  - pos: 74.395905,-20.421741
+    parent: 8364
+    type: Transform
+- uid: 26851
+  type: EftposScience
+  components:
+  - pos: 74.03653,-16.411238
+    parent: 8364
+    type: Transform
+- uid: 26852
+  type: EftposScience
+  components:
+  - pos: 69.77978,-34.935165
+    parent: 8364
+    type: Transform
 - uid: 26853
   type: FoodSnackPopcorn
   components:
@@ -210428,6 +210524,12 @@ entities:
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
+- uid: 26863
+  type: EftposEngineering
+  components:
+  - pos: 8.45239,-53.320732
+    parent: 8364
+    type: Transform
 - uid: 26864
   type: ParchisBoard
   components:
@@ -213535,6 +213637,54 @@ entities:
   - flags: SessionSpecific
     type: MetaData
   - pos: -39.5,-4.5
+    parent: 8364
+    type: Transform
+- uid: 27324
+  type: EftposEngineering
+  components:
+  - pos: 4.3088613,-61.99124
+    parent: 8364
+    type: Transform
+- uid: 27325
+  type: EftposEngineering
+  components:
+  - pos: 8.732228,-53.35692
+    parent: 8364
+    type: Transform
+- uid: 27326
+  type: EftposEngineering
+  components:
+  - pos: 8.263478,-53.38817
+    parent: 8364
+    type: Transform
+- uid: 27327
+  type: EftposEngineering
+  components:
+  - pos: 3.7085629,-43.413742
+    parent: 8364
+    type: Transform
+- uid: 27328
+  type: EftposSecurity
+  components:
+  - pos: 13.961021,39.616013
+    parent: 8364
+    type: Transform
+- uid: 27329
+  type: EftposSecurity
+  components:
+  - pos: -1.7882168,30.821775
+    parent: 8364
+    type: Transform
+- uid: 27330
+  type: EftposSecurity
+  components:
+  - pos: 6.8768764,35.596275
+    parent: 8364
+    type: Transform
+- uid: 27331
+  type: EftposSecurity
+  components:
+  - pos: 7.783127,35.7994
     parent: 8364
     type: Transform
 ...
