@@ -29,7 +29,7 @@
       "name": "spawn"
     },
     {
-      "name": "hit",
+      "name": "tentacle",
       "delays": [
         [
           0.1,
