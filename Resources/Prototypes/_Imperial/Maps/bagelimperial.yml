@@ -1,7 +1,7 @@
 - type: gameMap
   id: Bagel
   mapName: 'Bagel Station'
-  mapPath: imperial_bagel.yml
+  mapPath: /Maps/imperial_bagel.yml
   minPlayers: 0
   maxPlayers: 70
   stations:
