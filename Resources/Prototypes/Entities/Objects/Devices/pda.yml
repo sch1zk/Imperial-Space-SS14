@@ -722,8 +722,8 @@
     borderColor: "#000000"
     accentHColor: "#447987"
   - type: Appearance
-    visuals:
-      - type: PDAVisualizer
-        state: pda-ert
+    # visuals:
+      # - type: PDAVisualizer
+        # state: pda-ert
   - type: Icon
     state: pda-ert

@@ -20,7 +20,7 @@
   category: construction-category-weapons
   description: Лом, для открывания дверей и битья лиц
   icon:
-    sprite: Objects\Tools\crowbar.rsi
+    sprite: Objects/Tools/crowbar.rsi
     state: icon
   objectType: Item
 
@@ -33,7 +33,7 @@
   category: construction-category-weapons
   description: Ведро, что бы набирать воду
   icon:
-    sprite: Objects\Tools\bucket.rsi
+    sprite: Objects/Tools/bucket.rsi
     state: icon
   objectType: Item
 
@@ -49,7 +49,7 @@
   description: Рукоятка, являющаяся неотъемлемой частью для создания инструмента.
   icon:
     sprite: Objects/Weapons/Melee/pickaxe.rsi
-    state: Handle
+    state: handle
   objectType: Item
 
 - type: construction
@@ -74,7 +74,7 @@
   category: construction-category-weapons
   description: Нужны что бы перерезать провода
   icon:
-    sprite: Objects\Tools\wirecutters.rsi
+    sprite: Objects/Tools/wirecutters.rsi
     state: cutters-map
   objectType: Item
 

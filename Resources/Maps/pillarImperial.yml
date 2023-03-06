@@ -73428,18 +73428,6 @@ entities:
   - pos: -45.5,-0.5
     parent: 8
     type: Transform
-- uid: 6571
-  type: SpawnVehiclePussywagon
-  components:
-  - pos: -40.5,-3.5
-    parent: 8
-    type: Transform
-- uid: 6572
-  type: VehicleKeyPussyWagon
-  components:
-  - pos: -40.51725,-3.5401745
-    parent: 8
-    type: Transform
 - uid: 6573
   type: SpawnPointJanitor
   components:
@@ -177489,18 +177477,6 @@ entities:
   type: Rack
   components:
   - pos: 27.5,46.5
-    parent: 8
-    type: Transform
-- uid: 21455
-  type: SpawnVehiclePussywagon
-  components:
-  - pos: 28.5,46.5
-    parent: 8
-    type: Transform
-- uid: 21456
-  type: VehicleKeyPussyWagon
-  components:
-  - pos: 28.456114,46.301723
     parent: 8
     type: Transform
 - uid: 21457
