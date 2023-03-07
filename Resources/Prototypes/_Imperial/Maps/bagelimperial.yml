@@ -1,9 +1,8 @@
 - type: gameMap
-  id: Bagel
+  id: BagelImperial
   mapName: 'Bagel Station'
   mapPath: /Maps/imperial_bagel.yml
-  minPlayers: 0
-  maxPlayers: 70
+  minPlayers: 30
   stations:
     Bagel:
       mapNameTemplate: '{0} Bagel Station {1}'
