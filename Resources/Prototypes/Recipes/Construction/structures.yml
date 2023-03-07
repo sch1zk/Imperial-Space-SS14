@@ -707,6 +707,23 @@
     - !type:TileNotBlocked
 
 - type: construction
+  name: hidden door
+  id: HiddenDoor
+  graph: DoorGraph
+  startNode: start
+  targetNode: HiddenDoor
+  category: construction-category-structures
+  description: A hiden door. Looks like a wall.
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: Structures/Doors/MineralDoors/hidden_door.rsi
+    state: closed
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
   name: plasma door
   id: PlasmaDoor
   graph: DoorGraph
