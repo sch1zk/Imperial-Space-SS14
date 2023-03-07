@@ -157,6 +157,42 @@
       - MobLayer
 
 - type: entity
+  name: Glazohvat
+  parent: MobXeno
+  id: Glazohvat
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Glazohvat.rsi
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: idle
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: Stamina
+    excess: 300
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      250: 1
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeCircle
+        radius: 0.45
+      density: 400
+      mask:
+      - MobMask
+      layer:
+      - MobLayer
+
+- type: entity
   name: Drone
   parent: MobXeno
   id: MobXenoDrone

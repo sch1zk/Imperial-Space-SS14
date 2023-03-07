@@ -10,6 +10,9 @@
   id: AirSensor
 
 - type: Tag
+  id: HiddenDoor
+
+- type: Tag
   id: ATVKeys
 
 - type: Tag
@@ -203,6 +206,21 @@
 
 - type: Tag
   id: EmitterBolt
+
+- type: Tag
+  id: CannonBolt
+
+- type: Tag
+  id: CannonBolt2
+
+- type: Tag
+  id: CannonBolt3
+
+- type: Tag
+  id: CannonBolt4
+
+- type: Tag
+  id: CannonBolt5
 
 - type: Tag
   id: ExplosivePassable

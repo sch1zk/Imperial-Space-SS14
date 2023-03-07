@@ -37,8 +37,6 @@
     state: icon
   objectType: Item
 
-
-
 - type: construction
   name: Рукоятка инструмента
   id: Handle

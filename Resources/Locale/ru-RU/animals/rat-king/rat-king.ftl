@@ -1,3 +1,9 @@
+tick-king-raise-army-name = Отпочковать клеща
+tick-king-raise-army-description = Потратьте некоторое количество голода, чтобы отпочковать дружественного клеща для вашей защиты.
+tick-king-domain-name = Лечение
+tick-king-domain-description = Потратьте некоторое количество голода, чтобы выпустить в воздух облако миазм.
+tick-king-domain-popup = В воздух поднимается облако миазм.
+tick-king-too-hungry = Вы слишком голодны, чтобы использовать эту способность!
 rat-king-raise-army-name = Поднять армию
 rat-king-raise-army-description = Потратьте некоторое количество голода, чтобы призвать дружественную крысу для вашей защиты.
 rat-king-domain-name = Крысиное королевство
