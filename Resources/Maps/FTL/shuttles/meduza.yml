@@ -130,7 +130,7 @@ entities:
     type: Fixtures
   - type: OccluderTree
   - type: Shuttle
-  - nextUpdate: 4727.0137845
+  - nextUpdate: 7381.4899866
     type: GridPathfinding
   - gravityShakeSound: !type:SoundPathSpecifier
       path: /Audio/Effects/alert.ogg
@@ -475,7 +475,7 @@ entities:
     parent: 0
     type: Transform
 - uid: 44
-  type: ChairPilotSeat
+  type: ComputerIFF
   components:
   - rot: 1.5707963267948966 rad
     pos: 1.5,3.5

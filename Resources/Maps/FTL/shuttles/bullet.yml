@@ -124,7 +124,7 @@ entities:
     type: Fixtures
   - type: OccluderTree
   - type: Shuttle
-  - nextUpdate: 6180.2295838
+  - nextUpdate: 8772.9684657
     type: GridPathfinding
   - gravityShakeSound: !type:SoundPathSpecifier
       path: /Audio/Effects/alert.ogg
@@ -643,7 +643,7 @@ entities:
     parent: 0
     type: Transform
 - uid: 62
-  type: ComputerRadar
+  type: ComputerIFF
   components:
   - pos: 4.5,8.5
     parent: 0
