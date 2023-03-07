@@ -321,6 +321,15 @@
     - CannonBolt
   - type: TimedDespawn
     lifetime: 5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10 # max 30 per tile
+    intensitySlope: 5
+    totalIntensity: 70 # 60 total damage to distribute over tiles
+    maxTileBreak: 3
+  - type: TriggerOnCollide
+    fixtureID: projectile
 
 - type: entity
   name: cannon bolt2
@@ -356,6 +365,16 @@
     - CannonBolt2
   - type: TimedDespawn
     lifetime: 4
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 5 # max 30 per tile
+    intensitySlope: 3
+    totalIntensity: 15 # 60 total damage to distribute over tiles
+    maxTileBreak: 1
+  - type: TriggerOnCollide
+    fixtureID: projectile
+
 
 - type: entity
   name: cannon bolt3
@@ -391,6 +410,16 @@
     - CannonBolt3
   - type: TimedDespawn
     lifetime: 3
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 3 # max 30 per tile
+    intensitySlope: 1
+    totalIntensity: 3 # 60 total damage to distribute over tiles
+    maxTileBreak: 0
+  - type: TriggerOnCollide
+    fixtureID: projectile
+
 
 - type: entity
   name: cannon bolt4
