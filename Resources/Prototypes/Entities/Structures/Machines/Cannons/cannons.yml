@@ -37,12 +37,12 @@
       map: ["enum.StorageVisualLayers.Lock"]
   - type: Emitter
     boltType: CannonBolt
-    baseFireBurstDelayMax: 20
-    fireBurstDelayMin: 20
-    fireBurstDelayMax: 20
-    baseFireBurstDelayMin: 20
-    baseFireInterval: 20
-    fireInterval: 20
+    baseFireBurstDelayMax: 40
+    fireBurstDelayMin: 40
+    fireBurstDelayMax: 40
+    baseFireBurstDelayMin: 40
+    baseFireInterval: 40
+    fireInterval: 40
     fireBurstSize: 1
     fireRateMultiplier: 1
   - type: Gun
@@ -68,7 +68,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 350
+          damage: 1250
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -115,12 +115,12 @@
     anchored: true
   - type: Emitter
     boltType: CannonBolt2
-    baseFireBurstDelayMax: 12
-    fireBurstDelayMin: 12
-    fireBurstDelayMax: 12
-    baseFireBurstDelayMin: 12
-    baseFireInterval: 12
-    fireInterval: 12
+    baseFireBurstDelayMax: 16
+    fireBurstDelayMin: 16
+    fireBurstDelayMax: 16
+    baseFireBurstDelayMin: 16
+    baseFireInterval: 16
+    fireInterval: 16
     fireBurstSize: 1
     fireRateMultiplier: 1
   - type: Sprite
@@ -158,7 +158,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 350
+          damage: 950
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -205,12 +205,12 @@
     anchored: true
   - type: Emitter
     boltType: CannonBolt3
-    baseFireBurstDelayMax: 8
-    fireBurstDelayMin: 8
-    fireBurstDelayMax: 8
-    baseFireBurstDelayMin: 8
-    baseFireInterval: 8
-    fireInterval: 8
+    baseFireBurstDelayMax: 10
+    fireBurstDelayMin: 10
+    fireBurstDelayMax: 10
+    baseFireBurstDelayMin: 10
+    baseFireInterval: 10
+    fireInterval: 10
     fireBurstSize: 1
     fireRateMultiplier: 1
   - type: Sprite
@@ -248,7 +248,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 350
+          damage: 650
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -338,7 +338,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 350
+          damage: 450
         behaviors:
         - !type:PlaySoundBehavior
           sound:
