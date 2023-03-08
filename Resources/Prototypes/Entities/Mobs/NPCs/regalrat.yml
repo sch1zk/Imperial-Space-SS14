@@ -134,6 +134,128 @@
     - RegalRatNameTitle
 
 - type: entity
+  name: Mother tick
+  id: MobTickKing
+  parent: SimpleSpaceMobBase
+  description: She's mother tick.
+  components:
+  - type: CombatMode
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.00
+    baseSprintSpeed : 7.00
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask: SimpleHostileCompound
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: Faction
+    factions:
+    - SimpleHostile
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/KingTick.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeCircle
+        radius: 0.3
+      density: 230
+      mask:
+      - SmallMobMask
+      layer:
+      - SmallMobLayer
+  - type: MobState
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      350: Critical
+      700: Dead
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh1.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 12
+        Piercing: 8
+        Brute: 10
+  - type: Body
+    prototype: Rat
+    requiredLegs: 1 # TODO: More than 1 leg
+  - type: Hunger # probably should be prototyped
+    thresholds:
+      Overfed: 450
+      Okay: 350
+      Peckish: 200
+      Starving: 50
+      Dead: 0
+    baseDecayRate: 0.001666666666
+  - type: Appearance
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: regalrat
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: Puller
+    needsHands: false
+  - type: GhostTakeoverAvailable
+    makeSentient: true
+    name: Tick King
+    description: You are the Tick King, scavenge food in order to produce tick minions to do your bidding.
+    rules: You are an antagonist, scavenge, attack, and grow your hoard!
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: NoSlip
+  - type: TickKing
+    actionRaiseArmy:
+      useDelay: 30
+      icon: Mobs/Aliens/Xenos/spacetick.rsi/icon.png
+      name: tick-king-raise-army-name
+      description: tick-king-raise-army-description
+      itemIconStyle: NoItem
+      event: !type:TickKingRaiseArmyActionEvent
+    hungerPerArmyUse: 10
+    actionDomain:
+      useDelay: 10
+      icon: Interface/Actions/ratKingDomain.png
+      name: tick-king-domain-name
+      description: tick-king-domain-description
+      itemIconStyle: NoItem
+      event: !type:TickKingDomainActionEvent
+    hungerPerDomainUse: 50
+  - type: MobsterAccent
+  - type: DiseaseCarrier
+    carrierDiseases:
+    - VentCough
+    - AMIV
+    - SpaceCold
+    - SpaceFlu
+    - BirdFlew
+    - VanAusdallsRobovirus
+    - BleedersBite
+    - Plague
+    - TongueTwister
+  - type: MobPrice
+    price: 2500 # rat wealth
+
+- type: entity
   id: MobRatKingBuff
   parent: MobRatKing
   suffix: Buff

@@ -1,0 +1,2494 @@
+meta:
+  format: 3
+  name: DemoStation
+  author: Space-Wizards
+  postmapinit: false
+tilemap:
+  0: Space
+  1: FloorArcadeBlue
+  2: FloorArcadeBlue2
+  3: FloorArcadeRed
+  4: FloorAsteroidCoarseSand0
+  5: FloorAsteroidCoarseSandDug
+  6: FloorAsteroidIronsand1
+  7: FloorAsteroidIronsand2
+  8: FloorAsteroidIronsand3
+  9: FloorAsteroidIronsand4
+  10: FloorAsteroidSand
+  11: FloorAsteroidTile
+  12: FloorBar
+  13: FloorBasalt
+  14: FloorBlue
+  15: FloorBlueCircuit
+  16: FloorBoxing
+  17: FloorCarpetClown
+  18: FloorCarpetOffice
+  19: FloorCave
+  20: FloorCaveDrought
+  21: FloorClown
+  22: FloorDark
+  23: FloorDarkDiagonal
+  24: FloorDarkDiagonalMini
+  25: FloorDarkHerringbone
+  26: FloorDarkMini
+  27: FloorDarkMono
+  28: FloorDarkOffset
+  29: FloorDarkPavement
+  30: FloorDarkPavementVertical
+  31: FloorDarkPlastic
+  32: FloorDesert
+  33: FloorDirt
+  34: FloorEighties
+  35: FloorElevatorShaft
+  36: FloorFlesh
+  37: FloorFreezer
+  38: FloorGlass
+  39: FloorGold
+  40: FloorGrass
+  41: FloorGrassDark
+  42: FloorGrassJungle
+  43: FloorGrassLight
+  44: FloorGreenCircuit
+  45: FloorGym
+  46: FloorHydro
+  47: FloorKitchen
+  48: FloorLaundry
+  49: FloorLino
+  50: FloorLowDesert
+  51: FloorMetalDiamond
+  52: FloorMime
+  53: FloorMono
+  54: FloorPlanetGrass
+  55: FloorPlastic
+  56: FloorRGlass
+  57: FloorReinforced
+  58: FloorRockVault
+  59: FloorShowroom
+  60: FloorShuttleBlue
+  61: FloorShuttleOrange
+  62: FloorShuttlePurple
+  63: FloorShuttleRed
+  64: FloorShuttleWhite
+  65: FloorSilver
+  66: FloorSnow
+  67: FloorSteel
+  68: FloorSteelDiagonal
+  69: FloorSteelDiagonalMini
+  70: FloorSteelDirty
+  71: FloorSteelHerringbone
+  72: FloorSteelMini
+  73: FloorSteelMono
+  74: FloorSteelOffset
+  75: FloorSteelPavement
+  76: FloorSteelPavementVertical
+  77: FloorTechMaint
+  78: FloorTechMaint2
+  79: FloorTechMaint3
+  80: FloorWhite
+  81: FloorWhiteDiagonal
+  82: FloorWhiteDiagonalMini
+  83: FloorWhiteHerringbone
+  84: FloorWhiteMini
+  85: FloorWhiteMono
+  86: FloorWhiteOffset
+  87: FloorWhitePavement
+  88: FloorWhitePavementVertical
+  89: FloorWhitePlastic
+  90: FloorWood
+  91: FloorWoodTile
+  92: Lattice
+  93: Plating
+entities:
+- uid: 0
+  components:
+  - name: Эсминец типа Камень
+    type: MetaData
+  - pos: 47.82923,-1.1773018
+    parent: invalid
+    type: Transform
+  - chunks:
+      0,0:
+        ind: 0,0
+        tiles: SgAAAFEAAABRAAAAUQAAAFEAAABRAAAAUQAAAFEAAABRAAAAUQAAAEoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEoAAABRAAAAVQAAAFUAAABVAAAAVQAAAFUAAABVAAAAVQAAAFEAAABKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABKAAAAUQAAAFUAAABVAAAAVQAAAFUAAABVAAAAVQAAAFUAAABRAAAASgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASgAAAFEAAABRAAAAUQAAAFEAAABRAAAAUQAAAFEAAABRAAAAUQAAAEoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEoAAABKAAAASgAAAEoAAABKAAAAUQAAAEoAAABKAAAASgAAAEoAAABKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAASgAAAFEAAABRAAAAUQAAAFEAAABRAAAAUQAAAFEAAABKAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAEoAAABRAAAAVQAAAFUAAABVAAAAVQAAAFUAAABRAAAASgAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABKAAAAUQAAAFUAAABVAAAAVQAAAFUAAABVAAAAUQAAAEoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAASgAAAFEAAABRAAAAVQAAAFUAAABVAAAAUQAAAFEAAABKAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAADMAAABKAAAAUQAAAFEAAABRAAAAUQAAAFEAAABKAAAAMwAAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAASgAAAEoAAABKAAAASgAAAEoAAABKAAAASgAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAFwAAAAzAAAAXAAAADMAAABcAAAAMwAAAFwAAABcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAAFwAAAAzAAAAXAAAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+      0,-1:
+        ind: 0,-1
+        tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0AAABdAAAAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQAAAFEAAABRAAAAUQAAAFEAAABRAAAAUQAAAFEAAABdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0AAABRAAAAVQAAAFUAAABVAAAAVQAAAFUAAABRAAAAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAAAAUQAAAFUAAABVAAAAVQAAAFUAAABVAAAAUQAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAAXQAAAFEAAABRAAAAUQAAAFEAAABRAAAAUQAAAFEAAABdAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASgAAAEoAAABKAAAASgAAAEoAAABRAAAASgAAAEoAAABKAAAASgAAAEoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    type: MapGrid
+  - type: Broadphase
+  - angularDamping: 0.05
+    linearDamping: 0.05
+    fixedRotation: False
+    bodyType: Dynamic
+    type: Physics
+  - fixtures: []
+    type: Fixtures
+  - type: OccluderTree
+  - type: Shuttle
+  - nextUpdate: 1144.526762
+    type: GridPathfinding
+  - gravityShakeSound: !type:SoundPathSpecifier
+      path: /Audio/Effects/alert.ogg
+    type: Gravity
+  - chunkCollection: {}
+    type: DecalGrid
+  - tiles:
+      0,0: 0
+      0,1: 0
+      0,2: 0
+      0,3: 0
+      0,4: 0
+      1,0: 0
+      1,1: 0
+      1,2: 0
+      1,3: 0
+      0,5: 1
+      0,6: 1
+      0,8: 1
+      0,9: 1
+      1,4: 1
+      1,5: 1
+      1,6: 1
+      1,7: 1
+      1,8: 1
+      1,9: 1
+      1,10: 1
+      1,11: 1
+      2,0: 1
+      2,1: 1
+      2,2: 1
+      2,3: 1
+      2,4: 1
+      2,5: 1
+      2,6: 1
+      2,7: 1
+      2,8: 1
+      2,9: 1
+      2,10: 1
+      2,11: 1
+      3,0: 1
+      3,1: 1
+      3,2: 1
+      3,3: 1
+      3,4: 1
+      3,5: 1
+      3,6: 1
+      3,7: 1
+      3,8: 1
+      3,9: 1
+      3,10: 1
+      3,11: 1
+      3,12: 1
+      4,0: 1
+      4,1: 1
+      4,2: 1
+      4,3: 1
+      4,4: 1
+      4,5: 1
+      4,6: 1
+      4,7: 1
+      4,8: 1
+      4,9: 1
+      4,10: 1
+      4,11: 1
+      4,12: 1
+      5,0: 1
+      5,1: 1
+      5,2: 1
+      5,3: 1
+      5,4: 1
+      5,5: 1
+      5,6: 1
+      5,7: 1
+      5,8: 1
+      5,9: 1
+      5,10: 1
+      5,11: 1
+      5,12: 1
+      6,0: 1
+      6,1: 1
+      6,2: 1
+      6,3: 1
+      6,4: 1
+      6,5: 1
+      6,6: 1
+      6,7: 1
+      6,8: 1
+      6,9: 1
+      6,10: 1
+      6,11: 1
+      6,12: 1
+      7,0: 1
+      7,1: 1
+      7,2: 1
+      7,3: 1
+      7,4: 1
+      7,5: 1
+      7,6: 1
+      7,7: 1
+      7,8: 1
+      7,9: 1
+      7,10: 1
+      7,11: 1
+      7,12: 1
+      8,0: 1
+      8,1: 1
+      8,2: 1
+      8,3: 1
+      8,4: 1
+      8,5: 1
+      8,6: 1
+      8,7: 1
+      8,8: 1
+      8,9: 1
+      8,10: 1
+      8,11: 1
+      9,0: 1
+      9,1: 1
+      9,2: 1
+      9,3: 1
+      9,4: 1
+      9,5: 1
+      9,6: 1
+      9,7: 1
+      9,8: 1
+      9,9: 1
+      9,10: 1
+      9,11: 1
+      10,0: 1
+      10,1: 1
+      10,2: 1
+      10,3: 1
+      10,4: 1
+      10,5: 1
+      10,6: 1
+      10,8: 1
+      10,9: 1
+      0,-2: 1
+      0,-1: 1
+      1,-5: 1
+      1,-4: 1
+      1,-3: 1
+      1,-2: 1
+      1,-1: 1
+      2,-6: 1
+      2,-5: 1
+      2,-4: 1
+      2,-3: 1
+      2,-2: 1
+      2,-1: 1
+      3,-6: 1
+      3,-5: 1
+      3,-4: 1
+      3,-3: 1
+      3,-2: 1
+      3,-1: 1
+      4,-7: 1
+      4,-6: 1
+      4,-5: 1
+      4,-4: 1
+      4,-3: 1
+      4,-2: 1
+      4,-1: 1
+      5,-7: 1
+      5,-6: 1
+      5,-5: 1
+      5,-4: 1
+      5,-3: 1
+      5,-2: 1
+      5,-1: 1
+      6,-7: 1
+      6,-6: 1
+      6,-5: 1
+      6,-4: 1
+      6,-3: 1
+      6,-2: 1
+      6,-1: 1
+      7,-6: 1
+      7,-5: 1
+      7,-4: 1
+      7,-3: 1
+      7,-2: 1
+      7,-1: 1
+      8,-6: 1
+      8,-5: 1
+      8,-4: 1
+      8,-3: 1
+      8,-2: 1
+      8,-1: 1
+      9,-5: 1
+      9,-4: 1
+      9,-3: 1
+      9,-2: 1
+      9,-1: 1
+      10,-2: 1
+      10,-1: 1
+    uniqueMixes:
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 21.824879
+      - 82.10312
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    type: GridAtmosphere
+  - type: GasTileOverlay
+  - type: RadiationGridResistance
+- uid: 1
+  type: PoweredlightEmpty
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 4.5,5.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 2
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 3.5,10.5
+    parent: 0
+    type: Transform
+- uid: 3
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 4.5,10.5
+    parent: 0
+    type: Transform
+- uid: 4
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 5.5,10.5
+    parent: 0
+    type: Transform
+- uid: 5
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 6.5,10.5
+    parent: 0
+    type: Transform
+- uid: 6
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 7.5,10.5
+    parent: 0
+    type: Transform
+- uid: 7
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,7.5
+    parent: 0
+    type: Transform
+- uid: 8
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,6.5
+    parent: 0
+    type: Transform
+- uid: 9
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,7.5
+    parent: 0
+    type: Transform
+- uid: 10
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,6.5
+    parent: 0
+    type: Transform
+- uid: 11
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 0.5,3.5
+    parent: 0
+    type: Transform
+- uid: 12
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 0.5,0.5
+    parent: 0
+    type: Transform
+- uid: 13
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 10.5,0.5
+    parent: 0
+    type: Transform
+- uid: 14
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 15
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 16
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 17
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 18
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 4.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 19
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 5.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 20
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 6.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 21
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 3.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 22
+  type: ShuttleWindow
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 7.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 23
+  type: WallShuttle
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 24
+  type: WallShuttle
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 8.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 25
+  type: WallShuttleDiagonal
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 2.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 26
+  type: WallShuttleDiagonal
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 1.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 27
+  type: WallShuttleDiagonal
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 8.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 28
+  type: WallShuttleDiagonal
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 29
+  type: WallShuttleDiagonal
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 0.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 30
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 1.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 31
+  type: WallShuttleDiagonal
+  components:
+  - pos: 0.5,4.5
+    parent: 0
+    type: Transform
+- uid: 32
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 2.5,10.5
+    parent: 0
+    type: Transform
+- uid: 33
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,10.5
+    parent: 0
+    type: Transform
+- uid: 34
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 1.5,8.5
+    parent: 0
+    type: Transform
+- uid: 35
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 2.5,8.5
+    parent: 0
+    type: Transform
+- uid: 36
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,8.5
+    parent: 0
+    type: Transform
+- uid: 37
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 9.5,8.5
+    parent: 0
+    type: Transform
+- uid: 38
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 0.5,1.5
+    parent: 0
+    type: Transform
+- uid: 39
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 10.5,1.5
+    parent: 0
+    type: Transform
+- uid: 40
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 1.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 41
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 9.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 42
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 9.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 43
+  type: WallShuttleDiagonal
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 10.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 44
+  type: WallShuttleDiagonal
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 10.5,4.5
+    parent: 0
+    type: Transform
+- uid: 45
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 1.5,5.5
+    parent: 0
+    type: Transform
+- uid: 46
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 1.5,4.5
+    parent: 0
+    type: Transform
+- uid: 47
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 9.5,5.5
+    parent: 0
+    type: Transform
+- uid: 48
+  type: WallShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 9.5,4.5
+    parent: 0
+    type: Transform
+- uid: 49
+  type: AirlockExternalGlass
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 2.5,9.5
+    parent: 0
+    type: Transform
+- uid: 50
+  type: AirlockExternalGlass
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 8.5,9.5
+    parent: 0
+    type: Transform
+- uid: 51
+  type: AirlockGlassShuttle
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 0.5,2.5
+    parent: 0
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      hard: False
+      id: docking
+    type: Fixtures
+- uid: 52
+  type: AirlockGlassShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 10.5,2.5
+    parent: 0
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      hard: False
+      id: docking
+    type: Fixtures
+- uid: 53
+  type: ShuttleWindow
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 10.5,3.5
+    parent: 0
+    type: Transform
+- uid: 54
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 2.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 55
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 3.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 56
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 4.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 57
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 6.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 58
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 7.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 59
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 60
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 2.5,4.5
+    parent: 0
+    type: Transform
+- uid: 61
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 3.5,4.5
+    parent: 0
+    type: Transform
+- uid: 62
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 4.5,4.5
+    parent: 0
+    type: Transform
+- uid: 63
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 6.5,4.5
+    parent: 0
+    type: Transform
+- uid: 64
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 7.5,4.5
+    parent: 0
+    type: Transform
+- uid: 65
+  type: WallShuttle
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 8.5,4.5
+    parent: 0
+    type: Transform
+- uid: 66
+  type: LaserCannonTier1
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 5.5,12.5
+    parent: 0
+    type: Transform
+- uid: 67
+  type: LaserCannonTier2
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 3.5,12.5
+    parent: 0
+    type: Transform
+- uid: 68
+  type: LaserCannonTier2
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 7.5,12.5
+    parent: 0
+    type: Transform
+- uid: 69
+  type: LaserCannonTier3
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 0.5,9.5
+    parent: 0
+    type: Transform
+- uid: 70
+  type: LaserCannonTier3
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 10.5,9.5
+    parent: 0
+    type: Transform
+- uid: 71
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,9.5
+    parent: 0
+    type: Transform
+- uid: 72
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,10.5
+    parent: 0
+    type: Transform
+- uid: 73
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,11.5
+    parent: 0
+    type: Transform
+- uid: 74
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,11.5
+    parent: 0
+    type: Transform
+- uid: 75
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 3.5,11.5
+    parent: 0
+    type: Transform
+- uid: 76
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 4.5,11.5
+    parent: 0
+    type: Transform
+- uid: 77
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 5.5,11.5
+    parent: 0
+    type: Transform
+- uid: 78
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 6.5,11.5
+    parent: 0
+    type: Transform
+- uid: 79
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 7.5,11.5
+    parent: 0
+    type: Transform
+- uid: 80
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 8.5,11.5
+    parent: 0
+    type: Transform
+- uid: 81
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,11.5
+    parent: 0
+    type: Transform
+- uid: 82
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,10.5
+    parent: 0
+    type: Transform
+- uid: 83
+  type: Catwalk
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,9.5
+    parent: 0
+    type: Transform
+- uid: 84
+  type: AtmosDeviceFanTiny
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 0.5,2.5
+    parent: 0
+    type: Transform
+- uid: 85
+  type: AtmosDeviceFanTiny
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 10.5,2.5
+    parent: 0
+    type: Transform
+- uid: 86
+  type: AtmosDeviceFanTiny
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,9.5
+    parent: 0
+    type: Transform
+- uid: 87
+  type: AtmosDeviceFanTiny
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 8.5,9.5
+    parent: 0
+    type: Transform
+- uid: 88
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 10.5,0.5
+    parent: 0
+    type: Transform
+- uid: 89
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 10.5,3.5
+    parent: 0
+    type: Transform
+- uid: 90
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 0.5,3.5
+    parent: 0
+    type: Transform
+- uid: 91
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 0.5,0.5
+    parent: 0
+    type: Transform
+- uid: 92
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 93
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 94
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 3.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 95
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 4.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 96
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 5.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 97
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 6.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 98
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 7.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 99
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 100
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 101
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,7.5
+    parent: 0
+    type: Transform
+- uid: 102
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 1.5,6.5
+    parent: 0
+    type: Transform
+- uid: 103
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,7.5
+    parent: 0
+    type: Transform
+- uid: 104
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 9.5,6.5
+    parent: 0
+    type: Transform
+- uid: 105
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 3.5,10.5
+    parent: 0
+    type: Transform
+- uid: 106
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 4.5,10.5
+    parent: 0
+    type: Transform
+- uid: 107
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 5.5,10.5
+    parent: 0
+    type: Transform
+- uid: 108
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 6.5,10.5
+    parent: 0
+    type: Transform
+- uid: 109
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 7.5,10.5
+    parent: 0
+    type: Transform
+- uid: 110
+  type: Thruster
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 4.5,-6.5
+    parent: 0
+    type: Transform
+- uid: 111
+  type: Thruster
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 5.5,-6.5
+    parent: 0
+    type: Transform
+- uid: 112
+  type: Thruster
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 6.5,-6.5
+    parent: 0
+    type: Transform
+- uid: 113
+  type: Thruster
+  components:
+  - pos: 0.5,6.5
+    parent: 0
+    type: Transform
+- uid: 114
+  type: Thruster
+  components:
+  - pos: 10.5,6.5
+    parent: 0
+    type: Transform
+- uid: 115
+  type: Thruster
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 10.5,5.5
+    parent: 0
+    type: Transform
+- uid: 116
+  type: Thruster
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 0.5,5.5
+    parent: 0
+    type: Transform
+- uid: 117
+  type: Thruster
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 0.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 118
+  type: Thruster
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 10.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 119
+  type: AirlockGlass
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 5.5,4.5
+    parent: 0
+    type: Transform
+- uid: 120
+  type: AirlockGlass
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 5.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 121
+  type: GeneratorUranium
+  components:
+  - pos: 4.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 122
+  type: GeneratorUranium
+  components:
+  - pos: 5.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 123
+  type: GeneratorUranium
+  components:
+  - pos: 6.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 124
+  type: GravityGeneratorMini
+  components:
+  - pos: 3.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 125
+  type: Gyroscope
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 7.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 126
+  type: SubstationBasic
+  components:
+  - pos: 8.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 127
+  type: APCHyperCapacity
+  components:
+  - pos: 6.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 128
+  type: CableHV
+  components:
+  - pos: 4.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 129
+  type: CableHV
+  components:
+  - pos: 5.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 130
+  type: CableHV
+  components:
+  - pos: 6.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 131
+  type: CableHV
+  components:
+  - pos: 6.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 132
+  type: CableHV
+  components:
+  - pos: 7.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 133
+  type: CableHV
+  components:
+  - pos: 8.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 134
+  type: CableHV
+  components:
+  - pos: 5.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 135
+  type: CableHV
+  components:
+  - pos: 5.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 136
+  type: CableHV
+  components:
+  - pos: 5.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 137
+  type: CableHV
+  components:
+  - pos: 5.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 138
+  type: CableHV
+  components:
+  - pos: 5.5,0.5
+    parent: 0
+    type: Transform
+- uid: 139
+  type: CableHV
+  components:
+  - pos: 5.5,1.5
+    parent: 0
+    type: Transform
+- uid: 140
+  type: CableHV
+  components:
+  - pos: 5.5,2.5
+    parent: 0
+    type: Transform
+- uid: 141
+  type: CableHV
+  components:
+  - pos: 5.5,3.5
+    parent: 0
+    type: Transform
+- uid: 142
+  type: CableHV
+  components:
+  - pos: 5.5,4.5
+    parent: 0
+    type: Transform
+- uid: 143
+  type: CableHV
+  components:
+  - pos: 5.5,5.5
+    parent: 0
+    type: Transform
+- uid: 144
+  type: CableHV
+  components:
+  - pos: 5.5,6.5
+    parent: 0
+    type: Transform
+- uid: 145
+  type: CableHV
+  components:
+  - pos: 5.5,7.5
+    parent: 0
+    type: Transform
+- uid: 146
+  type: CableHV
+  components:
+  - pos: 5.5,8.5
+    parent: 0
+    type: Transform
+- uid: 147
+  type: CableHV
+  components:
+  - pos: 5.5,9.5
+    parent: 0
+    type: Transform
+- uid: 148
+  type: CableHV
+  components:
+  - pos: 4.5,9.5
+    parent: 0
+    type: Transform
+- uid: 149
+  type: CableHV
+  components:
+  - pos: 3.5,9.5
+    parent: 0
+    type: Transform
+- uid: 150
+  type: CableHV
+  components:
+  - pos: 2.5,9.5
+    parent: 0
+    type: Transform
+- uid: 151
+  type: CableHV
+  components:
+  - pos: 1.5,9.5
+    parent: 0
+    type: Transform
+- uid: 152
+  type: CableHV
+  components:
+  - pos: 0.5,9.5
+    parent: 0
+    type: Transform
+- uid: 153
+  type: CableHV
+  components:
+  - pos: 6.5,9.5
+    parent: 0
+    type: Transform
+- uid: 154
+  type: CableHV
+  components:
+  - pos: 7.5,9.5
+    parent: 0
+    type: Transform
+- uid: 155
+  type: CableHV
+  components:
+  - pos: 8.5,9.5
+    parent: 0
+    type: Transform
+- uid: 156
+  type: CableHV
+  components:
+  - pos: 9.5,9.5
+    parent: 0
+    type: Transform
+- uid: 157
+  type: CableHV
+  components:
+  - pos: 10.5,9.5
+    parent: 0
+    type: Transform
+- uid: 158
+  type: CableHV
+  components:
+  - pos: 9.5,10.5
+    parent: 0
+    type: Transform
+- uid: 159
+  type: CableHV
+  components:
+  - pos: 1.5,10.5
+    parent: 0
+    type: Transform
+- uid: 160
+  type: CableHV
+  components:
+  - pos: 1.5,11.5
+    parent: 0
+    type: Transform
+- uid: 161
+  type: CableHV
+  components:
+  - pos: 2.5,11.5
+    parent: 0
+    type: Transform
+- uid: 162
+  type: CableHV
+  components:
+  - pos: 3.5,11.5
+    parent: 0
+    type: Transform
+- uid: 163
+  type: CableHV
+  components:
+  - pos: 4.5,11.5
+    parent: 0
+    type: Transform
+- uid: 164
+  type: CableHV
+  components:
+  - pos: 5.5,11.5
+    parent: 0
+    type: Transform
+- uid: 165
+  type: CableHV
+  components:
+  - pos: 6.5,11.5
+    parent: 0
+    type: Transform
+- uid: 166
+  type: CableHV
+  components:
+  - pos: 7.5,11.5
+    parent: 0
+    type: Transform
+- uid: 167
+  type: CableHV
+  components:
+  - pos: 8.5,11.5
+    parent: 0
+    type: Transform
+- uid: 168
+  type: CableHV
+  components:
+  - pos: 9.5,11.5
+    parent: 0
+    type: Transform
+- uid: 169
+  type: CableHV
+  components:
+  - pos: 3.5,12.5
+    parent: 0
+    type: Transform
+- uid: 170
+  type: CableHV
+  components:
+  - pos: 5.5,12.5
+    parent: 0
+    type: Transform
+- uid: 171
+  type: CableHV
+  components:
+  - pos: 7.5,12.5
+    parent: 0
+    type: Transform
+- uid: 172
+  type: ComputerShuttle
+  components:
+  - pos: 5.5,9.5
+    parent: 0
+    type: Transform
+- uid: 173
+  type: ComputerRadar
+  components:
+  - pos: 4.5,9.5
+    parent: 0
+    type: Transform
+- uid: 174
+  type: ComputerIFF
+  components:
+  - pos: 6.5,9.5
+    parent: 0
+    type: Transform
+- uid: 175
+  type: ChairPilotSeat
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 4.5,8.5
+    parent: 0
+    type: Transform
+- uid: 176
+  type: ChairPilotSeat
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 5.5,8.5
+    parent: 0
+    type: Transform
+- uid: 177
+  type: ChairPilotSeat
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 6.5,8.5
+    parent: 0
+    type: Transform
+- uid: 178
+  type: chem_master
+  components:
+  - pos: 8.5,3.5
+    parent: 0
+    type: Transform
+- uid: 179
+  type: chem_dispenser
+  components:
+  - pos: 7.5,3.5
+    parent: 0
+    type: Transform
+- uid: 180
+  type: CrateChemistrySupplies
+  components:
+  - pos: 9.5,3.5
+    parent: 0
+    type: Transform
+- uid: 181
+  type: Table
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 6.5,3.5
+    parent: 0
+    type: Transform
+- uid: 182
+  type: SheetPlasma
+  components:
+  - pos: 6.4167137,3.3305802
+    parent: 0
+    type: Transform
+- uid: 183
+  type: KitchenReagentGrinder
+  components:
+  - pos: 6.5,3.5
+    parent: 0
+    type: Transform
+- uid: 184
+  type: VendingMachineTankDispenserEVA
+  components:
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: 2.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 185
+  type: Hypospray
+  components:
+  - pos: 6.175522,3.5465097
+    parent: 0
+    type: Transform
+- uid: 186
+  type: CrateFoodMRE
+  components:
+  - pos: 2.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 187
+  type: OxygenCanister
+  components:
+  - pos: 8.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 188
+  type: NitrogenCanister
+  components:
+  - pos: 8.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 189
+  type: AirCanister
+  components:
+  - pos: 2.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 190
+  type: Bed
+  components:
+  - pos: 1.5,0.5
+    parent: 0
+    type: Transform
+- uid: 191
+  type: Bed
+  components:
+  - pos: 2.5,0.5
+    parent: 0
+    type: Transform
+- uid: 192
+  type: Bed
+  components:
+  - pos: 3.5,0.5
+    parent: 0
+    type: Transform
+- uid: 193
+  type: Bed
+  components:
+  - pos: 4.5,0.5
+    parent: 0
+    type: Transform
+- uid: 194
+  type: HospitalCurtainsOpen
+  components:
+  - pos: 1.5,0.5
+    parent: 0
+    type: Transform
+- uid: 195
+  type: HospitalCurtainsOpen
+  components:
+  - pos: 2.5,0.5
+    parent: 0
+    type: Transform
+- uid: 196
+  type: HospitalCurtainsOpen
+  components:
+  - pos: 3.5,0.5
+    parent: 0
+    type: Transform
+- uid: 197
+  type: HospitalCurtainsOpen
+  components:
+  - pos: 4.5,0.5
+    parent: 0
+    type: Transform
+- uid: 198
+  type: BedsheetBlack
+  components:
+  - pos: 1.5,0.5
+    parent: 0
+    type: Transform
+- uid: 199
+  type: BedsheetBlack
+  components:
+  - pos: 2.5,0.5
+    parent: 0
+    type: Transform
+- uid: 200
+  type: BedsheetBlack
+  components:
+  - pos: 3.5,0.5
+    parent: 0
+    type: Transform
+- uid: 201
+  type: BedsheetBlack
+  components:
+  - pos: 4.5,0.5
+    parent: 0
+    type: Transform
+- uid: 202
+  type: CableMV
+  components:
+  - pos: 8.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 203
+  type: CableMV
+  components:
+  - pos: 7.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 204
+  type: CableMV
+  components:
+  - pos: 6.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 205
+  type: CableMV
+  components:
+  - pos: 6.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 206
+  type: CableMV
+  components:
+  - pos: 6.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 207
+  type: CableMV
+  components:
+  - pos: 6.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 208
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 209
+  type: CableApcExtension
+  components:
+  - pos: 4.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 210
+  type: CableApcExtension
+  components:
+  - pos: 5.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 211
+  type: CableApcExtension
+  components:
+  - pos: 6.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 212
+  type: CableApcExtension
+  components:
+  - pos: 7.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 213
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 214
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 215
+  type: CableApcExtension
+  components:
+  - pos: 7.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 216
+  type: CableApcExtension
+  components:
+  - pos: 8.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 217
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 218
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 219
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 220
+  type: CableApcExtension
+  components:
+  - pos: 4.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 221
+  type: CableApcExtension
+  components:
+  - pos: 5.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 222
+  type: CableApcExtension
+  components:
+  - pos: 6.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 223
+  type: CableApcExtension
+  components:
+  - pos: 7.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 224
+  type: CableApcExtension
+  components:
+  - pos: 8.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 225
+  type: CableApcExtension
+  components:
+  - pos: 8.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 226
+  type: CableApcExtension
+  components:
+  - pos: 5.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 227
+  type: CableApcExtension
+  components:
+  - pos: 5.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 228
+  type: CableApcExtension
+  components:
+  - pos: 5.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 229
+  type: CableApcExtension
+  components:
+  - pos: 5.5,0.5
+    parent: 0
+    type: Transform
+- uid: 230
+  type: CableApcExtension
+  components:
+  - pos: 4.5,0.5
+    parent: 0
+    type: Transform
+- uid: 231
+  type: CableApcExtension
+  components:
+  - pos: 3.5,0.5
+    parent: 0
+    type: Transform
+- uid: 232
+  type: CableApcExtension
+  components:
+  - pos: 2.5,0.5
+    parent: 0
+    type: Transform
+- uid: 233
+  type: CableApcExtension
+  components:
+  - pos: 1.5,0.5
+    parent: 0
+    type: Transform
+- uid: 234
+  type: CableApcExtension
+  components:
+  - pos: 1.5,1.5
+    parent: 0
+    type: Transform
+- uid: 235
+  type: CableApcExtension
+  components:
+  - pos: 1.5,2.5
+    parent: 0
+    type: Transform
+- uid: 236
+  type: CableApcExtension
+  components:
+  - pos: 1.5,3.5
+    parent: 0
+    type: Transform
+- uid: 237
+  type: CableApcExtension
+  components:
+  - pos: 2.5,3.5
+    parent: 0
+    type: Transform
+- uid: 238
+  type: CableApcExtension
+  components:
+  - pos: 3.5,3.5
+    parent: 0
+    type: Transform
+- uid: 239
+  type: CableApcExtension
+  components:
+  - pos: 4.5,3.5
+    parent: 0
+    type: Transform
+- uid: 240
+  type: CableApcExtension
+  components:
+  - pos: 5.5,3.5
+    parent: 0
+    type: Transform
+- uid: 241
+  type: CableApcExtension
+  components:
+  - pos: 6.5,3.5
+    parent: 0
+    type: Transform
+- uid: 242
+  type: CableApcExtension
+  components:
+  - pos: 7.5,3.5
+    parent: 0
+    type: Transform
+- uid: 243
+  type: CableApcExtension
+  components:
+  - pos: 8.5,3.5
+    parent: 0
+    type: Transform
+- uid: 244
+  type: CableApcExtension
+  components:
+  - pos: 9.5,3.5
+    parent: 0
+    type: Transform
+- uid: 245
+  type: CableApcExtension
+  components:
+  - pos: 9.5,2.5
+    parent: 0
+    type: Transform
+- uid: 246
+  type: CableApcExtension
+  components:
+  - pos: 9.5,1.5
+    parent: 0
+    type: Transform
+- uid: 247
+  type: CableApcExtension
+  components:
+  - pos: 9.5,0.5
+    parent: 0
+    type: Transform
+- uid: 248
+  type: CableApcExtension
+  components:
+  - pos: 8.5,0.5
+    parent: 0
+    type: Transform
+- uid: 249
+  type: CableApcExtension
+  components:
+  - pos: 7.5,0.5
+    parent: 0
+    type: Transform
+- uid: 250
+  type: CableApcExtension
+  components:
+  - pos: 6.5,0.5
+    parent: 0
+    type: Transform
+- uid: 251
+  type: CableApcExtension
+  components:
+  - pos: 5.5,4.5
+    parent: 0
+    type: Transform
+- uid: 252
+  type: CableApcExtension
+  components:
+  - pos: 5.5,5.5
+    parent: 0
+    type: Transform
+- uid: 253
+  type: CableApcExtension
+  components:
+  - pos: 4.5,5.5
+    parent: 0
+    type: Transform
+- uid: 254
+  type: CableApcExtension
+  components:
+  - pos: 3.5,5.5
+    parent: 0
+    type: Transform
+- uid: 255
+  type: CableApcExtension
+  components:
+  - pos: 2.5,5.5
+    parent: 0
+    type: Transform
+- uid: 256
+  type: CableApcExtension
+  components:
+  - pos: 2.5,6.5
+    parent: 0
+    type: Transform
+- uid: 257
+  type: CableApcExtension
+  components:
+  - pos: 2.5,7.5
+    parent: 0
+    type: Transform
+- uid: 258
+  type: CableApcExtension
+  components:
+  - pos: 3.5,7.5
+    parent: 0
+    type: Transform
+- uid: 259
+  type: CableApcExtension
+  components:
+  - pos: 3.5,8.5
+    parent: 0
+    type: Transform
+- uid: 260
+  type: CableApcExtension
+  components:
+  - pos: 3.5,9.5
+    parent: 0
+    type: Transform
+- uid: 261
+  type: CableApcExtension
+  components:
+  - pos: 4.5,9.5
+    parent: 0
+    type: Transform
+- uid: 262
+  type: CableApcExtension
+  components:
+  - pos: 5.5,9.5
+    parent: 0
+    type: Transform
+- uid: 263
+  type: CableApcExtension
+  components:
+  - pos: 6.5,9.5
+    parent: 0
+    type: Transform
+- uid: 264
+  type: CableApcExtension
+  components:
+  - pos: 7.5,9.5
+    parent: 0
+    type: Transform
+- uid: 265
+  type: CableApcExtension
+  components:
+  - pos: 7.5,8.5
+    parent: 0
+    type: Transform
+- uid: 266
+  type: CableApcExtension
+  components:
+  - pos: 7.5,7.5
+    parent: 0
+    type: Transform
+- uid: 267
+  type: CableApcExtension
+  components:
+  - pos: 8.5,7.5
+    parent: 0
+    type: Transform
+- uid: 268
+  type: CableApcExtension
+  components:
+  - pos: 8.5,6.5
+    parent: 0
+    type: Transform
+- uid: 269
+  type: CableApcExtension
+  components:
+  - pos: 8.5,5.5
+    parent: 0
+    type: Transform
+- uid: 270
+  type: CableApcExtension
+  components:
+  - pos: 7.5,5.5
+    parent: 0
+    type: Transform
+- uid: 271
+  type: CableApcExtension
+  components:
+  - pos: 6.5,5.5
+    parent: 0
+    type: Transform
+- uid: 272
+  type: CableApcExtension
+  components:
+  - pos: 5.5,6.5
+    parent: 0
+    type: Transform
+- uid: 273
+  type: CableApcExtension
+  components:
+  - pos: 5.5,7.5
+    parent: 0
+    type: Transform
+- uid: 274
+  type: CableApcExtension
+  components:
+  - pos: 5.5,8.5
+    parent: 0
+    type: Transform
+- uid: 275
+  type: CableApcExtension
+  components:
+  - pos: 5.5,2.5
+    parent: 0
+    type: Transform
+- uid: 276
+  type: CableApcExtension
+  components:
+  - pos: 5.5,1.5
+    parent: 0
+    type: Transform
+- uid: 277
+  type: Rack
+  components:
+  - pos: 6.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 278
+  type: Rack
+  components:
+  - pos: 7.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 279
+  type: SheetSteel
+  components:
+  - pos: 6.3759956,-1.4548732
+    parent: 0
+    type: Transform
+- uid: 280
+  type: SheetSteel
+  components:
+  - pos: 6.5947456,-1.6423732
+    parent: 0
+    type: Transform
+- uid: 281
+  type: SheetPlasteel
+  components:
+  - pos: 7.3134956,-1.4079982
+    parent: 0
+    type: Transform
+- uid: 282
+  type: SheetPlasteel
+  components:
+  - pos: 7.5166206,-1.6579982
+    parent: 0
+    type: Transform
+- uid: 283
+  type: Rack
+  components:
+  - pos: 3.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 284
+  type: Rack
+  components:
+  - pos: 4.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 285
+  type: SheetRGlass
+  components:
+  - pos: 3.2327843,-1.4079982
+    parent: 0
+    type: Transform
+- uid: 286
+  type: SheetRGlass
+  components:
+  - pos: 3.3577843,-1.5642482
+    parent: 0
+    type: Transform
+- uid: 287
+  type: SheetGlass
+  components:
+  - pos: 3.6077843,-1.4548732
+    parent: 0
+    type: Transform
+- uid: 288
+  type: PartRodMetal
+  components:
+  - pos: 4.3867455,-1.3611232
+    parent: 0
+    type: Transform
+- uid: 289
+  type: SheetPlastic
+  components:
+  - pos: 4.4974937,-1.5798732
+    parent: 0
+    type: Transform
+- uid: 290
+  type: ChairPilotSeat
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 2.5,7.5
+    parent: 0
+    type: Transform
+- uid: 291
+  type: ChairPilotSeat
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 2.5,6.5
+    parent: 0
+    type: Transform
+- uid: 292
+  type: ChairPilotSeat
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 8.5,7.5
+    parent: 0
+    type: Transform
+- uid: 293
+  type: ChairPilotSeat
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 8.5,6.5
+    parent: 0
+    type: Transform
+- uid: 294
+  type: Table
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 7.5,0.5
+    parent: 0
+    type: Transform
+- uid: 295
+  type: Table
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 8.5,0.5
+    parent: 0
+    type: Transform
+- uid: 296
+  type: WeaponCapacitorRecharger
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 7.5,0.5
+    parent: 0
+    type: Transform
+- uid: 297
+  type: WeaponCapacitorRecharger
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 8.5,0.5
+    parent: 0
+    type: Transform
+- uid: 298
+  type: CloningPod
+  components:
+  - pos: 1.5,3.5
+    parent: 0
+    type: Transform
+- uid: 299
+  type: ComputerCloningConsole
+  components:
+  - pos: 2.5,3.5
+    parent: 0
+    type: Transform
+- uid: 300
+  type: MedicalScanner
+  components:
+  - pos: 3.5,3.5
+    parent: 0
+    type: Transform
+- uid: 301
+  type: Table
+  components:
+  - pos: 4.5,3.5
+    parent: 0
+    type: Transform
+- uid: 302
+  type: MaterialBiomass
+  components:
+  - pos: 4.3490677,3.6333427
+    parent: 0
+    type: Transform
+- uid: 303
+  type: MaterialBiomass
+  components:
+  - pos: 4.5990677,3.5239677
+    parent: 0
+    type: Transform
+- uid: 304
+  type: MaterialBiomass
+  components:
+  - pos: 4.4115677,3.3833427
+    parent: 0
+    type: Transform
+- uid: 305
+  type: MaterialBiomass
+  components:
+  - pos: 4.6928177,3.7427177
+    parent: 0
+    type: Transform
+- uid: 306
+  type: Rack
+  components:
+  - pos: 9.5,0.5
+    parent: 0
+    type: Transform
+- uid: 307
+  type: ClothingBeltUtilityFilled
+  components:
+  - pos: 9.521881,0.54476583
+    parent: 0
+    type: Transform
+- uid: 308
+  type: WeldingFuelTankFull
+  components:
+  - pos: 7.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 309
+  type: PoweredlightEmpty
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 6.5,5.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 310
+  type: PoweredlightEmpty
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 3.5,8.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 311
+  type: PoweredlightEmpty
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 7.5,8.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 312
+  type: PoweredlightEmpty
+  components:
+  - pos: 4.5,3.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 313
+  type: PoweredlightEmpty
+  components:
+  - pos: 6.5,3.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 314
+  type: PoweredlightEmpty
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,0.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 315
+  type: PoweredlightEmpty
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 8.5,0.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 316
+  type: PoweredlightEmpty
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 2.5,-3.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 317
+  type: PoweredlightEmpty
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 8.5,-3.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 318
+  type: PoweredlightEmpty
+  components:
+  - pos: 4.5,-1.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 319
+  type: PoweredlightEmpty
+  components:
+  - pos: 6.5,-1.5
+    parent: 0
+    type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
+- uid: 320
+  type: CableApcExtension
+  components:
+  - pos: 6.5,-0.5
+    parent: 0
+    type: Transform
+...
