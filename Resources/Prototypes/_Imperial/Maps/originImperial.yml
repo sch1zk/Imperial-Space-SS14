@@ -15,7 +15,7 @@
       availableJobs:
         CargoTechnician: [ 5, 5 ]
         Passenger: [ -1, -1 ]
-        Bartender: [ 3, 3 ]
+        Bartender: [ 2, 2 ]
         Botanist: [ 3, 3 ]
         Chef: [ 3, 3 ]
         Clown: [ 1, 1 ]
@@ -49,3 +49,4 @@
         IAA: [1,1]
         Adjutant: [1,1]
         Reporter: [2,2]
+        Psychologist: [1,1]
