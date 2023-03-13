@@ -1,5 +1,5 @@
 ﻿- type: gameMap
-  id: deltaImperial
+  id: DeltaImperial
   mapName: 'Delta Station'
   mapPath: /Maps/deltaImperial.yml
   minPlayers: 60
