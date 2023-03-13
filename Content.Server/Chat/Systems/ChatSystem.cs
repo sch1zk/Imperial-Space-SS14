@@ -3,6 +3,7 @@ using System.Text;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
+using Content.Server.Corvax.Sponsors;
 using Content.Server.GameTicking;
 using Content.Server.Ghost.Components;
 using Content.Server.Players;
@@ -54,6 +55,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly MobStateSystem _mobStateSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperRange = 2; // how far whisper goes in world units
@@ -454,6 +456,11 @@ public sealed partial class ChatSystem : SharedChatSystem
         var wrappedMessage = Loc.GetString("chat-manager-entity-looc-wrap-message",
             ("entityName", name),
             ("message", FormattedMessage.EscapeText(message)));
+
+        if (_sponsorsManager.TryGetInfo(player.UserId, out var sponsorData) && sponsorData.HavePriorityJoin == true && sponsorData.OOCColor != null)
+        {
+            wrappedMessage = Loc.GetString("chat-manager-entity-looc-patron-wrap-message", ("patronColor", sponsorData.OOCColor), ("entityName", name), ("message", FormattedMessage.EscapeText(message)));
+        }
 
         SendInVoiceRange(ChatChannel.LOOC, message, wrappedMessage, source, hideChat, false);
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"LOOC from {player:Player}: {message}");
