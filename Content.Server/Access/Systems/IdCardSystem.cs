@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.Database;
 using Content.Server.Kitchen.Components;
@@ -8,10 +9,8 @@ using Content.Shared.Access.Systems;
 using Content.Shared.Database;
 using Content.Server.Economy;
 using Content.Shared.Popups;
-using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using System.Linq;
 
 namespace Content.Server.Access.Systems
 {
@@ -60,7 +59,10 @@ namespace Content.Server.Access.Systems
                 if (randomPick <= 0.25f)
                 {
                     _popupSystem.PopupEntity(Loc.GetString("id-card-component-microwave-bricked", ("id", uid)), uid);
+
                     access.Tags.Clear();
+                    Dirty(access);
+
                     _adminLogger.Add(LogType.Action, LogImpact.Medium,
                         $"{ToPrettyString(args.Microwave)} cleared access on {ToPrettyString(uid):entity}");
                 }
@@ -71,7 +73,9 @@ namespace Content.Server.Access.Systems
 
                 // Give them a wonderful new access to compensate for everything
                 var random = _random.Pick(_prototypeManager.EnumeratePrototypes<AccessLevelPrototype>().ToArray());
+
                 access.Tags.Add(random.ID);
+                Dirty(access);
 
                 _adminLogger.Add(LogType.Action, LogImpact.Medium,
                         $"{ToPrettyString(args.Microwave)} added {random.ID} access to {ToPrettyString(uid):entity}");
