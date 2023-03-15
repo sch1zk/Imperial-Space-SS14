@@ -44,3 +44,6 @@
         SecurityCadet: [ 2, 2 ]
         SalvageSpecialist: [ 2, 2 ]
         Quartermaster: [ 1, 1 ]
+        SecurityBorg: [ 1, 1 ]
+        MedicalBorg: [ 1, 1 ]
+        EngineeringBorg: [ 1, 1 ]

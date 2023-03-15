@@ -13,6 +13,7 @@ examine-headset-channel = [color={ $color }]:{ $key } для канала { $id 
 examine-default-channel = Укажите { $prefix } для общения в канале по умолчанию ([color={ $color }]{ $channel }[/color]).
 examine-headset-default-channel = Отображается, что каналом по умолчанию этой гарнитуры является [color={ $color }]{ $channel }[/color].
 examine-encryption-key-default-channel = Каналом по умолчанию является [color={ $color }]{ $channel }[/color].
+chat-radio-AI = ИИ
 chat-radio-common = Общий
 chat-radio-centcom = Центком
 chat-radio-command = Командный

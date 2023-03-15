@@ -31576,8 +31576,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 18.405577
-      - 69.24003
+      - 17.89022
+      - 67.30131
       - 0
       - 0
       - 0
@@ -31606,8 +31606,8 @@ entities:
     - volume: 2500
       temperature: 235
       moles:
-      - 18.405577
-      - 69.24003
+      - 17.89022
+      - 67.30131
       - 0
       - 0
       - 0
@@ -37869,7 +37869,7 @@ entities:
   components:
   - type: MetaData
   - type: Transform
-  - index: 2
+  - index: 5
     type: Map
   - type: PhysicsMap
   - type: Broadphase
@@ -84566,8 +84566,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 12.021078
-      - 45.22215
+      - 11.684488
+      - 43.95593
       - 0
       - 0
       - 0
@@ -104007,6 +104007,24 @@ entities:
   - pos: -28.5,-13.5
     parent: 60
     type: Transform
+- uid: 10582
+  type: SpawnMedicalBorg
+  components:
+  - pos: 22.5,3.5
+    parent: 60
+    type: Transform
+- uid: 10583
+  type: SpawnMedicalBorg
+  components:
+  - pos: 24.5,1.5
+    parent: 60
+    type: Transform
+- uid: 10584
+  type: SpawnSecurityBorg
+  components:
+  - pos: 22.5,1.5
+    parent: 60
+    type: Transform
 - uid: 10585
   type: CableMV
   components:
@@ -104047,6 +104065,12 @@ entities:
   type: CableMV
   components:
   - pos: 4.5,-30.5
+    parent: 60
+    type: Transform
+- uid: 10592
+  type: SpawnSecurityBorg
+  components:
+  - pos: 24.5,3.5
     parent: 60
     type: Transform
 - uid: 10593
@@ -104119,6 +104143,18 @@ entities:
   type: CableApcExtension
   components:
   - pos: 7.5,-33.5
+    parent: 60
+    type: Transform
+- uid: 10605
+  type: SpawnEngineeringBorg
+  components:
+  - pos: 22.5,2.5
+    parent: 60
+    type: Transform
+- uid: 10606
+  type: SpawnEngineeringBorg
+  components:
+  - pos: 24.5,2.5
     parent: 60
     type: Transform
 - uid: 10609

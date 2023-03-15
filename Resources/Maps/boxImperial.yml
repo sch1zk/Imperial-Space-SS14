@@ -3919,7 +3919,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 21828
     type: Docking
-  - SecondsUntilStateChange: -48241.703
+  - SecondsUntilStateChange: -48716.49
     changeAirtight: False
     state: Opening
     type: Door
@@ -5271,7 +5271,7 @@ entities:
   components:
   - type: MetaData
   - type: Transform
-  - index: 10
+  - index: 3
     type: Map
   - type: PhysicsMap
   - type: Broadphase
@@ -18498,7 +18498,7 @@ entities:
   - pos: 20.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -13296.292
+  - SecondsUntilStateChange: -13771.076
     state: Closing
     type: Door
   - inputs:
@@ -18887,7 +18887,7 @@ entities:
   - pos: 19.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -13296.292
+  - SecondsUntilStateChange: -13771.076
     state: Closing
     type: Door
   - inputs:
@@ -75581,7 +75581,7 @@ entities:
       45,-24: 0
       45,-23: 0
       45,-22: 0
-      45,-21: 11
+      45,-21: 13
       45,-20: 0
       45,-19: 0
       45,-18: 0
@@ -78714,9 +78714,9 @@ entities:
       16,-71: 0
       16,-70: 0
       16,-68: 0
-      16,-67: 13
-      16,-66: 13
-      16,-65: 13
+      16,-67: 14
+      16,-66: 14
+      16,-65: 14
       17,-75: 0
       17,-74: 0
       17,-73: 0
@@ -78724,9 +78724,9 @@ entities:
       17,-71: 0
       17,-70: 0
       17,-68: 0
-      17,-67: 13
-      17,-66: 13
-      17,-65: 13
+      17,-67: 14
+      17,-66: 14
+      17,-65: 14
       18,-75: 0
       18,-74: 0
       18,-73: 0
@@ -78734,9 +78734,9 @@ entities:
       18,-71: 0
       18,-70: 0
       18,-68: 0
-      18,-67: 13
-      18,-66: 13
-      18,-65: 13
+      18,-67: 14
+      18,-66: 14
+      18,-65: 14
       19,-75: 0
       19,-74: 0
       19,-73: 0
@@ -79288,7 +79288,7 @@ entities:
       -3,-68: 0
       -3,-67: 0
       -3,-66: 0
-      -3,-65: 14
+      -3,-65: 15
       -2,-80: 0
       -2,-79: 0
       -2,-78: 0
@@ -79985,9 +79985,9 @@ entities:
       12,-71: 0
       12,-70: 0
       12,-68: 0
-      12,-67: 15
-      12,-66: 15
-      12,-65: 15
+      12,-67: 16
+      12,-66: 16
+      12,-65: 16
       13,-79: 0
       13,-78: 0
       13,-77: 0
@@ -79999,9 +79999,9 @@ entities:
       13,-71: 0
       13,-70: 0
       13,-68: 0
-      13,-67: 15
-      13,-66: 15
-      13,-65: 15
+      13,-67: 16
+      13,-66: 16
+      13,-65: 16
       14,-75: 0
       14,-74: 0
       14,-73: 0
@@ -80009,9 +80009,9 @@ entities:
       14,-71: 0
       14,-70: 0
       14,-68: 0
-      14,-67: 15
-      14,-66: 15
-      14,-65: 15
+      14,-67: 16
+      14,-66: 16
+      14,-65: 16
       15,-75: 0
       15,-74: 0
       15,-73: 0
@@ -82344,8 +82344,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 13.855177
-      - 52.121857
+      - 13.467232
+      - 50.662445
       - 0
       - 0
       - 0
@@ -82359,8 +82359,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 16.902393
-      - 63.585197
+      - 16.429127
+      - 61.804813
       - 0
       - 0
       - 0
@@ -82404,8 +82404,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 13.467232
-      - 50.662445
+      - 13.090149
+      - 49.243896
       - 0
       - 0
       - 0
@@ -82419,8 +82419,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 15.969111
-      - 60.07428
+      - 15.521976
+      - 58.3922
       - 0
       - 0
       - 0
@@ -82434,8 +82434,8 @@ entities:
     - volume: 2500
       temperature: 235
       moles:
-      - 13.855177
-      - 52.121857
+      - 13.467232
+      - 50.662445
       - 0
       - 0
       - 0
@@ -82464,8 +82464,8 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 13.833757
-      - 52.041275
+      - 13.446412
+      - 50.584118
       - 0
       - 0
       - 0
@@ -82479,8 +82479,38 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 8.79574
-      - 33.08873
+      - 8.310075
+      - 31.261703
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 20.04244
+      - 75.39776
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 15.969111
+      - 60.07428
       - 0
       - 0
       - 0
@@ -82496,21 +82526,6 @@ entities:
       moles:
       - 20.619795
       - 77.56971
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-    - volume: 2500
-      temperature: 293.15
-      moles:
-      - 16.429127
-      - 61.804813
       - 0
       - 0
       - 0
@@ -120407,7 +120422,7 @@ entities:
   - pos: 21.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -13296.292
+  - SecondsUntilStateChange: -13771.076
     state: Closing
     type: Door
   - inputs:
@@ -152105,7 +152120,7 @@ entities:
   - pos: 23.5,-17.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -13296.292
+  - SecondsUntilStateChange: -13771.076
     state: Closing
     type: Door
   - inputs:
@@ -152121,7 +152136,7 @@ entities:
   - pos: 23.5,-18.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -13296.292
+  - SecondsUntilStateChange: -13771.076
     state: Closing
     type: Door
   - inputs:
@@ -152137,7 +152152,7 @@ entities:
   - pos: 23.5,-19.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -13296.292
+  - SecondsUntilStateChange: -13771.076
     state: Closing
     type: Door
   - inputs:
@@ -170484,7 +170499,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 562
     type: Docking
-  - SecondsUntilStateChange: -48241.703
+  - SecondsUntilStateChange: -48716.49
     changeAirtight: False
     state: Opening
     type: Door
@@ -214614,6 +214629,42 @@ entities:
   type: TableGlass
   components:
   - pos: 31.5,-30.5
+    parent: 8364
+    type: Transform
+- uid: 27418
+  type: SpawnSecurityBorg
+  components:
+  - pos: -1.5,-13.5
+    parent: 8364
+    type: Transform
+- uid: 27419
+  type: SpawnSecurityBorg
+  components:
+  - pos: 0.5,-13.5
+    parent: 8364
+    type: Transform
+- uid: 27420
+  type: SpawnEngineeringBorg
+  components:
+  - pos: -2.5,-11.5
+    parent: 8364
+    type: Transform
+- uid: 27421
+  type: SpawnEngineeringBorg
+  components:
+  - pos: 1.5,-11.5
+    parent: 8364
+    type: Transform
+- uid: 27422
+  type: SpawnMedicalBorg
+  components:
+  - pos: -2.5,-12.5
+    parent: 8364
+    type: Transform
+- uid: 27423
+  type: SpawnMedicalBorg
+  components:
+  - pos: 1.5,-12.5
     parent: 8364
     type: Transform
 ...

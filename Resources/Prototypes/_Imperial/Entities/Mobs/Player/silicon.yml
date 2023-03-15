@@ -1,0 +1,311 @@
+- type: entity
+  abstract: true
+  name: BaseBorg
+  id: SiliconBorgBase
+  parent: PlayerSiliconBase
+  components:
+  - type: Inventory
+    templateId: borg
+  - type: Repairable
+    doAfterDelay: 10
+  - type: TypingIndicator
+    proto: robot
+  - type: Actions
+  - type: Tag
+    tags:
+      - FootstepSound
+      - DoorBumpOpener
+  - type: CombatMode
+  - type: UnpoweredFlashlight
+    toggleAction:
+      name: action-name-toggle-light
+      description: action-description-toggle-light
+      icon: { sprite: Objects/Tools/flashlight.rsi, state: flashlight }
+      iconOn: Objects/Tools/flashlight.rsi/flashlight-on.png
+      event: !type:ToggleActionEvent
+  - type: PointLight
+    enabled: false
+    radius: 3.5
+    softness: 1
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+  - type: NameIdentifier
+    group: GenericNumber
+  - type: RandomMetadata
+    nameSegments:
+    - names_ai_imperial
+  - type: IntrinsicRadioReceiver
+
+- type: entity
+  name: security borg
+  id: secborg
+  parent: SiliconBorgBase
+  description: Main fear of NanoTrasen enemies.
+  components:
+  - type: InnateTool
+    tools:
+      - id: WeaponLaserBorg
+      - id: StunbatonBorg
+      - id: WeaponDisablerBorg
+      - id: JawsOfLife
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 3.5
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      250: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Imperial\Mobs\Silicons\securityborg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: idle
+  - type: Appearance
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: idle
+      Dead:
+        Base: dead
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeCircle
+        radius: 0.45
+      density: 1000
+      mask:
+      - MobMask
+      layer:
+      - MobLayer
+    channels:
+      - AIchannel
+  - type: IntrinsicRadioTransmitter
+    channels:
+      - Security
+      - Common
+      - AI
+  - type: ActiveRadio
+    channels:
+      - Common
+      - Security
+      - AI
+  - type: Access
+    groups:
+    - AllAccess
+  - type: GhostTakeoverAvailable
+    allowMovement: true
+    name: ghost-role-information-security-borg-name
+    description: ghost-role-information-security-borg-description
+    rules: ghost-role-information-borg-rules
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/Effects/Footsteps/hull5.ogg
+
+- type: entity
+  name: engineering borg
+  id: engborg
+  description: The machine that turned out to be better than man.
+  parent: SiliconBorgBase
+  components:
+  - type: InnateTool
+    tools:
+      - id: trayScanner
+      - id: Omnitool
+      - id: WelderExperimental
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 4
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Imperial\Mobs\Silicons\engineeringborg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: idle
+  - type: Appearance
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: idle
+      Dead:
+        Base: dead
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeCircle
+        radius: 0.45
+      density: 1000
+      mask:
+      - MobMask
+      layer:
+      - MobLayer
+  - type: ActiveRadio
+    channels:
+      - Engineering
+      - Common
+      - AI
+  - type: IntrinsicRadioTransmitter
+    channels:
+      - Engineering
+      - Common
+      - AI
+  - type: Access
+    groups:
+    - AllAccess
+  - type: GhostTakeoverAvailable
+    allowMovement: true
+    name: ghost-role-information-engineering-borg-name
+    description: ghost-role-information-engineering-borg-description
+    rules: ghost-role-information-borg-rules
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/Effects/Footsteps/hull5.ogg
+
+- type: entity
+  name: medical borg
+  id: medborg
+  description: The most heartless doctor.
+  parent: SiliconBorgBase
+  components:
+  - type: Tag
+    tags:
+      - DoorBumpOpener
+  - type: InnateTool
+    tools:
+      - id: HandheldHealthAnalyzer
+      - id: Hypospray
+      - id: JawsOfLife
+      - id: HandheldCrewMonitor
+      - id: ClothingBackpackSatchelChemistry
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.5
+    baseSprintSpeed : 4.5
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      120: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Imperial\Mobs\Silicons\medicalborg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: idle
+  - type: Appearance
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: idle
+      Dead:
+        Base: dead
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeCircle
+        radius: 0.45
+      density: 1000
+      mask:
+      - MobMask
+      layer:
+      - MobLayer
+  - type: ActiveRadio
+    channels:
+      - Medical
+      - Common
+      - AI
+  - type: IntrinsicRadioTransmitter
+    channels:
+      - Medical
+      - Common
+      - AI
+  - type: Access
+    groups:
+    - AllAccess
+  - type: GhostTakeoverAvailable
+    allowMovement: true
+    name: ghost-role-information-medical-borg-name
+    description: ghost-role-information-medical-borg-description
+    rules: ghost-role-information-borg-rules
+
+- type: entity
+  name: assault borg
+  id: assaultborg
+  parent: SiliconBorgBase
+  description: Something remotely resembling a security borg.
+  components:
+  - type: InnateTool
+    tools:
+      - id: Emag
+      - id: EnergySword
+      - id: ClothingBackpackDuffelSyndicateAssaultBorg
+      - id: SyndicateJawsOfLife
+      - id: WeaponLightMachineGunL6
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 3
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      500: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Imperial\Mobs\Silicons\assaultborg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: idle
+  - type: Appearance
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: idle
+      Dead:
+        Base: dead
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeCircle
+        radius: 0.45
+      density: 1000
+      mask:
+      - MobMask
+      layer:
+      - MobLayer
+    channels:
+      - AIchannel
+  - type: IntrinsicRadioTransmitter
+    channels:
+      - Syndicate
+  - type: ActiveRadio
+    channels:
+      - Syndicate
+  - type: GhostTakeoverAvailable
+    allowMovement: true
+    name: ghost-role-information-assault-borg-name
+    description: ghost-role-information-assault-borg-description
+    rules: ghost-role-information-borg-rules
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/Effects/Footsteps/hull5.ogg

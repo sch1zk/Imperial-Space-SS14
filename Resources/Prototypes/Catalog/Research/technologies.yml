@@ -545,9 +545,13 @@
   requiredTechnologies:
   - ScientificTechnology
   unlockedRecipes:
+  - SecurityBorgBody
+  - MedicalBorgBody
+  - EngineeringBorgBody
   - ProximitySensor
   - LeftArmBorg
   - RightArmBorg
+  - BorgTablet
   #- Drone
   - ExosuitFabricatorMachineCircuitboard
 

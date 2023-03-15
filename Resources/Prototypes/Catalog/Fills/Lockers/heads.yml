@@ -59,6 +59,8 @@
       - id: RubberStampCaptain
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
+      - id: EncryptionKeyAI
+      - id: EncryptionKeyAI
 
 - type: entity
   id: LockerHeadOfPersonnelFilled

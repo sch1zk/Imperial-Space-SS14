@@ -66,6 +66,7 @@
   components:
   - type: EncryptionKey
     channels:
+    - AI
     - Common
     - Command
     - CentCom

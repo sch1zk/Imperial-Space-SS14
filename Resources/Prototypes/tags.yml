@@ -647,3 +647,12 @@
 
 - type: Tag
   id: SubdermalImplant
+
+- type: Tag
+  id: Stunbaton
+
+- type: Tag
+  id: LaserGun
+
+- type: Tag
+  id: Brain

@@ -44,6 +44,9 @@
           False: {state: stunbaton_off}
   - type: StaticPrice
     price: 100
+  - type: Tag
+    tags:
+    - Stunbaton
 
 - type: entity
   name: flash
