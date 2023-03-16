@@ -1,2 +1,11 @@
 - type: Tag
   id: SpaceCredits
+
+- type: Tag
+  id: Stunbaton
+
+- type: Tag
+  id: LaserGun
+
+- type: Tag
+  id: Brain

@@ -49,3 +49,6 @@
         ResearchAssistant: [1,1]
         Reporter: [1,1]
         Adjutant: [1,1]
+        SecurityBorg: [ 1, 1 ]
+        MedicalBorg: [ 1, 1 ]
+        EngineeringBorg: [ 1, 1 ]

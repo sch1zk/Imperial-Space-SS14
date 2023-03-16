@@ -359,6 +359,10 @@
     - ProximitySensor
     - LeftArmBorg
     - RightArmBorg
+    - SecurityBorgBody
+    - MedicalBorgBody
+    - EngineeringBorgBody
+    - BorgTablet
     - RipleyHarness
     - RipleyLArm
     - RipleyRArm
