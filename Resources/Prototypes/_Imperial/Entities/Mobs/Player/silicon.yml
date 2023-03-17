@@ -61,7 +61,7 @@
       250: Dead
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Imperial\Mobs\Silicons\securityborg.rsi
+    sprite: _Imperial/Mobs/Silicons/securityborg.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: idle
@@ -131,7 +131,7 @@
       150: Dead
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Imperial\Mobs\Silicons\engineeringborg.rsi
+    sprite: _Imperial/Mobs/Silicons/engineeringborg.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: idle
@@ -204,7 +204,7 @@
       120: Dead
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Imperial\Mobs\Silicons\medicalborg.rsi
+    sprite: _Imperial/Mobs/Silicons/medicalborg.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: idle
@@ -271,7 +271,7 @@
       500: Dead
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Imperial\Mobs\Silicons\assaultborg.rsi
+    sprite: _Imperial/Mobs/Silicons/assaultborg.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: idle
