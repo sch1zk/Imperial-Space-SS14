@@ -55,7 +55,7 @@ public sealed partial class StoreMenu : DefaultWindow
                 ("currency", Loc.GetString(
                         proto.CurrencySymbol != string.Empty
                         ? proto.CurrencySymbol
-                        : " " + proto.DisplayName,
+                        : " " + Loc.GetString(proto.DisplayName),
                     ("amount", 1))));
         }
 
@@ -191,7 +191,7 @@ public sealed partial class StoreMenu : DefaultWindow
                     ("currency", Loc.GetString(
                             currency.CurrencySymbol != string.Empty
                             ? currency.CurrencySymbol
-                            : " " + currency.DisplayName,
+                            : " " + Loc.GetString(currency.DisplayName),
                         ("amount", amount))));
             }
         }
