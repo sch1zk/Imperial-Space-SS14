@@ -49,6 +49,7 @@
   components:
   - type: EncryptionKey
     channels:
+    - AI
     - CentCom
     defaultChannel: CentCom
   - type: Sprite

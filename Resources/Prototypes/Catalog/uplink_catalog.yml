@@ -203,6 +203,17 @@
 #Utility
 
 - type: listing
+  id: UplinkAssaultBorg
+  name: uplink-assault-borg-name
+  description: uplink-assault-borg-desc
+  icon: { sprite: /Textures/_Imperial/Mobs/Silicons/assaultborg.rsi, state: icon }
+  productEntity: assaultborg
+  cost:
+    Telecrystal: 80
+  categories:
+  - UplinkUtility
+
+- type: listing
   id: UplinkHoloparaKit
   name: uplink-holopara-kit-name
   description: uplink-holopara-kit-desc

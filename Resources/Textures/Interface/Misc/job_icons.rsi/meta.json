@@ -140,6 +140,9 @@
             "name": "IAA"
         },
         {
+            "name": "AI"
+        },
+        {
             "name": "Zookeeper"
         }
     ]

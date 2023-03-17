@@ -67,6 +67,9 @@
     steps: 5
     zeroVisible: true
   - type: Appearance
+  - type: Tag
+    tags:
+    - LaserGun
 
 - type: entity
   name: makeshift laser gun
