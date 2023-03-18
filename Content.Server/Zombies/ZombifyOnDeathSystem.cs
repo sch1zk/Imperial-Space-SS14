@@ -52,7 +52,6 @@ namespace Content.Server.Zombies
         [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifier = default!;
         [Dependency] private readonly IChatManager _chatMan = default!;
         [Dependency] private readonly IPrototypeManager _proto = default!;
-        [Dependency] private readonly IEntityManager _entityManager = default!;
         [Dependency] private readonly TagSystem _tagSystem = default!;
 
         public override void Initialize()
