@@ -15,6 +15,7 @@
     tags:
       - FootstepSound
       - DoorBumpOpener
+      - CantBeZombie
   - type: CombatMode
   - type: UnpoweredFlashlight
     toggleAction:
@@ -31,9 +32,6 @@
     autoRot: true
   - type: NameIdentifier
     group: GenericNumber
-  - type: RandomMetadata
-    nameSegments:
-    - names_ai_imperial
   - type: IntrinsicRadioReceiver
 
 - type: entity
@@ -106,6 +104,9 @@
   - type: FootstepModifier
     footstepSoundCollection:
       path: /Audio/Effects/Footsteps/hull5.ogg
+  - type: RandomMetadata
+    nameSegments:
+    - names_ai_imperial_security
 
 - type: entity
   name: engineering borg
@@ -118,6 +119,8 @@
       - id: trayScanner
       - id: Omnitool
       - id: WelderExperimental
+      - id: ClothingBackpackSatchelEngineering
+      - id: GasAnalyzer
   - type: MovementSpeedModifier
     baseWalkSpeed : 2
     baseSprintSpeed : 4
@@ -174,6 +177,9 @@
   - type: FootstepModifier
     footstepSoundCollection:
       path: /Audio/Effects/Footsteps/hull5.ogg
+  - type: RandomMetadata
+    nameSegments:
+    - names_ai_imperial_engineering
 
 - type: entity
   name: medical borg
@@ -184,6 +190,7 @@
   - type: Tag
     tags:
       - DoorBumpOpener
+      - CantBeZombie
   - type: InnateTool
     tools:
       - id: HandheldHealthAnalyzer
@@ -244,6 +251,9 @@
     name: ghost-role-information-medical-borg-name
     description: ghost-role-information-medical-borg-description
     rules: ghost-role-information-borg-rules
+  - type: RandomMetadata
+    nameSegments:
+    - names_ai_imperial_medical
 
 - type: entity
   name: assault borg
@@ -309,3 +319,6 @@
   - type: FootstepModifier
     footstepSoundCollection:
       path: /Audio/Effects/Footsteps/hull5.ogg
+  - type: RandomMetadata
+    nameSegments:
+    - names_ai_imperial_syndie
