@@ -14,7 +14,6 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly BankCartridgeSystem _bankCartridgeSystem = default!;
         [Dependency] private readonly InventorySystem _inventorySystem = default!;
         [Dependency] private readonly IdCardSystem _cardSystem = default!;
-        [Dependency] private readonly IEntityManager _entityManager = default!;
 
         private void CreateDepartmentsBankAccounts()
         {
@@ -28,30 +27,6 @@ namespace Content.Server.GameTicking
         }
         private void CreateBankAccountAndStoreInMob(EntityUid entity, Mind.Mind mind, JobPrototype jobPrototype)
         {
-            EntityUid? currEntity = entity;
-            if (_entityManager.Deleted(currEntity))
-            {
-                return;
-            }
-            var representation = _entityManager.ToPrettyString(currEntity.Value);
-            var prototype = representation.Prototype;
-            if(prototype == null) { return;}
-            if(prototype == "engborg" || prototype == "medborg" || prototype == "secborg")
-            {
-                //Требуется рефакторинг
-                mind.AddMemory(new Memory("memory-ai-laws-header", "header"));
-                mind.AddMemory(new Memory("memory-ai-laws-1", "firstlaw"));
-                mind.AddMemory(new Memory("memory-ai-laws-2", "secondlaw"));
-                mind.AddMemory(new Memory("memory-ai-laws-3", "thirdtlaw"));
-                mind.AddMemory(new Memory("memory-ai-laws-4", "fourthlaw"));
-                mind.AddMemory(new Memory("memory-ai-term-header", "name"));
-                mind.AddMemory(new Memory("memory-ai-term-desc", "desc"));
-                mind.AddMemory(new Memory("memory-ai-term-1", "1"));
-                mind.AddMemory(new Memory("memory-ai-term-2", "2"));
-                mind.AddMemory(new Memory("memory-ai-term-3", "3"));
-                mind.AddMemory(new Memory("memory-ai-term-4", "4"));
-                mind.AddMemory(new Memory("memory-ai-term-5", "5"));
-            }
             if (!_cardSystem.TryFindIdCard(entity, out var idCardComponent))
                 return;
 

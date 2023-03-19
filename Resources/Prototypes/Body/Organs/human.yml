@@ -34,9 +34,6 @@
     baseSprintSpeed: 0
   - type: GhostOnMove
   - type: Brain
-  - type: Tag
-    tags:
-    - Brain
 
 - type: entity
   id: OrganHumanEyes

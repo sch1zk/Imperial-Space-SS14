@@ -1,6 +1,0 @@
-- type: radioChannel
-  id: AI
-  name: chat-radio-AI
-  keycode: "а"
-  frequency: 1010
-  color: "#00AF64"

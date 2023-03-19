@@ -1,5 +1,2 @@
 - type: playTimeTracker
   id: JobAdjutant
-
-- type: playTimeTracker
-  id: JobBorg

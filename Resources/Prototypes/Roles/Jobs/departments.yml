@@ -60,7 +60,6 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
-  - EngineeringBorg
   accountNumber: 1318
 
 - type: department
@@ -73,7 +72,6 @@
   - MedicalDoctor
   - MedicalIntern
   - Psychologist
-  - MedicalBorg
   accountNumber: 1319
 
 - type: department
@@ -86,7 +84,6 @@
   - SecurityOfficer
   - Detective
   - Warden
-  - SecurityBorg
   accountNumber: 1320
 
 - type: department

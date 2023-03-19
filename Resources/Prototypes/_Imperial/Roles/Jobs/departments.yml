@@ -1,8 +1,0 @@
-- type: department
-  id: AI
-  description: department-AI-description
-  color: "#A46106"
-  roles:
-  - SecurityBorg
-  - EngineeringBorg
-  - MedicalBorg
