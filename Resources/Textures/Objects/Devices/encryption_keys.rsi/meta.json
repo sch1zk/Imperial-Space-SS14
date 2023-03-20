@@ -27,6 +27,7 @@
     {"name": "sci_cypherkey"},
     {"name": "sec_cypherkey"},
     {"name": "srv_cypherkey"},
-    {"name": "syn_cypherkey"}
+    { "name": "syn_cypherkey" },
+    { "name": "expedition_cypherkey"}
   ]
 }
