@@ -1,3 +1,6 @@
 chat-radio-expedition = Expedition
-expedition encryption key = Expedition encryption Key
-An encryption key used in expeditions. = An encryption key used in expeditions.
+expedition-encryption-key = Encruption key of expedition
+An-encryption-key-used-in-expeditions = This encryption key is used on expeditions
+ent-EncryptionKeyExpedition = Expedition encryption key
+    .desc = The encryption key used by the expeditions.
+    .suffix = { "" }
