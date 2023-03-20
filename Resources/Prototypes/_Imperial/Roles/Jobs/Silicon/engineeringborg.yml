@@ -1,0 +1,14 @@
+- type: job
+  id: EngineeringBorg
+  name: job-name-engineeringborg
+  playTimeTracker: JobBorg
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 12000
+  supervisors: job-supervisors-ai
+  startingGear: BorgGear
+  weight: 20
+  icon: "AI"
+  canBeAntag: false
+  jobEntity: engborg

@@ -1,0 +1,94 @@
+- type: constructionGraph
+  id: MedicalBorg
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: medicalborgfinished
+      steps:
+      - tool: Anchoring
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          data: 1
+
+      - tool: Screwing
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          data: 2
+
+      - material: Cable
+        doAfter: 1
+        amount: 15
+        completed:
+        - !type:VisualizerDataInt
+          data: 3
+
+      - tag: BorgArm
+        amount: 6
+        icon:
+          sprite: Mobs/Silicon/drone.rsi
+          state: l_hand
+        name: borg arm
+        doAfter: 2
+
+      - material: Steel
+        doAfter: 5
+        amount: 15
+        completed:
+        - !type:VisualizerDataInt
+          data: 6
+
+      - material: Glass
+        doAfter: 5
+        amount: 15
+        completed:
+        - !type:VisualizerDataInt
+          data: 7
+
+      - tag: ProximitySensor
+        icon:
+          sprite: Objects/Misc/proximity_sensor.rsi
+          state: icon
+        name: proximity sensor
+        completed:
+        - !type:VisualizerDataInt
+          data: 8
+
+      - tag: DiscreteHealthAnalyzer
+        name: health analyser
+        completed:
+        - !type:VisualizerDataInt
+          data: 9
+
+      - material: Steel
+        doAfter: 10
+        amount: 5
+        completed:
+        - !type:VisualizerDataInt
+          data: 10
+
+      - material: Steel
+        doAfter: 30
+        amount: 5
+        completed:
+        - !type:VisualizerDataInt
+          data: 11
+
+      - component: PowerCell
+        name: power cell
+        completed:
+        - !type:VisualizerDataInt
+          data: 12
+
+      - tag: Brain
+        name: human brain
+        completed:
+        - !type:VisualizerDataInt
+          data: 13
+
+      - tool: Welding
+        doAfter: 1
+  - node: medicalborgfinished
+    entity: medborg

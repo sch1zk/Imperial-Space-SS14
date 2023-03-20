@@ -1,0 +1,14 @@
+- type: job
+  id: MedicalBorg
+  name: job-name-medicalborg
+  playTimeTracker: JobBorg
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 12000
+  supervisors: job-supervisors-ai
+  startingGear: BorgGear
+  weight: 20
+  icon: "AI"
+  canBeAntag: false
+  jobEntity: medborg
