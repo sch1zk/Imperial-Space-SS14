@@ -14,6 +14,7 @@ namespace Content.Server.Chat.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
+            string str = args[2];
             if (args.Length != 3)
             {
                 shell.WriteLine(Loc.GetString("shell-wrong-arguments-number"));
@@ -28,13 +29,13 @@ namespace Content.Server.Chat.Commands
             switch (args[1])
             {
                 case "-n":
-                    shell.ExecuteCommand("forall ongrid " + args[0] + " named " + args[2] + " do echo $ID $NAME");
+                    shell.ExecuteCommand("forall ongrid " + args[0] + " named \"" + str + "\" do echo $ID $NAME");
                     break;
                 case "-p":
-                    shell.ExecuteCommand("forall ongrid " + args[0] + " prototyped " + args[2] + " do echo $ID $NAME");
+                    shell.ExecuteCommand("forall ongrid " + args[0] + " prototyped " + str + " do echo $ID $NAME");
                     break;
                 case "-c":
-                    shell.ExecuteCommand("forall ongrid " + args[0] + " with " + args[2] + " do echo $ID $NAME");
+                    shell.ExecuteCommand("forall ongrid " + args[0] + " with " + str + " do echo $ID $NAME");
                     break;
                 default:
                     shell.WriteLine(Loc.GetString("wrong argument, input -n for search name, -p for search prototype, -c for search component"));
