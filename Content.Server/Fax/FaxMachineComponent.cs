@@ -132,24 +132,20 @@ public sealed class FaxMachineComponent : Component
 [DataDefinition]
 public sealed class FaxPrintout
 {
-    [DataField("name", required: true)]
-    public string Name { get; } = default!;
+    [DataField("name")]
+    public string Name { get; }
 
-    [DataField("content", required: true)]
-    public string Content { get; } = default!;
+    [DataField("content")]
+    public string Content { get; }
 
-    [DataField("prototypeId", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>), required: true)]
-    public string PrototypeId { get; } = default!;
+    [DataField("prototypeId", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    public string PrototypeId { get; }
 
     [DataField("stampState")]
     public string? StampState { get; }
 
     [DataField("stampedBy")]
-    public List<string> StampedBy { get; } = new();
-
-    private FaxPrintout()
-    {
-    }
+    public List<string> StampedBy { get; }
 
     public FaxPrintout(string content, string name, string? prototypeId, string? stampState = null, List<string>? stampedBy = null)
     {

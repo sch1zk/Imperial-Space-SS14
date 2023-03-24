@@ -340,14 +340,10 @@ public sealed class WiresSystem : EntitySystem
         {
             foreach (var (owner, wireAction) in _finishedWires)
             {
-                if (!_activeWires.TryGetValue(owner, out var activeWire))
-                {
-                    continue;
-                }
+                // sure
+                _activeWires[owner].RemoveAll(action => action.CancelToken == wireAction.CancelToken);
 
-                activeWire.RemoveAll(action => action.CancelToken == wireAction.CancelToken);
-
-                if (activeWire.Count == 0)
+                if (_activeWires[owner].Count == 0)
                 {
                     _activeWires.Remove(owner);
                 }

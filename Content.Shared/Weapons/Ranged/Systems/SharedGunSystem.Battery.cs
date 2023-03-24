@@ -29,8 +29,7 @@ public abstract partial class SharedGunSystem
 
     private void OnBatteryHandleState(EntityUid uid, BatteryAmmoProviderComponent component, ref ComponentHandleState args)
     {
-        if (args.Current is not BatteryAmmoProviderComponentState state)
-            return;
+        if (args.Current is not BatteryAmmoProviderComponentState state) return;
 
         component.Shots = state.Shots;
         component.Capacity = state.MaxShots;
@@ -57,8 +56,7 @@ public abstract partial class SharedGunSystem
         var shots = Math.Min(args.Shots, component.Shots);
 
         // Don't dirty if it's an empty fire.
-        if (shots == 0)
-            return;
+        if (shots == 0) return;
 
         for (var i = 0; i < shots; i++)
         {
@@ -92,15 +90,15 @@ public abstract partial class SharedGunSystem
         Appearance.SetData(uid, AmmoVisuals.AmmoMax, component.Capacity, appearance);
     }
 
-    private (EntityUid? Entity, IShootable) GetShootable(BatteryAmmoProviderComponent component, EntityCoordinates coordinates)
+    private IShootable GetShootable(BatteryAmmoProviderComponent component, EntityCoordinates coordinates)
     {
         switch (component)
         {
             case ProjectileBatteryAmmoProviderComponent proj:
                 var ent = Spawn(proj.Prototype, coordinates);
-                return (ent, EnsureComp<AmmoComponent>(ent));
+                return EnsureComp<AmmoComponent>(ent);
             case HitscanBatteryAmmoProviderComponent hitscan:
-                return (null, ProtoManager.Index<HitscanPrototype>(hitscan.Prototype));
+                return ProtoManager.Index<HitscanPrototype>(hitscan.Prototype);
             default:
                 throw new ArgumentOutOfRangeException();
         }

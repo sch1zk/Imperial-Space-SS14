@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Vehicle.Components;
@@ -11,6 +12,8 @@ using Robust.Shared.Serialization;
 using Robust.Shared.Containers;
 using Content.Shared.Tag;
 using Content.Shared.Audio;
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Inventory;
 
 namespace Content.Shared.Vehicle;
 
@@ -189,7 +192,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
 
         args.Entities.Add(rider);
         _access.FindAccessItemsInventory(rider, out var items);
-        args.Entities.UnionWith(items);
+        args.Entities = args.Entities.Union(items).ToHashSet();
     }
 
     /// <summary>

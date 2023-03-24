@@ -14,7 +14,7 @@
       - EncryptionKeyCommon
   - type: Headset
   - type: EncryptionKeyHolder
-    keySlots: 4
+    keySlots: 3
   - type: Sprite
     state: icon
   - type: Clothing

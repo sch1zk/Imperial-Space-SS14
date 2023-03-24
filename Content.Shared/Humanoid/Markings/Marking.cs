@@ -12,11 +12,7 @@ namespace Content.Shared.Humanoid.Markings
         [DataField("markingColor")]
         private List<Color> _markingColors = new();
 
-        private Marking()
-        {
-        }
-
-        public Marking(string markingId,
+        private Marking(string markingId,
             List<Color> markingColors)
         {
             MarkingId = markingId;
@@ -49,7 +45,7 @@ namespace Content.Shared.Humanoid.Markings
         /// <summary>
         ///     ID of the marking prototype.
         /// </summary>
-        [DataField("markingId", required: true)]
+        [DataField("markingId")]
         public string MarkingId { get; } = default!;
 
         /// <summary>

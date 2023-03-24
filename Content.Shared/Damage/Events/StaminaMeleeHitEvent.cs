@@ -12,7 +12,7 @@ public sealed class StaminaMeleeHitEvent : HandledEntityEventArgs
     /// <summary>
     /// List of hit stamina components.
     /// </summary>
-    public List<(EntityUid Entity, StaminaComponent Component)> HitList;
+    public List<StaminaComponent> HitList;
 
     /// <summary>
     /// The multiplier. Generally, try to use *= or /= instead of overwriting.
@@ -24,7 +24,7 @@ public sealed class StaminaMeleeHitEvent : HandledEntityEventArgs
     /// </summary>
     public float FlatModifier = 0;
 
-    public StaminaMeleeHitEvent(List<(EntityUid Entity, StaminaComponent Component)> hitList)
+    public StaminaMeleeHitEvent(List<StaminaComponent> hitList)
     {
         HitList = hitList;
     }

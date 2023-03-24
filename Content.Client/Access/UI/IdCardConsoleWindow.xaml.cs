@@ -50,8 +50,7 @@ namespace Content.Client.Access.UI
             };
             JobTitleSaveButton.OnPressed += _ => SubmitData();
 
-            var jobs = _prototypeManager.EnumeratePrototypes<JobPrototype>().ToList();
-            jobs.Sort((x, y) => string.Compare(x.LocalizedName, y.LocalizedName, StringComparison.CurrentCulture));
+            var jobs = _prototypeManager.EnumeratePrototypes<JobPrototype>();
 
             foreach (var job in jobs)
             {

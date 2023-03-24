@@ -27,8 +27,7 @@ public sealed partial class GunSystem
     /// <param name="component"></param>
     private void RefreshControl(EntityUid uid, AmmoCounterComponent? component = null)
     {
-        if (!Resolve(uid, ref component, false))
-            return;
+        if (!Resolve(uid, ref component, false)) return;
 
         component.Control?.Dispose();
         component.Control = null;
@@ -45,8 +44,7 @@ public sealed partial class GunSystem
 
     private void UpdateAmmoCount(EntityUid uid, AmmoCounterComponent component)
     {
-        if (component.Control == null)
-            return;
+        if (component.Control == null) return;
 
         var ev = new UpdateAmmoCounterEvent()
         {
@@ -61,8 +59,7 @@ public sealed partial class GunSystem
         // Don't use resolves because the method is shared and there's no compref and I'm trying to
         // share as much code as possible
         if (!Timing.IsFirstTimePredicted ||
-            !TryComp<AmmoCounterComponent>(uid, out var clientComp))
-            return;
+            !TryComp<AmmoCounterComponent>(uid, out var clientComp)) return;
 
         UpdateAmmoCount(uid, clientComp);
     }

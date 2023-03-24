@@ -44,5 +44,5 @@
     ears: ClothingHeadsetAltSecurity
     #belt: ClothingBeltSecurityFilled
   innerclothingskirt: ClothingUniformJumpskirtHoS
-  satchel: ClothingBackpackSatchelHOSFilled
-  duffelbag: ClothingBackpackDuffelHOSFilled
+  satchel: ClothingBackpackSatchelSecurityFilled
+  duffelbag: ClothingBackpackDuffelSecurityFilled

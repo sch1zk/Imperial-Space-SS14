@@ -38,7 +38,7 @@ public abstract partial class SharedGunSystem
             Dirty(component);
         }
 
-        UpdateBasicEntityAppearance(uid, component);
+        UpdateBasicEntityAppearance(component);
     }
 
     private void OnBasicEntityTakeAmmo(EntityUid uid, BasicEntityAmmoProviderComponent component, TakeAmmoEvent args)
@@ -54,10 +54,10 @@ public abstract partial class SharedGunSystem
             }
 
             var ent = Spawn(component.Proto, args.Coordinates);
-            args.Ammo.Add((ent, EnsureComp<AmmoComponent>(ent)));
+            args.Ammo.Add(EnsureComp<AmmoComponent>(ent));
         }
 
-        UpdateBasicEntityAppearance(uid, component);
+        UpdateBasicEntityAppearance(component);
         Dirty(component);
     }
 
@@ -67,14 +67,13 @@ public abstract partial class SharedGunSystem
         args.Count = component.Count ?? int.MaxValue;
     }
 
-    private void UpdateBasicEntityAppearance(EntityUid uid, BasicEntityAmmoProviderComponent component)
+    private void UpdateBasicEntityAppearance(BasicEntityAmmoProviderComponent component)
     {
-        if (!Timing.IsFirstTimePredicted || !TryComp<AppearanceComponent>(uid, out var appearance))
-            return;
+        if (!Timing.IsFirstTimePredicted || !TryComp<AppearanceComponent>(component.Owner, out var appearance)) return;
 
-        Appearance.SetData(uid, AmmoVisuals.HasAmmo, component.Count != 0, appearance);
-        Appearance.SetData(uid, AmmoVisuals.AmmoCount, component.Count ?? int.MaxValue, appearance);
-        Appearance.SetData(uid, AmmoVisuals.AmmoMax, component.Capacity ?? int.MaxValue, appearance);
+        Appearance.SetData(appearance.Owner, AmmoVisuals.HasAmmo, component.Count != 0, appearance);
+        Appearance.SetData(appearance.Owner, AmmoVisuals.AmmoCount, component.Count ?? int.MaxValue, appearance);
+        Appearance.SetData(appearance.Owner, AmmoVisuals.AmmoMax, component.Capacity ?? int.MaxValue, appearance);
     }
 
     #region Public API
@@ -89,7 +88,7 @@ public abstract partial class SharedGunSystem
 
         component.Count = count;
         Dirty(component);
-        UpdateBasicEntityAppearance(uid, component);
+        UpdateBasicEntityAppearance(component);
 
         return true;
     }

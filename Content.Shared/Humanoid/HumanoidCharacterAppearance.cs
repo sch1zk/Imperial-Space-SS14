@@ -85,16 +85,17 @@ namespace Content.Shared.Humanoid
             return new(HairStyleId, HairColor, FacialHairStyleId, FacialHairColor, EyeColor, SkinColor, newMarkings);
         }
 
-        public HumanoidCharacterAppearance() : this(
-            HairStyles.DefaultHairStyle,
-            Color.Black,
-            HairStyles.DefaultFacialHairStyle,
-            Color.Black,
-            Color.Black,
-            Humanoid.SkinColor.ValidHumanSkinTone,
-            new ()
-        )
+        public static HumanoidCharacterAppearance Default()
         {
+            return new(
+                HairStyles.DefaultHairStyle,
+                Color.Black,
+                HairStyles.DefaultFacialHairStyle,
+                Color.Black,
+                Color.Black,
+                Humanoid.SkinColor.ValidHumanSkinTone,
+                new ()
+            );
         }
 
         public static HumanoidCharacterAppearance DefaultWithSpecies(string species)

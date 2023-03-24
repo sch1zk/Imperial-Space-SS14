@@ -8,7 +8,6 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Dynamics;
 using System.Linq;
-using Content.Shared.Sound.Components;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
@@ -118,17 +117,16 @@ namespace Content.Shared.Throwing
             EntityManager.RemoveComponent<ThrownItemComponent>(uid);
         }
 
-        public void LandComponent(EntityUid uid, ThrownItemComponent thrownItem, PhysicsComponent physics)
+        public void LandComponent(ThrownItemComponent thrownItem, PhysicsComponent physics)
         {
             _physics.SetBodyStatus(physics, BodyStatus.OnGround);
 
-            if (thrownItem.Deleted || Deleted(uid) || _containerSystem.IsEntityInContainer(uid))
-                return;
+            if (thrownItem.Deleted || Deleted(thrownItem.Owner) || _containerSystem.IsEntityInContainer(thrownItem.Owner)) return;
 
-            var landing = uid;
+            var landing = thrownItem.Owner;
 
             // Unfortunately we can't check for hands containers as they have specific names.
-            if (uid.TryGetContainerMan(out var containerManager) &&
+            if (thrownItem.Owner.TryGetContainerMan(out var containerManager) &&
                 EntityManager.HasComponent<SharedHandsComponent>(containerManager.Owner))
             {
                 EntityManager.RemoveComponent(landing, thrownItem);

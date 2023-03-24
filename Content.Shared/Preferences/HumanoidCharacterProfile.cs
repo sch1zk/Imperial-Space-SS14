@@ -106,23 +106,7 @@ namespace Content.Shared.Preferences
         ///     Defaults to <see cref="SharedHumanoidAppearanceSystem.DefaultSpecies"/> for the species.
         /// </summary>
         /// <returns></returns>
-        public HumanoidCharacterProfile() : this(
-            "John Doe",
-            "",
-            SharedHumanoidAppearanceSystem.DefaultSpecies,
-            18,
-            Sex.Male,
-            Gender.Male,
-            new HumanoidCharacterAppearance(),
-            ClothingPreference.Jumpsuit,
-            BackpackPreference.Backpack,
-            new Dictionary<string, JobPriority>
-            {
-                {SharedGameTicker.FallbackOverflowJob, JobPriority.High}
-            },
-            PreferenceUnavailableMode.SpawnAsOverflow,
-            new List<string>(),
-            new List<string>())
+        public static HumanoidCharacterProfile Default()
         {
             return new(
                 "John Doe",
@@ -391,11 +375,7 @@ namespace Content.Shared.Preferences
         {
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
 
-            if (!prototypeManager.TryIndex<SpeciesPrototype>(Species, out var speciesPrototype))
-            {
-                Species = SharedHumanoidAppearanceSystem.DefaultSpecies;
-                speciesPrototype = prototypeManager.Index<SpeciesPrototype>(Species);
-            }
+            prototypeManager.TryIndex<SpeciesPrototype>(Species, out var speciesPrototype);
 
             var sex = Sex switch
             {

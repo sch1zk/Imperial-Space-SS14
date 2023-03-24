@@ -496,9 +496,6 @@ namespace Content.Server.Disposal.Unit.EntitySystems
                 BreakOnTargetMove = true,
                 BreakOnUserMove = true,
                 NeedHand = false,
-                RaiseOnTarget = false,
-                RaiseOnUser = false,
-                RaiseOnUsed = true,
             };
 
             _doAfterSystem.DoAfter(doAfterArgs);
