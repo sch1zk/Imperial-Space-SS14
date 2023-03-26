@@ -1,0 +1,8 @@
+- type: radioChannel
+  id: Expedition
+  name: chat-radio-expedition
+  keycode: "э"
+  frequency: 1271
+  color: "#cfa34c"
+
+
