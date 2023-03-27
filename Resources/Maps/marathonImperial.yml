@@ -53523,25 +53523,25 @@ entities:
     parent: 30
     type: Transform
 - uid: 6690
-  type: chem_master
+  type: chem_master_unhackable
   components:
   - pos: -9.5,-6.5
     parent: 30
     type: Transform
 - uid: 6691
-  type: chem_master
+  type: chem_master_unhackable
   components:
   - pos: -5.5,-6.5
     parent: 30
     type: Transform
 - uid: 6692
-  type: chem_dispenser
+  type: chem_dispenser_unhackable
   components:
   - pos: -9.5,-7.5
     parent: 30
     type: Transform
 - uid: 6693
-  type: chem_dispenser
+  type: chem_dispenser_unhackable
   components:
   - pos: -5.5,-7.5
     parent: 30

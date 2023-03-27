@@ -20494,7 +20494,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 3263
-  type: chem_dispenser
+  type: chem_dispenser_unhackable
   components:
   - pos: 18.5,-17.5
     parent: 8364
@@ -93486,7 +93486,7 @@ entities:
     - Cloth
     type: MaterialStorage
 - uid: 13407
-  type: ChemDispenserMachineCircuitboard
+  type: ChemDispenserMachineCircuitboard_unhackable
   components:
   - pos: -13.506469,-36.388306
     parent: 8364
@@ -112154,13 +112154,13 @@ entities:
     parent: 8364
     type: Transform
 - uid: 16318
-  type: ChemMasterMachineCircuitboard
+  type: ChemMasterMachineCircuitboard_unhackable
   components:
   - pos: -5.592019,-35.416092
     parent: 8364
     type: Transform
 - uid: 16319
-  type: ChemDispenserMachineCircuitboard
+  type: ChemDispenserMachineCircuitboard_unhackable
   components:
   - pos: -5.482644,-35.431717
     parent: 8364
@@ -128294,25 +128294,25 @@ entities:
     parent: 8364
     type: Transform
 - uid: 18768
-  type: chem_dispenser
+  type: chem_dispenser_unhackable
   components:
   - pos: 21.5,-16.5
     parent: 8364
     type: Transform
 - uid: 18769
-  type: chem_dispenser
+  type: chem_dispenser_unhackable
   components:
   - pos: 21.5,-20.5
     parent: 8364
     type: Transform
 - uid: 18770
-  type: chem_master
+  type: chem_master_unhackable
   components:
   - pos: 22.5,-20.5
     parent: 8364
     type: Transform
 - uid: 18771
-  type: chem_master
+  type: chem_master_unhackable
   components:
   - pos: 22.5,-16.5
     parent: 8364
@@ -128342,7 +128342,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 18775
-  type: chem_master
+  type: chem_master_unhackable
   components:
   - pos: 18.5,-16.5
     parent: 8364

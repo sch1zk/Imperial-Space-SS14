@@ -36421,7 +36421,7 @@ entities:
     parent: 6
     type: Transform
 - uid: 4695
-  type: chem_dispenser
+  type: chem_dispenser_unhackable
   components:
   - pos: -24.5,-17.5
     parent: 6
@@ -37067,13 +37067,13 @@ entities:
     parent: 6
     type: Transform
 - uid: 4801
-  type: chem_dispenser
+  type: chem_dispenser_unhackable
   components:
   - pos: -22.5,-14.5
     parent: 6
     type: Transform
 - uid: 4802
-  type: chem_master
+  type: chem_master_unhackable
   components:
   - pos: -21.5,-14.5
     parent: 6
@@ -91801,7 +91801,7 @@ entities:
     parent: 6
     type: Transform
 - uid: 12827
-  type: chem_master
+  type: chem_master_unhackable
   components:
   - pos: -24.5,-18.5
     parent: 6

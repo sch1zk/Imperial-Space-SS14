@@ -7475,25 +7475,25 @@ entities:
     parent: 127
     type: Transform
 - uid: 605
-  type: chem_master
+  type: chem_master_unhackable
   components:
   - pos: 5.5,7.5
     parent: 127
     type: Transform
 - uid: 606
-  type: chem_master
+  type: chem_master_unhackable
   components:
   - pos: 7.5,6.5
     parent: 127
     type: Transform
 - uid: 607
-  type: chem_dispenser
+  type: chem_dispenser_unhackable
   components:
   - pos: 7.5,5.5
     parent: 127
     type: Transform
 - uid: 608
-  type: chem_dispenser
+  type: chem_dispenser_unhackable
   components:
   - pos: 6.5,7.5
     parent: 127
