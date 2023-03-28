@@ -46,7 +46,7 @@ public sealed class HumanoidAppearanceComponent : Component
     /// </summary>
     [DataField("species", customTypeSerializer: typeof(PrototypeIdSerializer<SpeciesPrototype>))]
     public string Species { get; set; } = string.Empty;
-    
+
     // Corvax-TTS-Start
     /// <summary>
     ///     Current voice. Used for correct cloning.
@@ -81,6 +81,7 @@ public sealed class HumanoidAppearanceComponent : Component
     public Color EyeColor = Color.Brown;
 
     // Corvax-ChatColor-Start
+    [ViewVariables(VVAccess.ReadWrite)]
     [DataField("speakerColor")]
     public Color SpeakerColor = Color.White;
     // Corvax-ChatColor-End
