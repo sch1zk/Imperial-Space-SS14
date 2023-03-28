@@ -1,0 +1,24 @@
+- type: entity
+  id: CrateExpeditionHardsuits
+  suffix: Filled
+  parent: CrateCommandSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitEngineeringWhite
+      - id: ClothingOuterHardsuitEngineering
+        amount: 3
+      - id: ClothingOuterHardsuitVoidParamed
+      - id: ClothingHeadHelmetVoidParamed
+      - id: ClothingOuterHardsuitSalvage
+      - id: ClothingOuterHardsuitSecurityRed
+      - id: ClothingOuterHardsuitEVA
+        amount: 3
+      - id: ClothingHeadHelmetEVA
+        amount: 3
+      - id: ClothingMaskBreath
+        amount: 10
+      - id: YellowOxygenTankFilled
+        amount: 10
+      - id: EncryptionKeyExpedition
+        amount: 10

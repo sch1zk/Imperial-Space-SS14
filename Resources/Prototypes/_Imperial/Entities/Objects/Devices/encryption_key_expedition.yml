@@ -1,0 +1,13 @@
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyExpedition
+  name: expedition encryption key
+  description: An encryption key used in expeditions
+  components:
+  - type: EncryptionKey
+    channels:
+    - Expedition
+    defaultChannel: Expedition
+  - type: Sprite
+    sprite: Objects/Devices/encryption_keys.rsi
+    state: expedition_cypherkey

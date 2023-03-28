@@ -3,6 +3,7 @@ using Content.Server.Afk;
 using Content.Server.Afk.Events;
 using Content.Server.GameTicking;
 using Content.Server.Roles;
+using Content.Server.Corvax.Sponsors;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Mobs;
@@ -15,6 +16,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using static Prometheus.DotNetRuntime.EventListening.EventSources.DotNetRuntimeEventSource;
 
 namespace Content.Server.Players.PlayTimeTracking;
 
@@ -28,6 +30,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly PlayTimeTrackingManager _tracking = default!;
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Corvax-Sponsors
 
     public override void Initialize()
     {
@@ -158,6 +161,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     public bool IsAllowed(IPlayerSession player, string role)
     {
         if (!_prototypes.TryIndex<JobPrototype>(role, out var job) ||
+            (job.SponsorsOnly && (_sponsorsManager.TryGetInfo(player.UserId, out var sponsorData) && sponsorData.HavePriorityJoin == true)) ||
             job.Requirements == null ||
             !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;
