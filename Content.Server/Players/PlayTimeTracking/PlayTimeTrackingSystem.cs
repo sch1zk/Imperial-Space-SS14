@@ -16,7 +16,6 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using static Prometheus.DotNetRuntime.EventListening.EventSources.DotNetRuntimeEventSource;
 
 namespace Content.Server.Players.PlayTimeTracking;
 
