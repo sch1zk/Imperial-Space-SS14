@@ -178,19 +178,20 @@ public sealed partial class SingleMarkingPicker : BoxContainer
 
         MarkingList.Clear();
 
-        foreach (var (id, marking) in _markingPrototypeCache)
+        var sortedMarkings = _markingPrototypeCache.OrderBy(p => Loc.GetString($"marking-{p.Key}"));
+        foreach (var (id, marking) in sortedMarkings)
         {
             var item = MarkingList.AddItem(Loc.GetString($"marking-{id}"), marking.Sprites[0].Frame0());
             item.Metadata = marking.ID;
             // Corvax-Sponsors-Start
-            // if (marking.SponsorOnly)
-            // {
-            //     item.Disabled = true;
-            //     if (_sponsorsManager.TryGetInfo(out var sponsor))
-            //     {
-            //        item.Disabled = !sponsor.AllowedMarkings.Contains(marking.ID);
-            //     }
-            // }
+            if (marking.SponsorOnly)
+            {
+                item.Disabled = true;
+                if (_sponsorsManager.TryGetInfo(out var sponsor))
+                {
+                    item.Disabled = !sponsor.AllowedMarkings.Contains(marking.ID);
+                }
+            }
             // Corvax-Sponsors-End
 
             if (_markings[Slot].MarkingId == id)

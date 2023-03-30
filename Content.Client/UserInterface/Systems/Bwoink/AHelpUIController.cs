@@ -117,7 +117,9 @@ public sealed class AHelpUIController: UIController, IOnStateChanged<GameplaySta
         }
         if (localPlayer.UserId != message.TrueSender)
         {
+            // Imperial Space Start
             SoundSystem.Play("/Audio/Effects/adminhelp_imperial.ogg", Filter.Local());
+            // Imperial Space End
             _clyde.RequestWindowAttention();
         }
 

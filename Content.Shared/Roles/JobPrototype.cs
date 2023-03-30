@@ -98,6 +98,7 @@ namespace Content.Shared.Roles
         [DataField("extendedAccessGroups", customTypeSerializer: typeof(PrototypeIdListSerializer<AccessGroupPrototype>))]
         public IReadOnlyCollection<string> ExtendedAccessGroups { get; } = Array.Empty<string>();
 
+        // Imperial Space Start
         [DataField("wageDepartment", customTypeSerializer: typeof(PrototypeIdSerializer<DepartmentPrototype>))]
         public string? WageDepartment { get; }
 
@@ -110,5 +111,6 @@ namespace Content.Shared.Roles
         public FixedPoint2 Wage { get; } = 0;
         [DataField("sponsorsOnly")]
         public bool SponsorsOnly { get; } = false;
+        // Imperial Space End
     }
 }

@@ -2,7 +2,6 @@ using Content.Server.Access.Systems;
 using Content.Server.Actions;
 using Content.Server.Administration.Logs;
 using Content.Server.Economy;
-using Content.Server.Mind.Components;
 using Content.Server.Store.Components;
 using Content.Shared.Actions.ActionTypes;
 using Content.Shared.Database;
@@ -89,7 +88,9 @@ public sealed partial class StoreSystem
         // TODO: if multiple users are supposed to be able to interact with a single BUI & see different
         // stores/listings, this needs to use session specific BUI states.
 
+        // Imperial Space Start
         var state = new StoreUpdateState(component.LastAvailableListings, allCurrency, component.CanBuyByBankAccount);
+        // Imperial Space End
         _ui.SetUiState(ui, state);
     }
 
@@ -135,6 +136,7 @@ public sealed partial class StoreSystem
         //check that we have enough money
         foreach (var currency in listing.Cost)
         {
+            // Imperial Space Start
             if (!component.Balance.TryGetValue(currency.Key, out var balance))
             {
                 return;
@@ -166,6 +168,7 @@ public sealed partial class StoreSystem
                 RaiseLocalEvent(uid, new StoreOnDenyEvent(), true);
                 return;
             }
+            // Imperial Space End
         }
 
         //spawn entity
@@ -194,7 +197,6 @@ public sealed partial class StoreSystem
 
         listing.PurchaseAmount++; //track how many times something has been purchased
         _audio.PlayEntity(component.BuySuccessSound, msg.Session, uid); //cha-ching!
-        RaiseLocalEvent(uid, new StoreOnEjectEvent(), true);
 
         UpdateUserInterface(buyer, uid, component);
     }
@@ -220,7 +222,7 @@ public sealed partial class StoreSystem
         if (proto.Cash == null || !proto.CanWithdraw)
             return;
 
-        if (msg.Session.AttachedEntity is not { Valid: true } buyer)
+        if (msg.Session.AttachedEntity is not { Valid: true} buyer)
             return;
 
         FixedPoint2 amountRemaining = msg.Amount;

@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using Content.Server.Administration.Managers;
 using Content.Server.Corvax.Sponsors;
@@ -249,8 +248,7 @@ public sealed partial class StationJobsSystem
 
                             // Picking players it finds that have the job set.
 
-                            // Found it! Yeah!
-
+                            // Imperial Space Start
                             var sponsors = new HashSet<NetUserId>();
                             foreach (var userId in jobPlayerOptions[job])
                             {
@@ -267,6 +265,7 @@ public sealed partial class StationJobsSystem
                             {
                                 player = _random.Pick(jobPlayerOptions[job]);
                             }
+                            // Imperial Space End
 
                             AssignPlayer(player, job, station);
                             stationShares[station]--;

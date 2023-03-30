@@ -21,15 +21,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Content.Shared.Database;
 using Robust.Shared.Asynchronous;
-using Content.Server.Voting.Managers;
-using Content.Shared.Voting;
 
 namespace Content.Server.GameTicking
 {
     public sealed partial class GameTicker
     {
         [Dependency] private readonly ITaskManager _taskManager = default!;
-        [Dependency] private readonly IVoteManager _voteManager = default!;
 
         private static readonly Counter RoundNumberMetric = Metrics.CreateCounter(
             "ss14_round_number",
@@ -73,6 +70,16 @@ namespace Content.Server.GameTicking
         public int RoundId { get; private set; }
 
         /// <summary>
+        /// Returns true if the round's map is eligible to be updated.
+        /// </summary>
+        /// <returns></returns>
+        public bool CanUpdateMap()
+        {
+            return RunLevel == GameRunLevel.PreRoundLobby &&
+                   _roundStartTime - RoundPreloadTime > _gameTiming.CurTime;
+        }
+
+        /// <summary>
         ///     Loads all the maps for the given round.
         /// </summary>
         /// <remarks>
@@ -80,11 +87,13 @@ namespace Content.Server.GameTicking
         /// </remarks>
         private void LoadMaps()
         {
+            if (_mapManager.MapExists(DefaultMap))
+                return;
+
             AddGamePresetRules();
 
             DefaultMap = _mapManager.CreateMap();
             _mapManager.AddUninitializedMap(DefaultMap);
-            var startTime = _gameTiming.RealTime;
 
             var maps = new List<GameMapPrototype>();
 
@@ -124,9 +133,6 @@ namespace Content.Server.GameTicking
 
                 LoadGameMap(map, toLoad, null);
             }
-
-            var timeSpan = _gameTiming.RealTime - startTime;
-            _sawmill.Info($"Loaded maps in {timeSpan.TotalMilliseconds:N2}ms.");
         }
 
 
@@ -173,6 +179,7 @@ namespace Content.Server.GameTicking
 
             SendServerMessage(Loc.GetString("game-ticker-start-round"));
 
+            // Just in case it hasn't been loaded previously we'll try loading it.
             LoadMaps();
 
             // map has been selected so update the lobby info text
@@ -221,7 +228,6 @@ namespace Content.Server.GameTicking
             // MapInitialize *before* spawning players, our codebase is too shit to do it afterwards...
             _mapManager.DoMapInitialize(DefaultMap);
 
-            CreateDepartmentsBankAccounts();
             SpawnPlayers(readyPlayers, readyPlayerProfiles, force);
 
             _roundStartDateTime = DateTime.UtcNow;
@@ -398,13 +404,6 @@ namespace Content.Server.GameTicking
                 SendStatusToAll();
                 UpdateInfoText();
 
-                // Imperial-start
-                if (_configurationManager.GetCVar(CCVars.VoteAutoStartInLobby))
-                {
-                    _voteManager.CreateStandardVote(null, StandardVoteType.Map);
-                }
-                // Imperial-end
-
                 ReqWindowAttentionAll();
             }
         }
@@ -456,8 +455,6 @@ namespace Content.Server.GameTicking
 
             _gameMapManager.ClearSelectedMap();
 
-            _bankManagerSystem.Clear();
-
             // Clear up any game rules.
             ClearGameRules();
 
@@ -502,14 +499,23 @@ namespace Content.Server.GameTicking
                 RoundLengthMetric.Inc(frameTime);
             }
 
-            if (RunLevel != GameRunLevel.PreRoundLobby || Paused ||
-                _roundStartTime > _gameTiming.CurTime ||
+            if (RunLevel != GameRunLevel.PreRoundLobby ||
+                Paused ||
+                _roundStartTime - RoundPreloadTime > _gameTiming.CurTime ||
                 _roundStartCountdownHasNotStartedYetDueToNoPlayers)
             {
                 return;
             }
 
-            StartRound();
+            if (_roundStartTime < _gameTiming.CurTime)
+            {
+                StartRound();
+            }
+            // Preload maps so we can start faster
+            else if (_roundStartTime - RoundPreloadTime < _gameTiming.CurTime)
+            {
+                LoadMaps();
+            }
         }
 
         public TimeSpan RoundDuration()

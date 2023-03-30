@@ -228,7 +228,9 @@ namespace Content.Server.Preferences.Managers
         private int GetMaxUserCharacterSlots(NetUserId userId)
         {
             var maxSlots = _cfg.GetCVar(CCVars.GameMaxCharacterSlots);
+            // Imperial Space Start
             var extraSlots = (_sponsors.TryGetInfo(userId, out var sponsor) && sponsor.HavePriorityJoin == true) ? sponsor.ExtraSlots : 0;
+            // Imperial Space End
             return maxSlots + extraSlots;
         }
         // Corvax-Sponsors-End

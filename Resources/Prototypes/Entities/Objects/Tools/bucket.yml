@@ -52,7 +52,3 @@
   - type: Tag
     tags:
       - Bucket
-      - DroneUsable
-  - type: Construction
-    graph: Bucket
-    node: Bucket

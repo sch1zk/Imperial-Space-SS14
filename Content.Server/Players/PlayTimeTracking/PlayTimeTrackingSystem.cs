@@ -29,7 +29,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly PlayTimeTrackingManager _tracking = default!;
-    [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Corvax-Sponsors
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 
     public override void Initialize()
     {
@@ -160,7 +160,9 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     public bool IsAllowed(IPlayerSession player, string role)
     {
         if (!_prototypes.TryIndex<JobPrototype>(role, out var job) ||
+            // Imperial Space Start
             (job.SponsorsOnly && (_sponsorsManager.TryGetInfo(player.UserId, out var sponsorData) && sponsorData.HavePriorityJoin == true)) ||
+            // Imperial Space End
             job.Requirements == null ||
             !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;

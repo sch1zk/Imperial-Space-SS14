@@ -1008,7 +1008,7 @@ namespace Content.Shared.CCVar
         ///     Sets the duration of the map vote timer.
         /// </summary>
         public static readonly CVarDef<int>
-            VoteTimerMap = CVarDef.Create("vote.timermap", 60, CVar.SERVERONLY);
+            VoteTimerMap = CVarDef.Create("vote.timermap", 90, CVar.SERVERONLY);
 
         /// <summary>
         ///     Sets the duration of the restart vote timer.
@@ -1020,7 +1020,7 @@ namespace Content.Shared.CCVar
         ///     Sets the duration of the gamemode/preset vote timer.
         /// </summary>
         public static readonly CVarDef<int>
-            VoteTimerPreset = CVarDef.Create("vote.timerpreset", 60, CVar.SERVERONLY);
+            VoteTimerPreset = CVarDef.Create("vote.timerpreset", 30, CVar.SERVERONLY);
 
         /// <summary>
         ///     Sets the duration of the map vote timer when ALONE.
@@ -1064,6 +1064,30 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool> CameraRotationLocked =
             CVarDef.Create("shuttle.camera_rotation_locked", false, CVar.REPLICATED);
+
+        /// <summary>
+        /// Whether the arrivals shuttle is enabled.
+        /// </summary>
+        public static readonly CVarDef<bool> ArrivalsShuttles =
+            CVarDef.Create("shuttle.arrivals", true, CVar.SERVERONLY);
+
+        /// <summary>
+        /// The map to use for the arrivals station.
+        /// </summary>
+        public static readonly CVarDef<ResourcePath> ArrivalsMap =
+            CVarDef.Create("shuttle.arrivals_map", new ResourcePath("/Maps/Misc/terminal.yml"), CVar.SERVERONLY);
+
+        /// <summary>
+        /// Cooldown between arrivals departures. This should be longer than the FTL time or it will double cycle.
+        /// </summary>
+        public static readonly CVarDef<float> ArrivalsCooldown =
+            CVarDef.Create("shuttle.arrivals_cooldown", 90f, CVar.SERVERONLY);
+
+        /// <summary>
+        /// Are players allowed to return on the arrivals shuttle.
+        /// </summary>
+        public static readonly CVarDef<bool> ArrivalsReturns =
+            CVarDef.Create("shuttle.arrivals_returns", false, CVar.SERVERONLY);
 
         /// <summary>
         /// Whether cargo shuttles are enabled.
@@ -1256,13 +1280,7 @@ namespace Content.Shared.CCVar
         /// How long a client can go without any input before being considered AFK.
         /// </summary>
         public static readonly CVarDef<float> AfkTime =
-            CVarDef.Create("afk.time", 480f, CVar.SERVERONLY);
-
-        /// <summary>
-        /// How long seconds a client can go after being detected as AFK before being kicked.
-        /// </summary>
-        public static readonly CVarDef<float> AfkKickTime =
-            CVarDef.Create("afk.kick_time", 120f, CVar.SERVERONLY);
+            CVarDef.Create("afk.time", 60f, CVar.SERVERONLY);
 
         /*
          * IC
@@ -1421,7 +1439,7 @@ namespace Content.Shared.CCVar
         /// The time you must spend reading the rules, before the "Request" button is enabled
         /// </summary>
         public static readonly CVarDef<float> GhostRoleTime =
-            CVarDef.Create("ghost.role_time", 10f, CVar.REPLICATED);
+            CVarDef.Create("ghost.role_time", 3f, CVar.REPLICATED);
 
         /*
          * Fire alarm
@@ -1491,6 +1509,12 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<string> InfoLinksBugReport =
             CVarDef.Create("infolinks.bug_report", "", CVar.SERVER | CVar.REPLICATED);
 
+        /// <summary>
+        /// Link to site handling ban appeals. Shown in ban disconnect messages.
+        /// </summary>
+        public static readonly CVarDef<string> InfoLinksAppeal =
+            CVarDef.Create("infolinks.appeal", "", CVar.SERVER | CVar.REPLICATED);
+
         // Imperial-start
         public static readonly CVarDef<bool>
             EconomyWagesEnabled = CVarDef.Create("economy.wages_enabled", true, CVar.SERVERONLY);
@@ -1503,6 +1527,10 @@ namespace Content.Shared.CCVar
         // These are server-only for now since I don't foresee a client use yet,
         // and I don't wanna have to start coming up with like .client suffixes and stuff like that.
 
+        /// <summary>
+        /// Configuration presets to load during startup.
+        /// Multiple presets can be separated by comma and are loaded in order.
+        /// </summary>
         /// <remarks>
         /// Loaded presets must be located under the <c>ConfigPresets/</c> resource directory and end with the <c>.toml</c> extension.
         /// Only the file name (without extension) must be given for this variable.

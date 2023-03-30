@@ -16,6 +16,7 @@ public sealed class StoreUpdateState : BoundUserInterfaceState
 
     public readonly Dictionary<string, FixedPoint2> Balance;
 
+    // Imperial Space Start
     public readonly bool CanBuyByBankAccount;
 
     public StoreUpdateState(HashSet<ListingData> listings, Dictionary<string, FixedPoint2> balance, bool canBuyByBankAccount)
@@ -24,6 +25,7 @@ public sealed class StoreUpdateState : BoundUserInterfaceState
         Balance = balance;
         CanBuyByBankAccount = canBuyByBankAccount;
     }
+    // Imperial Space End
 }
 
 /// <summary>

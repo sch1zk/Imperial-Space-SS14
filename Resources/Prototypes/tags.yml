@@ -8,9 +8,6 @@
   id: AirSensor
 
 - type: Tag
-  id: HiddenDoor
-
-- type: Tag
   id: AppraisalTool
 
 - type: Tag
@@ -186,6 +183,15 @@
   id: DiscreteHealthAnalyzer #So construction recipes don't eat medical PDAs
 
 - type: Tag
+  id: DockArrivals
+
+- type: Tag
+  id: DockCargo
+
+- type: Tag
+  id: DockEmergency
+
+- type: Tag
   id: Document
 
 - type: Tag
@@ -211,21 +217,6 @@
 
 - type: Tag
   id: EmitterBolt
-
-- type: Tag
-  id: CannonBolt
-
-- type: Tag
-  id: CannonBolt2
-
-- type: Tag
-  id: CannonBolt3
-
-- type: Tag
-  id: CannonBolt4
-
-- type: Tag
-  id: CannonBolt5
 
 - type: Tag
   id: ExplosivePassable
@@ -300,9 +291,6 @@
   id: Handcuffs
 
 - type: Tag
-  id: Handle
-
-- type: Tag
   id: Head
 
 - type: Tag
@@ -343,6 +331,9 @@
 
 - type: Tag
   id: Knife
+
+- type: Tag
+  id: LavaBrig
 
 - type: Tag
   id: Machete

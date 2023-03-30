@@ -275,13 +275,6 @@ namespace Content.Server.Ghost.Roles
 
             if (role.RoleRules == "")
                 role.RoleRules = Loc.GetString("ghost-role-component-default-rules");
-            else
-            {
-                string? localizedRules;
-                Loc.TryGetString(role.RoleRules, out localizedRules);
-                if (localizedRules != null)
-                    role.RoleRules = localizedRules;
-            }
             RegisterGhostRole(role);
         }
 

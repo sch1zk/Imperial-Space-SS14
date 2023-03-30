@@ -1,5 +1,4 @@
 using System.Linq;
-using Content.Shared.Corvax.Sponsors;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Robust.Shared.Prototypes;
@@ -85,17 +84,16 @@ namespace Content.Shared.Humanoid
             return new(HairStyleId, HairColor, FacialHairStyleId, FacialHairColor, EyeColor, SkinColor, newMarkings);
         }
 
-        public static HumanoidCharacterAppearance Default()
+        public HumanoidCharacterAppearance() : this(
+            HairStyles.DefaultHairStyle,
+            Color.Black,
+            HairStyles.DefaultFacialHairStyle,
+            Color.Black,
+            Color.Black,
+            Humanoid.SkinColor.ValidHumanSkinTone,
+            new ()
+        )
         {
-            return new(
-                HairStyles.DefaultHairStyle,
-                Color.Black,
-                HairStyles.DefaultFacialHairStyle,
-                Color.Black,
-                Color.Black,
-                Humanoid.SkinColor.ValidHumanSkinTone,
-                new ()
-            );
         }
 
         public static HumanoidCharacterAppearance DefaultWithSpecies(string species)

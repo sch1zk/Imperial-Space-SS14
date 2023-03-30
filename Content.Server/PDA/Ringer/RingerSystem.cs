@@ -71,10 +71,12 @@ namespace Content.Server.PDA.Ringer
 
         //Non Event Functions
 
+        // Imperial Space Start
         public void RingerPlayRingtonePublic(EntityUid uid)
         {
             EnsureComp<ActiveRingerComponent>(uid);
         }
+        // Imperial Space End
 
         private bool UpdateRingerRingtone(RingerComponent ringer, Note[] ringtone)
         {

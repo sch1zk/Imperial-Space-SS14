@@ -42,7 +42,9 @@ namespace Content.Server.Mind
 
         private readonly List<Objective> _objectives = new();
 
+        // Imperial Space Start
         private readonly List<Memory> _memories = new();
+        // Imperial Space End
 
         public string Briefing = String.Empty;
 
@@ -119,8 +121,10 @@ namespace Content.Server.Mind
         [ViewVariables]
         public IEnumerable<Objective> AllObjectives => _objectives;
 
+        // Imperial Space Start
         [ViewVariables]
         public IEnumerable<Memory> AllMemories => _memories;
+        // Imperial Space End
 
         /// <summary>
         ///     Prevents user from ghosting out
@@ -480,6 +484,7 @@ namespace Content.Server.Mind
             return (session = Session) != null;
         }
 
+        // Imperial Space Start
         public Memory AddMemory(Memory memory)
         {
             if (_memories.Contains(memory))
@@ -489,5 +494,6 @@ namespace Content.Server.Mind
             _memories.Add(memory);
             return memory;
         }
+        // Imperial Space End
     }
 }

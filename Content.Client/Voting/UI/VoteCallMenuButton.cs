@@ -44,7 +44,9 @@ namespace Content.Client.Voting.UI
         private void UpdateCanCall(bool canCall)
         {
             Disabled = !canCall;
+            // Imperial Space Start
             Visible = canCall;
+            // Imperial Space End
         }
     }
 }

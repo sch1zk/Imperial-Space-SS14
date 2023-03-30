@@ -1,6 +1,8 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text;
+// Imperial Space Start
 using Content.Client.Corvax.Sponsors;
+// Imperial Space End
 using Content.Shared.CCVar;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Roles;
@@ -19,7 +21,9 @@ public sealed class PlayTimeTrackingManager
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
+    // Imperial Space Start
     [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
+    // Imperial Space End
 
     private readonly Dictionary<string, TimeSpan> _roles = new();
 
@@ -60,12 +64,13 @@ public sealed class PlayTimeTrackingManager
     {
         reason = null;
 
+        // Imperial Space Start
         if (job.SponsorsOnly && !(_sponsorsManager.TryGetInfo(out var sponsorData) && sponsorData.HavePriorityJoin == true))
-        //if (job.SponsorsOnly)
         {
             reason = "Только для подписчиков Imperial Pass";
             return false;
         }
+        // Imperial Space End
 
         if (job.Requirements == null ||
             !_cfg.GetCVar(CCVars.GameRoleTimers))

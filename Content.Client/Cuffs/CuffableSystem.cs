@@ -1,9 +1,19 @@
+using Content.Shared.ActionBlocker;
 using Content.Shared.Cuffs;
+using Content.Shared.Cuffs.Components;
+using Content.Shared.Humanoid;
+using Robust.Client.GameObjects;
+using Robust.Shared.GameStates;
 
-namespace Content.Client.Cuffs
+namespace Content.Client.Cuffs;
+
+public sealed class CuffableSystem : SharedCuffableSystem
 {
-    public sealed class CuffableSystem : SharedCuffableSystem
+    [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
+
+    public override void Initialize()
     {
+        base.Initialize();
 
         SubscribeLocalEvent<CuffableComponent, ComponentShutdown>(OnCuffableShutdown);
         SubscribeLocalEvent<CuffableComponent, ComponentHandleState>(OnCuffableHandleState);
@@ -67,3 +77,4 @@ namespace Content.Client.Cuffs
         }
     }
 }
+

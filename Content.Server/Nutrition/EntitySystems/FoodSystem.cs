@@ -129,8 +129,6 @@ namespace Content.Server.Nutrition.EntitySystems
                 _adminLogger.Add(LogType.Ingestion, LogImpact.Low, $"{ToPrettyString(target):target} is eating {ToPrettyString(food):food} {SolutionContainerSystem.ToPrettyString(foodSolution)}");
             }
 
-            //var moveBreak = user != target;
-            // var moveBreak = true;
             var foodData = new FoodData(foodSolution, flavors, utensils);
 
             var doAfterEventArgs = new DoAfterEventArgs(user, foodComp.ForceFeed ? foodComp.ForceFeedDelay : foodComp.Delay, target: target, used: food)

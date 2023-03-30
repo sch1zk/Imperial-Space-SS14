@@ -22,6 +22,7 @@
       - id: ClothingOuterCoatWardenAlt # Corvax-SecFashion
       - id: RubberStampWarden
       - id: DoorRemoteArmory
+      - id: ClothingOuterHardsuitWarden
 
 - type: entity
   id: LockerSecurityFilled

@@ -49,10 +49,12 @@ namespace Content.Client.Preferences
 
         public void UpdateCharacter(ICharacterProfile profile, int slot)
         {
+            // Imperial Space Start
             // Corvax-Sponsors-Start
             // var allowedMarkings = _sponsorsManager.TryGetInfo(out var sponsor) ? sponsor.AllowedMarkings : new string[]{};
             // profile.EnsureValid(allowedMarkings);
             // Corvax-Sponsors-End
+            // Imperial Space End
             var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters) {[slot] = profile};
             Preferences = new PlayerPreferences(characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor);
             var msg = new MsgUpdateCharacter
