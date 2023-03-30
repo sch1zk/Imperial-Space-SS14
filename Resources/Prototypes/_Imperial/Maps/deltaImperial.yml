@@ -6,7 +6,7 @@
   stations:
     Delta:
       mapNameTemplate: '{0} Delta {1}'
-      emergencyShuttlePath: /Maps/Shuttles/delta_shuttle.yml
+      emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
       nameGenerator:
         !type:NanotrasenNameGenerator
         prefixCreator: '14'
