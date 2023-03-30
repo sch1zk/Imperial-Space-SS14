@@ -108,5 +108,7 @@ namespace Content.Shared.Roles
         public int MaxBankBalance { get; } = 0;
         [DataField("wage")]
         public FixedPoint2 Wage { get; } = 0;
+        [DataField("sponsorsOnly")]
+        public bool SponsorsOnly { get; } = false;
     }
 }
