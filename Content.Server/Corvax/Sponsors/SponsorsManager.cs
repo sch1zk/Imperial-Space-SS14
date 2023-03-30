@@ -49,6 +49,7 @@ public sealed class SponsorsManager
             //_cachedSponsors.Remove(e.UserId); // Remove from cache if sponsor expired
             return;
         }
+        
         DebugTools.Assert(!_cachedSponsors.ContainsKey(e.UserId), "Cached data was found on client connect");
 
         _cachedSponsors[e.UserId] = info;

@@ -20,7 +20,9 @@ public sealed partial class StoreMenu : DefaultWindow
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     private StoreWithdrawWindow? _withdrawWindow;
+    // Imperial Space Start
     private StoreConfirmWindow? _confirmWindow;
+    // Imperial Space End
 
     public event Action<BaseButton.ButtonEventArgs, ListingData>? OnListingButtonPressed;
     public event Action<BaseButton.ButtonEventArgs, string>? OnCategoryButtonPressed;
@@ -46,6 +48,7 @@ public sealed partial class StoreMenu : DefaultWindow
         var currency = balance.ToDictionary(type =>
             (type.Key, type.Value), type => _prototypeManager.Index<CurrencyPrototype>(type.Key));
 
+        // Imperial Space Start
         var balanceStr = Loc.GetString("store-ui-balance") + " ";
         foreach (var ((type, amount),proto) in currency)
         {
@@ -58,6 +61,7 @@ public sealed partial class StoreMenu : DefaultWindow
                         : " " + Loc.GetString(proto.DisplayName),
                     ("amount", 1))));
         }
+        // Imperial Space End
 
         BalanceInfo.SetMarkup(balanceStr.TrimEnd());
 
@@ -80,7 +84,9 @@ public sealed partial class StoreMenu : DefaultWindow
         ClearListings();
         foreach (var item in sorted)
         {
+            // Imperial Space Start
             AddListingGui(item, canBuyByBankAccount);
+            // Imperial Space End
         }
     }
 
@@ -136,6 +142,7 @@ public sealed partial class StoreMenu : DefaultWindow
         }
 
         var newListing = new StoreListingControl(listingName, listingDesc, GetListingPriceString(listing), canBuy, texture);
+        // Imperial Space Start
         if (canBuyByBankAccount)
         {
             newListing.StoreItemBuyButton.OnButtonDown += args => OpenConfirmWindow(args, listing);
@@ -144,11 +151,12 @@ public sealed partial class StoreMenu : DefaultWindow
         {
             newListing.StoreItemBuyButton.OnButtonDown += args => OnListingButtonPressed?.Invoke(args, listing);
         }
-
+        // Imperial Space End
 
         StoreListingsContainer.AddChild(newListing);
     }
 
+    // Imperial Space Start
     private void OpenConfirmWindow(BaseButton.ButtonEventArgs args, ListingData listing)
     {
         if (_confirmWindow != null && _confirmWindow.IsOpen)
@@ -162,6 +170,7 @@ public sealed partial class StoreMenu : DefaultWindow
 
         _confirmWindow.ConfirmButton.OnButtonDown += _args => OnListingButtonPressed?.Invoke(_args, listing);
     }
+    // Imperial Space End
 
     public bool CanBuyListing(Dictionary<string, FixedPoint2> currency, Dictionary<string, FixedPoint2> price)
     {
@@ -187,12 +196,14 @@ public sealed partial class StoreMenu : DefaultWindow
             foreach (var (type, amount) in listing.Cost)
             {
                 var currency = _prototypeManager.Index<CurrencyPrototype>(type);
+                // Imperial Space Start
                 text += Loc.GetString("store-ui-price-display", ("amount", amount),
                     ("currency", Loc.GetString(
                             currency.CurrencySymbol != string.Empty
                             ? currency.CurrencySymbol
                             : " " + Loc.GetString(currency.DisplayName),
                         ("amount", amount))));
+                // Imperial Space End
             }
         }
 
@@ -244,7 +255,9 @@ public sealed partial class StoreMenu : DefaultWindow
     {
         base.Close();
         _withdrawWindow?.Close();
+        // Imperial Space Start
         _confirmWindow?.Close();
+        // Imperial Space End
     }
 
     private sealed class StoreCategoryButton : Button

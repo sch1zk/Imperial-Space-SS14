@@ -83,9 +83,6 @@
     state: shiv
   - type: Item
     heldPrefix: shiv
-  - type: Construction
-    graph: ScalpelShiv
-    node: Shiv
 
 - type: entity
   name: advanced scalpel

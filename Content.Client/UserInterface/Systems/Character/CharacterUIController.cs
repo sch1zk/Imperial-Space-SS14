@@ -101,11 +101,13 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
             return;
         }
 
+        // Imperial Space Start
         var (job, objectives, briefing, sprite, entityName, memories) = data;
 
         _window.SubText.Text = job;
         _window.Objectives.RemoveAllChildren();
         _window.Memories.RemoveAllChildren();
+        // Imperial Space End
 
         foreach (var (groupId, conditions) in objectives)
         {
@@ -140,6 +142,7 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
             _window.Objectives.AddChild(objectiveControl);
         }
 
+        // Imperial Space Start
         foreach (var (memoryName, memoryValue) in memories)
         {
             var memoryControl = new BoxContainer()
@@ -156,6 +159,7 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
             });
             _window.Memories.AddChild(memoryControl);
         }
+        // Imperial Space End
 
         _window.SpriteView.Sprite = sprite;
         _window.NameLabel.Text = entityName;

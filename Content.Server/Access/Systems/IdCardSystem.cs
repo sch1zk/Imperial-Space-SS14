@@ -20,7 +20,9 @@ namespace Content.Server.Access.Systems
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
+        // Imperial Space Start
         [Dependency] private readonly BankManagerSystem _bankManager = default!;
+        // Imperial Space End
 
         public override void Initialize()
         {
@@ -179,7 +181,7 @@ namespace Content.Server.Access.Systems
                     ("jobSuffix", jobSuffix));
             EntityManager.GetComponent<MetaDataComponent>(id.Owner).EntityName = val;
         }
-
+        // Imperial Space Start
         public bool TryStoreNewBankAccount(EntityUid uid, IdCardComponent? id, out BankAccountComponent? bankAccount)
         {
             bankAccount = null;
@@ -194,5 +196,6 @@ namespace Content.Server.Access.Systems
             Dirty(id);
             return true;
         }
+        // Imperial Space End
     }
 }

@@ -1,16 +1,14 @@
 ﻿using Content.Server.Access.Systems;
-using Content.Server.Corvax.TTS;
 using Content.Server.DetailExaminable;
-using Content.Server.Economy;
-using Content.Server.Economy.Wage;
 using Content.Server.Hands.Components;
 using Content.Server.Hands.Systems;
 using Content.Server.Humanoid;
 using Content.Server.IdentityManagement;
-using Content.Server.Mind.Commands;
 using Content.Server.PDA;
 using Content.Server.Roles;
 using Content.Server.Station.Components;
+using Content.Server.Mind.Commands;
+using Content.Server.Shuttles.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.CCVar;
 using Content.Shared.Humanoid.Prototypes;
@@ -23,10 +21,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using Content.Server.CartridgeLoader;
-using Content.Server.CartridgeLoader.Cartridges;
-using Content.Server.Mind.Components;
-using Content.Server.Mind;
+
 
 namespace Content.Server.Station.Systems;
 
@@ -78,7 +73,7 @@ public sealed class StationSpawningSystem : EntitySystem
         var ev = new PlayerSpawningEvent(job, profile, station);
         RaiseLocalEvent(ev);
 
-        DebugTools.Assert(ev.SpawnResult is { Valid: true } or null);
+        DebugTools.Assert(ev.SpawnResult is {Valid: true} or null);
 
         return ev.SpawnResult;
     }
@@ -111,9 +106,12 @@ public sealed class StationSpawningSystem : EntitySystem
             return jobEntity;
         }
 
-        var entity = EntityManager.SpawnEntity(
-            _prototypeManager.Index<SpeciesPrototype>(profile?.Species ?? HumanoidAppearanceSystem.DefaultSpecies).Prototype,
-            coordinates);
+        if (!_prototypeManager.TryIndex(profile?.Species ?? HumanoidAppearanceSystem.DefaultSpecies, out SpeciesPrototype? species))
+        {
+            species = _prototypeManager.Index<SpeciesPrototype>(HumanoidAppearanceSystem.DefaultSpecies);
+        }
+
+        var entity = EntityManager.SpawnEntity(species.Prototype, coordinates);
 
         if (job?.StartingGear != null)
         {

@@ -43,7 +43,9 @@ public sealed class CharacterInfoSystem : EntitySystem
     private void OnCharacterInfoEvent(CharacterInfoEvent msg, EntitySessionEventArgs args)
     {
         var sprite = CompOrNull<SpriteComponent>(msg.EntityUid);
+        // Imperial Space Start
         var data = new CharacterData(msg.JobTitle, msg.Objectives, msg.Briefing, sprite, Name(msg.EntityUid), msg.Memory);
+        // Imperial Space End
 
         OnCharacterUpdate?.Invoke(data);
     }
@@ -54,6 +56,8 @@ public sealed class CharacterInfoSystem : EntitySystem
         string Briefing,
         SpriteComponent? Sprite,
         string EntityName,
+        // Imperial Space Start
         Dictionary<string, string> Memory
+        // Imperial Space End
     );
 }

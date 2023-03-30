@@ -24,7 +24,6 @@ public sealed partial class StoreSystem : EntitySystem
     {
         base.Initialize();
 
-        // SubscribeLocalEvent<StoreComponent, BeforeActivatableUIOpenEvent>((_,c,a) => UpdateUserInterface(a.User, c));
         SubscribeLocalEvent<CurrencyComponent, AfterInteractEvent>(OnAfterInteract);
         SubscribeLocalEvent<StoreComponent, BeforeActivatableUIOpenEvent>(BeforeActivatableUiOpen);
 
@@ -57,7 +56,7 @@ public sealed partial class StoreSystem : EntitySystem
     private void OnShutdown(EntityUid uid, StoreComponent component, ComponentShutdown args)
     {
         var ev = new StoreRemovedEvent();
-        RaiseLocalEvent(uid, ev, true);
+        RaiseLocalEvent(uid, ref ev, true);
     }
 
     private void OnAfterInteract(EntityUid uid, CurrencyComponent component, AfterInteractEvent args)
@@ -142,18 +141,15 @@ public sealed partial class StoreSystem : EntitySystem
     /// <param name="preset">The ID of a store preset prototype</param>
     /// <param name="uid"></param>
     /// <param name="component">The store being initialized</param>
-    public void InitializeFromPreset(string? preset, EntityUid? uid, StoreComponent component)
+    public void InitializeFromPreset(string? preset, EntityUid uid, StoreComponent component)
     {
         if (preset == null)
-            return;
-
-        if (uid == null)
             return;
 
         if (!_proto.TryIndex<StorePresetPrototype>(preset, out var proto))
             return;
 
-        InitializeFromPreset(proto, (EntityUid)uid, component);
+        InitializeFromPreset(proto, uid, component);
     }
 
     /// <summary>

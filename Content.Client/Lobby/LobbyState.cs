@@ -6,7 +6,9 @@ using Content.Client.Preferences;
 using Content.Client.Preferences.UI;
 using Content.Client.UserInterface.Systems.Chat;
 using Content.Client.Voting;
+// Imperial Space Start
 using Content.Shared.CCVar;
+// Imperial Space End
 using Robust.Client;
 using Robust.Client.Console;
 using Robust.Client.Input;
@@ -72,9 +74,8 @@ namespace Content.Client.Lobby
             };
 
             LayoutContainer.SetAnchorPreset(_lobby, LayoutContainer.LayoutPreset.Wide);
-            //_lobby.ServerName.Text = _baseClient.GameInfo?.ServerName; //The eye of refactor gazes upon you...
-
             // Imperial Space Start
+            //_lobby.ServerName.Text = _baseClient.GameInfo?.ServerName; //The eye of refactor gazes upon you...
             var cfgMan = IoCManager.Resolve<IConfigurationManager>();
             _lobby.ServerName.Text = cfgMan.GetCVar(CCVars.LobbyName);
             // Imperial Space End
@@ -144,6 +145,10 @@ namespace Content.Client.Lobby
             if (_gameTicker.Paused)
             {
                 text = Loc.GetString("lobby-state-paused");
+            }
+            else if ((_gameTicker.StartTime - _gameTicker.PreloadTime) < _gameTiming.CurTime)
+            {
+                text = Loc.GetString("lobby-state-preloading");
             }
             else
             {

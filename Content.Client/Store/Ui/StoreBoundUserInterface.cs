@@ -52,7 +52,9 @@ public sealed class StoreBoundUserInterface : BoundUserInterface
             case StoreUpdateState msg:
                 _menu.UpdateBalance(msg.Balance);
                 _menu.PopulateStoreCategoryButtons(msg.Listings);
+                // Imperial Space Start
                 _menu.UpdateListing(msg.Listings.ToList(), msg.CanBuyByBankAccount);
+                // Imperial Space End
                 break;
             case StoreInitializeState msg:
                 _windowName = msg.Name;

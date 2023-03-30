@@ -17,11 +17,13 @@ namespace Content.Shared.Access.Components
         [DataField("jobTitle")]
         public string? JobTitle;
 
+        // Imperial Space Start
         [DataField("storedBankAccountNumber")]
         public string? StoredBankAccountNumber;
 
         [DataField("storedBankAccountPin")]
         public string? StoredBankAccountPin;
+        // Imperial Space End
     }
 
     [Serializable, NetSerializable]
