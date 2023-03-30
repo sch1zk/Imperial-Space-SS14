@@ -25,7 +25,7 @@ namespace Content.Server.Shuttles.Systems
         [Dependency] private readonly ShuttleConsoleSystem _console = default!;
         [Dependency] private readonly SharedJointSystem _jointSystem = default!;
         [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-        [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
+        [Dependency] private readonly SharedTransformSystem _transform = default!;
 
         private ISawmill _sawmill = default!;
         private const string DockingFixture = "docking";
@@ -283,6 +283,7 @@ namespace Content.Server.Shuttles.Systems
             if (dockB.Owner.GetHashCode() < dockA.Owner.GetHashCode())
             {
                 (dockA, dockB) = (dockB, dockA);
+                (dockAUid, dockBUid) = (dockBUid, dockAUid);
             }
 
             _sawmill.Debug($"Docking between {dockA.Owner} and {dockB.Owner}");
@@ -345,7 +346,7 @@ namespace Content.Server.Shuttles.Systems
 
             if (TryComp(dockA.Owner, out DoorComponent? doorA))
             {
-                if (_doorSystem.TryOpen(doorA.Owner, doorA))
+                if (_doorSystem.TryOpen(dockAUid, doorA))
                 {
                     doorA.ChangeAirtight = false;
                     if (TryComp<AirlockComponent>(dockA.Owner, out var airlockA))
@@ -357,7 +358,7 @@ namespace Content.Server.Shuttles.Systems
 
             if (TryComp(dockB.Owner, out DoorComponent? doorB))
             {
-                if (_doorSystem.TryOpen(doorB.Owner, doorB))
+                if (_doorSystem.TryOpen(dockBUid, doorB))
                 {
                     doorB.ChangeAirtight = false;
                     if (TryComp<AirlockComponent>(dockB.Owner, out var airlockB))
