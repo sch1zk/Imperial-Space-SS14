@@ -5,99 +5,8 @@ meta:
   postmapinit: false
 tilemap:
   0: Space
-  1: FloorArcadeBlue
-  2: FloorArcadeBlue2
-  3: FloorArcadeRed
-  4: FloorAsteroidCoarseSand0
-  5: FloorAsteroidCoarseSandDug
-  6: FloorAsteroidIronsand1
-  7: FloorAsteroidIronsand2
-  8: FloorAsteroidIronsand3
-  9: FloorAsteroidIronsand4
-  10: FloorAsteroidSand
-  11: FloorAsteroidTile
-  12: FloorBar
-  13: FloorBasalt
-  14: FloorBlue
-  15: FloorBlueCircuit
-  16: FloorBoxing
-  17: FloorCarpetClown
-  18: FloorCarpetOffice
-  19: FloorCave
-  20: FloorCaveDrought
-  21: FloorClown
-  22: FloorDark
-  23: FloorDarkDiagonal
-  24: FloorDarkDiagonalMini
-  25: FloorDarkHerringbone
-  26: FloorDarkMini
-  27: FloorDarkMono
-  28: FloorDarkOffset
-  29: FloorDarkPavement
-  30: FloorDarkPavementVertical
-  31: FloorDarkPlastic
-  32: FloorDesert
-  33: FloorDirt
-  34: FloorEighties
-  35: FloorElevatorShaft
-  36: FloorFlesh
-  37: FloorFreezer
-  38: FloorGlass
-  39: FloorGold
-  40: FloorGrass
-  41: FloorGrassDark
-  42: FloorGrassJungle
-  43: FloorGrassLight
-  44: FloorGreenCircuit
-  45: FloorGym
-  46: FloorHydro
-  47: FloorKitchen
-  48: FloorLaundry
-  49: FloorLino
-  50: FloorLowDesert
   51: FloorMetalDiamond
-  52: FloorMime
-  53: FloorMono
-  54: FloorPlanetDirt
-  55: FloorPlanetGrass
-  56: FloorPlastic
-  57: FloorRGlass
-  58: FloorReinforced
-  59: FloorRockVault
-  60: FloorShowroom
-  61: FloorShuttleBlue
-  62: FloorShuttleOrange
-  63: FloorShuttlePurple
-  64: FloorShuttleRed
-  65: FloorShuttleWhite
-  66: FloorSilver
-  67: FloorSnow
   68: FloorSteel
-  69: FloorSteelDiagonal
-  70: FloorSteelDiagonalMini
-  71: FloorSteelDirty
-  72: FloorSteelHerringbone
-  73: FloorSteelMini
-  74: FloorSteelMono
-  75: FloorSteelOffset
-  76: FloorSteelPavement
-  77: FloorSteelPavementVertical
-  78: FloorTechMaint
-  79: FloorTechMaint2
-  80: FloorTechMaint3
-  81: FloorWhite
-  82: FloorWhiteDiagonal
-  83: FloorWhiteDiagonalMini
-  84: FloorWhiteHerringbone
-  85: FloorWhiteMini
-  86: FloorWhiteMono
-  87: FloorWhiteOffset
-  88: FloorWhitePavement
-  89: FloorWhitePavementVertical
-  90: FloorWhitePlastic
-  91: FloorWood
-  92: FloorWoodTile
-  93: Lattice
   94: Plating
 entities:
 - uid: 0
@@ -184,30 +93,40 @@ entities:
   - pos: -5.5,6.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 14
   type: CableApcExtension
   components:
   - pos: -6.5,6.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 15
   type: CableApcExtension
   components:
   - pos: -7.5,6.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 16
   type: CableApcExtension
   components:
   - pos: -7.5,5.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 17
   type: CableApcExtension
   components:
   - pos: -7.5,4.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 18
   type: APCHyperCapacity
   components:
@@ -227,24 +146,32 @@ entities:
   - pos: -8.5,6.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 21
   type: CableHV
   components:
   - pos: -6.5,7.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 22
   type: CableHV
   components:
   - pos: -7.5,7.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 23
   type: CableHV
   components:
   - pos: -8.5,7.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 24
   type: WallRiveted
   components:
@@ -1171,28 +1098,43 @@ entities:
   - pos: -8.5,6.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 156
   type: CableMV
   components:
   - pos: -7.5,6.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 157
   type: CableMV
   components:
   - pos: -7.5,5.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 158
   type: CableMV
   components:
   - pos: -7.5,4.5
     parent: 104
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 159
   type: GravityGeneratorMini
   components:
   - pos: -7.5,6.5
+    parent: 104
+    type: Transform
+- uid: 160
+  type: TableReinforcedGlass
+  components:
+  - rot: 3.141592653589793 rad
+    pos: 0.5,7.5
     parent: 104
     type: Transform
 - uid: 161
@@ -1211,12 +1153,6 @@ entities:
   type: ComputerId
   components:
   - pos: 1.5,7.5
-    parent: 104
-    type: Transform
-- uid: 164
-  type: TableReinforcedGlass
-  components:
-  - pos: 0.5,7.5
     parent: 104
     type: Transform
 - uid: 165
@@ -1251,6 +1187,8 @@ entities:
     type: Transform
   - containers:
       entity_storage: !type:Container
+        showEnts: False
+        occludes: True
         ents:
         - 170
         - 171
@@ -1275,7 +1213,10 @@ entities:
         - 211
         - 212
         - 213
-      paper_label: !type:ContainerSlot {}
+      paper_label: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
     type: ContainerContainer
 - uid: 170
   type: ClothingHandsGlovesCentcomNaval
@@ -1336,6 +1277,8 @@ entities:
     type: Transform
   - containers:
       storagebase: !type:Container
+        showEnts: False
+        occludes: True
         ents:
         - 176
         - 180
@@ -1725,294 +1668,6 @@ entities:
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 214
-  type: FaxMachineCentcom
-  components:
-  - pos: -0.5,7.5
-    parent: 104
-    type: Transform
-- uid: 215
-  type: PenCap
-  components:
-  - pos: -1.4485707,7.622838
-    parent: 104
-    type: Transform
-- uid: 216
-  type: RubberStampApproved
-  components:
-  - pos: -2.4187636,7.769639
-    parent: 104
-    type: Transform
-- uid: 217
-  type: RubberStampDenied
-  components:
-  - pos: -2.4377108,7.504014
-    parent: 104
-    type: Transform
-- uid: 218
-  type: RubberStampCentcom
-  components:
-  - pos: -1.1864895,7.738389
-    parent: 104
-    type: Transform
-- uid: 219
-  type: RubberStampSyndicate
-  components:
-  - pos: -3.341754,7.8201313
-    parent: 104
-    type: Transform
-- uid: 220
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 221
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 222
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 223
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 224
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 225
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 226
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 227
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 228
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 229
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 230
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 231
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 232
-  type: Paper
-  components:
-  - pos: 0.13992095,7.578311
-    parent: 104
-    type: Transform
-- uid: 233
-  type: Paper
-  components:
-  - pos: 0.15554595,7.578311
-    parent: 104
-    type: Transform
-- uid: 234
-  type: Paper
-  components:
-  - pos: 0.15554595,7.578311
-    parent: 104
-    type: Transform
-- uid: 235
-  type: Paper
-  components:
-  - pos: 0.15554595,7.578311
-    parent: 104
-    type: Transform
-- uid: 236
-  type: Paper
-  components:
-  - pos: 0.15554595,7.578311
-    parent: 104
-    type: Transform
-- uid: 237
-  type: Paper
-  components:
-  - pos: 0.15554595,7.578311
-    parent: 104
-    type: Transform
-- uid: 238
-  type: Paper
-  components:
-  - pos: 0.15554595,7.578311
-    parent: 104
-    type: Transform
-- uid: 239
-  type: Paper
-  components:
-  - pos: 0.17117095,7.578311
-    parent: 104
-    type: Transform
-- uid: 240
-  type: Paper
-  components:
-  - pos: 0.17117095,7.578311
-    parent: 104
-    type: Transform
-- uid: 241
-  type: Paper
-  components:
-  - pos: 0.17117095,7.578311
-    parent: 104
-    type: Transform
-- uid: 242
-  type: Paper
-  components:
-  - pos: 0.17117095,7.593936
-    parent: 104
-    type: Transform
-- uid: 243
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 244
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 245
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 246
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 247
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 248
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 249
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 250
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 251
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 252
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 253
-  type: Paper
-  components:
-  - pos: 0.18679595,7.609561
-    parent: 104
-    type: Transform
-- uid: 254
-  type: Paper
-  components:
-  - pos: 0.20242095,7.609561
-    parent: 104
-    type: Transform
-- uid: 255
-  type: Paper
-  components:
-  - pos: 0.20242095,7.609561
-    parent: 104
-    type: Transform
-- uid: 256
-  type: Paper
-  components:
-  - pos: 0.21804595,7.609561
-    parent: 104
-    type: Transform
-- uid: 257
-  type: Paper
-  components:
-  - pos: 0.21804595,7.609561
-    parent: 104
-    type: Transform
-- uid: 258
-  type: Paper
-  components:
-  - pos: 0.21804595,7.609561
-    parent: 104
-    type: Transform
-- uid: 259
-  type: Paper
-  components:
-  - pos: 0.21804595,7.609561
-    parent: 104
-    type: Transform
-- uid: 260
-  type: Paper
-  components:
-  - pos: 0.21804595,7.609561
-    parent: 104
-    type: Transform
-- uid: 261
-  type: Paper
-  components:
-  - pos: 0.21804595,7.609561
-    parent: 104
-    type: Transform
 - uid: 262
   type: WelderIndustrial
   components:
