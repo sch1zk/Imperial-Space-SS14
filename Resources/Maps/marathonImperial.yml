@@ -696,7 +696,7 @@ entities:
           3181: -38,-18
           3198: -25,58
           3207: 6,-43
-          3217: -58,8
+          3212: -58,8
       - node:
           color: '#FFFFFFFF'
           id: BotGreyscale
@@ -2092,8 +2092,8 @@ entities:
           3090: 5,28
           3091: -1,28
           3092: 2,28
-          3220: -49,-7
-          3221: -49,0
+          3215: -49,-7
+          3216: -49,0
       - node:
           color: '#FFFFFFFF'
           id: DiagonalCheckerAOverlay
@@ -5025,12 +5025,12 @@ entities:
           2906: 14,-25
           2907: 14,-24
           2908: 14,-23
-          3210: -47,1
-          3212: -47,0
-          3214: -47,-6
-          3215: -47,-7
-          3218: -47,-8
-          3219: -47,-1
+          3208: -47,1
+          3209: -47,0
+          3210: -47,-6
+          3211: -47,-7
+          3213: -47,-8
+          3214: -47,-1
       - node:
           color: '#FFFFFFFF'
           id: WarnLineW
@@ -5836,7 +5836,7 @@ entities:
           0: 65535
         -13,-2:
           0: 65416
-          6: 64
+          6: 68
         -13,-1:
           0: 65279
           1: 256
@@ -35955,6 +35955,30 @@ entities:
     type: AtmosPipeColor
   - bodyType: Static
     type: Physics
+- uid: 3596
+  type: CableHV
+  components:
+  - pos: -25.5,-63.5
+    parent: 30
+    type: Transform
+  - enabled: True
+    type: AmbientSound
+- uid: 3597
+  type: CableHV
+  components:
+  - pos: -26.5,-63.5
+    parent: 30
+    type: Transform
+  - enabled: True
+    type: AmbientSound
+- uid: 3598
+  type: CableHV
+  components:
+  - pos: -27.5,-63.5
+    parent: 30
+    type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 3599
   type: CableMV
   components:
@@ -36139,6 +36163,12 @@ entities:
   type: CableApcExtension
   components:
   - pos: -50.5,10.5
+    parent: 30
+    type: Transform
+- uid: 3629
+  type: GeneratorPlasma
+  components:
+  - pos: -25.5,-63.5
     parent: 30
     type: Transform
 - uid: 3642
@@ -47303,8 +47333,7 @@ entities:
   components:
   - type: MetaData
   - type: Transform
-  - index: 50
-    type: Map
+  - type: Map
   - type: PhysicsMap
   - type: Broadphase
   - type: OccluderTree
@@ -173285,30 +173314,6 @@ entities:
     type: Transform
   - enabled: True
     type: AmbientSound
-- uid: 22667
-  type: CableHV
-  components:
-  - pos: -25.5,-63.5
-    parent: 30
-    type: Transform
-  - enabled: True
-    type: AmbientSound
-- uid: 22668
-  type: CableHV
-  components:
-  - pos: -26.5,-63.5
-    parent: 30
-    type: Transform
-  - enabled: True
-    type: AmbientSound
-- uid: 22669
-  type: CableHV
-  components:
-  - pos: -27.5,-63.5
-    parent: 30
-    type: Transform
-  - enabled: True
-    type: AmbientSound
 - uid: 22670
   type: CableHV
   components:
@@ -173937,12 +173942,6 @@ entities:
   type: Catwalk
   components:
   - pos: -25.5,-61.5
-    parent: 30
-    type: Transform
-- uid: 22766
-  type: GeneratorBasic
-  components:
-  - pos: -25.5,-63.5
     parent: 30
     type: Transform
 - uid: 22767
