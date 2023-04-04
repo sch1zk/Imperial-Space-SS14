@@ -58750,6 +58750,8 @@ entities:
   - pos: -23.5,-19.5
     parent: 30
     type: Transform
+  - name: Офис ГВ
+    type: FaxMachine
 - uid: 6991
   type: Table
   components:
