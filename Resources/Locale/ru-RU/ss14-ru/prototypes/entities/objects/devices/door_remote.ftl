@@ -25,3 +25,6 @@ ent-DoorRemoteMedical = пульт от дверей медотсека
 ent-DoorRemoteEngineering = пульт от дверей инженерного отдела
     .desc = { ent-DoorRemoteDefault.desc }
     .suffix = { "" }
+ent-DoorRemoteNuclearOperative = пульт от дверей ядерных оперативников
+    .desc = Выглядит... кроваво
+    .suffix = { "" }
