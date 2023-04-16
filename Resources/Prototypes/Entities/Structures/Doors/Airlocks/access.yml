@@ -343,6 +343,14 @@
     access: [["Atmospherics"]]
 
 - type: entity
+  parent: AirlockExternalGlass
+  id: AirlockNuclearOperativeGlassLockedExternal
+  suffix: NuclearOperative, Locked, Glass, External
+  components:
+  - type: AccessReader
+    access: [["NuclearOperative"]]
+
+- type: entity
   parent: AirlockGlass
   id: AirlockKitchenGlassLocked
   suffix: Kitchen, Locked
@@ -531,6 +539,14 @@
   components:
   - type: AccessReader
     access: [["External"]]
+
+- type: entity
+  parent: AirlockCommandGlassLocked
+  id: AirlockNuclearOperativeGlassLocked
+  suffix: NuclearOperative, Locked
+  components:
+  - type: AccessReader
+    access: [["NuclearOperative"]]
 
 # Maintenance Hatches
 - type: entity
