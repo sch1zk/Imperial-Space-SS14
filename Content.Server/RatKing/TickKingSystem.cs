@@ -1,6 +1,6 @@
 using Content.Server.Actions;
 using Content.Server.Atmos.EntitySystems;
-using Content.Server.Nutrition.Components;
+using Content.Shared.Nutrition.Components;
 using Content.Server.Popups;
 using Content.Shared.Actions;
 using Content.Shared.Atmos;

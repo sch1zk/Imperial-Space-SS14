@@ -18,5 +18,5 @@
   - type: Tag
     tags:
     - Trash
-  - type: Recyclable
+    - Recyclable
   - type: SpaceGarbage

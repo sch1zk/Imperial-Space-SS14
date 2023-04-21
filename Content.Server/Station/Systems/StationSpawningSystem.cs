@@ -1,8 +1,7 @@
-﻿using Content.Server.Access.Systems;
+using Content.Server.Access.Systems;
 using Content.Server.DetailExaminable;
 using Content.Server.Economy;
 using Content.Server.Economy.Wage;
-using Content.Server.Hands.Components;
 using Content.Server.Hands.Systems;
 using Content.Server.Humanoid;
 using Content.Server.IdentityManagement;
