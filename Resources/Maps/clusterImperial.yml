@@ -2988,7 +2988,7 @@ entities:
         decals:
           1136: 16,-55
           1137: 16,-48
-          1164: 16,-40
+          1163: 16,-40
       - node:
           color: '#FFFFFFFF'
           id: WarnLineN
@@ -3010,7 +3010,7 @@ entities:
           1133: 14,-50
           1134: 14,-56
           1135: 14,-58
-          1163: 14,-40
+          1162: 14,-40
       - node:
           color: '#FFFFFFFF'
           id: WarnLineW
@@ -70333,6 +70333,13 @@ entities:
   type: CrowbarRed
   components:
   - pos: 13.485815,-51.597256
+    parent: 127
+    type: Transform
+- uid: 8975
+  type: AtmosDeviceFanTiny
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 62.5,-31.5
     parent: 127
     type: Transform
 ...
