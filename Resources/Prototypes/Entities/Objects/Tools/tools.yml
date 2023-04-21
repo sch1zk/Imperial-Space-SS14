@@ -35,6 +35,9 @@
   - type: Item
     sprite: Objects/Tools/wirecutters.rsi
   - type: LatticeCutting
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
   - type: StaticPrice
     price: 40
   - type: Construction
@@ -77,6 +80,9 @@
     available:
       - enum.DamageStateVisualLayers.Base:
           screwdriver: Rainbow
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
   - type: StaticPrice
     price: 40
 
@@ -109,6 +115,9 @@
       - Anchoring
     useSound:
       path: /Audio/Items/ratchet.ogg
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
   - type: StaticPrice
     price: 40
 
@@ -142,6 +151,9 @@
     useSound:
       path: /Audio/Items/crowbar.ogg
   - type: TilePrying
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
   - type: StaticPrice
     price: 40
   - type: Construction
@@ -206,6 +218,10 @@
   - type: Tag
     tags:
       - DroneUsable
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Plastic: 100
   - type: StaticPrice
     price: 60
 
@@ -248,6 +264,10 @@
           path: /Audio/Items/drill_use.ogg
         changeSound:
           path: /Audio/Items/change_drill.ogg
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 300
+      Plastic: 100
   - type: StaticPrice
     price: 100
 
@@ -270,6 +290,10 @@
     quickEquip: false
     slots:
     - Belt
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 600
+      Plastic: 100
   - type: StaticPrice
     price: 100
 
@@ -294,6 +318,10 @@
   - type: Item
     sprite: Objects/Tools/rcd.rsi
     heldPrefix: ammo
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Plastic: 100
   - type: StaticPrice
     price: 60
 
@@ -316,6 +344,12 @@
         Blunt: 10
   - type: Item
     sprite: Objects/Tools/shovel.rsi
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Wood: 50
+  - type: StaticPrice
+    price: 25
 
 - type: entity
   name: omnitool

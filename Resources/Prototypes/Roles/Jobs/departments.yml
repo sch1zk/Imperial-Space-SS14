@@ -15,6 +15,7 @@
   roles:
   - Bartender
   - Botanist
+  - Boxer
   - Chaplain
   - Chef
   - Clown
@@ -84,6 +85,7 @@
   - SecurityOfficer
   - Detective
   - Warden
+  - Brigmedic
   accountNumber: 1320
 
 - type: department
