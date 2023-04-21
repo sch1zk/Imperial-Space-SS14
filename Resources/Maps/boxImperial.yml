@@ -1267,8 +1267,6 @@ entities:
     pos: -5.5,48.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 175
   type: SolarPanel
   components:
@@ -2497,8 +2495,6 @@ entities:
     pos: -35.5,20.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 344
   type: ReinforcedWindow
   components:
@@ -2706,8 +2702,6 @@ entities:
     pos: -35.5,18.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 377
   type: Stool
   components:
@@ -2722,8 +2716,6 @@ entities:
     pos: -35.5,22.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 379
   type: TableWood
   components:
@@ -3274,8 +3266,6 @@ entities:
     pos: -50.5,15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 461
   type: WallSolid
   components:
@@ -3954,7 +3944,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 21828
     type: Docking
-  - SecondsUntilStateChange: -67172.57
+  - SecondsUntilStateChange: -68023.44
     changeAirtight: False
     state: Opening
     type: Door
@@ -4150,11 +4140,13 @@ entities:
     parent: 8364
     type: Transform
 - uid: 587
-  type: WallReinforced
+  type: CableApcExtension
   components:
-  - pos: -78.5,7.5
+  - pos: -77.5,7.5
     parent: 8364
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 588
   type: WallReinforced
   components:
@@ -4187,12 +4179,13 @@ entities:
     parent: 8364
     type: Transform
 - uid: 593
-  type: WallReinforced
+  type: CableApcExtension
   components:
-  - rot: 3.141592653589793 rad
-    pos: -76.5,7.5
+  - pos: -74.5,7.5
     parent: 8364
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 594
   type: KitchenMicrowave
   components:
@@ -4207,10 +4200,10 @@ entities:
     parent: 8364
     type: Transform
 - uid: 596
-  type: Grille
+  type: AtmosDeviceFanTiny
   components:
   - rot: 3.141592653589793 rad
-    pos: -75.5,-2.5
+    pos: -79.5,-2.5
     parent: 8364
     type: Transform
 - uid: 597
@@ -4318,11 +4311,47 @@ entities:
     parent: 8364
     type: Transform
 - uid: 602
-  type: WallReinforced
+  type: AirlockExternalGlassShuttleArrivals
   components:
   - pos: -79.5,7.5
     parent: 8364
     type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+      hard: True
+      restitution: 0
+      friction: 0.4
+      id: null
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      mask: []
+      layer: []
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: docking
+    type: Fixtures
 - uid: 603
   type: CableApcExtension
   components:
@@ -4332,10 +4361,10 @@ entities:
   - enabled: True
     type: AmbientSound
 - uid: 604
-  type: WallReinforced
+  type: ReinforcedWindow
   components:
   - rot: 3.141592653589793 rad
-    pos: -76.5,-2.5
+    pos: -74.5,-2.5
     parent: 8364
     type: Transform
 - uid: 605
@@ -4349,8 +4378,7 @@ entities:
 - uid: 606
   type: ReinforcedWindow
   components:
-  - rot: 3.141592653589793 rad
-    pos: -75.5,7.5
+  - pos: -74.5,7.5
     parent: 8364
     type: Transform
 - uid: 607
@@ -4389,15 +4417,13 @@ entities:
 - uid: 612
   type: ReinforcedWindow
   components:
-  - rot: 3.141592653589793 rad
-    pos: -73.5,7.5
+  - pos: -75.5,7.5
     parent: 8364
     type: Transform
 - uid: 613
-  type: Grille
+  type: SignSpace
   components:
-  - rot: 3.141592653589793 rad
-    pos: -72.5,7.5
+  - pos: -71.5,-2.5
     parent: 8364
     type: Transform
 - uid: 614
@@ -4408,21 +4434,54 @@ entities:
     parent: 8364
     type: Transform
 - uid: 615
-  type: CableApcExtension
+  type: AtmosDeviceFanTiny
   components:
-  - pos: -72.5,-2.5
+  - pos: -79.5,7.5
     parent: 8364
     type: Transform
-  - enabled: True
-    type: AmbientSound
 - uid: 616
-  type: CableApcExtension
+  type: AirlockExternalGlassShuttleArrivals
   components:
-  - pos: -75.5,-2.5
+  - rot: 3.141592653589793 rad
+    pos: -72.5,-2.5
     parent: 8364
     type: Transform
-  - enabled: True
-    type: AmbientSound
+  - fixtures:
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+      hard: True
+      restitution: 0
+      friction: 0.4
+      id: null
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      mask: []
+      layer: []
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: docking
+    type: Fixtures
 - uid: 617
   type: CableApcExtension
   components:
@@ -4470,17 +4529,24 @@ entities:
     parent: 8364
     type: Transform
 - uid: 623
-  type: ReinforcedWindow
+  type: CableApcExtension
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -72.5,-2.5
+  - pos: -75.5,-2.5
     parent: 8364
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 624
-  type: AirlockExternalGlassShuttleArrivals
+  type: ReinforcedWindow
   components:
-  - rot: 3.141592653589793 rad
-    pos: -77.5,-2.5
+  - pos: -77.5,-2.5
+    parent: 8364
+    type: Transform
+- uid: 625
+  type: AirlockExternalGlassShuttleEscape
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -83.5,-4.5
     parent: 8364
     type: Transform
   - fixtures:
@@ -4519,13 +4585,6 @@ entities:
       friction: 0.4
       id: docking
     type: Fixtures
-- uid: 625
-  type: ReinforcedWindow
-  components:
-  - rot: 3.141592653589793 rad
-    pos: -73.5,-2.5
-    parent: 8364
-    type: Transform
 - uid: 626
   type: Grille
   components:
@@ -4610,61 +4669,24 @@ entities:
     parent: 8364
     type: Transform
 - uid: 639
-  type: AirlockExternalGlassShuttleEscape
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -81.5,-4.5
-    parent: 8364
-    type: Transform
-  - fixtures:
-    - shape: !type:PolygonShape
-        radius: 0.01
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-      density: 100
-      hard: True
-      restitution: 0
-      friction: 0.4
-      id: null
-    - shape: !type:PhysShapeCircle
-        radius: 0.2
-        position: 0,-0.5
-      mask: []
-      layer: []
-      density: 1
-      hard: False
-      restitution: 0
-      friction: 0.4
-      id: docking
-    type: Fixtures
-- uid: 640
-  type: CableApcExtension
-  components:
-  - pos: -79.5,-4.5
-    parent: 8364
-    type: Transform
-  - enabled: True
-    type: AmbientSound
-- uid: 641
-  type: ReinforcedWindow
+  type: WallReinforced
   components:
   - rot: 3.141592653589793 rad
-    pos: -74.5,-2.5
+    pos: -82.5,-2.5
+    parent: 8364
+    type: Transform
+- uid: 640
+  type: WallReinforced
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -83.5,-6.5
+    parent: 8364
+    type: Transform
+- uid: 641
+  type: Grille
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -76.5,-2.5
     parent: 8364
     type: Transform
 - uid: 642
@@ -4673,16 +4695,12 @@ entities:
   - pos: -74.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 643
   type: Chair
   components:
   - pos: -73.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 644
   type: DisposalPipe
   components:
@@ -4724,31 +4742,29 @@ entities:
   - enabled: True
     type: AmbientSound
 - uid: 650
-  type: AtmosDeviceFanTiny
+  type: SignSpace
   components:
-  - rot: 3.141592653589793 rad
-    pos: -70.5,7.5
+  - pos: -80.5,7.5
     parent: 8364
     type: Transform
 - uid: 651
-  type: AtmosDeviceFanTiny
+  type: WallReinforced
   components:
   - rot: 3.141592653589793 rad
     pos: -70.5,-2.5
     parent: 8364
     type: Transform
 - uid: 652
-  type: AtmosDeviceFanTiny
+  type: Grille
   components:
-  - rot: 3.141592653589793 rad
-    pos: -77.5,7.5
+  - pos: -77.5,7.5
     parent: 8364
     type: Transform
 - uid: 653
-  type: AtmosDeviceFanTiny
+  type: WallReinforced
   components:
   - rot: 3.141592653589793 rad
-    pos: -77.5,-2.5
+    pos: -73.5,-2.5
     parent: 8364
     type: Transform
 - uid: 654
@@ -4759,9 +4775,10 @@ entities:
     parent: 8364
     type: Transform
 - uid: 655
-  type: ClosetEmergencyFilledRandom
+  type: WallReinforced
   components:
-  - pos: -80.5,-3.5
+  - rot: 3.141592653589793 rad
+    pos: -83.5,-5.5
     parent: 8364
     type: Transform
 - uid: 656
@@ -4771,31 +4788,32 @@ entities:
     parent: 8364
     type: Transform
 - uid: 657
-  type: WallReinforced
+  type: PoweredSmallLight
   components:
-  - rot: 3.141592653589793 rad
-    pos: -79.5,-3.5
+  - pos: -82.5,-3.5
     parent: 8364
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
 - uid: 658
-  type: WallReinforced
+  type: ClosetEmergencyFilledRandom
   components:
-  - rot: 3.141592653589793 rad
-    pos: -79.5,-5.5
+  - pos: -82.5,-3.5
     parent: 8364
     type: Transform
 - uid: 659
-  type: Grille
+  type: CableApcExtension
   components:
-  - rot: 3.141592653589793 rad
-    pos: -72.5,-2.5
+  - pos: -74.5,-2.5
     parent: 8364
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 660
   type: WallReinforced
   components:
   - rot: 3.141592653589793 rad
-    pos: -81.5,-3.5
+    pos: -81.5,-5.5
     parent: 8364
     type: Transform
 - uid: 661
@@ -4969,10 +4987,9 @@ entities:
     parent: 8364
     type: Transform
 - uid: 682
-  type: AirlockExternalLocked
+  type: Rack
   components:
-  - rot: 3.141592653589793 rad
-    pos: -79.5,-4.5
+  - pos: -82.5,-5.5
     parent: 8364
     type: Transform
 - uid: 683
@@ -5866,8 +5883,6 @@ entities:
     pos: 27.5,-105.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 828
   type: TableReinforced
   components:
@@ -6440,16 +6455,12 @@ entities:
   - pos: 56.5,-62.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 922
   type: Chair
   components:
   - pos: 57.5,-62.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 923
   type: WallSolid
   components:
@@ -7426,7 +7437,7 @@ entities:
   type: WallReinforced
   components:
   - rot: 3.141592653589793 rad
-    pos: -81.5,-5.5
+    pos: -81.5,-3.5
     parent: 8364
     type: Transform
 - uid: 1078
@@ -7466,47 +7477,11 @@ entities:
     parent: 8364
     type: Transform
 - uid: 1083
-  type: AirlockExternalGlassShuttleArrivals
+  type: Grille
   components:
-  - pos: -77.5,7.5
+  - pos: -76.5,7.5
     parent: 8364
     type: Transform
-  - fixtures:
-    - shape: !type:PolygonShape
-        radius: 0.01
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-      density: 100
-      hard: True
-      restitution: 0
-      friction: 0.4
-      id: null
-    - shape: !type:PhysShapeCircle
-        radius: 0.2
-        position: 0,-0.5
-      mask: []
-      layer: []
-      density: 1
-      hard: False
-      restitution: 0
-      friction: 0.4
-      id: docking
-    type: Fixtures
 - uid: 1084
   type: WallReinforced
   components:
@@ -7674,8 +7649,6 @@ entities:
   - pos: -75.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1111
   type: WallSolid
   components:
@@ -7980,17 +7953,15 @@ entities:
     parent: 8364
     type: Transform
 - uid: 1161
-  type: Grille
+  type: ReinforcedWindow
   components:
-  - rot: 3.141592653589793 rad
-    pos: -74.5,7.5
+  - pos: -76.5,7.5
     parent: 8364
     type: Transform
 - uid: 1162
-  type: Grille
+  type: AtmosDeviceFanTiny
   components:
-  - rot: 3.141592653589793 rad
-    pos: -73.5,-2.5
+  - pos: -83.5,-4.5
     parent: 8364
     type: Transform
 - uid: 1163
@@ -9956,17 +9927,15 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 1484
-  type: Grille
+  type: ReinforcedWindow
   components:
-  - rot: 3.141592653589793 rad
-    pos: -75.5,7.5
+  - pos: -77.5,7.5
     parent: 8364
     type: Transform
 - uid: 1485
-  type: ReinforcedWindow
+  type: SignSpace
   components:
-  - rot: 3.141592653589793 rad
-    pos: -72.5,7.5
+  - pos: -71.5,7.5
     parent: 8364
     type: Transform
 - uid: 1486
@@ -10097,10 +10066,9 @@ entities:
     parent: 8364
     type: Transform
 - uid: 1507
-  type: ReinforcedWindow
+  type: Grille
   components:
-  - rot: 3.141592653589793 rad
-    pos: -74.5,7.5
+  - pos: -74.5,7.5
     parent: 8364
     type: Transform
 - uid: 1508
@@ -10110,8 +10078,6 @@ entities:
     pos: -74.5,8.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1509
   type: WallReinforced
   components:
@@ -10131,8 +10097,6 @@ entities:
     pos: -75.5,8.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1512
   type: VendorMachineCigs
   components:
@@ -10142,13 +10106,12 @@ entities:
     parent: 8364
     type: Transform
 - uid: 1513
-  type: CableApcExtension
+  type: WallReinforced
   components:
-  - pos: -80.5,-4.5
+  - rot: 3.141592653589793 rad
+    pos: -83.5,-2.5
     parent: 8364
     type: Transform
-  - enabled: True
-    type: AmbientSound
 - uid: 1514
   type: WallReinforced
   components:
@@ -12136,8 +12099,6 @@ entities:
   - pos: 28.5,-16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1827
   type: Paper
   components:
@@ -13214,8 +13175,6 @@ entities:
     pos: 56.5,-57.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2004
   type: ComfyChair
   components:
@@ -13223,8 +13182,6 @@ entities:
     pos: 58.5,-57.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2005
   type: ClothingHeadHatWelding
   components:
@@ -14424,16 +14381,12 @@ entities:
   - pos: 32.5,-16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2203
   type: Chair
   components:
   - pos: 29.5,-16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2204
   type: WallSolid
   components:
@@ -16345,8 +16298,6 @@ entities:
   - pos: 31.5,-16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2508
   type: WallSolid
   components:
@@ -19010,7 +18961,7 @@ entities:
   - pos: 20.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32227.16
+  - SecondsUntilStateChange: -33078.03
     state: Closing
     type: Door
   - inputs:
@@ -19399,7 +19350,7 @@ entities:
   - pos: 19.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32227.16
+  - SecondsUntilStateChange: -33078.03
     state: Closing
     type: Door
   - inputs:
@@ -23539,8 +23490,6 @@ entities:
     pos: -20.5,-73.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3659
   type: Grille
   components:
@@ -29414,8 +29363,6 @@ entities:
   - pos: 9.5,21.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4572
   type: Emitter
   components:
@@ -33283,8 +33230,6 @@ entities:
   - pos: 4.5,9.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5190
   type: Dresser
   components:
@@ -33298,8 +33243,6 @@ entities:
     pos: 38.5,-11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5192
   type: StoolBar
   components:
@@ -33307,8 +33250,6 @@ entities:
     pos: 37.5,-11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5193
   type: StoolBar
   components:
@@ -33316,8 +33257,6 @@ entities:
     pos: 36.5,-11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5194
   type: PottedPlantRandom
   components:
@@ -33729,8 +33668,6 @@ entities:
     pos: 10.5,-21.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5255
   type: GasPipeStraight
   components:
@@ -34079,8 +34016,6 @@ entities:
     pos: -0.5,-5.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5303
   type: ChairOfficeDark
   components:
@@ -34144,8 +34079,6 @@ entities:
   - pos: -9.5,-12.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5313
   type: CableMV
   components:
@@ -34223,8 +34156,6 @@ entities:
     pos: 70.5,-28.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5325
   type: Carpet
   components:
@@ -34371,8 +34302,6 @@ entities:
     pos: 70.5,-29.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5346
   type: Chair
   components:
@@ -34380,8 +34309,6 @@ entities:
     pos: 73.5,-28.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5347
   type: Chair
   components:
@@ -34389,8 +34316,6 @@ entities:
     pos: 73.5,-29.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5348
   type: Table
   components:
@@ -36311,8 +36236,6 @@ entities:
     pos: -9.5,-16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5625
   type: AirlockCaptainGlassLocked
   components:
@@ -36647,8 +36570,6 @@ entities:
     pos: 10.5,-12.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5671
   type: ComfyChair
   components:
@@ -36656,8 +36577,6 @@ entities:
     pos: 10.5,-13.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5672
   type: ComfyChair
   components:
@@ -36665,8 +36584,6 @@ entities:
     pos: 8.5,-12.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5673
   type: ComfyChair
   components:
@@ -36674,8 +36591,6 @@ entities:
     pos: 8.5,-13.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5674
   type: ComfyChair
   components:
@@ -36683,8 +36598,6 @@ entities:
     pos: 6.5,-16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5675
   type: ComfyChair
   components:
@@ -36692,8 +36605,6 @@ entities:
     pos: 7.5,-22.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5676
   type: CarpetPurple
   components:
@@ -36867,8 +36778,6 @@ entities:
     pos: 11.5,-26.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5695
   type: CableApcExtension
   components:
@@ -37045,8 +36954,6 @@ entities:
     pos: 11.5,-27.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5715
   type: ComfyChair
   components:
@@ -37054,8 +36961,6 @@ entities:
     pos: 9.5,-27.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5716
   type: TableWood
   components:
@@ -37128,8 +37033,6 @@ entities:
     pos: 9.5,-17.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5727
   type: CableApcExtension
   components:
@@ -38060,8 +37963,6 @@ entities:
     pos: -8.5,-15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5864
   type: WallReinforced
   components:
@@ -38134,8 +38035,6 @@ entities:
     pos: 9.5,-16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5874
   type: CableMV
   components:
@@ -38282,8 +38181,6 @@ entities:
     pos: -8.5,-14.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5895
   type: CableApcExtension
   components:
@@ -38297,8 +38194,6 @@ entities:
     pos: -8.5,-13.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5897
   type: CableApcExtension
   components:
@@ -40741,24 +40636,18 @@ entities:
   - pos: 14.5,3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6255
   type: ToiletDirtyWater
   components:
   - pos: 16.5,3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6256
   type: ToiletDirtyWater
   components:
   - pos: 18.5,3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6257
   type: PoweredSmallLight
   components:
@@ -41918,8 +41807,6 @@ entities:
     pos: 40.5,12.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6425
   type: Chair
   components:
@@ -41927,8 +41814,6 @@ entities:
     pos: 40.5,11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6426
   type: Paper
   components:
@@ -42660,8 +42545,6 @@ entities:
   - pos: 11.5,15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6532
   type: CableApcExtension
   components:
@@ -45362,8 +45245,6 @@ entities:
     pos: 20.5,10.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6908
   type: ReinforcedWindow
   components:
@@ -45377,8 +45258,6 @@ entities:
     pos: 20.5,12.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6910
   type: FirelockGlass
   components:
@@ -45405,8 +45284,6 @@ entities:
     pos: 25.5,11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6914
   type: PlushieCarp
   components:
@@ -45705,8 +45582,6 @@ entities:
     pos: 27.5,-4.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6961
   type: StoolBar
   components:
@@ -45714,8 +45589,6 @@ entities:
     pos: 27.5,-5.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6962
   type: StoolBar
   components:
@@ -45723,8 +45596,6 @@ entities:
     pos: 27.5,-6.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6963
   type: StoolBar
   components:
@@ -45732,8 +45603,6 @@ entities:
     pos: 27.5,-7.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6964
   type: StoolBar
   components:
@@ -45741,8 +45610,6 @@ entities:
     pos: 27.5,-8.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6965
   type: StoolBar
   components:
@@ -45750,8 +45617,6 @@ entities:
     pos: 28.5,-9.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6966
   type: ChairFolding
   components:
@@ -45766,8 +45631,6 @@ entities:
     pos: 29.5,-9.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6968
   type: ChairWood
   components:
@@ -45781,8 +45644,6 @@ entities:
     pos: 20.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6970
   type: WindowDirectional
   components:
@@ -45941,8 +45802,6 @@ entities:
   - pos: 22.5,3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6995
   type: TableWood
   components:
@@ -46631,8 +46490,6 @@ entities:
   - pos: 21.5,6.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7094
   type: GasPipeStraight
   components:
@@ -48114,8 +47971,6 @@ entities:
     pos: -11.5,40.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7292
   type: WallReinforced
   components:
@@ -52483,8 +52338,6 @@ entities:
   - pos: 18.5,28.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7979
   type: Chair
   components:
@@ -52492,8 +52345,6 @@ entities:
     pos: 15.5,21.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7980
   type: CarpetGreen
   components:
@@ -53104,8 +52955,6 @@ entities:
   - pos: -10.5,-12.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8078
   type: Grille
   components:
@@ -54961,7 +54810,7 @@ entities:
         tiles: RAAAAUQAAAJEAAAARAAAAUQAAABEAAABRAAAAEQAAANEAAAARAAAAkQAAAFeAAAAXgAAAF4AAABeAAAAXgAAAEQAAAFEAAAARAAAAEQAAABEAAACRAAAAkQAAAFEAAABRAAAAUQAAAFEAAABXgAAAF4AAABOAAAAXgAAAE4AAABEAAACXgAAAF4AAABEAAABXgAAAEQAAANeAAAAXgAAAF4AAABeAAAARAAAAF4AAABeAAAATgAAAF4AAABOAAAARAAAAV4AAABEAAAARAAAA0QAAABEAAACRAAAAkQAAABeAAAAWwAAAFsAAABbAAAAWwAAAF4AAABeAAAATgAAAEQAAAFeAAAARAAAAkQAAANEAAACRAAAA0QAAAFEAAABXgAAAFsAAABbAAAAWwAAAFsAAABeAAAAXgAAAE4AAABEAAABXgAAAEQAAANEAAAARAAAA0QAAABEAAADRAAAAF4AAABbAAAAWwAAAFsAAABbAAAAXgAAAF4AAABOAAAARAAAAV4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAWwAAAFsAAABbAAAAWwAAAF4AAABeAAAAXgAAAEQAAANeAAAATgAAAE4AAABOAAAATgAAAF4AAABOAAAAXgAAAFsAAABbAAAAWwAAAFsAAABeAAAAXgAAAE4AAABEAAADXgAAAF4AAABeAAAAXgAAAF4AAABeAAAATgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABOAAAARAAAAl4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAE4AAABOAAAAXgAAAE4AAABeAAAAXgAAAEQAAABeAAAAXgAAAF4AAABOAAAATgAAAE4AAABOAAAATgAAAE4AAABOAAAAXgAAAF4AAABOAAAATgAAAE4AAABeAAAAXgAAAF4AAABeAAAATgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAE4AAABeAAAAXgAAAE4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAATgAAAF4AAABOAAAAXgAAAF4AAABOAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABOAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAE4AAABOAAAATgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAE4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABOAAAAXgAAAE4AAABeAAAAXgAAAA==
       -5,0:
         ind: -5,0
-        tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAEQAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAEQAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAl4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAEQAAAFeAAAAXgAAAF4AAABeAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAACRAAAAUQAAAJEAAADRAAAAEQAAABEAAAARAAAA0QAAAJEAAAARAAAAEQAAABEAAACRAAAAkQAAAFEAAADRAAAA0QAAANEAAABRAAAAEQAAAFEAAADRAAAAUQAAANEAAABRAAAA0QAAABEAAAARAAAAUQAAAFEAAACRAAAAkQAAANEAAADRAAAAkQAAAJEAAADRAAAAkQAAANEAAAARAAAAUQAAAMWAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAF4AAABeAAAAGwAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAUQAAAJEAAACXgAAABYAAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAEQAAABEAAACRAAAA14AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABEAAACRAAAAUQAAAFeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAkQAAAFEAAABXgAAAA==
+        tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAEQAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAEQAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAl4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAACRAAAAUQAAAJEAAADRAAAAEQAAABEAAAARAAAA0QAAAJEAAAARAAAAEQAAABEAAACRAAAAkQAAAFEAAADRAAAA0QAAANEAAABRAAAAEQAAAFEAAADRAAAAUQAAANEAAABRAAAA0QAAABEAAAARAAAAUQAAAFEAAACRAAAAkQAAANEAAADRAAAAkQAAAJEAAADRAAAAkQAAANEAAAARAAAAUQAAAMWAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAF4AAABeAAAAGwAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAUQAAAJEAAACXgAAABYAAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAEQAAABEAAACRAAAA14AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABEAAACRAAAAUQAAAFeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAkQAAAFEAAABXgAAAA==
       -5,1:
         ind: -5,1
         tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAkQAAANEAAADXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAEQAAAFEAAAARAAAA14AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABEAAAARAAAAUQAAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAF4AAABeAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAAAAXQAAAF4AAABeAAAAXgAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
@@ -54970,7 +54819,7 @@ entities:
         tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAAAAAAAAAAAAAF4AAABeAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAAAAAAAAAAAABeAAAAXgAAAF4AAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAAAAAAAAAAAAXgAAAF4AAABeAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAEQAAAAAAAAAAAAAAF4AAABeAAAAXgAAAF4AAAAWAAAAXgAAABYAAABeAAAARAAAAEQAAABEAAAAXgAAABYAAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAGwAAAF4AAAAbAAAAXgAAAF4AAABeAAAAXgAAAF4AAAAbAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAABYAAABeAAAAFgAAAF4AAAAAAAAAAAAAAAAAAABeAAAAFgAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
       -5,-1:
         ind: -5,-1
-        tiles: XgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAUQAAAFEAAABRAAAAV4AAABeAAAAXgAAAEQAAAJEAAAARAAAAV4AAABeAAAAXgAAAEQAAANEAAADRAAAAUQAAAJEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAABRAAAAUQAAAFeAAAAXgAAAF4AAABEAAAARAAAAEQAAAJEAAAARAAAAkQAAAJEAAACRAAAAkQAAANEAAADRAAAAkQAAANEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAkQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAF4AAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABeAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAAXgAAAEQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAEQAAABEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAV4AAABEAAAARAAAAEQAAANEAAACRAAAA0QAAAJEAAABRAAAAEQAAANEAAAARAAAAEQAAANEAAACRAAAAEQAAAFeAAAARAAAAEQAAABEAAACRAAAAUQAAAFEAAADRAAAA0QAAANEAAAARAAAAEQAAAJEAAACRAAAAkQAAAFEAAAAXgAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAUQAAABEAAADRAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAA14AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABEAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAA==
+        tiles: XgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAUQAAAFEAAABRAAAAV4AAABeAAAAXgAAAEQAAAJEAAAARAAAAV4AAABeAAAAXgAAAEQAAANEAAADRAAAAUQAAAJEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAABRAAAAUQAAAFeAAAAXgAAAF4AAABEAAAARAAAAEQAAAJEAAAARAAAAkQAAAJEAAACRAAAAkQAAANEAAADRAAAAkQAAANEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAkQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAF4AAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABeAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAAXgAAAEQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAEQAAABEAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAARAAAAUQAAABEAAAARAAAAEQAAANEAAACRAAAA0QAAAJEAAABRAAAAEQAAANEAAAARAAAAEQAAANEAAACRAAAAEQAAAFEAAAARAAAAEQAAABEAAACRAAAAUQAAAFEAAADRAAAA0QAAANEAAAARAAAAEQAAAJEAAACRAAAAkQAAAFEAAAARAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAAUQAAABEAAADRAAAAEQAAABEAAAARAAAAEQAAABEAAAARAAAA14AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABEAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAARAAAAA==
       -4,-1:
         ind: -4,-1
         tiles: RAAAAF4AAABeAAAATgAAAE4AAABOAAAATgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAEQAAAJeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAA4AAABEAAADXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABOAAAAXgAAAE4AAABOAAAAXgAAAF4AAABeAAAARAAAAV4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABOAAAATgAAAF4AAABeAAAADgAAAEQAAAJeAAAAMQAAADEAAAAxAAAAMQAAADEAAAAxAAAAMQAAADEAAABeAAAATgAAAE4AAABeAAAAXgAAAF4AAABEAAACMQAAADEAAAAxAAAAMQAAADEAAAAxAAAAMQAAADEAAAAxAAAAXgAAAE4AAABOAAAAXgAAAF4AAAAOAAAARAAAA14AAAAxAAAAMQAAADEAAAAxAAAAMQAAADEAAAAxAAAAMQAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAEQAAAFeAAAAMQAAADEAAAAxAAAAMQAAADEAAAAxAAAAMQAAADEAAABeAAAAPAAAADwAAAA8AAAAPAAAAF4AAABEAAACXgAAADEAAAAxAAAAMQAAADEAAAAxAAAAMQAAADEAAAAxAAAAXgAAADwAAAA8AAAAPAAAADwAAABeAAAARAAAAl4AAABeAAAAXgAAAF4AAABEAAABXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAPAAAADwAAAA8AAAAXgAAAEQAAANEAAABRAAAA0QAAANEAAABRAAAAUQAAABEAAAARAAAAUQAAAFEAAABXgAAADwAAAA8AAAAPAAAAF4AAABEAAABRAAAA0QAAABEAAABRAAAAkQAAAJEAAAARAAAAUQAAANEAAACRAAAAV4AAABEAAABRAAAAEQAAANeAAAARAAAAF4AAAAxAAAAMQAAADEAAAAxAAAAMQAAAF4AAAAWAAABRAAAAUQAAAJeAAAAXgAAAEQAAABeAAAAXgAAAEQAAABeAAAAMQAAADEAAAAxAAAAMQAAADEAAABeAAAAFgAAAEQAAAJEAAABRAAAAEQAAAFEAAAARAAAAEQAAABEAAADXgAAADEAAAAxAAAAMQAAADEAAAAxAAAAXgAAABYAAAJEAAAARAAAAkQAAANEAAAARAAAAUQAAAJEAAABRAAAAl4AAAAxAAAAMQAAADEAAAAxAAAAMQAAAF4AAAAWAAAARAAAA0QAAAFEAAACRAAAAUQAAAFEAAACRAAAAg==
@@ -55168,7 +55017,7 @@ entities:
         tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQAAAF0AAABdAAAAXQAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0AAABdAAAAXQAAAAAAAAAAAAAAAAAAAAAAAABdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAAAAAAAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAXQAAAAAAAAAAAAAAAAAAAAQAAAIEAAACBAAAAQAAAAAAAAAAXQAAAAAAAABdAAAAAAAAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAAQAAAAEAAACBAAAAQQAAAIEAAACAAAAAF0AAAAAAAAAXQAAAA==
       -6,-1:
         ind: -6,-1
-        tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABeAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAAXgAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeAAAAXgAAAF4AAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgAAAF4AAABeAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAAXgAAAF4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
     type: MapGrid
   - type: Broadphase
   - angularDamping: 0.05
@@ -58186,8 +58035,6 @@ entities:
           2089: 36,-25
           2131: 39,-15
           2878: 36,-30
-          2970: -79,8
-          2971: -80,8
           2972: -81,8
           2973: -82,8
           2974: -83,8
@@ -58221,6 +58068,8 @@ entities:
           2432: 79,-16
           3148: -79,-6
           3149: -78,-6
+          3152: -81,-6
+          3153: -80,-6
       - node:
           color: '#3922007A'
           id: QuarterTileOverlayGreyscale180
@@ -58472,8 +58321,6 @@ entities:
           2965: -83,8
           2966: -82,8
           2967: -81,8
-          2968: -80,8
-          2969: -79,8
       - node:
           color: '#D4D4D428'
           id: QuarterTileOverlayGreyscale270
@@ -58659,6 +58506,8 @@ entities:
           2911: 18,-27
           3146: -78,-6
           3147: -79,-6
+          3150: -80,-6
+          3151: -81,-6
       - node:
           color: '#D4D4D496'
           id: QuarterTileOverlayGreyscale90
@@ -60371,7 +60220,7 @@ entities:
         -1,7:
           1: 513
           0: 65016
-          9: 6
+          10: 6
         4,4:
           0: 65535
         4,5:
@@ -60467,11 +60316,11 @@ entities:
           0: 65535
         2,9:
           0: 43711
-          10: 256
-          9: 4096
+          11: 256
+          10: 4096
           1: 17472
         2,10:
-          9: 69
+          10: 69
           0: 61370
         2,11:
           0: 44971
@@ -60543,7 +60392,7 @@ entities:
         8,0:
           0: 65495
           1: 32
-          11: 8
+          12: 8
         8,1:
           0: 65295
         8,2:
@@ -60551,7 +60400,7 @@ entities:
         8,3:
           0: 65535
         9,0:
-          12: 15
+          13: 15
           0: 65520
         9,1:
           0: 65359
@@ -60561,7 +60410,7 @@ entities:
         9,3:
           0: 32767
         10,0:
-          12: 1
+          13: 1
           0: 65534
         10,1:
           0: 65535
@@ -60661,7 +60510,7 @@ entities:
           0: 65199
         -9,1:
           0: 64254
-          13: 1024
+          14: 1024
         -9,2:
           0: 49146
           1: 16384
@@ -60873,7 +60722,8 @@ entities:
           0: 61439
           1: 4096
         -12,-2:
-          1: 4369
+          1: 4113
+          15: 256
           0: 61166
         -12,-1:
           0: 65535
@@ -60948,7 +60798,7 @@ entities:
           1: 32768
         8,-1:
           0: 30591
-          12: 34944
+          13: 34944
         9,-4:
           0: 65535
         9,-3:
@@ -60958,7 +60808,7 @@ entities:
           1: 8192
         9,-1:
           0: 15
-          12: 65520
+          13: 65520
         10,-4:
           0: 65535
         10,-3:
@@ -60967,7 +60817,7 @@ entities:
           0: 65535
         10,-1:
           0: 61167
-          12: 4368
+          13: 4368
         11,-4:
           0: 65535
         11,-3:
@@ -61005,7 +60855,7 @@ entities:
         16,4:
           0: 56799
           1: 8224
-          14: 512
+          16: 512
         16,5:
           0: 65535
         16,6:
@@ -61251,7 +61101,7 @@ entities:
           0: 65535
         -1,-16:
           0: 63351
-          15: 2184
+          17: 2184
         -1,-15:
           0: 65535
         -1,-14:
@@ -61306,15 +61156,15 @@ entities:
           6: 12288
         8,-9:
           0: 52703
-          16: 544
+          18: 544
           6: 8192
-          17: 4096
+          19: 4096
         9,-12:
           0: 64767
           1: 768
         9,-11:
           0: 56797
-          18: 8194
+          20: 8194
           4: 544
         9,-10:
           0: 65535
@@ -61362,26 +61212,26 @@ entities:
         10,-7:
           0: 65509
           6: 16
-          19: 8
-          20: 2
+          21: 8
+          22: 2
         10,-6:
           0: 65535
         10,-5:
           0: 64443
-          21: 1092
+          23: 1092
         11,-8:
           0: 65535
         11,-7:
           0: 65471
-          20: 64
+          22: 64
         11,-6:
           0: 57327
           4: 16
-          19: 8192
+          21: 8192
         11,-5:
           0: 48059
-          10: 4
-          21: 17472
+          11: 4
+          23: 17472
         8,-16:
           0: 61439
           1: 4096
@@ -61879,7 +61729,7 @@ entities:
           0: 65535
         4,-17:
           0: 34959
-          22: 30576
+          24: 30576
         5,-20:
           0: 62540
         5,-19:
@@ -61977,7 +61827,7 @@ entities:
           0: 65535
         -1,-17:
           0: 24575
-          10: 8192
+          11: 8192
           1: 32768
         -8,-19:
           0: 65535
@@ -62098,7 +61948,7 @@ entities:
           0: 65535
         3,-17:
           0: 34959
-          23: 30576
+          25: 30576
         0,-24:
           0: 63624
         0,-23:
@@ -62732,6 +62582,21 @@ entities:
         - 0
         - 0
       - volume: 2500
+        temperature: 293.14993
+        moles:
+        - 11.059392
+        - 41.604378
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+      - volume: 2500
         temperature: 293.15
         moles:
         - 12.021078
@@ -62796,6 +62661,21 @@ entities:
         moles:
         - 12.348245
         - 46.452915
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+      - volume: 2500
+        temperature: 293.14993
+        moles:
+        - 11.3779745
+        - 42.802856
         - 0
         - 0
         - 0
@@ -62977,6 +62857,7 @@ entities:
     shakeTimes: 10
     type: GravityShake
   - type: GasTileOverlay
+  - type: SpreaderGrid
 - uid: 8365
   type: ReinforcedWindow
   components:
@@ -63278,8 +63159,6 @@ entities:
     pos: 18.5,21.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8412
   type: Chair
   components:
@@ -63287,8 +63166,6 @@ entities:
     pos: 17.5,22.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8413
   type: ReinforcedWindow
   components:
@@ -63302,8 +63179,6 @@ entities:
     pos: 15.5,22.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8415
   type: Chair
   components:
@@ -63311,8 +63186,6 @@ entities:
     pos: 18.5,22.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8416
   type: Chair
   components:
@@ -63320,8 +63193,6 @@ entities:
     pos: 17.5,21.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8417
   type: ChairOfficeDark
   components:
@@ -63336,8 +63207,6 @@ entities:
     pos: 13.5,22.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8419
   type: ChairOfficeDark
   components:
@@ -63359,8 +63228,6 @@ entities:
     pos: 12.5,21.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8422
   type: BookAtmosWaste
   components:
@@ -63374,8 +63241,6 @@ entities:
     pos: 13.5,21.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8424
   type: Chair
   components:
@@ -63383,8 +63248,6 @@ entities:
     pos: 12.5,22.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8425
   type: CableMV
   components:
@@ -63483,8 +63346,6 @@ entities:
   - pos: 15.5,28.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8439
   type: Carpet
   components:
@@ -64392,8 +64253,6 @@ entities:
     pos: 8.5,24.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8575
   type: Chair
   components:
@@ -64401,8 +64260,6 @@ entities:
     pos: 8.5,23.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8576
   type: Chair
   components:
@@ -64410,8 +64267,6 @@ entities:
     pos: 10.5,23.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8577
   type: PoweredSmallLight
   components:
@@ -64716,8 +64571,6 @@ entities:
     pos: 2.5,23.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8618
   type: ReinforcedWindow
   components:
@@ -66073,8 +65926,6 @@ entities:
     pos: -15.5,31.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8797
   type: Chair
   components:
@@ -66082,8 +65933,6 @@ entities:
     pos: -15.5,30.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8798
   type: ChairOfficeLight
   components:
@@ -67060,8 +66909,6 @@ entities:
     pos: -11.5,39.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8937
   type: CableApcExtension
   components:
@@ -67117,8 +66964,6 @@ entities:
     pos: -11.5,41.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8946
   type: ReinforcedWindow
   components:
@@ -67131,8 +66976,6 @@ entities:
   - pos: 8.5,21.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8948
   type: GasPipeStraight
   components:
@@ -67861,8 +67704,6 @@ entities:
     pos: -4.5,48.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9045
   type: WallReinforced
   components:
@@ -68257,8 +68098,6 @@ entities:
     pos: -6.5,48.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9101
   type: WallSolid
   components:
@@ -70459,8 +70298,6 @@ entities:
   - pos: 13.5,40.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9414
   type: Chair
   components:
@@ -70468,8 +70305,6 @@ entities:
     pos: 13.5,38.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9415
   type: APCBasic
   components:
@@ -70513,8 +70348,6 @@ entities:
     pos: -14.5,17.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9421
   type: SignalButton
   components:
@@ -70570,8 +70403,6 @@ entities:
     pos: -14.5,16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9427
   type: SpawnPointWarden
   components:
@@ -72100,8 +71931,6 @@ entities:
     pos: -4.5,13.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9646
   type: ChairOfficeDark
   components:
@@ -73439,8 +73268,6 @@ entities:
     pos: -50.5,13.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9831
   type: CableApcExtension
   components:
@@ -73456,8 +73283,6 @@ entities:
     pos: -53.5,11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9833
   type: WallSolid
   components:
@@ -78110,8 +77935,6 @@ entities:
     pos: 24.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10423
   type: IntercomScience
   components:
@@ -79039,8 +78862,6 @@ entities:
   - pos: 57.5,-6.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10548
   type: TableWood
   components:
@@ -80947,8 +80768,6 @@ entities:
     pos: 58.5,-10.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10821
   type: ComfyChair
   components:
@@ -80956,8 +80775,6 @@ entities:
     pos: 56.5,-10.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10822
   type: ComfyChair
   components:
@@ -80965,8 +80782,6 @@ entities:
     pos: 60.5,-10.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10823
   type: ComfyChair
   components:
@@ -80974,16 +80789,12 @@ entities:
     pos: 62.5,-10.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10824
   type: Chair
   components:
   - pos: 64.5,2.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10825
   type: Chair
   components:
@@ -80991,8 +80802,6 @@ entities:
     pos: 64.5,0.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10826
   type: VendorMachineCola
   components:
@@ -81357,8 +81166,6 @@ entities:
     pos: -1.5,-59.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10866
   type: Chair
   components:
@@ -81366,8 +81173,6 @@ entities:
     pos: -0.5,-58.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10867
   type: AirlockMaintLocked
   components:
@@ -85069,16 +84874,12 @@ entities:
     pos: 65.5,23.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11381
   type: Chair
   components:
   - pos: 67.5,19.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11382
   type: Table
   components:
@@ -86769,8 +86570,6 @@ entities:
     pos: 12.5,30.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11598
   type: Table
   components:
@@ -86874,8 +86673,6 @@ entities:
     pos: 17.5,34.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11615
   type: Chair
   components:
@@ -86883,8 +86680,6 @@ entities:
     pos: 17.5,33.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11616
   type: Table
   components:
@@ -86904,8 +86699,6 @@ entities:
     pos: 10.5,30.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11619
   type: Table
   components:
@@ -86919,8 +86712,6 @@ entities:
     pos: 11.5,32.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11621
   type: Chair
   components:
@@ -86928,8 +86719,6 @@ entities:
     pos: 11.5,33.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11622
   type: Chair
   components:
@@ -86937,8 +86726,6 @@ entities:
     pos: 17.5,32.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11623
   type: Chair
   components:
@@ -86946,8 +86733,6 @@ entities:
     pos: 11.5,34.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11624
   type: SheetPlasteel
   components:
@@ -88159,40 +87944,30 @@ entities:
   - pos: 81.5,-1.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11799
   type: Chair
   components:
   - pos: 80.5,-1.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11800
   type: Chair
   components:
   - pos: 79.5,-1.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11801
   type: Chair
   components:
   - pos: 78.5,-1.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11802
   type: Chair
   components:
   - pos: 77.5,-1.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11803
   type: Chair
   components:
@@ -88200,8 +87975,6 @@ entities:
     pos: 76.5,-2.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11804
   type: Chair
   components:
@@ -88209,8 +87982,6 @@ entities:
     pos: 76.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11805
   type: Chair
   components:
@@ -88218,8 +87989,6 @@ entities:
     pos: 80.5,-7.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11806
   type: Chair
   components:
@@ -88227,8 +87996,6 @@ entities:
     pos: 80.5,-8.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11807
   type: Chair
   components:
@@ -88236,8 +88003,6 @@ entities:
     pos: 80.5,-9.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11808
   type: Chair
   components:
@@ -88245,8 +88010,6 @@ entities:
     pos: 78.5,-7.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11809
   type: Chair
   components:
@@ -88254,8 +88017,6 @@ entities:
     pos: 78.5,-8.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11810
   type: Chair
   components:
@@ -88263,8 +88024,6 @@ entities:
     pos: 78.5,-9.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11811
   type: Chair
   components:
@@ -88272,8 +88031,6 @@ entities:
     pos: 75.5,-10.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11812
   type: Chair
   components:
@@ -88281,8 +88038,6 @@ entities:
     pos: 75.5,-11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11813
   type: Chair
   components:
@@ -88290,8 +88045,6 @@ entities:
     pos: 78.5,-15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11814
   type: PottedPlantRandom
   components:
@@ -89029,6 +88782,7 @@ entities:
   - nextUpdate: 0.45
     type: GridPathfinding
   - type: RadiationGridResistance
+  - type: SpreaderGrid
 - uid: 11907
   type: ReinforcedWindow
   components:
@@ -89552,8 +89306,6 @@ entities:
     pos: 35.5,-11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11987
   type: CableMVStack
   components:
@@ -91059,8 +90811,6 @@ entities:
   - pos: -57.5,17.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12204
   type: CableApcExtension
   components:
@@ -92390,8 +92140,6 @@ entities:
     pos: -58.5,12.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12392
   type: ComfyChair
   components:
@@ -92399,8 +92147,6 @@ entities:
     pos: -50.5,14.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12393
   type: ShardGlassReinforced
   components:
@@ -92415,8 +92161,6 @@ entities:
     pos: -57.5,11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12395
   type: CableMV
   components:
@@ -92532,8 +92276,6 @@ entities:
     pos: 79.5,-15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12409
   type: CableApcExtension
   components:
@@ -92904,64 +92646,25 @@ entities:
   - powerLoad: 0
     type: ApcPowerReceiver
 - uid: 12462
-  type: AirlockExternalGlassShuttleArrivals
+  type: AtmosDeviceFanTiny
   components:
   - rot: 3.141592653589793 rad
-    pos: -70.5,-2.5
+    pos: -72.5,-2.5
     parent: 8364
     type: Transform
-  - fixtures:
-    - shape: !type:PolygonShape
-        radius: 0.01
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-      density: 100
-      hard: True
-      restitution: 0
-      friction: 0.4
-      id: null
-    - shape: !type:PhysShapeCircle
-        radius: 0.2
-        position: 0,-0.5
-      mask: []
-      layer: []
-      density: 1
-      hard: False
-      restitution: 0
-      friction: 0.4
-      id: docking
-    type: Fixtures
 - uid: 12463
-  type: CableApcExtension
+  type: ReinforcedWindow
   components:
-  - pos: -73.5,-2.5
+  - rot: 3.141592653589793 rad
+    pos: -74.5,-6.5
     parent: 8364
     type: Transform
-  - enabled: True
-    type: AmbientSound
 - uid: 12464
-  type: CableApcExtension
+  type: Grille
   components:
-  - pos: -74.5,-2.5
+  - pos: -77.5,-2.5
     parent: 8364
     type: Transform
-  - enabled: True
-    type: AmbientSound
 - uid: 12465
   type: CableApcExtension
   components:
@@ -93138,47 +92841,11 @@ entities:
   - enabled: True
     type: AmbientSound
 - uid: 12475
-  type: AirlockExternalGlassShuttleArrivals
+  type: ReinforcedWindow
   components:
-  - pos: -70.5,7.5
+  - pos: -76.5,-2.5
     parent: 8364
     type: Transform
-  - fixtures:
-    - shape: !type:PolygonShape
-        radius: 0.01
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-      density: 100
-      hard: True
-      restitution: 0
-      friction: 0.4
-      id: null
-    - shape: !type:PhysShapeCircle
-        radius: 0.2
-        position: 0,-0.5
-      mask: []
-      layer: []
-      density: 1
-      hard: False
-      restitution: 0
-      friction: 0.4
-      id: docking
-    type: Fixtures
 - uid: 12476
   type: DisposalTrunk
   components:
@@ -93344,10 +93011,10 @@ entities:
     parent: 8364
     type: Transform
 - uid: 12496
-  type: ReinforcedWindow
+  type: Grille
   components:
   - rot: 3.141592653589793 rad
-    pos: -74.5,-6.5
+    pos: -74.5,-2.5
     parent: 8364
     type: Transform
 - uid: 12497
@@ -93468,13 +93135,11 @@ entities:
     parent: 8364
     type: Transform
 - uid: 12516
-  type: CableApcExtension
+  type: WallReinforced
   components:
-  - pos: -74.5,7.5
+  - pos: -73.5,7.5
     parent: 8364
     type: Transform
-  - enabled: True
-    type: AmbientSound
 - uid: 12517
   type: CableApcExtension
   components:
@@ -93482,13 +93147,11 @@ entities:
     parent: 8364
     type: Transform
 - uid: 12518
-  type: CableApcExtension
+  type: WallReinforced
   components:
-  - pos: -75.5,7.5
+  - pos: -78.5,7.5
     parent: 8364
     type: Transform
-  - enabled: True
-    type: AmbientSound
 - uid: 12519
   type: CableApcExtension
   components:
@@ -93500,15 +93163,13 @@ entities:
 - uid: 12520
   type: CableApcExtension
   components:
-  - pos: -73.5,7.5
+  - pos: -75.5,8.5
     parent: 8364
     type: Transform
-  - enabled: True
-    type: AmbientSound
 - uid: 12521
   type: CableApcExtension
   components:
-  - pos: -72.5,7.5
+  - pos: -75.5,7.5
     parent: 8364
     type: Transform
   - enabled: True
@@ -94290,13 +93951,10 @@ entities:
   - pos: -72.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12640
   type: Grille
   components:
-  - rot: 3.141592653589793 rad
-    pos: -73.5,7.5
+  - pos: -75.5,7.5
     parent: 8364
     type: Transform
 - uid: 12641
@@ -94323,12 +93981,48 @@ entities:
     parent: 8364
     type: Transform
 - uid: 12644
-  type: WallReinforced
+  type: AirlockExternalGlassShuttleArrivals
   components:
   - rot: 3.141592653589793 rad
     pos: -79.5,-2.5
     parent: 8364
     type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+      hard: True
+      restitution: 0
+      friction: 0.4
+      id: null
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      mask: []
+      layer: []
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: docking
+    type: Fixtures
 - uid: 12645
   type: FirelockGlass
   components:
@@ -94343,8 +94037,6 @@ entities:
     pos: -73.5,8.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12647
   type: CableApcExtension
   components:
@@ -94395,14 +94087,47 @@ entities:
       id: docking
     type: Fixtures
 - uid: 12649
-  type: Chair
+  type: AirlockExternalGlassShuttleArrivals
   components:
-  - rot: 3.141592653589793 rad
-    pos: -72.5,8.5
+  - pos: -72.5,7.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
+  - fixtures:
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+      hard: True
+      restitution: 0
+      friction: 0.4
+      id: null
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      mask: []
+      layer: []
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: docking
+    type: Fixtures
 - uid: 12650
   type: PottedPlantRandom
   components:
@@ -94428,17 +94153,16 @@ entities:
   type: Grille
   components:
   - rot: 3.141592653589793 rad
-    pos: -74.5,-2.5
+    pos: -75.5,-2.5
     parent: 8364
     type: Transform
 - uid: 12654
-  type: PoweredSmallLight
+  type: WallReinforced
   components:
-  - pos: -80.5,-3.5
+  - rot: 3.141592653589793 rad
+    pos: -83.5,-3.5
     parent: 8364
     type: Transform
-  - powerLoad: 0
-    type: ApcPowerReceiver
 - uid: 12655
   type: DisposalJunctionFlipped
   components:
@@ -94616,7 +94340,7 @@ entities:
 - uid: 12681
   type: SignSpace
   components:
-  - pos: -69.5,-2.5
+  - pos: -80.5,-2.5
     parent: 8364
     type: Transform
 - uid: 12682
@@ -94656,9 +94380,10 @@ entities:
     parent: 8364
     type: Transform
 - uid: 12688
-  type: SignNosmoking
+  type: WallReinforced
   components:
-  - pos: -79.5,-3.5
+  - rot: 3.141592653589793 rad
+    pos: -82.5,-6.5
     parent: 8364
     type: Transform
 - uid: 12689
@@ -94682,8 +94407,6 @@ entities:
     pos: -63.5,-15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12692
   type: Chair
   components:
@@ -94691,8 +94414,6 @@ entities:
     pos: -64.5,-15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12693
   type: Chair
   components:
@@ -94700,8 +94421,6 @@ entities:
     pos: -65.5,-15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12694
   type: ClosetEmergencyFilledRandom
   components:
@@ -94825,16 +94544,12 @@ entities:
   - pos: -61.5,-0.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12705
   type: ComfyChair
   components:
   - pos: -60.5,-0.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12706
   type: ComfyChair
   components:
@@ -94842,8 +94557,6 @@ entities:
     pos: -60.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12707
   type: ComfyChair
   components:
@@ -94851,8 +94564,6 @@ entities:
     pos: -61.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12708
   type: ComfyChair
   components:
@@ -94860,8 +94571,6 @@ entities:
     pos: -57.5,-1.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12709
   type: ComfyChair
   components:
@@ -94869,8 +94578,6 @@ entities:
     pos: -57.5,-2.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12710
   type: Grille
   components:
@@ -94918,11 +94625,13 @@ entities:
         ents: []
     type: ContainerContainer
 - uid: 12716
-  type: SignSpace
+  type: CableApcExtension
   components:
-  - pos: -78.5,-2.5
+  - pos: -77.5,-2.5
     parent: 8364
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 12717
   type: CableApcExtension
   components:
@@ -95943,9 +95652,10 @@ entities:
     parent: 8364
     type: Transform
 - uid: 12876
-  type: SignSpace
+  type: AirlockExternal
   components:
-  - pos: -79.5,-5.5
+  - rot: 3.141592653589793 rad
+    pos: -81.5,-4.5
     parent: 8364
     type: Transform
 - uid: 12877
@@ -97766,8 +97476,6 @@ entities:
     pos: -58.5,15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13148
   type: WallSolid
   components:
@@ -97786,8 +97494,6 @@ entities:
   - pos: -54.5,17.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13151
   type: CableHV
   components:
@@ -98324,8 +98030,6 @@ entities:
   - pos: -30.5,24.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13228
   type: Chair
   components:
@@ -98333,8 +98037,6 @@ entities:
     pos: -30.5,22.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13229
   type: RandomArcade
   components:
@@ -98348,16 +98050,12 @@ entities:
     pos: -35.5,23.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13231
   type: Chair
   components:
   - pos: -30.5,20.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13232
   type: Catwalk
   components:
@@ -98371,8 +98069,6 @@ entities:
     pos: -30.5,18.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13234
   type: MaterialWoodPlank1
   components:
@@ -99714,8 +99410,6 @@ entities:
   - pos: -55.5,17.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13433
   type: ReinforcedWindow
   components:
@@ -99735,8 +99429,6 @@ entities:
     pos: -58.5,13.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13436
   type: CableApcExtension
   components:
@@ -100875,8 +100567,6 @@ entities:
     pos: -54.5,11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13589
   type: WindowReinforcedDirectional
   components:
@@ -101601,8 +101291,6 @@ entities:
     pos: -56.5,11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13688
   type: Catwalk
   components:
@@ -102694,32 +102382,24 @@ entities:
   - pos: -48.5,-10.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13842
   type: ToiletEmpty
   components:
   - pos: -48.5,-12.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13843
   type: ToiletEmpty
   components:
   - pos: -48.5,-14.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13844
   type: ToiletEmpty
   components:
   - pos: -48.5,-16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13845
   type: CarpetBlue
   components:
@@ -103037,6 +102717,24 @@ entities:
   - pos: -47.5,-5.5
     parent: 8364
     type: Transform
+  - air:
+      volume: 200
+      immutable: False
+      temperature: 293.14926
+      moles:
+      - 0.9893891
+      - 3.7219875
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    type: EntityStorage
 - uid: 13889
   type: CableMV
   components:
@@ -105082,7 +104780,7 @@ entities:
   - pos: 21.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32227.16
+  - SecondsUntilStateChange: -33078.03
     state: Closing
     type: Door
   - inputs:
@@ -107356,8 +107054,6 @@ entities:
     pos: -19.5,-27.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 14465
   type: DisposalPipe
   components:
@@ -113383,8 +113079,6 @@ entities:
     pos: -19.5,-26.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15320
   type: ComfyChair
   components:
@@ -113392,8 +113086,6 @@ entities:
     pos: 58.5,-7.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15321
   type: Chair
   components:
@@ -113401,8 +113093,6 @@ entities:
     pos: -19.5,-25.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15322
   type: Chair
   components:
@@ -113410,8 +113100,6 @@ entities:
     pos: -19.5,-21.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15323
   type: Chair
   components:
@@ -113419,8 +113107,6 @@ entities:
     pos: -19.5,-22.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15324
   type: ClothingNeckScarfStripedGreen
   components:
@@ -113446,8 +113132,6 @@ entities:
     pos: 61.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15328
   type: CarpetGreen
   components:
@@ -115224,8 +114908,6 @@ entities:
     pos: -36.5,-43.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15574
   type: ReinforcedWindow
   components:
@@ -115265,8 +114947,6 @@ entities:
     pos: -35.5,-44.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15580
   type: Table
   components:
@@ -116126,8 +115806,6 @@ entities:
     pos: -38.5,-54.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15697
   type: ToiletDirtyWater
   components:
@@ -116135,8 +115813,6 @@ entities:
     pos: -38.5,-56.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15698
   type: ToiletDirtyWater
   components:
@@ -116144,8 +115820,6 @@ entities:
     pos: -38.5,-58.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15699
   type: AirlockMaint
   components:
@@ -121160,15 +120834,17 @@ entities:
     parent: 8364
     type: Transform
 - uid: 16453
-  type: SignSpace
+  type: CableApcExtension
   components:
-  - pos: -78.5,7.5
+  - pos: -76.5,7.5
     parent: 8364
     type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 16454
-  type: SignSpace
+  type: WallReinforced
   components:
-  - pos: -69.5,7.5
+  - pos: -70.5,7.5
     parent: 8364
     type: Transform
 - uid: 16455
@@ -123099,7 +122775,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 16712
-  type: SignSpace
+  type: SignEscapePods
   components:
   - pos: -91.5,10.5
     parent: 8364
@@ -129841,8 +129517,6 @@ entities:
     pos: -15.5,-71.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17576
   type: Chair
   components:
@@ -129850,8 +129524,6 @@ entities:
     pos: -14.5,-71.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17577
   type: ShuttersNormalOpen
   components:
@@ -129966,8 +129638,6 @@ entities:
     pos: -13.5,-71.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17586
   type: TableReinforced
   components:
@@ -130019,8 +129689,6 @@ entities:
   - pos: -15.5,-69.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17594
   type: ChairOfficeLight
   components:
@@ -130369,8 +130037,6 @@ entities:
   - pos: -14.5,-69.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17646
   type: WallReinforced
   components:
@@ -130485,8 +130151,6 @@ entities:
   - pos: -13.5,-69.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17665
   type: FirelockEdge
   components:
@@ -134883,6 +134547,12 @@ entities:
   - pos: 47.5,-20.5
     parent: 8364
     type: Transform
+- uid: 18308
+  type: SpawnPointBrigmedic
+  components:
+  - pos: -7.5,30.5
+    parent: 8364
+    type: Transform
 - uid: 18309
   type: WindowDirectional
   components:
@@ -137414,8 +137084,6 @@ entities:
     pos: -10.5,-16.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18643
   type: VendingMachineViroDrobe
   components:
@@ -139958,7 +139626,7 @@ entities:
   - pos: 23.5,-17.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32227.16
+  - SecondsUntilStateChange: -33078.03
     state: Closing
     type: Door
   - inputs:
@@ -139974,7 +139642,7 @@ entities:
   - pos: 23.5,-18.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32227.16
+  - SecondsUntilStateChange: -33078.03
     state: Closing
     type: Door
   - inputs:
@@ -139990,7 +139658,7 @@ entities:
   - pos: 23.5,-19.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32227.16
+  - SecondsUntilStateChange: -33078.03
     state: Closing
     type: Door
   - inputs:
@@ -140122,8 +139790,6 @@ entities:
     pos: 7.5,-53.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19045
   type: Chair
   components:
@@ -140131,8 +139797,6 @@ entities:
     pos: 9.5,-53.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19046
   type: PottedPlant8
   components:
@@ -142037,8 +141701,6 @@ entities:
   - pos: 18.5,-29.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19312
   type: CableHV
   components:
@@ -142127,8 +141789,6 @@ entities:
   - pos: 19.5,-29.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19325
   type: AirlockMedicalGlassLocked
   components:
@@ -142142,8 +141802,6 @@ entities:
   - pos: 21.5,-29.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19327
   type: AirlockMedicalLocked
   components:
@@ -142156,8 +141814,6 @@ entities:
   - pos: 22.5,-29.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19329
   type: VendingMachineMedical
   components:
@@ -158259,6 +157915,18 @@ entities:
   - pos: -22.5,24.5
     parent: 8364
     type: Transform
+- uid: 21543
+  type: LockerBrigmedicFilled
+  components:
+  - pos: -9.5,30.5
+    parent: 8364
+    type: Transform
+- uid: 21544
+  type: AtmosDeviceFanTiny
+  components:
+  - pos: -93.5,9.5
+    parent: 8364
+    type: Transform
 - uid: 21545
   type: WallSolid
   components:
@@ -160105,7 +159773,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 562
     type: Docking
-  - SecondsUntilStateChange: -67172.57
+  - SecondsUntilStateChange: -68023.44
     changeAirtight: False
     state: Opening
     type: Door
@@ -161322,8 +160990,6 @@ entities:
     pos: -15.5,41.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 21984
   type: MaintenanceFluffSpawner
   components:
@@ -161483,9 +161149,9 @@ entities:
     parent: 8364
     type: Transform
 - uid: 22008
-  type: LockerMedicineFilled
+  type: CableApcExtension
   components:
-  - pos: -9.5,30.5
+  - pos: -79.5,-4.5
     parent: 8364
     type: Transform
 - uid: 22009
@@ -163615,6 +163281,14 @@ entities:
   - pos: 51.5,6.5
     parent: 8364
     type: Transform
+- uid: 22327
+  type: CableApcExtension
+  components:
+  - pos: -76.5,-2.5
+    parent: 8364
+    type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 22328
   type: RandomPosterAny
   components:
@@ -198708,8 +198382,6 @@ entities:
     pos: -15.5,40.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 25681
   type: WallReinforced
   components:
@@ -198939,8 +198611,6 @@ entities:
     pos: -13.5,40.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 25716
   type: WindoorSecure
   components:
@@ -199024,8 +198694,6 @@ entities:
     pos: -13.5,41.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 25728
   type: GasPipeStraight
   components:
@@ -201093,16 +200761,12 @@ entities:
   - pos: 6.5,-29.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 25976
   type: Chair
   components:
   - pos: 5.5,-29.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 25977
   type: DisposalTrunk
   components:
@@ -201286,6 +200950,12 @@ entities:
   - pos: -68.5,-17.5
     parent: 8364
     type: Transform
+- uid: 26002
+  type: CableApcExtension
+  components:
+  - pos: -80.5,-4.5
+    parent: 8364
+    type: Transform
 - uid: 26003
   type: FoodCakeChristmasSlice
   components:
@@ -201298,6 +200968,14 @@ entities:
   - pos: 22.356016,2.7478647
     parent: 8364
     type: Transform
+- uid: 26005
+  type: CableApcExtension
+  components:
+  - pos: -81.5,-4.5
+    parent: 8364
+    type: Transform
+  - enabled: True
+    type: AmbientSound
 - uid: 26006
   type: AirlockExternalShuttleLocked
   components:
@@ -201347,8 +201025,6 @@ entities:
   - pos: -19.5,17.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26008
   type: Chair
   components:
@@ -201356,8 +201032,6 @@ entities:
     pos: -19.5,15.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26009
   type: TableWood
   components:
@@ -201417,6 +201091,20 @@ entities:
   type: PosterImperialLogo
   components:
   - pos: -15.5,-32.5
+    parent: 8364
+    type: Transform
+- uid: 26017
+  type: CableApcExtension
+  components:
+  - pos: -82.5,-4.5
+    parent: 8364
+    type: Transform
+  - enabled: True
+    type: AmbientSound
+- uid: 26018
+  type: RandomPosterLegit
+  components:
+  - pos: -67.5,-2.5
     parent: 8364
     type: Transform
 - uid: 26019
@@ -201757,8 +201445,6 @@ entities:
     pos: 6.5,-26.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26073
   type: SmokingPipeFilledTobacco
   components:
@@ -202186,8 +201872,6 @@ entities:
     pos: 27.5,2.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26134
   type: Chair
   components:
@@ -202195,8 +201879,6 @@ entities:
     pos: 24.5,4.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26135
   type: RandomSpawner
   components:
@@ -203699,8 +203381,6 @@ entities:
     pos: -23.5,40.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26358
   type: Sink
   components:
@@ -203856,8 +203536,6 @@ entities:
     pos: -21.5,47.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26378
   type: Chair
   components:
@@ -203865,8 +203543,6 @@ entities:
     pos: -18.5,47.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26379
   type: Chair
   components:
@@ -203874,8 +203550,6 @@ entities:
     pos: -17.5,41.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26380
   type: Chair
   components:
@@ -203883,8 +203557,6 @@ entities:
     pos: -20.5,41.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26381
   type: Table
   components:
@@ -204015,8 +203687,6 @@ entities:
   - pos: -7.5,37.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26397
   type: AirSensor
   components:
@@ -204198,8 +203868,6 @@ entities:
   - pos: -11.5,53.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26424
   type: ComfyChair
   components:
@@ -204207,8 +203875,6 @@ entities:
     pos: -15.5,53.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26425
   type: PoweredSmallLight
   components:
@@ -204436,8 +204102,6 @@ entities:
     pos: -11.5,51.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26462
   type: Bookshelf
   components:
@@ -204987,8 +204651,6 @@ entities:
   - pos: 1.5,50.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26550
   type: Beaker
   components:
@@ -205110,16 +204772,12 @@ entities:
   - pos: -14.5,36.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26568
   type: Chair
   components:
   - pos: -15.5,36.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26569
   type: HarmonicaInstrument
   components:
@@ -205154,6 +204812,68 @@ entities:
   type: FirelockGlass
   components:
   - pos: -60.5,14.5
+    parent: 8364
+    type: Transform
+- uid: 26575
+  type: RandomPosterLegit
+  components:
+  - pos: -69.5,-2.5
+    parent: 8364
+    type: Transform
+- uid: 26576
+  type: RandomPosterLegit
+  components:
+  - pos: -68.5,-6.5
+    parent: 8364
+    type: Transform
+- uid: 26577
+  type: VendorMachineCoffee
+  components:
+  - flags: SessionSpecific
+    type: MetaData
+  - pos: -77.5,8.5
+    parent: 8364
+    type: Transform
+- uid: 26578
+  type: AtmosDeviceFanTiny
+  components:
+  - pos: -72.5,7.5
+    parent: 8364
+    type: Transform
+- uid: 26579
+  type: AtmosDeviceFanTiny
+  components:
+  - pos: -67.5,-9.5
+    parent: 8364
+    type: Transform
+- uid: 26580
+  type: SignNosmoking
+  components:
+  - pos: -81.5,-5.5
+    parent: 8364
+    type: Transform
+- uid: 26581
+  type: SignEscapePods
+  components:
+  - pos: -81.5,-3.5
+    parent: 8364
+    type: Transform
+- uid: 26582
+  type: Rack
+  components:
+  - pos: -92.5,8.5
+    parent: 8364
+    type: Transform
+- uid: 26583
+  type: MaintenanceWeaponSpawner
+  components:
+  - pos: -92.5,8.5
+    parent: 8364
+    type: Transform
+- uid: 26584
+  type: MaintenanceToolSpawner
+  components:
+  - pos: -82.5,-5.5
     parent: 8364
     type: Transform
 - uid: 26736
@@ -205882,8 +205602,6 @@ entities:
     pos: 56.5,-37.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26869
   type: Chair
   components:
@@ -205891,8 +205609,6 @@ entities:
     pos: 51.5,-37.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26870
   type: PottedPlant0
   components:
@@ -205917,8 +205633,6 @@ entities:
   - pos: 61.5,-39.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26874
   type: PersonalAI
   components:
@@ -206029,24 +205743,18 @@ entities:
   - pos: 70.5,6.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26891
   type: Chair
   components:
   - pos: 72.5,6.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26892
   type: Chair
   components:
   - pos: 71.5,6.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26893
   type: Poweredlight
   components:
@@ -206093,8 +205801,6 @@ entities:
   - pos: 6.5,-55.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 26900
   type: GasPipeStraight
   components:
@@ -208536,8 +208242,6 @@ entities:
     pos: 22.5,-3.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 27213
   type: AirCanister
   components:
@@ -210650,36 +210354,22 @@ entities:
   - pos: -83.5,11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 27496
   type: Chair
   components:
   - pos: -84.5,11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 27497
   type: Chair
   components:
   - pos: -85.5,11.5
     parent: 8364
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 27498
   type: CrowbarRed
   components:
   - pos: -83.58591,11.480936
-    parent: 8364
-    type: Transform
-- uid: 27500
-  type: VendorMachineCoffee
-  components:
-  - flags: SessionSpecific
-    type: MetaData
-  - pos: -79.5,8.5
     parent: 8364
     type: Transform
 - uid: 27503
