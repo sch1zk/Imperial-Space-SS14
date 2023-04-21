@@ -3954,7 +3954,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 21828
     type: Docking
-  - SecondsUntilStateChange: -66994.984
+  - SecondsUntilStateChange: -67172.57
     changeAirtight: False
     state: Opening
     type: Door
@@ -5577,8 +5577,7 @@ entities:
   components:
   - type: MetaData
   - type: Transform
-  - index: 10
-    type: Map
+  - type: Map
   - type: PhysicsMap
   - type: Broadphase
   - type: OccluderTree
@@ -19011,7 +19010,7 @@ entities:
   - pos: 20.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32049.576
+  - SecondsUntilStateChange: -32227.16
     state: Closing
     type: Door
   - inputs:
@@ -19400,7 +19399,7 @@ entities:
   - pos: 19.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32049.576
+  - SecondsUntilStateChange: -32227.16
     state: Closing
     type: Door
   - inputs:
@@ -22990,7 +22989,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 3580
-  type: AirlockGlassShuttle
+  type: AirlockExternalGlassShuttleEmergencyLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: 85.5,-3.5
@@ -23016,7 +23015,7 @@ entities:
       - BulletImpassable
       - InteractImpassable
       - Opaque
-      density: 1
+      density: 100
       hard: True
       restitution: 0
       friction: 0.4
@@ -23033,7 +23032,7 @@ entities:
       id: docking
     type: Fixtures
 - uid: 3581
-  type: AirlockGlassShuttle
+  type: AirlockExternalGlassShuttleEmergencyLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: 85.5,-5.5
@@ -23059,7 +23058,7 @@ entities:
       - BulletImpassable
       - InteractImpassable
       - Opaque
-      density: 1
+      density: 100
       hard: True
       restitution: 0
       friction: 0.4
@@ -84670,7 +84669,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 11335
-  type: AirlockGlassShuttle
+  type: AirlockExternalGlassShuttleEmergencyLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: 85.5,-13.5
@@ -84696,7 +84695,7 @@ entities:
       - BulletImpassable
       - InteractImpassable
       - Opaque
-      density: 1
+      density: 100
       hard: True
       restitution: 0
       friction: 0.4
@@ -84713,7 +84712,7 @@ entities:
       id: docking
     type: Fixtures
 - uid: 11336
-  type: AirlockGlassShuttle
+  type: AirlockExternalGlassShuttleEmergencyLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: 85.5,-11.5
@@ -84739,7 +84738,7 @@ entities:
       - BulletImpassable
       - InteractImpassable
       - Opaque
-      density: 1
+      density: 100
       hard: True
       restitution: 0
       friction: 0.4
@@ -93072,7 +93071,7 @@ entities:
       id: docking
     type: Fixtures
 - uid: 12471
-  type: AirlockExternalShuttleLocked
+  type: AirlockExternalGlassShuttleEscape
   components:
   - rot: -1.5707963267948966 rad
     pos: -67.5,-9.5
@@ -93098,7 +93097,7 @@ entities:
       - BulletImpassable
       - InteractImpassable
       - Opaque
-      density: 1
+      density: 100
       hard: True
       restitution: 0
       friction: 0.4
@@ -98457,14 +98456,11 @@ entities:
     parent: 8364
     type: Transform
 - uid: 13247
-  type: SignalSwitch
+  type: AirlockMaintMedLocked
   components:
-  - name: lights switch
-    type: MetaData
-  - pos: 10.8,3.5
+  - pos: 47.5,-22.5
     parent: 8364
     type: Transform
-  - type: ItemCooldown
 - uid: 13248
   type: Sink
   components:
@@ -105086,7 +105082,7 @@ entities:
   - pos: 21.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32049.576
+  - SecondsUntilStateChange: -32227.16
     state: Closing
     type: Door
   - inputs:
@@ -134887,12 +134883,6 @@ entities:
   - pos: 47.5,-20.5
     parent: 8364
     type: Transform
-- uid: 18308
-  type: AirlockMaintSecLocked
-  components:
-  - pos: 47.5,-22.5
-    parent: 8364
-    type: Transform
 - uid: 18309
   type: WindowDirectional
   components:
@@ -139968,7 +139958,7 @@ entities:
   - pos: 23.5,-17.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32049.576
+  - SecondsUntilStateChange: -32227.16
     state: Closing
     type: Door
   - inputs:
@@ -139984,7 +139974,7 @@ entities:
   - pos: 23.5,-18.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32049.576
+  - SecondsUntilStateChange: -32227.16
     state: Closing
     type: Door
   - inputs:
@@ -140000,7 +139990,7 @@ entities:
   - pos: 23.5,-19.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -32049.576
+  - SecondsUntilStateChange: -32227.16
     state: Closing
     type: Door
   - inputs:
@@ -160115,7 +160105,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 562
     type: Docking
-  - SecondsUntilStateChange: -66994.984
+  - SecondsUntilStateChange: -67172.57
     changeAirtight: False
     state: Opening
     type: Door
