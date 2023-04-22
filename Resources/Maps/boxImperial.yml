@@ -3944,7 +3944,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 21828
     type: Docking
-  - SecondsUntilStateChange: -68023.44
+  - SecondsUntilStateChange: -68289.2
     changeAirtight: False
     state: Opening
     type: Door
@@ -4311,47 +4311,12 @@ entities:
     parent: 8364
     type: Transform
 - uid: 602
-  type: AirlockExternalGlassShuttleArrivals
+  type: Catwalk
   components:
-  - pos: -79.5,7.5
+  - rot: 3.141592653589793 rad
+    pos: -72.5,-2.5
     parent: 8364
     type: Transform
-  - fixtures:
-    - shape: !type:PolygonShape
-        radius: 0.01
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-      density: 100
-      hard: True
-      restitution: 0
-      friction: 0.4
-      id: null
-    - shape: !type:PhysShapeCircle
-        radius: 0.2
-        position: 0,-0.5
-      mask: []
-      layer: []
-      density: 1
-      hard: False
-      restitution: 0
-      friction: 0.4
-      id: docking
-    type: Fixtures
 - uid: 603
   type: CableApcExtension
   components:
@@ -4440,48 +4405,12 @@ entities:
     parent: 8364
     type: Transform
 - uid: 616
-  type: AirlockExternalGlassShuttleArrivals
+  type: Catwalk
   components:
   - rot: 3.141592653589793 rad
-    pos: -72.5,-2.5
+    pos: -79.5,7.5
     parent: 8364
     type: Transform
-  - fixtures:
-    - shape: !type:PolygonShape
-        radius: 0.01
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-      density: 100
-      hard: True
-      restitution: 0
-      friction: 0.4
-      id: null
-    - shape: !type:PhysShapeCircle
-        radius: 0.2
-        position: 0,-0.5
-      mask: []
-      layer: []
-      density: 1
-      hard: False
-      restitution: 0
-      friction: 0.4
-      id: docking
-    type: Fixtures
 - uid: 617
   type: CableApcExtension
   components:
@@ -4696,7 +4625,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 643
-  type: Chair
+  type: PottedPlantRandom
   components:
   - pos: -73.5,-3.5
     parent: 8364
@@ -4782,9 +4711,10 @@ entities:
     parent: 8364
     type: Transform
 - uid: 656
-  type: PottedPlantRandom
+  type: Chair
   components:
-  - pos: -76.5,8.5
+  - rot: 3.141592653589793 rad
+    pos: -76.5,8.5
     parent: 8364
     type: Transform
 - uid: 657
@@ -10087,7 +10017,7 @@ entities:
 - uid: 1510
   type: PottedPlantRandom
   components:
-  - pos: -76.5,-3.5
+  - pos: -78.5,-3.5
     parent: 8364
     type: Transform
 - uid: 1511
@@ -18961,7 +18891,7 @@ entities:
   - pos: 20.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -33078.03
+  - SecondsUntilStateChange: -33343.8
     state: Closing
     type: Door
   - inputs:
@@ -19350,7 +19280,7 @@ entities:
   - pos: 19.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -33078.03
+  - SecondsUntilStateChange: -33343.8
     state: Closing
     type: Door
   - inputs:
@@ -55373,12 +55303,12 @@ entities:
           color: '#3922007A'
           id: BrickTileWhiteCornerNe
         decals:
-          2983: -52,7
+          2979: -52,7
       - node:
           color: '#3922007A'
           id: BrickTileWhiteCornerNw
         decals:
-          2984: -55,7
+          2980: -55,7
       - node:
           color: '#EFB34196'
           id: BrickTileWhiteCornerNw
@@ -55421,12 +55351,12 @@ entities:
           color: '#3922007A'
           id: BrickTileWhiteCornerSe
         decals:
-          2993: -52,3
+          2989: -52,3
       - node:
           color: '#3922007A'
           id: BrickTileWhiteCornerSw
         decals:
-          2990: -55,3
+          2986: -55,3
       - node:
           color: '#334E6DC8'
           id: BrickTileWhiteCornerSw
@@ -55522,9 +55452,9 @@ entities:
           color: '#3922007A'
           id: BrickTileWhiteLineE
         decals:
-          2994: -52,4
-          2995: -52,5
-          2996: -52,6
+          2990: -52,4
+          2991: -52,5
+          2992: -52,6
       - node:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineE
@@ -55595,8 +55525,8 @@ entities:
           color: '#3922007A'
           id: BrickTileWhiteLineN
         decals:
-          2985: -53,7
-          2986: -54,7
+          2981: -53,7
+          2982: -54,7
       - node:
           color: '#EFD98796'
           id: BrickTileWhiteLineN
@@ -55674,8 +55604,8 @@ entities:
           color: '#3922007A'
           id: BrickTileWhiteLineS
         decals:
-          2991: -54,3
-          2992: -53,3
+          2987: -54,3
+          2988: -53,3
       - node:
           color: '#DE3A3A96'
           id: BrickTileWhiteLineS
@@ -55781,9 +55711,9 @@ entities:
           color: '#3922007A'
           id: BrickTileWhiteLineW
         decals:
-          2987: -55,6
-          2988: -55,5
-          2989: -55,4
+          2983: -55,6
+          2984: -55,5
+          2985: -55,4
       - node:
           color: '#FFFFFFFF'
           id: Busha3
@@ -55875,39 +55805,39 @@ entities:
           color: '#3922007A'
           id: CheckerNESW
         decals:
-          3059: 26,-10
-          3060: 25,-10
-          3061: 24,-10
-          3062: 23,-10
-          3063: 22,-10
-          3064: 21,-10
-          3065: 20,-10
-          3066: 19,-10
-          3067: 19,-9
-          3068: 20,-9
-          3069: 21,-9
-          3070: 22,-9
-          3071: 23,-9
-          3072: 24,-9
-          3073: 25,-9
-          3074: 26,-9
-          3075: 26,-8
-          3076: 25,-8
-          3077: 21,-8
-          3078: 20,-8
-          3079: 19,-8
-          3080: 19,-7
-          3081: 20,-7
-          3082: 21,-7
-          3083: 26,-7
-          3084: 26,-6
-          3085: 21,-6
-          3086: 20,-6
-          3087: 19,-6
-          3088: 19,-5
-          3089: 20,-5
-          3090: 21,-5
-          3091: 26,-5
+          3055: 26,-10
+          3056: 25,-10
+          3057: 24,-10
+          3058: 23,-10
+          3059: 22,-10
+          3060: 21,-10
+          3061: 20,-10
+          3062: 19,-10
+          3063: 19,-9
+          3064: 20,-9
+          3065: 21,-9
+          3066: 22,-9
+          3067: 23,-9
+          3068: 24,-9
+          3069: 25,-9
+          3070: 26,-9
+          3071: 26,-8
+          3072: 25,-8
+          3073: 21,-8
+          3074: 20,-8
+          3075: 19,-8
+          3076: 19,-7
+          3077: 20,-7
+          3078: 21,-7
+          3079: 26,-7
+          3080: 26,-6
+          3081: 21,-6
+          3082: 20,-6
+          3083: 19,-6
+          3084: 19,-5
+          3085: 20,-5
+          3086: 21,-5
+          3087: 26,-5
       - node:
           color: '#92929B96'
           id: CheckerNESW
@@ -56127,12 +56057,12 @@ entities:
           color: '#3922007A'
           id: CheckerNWSE
         decals:
-          2997: -54,4
-          2998: -54,5
-          2999: -54,6
-          3000: -53,6
-          3001: -53,5
-          3002: -53,4
+          2993: -54,4
+          2994: -54,5
+          2995: -54,6
+          2996: -53,6
+          2997: -53,5
+          2998: -53,4
       - node:
           color: '#52B4E996'
           id: CheckerNWSE
@@ -56898,7 +56828,7 @@ entities:
           2910: 18,-25
           2927: 35,-39
           2928: 36,-39
-          3145: 41,-23
+          3141: 41,-23
       - node:
           color: '#F5DB9E96'
           id: HalfTileOverlayGreyscale
@@ -57458,8 +57388,8 @@ entities:
           1261: 13,-52
           1262: 13,-51
           1389: 0,-27
-          3142: 1,-26
-          3143: 1,-25
+          3138: 1,-26
+          3139: 1,-25
       - node:
           color: '#334E6DC8'
           id: HalfTileOverlayGreyscale90
@@ -57514,98 +57444,98 @@ entities:
           color: '#3922007A'
           id: MiniTileWhiteCornerSw
         decals:
-          3048: 18,-11
+          3044: 18,-11
       - node:
           color: '#3922007A'
           id: MiniTileWhiteInnerNe
         decals:
-          3023: 27,-10
-          3032: 22,-8
+          3019: 27,-10
+          3028: 22,-8
       - node:
           color: '#3922007A'
           id: MiniTileWhiteInnerNw
         decals:
-          3127: 25,-8
+          3123: 25,-8
       - node:
           color: '#3922007A'
           id: MiniTileWhiteInnerSe
         decals:
-          3033: 22,-5
+          3029: 22,-5
       - node:
           color: '#3922007A'
           id: MiniTileWhiteInnerSw
         decals:
-          3034: 25,-5
+          3030: 25,-5
       - node:
           color: '#3922007A'
           id: MiniTileWhiteLineE
         decals:
-          3015: 27,-5
-          3016: 27,-6
-          3017: 27,-7
-          3018: 27,-8
-          3019: 27,-9
-          3030: 22,-7
-          3031: 22,-6
-          3135: -9,-28
-          3136: -9,-27
-          3137: -9,-26
-          3138: -9,-25
-          3139: -9,-24
-          3140: -9,-23
-          3141: -9,-22
+          3011: 27,-5
+          3012: 27,-6
+          3013: 27,-7
+          3014: 27,-8
+          3015: 27,-9
+          3026: 22,-7
+          3027: 22,-6
+          3131: -9,-28
+          3132: -9,-27
+          3133: -9,-26
+          3134: -9,-25
+          3135: -9,-24
+          3136: -9,-23
+          3137: -9,-22
       - node:
           color: '#3922007A'
           id: MiniTileWhiteLineN
         decals:
-          3020: 29,-10
-          3021: 30,-10
-          3022: 31,-10
-          3024: 28,-10
-          3027: 23,-8
-          3126: 24,-8
+          3016: 29,-10
+          3017: 30,-10
+          3018: 31,-10
+          3020: 28,-10
+          3023: 23,-8
+          3122: 24,-8
       - node:
           color: '#3922007A'
           id: MiniTileWhiteLineS
         decals:
-          3025: 23,-5
-          3026: 24,-5
-          3035: 31,-11
-          3036: 30,-11
-          3037: 29,-11
-          3038: 28,-11
-          3039: 27,-11
-          3040: 26,-11
-          3041: 25,-11
-          3042: 24,-11
-          3043: 23,-11
-          3044: 22,-11
-          3045: 21,-11
-          3046: 20,-11
-          3047: 19,-11
+          3021: 23,-5
+          3022: 24,-5
+          3031: 31,-11
+          3032: 30,-11
+          3033: 29,-11
+          3034: 28,-11
+          3035: 27,-11
+          3036: 26,-11
+          3037: 25,-11
+          3038: 24,-11
+          3039: 23,-11
+          3040: 22,-11
+          3041: 21,-11
+          3042: 20,-11
+          3043: 19,-11
       - node:
           color: '#3922007A'
           id: MiniTileWhiteLineW
         decals:
-          3028: 25,-7
-          3029: 25,-6
-          3049: 18,-10
-          3050: 18,-9
-          3051: 18,-8
-          3052: 18,-7
-          3053: 18,-6
-          3054: 18,-5
-          3055: 18,-4
-          3056: 18,-3
-          3057: 18,-2
-          3058: 18,-1
-          3128: -11,-28
-          3129: -11,-27
-          3130: -11,-26
-          3131: -11,-25
-          3132: -11,-24
-          3133: -11,-23
-          3134: -11,-22
+          3024: 25,-7
+          3025: 25,-6
+          3045: 18,-10
+          3046: 18,-9
+          3047: 18,-8
+          3048: 18,-7
+          3049: 18,-6
+          3050: 18,-5
+          3051: 18,-4
+          3052: 18,-3
+          3053: 18,-2
+          3054: 18,-1
+          3124: -11,-28
+          3125: -11,-27
+          3126: -11,-26
+          3127: -11,-25
+          3128: -11,-24
+          3129: -11,-23
+          3130: -11,-22
       - node:
           color: '#334E6DC8'
           id: MiniTileWhiteLineW
@@ -57832,12 +57762,12 @@ entities:
           color: '#3922007A'
           id: QuarterTileOverlayGreyscale
         decals:
-          3006: -52,6
-          3007: -52,5
-          3008: -52,4
-          3009: -52,3
-          3010: -53,3
-          3011: -54,3
+          3002: -52,6
+          3003: -52,5
+          3004: -52,4
+          3005: -52,3
+          3006: -53,3
+          3007: -54,3
       - node:
           color: '#9D9D97FF'
           id: QuarterTileOverlayGreyscale
@@ -58035,17 +57965,17 @@ entities:
           2089: 36,-25
           2131: 39,-15
           2878: 36,-30
-          2972: -81,8
-          2973: -82,8
-          2974: -83,8
-          2975: -84,8
-          2976: -85,8
-          2977: -86,8
-          2978: -87,8
-          2979: -88,8
-          2980: -89,8
-          2981: -90,8
-          2982: -91,8
+          2968: -81,8
+          2969: -82,8
+          2970: -83,8
+          2971: -84,8
+          2972: -85,8
+          2973: -86,8
+          2974: -87,8
+          2975: -88,8
+          2976: -89,8
+          2977: -90,8
+          2978: -91,8
       - node:
           color: '#D4D4D496'
           id: QuarterTileOverlayGreyscale180
@@ -58066,20 +57996,20 @@ entities:
           2430: 77,-16
           2431: 78,-16
           2432: 79,-16
-          3148: -79,-6
-          3149: -78,-6
-          3152: -81,-6
-          3153: -80,-6
+          3144: -79,-6
+          3145: -78,-6
+          3148: -81,-6
+          3149: -80,-6
       - node:
           color: '#3922007A'
           id: QuarterTileOverlayGreyscale180
         decals:
-          3003: -55,4
-          3004: -55,5
-          3005: -55,6
-          3012: -55,7
-          3013: -54,7
-          3014: -53,7
+          2999: -55,4
+          3000: -55,5
+          3001: -55,6
+          3008: -55,7
+          3009: -54,7
+          3010: -53,7
       - node:
           color: '#9D9D97FF'
           id: QuarterTileOverlayGreyscale180
@@ -58156,22 +58086,22 @@ entities:
           color: '#3922007A'
           id: QuarterTileOverlayGreyscale270
         decals:
-          3092: 22,-5
-          3093: 22,-6
-          3094: 22,-7
-          3095: 22,-8
-          3096: 23,-8
-          3097: 24,-8
-          3101: 27,-10
-          3102: 28,-10
-          3103: 29,-10
-          3104: 30,-10
-          3105: 31,-10
-          3118: 27,-9
-          3119: 27,-8
-          3120: 27,-7
-          3121: 27,-6
-          3122: 27,-5
+          3088: 22,-5
+          3089: 22,-6
+          3090: 22,-7
+          3091: 22,-8
+          3092: 23,-8
+          3093: 24,-8
+          3097: 27,-10
+          3098: 28,-10
+          3099: 29,-10
+          3100: 30,-10
+          3101: 31,-10
+          3114: 27,-9
+          3115: 27,-8
+          3116: 27,-7
+          3117: 27,-6
+          3118: 27,-5
       - node:
           color: '#334E6DC8'
           id: QuarterTileOverlayGreyscale270
@@ -58504,10 +58434,10 @@ entities:
           2352: -67,-6
           2353: -66,-6
           2911: 18,-27
-          3146: -78,-6
-          3147: -79,-6
-          3150: -80,-6
-          3151: -81,-6
+          3142: -78,-6
+          3143: -79,-6
+          3146: -80,-6
+          3147: -81,-6
       - node:
           color: '#D4D4D496'
           id: QuarterTileOverlayGreyscale90
@@ -58690,24 +58620,24 @@ entities:
           color: '#3922007A'
           id: QuarterTileOverlayGreyscale90
         decals:
-          3098: 25,-7
-          3099: 25,-6
-          3100: 25,-5
-          3106: 19,-11
-          3107: 20,-11
-          3108: 21,-11
-          3109: 22,-11
-          3110: 23,-11
-          3111: 24,-11
-          3112: 25,-11
-          3113: 26,-11
-          3114: 27,-11
-          3115: 28,-11
-          3116: 29,-11
-          3117: 30,-11
-          3123: 24,-5
-          3124: 23,-5
-          3125: 22,-5
+          3094: 25,-7
+          3095: 25,-6
+          3096: 25,-5
+          3102: 19,-11
+          3103: 20,-11
+          3104: 21,-11
+          3105: 22,-11
+          3106: 23,-11
+          3107: 24,-11
+          3108: 25,-11
+          3109: 26,-11
+          3110: 27,-11
+          3111: 28,-11
+          3112: 29,-11
+          3113: 30,-11
+          3119: 24,-5
+          3120: 23,-5
+          3121: 22,-5
       - node:
           color: '#52B4E996'
           id: QuarterTileOverlayGreyscale90
@@ -59517,7 +59447,7 @@ entities:
           2151: 54,-21
           2152: 53,-21
           2153: 52,-21
-          3144: 1,-25
+          3140: 1,-25
       - node:
           color: '#FFFFFFFF'
           id: WoodTrimThinLineE
@@ -62148,10 +62078,10 @@ entities:
           0: 34952
         -21,-2:
           0: 34816
-          8: 17600
+          8: 30704
         -21,-1:
           0: 49160
-          8: 196
+          8: 247
         -15,8:
           0: 19532
         -15,9:
@@ -62845,8 +62775,8 @@ entities:
         id: docking46345
         localAnchorB: -0.5,-1
         localAnchorA: -66.5,22
-        damping: 42.400803
-        stiffness: 380.58875
+        damping: 42.400806
+        stiffness: 380.58878
     type: Joint
   - type: OccluderTree
   - type: Shuttle
@@ -88774,8 +88704,8 @@ entities:
         id: docking46345
         localAnchorB: -0.5,-1
         localAnchorA: -66.5,22
-        damping: 42.400803
-        stiffness: 380.58875
+        damping: 42.400806
+        stiffness: 380.58878
     type: Joint
   - type: OccluderTree
   - type: Shuttle
@@ -93946,9 +93876,9 @@ entities:
   - enabled: True
     type: AmbientSound
 - uid: 12639
-  type: Chair
+  type: PottedPlantRandom
   components:
-  - pos: -72.5,-3.5
+  - pos: -73.5,8.5
     parent: 8364
     type: Transform
 - uid: 12640
@@ -93981,48 +93911,12 @@ entities:
     parent: 8364
     type: Transform
 - uid: 12644
-  type: AirlockExternalGlassShuttleArrivals
+  type: Catwalk
   components:
   - rot: 3.141592653589793 rad
-    pos: -79.5,-2.5
+    pos: -72.5,7.5
     parent: 8364
     type: Transform
-  - fixtures:
-    - shape: !type:PolygonShape
-        radius: 0.01
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-      density: 100
-      hard: True
-      restitution: 0
-      friction: 0.4
-      id: null
-    - shape: !type:PhysShapeCircle
-        radius: 0.2
-        position: 0,-0.5
-      mask: []
-      layer: []
-      density: 1
-      hard: False
-      restitution: 0
-      friction: 0.4
-      id: docking
-    type: Fixtures
 - uid: 12645
   type: FirelockGlass
   components:
@@ -94031,10 +93925,9 @@ entities:
     parent: 8364
     type: Transform
 - uid: 12646
-  type: Chair
+  type: PottedPlantRandom
   components:
-  - rot: 3.141592653589793 rad
-    pos: -73.5,8.5
+  - pos: -78.5,8.5
     parent: 8364
     type: Transform
 - uid: 12647
@@ -94087,47 +93980,12 @@ entities:
       id: docking
     type: Fixtures
 - uid: 12649
-  type: AirlockExternalGlassShuttleArrivals
+  type: Catwalk
   components:
-  - pos: -72.5,7.5
+  - rot: 3.141592653589793 rad
+    pos: -79.5,-2.5
     parent: 8364
     type: Transform
-  - fixtures:
-    - shape: !type:PolygonShape
-        radius: 0.01
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-      density: 100
-      hard: True
-      restitution: 0
-      friction: 0.4
-      id: null
-    - shape: !type:PhysShapeCircle
-        radius: 0.2
-        position: 0,-0.5
-      mask: []
-      layer: []
-      density: 1
-      hard: False
-      restitution: 0
-      friction: 0.4
-      id: docking
-    type: Fixtures
 - uid: 12650
   type: PottedPlantRandom
   components:
@@ -104780,7 +104638,7 @@ entities:
   - pos: 21.5,-15.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -33078.03
+  - SecondsUntilStateChange: -33343.8
     state: Closing
     type: Door
   - inputs:
@@ -139626,7 +139484,7 @@ entities:
   - pos: 23.5,-17.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -33078.03
+  - SecondsUntilStateChange: -33343.8
     state: Closing
     type: Door
   - inputs:
@@ -139642,7 +139500,7 @@ entities:
   - pos: 23.5,-18.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -33078.03
+  - SecondsUntilStateChange: -33343.8
     state: Closing
     type: Door
   - inputs:
@@ -139658,7 +139516,7 @@ entities:
   - pos: 23.5,-19.5
     parent: 8364
     type: Transform
-  - SecondsUntilStateChange: -33078.03
+  - SecondsUntilStateChange: -33343.8
     state: Closing
     type: Door
   - inputs:
@@ -159773,7 +159631,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 562
     type: Docking
-  - SecondsUntilStateChange: -68023.44
+  - SecondsUntilStateChange: -68289.2
     changeAirtight: False
     state: Opening
     type: Door
@@ -204876,6 +204734,188 @@ entities:
   - pos: -82.5,-5.5
     parent: 8364
     type: Transform
+- uid: 26585
+  type: Chair
+  components:
+  - pos: -76.5,-3.5
+    parent: 8364
+    type: Transform
+- uid: 26586
+  type: Chair
+  components:
+  - pos: -77.5,-3.5
+    parent: 8364
+    type: Transform
+- uid: 26587
+  type: AirlockExternalGlassShuttleArrivals
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -79.5,-2.5
+    parent: 8364
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+      hard: True
+      restitution: 0
+      friction: 0.4
+      id: null
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      mask: []
+      layer: []
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: docking
+    type: Fixtures
+- uid: 26588
+  type: AirlockExternalGlassShuttleArrivals
+  components:
+  - pos: -79.5,7.5
+    parent: 8364
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+      hard: True
+      restitution: 0
+      friction: 0.4
+      id: null
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      mask: []
+      layer: []
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: docking
+    type: Fixtures
+- uid: 26589
+  type: AirlockExternalGlassShuttleArrivals
+  components:
+  - pos: -72.5,7.5
+    parent: 8364
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+      hard: True
+      restitution: 0
+      friction: 0.4
+      id: null
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      mask: []
+      layer: []
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: docking
+    type: Fixtures
+- uid: 26590
+  type: AirlockExternalGlassShuttleArrivals
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -72.5,-2.5
+    parent: 8364
+    type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - InteractImpassable
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 100
+      hard: True
+      restitution: 0
+      friction: 0.4
+      id: null
+    - shape: !type:PhysShapeCircle
+        radius: 0.2
+        position: 0,-0.5
+      mask: []
+      layer: []
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: docking
+    type: Fixtures
 - uid: 26736
   type: EftposScience
   components:
