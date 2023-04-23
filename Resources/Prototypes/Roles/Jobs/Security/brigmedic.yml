@@ -20,6 +20,10 @@
   - Brig
   - Maintenance
   - External
+  minBankBalance: 300
+  maxBankBalance: 500
+  wageDepartment: Security
+  wage: 100
 
 - type: startingGear
   id: BrigmedicGear

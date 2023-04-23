@@ -234,6 +234,7 @@ entities:
     shakeTimes: 10
     type: GravityShake
   - type: SpreaderGrid
+  - type: Followed
 - uid: 1
   type: Grille
   components:
@@ -646,8 +647,6 @@ entities:
     pos: 0.5,-8.5
     parent: 0
     type: Transform
-  - enabled: False
-    type: Thruster
   - bodyType: Static
     type: Physics
   - containers:
