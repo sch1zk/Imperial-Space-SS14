@@ -18,6 +18,7 @@
   - Service
   - Brig
   - External
+  - Detective
   minBankBalance: 300
   maxBankBalance: 500
   wageDepartment: Security

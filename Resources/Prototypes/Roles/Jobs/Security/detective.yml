@@ -16,6 +16,7 @@
   - Brig
   - Maintenance
   - Service
+  - Detective
   minBankBalance: 300
   maxBankBalance: 500
   wageDepartment: Security

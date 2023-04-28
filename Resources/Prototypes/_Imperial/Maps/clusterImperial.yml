@@ -7,6 +7,7 @@
   stations:
     Cluster:
       mapNameTemplate: '{0} Cluster Station {1}'
+      emergencyShuttlePath: /Maps/Shuttles/emergency.yml
       nameGenerator:
         !type:NanotrasenNameGenerator
         prefixCreator: '14'
@@ -49,3 +50,4 @@
         ResearchAssistant: [1,1]
         Reporter: [1,1]
         Adjutant: [1,1]
+        Brigmedic: [1,1]

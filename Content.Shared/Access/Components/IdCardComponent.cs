@@ -6,15 +6,19 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Access.Components
 {
     [RegisterComponent, NetworkedComponent]
-    [Access(typeof(SharedIdCardSystem), typeof(SharedPDASystem), typeof(SharedAgentIdCardSystem))]
-    public sealed class IdCardComponent : Component
+    [AutoGenerateComponentState]
+    [Access(typeof(SharedIdCardSystem), typeof(SharedPDASystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWrite)]
+    public sealed partial class IdCardComponent : Component
     {
         [DataField("fullName")]
-        [Access(typeof(SharedIdCardSystem), typeof(SharedPDASystem), typeof(SharedAgentIdCardSystem),
-            Other = AccessPermissions.ReadWrite)] // FIXME Friends
+        [AutoNetworkedField]
+        // FIXME Friends
         public string? FullName;
 
         [DataField("jobTitle")]
+        [AutoNetworkedField]
+        [Access(typeof(SharedIdCardSystem), typeof(SharedPDASystem), typeof(SharedAgentIdCardSystem),
+            Other = AccessPermissions.ReadWrite)]
         public string? JobTitle;
 
         [DataField("storedBankAccountNumber")]
@@ -22,18 +26,5 @@ namespace Content.Shared.Access.Components
 
         [DataField("storedBankAccountPin")]
         public string? StoredBankAccountPin;
-    }
-
-    [Serializable, NetSerializable]
-    public sealed class IdCardComponentState : ComponentState
-    {
-        public string? FullName;
-        public string? JobTitle;
-
-        public IdCardComponentState(string? fullName, string? jobTitle)
-        {
-            FullName = fullName;
-            JobTitle = jobTitle;
-        }
     }
 }
