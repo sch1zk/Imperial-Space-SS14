@@ -199,7 +199,7 @@ namespace Content.Server.Database
         #region Admin Logs
 
         Task<Server> AddOrGetServer(string serverName);
-        Task AddAdminLogs(List<QueuedLog> logs);
+        Task AddAdminLogs(List<AdminLog> logs);
         IAsyncEnumerable<string> GetAdminLogMessages(LogFilter? filter = null);
         IAsyncEnumerable<SharedAdminLog> GetAdminLogs(LogFilter? filter = null);
         IAsyncEnumerable<JsonDocument> GetAdminLogsJson(LogFilter? filter = null);
@@ -551,7 +551,7 @@ namespace Content.Server.Database
             return server;
         }
 
-        public Task AddAdminLogs(List<QueuedLog> logs)
+        public Task AddAdminLogs(List<AdminLog> logs)
         {
             DbWriteOpsMetric.Inc();
             return _db.AddAdminLogs(logs);
