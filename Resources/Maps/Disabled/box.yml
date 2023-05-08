@@ -3905,7 +3905,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 21828
     type: Docking
-  - SecondsUntilStateChange: -29986.197
+  - SecondsUntilStateChange: -30243.695
     changeAirtight: False
     state: Opening
     type: Door
@@ -34261,7 +34261,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 5305
-  type: TableReinforced
+  type: CrateNPCHamlet
   components:
   - pos: 0.5,-5.5
     parent: 8364
@@ -40702,6 +40702,62 @@ entities:
   - pos: -58.5,-15.5
     parent: 8364
     type: Transform
+  - fixtures:
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - -0.55,-0.55
+        - 0.55,-0.55
+        - 0.55,0.55
+        - -0.55,0.55
+      mask: []
+      layer:
+      - Impassable
+      - MidImpassable
+      - LowImpassable
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: conveyor
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.15,-0.15
+        - 0.15,0.15
+        - -0.15,0.15
+        - -0.15,-0.15
+      mask: []
+      layer:
+      - MidImpassable
+      - HighImpassable
+      - LowImpassable
+      - BulletImpassable
+      - InteractImpassable
+      - Opaque
+      density: 1
+      hard: False
+      restitution: 0
+      friction: 0.4
+      id: brrt
+    - shape: !type:PolygonShape
+        radius: 0.01
+        vertices:
+        - 0.49,-0.49
+        - 0.49,0.49
+        - -0.49,0.49
+        - -0.49,-0.49
+      mask:
+      - Impassable
+      layer:
+      - BulletImpassable
+      - Opaque
+      density: 1
+      hard: True
+      restitution: 0
+      friction: 0.4
+      id: collision
+    type: Fixtures
   - inputs:
       Reverse:
       - port: Right
@@ -55334,7 +55390,7 @@ entities:
         tiles: FgAAARYAAAMWAAACFgAAABYAAANeAAAARAAAAkQAAAJEAAACRAAAAkQAAANEAAACXgAAADwAAAA8AAAAPAAAAF4AAAAWAAACXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABEAAADRAAAA14AAAA8AAAAPAAAADwAAABEAAACRAAAAEQAAAJEAAAARAAAAUQAAANEAAACRAAAAUQAAAJeAAAARAAAA0QAAABeAAAAXgAAAF4AAABeAAAARAAAAEQAAAJEAAADRAAAAEQAAANEAAABRAAAAkQAAANEAAABRAAAAkQAAABEAAACXgAAABYAAAMWAAACFgAAAUQAAANEAAABRAAAA0QAAAJEAAADRAAAAUQAAABEAAABRAAAA0QAAAFEAAACRAAAAl4AAAAWAAAARAAAAEQAAABeAAAAXgAAAF4AAABeAAAAXgAAABYAAANeAAAAXgAAAEQAAABEAAAARAAAA0QAAANeAAAAFgAAAUQAAAFEAAACAAAAAAAAAAAAAAAAXgAAABYAAAIWAAABFgAAA14AAABeAAAAXgAAAEQAAANeAAAAXgAAABYAAAJEAAACRAAAAF4AAABeAAAAXgAAAF4AAAAWAAADFgAAAxYAAAEWAAACXgAAAEQAAANEAAACRAAAAl4AAAAWAAAAFgAAAxYAAAFbAAAAWwAAA1sAAAFeAAAAFgAAABYAAAAWAAABFgAAAl4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAWwAAAlsAAABbAAAAXgAAABYAAAIWAAACFgAAABYAAAJeAAAARAAAA0QAAANEAAAAXgAAAF4AAABeAAAAXgAAAFsAAAFbAAABWwAAAl4AAABeAAAAFgAAA14AAABeAAAAXgAAAF4AAABEAAADXgAAAF4AAABdAAAAXQAAAF0AAAAWAAABFgAAABYAAAMWAAACFgAAABYAAAEWAAABFgAAAhYAAAMWAAADFgAAABYAAAJeAAAAXQAAAF0AAABdAAAAFgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAAAWAAADXgAAAF0AAABdAAAAXQAAABYAAAMWAAACFgAAAxYAAAIWAAABFgAAAhYAAAAWAAADFgAAAhYAAAIWAAABFgAAAl4AAAAAAAAAAAAAAAAAAABeAAAAXgAAABYAAABeAAAAXgAAAF4AAABeAAAAXgAAAEQAAANeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAWwAAAVsAAANbAAAAWwAAAVsAAANeAAAARAAAAkQAAANEAAABRAAAAUQAAAJEAAACXgAAACgAAAAWAAABKAAAAA==
       0,2:
         ind: 0,2
-        tiles: PAAAADwAAAA8AAAAPAAAADwAAABeAAAARAAAAUQAAANEAAABRAAAAkQAAAFEAAACRAAAA0QAAAJEAAADRAAAADwAAAA8AAAAPAAAADwAAAA8AAAAXgAAAEQAAAFEAAABRAAAAEQAAAJEAAADRAAAA0QAAANEAAAARAAAA0QAAAJeAAAARAAAAkQAAAFeAAAAXgAAAF4AAABeAAAAXgAAABYAAANeAAAAXgAAAEQAAABEAAACRAAAA0QAAANEAAACFgAAAkQAAAFEAAACRAAAAUQAAANeAAAAFgAAABYAAAEWAAABFgAAAF4AAABEAAAARAAAAUQAAAJEAAACRAAAA0QAAAJEAAAARAAAA0QAAANEAAACRAAAAxYAAAIWAAABFgAAAxYAAAJeAAAAXgAAAF4AAABeAAAAFgAAA14AAABEAAAARAAAAEQAAABEAAACRAAAAUQAAAMWAAABFgAAAxYAAAMWAAADFgAAAV4AAAAWAAAAFgAAABYAAAIWAAAARAAAAEQAAABEAAABRAAAAkQAAABeAAAAFgAAABYAAAEWAAACFgAAAxYAAABeAAAAWwAAAVsAAAJbAAAAWwAAAhYAAAMWAAAAFgAAAxYAAAAWAAACXgAAABYAAAAWAAAAFgAAAhYAAAIWAAABXgAAAFsAAAJbAAADWwAAAVsAAANeAAAAXgAAAF4AAABeAAAAXgAAAF4AAAAWAAAAFgAAAxYAAAAWAAADFgAAA14AAABbAAAAWwAAAVsAAABbAAABXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAFgAAAhYAAAIWAAAAFgAAARYAAANeAAAAWwAAAFsAAAFbAAAAWwAAAV0AAABdAAAAXQAAAF0AAABdAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABdAAAAXQAAAF0AAABdAAAAXQAAAF4AAAAAAAAAAAAAAAAAAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABeAAAAXQAAAF0AAABdAAAAXQAAAAAAAABdAAAAAAAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAAAAXgAAAF0AAAAAAAAAAAAAAF0AAAAAAAAAXQAAAAAAAABdAAAAAAAAAAAAAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAFgAAABYAAAIoAAAAFgAAASgAAABeAAAAXQAAAAAAAAAAAAAAXQAAAAAAAABdAAAAAAAAAF0AAAAAAAAAAAAAAA==
+        tiles: PAAAADwAAAA8AAAAPAAAADwAAABeAAAARAAAAUQAAANEAAABRAAAAkQAAAFEAAACRAAAA0QAAAJEAAADRAAAADwAAAA8AAAAPAAAADwAAAA8AAAAXgAAAEQAAAFEAAABRAAAAEQAAAJEAAADRAAAA0QAAANEAAAARAAAA0QAAAJeAAAARAAAAkQAAAFeAAAAXgAAAF4AAABeAAAAXgAAABYAAANeAAAAXgAAAEQAAABEAAACRAAAA0QAAANEAAACFgAAAkQAAAFEAAACRAAAAUQAAANeAAAAFgAAABYAAAEWAAABFgAAAF4AAABEAAAARAAAAUQAAAJEAAACRAAAA0QAAAJEAAAARAAAA0QAAANEAAACRAAAAxYAAAIWAAABFgAAAxYAAAJeAAAAXgAAAF4AAABeAAAAFgAAA14AAABEAAAARAAAAEQAAABEAAACRAAAAUQAAAMWAAABFgAAAxYAAAMWAAADFgAAAV4AAAAWAAAAFgAAABYAAAIWAAAARAAAAEQAAABEAAABRAAAAkQAAABeAAAAFgAAABYAAAEWAAACFgAAAxYAAABeAAAAWwAAAVsAAAJbAAAAWwAAAhYAAAMWAAAAFgAAAxYAAAAWAAACXgAAABYAAAAWAAAAFgAAAhYAAAIWAAABXgAAAFsAAAJbAAADWwAAAVsAAANeAAAAXgAAAF4AAABeAAAAXgAAAF4AAAAWAAAAFgAAAxYAAAAWAAADFgAAA14AAABbAAAAWwAAAVsAAABbAAABXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAFgAAAhYAAAIWAAAAFgAAARYAAANeAAAAWwAAAFsAAAFbAAAAWwAAAV0AAABdAAAAXQAAAF0AAABdAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABdAAAAXQAAAF0AAABdAAAAXQAAAF4AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABeAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAAAAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAAAAXgAAAF0AAAAAAAAAAAAAAF0AAAAAAAAAXQAAAAAAAABdAAAAAAAAAAAAAABeAAAAXgAAAF4AAABeAAAAXgAAAF4AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAFgAAABYAAAIoAAAAFgAAASgAAABeAAAAXQAAAAAAAAAAAAAAXQAAAAAAAABdAAAAAAAAAF0AAAAAAAAAAAAAAA==
       1,2:
         ind: 1,2
         tiles: RAAAAUQAAANEAAACRAAAAl4AAAA8AAAAPAAAADwAAAA8AAAAPAAAAF4AAABdAAAAAAAAAF0AAAAAAAAAAAAAAEQAAANEAAADRAAAAUQAAAI8AAAAPAAAADwAAAA8AAAAPAAAADwAAABeAAAAXQAAAAAAAAAAAAAAAAAAAAAAAABEAAACRAAAA0QAAAFEAAADXgAAADwAAAA8AAAAPAAAADwAAAA8AAAAXgAAAF0AAAAAAAAAAAAAAAAAAAAAAAAARAAAA0QAAANEAAADRAAAAl4AAAA8AAAAPAAAADwAAAA8AAAAPAAAAF4AAABdAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAARAAAAUQAAANeAAAAPAAAADwAAAA8AAAAPAAAADwAAABeAAAAXQAAAF0AAABdAAAAXQAAAAAAAAAWAAACXgAAAF4AAABeAAAAXgAAAF4AAABEAAACRAAAAEQAAAFeAAAAXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWwAAAV4AAABdAAAAXQAAAAAAAABeAAAARAAAA0QAAABEAAADXgAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFsAAAFeAAAAAAAAAF0AAAAAAAAAXgAAAEQAAANEAAABRAAAAF4AAABdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbAAABXgAAAAAAAABdAAAAXQAAAF4AAABEAAACRAAAA0QAAANeAAAAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWwAAA14AAAAAAAAAAAAAAAAAAABeAAAARAAAAEQAAANEAAAAXgAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAAAAAAAAAAAAAAAAAAXgAAAEQAAAJEAAACRAAAA14AAABdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAAAAAAAAAAAAAAAAAAAAAAAAAF4AAABeAAAAXgAAAF4AAABeAAAAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQAAAAAAAAAAAAAAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAXQAAAF0AAABdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQAAAAAAAAAAAAAAXQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
@@ -64590,6 +64646,16 @@ entities:
   - pos: -1.5,25.5
     parent: 8364
     type: Transform
+  - inputs:
+      Open:
+      - port: Timer
+        uid: 8743
+      Close:
+      - port: Start
+        uid: 8743
+      Toggle: []
+      AutoClose: []
+    type: SignalReceiver
 - uid: 8625
   type: WindoorSecurityLocked
   components:
@@ -64598,6 +64664,16 @@ entities:
   - pos: -5.5,25.5
     parent: 8364
     type: Transform
+  - inputs:
+      Open:
+      - port: Timer
+        uid: 25829
+      Close:
+      - port: Start
+        uid: 25829
+      Toggle: []
+      AutoClose: []
+    type: SignalReceiver
 - uid: 8626
   type: WindoorSecurityLocked
   components:
@@ -64606,6 +64682,16 @@ entities:
   - pos: -9.5,25.5
     parent: 8364
     type: Transform
+  - inputs:
+      Open:
+      - port: Timer
+        uid: 26575
+      Close:
+      - port: Start
+        uid: 26575
+      Toggle: []
+      AutoClose: []
+    type: SignalReceiver
 - uid: 8627
   type: BedsheetWhite
   components:
@@ -65435,12 +65521,19 @@ entities:
     parent: 8364
     type: Transform
 - uid: 8743
-  type: ExtinguisherCabinetFilled
+  type: BrigTimer
   components:
-  - rot: -1.5707963267948966 rad
-    pos: -3.5,25.5
+  - pos: -3.5,25.5
     parent: 8364
     type: Transform
+  - outputs:
+      Start:
+      - port: Close
+        uid: 8624
+      Timer:
+      - port: Open
+        uid: 8624
+    type: SignalTransmitter
 - uid: 8744
   type: WindowReinforcedDirectional
   components:
@@ -75111,7 +75204,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 10005
-  type: AirlockExternalGlassShuttleEscape
+  type: AirlockGlassShuttle
   components:
   - rot: -1.5707963267948966 rad
     pos: -22.5,24.5
@@ -94808,7 +94901,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 12644
-  type: AirlockExternalGlassShuttleEscape
+  type: AirlockGlassShuttle
   components:
   - rot: 1.5707963267948966 rad
     pos: 93.5,-26.5
@@ -122214,7 +122307,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 16356
-  type: MicroLaserStockPart
+  type: MicroManipulatorStockPart
   components:
   - pos: -8.652201,-39.009583
     parent: 8364
@@ -122262,7 +122355,7 @@ entities:
   - enabled: True
     type: AmbientSound
 - uid: 16363
-  type: ScanningModuleStockPart
+  type: CapacitorStockPart
   components:
   - pos: -8.441639,-39.39827
     parent: 8364
@@ -158726,7 +158819,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 21185
-  type: MicroLaserStockPart
+  type: MicroManipulatorStockPart
   components:
   - pos: 74.25775,-19.490871
     parent: 8364
@@ -158821,7 +158914,7 @@ entities:
     parent: 8364
     type: Transform
 - uid: 21198
-  type: ScanningModuleStockPart
+  type: CapacitorStockPart
   components:
   - pos: 74.72912,-20.240425
     parent: 8364
@@ -163373,7 +163466,7 @@ entities:
   - dockJointId: docking46345
     dockedWith: 562
     type: Docking
-  - SecondsUntilStateChange: -29986.197
+  - SecondsUntilStateChange: -30243.695
     changeAirtight: False
     state: Opening
     type: Door
@@ -168721,7 +168814,6 @@ entities:
     - 23239
     - 22578
     - 23176
-    - invalid
     type: DeviceList
 - uid: 22577
   type: AirSensor
@@ -169000,7 +169092,6 @@ entities:
     - 14126
     - 14127
     - 14128
-    - invalid
     - 22602
     - 14129
     - 14601
@@ -169021,7 +169112,6 @@ entities:
     - 14126
     - 14127
     - 14128
-    - invalid
     - 22602
     - 14129
     - 14601
@@ -169038,7 +169128,6 @@ entities:
     - 14126
     - 14127
     - 14128
-    - invalid
     - 22602
     - 14129
     - 14601
@@ -169306,7 +169395,6 @@ entities:
     - 24300
     - 24244
     - 24243
-    - invalid
     type: DeviceList
 - uid: 22629
   type: FireAlarm
@@ -169327,7 +169415,6 @@ entities:
     - 6683
     - 6682
     - 6685
-    - invalid
     type: DeviceList
 - uid: 22630
   type: AirSensor
@@ -169452,7 +169539,6 @@ entities:
     parent: 8364
     type: Transform
   - devices:
-    - invalid
     - 22645
     - 22646
     - 22647
@@ -169466,7 +169552,6 @@ entities:
     parent: 8364
     type: Transform
   - devices:
-    - invalid
     - 22645
     - 22646
     - 22647
@@ -169481,7 +169566,6 @@ entities:
     parent: 8364
     type: Transform
   - devices:
-    - invalid
     - 22645
     - 22646
     - 22647
@@ -169962,7 +170046,6 @@ entities:
     - 24879
     - 24850
     - 24880
-    - invalid
     - 24830
     - 24831
     type: DeviceList
@@ -176349,7 +176432,6 @@ entities:
     - 24333
     - 23462
     - 24337
-    - invalid
     type: DeviceList
 - uid: 23281
   type: GasVentPump
@@ -203362,6 +203444,20 @@ entities:
   - pos: -9.5,30.5
     parent: 8364
     type: Transform
+- uid: 25829
+  type: BrigTimer
+  components:
+  - pos: -7.5,25.5
+    parent: 8364
+    type: Transform
+  - outputs:
+      Start:
+      - port: Close
+        uid: 8625
+      Timer:
+      - port: Open
+        uid: 8625
+    type: SignalTransmitter
 - uid: 25830
   type: AirSensor
   components:
@@ -208612,6 +208708,44 @@ entities:
   - pos: -60.5,14.5
     parent: 8364
     type: Transform
+- uid: 26575
+  type: BrigTimer
+  components:
+  - pos: -11.5,25.5
+    parent: 8364
+    type: Transform
+  - outputs:
+      Start:
+      - port: Close
+        uid: 8626
+      Timer:
+      - port: Open
+        uid: 8626
+    type: SignalTransmitter
+- uid: 26576
+  type: GunSafeDisabler
+  components:
+  - pos: 0.5,33.5
+    parent: 8364
+    type: Transform
+- uid: 26577
+  type: Chair
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 6.5,40.5
+    parent: 8364
+    type: Transform
+- uid: 26578
+  type: SurveillanceCameraSecurity
+  components:
+  - pos: 8.5,43.5
+    parent: 8364
+    type: Transform
+  - setupAvailableNetworks:
+    - SurveillanceCameraSecurity
+    nameSet: True
+    id: Security Exterior Armory
+    type: SurveillanceCamera
 - uid: 26767
   type: BoxBeaker
   components:

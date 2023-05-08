@@ -38,6 +38,15 @@
   id: BorgArm
 
 - type: Tag
+  id: BorgLeg
+
+- type: Tag
+  id: BorgLeftLeg
+
+- type: Tag
+  id: BorgRightLeg
+
+- type: Tag
   id: BotanyHatchet
 
 - type: Tag
@@ -98,6 +107,9 @@
   id: CartridgeCaselessRifle
 
 - type: Tag
+  id: CartridgeCHIMP
+
+- type: Tag
   id: CartridgeHeavyRifle
 
 - type: Tag
@@ -139,6 +151,9 @@
 
 - type: Tag
   id: ClownRubberStamp
+
+- type: Tag
+  id: CluwneHorn
 
 - type: Tag
   id: Crayon
@@ -324,6 +339,9 @@
   id: Handle
 
 - type: Tag
+  id: HappyHonk
+
+- type: Tag
   id: Hardsuit # Prevent melee injectors that can't penetrate hardsuits from injecting the wearer (nettles)
 
 - type: Tag
@@ -364,6 +382,10 @@
 
 - type: Tag
   id: Katana
+
+- type: Tag
+  id: Kangaroo
+
 
 - type: Tag
   id: KeyedInstrument
@@ -491,9 +513,6 @@
   id: Pickaxe
 
 - type: Tag
-  id: Pill
-
-- type: Tag
   id: PillCanister
 
 - type: Tag
@@ -613,6 +632,9 @@
 
 - type: Tag
   id: SpeedLoaderRifle
+
+- type: Tag
+  id: SpreaderIgnore
 
 - type: Tag
   id: StringInstrument

@@ -8,6 +8,7 @@
   supervisors: job-supervisors-hop
   access:
   - Service
+  - Maintenance
   minBankBalance: 300
   maxBankBalance: 500
 
@@ -19,6 +20,8 @@
     id: BoxerPDA
     ears: ClothingHeadsetService
     gloves: ClothingHandsGlovesBoxingRed
+    shoes: ClothingShoesColorRed
+    belt: ClothingBeltChampion
   innerclothingskirt: UniformShortsRedWithTop
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

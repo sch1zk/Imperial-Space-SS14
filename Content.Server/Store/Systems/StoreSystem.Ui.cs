@@ -3,7 +3,9 @@ using Content.Server.Actions;
 using Content.Server.Administration.Logs;
 using Content.Server.Economy;
 using Content.Server.Mind.Components;
+using Content.Server.Stack;
 using Content.Server.Store.Components;
+using Content.Server.UserInterface;
 using Content.Shared.Actions.ActionTypes;
 using Content.Shared.Database;
 using Content.Shared.FixedPoint;
@@ -11,8 +13,6 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Store;
 using Robust.Server.GameObjects;
 using System.Linq;
-using Content.Server.Stack;
-using Content.Server.UserInterface;
 
 namespace Content.Server.Store.Systems;
 
