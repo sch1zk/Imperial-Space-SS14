@@ -1,5 +1,6 @@
-- type: gameRule
+- type: entity
   id: WageScheduler
-  config:
-    !type:GenericGameRuleConfiguration
-    id: WageScheduler
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: WageScheduler
