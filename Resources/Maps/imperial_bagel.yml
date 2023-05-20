@@ -120,8 +120,6 @@ entities:
     pos: 56.5,-7.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10
   type: ReinforcedWindow
   components:
@@ -8935,6 +8933,7 @@ entities:
     shakeTimes: 10
     type: GravityShake
   - type: GasTileOverlay
+  - type: SpreaderGrid
 - uid: 61
   type: GasVentScrubber
   components:
@@ -8965,8 +8964,6 @@ entities:
     pos: 56.5,-5.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 65
   type: SolarPanel
   components:
@@ -9002,8 +8999,6 @@ entities:
     pos: -32.5,-18.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 70
   type: CableApcExtension
   components:
@@ -9096,8 +9091,6 @@ entities:
   - pos: -28.5,-18.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 85
   type: Poweredlight
   components:
@@ -12352,8 +12345,6 @@ entities:
     pos: 14.5,-12.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 522
   type: WallReinforced
   components:
@@ -13372,8 +13363,6 @@ entities:
   - pos: 9.5,-19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 670
   type: FirelockGlass
   components:
@@ -13861,8 +13850,6 @@ entities:
   - pos: 38.5,-22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 740
   type: DisposalJunction
   components:
@@ -14011,8 +13998,6 @@ entities:
   - pos: 40.5,-22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 763
   type: WallSolid
   components:
@@ -14472,8 +14457,6 @@ entities:
   - pos: -67.5,8.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 830
   type: WallSolid
   components:
@@ -15283,8 +15266,6 @@ entities:
   - pos: 39.5,-22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 923
   type: PosterLegitWorkForAFuture
   components:
@@ -18185,8 +18166,6 @@ entities:
   - pos: 28.5,-22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1241
   type: Grille
   components:
@@ -18199,8 +18178,6 @@ entities:
   - pos: 25.5,-22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1243
   type: Grille
   components:
@@ -18734,8 +18711,6 @@ entities:
     pos: 4.5,-32.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1310
   type: WallReinforced
   components:
@@ -19110,8 +19085,6 @@ entities:
     pos: -63.5,-13.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1362
   type: Catwalk
   components:
@@ -21266,9 +21239,9 @@ entities:
     parent: 60
     type: Transform
 - uid: 1641
-  type: LockerMedicineFilled
+  type: SpawnPointBrigmedic
   components:
-  - pos: -19.5,-2.5
+  - pos: -19.5,-4.5
     parent: 60
     type: Transform
 - uid: 1642
@@ -21500,8 +21473,6 @@ entities:
     pos: -59.5,-2.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1673
   type: WeldingFuelTankFull
   components:
@@ -21719,8 +21690,6 @@ entities:
   - pos: -33.5,-2.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1702
   type: WardrobePrisonFilled
   components:
@@ -22602,8 +22571,6 @@ entities:
     pos: 54.5,-42.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1811
   type: Grille
   components:
@@ -23116,8 +23083,6 @@ entities:
     pos: -32.5,-0.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1871
   type: TableWood
   components:
@@ -23949,8 +23914,6 @@ entities:
   - pos: -21.5,1.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 1958
   type: GasPipeFourway
   components:
@@ -25440,8 +25403,6 @@ entities:
     pos: 35.5,-14.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2144
   type: ComputerCrewMonitoring
   components:
@@ -25616,8 +25577,6 @@ entities:
     pos: 20.5,-37.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2166
   type: ComfyChair
   components:
@@ -25625,8 +25584,6 @@ entities:
     pos: 18.5,-38.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2167
   type: ComfyChair
   components:
@@ -25634,8 +25591,6 @@ entities:
     pos: 18.5,-37.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2168
   type: ChairWood
   components:
@@ -26084,8 +26039,6 @@ entities:
     pos: 16.5,-31.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2225
   type: StoolBar
   components:
@@ -26093,8 +26046,6 @@ entities:
     pos: 16.5,-33.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2226
   type: StoolBar
   components:
@@ -26102,8 +26053,6 @@ entities:
     pos: 16.5,-35.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2227
   type: FirelockGlass
   components:
@@ -26117,8 +26066,6 @@ entities:
     pos: 21.5,-32.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2229
   type: StoolBar
   components:
@@ -26126,8 +26073,6 @@ entities:
     pos: 16.5,-32.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2230
   type: StoolBar
   components:
@@ -26135,8 +26080,6 @@ entities:
     pos: 16.5,-34.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2231
   type: StoolBar
   components:
@@ -26144,8 +26087,6 @@ entities:
     pos: 21.5,-33.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2232
   type: FirelockGlass
   components:
@@ -26266,8 +26207,6 @@ entities:
     pos: 9.5,-35.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2250
   type: WallSolid
   components:
@@ -31225,8 +31164,6 @@ entities:
   - pos: 41.5,-22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 2890
   type: WallSolid
   components:
@@ -32848,8 +32785,6 @@ entities:
   - pos: 14.5,-28.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3105
   type: ReinforcedWindow
   components:
@@ -32868,8 +32803,6 @@ entities:
   - pos: 13.5,-28.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3108
   type: AirlockMaintMedLocked
   components:
@@ -33136,8 +33069,6 @@ entities:
     pos: 25.5,-51.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3145
   type: PoweredSmallLight
   components:
@@ -33161,8 +33092,6 @@ entities:
     pos: 24.5,-51.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3148
   type: GasPipeTJunction
   components:
@@ -34571,8 +34500,6 @@ entities:
   - pos: -66.5,8.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3352
   type: WallSolidRust
   components:
@@ -35335,8 +35262,6 @@ entities:
     pos: 51.5,-37.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3466
   type: StoolBar
   components:
@@ -35344,8 +35269,6 @@ entities:
     pos: 53.5,-37.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3467
   type: StoolBar
   components:
@@ -35353,8 +35276,6 @@ entities:
     pos: 55.5,-36.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3468
   type: CableApcExtension
   components:
@@ -36641,8 +36562,6 @@ entities:
     pos: 50.5,-37.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 3650
   type: Grille
   components:
@@ -40100,8 +40019,6 @@ entities:
   - pos: 35.5,-12.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4115
   type: BoxFolderWhite
   components:
@@ -40793,8 +40710,6 @@ entities:
     pos: -45.5,-19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4201
   type: Chair
   components:
@@ -40802,8 +40717,6 @@ entities:
     pos: -44.5,-19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4202
   type: Chair
   components:
@@ -40811,8 +40724,6 @@ entities:
     pos: -42.5,-19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4203
   type: Chair
   components:
@@ -40820,8 +40731,6 @@ entities:
     pos: -41.5,-19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4204
   type: WindowReinforcedDirectional
   components:
@@ -40835,8 +40744,6 @@ entities:
     pos: -40.5,-21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4206
   type: Chair
   components:
@@ -40844,8 +40751,6 @@ entities:
     pos: -41.5,-21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4207
   type: Chair
   components:
@@ -40853,8 +40758,6 @@ entities:
     pos: -42.5,-21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4208
   type: Chair
   components:
@@ -40862,8 +40765,6 @@ entities:
     pos: -44.5,-21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4209
   type: Chair
   components:
@@ -40871,8 +40772,6 @@ entities:
     pos: -45.5,-21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4210
   type: Chair
   components:
@@ -40880,8 +40779,6 @@ entities:
     pos: -46.5,-21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4211
   type: CarpetOrange
   components:
@@ -40981,8 +40878,6 @@ entities:
   - pos: -43.5,-15.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4227
   type: ChairWood
   components:
@@ -41031,8 +40926,6 @@ entities:
   - pos: -41.5,-15.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4234
   type: LampGold
   components:
@@ -41463,8 +41356,6 @@ entities:
     pos: -43.5,-21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4290
   type: CarpetGreen
   components:
@@ -41688,8 +41579,6 @@ entities:
     pos: -66.5,-1.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4324
   type: Grille
   components:
@@ -41731,8 +41620,6 @@ entities:
     pos: -63.5,0.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4330
   type: FirelockGlass
   components:
@@ -42667,8 +42554,6 @@ entities:
   - pos: -33.5,0.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4458
   type: CableHV
   components:
@@ -43767,24 +43652,18 @@ entities:
     pos: -2.5,-61.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4615
   type: Chair
   components:
   - pos: -18.5,-53.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4616
   type: Chair
   components:
   - pos: -19.5,-53.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4617
   type: ClosetEmergencyFilledRandom
   components:
@@ -43844,8 +43723,6 @@ entities:
     pos: -2.5,-72.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4626
   type: WallReinforced
   components:
@@ -43907,8 +43784,6 @@ entities:
     pos: 3.5,-72.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4634
   type: SignSpace
   components:
@@ -43928,8 +43803,6 @@ entities:
     pos: 3.5,-73.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4637
   type: CableHV
   components:
@@ -44045,8 +43918,6 @@ entities:
     pos: -2.5,-73.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4652
   type: Chair
   components:
@@ -44054,8 +43925,6 @@ entities:
     pos: -1.5,-77.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4653
   type: WallSolid
   components:
@@ -44069,8 +43938,6 @@ entities:
     pos: -1.5,-76.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4655
   type: Rack
   components:
@@ -44282,8 +44149,6 @@ entities:
   - pos: -7.5,-44.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4681
   type: FoodMealCubancarp
   components:
@@ -44303,8 +44168,6 @@ entities:
     pos: 10.5,-55.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4684
   type: Chair
   components:
@@ -44312,8 +44175,6 @@ entities:
     pos: 8.5,-55.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4685
   type: WindoorSecurityLocked
   components:
@@ -44473,8 +44334,6 @@ entities:
   - pos: -8.5,-44.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4705
   type: JetpackBlueFilled
   components:
@@ -44727,8 +44586,6 @@ entities:
     pos: -1.5,-49.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 4741
   type: WallReinforced
   components:
@@ -46741,8 +46598,6 @@ entities:
   - pos: -33.5,-15.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5011
   type: CableApcExtension
   components:
@@ -46817,8 +46672,6 @@ entities:
   - pos: -3.5,-9.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5022
   type: CableHV
   components:
@@ -47350,8 +47203,6 @@ entities:
     pos: 2.5,-67.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5097
   type: CableApcExtension
   components:
@@ -47469,16 +47320,12 @@ entities:
     pos: 2.5,-77.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5112
   type: Chair
   components:
   - pos: 2.5,-75.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5113
   type: DisposalPipe
   components:
@@ -47870,8 +47717,6 @@ entities:
     pos: -13.5,-53.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5160
   type: StoolBar
   components:
@@ -47879,8 +47724,6 @@ entities:
     pos: -12.5,-53.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5161
   type: AirlockGlass
   components:
@@ -47913,8 +47756,6 @@ entities:
     pos: -11.5,-53.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5166
   type: ClothingNeckTransPin
   components:
@@ -49098,8 +48939,6 @@ entities:
     pos: 50.5,6.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5339
   type: DrinkMugMetal
   components:
@@ -49527,8 +49366,6 @@ entities:
   - pos: 10.5,5.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5403
   type: BananaSeeds
   components:
@@ -51595,16 +51432,12 @@ entities:
     pos: 45.5,-11.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5664
   type: Chair
   components:
   - pos: -9.5,-55.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5665
   type: CableApcExtension
   components:
@@ -51619,8 +51452,6 @@ entities:
   - pos: -11.5,-55.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5667
   type: CableApcExtension
   components:
@@ -53139,8 +52970,6 @@ entities:
   - pos: 4.5,-30.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5845
   type: TableWood
   components:
@@ -54168,8 +53997,6 @@ entities:
     pos: 52.5,6.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5969
   type: GasPipeStraight
   components:
@@ -54222,8 +54049,6 @@ entities:
     pos: -34.5,-0.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 5975
   type: GasPipeStraight
   components:
@@ -57290,8 +57115,6 @@ entities:
     pos: 11.5,11.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6323
   type: DisposalJunction
   components:
@@ -58117,8 +57940,6 @@ entities:
   - pos: 17.5,-49.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6445
   type: TableWood
   components:
@@ -58870,8 +58691,6 @@ entities:
   - pos: 13.5,19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6547
   type: Grille
   components:
@@ -59310,8 +59129,6 @@ entities:
   - pos: 26.5,-12.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6613
   type: SignElectricalMed
   components:
@@ -59344,8 +59161,6 @@ entities:
     pos: -59.5,-17.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6618
   type: FoodApple
   components:
@@ -59494,8 +59309,6 @@ entities:
     pos: -1.5,-68.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6640
   type: ClothingOuterWizardRed
   components:
@@ -59509,8 +59322,6 @@ entities:
     pos: -1.5,-67.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6642
   type: Chair
   components:
@@ -59518,8 +59329,6 @@ entities:
     pos: -1.5,-66.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6643
   type: CableMV
   components:
@@ -59980,8 +59789,6 @@ entities:
   - pos: 24.5,-12.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6712
   type: Table
   components:
@@ -60280,8 +60087,6 @@ entities:
     pos: -1.5,-65.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6753
   type: Chair
   components:
@@ -60289,8 +60094,6 @@ entities:
     pos: 2.5,-68.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6754
   type: Chair
   components:
@@ -60298,8 +60101,6 @@ entities:
     pos: 2.5,-66.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6755
   type: Chair
   components:
@@ -60307,8 +60108,6 @@ entities:
     pos: 2.5,-65.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6756
   type: Railing
   components:
@@ -62059,8 +61858,6 @@ entities:
     pos: 45.5,-28.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6987
   type: Chair
   components:
@@ -62068,8 +61865,6 @@ entities:
     pos: 45.5,-30.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 6988
   type: PottedPlantRandom
   components:
@@ -62264,8 +62059,6 @@ entities:
     pos: -57.5,-17.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7014
   type: PoweredSmallLight
   components:
@@ -63859,8 +63652,6 @@ entities:
     pos: -22.5,-0.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7233
   type: RandomSpawner
   components:
@@ -64281,24 +64072,18 @@ entities:
     pos: -45.5,-34.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7298
   type: Chair
   components:
   - pos: -45.5,-32.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7299
   type: Chair
   components:
   - pos: -44.5,-32.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7300
   type: PosterImperialLogo
   components:
@@ -64317,32 +64102,24 @@ entities:
   - pos: -51.5,-28.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7303
   type: Chair
   components:
   - pos: -50.5,-28.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7304
   type: Chair
   components:
   - pos: -45.5,-28.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7305
   type: Chair
   components:
   - pos: -44.5,-28.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7306
   type: Chair
   components:
@@ -64350,8 +64127,6 @@ entities:
     pos: -44.5,-30.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7307
   type: Chair
   components:
@@ -64359,8 +64134,6 @@ entities:
     pos: -43.5,-30.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7308
   type: WallSolid
   components:
@@ -64375,8 +64148,6 @@ entities:
     pos: -46.5,-30.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7310
   type: WindowTintedDirectional
   components:
@@ -65109,8 +64880,6 @@ entities:
     pos: 4.5,-66.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7421
   type: PosterImperialLogo
   components:
@@ -65184,8 +64953,6 @@ entities:
     pos: 4.5,-67.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7433
   type: Chair
   components:
@@ -65193,8 +64960,6 @@ entities:
     pos: -3.5,-67.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7434
   type: PottedPlantRandom
   components:
@@ -65629,8 +65394,6 @@ entities:
     pos: 21.5,-31.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7492
   type: ChairWood
   components:
@@ -66153,6 +65916,7 @@ entities:
     type: GridAtmosphere
   - type: GasTileOverlay
   - type: RadiationGridResistance
+  - type: SpreaderGrid
 - uid: 7537
   type: ClothingNeckScarfStripedBlue
   components:
@@ -66573,8 +66337,6 @@ entities:
     pos: -57.5,-16.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7601
   type: GasPipeStraight
   components:
@@ -66826,8 +66588,6 @@ entities:
     pos: -59.5,-16.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7640
   type: LockerDetectiveFilled
   components:
@@ -66973,8 +66733,6 @@ entities:
   - pos: -36.5,-24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7661
   type: PosterImperialLogo
   components:
@@ -67949,8 +67707,6 @@ entities:
   - pos: -34.5,-24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7792
   type: PosterImperialLogo
   components:
@@ -68297,8 +68053,6 @@ entities:
   - pos: 58.5,-44.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 7844
   type: GasPassiveVent
   components:
@@ -70665,8 +70419,6 @@ entities:
     pos: -1.5,-48.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8176
   type: WallSolid
   components:
@@ -70681,8 +70433,6 @@ entities:
     pos: -1.5,-50.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8178
   type: CableMV
   components:
@@ -71052,8 +70802,6 @@ entities:
   - pos: -24.5,-18.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8229
   type: GasPipeStraight
   components:
@@ -74508,8 +74256,6 @@ entities:
     pos: -65.5,0.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8746
   type: Window
   components:
@@ -74650,8 +74396,6 @@ entities:
     pos: -39.5,-28.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 8768
   type: FoamBlade
   components:
@@ -76796,8 +76540,6 @@ entities:
   - pos: 56.5,-11.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9080
   type: Chair
   components:
@@ -76805,8 +76547,6 @@ entities:
     pos: 56.5,-13.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9081
   type: Chair
   components:
@@ -76814,8 +76554,6 @@ entities:
     pos: 55.5,-13.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9082
   type: PosterContrabandVoteWeh
   components:
@@ -78400,8 +78138,6 @@ entities:
     pos: 12.5,-2.5
     parent: 7536
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9302
   type: SpawnPointJanitor
   components:
@@ -80050,8 +79786,6 @@ entities:
     pos: -36.5,-3.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9549
   type: Chair
   components:
@@ -80059,8 +79793,6 @@ entities:
     pos: -36.5,-4.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9550
   type: DisposalUnit
   components:
@@ -80080,8 +79812,6 @@ entities:
     pos: -44.5,-1.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9553
   type: ComfyChair
   components:
@@ -80089,8 +79819,6 @@ entities:
     pos: -46.5,-1.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9554
   type: PottedPlantBioluminscent
   components:
@@ -80129,8 +79857,6 @@ entities:
   - pos: -49.5,-6.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9560
   type: ComfyChair
   components:
@@ -80138,8 +79864,6 @@ entities:
     pos: -49.5,-8.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9561
   type: BoxFolderBlack
   components:
@@ -80412,16 +80136,12 @@ entities:
   - pos: -46.5,4.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9605
   type: Chair
   components:
   - pos: -47.5,4.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9606
   type: MachineFrame
   components:
@@ -80563,8 +80283,6 @@ entities:
   - pos: -48.5,4.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 9626
   type: CableMV
   components:
@@ -89039,8 +88757,6 @@ entities:
     pos: 12.5,-3.5
     parent: 7536
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10807
   type: SpiderWeb
   components:
@@ -89334,8 +89050,6 @@ entities:
     pos: 3.5,-57.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10848
   type: Chair
   components:
@@ -89343,8 +89057,6 @@ entities:
     pos: -2.5,-58.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10849
   type: Chair
   components:
@@ -89352,8 +89064,6 @@ entities:
     pos: -2.5,-57.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 10850
   type: WindowReinforcedDirectional
   components:
@@ -92732,8 +92442,6 @@ entities:
     pos: 20.5,-38.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11334
   type: SignDirectionalMed
   components:
@@ -93700,16 +93408,12 @@ entities:
   - pos: -8.5,-31.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11481
   type: Chair
   components:
   - pos: -6.5,-31.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11482
   type: Table
   components:
@@ -93897,8 +93601,6 @@ entities:
     pos: -14.5,-20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11509
   type: Chair
   components:
@@ -93906,8 +93608,6 @@ entities:
     pos: -14.5,-19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 11510
   type: FirelockEdge
   components:
@@ -102054,8 +101754,6 @@ entities:
     pos: 9.5,-34.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12716
   type: Catwalk
   components:
@@ -102291,8 +101989,6 @@ entities:
     pos: 22.5,-39.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12752
   type: ComfyChair
   components:
@@ -102300,8 +101996,6 @@ entities:
     pos: 24.5,-39.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 12753
   type: SignDirectionalEvac
   components:
@@ -104629,8 +104323,6 @@ entities:
     pos: 44.5,12.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13093
   type: Table
   components:
@@ -104962,8 +104654,6 @@ entities:
     pos: 36.5,2.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13141
   type: FirelockGlass
   components:
@@ -105775,8 +105465,6 @@ entities:
   - pos: 19.5,14.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13230
   type: WindowDirectional
   components:
@@ -107469,8 +107157,6 @@ entities:
     pos: 36.5,1.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13491
   type: ClothingHeadHatCargosoftFlipped
   components:
@@ -108921,8 +108607,6 @@ entities:
     pos: -10.5,-18.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13688
   type: Sink
   components:
@@ -110829,8 +110513,6 @@ entities:
     pos: -14.5,-7.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13974
   type: Chair
   components:
@@ -110838,8 +110520,6 @@ entities:
     pos: -14.5,-8.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13975
   type: DisposalUnit
   components:
@@ -110910,8 +110590,6 @@ entities:
     pos: -36.5,-5.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 13986
   type: AirlockEngineeringLocked
   components:
@@ -111928,8 +111606,6 @@ entities:
   - pos: -9.5,18.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 14118
   type: ChairWood
   components:
@@ -115136,8 +114812,6 @@ entities:
   - pos: -25.5,20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 14526
   type: ChairWood
   components:
@@ -124687,8 +124361,6 @@ entities:
     pos: -0.5,20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15698
   type: Chair
   components:
@@ -124696,8 +124368,6 @@ entities:
     pos: -0.5,19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15699
   type: Table
   components:
@@ -124723,8 +124393,6 @@ entities:
     pos: 2.5,19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15703
   type: Chair
   components:
@@ -124732,8 +124400,6 @@ entities:
     pos: 2.5,20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15704
   type: Chair
   components:
@@ -124741,8 +124407,6 @@ entities:
     pos: -0.5,21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15705
   type: PoweredSmallLight
   components:
@@ -124782,8 +124446,6 @@ entities:
     pos: 2.5,21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 15710
   type: Table
   components:
@@ -127624,8 +127286,6 @@ entities:
     pos: -32.5,-17.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 16151
   type: PosterLegitReportCrimes
   components:
@@ -135846,48 +135506,36 @@ entities:
   - pos: -35.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17263
   type: Chair
   components:
   - pos: -36.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17264
   type: Chair
   components:
   - pos: -33.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17265
   type: Chair
   components:
   - pos: -27.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17266
   type: Chair
   components:
   - pos: -28.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17267
   type: Chair
   components:
   - pos: -26.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17268
   type: PottedPlantRandom
   components:
@@ -136453,16 +136101,12 @@ entities:
   - pos: -62.5,25.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17358
   type: ComfyChair
   components:
   - pos: -64.5,25.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17359
   type: ComfyChair
   components:
@@ -136470,8 +136114,6 @@ entities:
     pos: -65.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17360
   type: ComfyChair
   components:
@@ -136479,8 +136121,6 @@ entities:
     pos: -64.5,21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17361
   type: ComfyChair
   components:
@@ -136488,8 +136128,6 @@ entities:
     pos: -65.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17362
   type: ComfyChair
   components:
@@ -136497,8 +136135,6 @@ entities:
     pos: -62.5,21.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17363
   type: CarpetGreen
   components:
@@ -138910,8 +138546,6 @@ entities:
     pos: -55.5,19.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17661
   type: BedsheetSpawner
   components:
@@ -138967,8 +138601,6 @@ entities:
     pos: -53.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17670
   type: MedkitCombatFilled
   components:
@@ -139075,8 +138707,6 @@ entities:
     pos: -47.5,20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17683
   type: LampGold
   components:
@@ -139801,8 +139431,6 @@ entities:
     pos: -43.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17786
   type: Poweredlight
   components:
@@ -139977,8 +139605,6 @@ entities:
   - pos: -32.5,20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17813
   type: CarpetOrange
   components:
@@ -140272,8 +139898,6 @@ entities:
     pos: -40.5,-13.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17852
   type: Chair
   components:
@@ -140281,8 +139905,6 @@ entities:
     pos: -41.5,-13.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17853
   type: DisgustingSweptSoup
   components:
@@ -140673,8 +140295,6 @@ entities:
   - pos: -8.5,-49.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17894
   type: Chair
   components:
@@ -140682,8 +140302,6 @@ entities:
     pos: -7.5,-50.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17895
   type: Chair
   components:
@@ -140691,8 +140309,6 @@ entities:
     pos: -8.5,-51.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17896
   type: Chair
   components:
@@ -140700,8 +140316,6 @@ entities:
     pos: -9.5,-50.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17897
   type: d6Dice
   components:
@@ -140751,8 +140365,6 @@ entities:
     pos: 10.5,-51.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17905
   type: Chair
   components:
@@ -140760,8 +140372,6 @@ entities:
     pos: 8.5,-51.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 17906
   type: WallReinforced
   components:
@@ -142053,8 +141663,6 @@ entities:
     pos: -13.5,0.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18104
   type: Chair
   components:
@@ -142062,8 +141670,6 @@ entities:
     pos: -13.5,-1.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18105
   type: WindoorCommandLocked
   components:
@@ -142756,8 +142362,6 @@ entities:
     pos: -59.5,-3.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18211
   type: WindowReinforcedDirectional
   components:
@@ -144751,6 +144355,12 @@ entities:
   - pos: -0.5,-12.5
     parent: 60
     type: Transform
+- uid: 18465
+  type: LockerBrigmedicFilled
+  components:
+  - pos: -19.5,-2.5
+    parent: 60
+    type: Transform
 - uid: 18466
   type: Table
   components:
@@ -144850,8 +144460,6 @@ entities:
   - pos: -3.5,-5.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18478
   type: ComfyChair
   components:
@@ -144859,8 +144467,6 @@ entities:
     pos: -3.5,-7.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18479
   type: CableApcExtension
   components:
@@ -144916,8 +144522,6 @@ entities:
     pos: -0.5,-6.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18487
   type: Chair
   components:
@@ -144925,8 +144529,6 @@ entities:
     pos: -0.5,-3.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18488
   type: WallSolidRust
   components:
@@ -145024,8 +144626,6 @@ entities:
   - pos: -8.5,-4.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18504
   type: LockerCaptainFilled
   components:
@@ -145178,8 +144778,6 @@ entities:
   - pos: -29.5,9.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18525
   type: Grille
   components:
@@ -147180,8 +146778,6 @@ entities:
     pos: -37.5,16.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18787
   type: Chair
   components:
@@ -147189,8 +146785,6 @@ entities:
     pos: -38.5,16.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 18789
   type: ClothingHeadHatUshanka
   components:
@@ -152011,40 +151605,30 @@ entities:
   - pos: 47.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19457
   type: Chair
   components:
   - pos: 48.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19458
   type: Chair
   components:
   - pos: 49.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19459
   type: Chair
   components:
   - pos: 50.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19460
   type: Chair
   components:
   - pos: 51.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19461
   type: Chair
   components:
@@ -152052,8 +151636,6 @@ entities:
     pos: 51.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19462
   type: Chair
   components:
@@ -152061,8 +151643,6 @@ entities:
     pos: 50.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19463
   type: Chair
   components:
@@ -152070,8 +151650,6 @@ entities:
     pos: 49.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19464
   type: Chair
   components:
@@ -152079,8 +151657,6 @@ entities:
     pos: 48.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19465
   type: Chair
   components:
@@ -152088,48 +151664,36 @@ entities:
     pos: 47.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19466
   type: Chair
   components:
   - pos: 48.5,27.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19467
   type: Chair
   components:
   - pos: 49.5,27.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19468
   type: Chair
   components:
   - pos: 50.5,27.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19469
   type: Chair
   components:
   - pos: 47.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19470
   type: Chair
   components:
   - pos: 51.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19472
   type: PottedPlantRandom
   components:
@@ -152167,8 +151731,6 @@ entities:
     pos: 56.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19478
   type: Chair
   components:
@@ -152176,8 +151738,6 @@ entities:
     pos: 56.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19479
   type: Table
   components:
@@ -152191,8 +151751,6 @@ entities:
     pos: 43.5,20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19481
   type: Chair
   components:
@@ -152200,8 +151758,6 @@ entities:
     pos: 44.5,20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19482
   type: Chair
   components:
@@ -152209,8 +151765,6 @@ entities:
     pos: 45.5,20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19483
   type: Chair
   components:
@@ -152218,8 +151772,6 @@ entities:
     pos: 54.5,20.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19484
   type: Chair
   components:
@@ -152227,8 +151779,6 @@ entities:
     pos: 43.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19485
   type: Chair
   components:
@@ -152236,8 +151786,6 @@ entities:
     pos: 43.5,23.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19486
   type: Chair
   components:
@@ -152245,8 +151793,6 @@ entities:
     pos: 43.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19487
   type: Chair
   components:
@@ -152254,8 +151800,6 @@ entities:
     pos: 42.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19488
   type: Chair
   components:
@@ -152263,8 +151807,6 @@ entities:
     pos: 42.5,23.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19489
   type: Chair
   components:
@@ -152272,8 +151814,6 @@ entities:
     pos: 42.5,24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19490
   type: PottedPlantRandom
   components:
@@ -152290,8 +151830,6 @@ entities:
     pos: 23.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19492
   type: Chair
   components:
@@ -152299,8 +151837,6 @@ entities:
     pos: 25.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19493
   type: Table
   components:
@@ -152347,8 +151883,6 @@ entities:
     pos: 27.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19501
   type: Chair
   components:
@@ -152356,8 +151890,6 @@ entities:
     pos: 29.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19502
   type: Chair
   components:
@@ -152365,8 +151897,6 @@ entities:
     pos: 31.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19503
   type: Chair
   components:
@@ -152374,8 +151904,6 @@ entities:
     pos: 33.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19505
   type: FoodPlateSmallTrash
   components:
@@ -153315,8 +152843,6 @@ entities:
     pos: 33.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19642
   type: Chair
   components:
@@ -153324,24 +152850,18 @@ entities:
     pos: 31.5,22.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19643
   type: Chair
   components:
   - pos: 36.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19644
   type: Chair
   components:
   - pos: 37.5,26.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19645
   type: CableApcExtension
   components:
@@ -153938,8 +153458,6 @@ entities:
     pos: 27.5,12.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19736
   type: SheetPaper
   components:
@@ -155157,8 +154675,6 @@ entities:
     pos: 23.5,-5.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19912
   type: ComfyChair
   components:
@@ -155166,8 +154682,6 @@ entities:
     pos: 23.5,-6.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19913
   type: ComfyChair
   components:
@@ -155175,8 +154689,6 @@ entities:
     pos: 23.5,-7.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19914
   type: ComfyChair
   components:
@@ -155184,8 +154696,6 @@ entities:
     pos: 24.5,-7.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19915
   type: ComfyChair
   components:
@@ -155193,8 +154703,6 @@ entities:
     pos: 24.5,-6.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19916
   type: ComfyChair
   components:
@@ -155202,8 +154710,6 @@ entities:
     pos: 24.5,-5.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 19918
   type: Table
   components:
@@ -155951,8 +155457,6 @@ entities:
   - pos: 30.5,-4.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 20034
   type: Chair
   components:
@@ -155960,8 +155464,6 @@ entities:
     pos: 31.5,-5.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 20035
   type: Chair
   components:
@@ -155969,8 +155471,6 @@ entities:
     pos: 29.5,-5.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 20036
   type: CableHV
   components:
@@ -156293,8 +155793,6 @@ entities:
     pos: 41.5,10.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 20081
   type: Chair
   components:
@@ -156302,8 +155800,6 @@ entities:
     pos: 41.5,11.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 20082
   type: DrinkWaterCup
   components:
@@ -162527,8 +162023,6 @@ entities:
     pos: 52.5,-42.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 21026
   type: BlastDoor
   components:
@@ -165077,8 +164571,6 @@ entities:
     pos: 15.5,-4.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 21346
   type: Chair
   components:
@@ -165086,8 +164578,6 @@ entities:
     pos: 15.5,-2.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 21347
   type: WindowDirectional
   components:
@@ -165527,16 +165017,12 @@ entities:
   - pos: 31.5,9.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 21400
   type: Chair
   components:
   - pos: 29.5,9.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 21401
   type: DisposalTrunk
   components:
@@ -173514,8 +173000,6 @@ entities:
     pos: -112.5,36.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 22436
   type: Chair
   components:
@@ -173523,8 +173007,6 @@ entities:
     pos: -110.5,36.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 22437
   type: Windoor
   components:
@@ -173595,16 +173077,12 @@ entities:
   - pos: -112.5,3.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 22448
   type: Chair
   components:
   - pos: -110.5,3.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 22449
   type: AirlockMaintCommandLocked
   components:
@@ -181246,8 +180724,6 @@ entities:
     pos: -64.5,44.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 23460
   type: StoolBar
   components:
@@ -181255,8 +180731,6 @@ entities:
     pos: -63.5,44.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 23461
   type: StoolBar
   components:
@@ -181264,8 +180738,6 @@ entities:
     pos: -62.5,44.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 23462
   type: BoozeDispenser
   components:
@@ -186063,14 +185535,10 @@ entities:
     pos: -52.5,-24.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 - uid: 24331
   type: Chair
   components:
   - pos: 17.5,-44.5
     parent: 60
     type: Transform
-  - bodyType: Static
-    type: Physics
 ...
