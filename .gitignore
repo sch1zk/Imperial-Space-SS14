@@ -307,3 +307,6 @@ Resources/MapImages
 /Content.Docfx/*site
 
 *.bak
+
+# Direnv stuff
+.direnv/

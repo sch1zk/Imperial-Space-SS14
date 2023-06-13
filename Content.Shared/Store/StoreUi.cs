@@ -18,11 +18,14 @@ public sealed class StoreUpdateState : BoundUserInterfaceState
 
     public readonly bool CanBuyByBankAccount;
 
-    public StoreUpdateState(HashSet<ListingData> listings, Dictionary<string, FixedPoint2> balance, bool canBuyByBankAccount)
+    public readonly bool ShowFooter;
+
+    public StoreUpdateState(HashSet<ListingData> listings, Dictionary<string, FixedPoint2> balance, bool canBuyByBankAccount, bool showFooter)
     {
         Listings = listings;
         Balance = balance;
         CanBuyByBankAccount = canBuyByBankAccount;
+        ShowFooter = showFooter;
     }
 }
 

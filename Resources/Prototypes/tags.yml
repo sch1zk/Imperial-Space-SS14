@@ -38,6 +38,9 @@
   id: BorgArm
 
 - type: Tag
+  id: BorgHead
+
+- type: Tag
   id: BorgLeg
 
 - type: Tag
@@ -98,7 +101,7 @@
   id: Cartridge
 
 - type: Tag
-  id: CartridgeAntiMaterial
+  id: CartridgeAntiMateriel
 
 - type: Tag
   id: CartridgeCap
@@ -141,16 +144,16 @@
   id: CigPack
 
 - type: Tag
-  id: HardsuitEVA
-
-- type: Tag
-  id: HelmetEVA
+  id: ClownMask
 
 - type: Tag
   id: ClownRecorder
 
 - type: Tag
   id: ClownRubberStamp
+
+- type: Tag
+  id: ClownShoes
 
 - type: Tag
   id: CluwneHorn
@@ -240,6 +243,9 @@
   id: DroneUsable
 
 - type: Tag
+  id: Ectoplasm
+
+- type: Tag
   id: Egg
 
 - type: Tag
@@ -300,6 +306,9 @@
   id: FootstepSound
 
 - type: Tag
+  id: ForceableFollow
+
+- type: Tag
   id: ForceFixRotations # fixrotations command WILL target this
 
 - type: Tag
@@ -330,9 +339,6 @@
   id: GuideEmbeded
 
 - type: Tag
-  id: GunsDisabled # Allow certain entities to not use guns without complicating the system with an event
-
-- type: Tag
   id: Handcuffs
 
 - type: Tag
@@ -345,7 +351,13 @@
   id: Hardsuit # Prevent melee injectors that can't penetrate hardsuits from injecting the wearer (nettles)
 
 - type: Tag
+  id: HardsuitEVA
+
+- type: Tag
   id: Head
+
+- type: Tag
+  id: HelmetEVA
 
 - type: Tag
   id: HideContextMenu
@@ -364,6 +376,27 @@
 
 - type: Tag
   id: HolosignProjector
+
+- type: Tag
+  id: HonkerCentralControlModule
+
+- type: Tag
+  id: HonkerPeripheralsControlModule
+
+- type: Tag
+  id: HonkerTargetingControlModule
+
+- type: Tag
+  id: HonkerLArm
+
+- type: Tag
+  id: HonkerLLeg
+
+- type: Tag
+  id: HonkerRLeg
+
+- type: Tag
+  id: HonkerRArm
 
 - type: Tag #Drop this innate tool instead of deleting it.
   id: InnateDontDelete
@@ -404,6 +437,12 @@
 
 - type: Tag
   id: MicroBomb
+
+- type: Tag
+  id: MimeBelt
+
+- type: Tag
+  id: MimeHappyHonk
 
 # Magazines ordered by slot then caliber
 
@@ -483,10 +522,16 @@
   id: Mop
 
 - type: Tag
+  id: Multitool
+
+- type: Tag
   id: NoSpinOnThrow
 
 - type: Tag
   id: NoBlockAnchoring
+
+- type: Tag
+  id: NozzleBackTank
 
 - type: Tag
   id: NukeOpsUplink
@@ -531,7 +576,13 @@
   id: PlantSampleTaker
 
 - type: Tag
+  id: PlasmaGlassShard
+
+- type: Tag
   id: Plastic
+
+- type: Tag
+  id: PlushieGhost
 
 - type: Tag
   id: Powerdrill
@@ -551,6 +602,9 @@
 # Give this to something that doesn't need any special recycler behavior and just needs deleting.
 - type: Tag
   id: Recyclable
+
+- type: Tag
+  id: ReinforcedGlassShard
 
 - type: Tag
   id: RipleyCentralControlModule
@@ -640,6 +694,9 @@
   id: StringInstrument
 
 - type: Tag
+  id: StationMapElectronics
+
+- type: Tag
   id: SubdermalImplant
 
 - type: Tag
@@ -655,13 +712,28 @@
   id: Syringe
 
 - type: Tag
+  id: Spellbook
+
+- type: Tag
   id: Taser
+
+- type: Tag
+  id: TimerBrigElectronics
+
+- type: Tag
+  id: TimerScreenElectronics
+
+- type: Tag
+  id: TimerSignalElectronics
 
 - type: Tag
   id: Trash
 
 - type: Tag
   id: TrashBag
+
+- type: Tag
+  id: UraniumGlassShard
 
 - type: Tag
   id: VehicleKey

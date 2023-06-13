@@ -81,18 +81,18 @@
 - type: gamePreset
   id: Zombie
   alias:
-    - zombie
-    - zombies
-    - Zombies
-    - zz14
-    - zomber
+  - zombie
+  - zombies
+  - Zombies
+  - zz14
+  - zomber
   name: zombie-title
   description: zombie-description
   showInVote: true
   rules:
-    - Zombie
-    - BasicStationEventScheduler
-    - WageScheduler
+  - Zombie
+  - BasicStationEventScheduler
+  - WageScheduler
 
 - type: gamePreset
   id: Pirates

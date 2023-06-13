@@ -73,11 +73,12 @@
   - MedicalDoctor
   - MedicalIntern
   - Psychologist
+  - Paramedic
   accountNumber: 1319
 
 - type: department
   id: Security
-  description: department-Command-description
+  description: department-Security-description
   color: "#DE3A3A"
   roles:
   - HeadOfSecurity
@@ -85,7 +86,6 @@
   - SecurityOfficer
   - Detective
   - Warden
-  - Brigmedic
   accountNumber: 1320
 
 - type: department
