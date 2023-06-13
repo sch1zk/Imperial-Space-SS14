@@ -1,7 +1,5 @@
 using Content.Server.Access.Systems;
 using Content.Server.DetailExaminable;
-using Content.Server.Economy;
-using Content.Server.Economy.Wage;
 using Content.Server.Hands.Systems;
 using Content.Server.Humanoid;
 using Content.Server.IdentityManagement;
@@ -26,10 +24,6 @@ using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
-using Content.Server.CartridgeLoader;
-using Content.Server.CartridgeLoader.Cartridges;
-using Content.Server.Mind.Components;
-using Content.Server.Mind;
 
 namespace Content.Server.Station.Systems;
 
@@ -79,7 +73,7 @@ public sealed class StationSpawningSystem : EntitySystem
         var ev = new PlayerSpawningEvent(job, profile, station);
         RaiseLocalEvent(ev);
 
-        DebugTools.Assert(ev.SpawnResult is { Valid: true } or null);
+        DebugTools.Assert(ev.SpawnResult is {Valid: true} or null);
 
         return ev.SpawnResult;
     }

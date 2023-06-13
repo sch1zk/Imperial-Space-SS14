@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 12000
+      time: 108000 # Corvax-RoleTime
   startingGear: WardenGear
   icon: "Warden"
   supervisors: job-supervisors-hos
@@ -19,10 +19,6 @@
   - Brig
   - External
   - Detective
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Security
-  wage: 100
 
 - type: startingGear
   id: WardenGear
@@ -32,10 +28,10 @@
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsJackSec # Corvax-Resprite
     eyes: ClothingEyesGlassesSecurity
-    #outerClothing: ClothingOuterCoatWarden
+    outerClothing: ClothingOuterCoatWarden
     id: WardenPDA
     ears: ClothingHeadsetSecurity
-    #belt: ClothingBeltSecurityFilled
+    belt: ClothingBeltSecurityFilled
   innerclothingskirt: ClothingUniformJumpskirtWarden
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

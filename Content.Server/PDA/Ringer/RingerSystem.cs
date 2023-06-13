@@ -128,13 +128,6 @@ namespace Content.Server.PDA.Ringer
             return ringtone;
         }
 
-        //Non Event Functions
-
-        public void RingerPlayRingtonePublic(EntityUid uid)
-        {
-            EnsureComp<ActiveRingerComponent>(uid);
-        }
-
         private bool UpdateRingerRingtone(RingerComponent ringer, Note[] ringtone)
         {
             // Assume validation has already happened.

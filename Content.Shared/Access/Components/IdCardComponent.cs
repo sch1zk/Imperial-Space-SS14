@@ -20,11 +20,5 @@ namespace Content.Shared.Access.Components
         [Access(typeof(SharedIdCardSystem), typeof(SharedPDASystem), typeof(SharedAgentIdCardSystem),
             Other = AccessPermissions.ReadWrite)]
         public string? JobTitle;
-
-        [DataField("storedBankAccountNumber")]
-        public string? StoredBankAccountNumber;
-
-        [DataField("storedBankAccountPin")]
-        public string? StoredBankAccountPin;
     }
 }

@@ -15,13 +15,7 @@
     canCollide: false
   - type: Sprite
     sprite: Structures/Wallmounts/switch.rsi
-    #state: on
-    layers:
-    - state: "dead"
-      map: ["enum.SignalSwitchVisualLayers.Base"]
-    - state: "off_unshaded"
-      map: ["enum.SignalSwitchVisualLayers.BaseUnshaded"]
-      shader: unshaded
+    state: on
   - type: SignalSwitch
   - type: UseDelay
     delay: 0.5 # prevent light-toggling auto-clickers.

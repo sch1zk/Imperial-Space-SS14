@@ -31,27 +31,6 @@
   - type: BodyPart
     partType: Hand
     symmetry: Left
-    
-# For primates mainly
-- type: entity
-  id: LeftAnimalHand
-  name: "animal hands"
-  parent: PartAnimal
-  noSpawn: true
-  components:
-  - type: BodyPart
-    partType: Hand
-    symmetry: Left
-
-- type: entity
-  id: RightAnimalHand
-  name: "animal hands"
-  parent: PartAnimal
-  noSpawn: true
-  components:
-  - type: BodyPart
-    partType: Hand
-    symmetry: Right
 
 - type: entity
   id: LegsAnimal

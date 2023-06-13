@@ -12,14 +12,8 @@
                 <BoxContainer Orientation="Vertical" VerticalAlignment="Top">
                     <Label Name="NameLabel" Access="Public"/>
                     <Label Name="SubText" VerticalAlignment="Top" StyleClasses="LabelSubText" Access="Public"/>
-                    <Label Name="BankBalance" Access="Public"/>
                 </BoxContainer>
             </BoxContainer>
-
-            <Label Text="{Loc 'character-info-memories-label'}" HorizontalAlignment="Center"/>
-            <BoxContainer Orientation="Vertical" Name="Memories" Access="Public"/>
-            <cc:Placeholder PlaceholderText="{Loc 'character-info-memories-placeholder-text'}"/>
-            
             <Label Text="{Loc 'character-info-objectives-label'}" HorizontalAlignment="Center"/>
             <BoxContainer Orientation="Vertical" Name="Objectives" Access="Public"/>
             <cc:Placeholder PlaceholderText="{Loc 'character-info-roles-antagonist-text'}"/>

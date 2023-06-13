@@ -106,16 +106,4 @@
     - type: FaxMachine
       name: "Captain's Office"
       receiveNukeCodes: true
-      receiveStationGoal: true
-      notifyAdmins: true
-
-- type: entity
-  parent: FaxMachineBase
-  id: FaxMachineBridge
-  name: bridge long range fax machine
-  suffix: Bridge
-  components:
-    - type: FaxMachine
-      name: "Bridge"
-      notifyAdmins: true
-
+      receiveStationGoal: true # Corvax-StationGoal

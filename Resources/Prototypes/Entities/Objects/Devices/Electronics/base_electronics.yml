@@ -13,7 +13,7 @@
       tags:
         - DroneUsable
     - type: StaticPrice
-      price: 50
+      price: 100
     - type: PhysicalComposition
       materialComposition:
         Glass: 200

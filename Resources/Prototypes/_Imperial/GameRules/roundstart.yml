@@ -1,6 +1,0 @@
-- type: entity
-  id: WageScheduler
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: WageScheduler

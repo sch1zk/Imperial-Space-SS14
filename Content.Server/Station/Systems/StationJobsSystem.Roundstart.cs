@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using Content.Server.Administration.Managers;
 using Content.Server.Corvax.Sponsors;
@@ -248,8 +247,6 @@ public sealed partial class StationJobsSystem
                                 continue;
 
                             // Picking players it finds that have the job set.
-
-                            // Found it! Yeah!
 
                             var sponsors = new HashSet<NetUserId>();
                             foreach (var userId in jobPlayerOptions[job])

@@ -67,8 +67,8 @@
     pocket1: EnergySword
     belt: ClothingBeltChiefEngineerFilled
   innerclothingskirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackDeathSquadFilled
-  duffelbag: ClothingBackpackDeathSquadFilled
+  satchel: ClothingBackpackDuffelSyndicateAmmo
+  duffelbag: ClothingBackpackDuffelSyndicateAmmo
 
 
 # Syndicate Operative Outfit - Poverty

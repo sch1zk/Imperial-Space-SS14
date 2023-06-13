@@ -231,7 +231,6 @@ namespace Content.Server.GameTicking
             // MapInitialize *before* spawning players, our codebase is too shit to do it afterwards...
             _mapManager.DoMapInitialize(DefaultMap);
 
-            CreateDepartmentsBankAccounts();
             SpawnPlayers(readyPlayers, readyPlayerProfiles, force);
 
             _roundStartDateTime = DateTime.UtcNow;
@@ -465,9 +464,7 @@ namespace Content.Server.GameTicking
             _roleBanManager.Restart();
 
             _gameMapManager.ClearSelectedMap();
-
-            _bankManagerSystem.Clear();
-
+            
             // Clear up any game rules.
             ClearGameRules();
 

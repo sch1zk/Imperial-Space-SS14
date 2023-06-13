@@ -1,5 +1,6 @@
 using Content.Shared.MachineLinking;
-using Content.Server.MachineLinking.System;
+using Robust.Shared.Audio;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Server.DeviceLinking.Components
 {
@@ -8,26 +9,24 @@ namespace Content.Server.DeviceLinking.Components
     ///     same port regardless of its state.
     /// </summary>
     [RegisterComponent]
-    [ComponentReference(typeof(SharedSignalSwitchComponent))]
-    [Access(typeof(SignalSwitchSystem))]
-    public sealed class SignalSwitchComponent : SharedSignalSwitchComponent
+    public sealed class SignalSwitchComponent : Component
     {
         /// <summary>
         ///     The port that gets signaled when the switch turns on.
         /// </summary>
-        //[DataField("onPort", customTypeSerializer: typeof(PrototypeIdSerializer<TransmitterPortPrototype>))]
-        //public string OnPort = "On";
+        [DataField("onPort", customTypeSerializer: typeof(PrototypeIdSerializer<TransmitterPortPrototype>))]
+        public string OnPort = "On";
 
         /// <summary>
         ///     The port that gets signaled when the switch turns off.
         /// </summary>
-        //[DataField("offPort", customTypeSerializer: typeof(PrototypeIdSerializer<TransmitterPortPrototype>))]
-        //public string OffPort = "Off";
+        [DataField("offPort", customTypeSerializer: typeof(PrototypeIdSerializer<TransmitterPortPrototype>))]
+        public string OffPort = "Off";
 
-        //[DataField("state")]
-        //public bool State;
+        [DataField("state")]
+        public bool State;
 
-        //[DataField("clickSound")]
-        //public SoundSpecifier ClickSound { get; set; } = new SoundPathSpecifier("/Audio/Machines/lightswitch.ogg");
+        [DataField("clickSound")]
+        public SoundSpecifier ClickSound { get; set; } = new SoundPathSpecifier("/Audio/Machines/lightswitch.ogg");
     }
 }

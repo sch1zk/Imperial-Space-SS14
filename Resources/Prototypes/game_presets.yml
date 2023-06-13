@@ -3,11 +3,10 @@
   alias:
     - survival
   name: survival-title
-  showInVote: true # secret
+  showInVote: false # secret
   description: survival-description
   rules:
     - RampingStationEventScheduler
-    - WageScheduler
 
 - type: gamePreset
   id: Extended
@@ -19,7 +18,6 @@
   description: extended-description
   rules:
   - BasicStationEventScheduler
-  - WageScheduler
 
 - type: gamePreset
   id: Secret
@@ -31,7 +29,6 @@
   description: secret-description
   rules:
     - Secret
-    - WageScheduler
 
 - type: gamePreset
   id: Sandbox
@@ -54,7 +51,6 @@
   rules:
     - Traitor
     - BasicStationEventScheduler
-    - WageScheduler
 
 - type: gamePreset
   id: Deathmatch
@@ -72,11 +68,10 @@
     - nukeops
   name: nukeops-title
   description: nukeops-description
-  showInVote: true
+  showInVote: false
   rules:
     - Nukeops
     - BasicStationEventScheduler
-    - WageScheduler
 
 - type: gamePreset
   id: Zombie
@@ -88,11 +83,10 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: true
+  showInVote: false
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - WageScheduler
 
 - type: gamePreset
   id: Pirates
@@ -100,8 +94,7 @@
     - pirates
   name: pirates-title
   description: pirates-description
-  showInVote: true
+  showInVote: false
   rules:
     - Pirates
     - BasicStationEventScheduler
-    - WageScheduler

@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 5400
+      time: 18000 # Corvax-RoleTime
   startingGear: StationEngineerGear
   icon: "StationEngineer"
   supervisors: job-supervisors-ce
@@ -16,10 +16,6 @@
   - External
   extendedAccess:
   - Atmospherics
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Engineering
-  wage: 100
 
 - type: startingGear
   id: StationEngineerGear

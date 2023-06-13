@@ -10,17 +10,12 @@
   id: HeadOfPersonnel
   name: id-card-access-level-head-of-personnel
 
-- type: accessLevel
-  id: Adjutant
-  name: id-card-access-level-adjutant
-
 - type: accessGroup
   id: Command
   tags:
   - Command
   - Captain
   - HeadOfPersonnel
-  - Adjutant
 
 - type: accessLevel
   id: EmergencyShuttleRepealAll

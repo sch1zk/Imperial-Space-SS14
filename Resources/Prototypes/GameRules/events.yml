@@ -51,17 +51,17 @@
     minimumPlayers: 15
   - type: BreakerFlipRule
 
-# - type: entity
-#   id: BureaucraticError
-#   parent: BaseGameRule
-#   noSpawn: true
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: station-event-bureaucratic-error-announcement
-#     minimumPlayers: 25
-#     weight: 5
-#     duration: 1
-#   - type: BureaucraticErrorRule
+- type: entity
+  id: BureaucraticError
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-bureaucratic-error-announcement
+    minimumPlayers: 25
+    weight: 5
+    duration: 1
+  - type: BureaucraticErrorRule
 
 - type: entity
   id: Dragon
@@ -222,23 +222,23 @@
     lightBreakChancePerSecond: 0.0003
     doorToggleChancePerSecond: 0.001
 
-# - type: entity
-#   id: VentClog
-#   parent: BaseGameRule
-#   noSpawn: true
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: station-event-vent-clog-start-announcement
-#     startAudio:
-#       path: /Audio/Announcements/ventclog.ogg # Corvax-Announcements
-#       params:
-#         volume: -4
-#     earliestStart: 15
-#     minimumPlayers: 15
-#     weight: 5
-#     startDelay: 50
-#     duration: 60
-#   - type: VentClogRule
+- type: entity
+  id: VentClog
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-clog-start-announcement
+    startAudio:
+      path: /Audio/Announcements/ventclog.ogg # Corvax-Announcements
+      params:
+        volume: -4
+    earliestStart: 15
+    minimumPlayers: 15
+    weight: 5
+    startDelay: 50
+    duration: 60
+  - type: VentClogRule
 
 - type: entity
   id: VentCritters

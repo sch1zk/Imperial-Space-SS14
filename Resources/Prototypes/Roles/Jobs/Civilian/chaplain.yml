@@ -13,10 +13,6 @@
   - !type:AddComponentSpecial
     components:
     - type: BibleUser #Lets them heal with bibles
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Civilian
-  wage: 100
 
 - type: startingGear
   id: ChaplainGear

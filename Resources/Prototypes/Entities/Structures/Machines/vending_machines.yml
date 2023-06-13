@@ -201,8 +201,8 @@
     energy: 1.3
     color: "#ffb0b0"
   - type: AccessReader
-    access: [["HeadOfPersonnel"], ["Adjutant"]]
-      
+    access: [["HeadOfPersonnel"]]
+
 - type: entity
   parent: VendingMachine
   id: VendingMachineChefvend

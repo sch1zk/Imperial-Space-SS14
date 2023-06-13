@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 9000
+      time: 36000 # Corvax-RoleTime
   startingGear: AtmosphericTechnicianGear
   icon: "AtmosphericTechnician"
   supervisors: job-supervisors-ce
@@ -16,10 +16,6 @@
   - Engineering
   - External
   - Atmospherics
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Engineering
-  wage: 100
 
 - type: startingGear
   id: AtmosphericTechnicianGear

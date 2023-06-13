@@ -52,7 +52,7 @@ public sealed class StoreBoundUserInterface : BoundUserInterface
             case StoreUpdateState msg:
                 _menu.UpdateBalance(msg.Balance);
                 _menu.PopulateStoreCategoryButtons(msg.Listings);
-                _menu.UpdateListing(msg.Listings.ToList(), msg.CanBuyByBankAccount);
+                _menu.UpdateListing(msg.Listings.ToList());
                 _menu.SetFooterVisibility(msg.ShowFooter);
                 break;
             case StoreInitializeState msg:

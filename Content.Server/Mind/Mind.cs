@@ -4,7 +4,6 @@ using Content.Server.Administration.Logs;
 using Content.Server.GameTicking;
 using Content.Server.Ghost.Components;
 using Content.Server.Mind.Components;
-using Content.Shared.Economy;
 using Content.Server.Objectives;
 using Content.Server.Players;
 using Content.Server.Roles;
@@ -15,7 +14,6 @@ using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
-using Content.Shared.Roles;
 
 namespace Content.Server.Mind
 {
@@ -41,8 +39,6 @@ namespace Content.Server.Mind
         private readonly ISet<Role> _roles = new HashSet<Role>();
 
         private readonly List<Objective> _objectives = new();
-
-        private readonly List<Memory> _memories = new();
 
         public string Briefing = String.Empty;
 
@@ -118,9 +114,6 @@ namespace Content.Server.Mind
         /// </summary>
         [ViewVariables]
         public IEnumerable<Objective> AllObjectives => _objectives;
-
-        [ViewVariables]
-        public IEnumerable<Memory> AllMemories => _memories;
 
         /// <summary>
         ///     Prevents user from ghosting out
@@ -478,16 +471,6 @@ namespace Content.Server.Mind
         public bool TryGetSession([NotNullWhen(true)] out IPlayerSession? session)
         {
             return (session = Session) != null;
-        }
-
-        public Memory AddMemory(Memory memory)
-        {
-            if (_memories.Contains(memory))
-            {
-                throw new ArgumentException($"We already have this memory: {memory}");
-            }
-            _memories.Add(memory);
-            return memory;
         }
     }
 }

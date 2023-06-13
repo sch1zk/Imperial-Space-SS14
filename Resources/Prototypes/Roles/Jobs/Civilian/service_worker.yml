@@ -12,10 +12,6 @@
   - Maintenance
   - Bar
   - Kitchen
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Civilian
-  wage: 100
   extendedAccess:
   - Hydroponics
 

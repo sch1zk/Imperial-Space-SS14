@@ -13,10 +13,6 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: MikuDay
     prototype: BoxPerformer
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Civilian
-  wage: 100
 
 - type: startingGear
   id: MusicianGear

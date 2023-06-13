@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 5400
+      time: 7200 # Corvax-RoleTime
   startingGear: DoctorGear
   icon: "MedicalDoctor"
   supervisors: job-supervisors-cmo
@@ -15,10 +15,6 @@
   - Maintenance
   extendedAccess:
   - Chemistry
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Medical
-  wage: 100
 
 - type: startingGear
   id: DoctorGear

@@ -74,7 +74,6 @@
     uiKey: enum.PDAUiKey.Key
     preinstalled:
       - NotekeeperCartridge
-      - BankCartridge
     cartridgeSlot:
       priority: -1
       name: Cartridge
@@ -738,24 +737,6 @@
     borderColor: "#774705"
   - type: Icon
     state: pda-detective
-
-- type: entity
-  parent: BasePDA
-  id: DeathSquadPDA
-  name: DeathSquad PDA
-  description: You can only hope this is not the last thing you will ever see...
-  components:
-  - type: PDA
-    id: CentcomIDCardDeathsquad
-  - type: PDABorderColor
-    borderColor: "#000000"
-    accentHColor: "#447987"
-  # - type: Appearance
-    # visuals:
-      # - type: PDAVisualizer
-        # state: pda-ert
-  - type: Icon
-    state: pda-ert
 
 - type: entity
   parent: BasePDA

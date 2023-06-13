@@ -154,7 +154,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.40
+          radius: 0.35
         density: 185
         restitution: 0.0
         mask:
@@ -200,7 +200,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      75: Critical
+      100: Critical
       200: Dead
   - type: Destructible
     thresholds:
@@ -212,8 +212,8 @@
           - !type:GibBehavior { }
   - type: SlowOnDamage
     speedModifierThresholds:
-      45: 0.7
-      60: 0.5
+      60: 0.7
+      80: 0.5
   - type: HeatResistance
   - type: DamageVisuals
     thresholds: [ 20, 40, 100 ]
@@ -262,7 +262,7 @@
     attackRate: 1
     damage:
       types:
-        Blunt: 3
+        Blunt: 5
   - type: Pullable
   - type: DoAfter
   - type: CreamPied

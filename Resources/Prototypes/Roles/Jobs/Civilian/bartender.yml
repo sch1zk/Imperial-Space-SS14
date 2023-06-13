@@ -17,10 +17,6 @@
   extendedAccess:
   - Kitchen
   - Hydroponics
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Civilian
-  wage: 100
 
 - type: startingGear
   id: BartenderGear

@@ -5,10 +5,10 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 30000
+      time: 72000
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 30000
+      time: 36000
   startingGear: IAAGear
   icon: "IAA"
   supervisors: job-supervisors-centcom
@@ -19,10 +19,6 @@
     - Maintenance
     - Command
     - External
-  minBankBalance: 800
-  maxBankBalance: 1200
-  wageDepartment: Command
-  wage: 200
 
 - type: startingGear
   id: IAAGear

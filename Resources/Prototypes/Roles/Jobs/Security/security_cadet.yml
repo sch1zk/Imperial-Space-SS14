@@ -3,6 +3,13 @@
   name: job-name-cadet
   description: job-description-cadet
   playTimeTracker: JobSecurityCadet
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 36000 # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000 # Corvax-RoleTime
+      inverted: true # stop playing intern if you're good at security!
   startingGear: SecurityCadetGear
   icon: "SecurityCadet"
   supervisors: job-supervisors-security
@@ -11,10 +18,6 @@
   - Security
   - Brig
   - Maintenance
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Security
-  wage: 50
 
 - type: startingGear
   id: SecurityCadetGear

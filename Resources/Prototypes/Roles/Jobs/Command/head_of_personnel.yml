@@ -14,7 +14,7 @@
       department: Security
       time: 18000 # Corvax-RoleTime
     - !type:OverallPlaytimeRequirement
-      time: 120000
+      time: 180000 # Corvax-RoleTime
   weight: 20
   startingGear: HoPGear
   icon: "HeadOfPersonnel"
@@ -48,10 +48,6 @@
   - Atmospherics
   - Cargo
   - Medical
-  minBankBalance: 800
-  maxBankBalance: 1200
-  wageDepartment: Command
-  wage: 200
 
 - type: startingGear
   id: HoPGear

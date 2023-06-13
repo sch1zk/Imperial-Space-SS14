@@ -1,13 +1,11 @@
 using System.Linq;
 using Content.Server.Administration.Logs;
-using Content.Server.Database;
 using Content.Server.Kitchen.Components;
 using Content.Server.Popups;
 using Content.Shared.Access;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Database;
-using Content.Server.Economy;
 using Content.Shared.Popups;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -20,7 +18,6 @@ namespace Content.Server.Access.Systems
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-        [Dependency] private readonly BankManagerSystem _bankManager = default!;
 
         public override void Initialize()
         {
@@ -178,21 +175,6 @@ namespace Content.Server.Access.Systems
                     ("fullName", id.FullName),
                     ("jobSuffix", jobSuffix));
             EntityManager.GetComponent<MetaDataComponent>(id.Owner).EntityName = val;
-        }
-
-        public bool TryStoreNewBankAccount(EntityUid uid, IdCardComponent? id, out BankAccountComponent? bankAccount)
-        {
-            bankAccount = null;
-            if (!Resolve(uid, ref id))
-                return false;
-            bankAccount = _bankManager.CreateNewBankAccount();
-            if (bankAccount == null)
-                return false;
-            id.StoredBankAccountNumber = bankAccount.AccountNumber;
-            id.StoredBankAccountPin = bankAccount.AccountPin;
-            bankAccount.AccountName = id.FullName;
-            Dirty(id);
-            return true;
         }
     }
 }
