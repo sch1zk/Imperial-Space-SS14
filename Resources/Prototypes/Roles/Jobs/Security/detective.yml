@@ -6,7 +6,7 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 14400
+    time: 72000 # Corvax-RoleTime
   startingGear: DetectiveGear
   icon: "Detective"
   supervisors: job-supervisors-hos
@@ -17,10 +17,6 @@
   - Maintenance
   - Service
   - Detective
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Security
-  wage: 100
 
 - type: startingGear
   id: DetectiveGear
@@ -29,8 +25,8 @@
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsJackSec # Corvax-Resprite
     eyes: ClothingEyesGlassesSunglasses
-    #head: ClothingHeadHatFedoraBrown
-    #outerClothing: ClothingOuterVestDetective
+    head: ClothingHeadHatFedoraBrown
+    outerClothing: ClothingOuterVestDetective
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
     pocket1: ForensicPad

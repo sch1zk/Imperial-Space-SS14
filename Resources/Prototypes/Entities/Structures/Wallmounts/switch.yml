@@ -15,13 +15,7 @@
     canCollide: false
   - type: Sprite
     sprite: Structures/Wallmounts/switch.rsi
-    #state: on
-    layers:
-    - state: "dead"
-      map: ["enum.SignalSwitchVisualLayers.Base"]
-    - state: "off_unshaded"
-      map: ["enum.SignalSwitchVisualLayers.BaseUnshaded"]
-      shader: unshaded
+    state: on
   - type: SignalSwitch
   - type: UseDelay
     delay: 0.5 # prevent light-toggling auto-clickers.
@@ -30,11 +24,14 @@
     graph: SignalSwitchGraph
     node: SignalSwitchNode
   - type: Fixtures
-  - type: SignalTransmitter
-    outputs:
-      On: []
-      Off: []
-  - type: Appearance
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    ports:
+      - On
+      - Off
 
 - type: entity
   id: SignalButton
@@ -64,9 +61,13 @@
     graph: SignalButtonGraph
     node: SignalButtonNode
   - type: Fixtures
-  - type: SignalTransmitter
-    outputs:
-      Pressed: []
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    ports:
+      - Pressed
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
@@ -160,8 +161,12 @@
     - type: Construction
       graph: LeverGraph
       node: LeverNode
-    - type: SignalTransmitter
-      outputs:
-        Left: []
-        Right: []
-        Middle: []
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+    - type: WirelessNetworkConnection
+      range: 200
+    - type: DeviceLinkSource
+      ports:
+        - Left
+        - Right
+        - Middle

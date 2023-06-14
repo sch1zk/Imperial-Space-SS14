@@ -1,102 +1,37 @@
 ﻿- type: construction
-  name: Бейсбольная бита
+  name: baseball bat
   id: bat
   graph: WoodenBat
   startNode: start
   targetNode: bat
   category: construction-category-weapons
-  description: Я бью жен...
+  description: A robust baseball bat.
   icon:
     sprite: Objects/Weapons/Melee/baseball_bat.rsi
     state: icon
   objectType: Item
-  
+
 - type: construction
-  name: Лом
-  id: Crowbar
-  graph: Crowbar
+  name: ghost sheet
+  id: ghost_sheet
+  graph: GhostSheet
   startNode: start
-  targetNode: Crowbar
-  category: construction-category-weapons
-  description: Лом, для открывания дверей и битья лиц
+  targetNode: ghost_sheet
+  category: construction-category-misc
+  description: Become a spooky ghost. Boo!
   icon:
-    sprite: Objects/Tools/crowbar.rsi
+    sprite: Clothing/OuterClothing/Misc/ghostsheet.rsi
     state: icon
   objectType: Item
 
 - type: construction
-  name: Ведро
-  id: Bucket
-  graph: Bucket
-  startNode: start
-  targetNode: Bucket
-  category: construction-category-weapons
-  description: Ведро, что бы набирать воду
-  icon:
-    sprite: Objects/Tools/bucket.rsi
-    state: icon
-  objectType: Item
-
-- type: construction
-  name: Рукоятка инструмента
-  id: Handle
-  graph: Handle
-  startNode: start
-  targetNode: Handle
-  category: construction-category-weapons
-  description: Рукоятка, являющаяся неотъемлемой частью для создания инструмента.
-  icon:
-    sprite: Objects/Weapons/Melee/pickaxe.rsi
-    state: handle
-  objectType: Item
-
-- type: construction
-  name: Кирка
-  id: Pickaxe
-  graph: Pickaxe
-  startNode: start
-  targetNode: Pickaxe
-  category: construction-category-weapons
-  description: Необходима для раскопки породы
-  icon:
-    sprite: Objects/Weapons/Melee/pickaxe.rsi
-    state: pickaxe
-  objectType: Item
-
-- type: construction
-  name: Кусачки
-  id: wirecutter
-  graph: wirecutter
-  startNode: start
-  targetNode: wirecut
-  category: construction-category-weapons
-  description: Нужны что бы перерезать провода
-  icon:
-    sprite: Objects/Tools/wirecutters.rsi
-    state: cutters-map
-  objectType: Item
-
-- type: construction
-  name: Заточка
-  id: ScalpelShiv
-  graph: ScalpelShiv
-  startNode: start
-  targetNode: Shiv
-  category: construction-category-weapons
-  description: Бить лица
-  icon:
-    sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
-    state: shiv
-  objectType: Item  
-
-- type: construction
-  name: Самодельные наручники
+  name: makeshift handcuffs
   id: makeshifthandcuffs
   graph: makeshifthandcuffs
   startNode: start
   targetNode: cuffscable
-  category: construction-category-weapons
-  description: Самодельные наручники для связывания людей
+  category: construction-category-tools
+  description: "Homemade handcuffs crafted from spare cables."
   icon: { sprite: Objects/Misc/cablecuffs.rsi, state: cuff }
   objectType: Item
 
@@ -114,14 +49,14 @@
     state: icon
 
 - type: construction
-  name: Пневмопушка
+  name: improvised pneumatic cannon
   id: pneumaticcannon
   graph: PneumaticCannon
   startNode: start
   targetNode: cannon
   category: construction-category-weapons
   objectType: Item
-  description: Стреляет используя энергию кислородного балона
+  description: This son of a gun can fire anything that fits in it using just a little gas.
   icon:
     sprite: Objects/Weapons/Guns/Cannons/pneumatic_cannon.rsi
     state: icon
@@ -140,14 +75,14 @@
     state: gauze
 
 - type: construction
-  name: Повязка на глаза
+  name: blindfold
   id: blindfold
   graph: Blindfold
   startNode: start
   targetNode: blindfold
   category: construction-category-tools
   objectType: Item
-  description: Надейся что никто на тебя ее не оденет в техах
+  description: Better hope everyone turns a blind eye to you crafting this sussy item...
   icon:
     sprite: Clothing/Eyes/Misc/blindfold.rsi
     state: icon
@@ -164,3 +99,16 @@
     sprite: Clothing/Head/Misc/flower-crown.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: damp rag
+  id: rag
+  graph: Rag
+  startNode: start
+  targetNode: rag
+  category: construction-category-tools
+  objectType: Item
+  description: A damp rag to clean up the ground. Better than slipping around all day.
+  icon:
+    sprite: Objects/Specific/Janitorial/rag.rsi
+    state: rag

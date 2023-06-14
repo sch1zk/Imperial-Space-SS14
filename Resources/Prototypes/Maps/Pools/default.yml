@@ -1,7 +1,16 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-    - MooseImperial
-    - ClusterImperial
-    - BoxImperial
-    - BagelImperial
+  - Aspid
+  - Bagel
+  - Barratry
+  - Box
+  - Cluster
+  - Fland
+  - Kettle
+  - Marathon
+  - Meta
+  ##- Moose
+  - Omega
+  - Origin
+  - Saltern

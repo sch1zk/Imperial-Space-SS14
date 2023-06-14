@@ -113,8 +113,6 @@
     - !type:NotRoleRequirement
       roleId: HeadOfPersonnel
     - !type:NotRoleRequirement
-      roleId: Adjutant
-    - !type:NotRoleRequirement
       roleId: ChiefEngineer
     - !type:NotRoleRequirement
       roleId: ChiefMedicalOfficer
@@ -171,6 +169,21 @@
     - !type:StealCondition
       prototype: CargoRequestComputerCircuitboard
       owner: job-name-qm
+
+- type: objective
+  id: CorgiMeatStealObjective
+  issuer: syndicate
+  requirements:
+    - !type:TraitorRequirement {}
+    - !type:IncompatibleConditionsRequirement
+      conditions:
+        - DieCondition
+    - !type:NotRoleRequirement
+      roleId: HeadOfPersonnel
+  conditions:
+    - !type:StealCondition
+      prototype: FoodMeatCorgi
+      owner: objective-condition-steal-Ian
 
 - type: objective
   id: CaptainGunStealObjective

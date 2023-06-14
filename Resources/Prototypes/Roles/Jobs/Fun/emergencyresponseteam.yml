@@ -23,7 +23,7 @@
     gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltSecurityWebbing
     pocket1: Flare
 
@@ -39,7 +39,7 @@
     outerClothing: ClothingOuterHardsuitERTLeader
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltSecurityFilled
     pocket1: Flare
 
@@ -68,7 +68,7 @@
     gloves: ClothingHandsGlovesColorYellow
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltChiefEngineerFilled
     pocket1: Flare
 
@@ -84,7 +84,7 @@
     outerClothing: ClothingOuterHardsuitERTEngineer
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltChiefEngineerFilled
     pocket1: Flare
 
@@ -113,7 +113,7 @@
     gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltSecurityWebbing
     pocket1: Flare
 
@@ -129,7 +129,7 @@
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltSecurityWebbing
     pocket1: Flare
 
@@ -158,7 +158,7 @@
     gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltMedicalFilled
     pocket1: HandheldHealthAnalyzer
     pocket2: Flare
@@ -175,7 +175,7 @@
     outerClothing: ClothingOuterHardsuitERTMedical
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltMedicalFilled
     pocket1: HandheldHealthAnalyzer
     pocket2: Flare
@@ -204,7 +204,7 @@
     gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltJanitorFilled
     pocket1: Flare
 
@@ -219,6 +219,6 @@
     outerClothing: ClothingOuterHardsuitERTJanitor
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltCommand
     belt: ClothingBeltJanitorFilled
     pocket1: Flare

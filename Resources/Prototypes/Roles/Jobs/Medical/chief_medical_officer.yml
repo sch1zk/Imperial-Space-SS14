@@ -11,7 +11,7 @@
       time: 18000
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 30000
+      time: 54000 # Corvax-RoleTime
   weight: 10
   startingGear: CMOGear
   icon: "ChiefMedicalOfficer"
@@ -24,10 +24,6 @@
   - Maintenance
   - Chemistry
   - ChiefMedicalOfficer
-  minBankBalance: 800
-  maxBankBalance: 1200
-  wageDepartment: Command
-  wage: 200
 
 - type: startingGear
   id: CMOGear
@@ -37,7 +33,7 @@
     shoes: ClothingShoesColorBrown
     outerClothing: ClothingOuterCoatLabCmo
     id: CMOPDA
-    ears: ClothingHeadsetAltMedical
+    ears: ClothingHeadsetCMO
     belt: ClothingBeltMedicalFilled
   innerclothingskirt: ClothingUniformJumpskirtCMO
   satchel: ClothingBackpackSatchelCMOFilled

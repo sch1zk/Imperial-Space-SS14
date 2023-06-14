@@ -4,7 +4,6 @@ using Content.Server.Chat;
 using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
 using Content.Server.Database;
-using Content.Server.Economy;
 using Content.Server.Ghost;
 using Content.Server.Maps;
 using Content.Server.Players.PlayTimeTracking;
@@ -125,6 +124,5 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly ServerUpdateManager _serverUpdates = default!;
         [Dependency] private readonly PlayTimeTrackingSystem _playTimeTrackings = default!;
         [Dependency] private readonly UserDbDataManager _userDb = default!;
-        [Dependency] private readonly BankManagerSystem _bankManagerSystem = default!;
     }
 }

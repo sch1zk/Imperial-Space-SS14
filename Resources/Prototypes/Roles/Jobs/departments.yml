@@ -6,7 +6,6 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
-  accountNumber: 1315
 
 - type: department
   id: Civilian
@@ -33,7 +32,6 @@
   - ServiceWorker
   - TechnicalAssistant
   - ResearchAssistant
-  accountNumber: 1316
 
 - type: department
   id: Command
@@ -41,16 +39,14 @@
   color: "#334E6D"
   roles:
   - Captain
+  - IAA # Corvax-IAA
   - CentralCommandOfficial
-  - IAA
   - ChiefEngineer
   - ChiefMedicalOfficer
   - HeadOfPersonnel
-  - Adjutant
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
-  accountNumber: 1317
 
 - type: department
   id: Engineering
@@ -61,7 +57,6 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
-  accountNumber: 1318
 
 - type: department
   id: Medical
@@ -73,11 +68,11 @@
   - MedicalDoctor
   - MedicalIntern
   - Psychologist
-  accountNumber: 1319
+  - Paramedic
 
 - type: department
   id: Security
-  description: department-Command-description
+  description: department-Security-description
   color: "#DE3A3A"
   roles:
   - HeadOfSecurity
@@ -85,8 +80,6 @@
   - SecurityOfficer
   - Detective
   - Warden
-  - Brigmedic
-  accountNumber: 1320
 
 - type: department
   id: Science
@@ -96,4 +89,13 @@
   - ResearchDirector
   - Scientist
   - ResearchAssistant
-  accountNumber: 1321
+
+- type: department
+  id: Specific
+  description: department-Specific-description
+  color: "#9FED58"
+  roles:
+  - Boxer
+  - Reporter
+  - Zookeeper
+  - Psychologist

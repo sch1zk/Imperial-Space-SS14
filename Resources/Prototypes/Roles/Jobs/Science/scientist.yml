@@ -13,10 +13,6 @@
   access:
   - Research
   - Maintenance
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Science
-  wage: 100
 
 - type: startingGear
   id: ScientistGear
@@ -24,7 +20,7 @@
     jumpsuit: ClothingUniformJumpsuitScientist
     back: ClothingBackpackScienceFilled
     shoes: ClothingShoesColorWhite
-    outerClothing: ClothingOuterCoatLab
+    outerClothing: ClothingOuterCoatRnd
     id: SciencePDA
     ears: ClothingHeadsetScience
   innerclothingskirt: ClothingUniformJumpskirtScientist

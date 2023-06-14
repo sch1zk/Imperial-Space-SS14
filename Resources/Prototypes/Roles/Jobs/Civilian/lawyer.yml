@@ -4,16 +4,13 @@
   description: job-description-lawyer
   playTimeTracker: JobLawyer
   startingGear: LawyerGear
+  setPreference: false
   icon: "Lawyer"
   supervisors: job-supervisors-hop
   access:
   - Service
   - Brig
   - Maintenance
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Civilian
-  wage: 100
 
 - type: startingGear
   id: LawyerGear

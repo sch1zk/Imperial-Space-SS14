@@ -13,10 +13,6 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: GarbageDay
     prototype: WeaponRevolverInspector
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Civilian
-  wage: 100
 
 - type: startingGear
   id: JanitorGear

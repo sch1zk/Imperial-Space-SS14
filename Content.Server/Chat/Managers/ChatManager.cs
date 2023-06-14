@@ -120,7 +120,8 @@ namespace Content.Server.Chat.Managers
 
         public void SendAdminAlert(EntityUid player, string message, MindComponent? mindComponent = null)
         {
-            if(mindComponent == null && !_entityManager.TryGetComponent(player, out mindComponent))
+            if((mindComponent == null && !_entityManager.TryGetComponent(player, out mindComponent))
+               || mindComponent.Mind == null)
             {
                 SendAdminAlert(message);
                 return;
@@ -208,7 +209,7 @@ namespace Content.Server.Chat.Managers
             // Corvax-Sponsors-Start
             if (_sponsorsManager.TryGetInfo(player.UserId, out var sponsorData) && sponsorData.HavePriorityJoin == true && sponsorData.OOCColor != null)
             {
-                wrappedMessage = Loc.GetString("chat-manager-send-ooc-patron-wrap-message", ("patronColor", sponsorData.OOCColor), ("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
+                wrappedMessage = Loc.GetString("chat-manager-send-ooc-patron-wrap-message", ("patronColor", sponsorData.OOCColor),("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
             }
             // Corvax-Sponsors-End
 

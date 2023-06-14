@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 7200
+      time: 10800 # Corvax-RoleTime
   icon: "ShaftMiner"
   startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-hop-qm
@@ -15,10 +15,6 @@
   - Salvage
   - Maintenance
   - External
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Cargo
-  wage: 100
 
 - type: startingGear
   id: SalvageSpecialistGear

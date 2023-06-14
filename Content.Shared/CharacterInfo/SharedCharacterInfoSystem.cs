@@ -21,14 +21,12 @@ public sealed class CharacterInfoEvent : EntityEventArgs
     public readonly string JobTitle;
     public readonly Dictionary<string, List<ConditionInfo>> Objectives;
     public readonly string Briefing;
-    public readonly Dictionary<string, string> Memory;
 
-    public CharacterInfoEvent(EntityUid entityUid, string jobTitle, Dictionary<string, List<ConditionInfo>> objectives, string briefing, Dictionary<string, string> memory)
+    public CharacterInfoEvent(EntityUid entityUid, string jobTitle, Dictionary<string, List<ConditionInfo>> objectives, string briefing)
     {
         EntityUid = entityUid;
         JobTitle = jobTitle;
         Objectives = objectives;
         Briefing = briefing;
-        Memory = memory;
     }
 }

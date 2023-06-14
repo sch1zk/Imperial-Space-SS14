@@ -160,7 +160,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     public bool IsAllowed(IPlayerSession player, string role)
     {
         if (!_prototypes.TryIndex<JobPrototype>(role, out var job) ||
-            (job.SponsorsOnly && (_sponsorsManager.TryGetInfo(player.UserId, out var sponsorData) && sponsorData.HavePriorityJoin == true)) ||
+            job.SponsorsOnly && _sponsorsManager.TryGetInfo(player.UserId, out var sponsorData) && sponsorData.HavePriorityJoin == true ||
             job.Requirements == null ||
             !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;
@@ -204,7 +204,12 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             return;
 
         var player = _playerManager.GetSessionByUserId(userId);
-        var playTimes = _tracking.GetTrackerTimes(player);
+        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
+        {
+            // Sorry mate but your playtimes haven't loaded.
+            Logger.ErrorS("playtime", $"Playtimes weren't ready yet for {player} on roundstart!");
+            playTimes ??= new Dictionary<string, TimeSpan>();
+        }
 
         for (var i = 0; i < jobs.Count; i++)
         {

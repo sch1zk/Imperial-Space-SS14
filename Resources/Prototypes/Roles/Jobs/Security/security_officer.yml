@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 5400
+      time: 36000 # Corvax-RoleTime
   startingGear: SecurityOfficerGear
   icon: "SecurityOfficer"
   supervisors: job-supervisors-hos
@@ -17,10 +17,6 @@
   - Maintenance
   - Service
   - External
-  minBankBalance: 300
-  maxBankBalance: 500
-  wageDepartment: Security
-  wage: 100
 
 - type: startingGear
   id: SecurityOfficerGear
@@ -29,11 +25,11 @@
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsJackSec # Corvax-Resprite
     eyes: ClothingEyesGlassesSecurity
-    #head: ClothingHeadHelmetHelmet # Corvax-Resprite
-    #outerClothing: ClothingOuterVestKevlar
+    head: ClothingHeadHelmetHelmet # Corvax-Resprite
+    outerClothing: ClothingOuterVestArmorSec # Corvax-Resprite
     id: SecurityPDA
     ears: ClothingHeadsetSecurity
-    #belt: ClothingBeltSecurityFilled
+    belt: ClothingBeltSecurityFilled
   innerclothingskirt: ClothingUniformJumpskirtSec
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

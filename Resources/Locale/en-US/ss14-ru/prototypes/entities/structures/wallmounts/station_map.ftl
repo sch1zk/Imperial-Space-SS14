@@ -1,6 +1,8 @@
-ent-WallStationMapBroken = station map
+ent-StationMapBroken = station map
     .desc = A virtual map of the surrounding station.
     .suffix = Wall broken
-ent-WallStationMap = station map
+ent-StationMap = station map
+    .desc = A virtual map of the surrounding station.
     .suffix = Wall
-    .desc = { ent-WallStationMapBroken.desc }
+ent-StationMapAssembly = station map assembly
+    .desc = A station map assembly.
